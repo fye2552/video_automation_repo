@@ -1,0 +1,163 @@
+sku_id: "RIFPOD Lawn Aerator Automatic Dirt and Leaf Clean Design,Grass Aerator for Yard and Garden,Soil renovation Hydrophobic permeation Revives Lawn Health"
+product_name: "RIFPOD Lawn Aerator with Automatic Dirt and Leaf Clean Design"
+category: "manual spike lawn aerator tool"
+source_folder: "E:/test001/RIFPOD Lawn Aerator Automatic Dirt and Leaf Clean Design,Grass Aerator for Yard and Garden,Soil renovation Hydrophobic permeation Revives Lawn Health/"
+output_folder: "E:/test001-1/product_reference_pack/RIFPOD Lawn Aerator Automatic Dirt and Leaf Clean Design,Grass Aerator for Yard and Garden,Soil renovation Hydrophobic permeation Revives Lawn Health/"
+
+source_text:
+  title: "RIFPOD Lawn Aerator Automatic Dirt and Leaf Clean Design, Grass Aerator for Yard and Garden, Soil renovation Hydrophobic permeation Revives Lawn Health, Heavy Metal Spring Duty Lawn Aerator Tool with 15 Iron Spikes Height Adjustable"
+  claims:
+    - "dual-layer spring design helps remove soil and dried leaves after aeration"
+    - "heavy-duty thickened iron material"
+    - "precision spraying and arc welding surface process"
+    - "15 iron spikes"
+    - "each spike measures 1.74 inches"
+    - "adjustable height from 32 inches to 35 inches"
+    - "easy installation with two screws, four washers, and a small wrench"
+
+product_identity:
+  brand: "RIFPOD"
+  product_type: "manual step-on spike lawn aerator"
+  form_factor: "upright T-handle lawn aerator with U-shaped lower frame, rectangular spike plate, and spring-cleaning mechanism"
+  material:
+    - "black coated iron handle and frame"
+    - "black rectangular metal foot plate"
+    - "silver iron spikes / rods"
+    - "bright green coil springs"
+    - "silver bolts, nuts, washers, and connector hardware"
+  spike_system:
+    count: 15
+    spike_length: "1.74 in"
+    cleaning_design: "dual-layer bright green springs around the spike rods help push soil and leaves away from the spike plate"
+  height_adjustment:
+    range: "32-35 in / 82-90 cm"
+    purpose: "reduces bending and helps fit different users"
+  dimensions_from_reference:
+    height: "82-90 cm / 32.2-35.4 in"
+    plate_width: "25 cm / 9.8 in"
+    plate_depth: "11 cm / 4.3 in"
+  included_installation_parts:
+    - "two screws"
+    - "four washers"
+    - "small wrench"
+
+visual_identity:
+  primary_colors:
+    - "black handle, frame, and foot plate"
+    - "silver metal spike rods and bolts"
+    - "bright green coil springs"
+  accent_colors:
+    - "white RIFPOD logo on the vertical handle"
+    - "green lawn and soil contrast in use scenes"
+  material_finish:
+    - "semi-gloss black powder-coated metal"
+    - "polished silver metal rods"
+    - "bright painted green springs"
+    - "black foam or rubber T-handle grips"
+  shape_details:
+    - "straight vertical black handle shaft"
+    - "horizontal T-shaped top handle with black soft grips"
+    - "lower U-shaped black frame connecting shaft to foot plate"
+    - "rectangular black metal plate with visible bolts"
+    - "multiple vertical silver spike rods passing through the plate"
+    - "green coil springs around the rods between upper and lower plates"
+    - "RIFPOD logo printed vertically on the shaft"
+
+selling_points:
+  - "manual aeration helps loosen compacted lawn soil"
+  - "15 iron spikes penetrate soil for water, oxygen, and nutrients"
+  - "dual-layer spring design helps clear mud, dirt, and leaves from the spike area"
+  - "height adjustable from 32 to 35 inches"
+  - "heavy-duty iron construction with rust-resistant coating"
+  - "T-handle and upright design reduce bending compared with low hand tools"
+  - "simple assembly with basic hardware"
+  - "for yards, gardens, and lawn health renovation"
+
+usage_scenes:
+  primary:
+    - "standing on or pressing the aerator into green lawn soil"
+    - "lifting the aerator and showing soil plugs/debris falling away from the spring-cleaning spike plate"
+    - "user holding the T-handle upright while aerating a yard"
+  secondary:
+    - "installation of handle sections with screws and washers"
+    - "cross-section of soil receiving oxygen, water, and nutrients"
+    - "garden lawn renovation after sparse or compacted grass"
+
+image_reference_audit:
+  - file: "41b75884ee8e4411a29dadb58a5c3f03~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "main product and spring-cleaning hero"
+    useful_for:
+      - "black T-handle and upright tool silhouette"
+      - "RIFPOD logo on shaft"
+      - "green springs and silver spike rods"
+      - "soil and leaves ejecting from the bottom plate"
+    risks:
+      - "floating dirt effect may look exaggerated if copied too literally"
+  - file: "3d22214461d74a58bb222e65d729744f~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "comparison poster"
+    useful_for:
+      - "dual-layer spring design"
+      - "mud-resistant concept"
+      - "contrast with ordinary single-layer aerator"
+    risks:
+      - "comparison text and split layout should be avoided in generated images"
+  - file: "c0adb1a1701345de86bfa4419b56e4bd~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "durability detail poster"
+    useful_for:
+      - "close-up bolts, nuts, and spike rods"
+      - "black metal plate structure"
+    risks:
+      - "large headline, checkmarks, and inset comparison"
+  - file: "a3eeb6d851994e3b96366f4cbecb87c0~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "ergonomic height usage poster"
+    useful_for:
+      - "person scale"
+      - "T-handle posture"
+      - "32-35.4 inch adjustable height"
+    risks:
+      - "medical pain callouts and large text should not be reproduced"
+  - file: "8f539cac205c4843ab3e8a71ced0cff1~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "soil aeration diagram"
+    useful_for:
+      - "spikes penetrating soil"
+      - "water, oxygen, and nutrients concept"
+      - "15 nails count"
+    risks:
+      - "diagram labels and before/after chart are not suitable for clean product renders"
+  - file: "7d3f29c15b7648189c5d0f748eb5658a~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "installation and dimension poster"
+    useful_for:
+      - "full tool dimensions"
+      - "handle assembly points"
+      - "tool standing on lawn"
+    risks:
+      - "large installation text and dimension lines"
+  - file: "37bb130fc8d7442292cbbb43f135ecbf~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "duplicate main product hero"
+    useful_for:
+      - "same key product appearance as main hero"
+    risks:
+      - "same exaggerated floating dirt effect"
+
+generation_guidance:
+  keep:
+    - "black T-shaped top handle"
+    - "black vertical shaft with RIFPOD logo"
+    - "U-shaped lower frame"
+    - "black rectangular metal foot plate"
+    - "15 silver spike rods"
+    - "bright green coil springs around the rods"
+    - "soil/lawn aeration context"
+  avoid:
+    - "rolling drum aerator"
+    - "shoe aerator sandals"
+    - "plastic toy-like construction"
+    - "large poster headlines"
+    - "medical back/knee pain icons"
+    - "diagram-only soil cross-section as the main product image"
+    - "inventing wheels, motor, or battery"
+
+image_prompts:
+  white_background_packshot: "Create a clean e-commerce packshot on a pure white background for a RIFPOD manual lawn aerator. Show the full upright tool: black T-shaped top handle with soft grips, straight black vertical shaft with a small white RIFPOD logo, U-shaped black lower frame, rectangular black metal foot plate, 15 vertical silver iron spike rods, visible silver bolts and nuts, and bright green coil springs around the spike rods. The tool should stand slightly angled so the spike plate and spring-cleaning mechanism are clearly visible. Studio lighting, realistic powder-coated metal, polished rods, crisp shadows. No grass background, no dimension text, no callout arrows, no wheels, no motor."
+  product_detail_collage: "Create a premium product-detail catalog image for the RIFPOD manual spike lawn aerator. Center the full black T-handle tool on a light gray studio background, then add four clean close-up detail panels showing: the white RIFPOD logo on the black shaft, the bright green dual-layer coil springs around silver spike rods, the black rectangular foot plate with bolts and nuts, and the adjustable handle joint with screws and washers. Keep spacing tidy and realistic, with minimal readable branding only. Avoid large headlines, comparison labels, medical icons, dimension overlays, and soil diagrams."
+  realistic_usage_scene: "Create a realistic garden lawn aeration scene featuring the RIFPOD manual lawn aerator. A person stands upright on a green suburban lawn holding the black T-handle and pressing the rectangular spike plate into the grass. Show the black U-shaped lower frame, silver spike rods, green coil springs, and RIFPOD shaft logo visible. A small amount of soil and dry leaves should release cleanly from the spike area as the tool is lifted, suggesting the automatic dirt-and-leaf cleaning design. Natural outdoor daylight, practical garden realism, correct scale. No poster text, no floating icons, no rolling drum, no shoe aerator."

@@ -1,0 +1,155 @@
+sku_id: "SEESE Car Wash Foam Gun for Garden Hose, Foam Cannon Car Wash Kit with High Pressure Nozzle"
+product_name: "SEESE Car Wash Foam Gun for Garden Hose"
+category: "garden-hose car wash foam cannon kit"
+source_folder: "E:/test001/SEESE Car Wash Foam Gun for Garden Hose, Foam Cannon Car Wash Kit with High Pressure Nozzle/"
+output_folder: "E:/test001-1/product_reference_pack/SEESE Car Wash Foam Gun for Garden Hose, Foam Cannon Car Wash Kit with High Pressure Nozzle/"
+
+source_text:
+  title: "SEESE Car Wash Foam Gun for Garden Hose, Foam Cannon Car Wash Kit with High Pressure Nozzle & 3 Spray Modes, Hose Foam Blaster for Cars, Trucks, RV, Motorcycle Cleaning"
+  claims:
+    - "connects to garden hose"
+    - "foam cannon car wash kit"
+    - "high pressure nozzle"
+    - "3 spray modes"
+    - "for cars, trucks, RV, and motorcycle cleaning"
+
+product_identity:
+  brand: "SEESE"
+  product_type: "car wash foam gun / hose foam blaster"
+  form_factor: "pistol-grip garden hose spray gun with detachable transparent soap cup and interchangeable long spray nozzle"
+  liquid_cup:
+    material: "clear plastic cylinder"
+    visible_capacity_marks:
+      - "30 ml"
+      - "120 ml"
+      - "180 ml"
+      - "240 ml"
+    contents_in_reference: "light yellow-green soap solution"
+  modes:
+    - "foam cannon mode with thick foam"
+    - "water spray gun mode with high-speed jet spray"
+    - "specialized multi-pattern nozzle for different water streams"
+  included_parts:
+    - "main SEESE foam gun body"
+    - "transparent soap cup"
+    - "long silver-and-black spray wand / specialized nozzle"
+    - "black connector pieces"
+    - "filter end cap"
+    - "3/8 inch PVC connector for quick-connect garden hoses"
+    - "NPT 3/4 filter end"
+
+visual_identity:
+  primary_colors:
+    - "bright lime yellow-green plastic accents"
+    - "black main body, handle grip, and nozzle sections"
+    - "clear transparent soap cup"
+    - "silver metal wand on the separate nozzle attachment"
+  accent_colors:
+    - "white SEESE logo on black collar"
+    - "pale yellow-green liquid inside the cup"
+  material_finish:
+    - "matte molded plastic handle"
+    - "glossy transparent cup"
+    - "rubberized black grip zones"
+    - "brushed silver metal wand"
+  shape_details:
+    - "large angular pistol handle with lime outer frame and black inner trigger"
+    - "horizontal black barrel with ribbed lime adjustment ring at the front"
+    - "black circular collar above the soap cup with SEESE logo"
+    - "small lime clean-mode switch on top of the collar"
+    - "hose connector at the bottom rear of the handle"
+    - "separate long nozzle with black round spray head, silver tube, lime ribbed ring, and black connector tail"
+  logo_position: "white SEESE logo centered on the black ring/collar above the transparent soap cup"
+
+selling_points:
+  - "garden-hose connection for home car washing"
+  - "foam cannon mode creates thick car-wash foam"
+  - "water spray gun mode rinses with high-speed water"
+  - "specialized nozzle supports multiple spray patterns"
+  - "transparent soap cup with measurement marks"
+  - "ergonomic pistol grip with water flow lock"
+  - "quick-connect hose adapter and filter end included"
+  - "usable for cars, trucks, RVs, motorcycles, patio floors, garden rinsing, and pet rinsing"
+
+usage_scenes:
+  primary:
+    - "spraying thick foam onto a black car during driveway washing"
+    - "rinsing car panels with high-speed water spray"
+    - "using the long specialized nozzle to wash vehicle surfaces"
+  secondary:
+    - "patio or floor cleaning"
+    - "garden rinsing"
+    - "gentle pet rinsing outdoors"
+    - "motorcycle, truck, or RV washing"
+
+image_reference_audit:
+  - file: "808a6246ec134d82a6bff8307624fe29~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "main product hero image"
+    useful_for:
+      - "overall foam gun shape"
+      - "lime green and black color scheme"
+      - "transparent soap cup with 30/120/180/240 ml marks"
+      - "separate long nozzle attachment"
+      - "car wash foam context"
+    risks:
+      - "composited car and spray effects can become unrealistic if copied too literally"
+  - file: "d1171a6cc44f4d6badffa55864b6ddc8~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "specialized nozzle mode poster"
+    useful_for:
+      - "long silver nozzle with black multi-pattern head"
+      - "different spray pattern references"
+      - "car rinsing scene"
+    risks:
+      - "large headline text and inset panels"
+  - file: "1ab737ea30ba40bf89f34ff410936d60~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "foam mode and water spray mode comparison poster"
+    useful_for:
+      - "foam cannon mode"
+      - "water spray mode"
+      - "handheld scale and driveway car washing"
+    risks:
+      - "split poster layout and mode labels should be avoided in clean generated images"
+  - file: "41a077b3c825453f94fe6667e5bc0a03~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "feature callout poster"
+    useful_for:
+      - "clean mode switch"
+      - "water flow lock"
+      - "ergonomic handle"
+      - "3/8 inch PVC connector and NPT 3/4 filter end"
+    risks:
+      - "callout lines and typo in 'Ergonommie' should not be reproduced"
+  - file: "6990bf68e67043458b6b2ff252ce773b~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "included-parts layout"
+    useful_for:
+      - "all kit components"
+      - "detached cup, adapters, rings, filter, and long nozzle"
+    risks:
+      - "large 'what's included' text and floating parts can look like a poster if not simplified"
+  - file: "3a02c85b737f4dcbb9d08fcd1b84e6c4~tplv-fhlh96nyum-resize-webp_800_798.webp"
+    role: "multi-use scenario collage"
+    useful_for:
+      - "car wash, floor cleaning, garden rinsing, and pet rinsing use cases"
+    risks:
+      - "collage layout, repeated model faces, and pet scene may distract from car-wash positioning"
+
+generation_guidance:
+  keep:
+    - "SEESE logo on black collar"
+    - "lime yellow-green and black pistol-grip body"
+    - "clear cylindrical soap cup with measurement marks and light green liquid"
+    - "front lime ribbed adjustment ring"
+    - "long silver specialized nozzle attachment"
+    - "black hose connector and included adapters"
+    - "thick white foam on a car for usage scenes"
+  avoid:
+    - "large poster headlines"
+    - "callout lines and arrows"
+    - "busy multi-panel collage"
+    - "unreadable feature labels"
+    - "incorrect brand name or changing SEESE logo placement"
+    - "pressure-washer-only setup; this product is for a garden hose"
+
+image_prompts:
+  white_background_packshot: "Create a clean e-commerce packshot on a pure white background for a SEESE car wash foam gun garden-hose kit. Show the main foam gun in a three-quarter side view: bright lime yellow-green outer pistol handle, black inner trigger and grip, black horizontal barrel, lime ribbed front adjustment ring, black collar with white SEESE logo, and a clear cylindrical soap cup attached underneath with 30 ml, 120 ml, 180 ml, and 240 ml measurement marks and pale yellow-green liquid inside. Arrange the separate long specialized nozzle below it, with a black round spray head, silver tube, lime ribbed ring, and black connector tail. Add small black connector adapters and filter cap neatly beside the kit. Studio lighting, crisp molded plastic texture, transparent cup reflections, no car background, no poster text, no callout arrows."
+  product_detail_collage: "Create a premium product-detail catalog image for the SEESE garden hose foam cannon kit. Center the lime green and black foam gun with the transparent soap cup, then add four clean close-up detail panels: the white SEESE logo on the black collar, the lime clean-mode switch on top, the clear cup measurement marks with light green soap solution, and the long silver multi-pattern nozzle with black spray head and lime adjustment ring. Include the hose connector and black adapters at the bottom as organized kit parts. Use a light gray studio background, realistic plastic and transparent material, precise spacing, and minimal readable text only on the product logo. Avoid large headlines, arrows, comparison labels, and cluttered collage styling."
+  realistic_usage_scene: "Create a realistic driveway car-washing scene featuring the SEESE car wash foam gun connected to a garden hose. A hand holds the lime yellow-green and black pistol-grip foam gun, with the clear soap cup attached underneath and the white SEESE logo visible on the black collar. The gun sprays thick white foam across the side and windshield of a dark car, with soap foam running down the panels and water on the driveway. Show the garden hose connected to the rear/bottom of the handle, natural outdoor daylight, suburban driveway setting, practical realism. No pressure washer machine, no giant text, no floating icons, no split-screen comparison."

@@ -1,0 +1,143 @@
+sku_id: "NUAN heavy duty degreaserNUAN Heavy Duty Kitchen Degreaser Spray, Kitchen Grease Cleaner"
+product_name: "NUAN Heavy Duty Kitchen Degreaser Spray"
+category: "kitchen degreaser cleaning spray"
+source_folder: "E:/test001/NUAN heavy duty degreaserNUAN Heavy Duty Kitchen Degreaser Spray, Kitchen Grease Cleaner/"
+output_folder: "E:/test001-1/product_reference_pack/NUAN heavy duty degreaserNUAN Heavy Duty Kitchen Degreaser Spray, Kitchen Grease Cleaner/"
+
+source_text:
+  title: "NUAN heavy duty degreaserNUAN Heavy Duty Kitchen Degreaser Spray, Kitchen Grease Cleaner"
+  claims:
+    - "For stovetops and range hoods"
+    - "Removes grease stains"
+    - "500 ml/bottle"
+    - "Powerful cleaner and degreaser for ovens, stove tops, countertops and appliances"
+
+product_identity:
+  brand: "NUAN"
+  product_line: "Heavy Duty Degreaser"
+  form_factor: "white plastic trigger spray bottle"
+  capacity: "500 ml / 17.6 fl oz"
+  scent_or_variant: "peach scent"
+  packaging:
+    - "green retail box with foam/bubble graphics"
+    - "white trigger spray bottle with green front label"
+    - "some references show a two-bottle pack"
+  included_accessories:
+    - "white disposable gloves"
+    - "blue microfiber cleaning cloth"
+
+visual_identity:
+  primary_colors:
+    - "white bottle and white trigger nozzle"
+    - "bright green label and green retail box"
+  accent_colors:
+    - "black NUAN logo"
+    - "orange label footer"
+    - "small peach icon / peach scent badge"
+  material_finish:
+    - "smooth white plastic bottle"
+    - "glossy printed green label"
+    - "ribbed white screw collar under the trigger"
+    - "foam/bubble pattern on the packaging"
+  shape_details:
+    - "curved ergonomic bottle body, wider at the base and narrower at the neck"
+    - "large white trigger sprayer with long angled nozzle"
+    - "front label includes product name, small kitchen-grease image panel, icons, and net volume"
+  logo_position: "black NUAN logo near the top of the green label and box front"
+
+selling_points:
+  - "heavy duty kitchen grease cleaner"
+  - "targets grease stains on stovetops and range hoods"
+  - "also shown for ovens, trays, countertops, appliances, sinks, car interiors, sofas, and general home surfaces"
+  - "spray, wait, and wipe workflow"
+  - "foaming action shown dissolving greasy residue"
+  - "peach scent variant"
+  - "multi-surface cleaner, but spot test first"
+
+usage_scenes:
+  primary:
+    - "spraying foam directly onto greasy stovetop burner area"
+    - "wiping a cleaned stovetop with a cloth or sponge"
+    - "cleaning range hood grease"
+    - "cleaning oven or baking tray residue"
+  secondary:
+    - "kitchen sink and countertop cleaning"
+    - "appliance surface cleaning"
+    - "car interior or sofa surface spot-cleaning with caution"
+
+image_reference_audit:
+  - file: "6f42cf3966754d4bb69608db57635086~tplv-fhlh96nyum-origin-jpeg.jpeg"
+    role: "vertical product and use-case poster"
+    useful_for:
+      - "bottle shape, green label, NUAN branding, peach scent badge, 500 ml capacity"
+      - "kitchen range hood, stove, tray, and oven application scenes"
+    risks:
+      - "heavy poster text"
+      - "many inset panels"
+      - "AI generation may copy unreadable typography"
+  - file: "058982ac3f004ea6a2480e0e37996f56~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "two-bottle sales poster"
+    useful_for:
+      - "two-bottle pack presentation"
+      - "green label, peach scent icon, greasy appliance/stove/tray use references"
+    risks:
+      - "busy background, text blocks, and floating callouts"
+  - file: "1074ea68b08347a790d8415c650196ba~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "formula and packaging explanation poster"
+    useful_for:
+      - "green box design"
+      - "bottle held in hand while spraying"
+      - "foam and grease breakdown concept"
+    risks:
+      - "diagram text and pseudo-scientific claims can distort in generated images"
+  - file: "bf5536bad1b7435d9b46fb55e958dbbd~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "before-after cleaning poster"
+    useful_for:
+      - "range hood and stovetop cleaning result scenes"
+      - "product on kitchen counter"
+    risks:
+      - "before/after labels and comparison layout should be avoided unless explicitly needed"
+  - file: "0f84055418944e2c8583a2df2e7899fe~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "how-to-use poster"
+    useful_for:
+      - "spray, wait, wipe sequence"
+      - "box and bottle together in kitchen setting"
+    risks:
+      - "large instructional text and step labels"
+  - file: "af89a7181bb84ce8b6bb2bf7e4218f54~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "clean product kit image"
+    useful_for:
+      - "box, spray bottle, gloves, and blue cloth on a white background"
+      - "best reference for a clean packshot"
+    risks:
+      - "front label contains small text; avoid asking generation to reproduce every line exactly"
+  - file: "b9fb11bf26834535831c663cd5c2431b~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "multi-surface cleaner poster"
+    useful_for:
+      - "two bottles plus box"
+      - "secondary surface categories: car interior, sofa, sink"
+    risks:
+      - "large headline text and circular insets; spot-test warning should not be copied as graphic text"
+
+generation_guidance:
+  keep:
+    - "white trigger spray bottle"
+    - "bright green NUAN Heavy Duty Degreaser label"
+    - "green retail box when showing full kit"
+    - "peach scent badge or peach icon"
+    - "500 ml / 17.6 fl oz scale cue"
+    - "foam on greasy kitchen surfaces"
+    - "optional gloves and blue microfiber cloth in kit image"
+  avoid:
+    - "large poster headlines"
+    - "step-by-step typography"
+    - "before-after split graphics"
+    - "crowded inset circles"
+    - "inventing unrelated brands"
+    - "adding extra bottles unless a multipack image is requested"
+    - "claim-heavy medical, disinfectant, or bleach language"
+
+image_prompts:
+  white_background_packshot: "Create a clean e-commerce packshot on a pure white background for NUAN Heavy Duty Degreaser kitchen spray. Show one white plastic trigger spray bottle with a large white nozzle, ribbed white collar, curved ergonomic bottle body, and a bright green front label with the black NUAN logo, bold Heavy Duty Degreaser product name, small peach scent badge, orange footer, and 500 ml / 17.6 fl oz scale cue. Place the matching green retail box slightly behind the bottle at a three-quarter angle, with foam/bubble graphics and a small oven-grease image panel. Optional accessories: one folded blue microfiber cloth and a pair of white disposable gloves neatly placed to the side. Studio lighting, sharp shadows, realistic plastic and glossy label texture. No poster layout, no large headline text, no callout bubbles, no extra brands."
+  product_detail_collage: "Create a premium product-detail image for NUAN Heavy Duty Degreaser spray, arranged as a clean catalog composition rather than an advertising poster. Center the white trigger spray bottle and green box, then add three small close-up detail windows showing: the angled white trigger nozzle spraying fine foam, the ribbed white collar and ergonomic bottle neck, and the green label with NUAN branding, peach scent badge, orange footer, and 500 ml / 17.6 fl oz area. Use a white or very light gray background, realistic reflections, crisp product edges, and controlled spacing. Keep any label text minimal and believable; do not include giant instructional words, step numbers, before-after captions, or messy promotional typography."
+  realistic_usage_scene: "Create a realistic American home kitchen cleaning scene featuring NUAN Heavy Duty Degreaser. A hand holds the recognizable white trigger spray bottle with green NUAN Heavy Duty Degreaser label and sprays foaming cleaner onto a greasy stovetop near burner grates, with a range hood and light countertop in the background. Show dissolved grease and white foam on the surface, plus a folded blue microfiber cloth nearby ready for wiping. Product label should be visible enough to recognize the white bottle, green label, black NUAN logo, peach scent badge, and orange footer. Natural daylight, practical kitchen realism, no poster text, no before-after split, no floating icons, no exaggerated chemical smoke."

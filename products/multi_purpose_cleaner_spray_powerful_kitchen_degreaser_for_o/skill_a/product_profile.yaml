@@ -1,0 +1,149 @@
+sku_id: "Multi-Purpose Cleaner Spray Powerful Kitchen Degreaser for Oven Stove Range Hood"
+product_name: "XISHUN Multi-Purpose Cleaner Spray / Kitchen Grease Cleaner"
+category: "multi-purpose kitchen degreaser spray"
+source_folder: "E:/test001/Multi-Purpose Cleaner Spray Powerful Kitchen Degreaser for Oven Stove Range Hood/"
+output_folder: "E:/test001-1/product_reference_pack/Multi-Purpose Cleaner Spray Powerful Kitchen Degreaser for Oven Stove Range Hood/"
+
+source_text:
+  title: "Multi-Purpose Cleaner Spray Powerful Kitchen Degreaser for Oven Stove Range Hood & Sink Effective Cleaning Solution"
+  claims:
+    - "Ideal for kitchen surfaces including ovens, stoves, range hoods, and sinks"
+    - "Removes stubborn grease and grime"
+    - "Spray and wipe cleaning workflow"
+    - "Multi-purpose use across kitchen surfaces"
+
+product_identity:
+  brand: "XISHUN"
+  visible_label_names:
+    - "GREASE CLEANER"
+    - "HEAVY OIL CLEANER STAIN"
+    - "MULTI-PURPOSE CLEANER"
+  form_factor: "white plastic trigger spray bottle"
+  capacity: "500 ml"
+  packaging:
+    - "white bottle with yellow-orange front label"
+    - "yellow rectangular retail box with blue product text"
+  product_positioning: "powerful kitchen degreaser for grease, grime, range hoods, ovens, stove tops, sinks, counters, cookware exteriors, and grill racks"
+
+visual_identity:
+  primary_colors:
+    - "white bottle and white trigger nozzle"
+    - "bright yellow to orange label field"
+    - "deep blue product lettering"
+  accent_colors:
+    - "red XISHUN brand badge"
+    - "red horizontal stripe across the label"
+    - "small green leaf accents"
+    - "small surface-use icons"
+  material_finish:
+    - "matte smooth white plastic bottle"
+    - "glossy printed label"
+    - "ribbed white screw collar under the sprayer"
+  shape_details:
+    - "tall white trigger sprayer with long horizontal nozzle"
+    - "narrow neck with ribbed collar"
+    - "bottle has molded ergonomic side grooves"
+    - "wide rectangular lower body with rounded shoulders"
+    - "front label is rounded rectangle with yellow/orange gradient and bold blue all-caps product name"
+  logo_position: "small red XISHUN oval badge near the top center of the front label"
+
+selling_points:
+  - "cuts through tough kitchen grease"
+  - "for oven, stove, range hood, sink, countertop, backsplash, cookware exterior, grill racks, stainless steel, glass stove top, granite, terrazzo, and ceramic surfaces"
+  - "spray-and-wipe convenience"
+  - "shown with fast-acting degreasing effect"
+  - "shown as safe for kitchen surfaces in source posters"
+  - "visual before-after cleaning results appear across several references"
+
+usage_scenes:
+  primary:
+    - "spraying cleaner onto a greasy kitchen sink"
+    - "spraying cleaner inside a dirty oven or microwave"
+    - "cleaning a greasy stovetop"
+    - "cleaning range hood filter grease"
+  secondary:
+    - "grill rack cleaning"
+    - "cookware exterior stain removal"
+    - "countertop and backsplash spot cleaning"
+
+image_reference_audit:
+  - file: "65f8ef8a748440da8e73a2c9b36f8e3e~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "clean white-background bottle reference"
+    useful_for:
+      - "bottle silhouette"
+      - "white trigger, ribbed collar, molded side grip"
+      - "yellow-orange label with blue GREASE CLEANER text and red XISHUN badge"
+    risks:
+      - "small label text may become distorted if copied too literally"
+  - file: "26e75bbd449946f29cc2977a1fa482cc~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "kitchen degreaser sales poster"
+    useful_for:
+      - "bottle in kitchen context"
+      - "water splash, icons, before-after range hood filter"
+      - "powerful kitchen degreaser positioning"
+    risks:
+      - "large poster text, icons, and comparison blocks"
+  - file: "2a82afe6b3d44b9eb96f76c04b3d951b~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "outdoor grill application poster"
+    useful_for:
+      - "grill rack and greasy tool cleaning use case"
+      - "bottle overlay placement"
+    risks:
+      - "poster wave banner and large use-on typography"
+  - file: "884b29cb3b5a435597e9441650b378f8~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "before-after stove and range hood poster"
+    useful_for:
+      - "dirty-to-clean range hood and stovetop visual result"
+    risks:
+      - "comparison layout and large labels should not be copied into clean generated images"
+  - file: "590e256367f0419c974b6354799e54ec~tplv-fhlh96nyum-resize-webp_685_685.webp"
+    role: "sink spraying scene with yellow box"
+    useful_for:
+      - "spraying into a dirty kitchen sink"
+      - "yellow retail box design"
+      - "surface list: oven, stove, range hood, sink, countertop, backsplash, cookware exterior"
+    risks:
+      - "large headline and surface pill labels"
+  - file: "d08f19597dbf48f29764a44bdd87322e~tplv-fhlh96nyum-resize-webp_685_685.webp"
+    role: "oven or microwave interior spraying scene"
+    useful_for:
+      - "handheld spray action"
+      - "dirty oven/microwave grease scene"
+    risks:
+      - "large headline text and oversized product placement"
+  - file: "58480e34d76f4d7ca5aeb296d585381f~tplv-fhlh96nyum-resize-webp_685_685.webp"
+    role: "sink before-after comparison poster"
+    useful_for:
+      - "sink cleaning result and bottle-in-hand scale"
+      - "box on counter"
+    risks:
+      - "before-after split and text claims"
+  - file: "1ccd5e8df4bc41dc95077cb2ec2455aa~tplv-fhlh96nyum-resize-webp_685_685.webp"
+    role: "product and box near sink"
+    useful_for:
+      - "alternate label text: HEAVY OIL CLEANER STAIN"
+      - "yellow box and bottle placed beside sink"
+    risks:
+      - "label naming inconsistency; generated image should prioritize clear visual identity over exact copy"
+
+generation_guidance:
+  keep:
+    - "white trigger spray bottle with molded side grooves"
+    - "yellow-orange label"
+    - "blue all-caps Grease Cleaner / Heavy Oil Cleaner style lettering"
+    - "small red XISHUN badge"
+    - "white ribbed screw collar"
+    - "yellow retail box when showing full pack"
+    - "kitchen grease, sink, stovetop, range hood, oven, or grill cleaning use context"
+  avoid:
+    - "large poster headlines"
+    - "before-after split graphics"
+    - "floating icon columns"
+    - "busy yellow wave banners"
+    - "unreadable dense label text"
+    - "claiming disinfectant, bleach, medical, or food-safe properties not shown by reliable product labeling"
+
+image_prompts:
+  white_background_packshot: "Create a clean e-commerce packshot on a pure white background for XISHUN multi-purpose kitchen grease cleaner spray. Show one white plastic trigger spray bottle with a long white nozzle, ribbed white collar, molded ergonomic side grooves, and a wide rounded lower body. The front label should be a rounded rectangle with a bright yellow-to-orange gradient, bold deep-blue GREASE CLEANER style lettering, a small red XISHUN oval badge near the top, a red horizontal stripe, small surface-use icons, and a 500 ml scale cue. Place the matching yellow rectangular retail box slightly behind the bottle at a three-quarter angle, with blue multi-purpose cleaner lettering and small kitchen surface panels. Studio lighting, realistic plastic texture, crisp label edges, subtle shadow. No poster headline, no floating icons, no before-after comparison, no extra brands."
+  product_detail_collage: "Create a polished product-detail catalog image for a XISHUN kitchen degreaser spray. Center the white trigger bottle and yellow box on a light gray studio background, then add three neat close-up detail panels showing: the white trigger nozzle spraying a fine mist, the ribbed screw collar and molded side-grip bottle shape, and the yellow-orange label with blue GREASE CLEANER lettering, red XISHUN badge, red stripe, small surface icons, and 500 ml mark. Keep the composition clean and premium, with realistic reflections and sharp edges. Use only minimal readable label text; avoid large advertising headlines, before-after labels, surface-list pills, and cluttered poster graphics."
+  realistic_usage_scene: "Create a realistic kitchen cleaning scene featuring the XISHUN multi-purpose grease cleaner spray. A hand holds the recognizable white trigger bottle with yellow-orange label, blue GREASE CLEANER lettering, and red XISHUN badge, spraying cleaner into a greasy stainless-steel kitchen sink or onto a greasy stovetop edge. Show visible grease residue beginning to dissolve, light mist from the nozzle, and a clean cloth nearby for wiping. Include the yellow retail box on the counter in the background if it fits naturally. Bright American home kitchen, natural daylight, practical realism, no giant text, no before-after split, no floating icons, no exaggerated chemical smoke."
