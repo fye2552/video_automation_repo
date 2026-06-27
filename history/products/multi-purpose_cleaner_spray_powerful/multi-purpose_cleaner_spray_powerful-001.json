@@ -1,0 +1,118 @@
+{
+  "script_id": "multi-purpose_cleaner_spray_powerful-001",
+  "product_id": "multi-purpose_cleaner_spray_powerful",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multi-purpose_cleaner_spray_powerful",
+  "product_folder": "products/multi-purpose_cleaner_spray_powerful",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multi-purpose_cleaner_spray_powerful-001",
+    "product_id": "multi-purpose_cleaner_spray_powerful",
+    "angle": "Stop scrubbing greasy kitchen zones with the same dirty sponge and switch to a spray-and-wipe degreasing routine across sink, stovetop, and range hood filter.",
+    "hook": "Still scrubbing sticky kitchen grease with just a wet sponge?",
+    "structure_signature": "wrong_scrub_conflict_spray_solution_three_zone_fastcuts_soft_cta",
+    "scene_order": [
+      "greasy_sink_sponge_struggle",
+      "product_spray_and_wipe_sink_result",
+      "stovetop_edge_grease_fast_cut",
+      "range_hood_filter_fast_cut",
+      "oven_door_final_wipe_cta"
+    ],
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "language": "English",
+      "pain_point": "Kitchen grease spreads when someone keeps rubbing it with a damp sponge, making the sink, stove edge, and range hood feel sticky instead of clean.",
+      "conflict_hook": "Close-up of a hand scrubbing a greasy stainless-steel sink with a soaked sponge; yellowish grease smears across the surface instead of lifting away.",
+      "product_solution": "Bring in the XISHUN Multi-Purpose Cleaner Spray and show a direct spray-and-wipe routine that loosens visible grease residue on kitchen surfaces.",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "痛点冲突",
+          "scene": "Tight handheld close-up in a bright American kitchen: a person aggressively scrubs a greasy stainless-steel sink corner with a damp sponge. The grease smears wider, the sponge looks dirty, and the hand pauses in frustration. Product is not shown yet.",
+          "spoken_line": "Still scrubbing sticky kitchen grease with just a wet sponge?",
+          "on_screen_text": "Grease just smears?"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "The XISHUN white trigger spray bottle enters frame beside the sink. Show the recognizable white nozzle, ribbed collar, molded side grooves, yellow-orange label, blue GREASE CLEANER lettering, and red XISHUN badge. The hand sprays a fine mist directly onto greasy sink residue, then wipes once with a clean cloth as grime starts lifting.",
+          "spoken_line": "Spray XISHUN Grease Cleaner, then wipe it away.",
+          "on_screen_text": "Spray. Wait. Wipe."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Fast-cut sink result: close-up wipe reveals a cleaner stainless-steel sink edge with the product bottle standing upright nearby. Keep the yellow retail box softly visible on the counter in the background. No before-after split, just continuous realistic wiping.",
+          "spoken_line": "It helps cut through the greasy buildup fast.",
+          "on_screen_text": "Sink grease cleanup"
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Different surface: greasy stovetop edge and backsplash. The bottle stays central in hand, label facing camera. A fine mist lands on oily splatter near a burner area, then a cloth wipes through the residue, leaving the surface visibly cleaner and less sticky.",
+          "spoken_line": "Use it around the stove where oil splatter collects.",
+          "on_screen_text": "Stove + backsplash"
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Range hood filter or oven door area: the hand sprays the cleaner onto greasy metal ridges, waits a beat, then wipes with a folded cloth. The product remains on the counter in the foreground between wipes, matching the reference identity exactly.",
+          "spoken_line": "One bottle for the spots that get greasy every week.",
+          "on_screen_text": "Range hood grease"
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Final clean kitchen counter shot: XISHUN bottle and yellow box placed beside a clean sink and cloth. Natural daylight, realistic home kitchen, no exaggerated shine or chemical smoke.",
+          "spoken_line": "Make kitchen cleanup feel easier.",
+          "on_screen_text": "Check it out today."
+        }
+      ],
+      "cta": "Make kitchen cleanup feel easier.",
+      "dedupe_key": "wet_sponge_smear_sink_to_stove_to_rangehood_spray_wipe"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multi-purpose_cleaner_spray_powerful-001-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multi-purpose_cleaner_spray_powerful/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video for the US market. Use the provided product reference images as the exact product identity. Product: XISHUN Multi-Purpose Cleaner Spray / Kitchen Grease Cleaner, a white plastic trigger spray bottle with long white nozzle, ribbed white screw collar, molded ergonomic side grooves, wide rounded lower body, yellow-orange front label, bold blue GREASE CLEANER style lettering, small red XISHUN badge near the top, red horizontal stripe, small surface-use icons, and matching yellow retail box when naturally visible. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.\n\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Start with a tight handheld close-up in a bright American home kitchen: a hand scrubs a greasy stainless-steel sink corner with only a wet sponge. Yellowish grease smears wider instead of lifting away, the sponge looks dirty, and the hand pauses in frustration. Do not show the product yet. Spoken hook: “Still scrubbing sticky kitchen grease with just a wet sponge?” Optional small on-screen text: “Grease just smears?”\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. The XISHUN bottle enters frame beside the sink, label facing camera. Show the white nozzle, ribbed collar, molded side grooves, yellow-orange label, blue GREASE CLEANER lettering, and red XISHUN badge clearly. The hand sprays a fine mist onto the greasy sink residue, waits a beat, then wipes once with a clean cloth as grime begins lifting. Spoken line: “Spray XISHUN Grease Cleaner, then wipe it away.” Optional text: “Spray. Wait. Wipe.”\n6-10s: Fast-cut scene 1 showing the first clear result. Continue on the sink: a close-up wipe reveals a cleaner stainless-steel sink edge. Keep the product bottle standing upright nearby and the yellow retail box softly visible on the counter if it fits naturally. Spoken line: “It helps cut through the greasy buildup fast.” Optional text: “Sink grease cleanup.”\n\nDo not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, realistic, and product-focused. No giant poster headlines, no before-after split graphics, no floating icon columns, no exaggerated chemical smoke, no disinfectant or bleach claims, no food-safe claims. Natural daylight, practical home kitchen realism, vertical 9:16, quick UGC handheld energy.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multi-purpose_cleaner_spray_powerful-001-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multi-purpose_cleaner_spray_powerful/images/product_function.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. This segment should feel like the continuation of the previous 10-second segment: same bright American kitchen, same practical UGC handheld pacing, same product identity, and same spray-and-wipe usage logic. Use the provided product reference images as the exact product identity. Product: XISHUN Multi-Purpose Cleaner Spray / Kitchen Grease Cleaner, a white plastic trigger spray bottle with long white nozzle, ribbed white screw collar, molded ergonomic side grooves, wide rounded lower body, yellow-orange front label, bold blue GREASE CLEANER style lettering, small red XISHUN badge near the top, red horizontal stripe, small surface-use icons, and matching yellow retail box when naturally visible. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.\n\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment. Show a greasy stovetop edge and nearby backsplash with visible oil splatter. The XISHUN bottle stays central in hand, label facing camera. A fine mist sprays onto oily residue near the burner area, then a cloth wipes through the residue, leaving the surface visibly cleaner and less sticky. Spoken line: “Use it around the stove where oil splatter collects.” Optional small on-screen text: “Stove + backsplash.”\n4-8s: Fast-cut scene 3 showing final result, cleanliness, or improved usage. Move to a range hood filter or oven door area with greasy metal ridges. The hand sprays the cleaner, waits a beat, then wipes with a folded cloth. Keep the product visible on the counter in the foreground between wipes. Spoken line: “One bottle for the spots that get greasy every week.” Optional small on-screen text: “Range hood grease.”\n8-10s: Short CTA. Final clean kitchen counter shot: the XISHUN bottle and yellow retail box placed beside a clean sink and cloth, natural daylight, realistic tidy kitchen. Spoken CTA: “Make kitchen cleanup feel easier.” Optional small on-screen text: “Check it out today.”\n\nKeep the same product identity, visual style, pacing, and usage logic. No giant poster headlines, no before-after split graphics, no floating icon columns, no exaggerated chemical smoke, no disinfectant or bleach claims, no food-safe claims. Keep it realistic and product-focused, vertical 9:16.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multi-purpose_cleaner_spray_powerful-001-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multi-purpose_cleaner_spray_powerful/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video for the US market. Use the provided product reference images as the exact product identity. Product: XISHUN Multi-Purpose Cleaner Spray / Kitchen Grease Cleaner, a white plastic trigger spray bottle with long white nozzle, ribbed white screw collar, molded ergonomic side grooves, wide rounded lower body, yellow-orange front label, bold blue GREASE CLEANER style lettering, small red XISHUN badge near the top, red horizontal stripe, small surface-use icons, and matching yellow retail box when naturally visible. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.\n\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Start with a tight handheld close-up in a bright American home kitchen: a hand scrubs a greasy stainless-steel sink corner with only a wet sponge. Yellowish grease smears wider instead of lifting away, the sponge looks dirty, and the hand pauses in frustration. Do not show the product yet. Spoken hook: “Still scrubbing sticky kitchen grease with just a wet sponge?” Optional small on-screen text: “Grease just smears?”\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. The XISHUN bottle enters frame beside the sink, label facing camera. Show the white nozzle, ribbed collar, molded side grooves, yellow-orange label, blue GREASE CLEANER lettering, and red XISHUN badge clearly. The hand sprays a fine mist onto the greasy sink residue, waits a beat, then wipes once with a clean cloth as grime begins lifting. Spoken line: “Spray XISHUN Grease Cleaner, then wipe it away.” Optional text: “Spray. Wait. Wipe.”\n6-10s: Fast-cut scene 1 showing the first clear result. Continue on the sink: a close-up wipe reveals a cleaner stainless-steel sink edge. Keep the product bottle standing upright nearby and the yellow retail box softly visible on the counter if it fits naturally. Spoken line: “It helps cut through the greasy buildup fast.” Optional text: “Sink grease cleanup.”\n\nDo not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, realistic, and product-focused. No giant poster headlines, no before-after split graphics, no floating icon columns, no exaggerated chemical smoke, no disinfectant or bleach claims, no food-safe claims. Natural daylight, practical home kitchen realism, vertical 9:16, quick UGC handheld energy.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multi-purpose_cleaner_spray_powerful-001-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multi-purpose_cleaner_spray_powerful/images/product_function.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. This segment should feel like the continuation of the previous 10-second segment: same bright American kitchen, same practical UGC handheld pacing, same product identity, and same spray-and-wipe usage logic. Use the provided product reference images as the exact product identity. Product: XISHUN Multi-Purpose Cleaner Spray / Kitchen Grease Cleaner, a white plastic trigger spray bottle with long white nozzle, ribbed white screw collar, molded ergonomic side grooves, wide rounded lower body, yellow-orange front label, bold blue GREASE CLEANER style lettering, small red XISHUN badge near the top, red horizontal stripe, small surface-use icons, and matching yellow retail box when naturally visible. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.\n\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment. Show a greasy stovetop edge and nearby backsplash with visible oil splatter. The XISHUN bottle stays central in hand, label facing camera. A fine mist sprays onto oily residue near the burner area, then a cloth wipes through the residue, leaving the surface visibly cleaner and less sticky. Spoken line: “Use it around the stove where oil splatter collects.” Optional small on-screen text: “Stove + backsplash.”\n4-8s: Fast-cut scene 3 showing final result, cleanliness, or improved usage. Move to a range hood filter or oven door area with greasy metal ridges. The hand sprays the cleaner, waits a beat, then wipes with a folded cloth. Keep the product visible on the counter in the foreground between wipes. Spoken line: “One bottle for the spots that get greasy every week.” Optional small on-screen text: “Range hood grease.”\n8-10s: Short CTA. Final clean kitchen counter shot: the XISHUN bottle and yellow retail box placed beside a clean sink and cloth, natural daylight, realistic tidy kitchen. Spoken CTA: “Make kitchen cleanup feel easier.” Optional small on-screen text: “Check it out today.”\n\nKeep the same product identity, visual style, pacing, and usage logic. No giant poster headlines, no before-after split graphics, no floating icon columns, no exaggerated chemical smoke, no disinfectant or bleach claims, no food-safe claims. Keep it realistic and product-focused, vertical 9:16.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-27T19:59:14.478Z"
+}
