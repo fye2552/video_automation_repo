@@ -1,0 +1,142 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-002",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-002",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Dry paper towels just smear greasy cooking film around after frying; Liapu spray quickly cuts the slick residue across stovetop, backsplash, sink edge, and BBQ cleanup zones without a harsh leftover film.",
+    "hook": "That greasy film is not wiping off — it's just spreading.",
+    "structure_signature": "wrong_dry_towel_smear_to_spray_degrease_fastcut_stovetop_backsplash_sink_bbq_cta",
+    "scene_order": [
+      "pain_conflict_dry_towel_smearing_grease",
+      "product_solution_spray_breaks_down_oily_film",
+      "fast_cut_stovetop_and_backsplash_clean_result",
+      "fast_cut_sink_edge_and_bbq_side_shelf",
+      "final_product_hold_clean_counter_cta"
+    ],
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "language": "American English",
+      "pain_point": "After cooking greasy food, dry paper towels push oil around instead of removing the slick film from kitchen surfaces.",
+      "conflict_hook": "Close-up of a hand wiping a stovetop edge with a dry paper towel, leaving shiny grease streaks behind.",
+      "product_solution": "Bring in Liapu 500ml Kitchen Spray Cleaner & Degreaser, spray directly on the oily film, wait briefly, then wipe clean.",
+      "voiceover_script": {
+        "0-3s": "That greasy film is not wiping off — it's just spreading.",
+        "3-6s": "So I spray Liapu right on the oily spots.",
+        "6-10s": "A quick wipe, and the stovetop actually feels clean again.",
+        "10-14s": "I use it on the backsplash and sink edge too.",
+        "14-18s": "Even the BBQ side shelf gets that greasy layer gone.",
+        "18-20s": "Cleaner kitchen, lemon fresh. Check it out."
+      },
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "痛点冲突",
+          "scene": "Close-up handheld phone shot of a dry white paper towel dragging across a greasy stainless stovetop edge after frying. The towel leaves shiny yellowish grease streaks and oily fingerprints instead of cleaning it."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "Hand brings Liapu 500ml Kitchen Spray into frame, yellow label facing camera briefly, then sprays 2-3 pumps directly onto the slick greasy stovetop edge and nearby burner area."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Fast close-up wipe with a clean paper towel. The sprayed area changes from oily and streaky to clean, reflective stainless steel. Product remains standing nearby on the counter with label visible."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Fast cut to backsplash tile and sink rim with light cooking splatter. Liapu bottle is held near the area, spray lands on the spots, then a quick wipe reveals a clean, no-residue surface."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Fast cut to outdoor patio BBQ side shelf with greasy smudges. Product is placed safely on the shelf, label facing camera, then user wipes sprayed area clean, showing practical multi-surface cleanup."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Final handheld product hold in a clean kitchen. Liapu bottle centered, white body and yellow label visible, clean stovetop behind it. Light smile from ordinary home user, simple CTA voiceover."
+        }
+      ],
+      "cta": "Cleaner kitchen, lemon fresh. Check it out.",
+      "dedupe_key": "dry_towel_grease_smear_liapu_spray_stovetop_backsplash_sink_bbq_no_residue_cta",
+      "compliance_notes": [
+        "Does not start with product.",
+        "Uses real wrong behavior: dry towel smearing grease.",
+        "Avoids previous dish soap scrubbing angle.",
+        "Avoids previous microwave/cabinet/range hood scene order.",
+        "99.9% antibacterial claim omitted from this version to keep the fast-cut script focused and avoid visual claim clutter.",
+        "No invented product accessories or functions."
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-002-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "reference_images": [
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png"
+        ],
+        "promptText": "Create a 10-second vertical 9:16 realistic UGC-style ad video with fast handheld phone pacing in a modern American kitchen. Timeline: 0-3s pain conflict, 3-6s product solution, 6-10s fast-cut scene 1. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.\n\nScene style: natural home lighting, realistic handheld phone camera, close-up kitchen cleaning demonstration, no platform UI, no subtitles, no stickers, no text overlays, no watermarks.\n\nUse the provided product reference images as the exact product identity. The product is Liapu 500ml Kitchen Spray Cleaner & Degreaser: white smooth plastic cylindrical spray bottle, trigger sprayer mechanism with nozzle, translucent bottle showing liquid level, yellow front label centered on the bottle with the same layout and logo position. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, electronic parts, or exaggerated functions. Use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real spray-and-wipe usage. Do not invent new functions.\n\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Tight POV close-up of a hand wiping a greasy stainless steel stovetop edge with a dry white paper towel after cooking. Instead of cleaning it, the towel smears the grease into shiny yellowish streaks. The surface looks slick and frustrating, with oily fingerprints and cooking splatter visible. Spoken hook in American English: “That greasy film is not wiping off — it's just spreading.”\n\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. The same hand brings the Liapu spray bottle into frame from the side, briefly showing the front yellow label clearly facing the camera. Then the hand aims the trigger sprayer at the greasy stovetop edge and burner area and sprays 2-3 pumps. Fine mist lands directly on the oily film. The product remains visually consistent with the reference: white bottle, yellow front label, trigger sprayer, translucent body, correct proportions.\n\n6-10s: Fast-cut scene 1 showing the first clear result. Close-up wipe with a clean white paper towel across the sprayed area. The grease lifts away naturally without unrealistic effects. As the towel passes, the stainless steel surface becomes clean and reflective, with no obvious residue or chemical film. End this segment on the clean stovetop edge with the Liapu bottle standing nearby on the white countertop, yellow label visible but not as a polished studio product shot.\n\nNegative constraints: no split-screen before/after layout, no poster graphics, no floating labels, no germ icons, no percentage graphics, no overdramatic sparkle effects, no extra product parts, no altered packaging, no platform watermark, no generated captions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-002-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "reference_images": [
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+          "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png"
+        ],
+        "promptText": "Create a 10-second vertical 9:16 realistic UGC-style ad video. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Timeline: 0-4s fast-cut scene 2 in a different real-life usage area, 4-8s fast-cut scene 3 showing final cleanliness, 8-10s short CTA.\n\nScene style: realistic handheld phone footage, fast-cut home cleaning demonstration, natural American home environment, no platform UI, no subtitles, no stickers, no text overlays, no watermarks.\n\nUse the provided product reference images as the exact product identity. The product is Liapu 500ml Kitchen Spray Cleaner & Degreaser: white smooth plastic cylindrical spray bottle, trigger sprayer mechanism with nozzle, translucent bottle showing liquid level, yellow front label centered on the bottle with the same layout and logo position. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, electronic parts, or exaggerated functions. Use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real spray-and-wipe usage. Do not invent new functions.\n\n0-4s: Fast-cut scene 2 in the same kitchen but a different area. Show backsplash tile and the sink rim with light oily cooking splatter and smudges. The Liapu bottle is held in one hand, yellow label visible for a moment, then sprayed onto the backsplash spots and sink edge. Quick wipe with a cloth or paper towel reveals a clean surface with no visible residue. Product stays visible and central during the action. Voiceover: “I use it on the backsplash and sink edge too.”\n\n4-8s: Fast-cut scene 3 in a different real-life usage environment. Cut to an outdoor patio BBQ side shelf with realistic greasy smudges from grilling. Place the Liapu bottle upright on the BBQ side shelf or nearby outdoor counter with the yellow label facing camera. Spray the greasy shelf area and wipe it clean in a quick, natural motion. Show the cleaned shelf surface without exaggerated sparkle effects. Voiceover: “Even the BBQ side shelf gets that greasy layer gone.”\n\n8-10s: Short CTA. Cut back to the clean modern kitchen. Ordinary home user hand holds the Liapu bottle centered in frame, front label facing camera, clean stovetop softly visible in the background. Keep it casual, like a quick recommendation, not a studio commercial. Voiceover: “Cleaner kitchen, lemon fresh. Check it out.”\n\nNegative constraints: no split-screen before/after layout, no poster graphics, no floating labels, no germ icons, no percentage graphics, no overdramatic sparkle effects, no extra product parts, no altered packaging, no platform watermark, no generated captions, no claims shown as on-screen text.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-002-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "reference_images": [
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png"
+      ],
+      "promptText": "Create a 10-second vertical 9:16 realistic UGC-style ad video with fast handheld phone pacing in a modern American kitchen. Timeline: 0-3s pain conflict, 3-6s product solution, 6-10s fast-cut scene 1. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.\n\nScene style: natural home lighting, realistic handheld phone camera, close-up kitchen cleaning demonstration, no platform UI, no subtitles, no stickers, no text overlays, no watermarks.\n\nUse the provided product reference images as the exact product identity. The product is Liapu 500ml Kitchen Spray Cleaner & Degreaser: white smooth plastic cylindrical spray bottle, trigger sprayer mechanism with nozzle, translucent bottle showing liquid level, yellow front label centered on the bottle with the same layout and logo position. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, electronic parts, or exaggerated functions. Use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real spray-and-wipe usage. Do not invent new functions.\n\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Tight POV close-up of a hand wiping a greasy stainless steel stovetop edge with a dry white paper towel after cooking. Instead of cleaning it, the towel smears the grease into shiny yellowish streaks. The surface looks slick and frustrating, with oily fingerprints and cooking splatter visible. Spoken hook in American English: “That greasy film is not wiping off — it's just spreading.”\n\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. The same hand brings the Liapu spray bottle into frame from the side, briefly showing the front yellow label clearly facing the camera. Then the hand aims the trigger sprayer at the greasy stovetop edge and burner area and sprays 2-3 pumps. Fine mist lands directly on the oily film. The product remains visually consistent with the reference: white bottle, yellow front label, trigger sprayer, translucent body, correct proportions.\n\n6-10s: Fast-cut scene 1 showing the first clear result. Close-up wipe with a clean white paper towel across the sprayed area. The grease lifts away naturally without unrealistic effects. As the towel passes, the stainless steel surface becomes clean and reflective, with no obvious residue or chemical film. End this segment on the clean stovetop edge with the Liapu bottle standing nearby on the white countertop, yellow label visible but not as a polished studio product shot.\n\nNegative constraints: no split-screen before/after layout, no poster graphics, no floating labels, no germ icons, no percentage graphics, no overdramatic sparkle effects, no extra product parts, no altered packaging, no platform watermark, no generated captions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-002-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "reference_images": [
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+        "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png"
+      ],
+      "promptText": "Create a 10-second vertical 9:16 realistic UGC-style ad video. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Timeline: 0-4s fast-cut scene 2 in a different real-life usage area, 4-8s fast-cut scene 3 showing final cleanliness, 8-10s short CTA.\n\nScene style: realistic handheld phone footage, fast-cut home cleaning demonstration, natural American home environment, no platform UI, no subtitles, no stickers, no text overlays, no watermarks.\n\nUse the provided product reference images as the exact product identity. The product is Liapu 500ml Kitchen Spray Cleaner & Degreaser: white smooth plastic cylindrical spray bottle, trigger sprayer mechanism with nozzle, translucent bottle showing liquid level, yellow front label centered on the bottle with the same layout and logo position. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, electronic parts, or exaggerated functions. Use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real spray-and-wipe usage. Do not invent new functions.\n\n0-4s: Fast-cut scene 2 in the same kitchen but a different area. Show backsplash tile and the sink rim with light oily cooking splatter and smudges. The Liapu bottle is held in one hand, yellow label visible for a moment, then sprayed onto the backsplash spots and sink edge. Quick wipe with a cloth or paper towel reveals a clean surface with no visible residue. Product stays visible and central during the action. Voiceover: “I use it on the backsplash and sink edge too.”\n\n4-8s: Fast-cut scene 3 in a different real-life usage environment. Cut to an outdoor patio BBQ side shelf with realistic greasy smudges from grilling. Place the Liapu bottle upright on the BBQ side shelf or nearby outdoor counter with the yellow label facing camera. Spray the greasy shelf area and wipe it clean in a quick, natural motion. Show the cleaned shelf surface without exaggerated sparkle effects. Voiceover: “Even the BBQ side shelf gets that greasy layer gone.”\n\n8-10s: Short CTA. Cut back to the clean modern kitchen. Ordinary home user hand holds the Liapu bottle centered in frame, front label facing camera, clean stovetop softly visible in the background. Keep it casual, like a quick recommendation, not a studio commercial. Voiceover: “Cleaner kitchen, lemon fresh. Check it out.”\n\nNegative constraints: no split-screen before/after layout, no poster graphics, no floating labels, no germ icons, no percentage graphics, no overdramatic sparkle effects, no extra product parts, no altered packaging, no platform watermark, no generated captions, no claims shown as on-screen text.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-27T19:48:51.604Z"
+}
