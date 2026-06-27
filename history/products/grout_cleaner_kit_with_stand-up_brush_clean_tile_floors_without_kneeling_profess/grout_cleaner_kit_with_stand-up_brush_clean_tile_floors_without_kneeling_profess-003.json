@@ -1,0 +1,134 @@
+{
+  "script_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003",
+  "product_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "product_folder": "products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003",
+    "product_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+    "angle": "General spray-and-wipe cleaning makes grout look wet for a second but leaves the dark lines behind; target the grout directly with the V-shaped brush and professional-strength formula.",
+    "hook": "If your grout only looks clean while it’s wet, this is the problem.",
+    "structure_signature": "wet_grout_fake_clean_targeted_formula_vbrush_mudroom_shower_kitchen_cta",
+    "scene_order": [
+      "scene_01_wet_grout_still_dark_closeup",
+      "scene_02_formula_hits_grout_line_vbrush_replaces_wipe",
+      "scene_03_mudroom_grout_first_result",
+      "scene_04_shower_threshold_fast_cut",
+      "scene_05_kitchen_walkthrough_final_cta",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "pain_point": "Wiping tile with general cleaner makes the floor look temporarily wet and shiny, but the embedded grime in the grout lines remains dark after it dries.",
+      "conflict_hook": "Close-up of a hand spraying ordinary cleaner and wiping across tile with a paper towel; the tile surface shines, but the grout line stays dark and streaky.",
+      "product_solution": "Bring in the white Grout-eez bottle with red and blue label and the bright blue V-shaped grout brush head with dense white bristles; apply cleaner to the grout line, wait briefly, then scrub the line directly while standing with the brush attached to a standard threaded pole.",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "痛点冲突",
+          "scene": "Tight vertical close-up on a ceramic tile floor near a sink. A hand sprays regular cleaner and wipes across the tile with a paper towel. The tile looks wet and shiny, but the grout line underneath remains dark. Spoken hook: “If your grout only looks clean while it’s wet, this is the problem.” On-screen text: “Tile looks clean… grout doesn’t.”"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "Quick cut: the Grout Cleaner Kit enters the same scene. Show the exact white 32 oz Grout-eez bottle with red and blue label beside the bright blue V-shaped brush head with white bristles. Cleaner is applied along the grout line, then the V-shaped bristles settle directly into the line and start scrubbing. Voiceover: “Stop wiping over it. Target the grout line.”"
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Mudroom or entry tile floor close-up. Fast scrubbing motion along one dirty grout line. The brush head stays central, blue plastic and white bristles visible, moving in short controlled passes. Cut to a cleaner line beside still-dirty nearby lines for clear contrast without exaggerated effects."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Bathroom shower threshold or porcelain bathroom floor angle. Product bottle visible in the background, brush head in the foreground following the grout channel. Show the angled threaded socket and V-shape helping the bristles stay in the line while maneuvering around the tile edge."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Kitchen tile floor final pass. User stands upright and guides the brush across a straight grout line with a plain standard threaded pole attached. Quick mop-up shot after scrubbing. The floor looks noticeably fresher, grout lines cleaner, product still visible nearby."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Simple final product-and-result shot: the Grout-eez bottle and blue V-shaped brush head placed beside the cleaned ceramic tile grout. On-screen text and voiceover: “Clean the line, not just the tile.” CTA: “Check it out today.”"
+        }
+      ],
+      "cta": "Check it out today.",
+      "dedupe_key": "wet_grout_fake_clean_general_spray_wipe_target_grout_vbrush_entry_shower_kitchen",
+      "spoken_voiceover": [
+        "If your grout only looks clean while it’s wet, this is the problem.",
+        "Stop wiping over it. Target the grout line.",
+        "The formula goes where the grime is, and the V-shaped brush gets into the line.",
+        "Stand up, scrub the grout, and bring the floor back to clean.",
+        "Clean the line, not just the tile. Check it out today."
+      ],
+      "on_screen_text": [
+        "Tile looks clean… grout doesn’t.",
+        "Target the grout line.",
+        "V-shaped brush reaches into the line.",
+        "Stand-up scrubbing.",
+        "Clean the line, not just the tile."
+      ],
+      "product_claims_to_include": [
+        "professional-strength grout cleaner",
+        "V-shaped brush reaches deeper into grout lines",
+        "stand-up cleaning without kneeling",
+        "safe for ceramic and porcelain tile",
+        "not for natural stone"
+      ],
+      "product_claims_to_avoid": [
+        "safe for natural stone",
+        "instant no-scrub miracle results",
+        "included pole",
+        "disinfecting or sanitizing claims",
+        "scratch-proof guarantee"
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess/skill_a/reference_images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video for the Grout Cleaner Kit with Stand-Up Brush. Use the provided product reference images as the exact product identity: white 32 oz Grout-eez cleaner bottle with red and blue front label, ribbed white neck and white cap, bright blue V-shaped grout brush head, angled blue threaded socket, dense white twisted nylon bristles, brush head wider than the bottle. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions. Product is for ceramic and porcelain tile grout, not natural stone.\n\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Start with a close-up of a ceramic tile floor near a sink. A hand sprays ordinary general cleaner and wipes across the tile with a paper towel. The tile surface becomes wet and shiny, but the grout line remains dark and streaky. Do not show the product yet. Spoken hook: “If your grout only looks clean while it’s wet, this is the problem.” On-screen text: “Tile looks clean… grout doesn’t.”\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. Bring the exact Grout-eez bottle and blue V-shaped brush head into the same floor scene. Apply cleaner directly along the dark grout line, then place the V-shaped white bristles into the grout channel and begin short scrubbing strokes. Voiceover: “Stop wiping over it. Target the grout line.” Keep product central and realistic.\n6-10s: Fast-cut scene 1 showing the first clear result. Move to a mudroom or entry tile floor close-up. The bright blue brush head scrubs along one dirty grout line with controlled fast passes. Show the cleaned line beside nearby darker grout lines for believable contrast. Keep the product visible and central.\n\nDo not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, realistic, and product-focused. No natural stone surfaces. No claims of instant no-scrub results. No included pole claim; if a pole is visible, it should be a plain standard threaded pole used only to demonstrate compatibility.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess/skill_a/reference_images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video as the continuation of the previous segment for the Grout Cleaner Kit with Stand-Up Brush. Use the provided product reference images as the exact product identity: white 32 oz Grout-eez cleaner bottle with red and blue front label, ribbed white neck and white cap, bright blue V-shaped grout brush head, angled blue threaded socket, dense white twisted nylon bristles, brush head wider than the bottle. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions. Product is for ceramic and porcelain tile grout, not natural stone.\n\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment. Show a bathroom shower threshold or porcelain bathroom floor angle. The Grout-eez bottle is visible in the background while the bright blue V-shaped brush head stays in the foreground, following the grout channel. Show the angled threaded socket and the V-shaped white bristles sitting in the grout line as the user maneuvers around a tile edge. Voiceover: “The brush stays in the line, so you’re not just pushing cleaner over the tile.”\n4-8s: Fast-cut scene 3 showing final result, comfort, cleanliness, or improved usage. Cut to a kitchen ceramic tile floor. The user stands upright and guides the brush along a straight grout line with a plain standard threaded pole attached, demonstrating stand-up cleaning without kneeling. Quick mop-up shot after scrubbing. The floor looks fresher and the grout line visibly cleaner, with the exact bottle and brush still visible nearby.\n8-10s: Short CTA. Final product-and-result shot: the white Grout-eez bottle with red and blue label and the bright blue V-shaped brush head are placed beside cleaned ceramic tile grout. On-screen text: “Clean the line, not just the tile.” Voiceover CTA: “Check it out today.”\n\nThis segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Keep the product central. No natural stone surfaces. No included pole claim; the pole is only a plain standard threaded pole used to demonstrate compatibility. Avoid exaggerated miracle effects, extra accessories, new packaging, buttons, lights, or unrelated cleaning tools.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess/skill_a/reference_images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video for the Grout Cleaner Kit with Stand-Up Brush. Use the provided product reference images as the exact product identity: white 32 oz Grout-eez cleaner bottle with red and blue front label, ribbed white neck and white cap, bright blue V-shaped grout brush head, angled blue threaded socket, dense white twisted nylon bristles, brush head wider than the bottle. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions. Product is for ceramic and porcelain tile grout, not natural stone.\n\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point. Start with a close-up of a ceramic tile floor near a sink. A hand sprays ordinary general cleaner and wipes across the tile with a paper towel. The tile surface becomes wet and shiny, but the grout line remains dark and streaky. Do not show the product yet. Spoken hook: “If your grout only looks clean while it’s wet, this is the problem.” On-screen text: “Tile looks clean… grout doesn’t.”\n3-6s: Quickly introduce the product as the direct solution and show the issue being fixed immediately. Bring the exact Grout-eez bottle and blue V-shaped brush head into the same floor scene. Apply cleaner directly along the dark grout line, then place the V-shaped white bristles into the grout channel and begin short scrubbing strokes. Voiceover: “Stop wiping over it. Target the grout line.” Keep product central and realistic.\n6-10s: Fast-cut scene 1 showing the first clear result. Move to a mudroom or entry tile floor close-up. The bright blue brush head scrubs along one dirty grout line with controlled fast passes. Show the cleaned line beside nearby darker grout lines for believable contrast. Keep the product visible and central.\n\nDo not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, realistic, and product-focused. No natural stone surfaces. No claims of instant no-scrub results. No included pole claim; if a pole is visible, it should be a plain standard threaded pole used only to demonstrate compatibility.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-003-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess/skill_a/reference_images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video as the continuation of the previous segment for the Grout Cleaner Kit with Stand-Up Brush. Use the provided product reference images as the exact product identity: white 32 oz Grout-eez cleaner bottle with red and blue front label, ribbed white neck and white cap, bright blue V-shaped grout brush head, angled blue threaded socket, dense white twisted nylon bristles, brush head wider than the bottle. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions. Product is for ceramic and porcelain tile grout, not natural stone.\n\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment. Show a bathroom shower threshold or porcelain bathroom floor angle. The Grout-eez bottle is visible in the background while the bright blue V-shaped brush head stays in the foreground, following the grout channel. Show the angled threaded socket and the V-shaped white bristles sitting in the grout line as the user maneuvers around a tile edge. Voiceover: “The brush stays in the line, so you’re not just pushing cleaner over the tile.”\n4-8s: Fast-cut scene 3 showing final result, comfort, cleanliness, or improved usage. Cut to a kitchen ceramic tile floor. The user stands upright and guides the brush along a straight grout line with a plain standard threaded pole attached, demonstrating stand-up cleaning without kneeling. Quick mop-up shot after scrubbing. The floor looks fresher and the grout line visibly cleaner, with the exact bottle and brush still visible nearby.\n8-10s: Short CTA. Final product-and-result shot: the white Grout-eez bottle with red and blue label and the bright blue V-shaped brush head are placed beside cleaned ceramic tile grout. On-screen text: “Clean the line, not just the tile.” Voiceover CTA: “Check it out today.”\n\nThis segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Keep the product central. No natural stone surfaces. No included pole claim; the pole is only a plain standard threaded pole used to demonstrate compatibility. Avoid exaggerated miracle effects, extra accessories, new packaging, buttons, lights, or unrelated cleaning tools.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-27T07:37:48.970Z"
+}
