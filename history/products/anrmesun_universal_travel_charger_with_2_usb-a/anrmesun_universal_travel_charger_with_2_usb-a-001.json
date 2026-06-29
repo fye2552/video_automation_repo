@@ -1,0 +1,237 @@
+{
+  "script_id": "anrmesun_universal_travel_charger_with_2_usb-a-001",
+  "product_id": "anrmesun_universal_travel_charger_with_2_usb-a",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/anrmesun_universal_travel_charger_with_2_usb-a",
+  "product_folder": "products/anrmesun_universal_travel_charger_with_2_usb-a",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "anrmesun_universal_travel_charger_with_2_usb-a-001",
+    "product_id": "anrmesun_universal_travel_charger_with_2_usb-a",
+    "angle": "airport-layover charging bottleneck solved with one compact adapter instead of a tangled pouch of separate plugs",
+    "hook": "I stopped packing a whole bag of chargers for one trip.",
+    "structure_signature": "skill_b_3x10s_ugc_voiceover_layover_pain_to_adapter_demo_to_packing_win_plus_independent_broll",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "batch_id": "batch_001",
+      "market": "US",
+      "platform_context": "paid social short-form video",
+      "duration_main_seconds": 30,
+      "ratio": "9:16",
+      "language": "American English voiceover; Chinese Moyin prompts",
+      "video_form": "voiceover + hand demo + casual creator reaction",
+      "virtual_creator": {
+        "identity": "non-Asian woman, early 30s, curly auburn hair tied in a loose low bun, light denim jacket over a cream tee, practical travel-review personality, natural American accent",
+        "scene": "quiet airport gate seating area near a charging counter, soft daylight through windows, carry-on suitcase beside chair, no platform UI, no product packaging"
+      },
+      "anti_duplication_strategy": {
+        "历史相似风险": "无历史脚本输入，按新角度处理。",
+        "本次达人变化": "使用早30多岁非亚裔女性旅行达人，卷 auburn 头发，牛仔外套。",
+        "本次场景变化": "机场登机口充电台与随身行李环境，而不是居家桌面或酒店床头柜。",
+        "本次开头画面变化": "开场先展示乱糟糟的充电小包和创作者皱眉，不直接从产品白底特写开始。",
+        "本次镜头结构变化": "痛点手持近景→产品上手→墙面插座使用→收纳回包，混合自拍反应和POV手部演示。",
+        "本次产品动作顺序变化": "先对比旅行小包杂乱，再展示四个USB接口，再选择侧边地区滑块，最后插到机场插座并同时连接设备。",
+        "本次第4段补位素材变化": "独立补位只拍侧边三个珊瑚橙滑块与插脚选择动作，不重复主片的乱包开场。"
+      },
+      "hooks_generated": [
+        {
+          "type": "pain point",
+          "en": "I stopped packing a whole bag of chargers for one trip.",
+          "zh": "我不再为了旅行带一整包充电器。"
+        },
+        {
+          "type": "curiosity",
+          "en": "This tiny block replaced three things in my travel pouch.",
+          "zh": "这个小方块替代了我旅行包里的三样东西。"
+        },
+        {
+          "type": "social proof",
+          "en": "Every frequent traveler I know has had this outlet problem.",
+          "zh": "我认识的常旅客几乎都遇到过插座问题。"
+        },
+        {
+          "type": "contradiction",
+          "en": "It looks small, but it keeps my tech setup way less chaotic.",
+          "zh": "它看起来很小，但让我的电子设备收纳没那么混乱。"
+        },
+        {
+          "type": "mistake",
+          "en": "My mistake was bringing chargers, but forgetting the plug shape.",
+          "zh": "我的错误是带了充电器，却忘了插头形状。"
+        },
+        {
+          "type": "scenario",
+          "en": "If your phone, watch, and earbuds all die at the gate, watch this.",
+          "zh": "如果你的手机、手表和耳机在登机口都快没电，看这个。"
+        },
+        {
+          "type": "challenge",
+          "en": "I tried charging my travel essentials from one wall outlet.",
+          "zh": "我试着用一个墙插给旅行必备设备充电。"
+        },
+        {
+          "type": "comparison",
+          "en": "One adapter is easier than digging through four separate blocks.",
+          "zh": "一个转换器比翻找四个单独充电头方便。"
+        },
+        {
+          "type": "confession",
+          "en": "I used to overpack cables because I hated outlet surprises.",
+          "zh": "我以前总多带线，因为讨厌临时发现插座不匹配。"
+        },
+        {
+          "type": "direct benefit",
+          "en": "This helps keep my carry-on charging setup simple.",
+          "zh": "它让我的随身充电配置更简单。"
+        }
+      ],
+      "selected_hook": {
+        "en": "I stopped packing a whole bag of chargers for one trip.",
+        "zh": "我不再为了旅行带一整包充电器。"
+      },
+      "segments": [
+        {
+          "scene_id": "segment_01",
+          "duration": "10",
+          "voiceover": "I stopped packing a whole bag of chargers for one trip. This one adapter gives me two USB-C, two USB-A, and a universal socket in my carry-on.",
+          "word_count": 28,
+          "broll_shot_list_cn": [
+            "00:00-00:00.5 手持近景，机场座位旁打开杂乱充电小包，几条线和普通充电头露出，达人表情无奈。",
+            "00:00.5-00:01.0 POV近景，手指拨开线缆，表现旅行充电混乱。",
+            "00:01.0-00:01.5 产品从包侧自然拿出，白色主体和珊瑚橙细节清楚可见。",
+            "00:01.5-00:03.0 自拍半身，达人在机场登机口轻松展示产品，不出现文字贴纸。",
+            "00:03.0-00:06.0 桌面近景，展示前部两个USB-A、两个USB-C和顶部通用插座。",
+            "00:06.0-00:10.0 产品放回随身小包，旁边线缆明显减少，表现收纳更简单。"
+          ]
+        },
+        {
+          "scene_id": "segment_02",
+          "duration": "10",
+          "voiceover": "At the gate, I use the built-in plug style that matches the outlet, then charge my phone, earbuds, watch, and power bank from one spot.",
+          "word_count": 27,
+          "broll_shot_list_cn": [
+            "00:00-00:02.0 机场充电台旁，手拿产品靠近墙面插座，保持产品外观准确。",
+            "00:02.0-00:04.0 侧面特写，手指轻推珊瑚橙插头选择滑块，只展示US/AUS、UK、EU结构，不新增按钮。",
+            "00:04.0-00:07.0 产品插入墙插，前部接口朝向镜头，动作稳定真实。",
+            "00:07.0-00:10.0 手机、耳机盒、智能手表或移动电源线缆连接到四个USB接口中的多个接口，画面不夸张。"
+          ]
+        },
+        {
+          "scene_id": "segment_03",
+          "duration": "10",
+          "voiceover": "It does not convert voltage, so I still check my device label. But for plug shape and USB charging, it makes travel days feel cleaner.",
+          "word_count": 26,
+          "broll_shot_list_cn": [
+            "00:00-00:02.0 自拍反应，达人把产品放在登机箱上，语气像真实测评提醒。",
+            "00:02.0-00:05.0 近景展示产品前面ANRMESUN Logo、65 GaN W标记、通用插座和四个USB接口，避免放大成海报。",
+            "00:05.0-00:08.0 POV收纳镜头，产品放入随身包小隔层，旁边只有少量线缆。",
+            "00:08.0-00:10.0 结尾机场座位宽景，达人拿手机看电量，产品仍在充电台使用，真实自然收尾。"
+          ]
+        },
+        {
+          "scene_id": "broll_coverage",
+          "duration": "10",
+          "voiceover": "",
+          "word_count": 0,
+          "broll_shot_list_cn": [
+            "00:00-00:02.0 机场充电台桌面稳定特写，手从画面外拿起白色ANRMESUN适配器。",
+            "00:02.0-00:04.0 侧面近景，依次展示三个珊瑚橙插头选择滑块及US/AUS、UK、EU位置结构，动作慢而清楚。",
+            "00:04.0-00:06.0 前部近景，镜头掠过顶部通用插座、两个USB-A、两个USB-C、65 GaN W标记和Logo。",
+            "00:06.0-00:08.0 手将产品放在墙插旁准备使用，不表现电压转换，只表现插头形状适配与USB充电关系。",
+            "00:08.0-00:10.0 产品在桌面小幅旋转美观特写，白色主体、珊瑚橙接口内衬和外壳接缝保持准确。"
+          ]
+        }
+      ],
+      "claim_limitations": [
+        "Do not say or imply voltage conversion.",
+        "Treat 65W and safety features as source claims, not guaranteed absolute performance.",
+        "Do not show certifications, measurement lines, marketplace watermarks, platform UI, packaging, or text overlays.",
+        "Do not add ports, buttons, screens, lights, cords, accessories, or structural elements not in the product profile."
+      ],
+      "fingerprint_memory_append": "SKU: anrmesun_universal_travel_charger_with_2_usb-a | Talent: early-30s non-Asian female travel creator, curly auburn low bun, denim jacket, cream tee | Scene: airport gate charging counter with carry-on | Opening visual: messy travel charger pouch before product reveal | Angle: reduce carry-on charging clutter during layover | Structure: pain-point pouch, interface demo, outlet use, voltage reminder, packing win | Product action sequence: messy pouch → product reveal → ports close-up → side slider selection → wall outlet use → multi-device USB charging → bag organization | Ending visual: creator seated at gate while product charges devices | Fourth B-roll: isolated side-slider and port-detail coverage."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人为早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在安静机场登机口座位区和充电台旁，旁边有随身登机箱，柔和自然窗光。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU，外壳有浅面板缝和端口面板边框。参考图1产品白底用于产品外观，参考图2产品功能用于接口位置，参考图3侧面细节用于滑块位置。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:00.5，手持近景，机场座位旁打开杂乱充电小包，几条线和普通充电头露出，达人表情无奈。\n00:00.5-00:01.0，POV近景，手指拨开线缆，表现旅行充电混乱。\n00:01.0-00:01.5，产品从包侧自然拿出，白色主体和珊瑚橙细节清楚可见。\n00:01.5-00:03.0，自拍半身，达人在机场登机口轻松展示产品，不出现文字贴纸。\n00:03.0-00:06.0，桌面近景，展示前部两个USB-A、两个USB-C和顶部通用插座。\n00:06.0-00:10.0，产品放回随身小包，旁边线缆明显减少，表现收纳更简单。\n\n同步美式英语口播：“I stopped packing a whole bag of chargers for one trip. This one adapter gives me two USB-C, two USB-A, and a universal socket in my carry-on.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的同一位早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在同一个安静机场登机口充电台旁，柔和自然窗光，随身登机箱在旁边。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU。参考图1侧面细节用于滑块和插脚选择结构，参考图2产品白底用于整体外观，参考图3功能图用于墙插和多设备充电关系。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，机场充电台旁，手拿产品靠近墙面插座，保持产品外观准确，镜头轻微手持移动。\n00:02.0-00:04.0，侧面特写，手指轻推珊瑚橙插头选择滑块，只展示US/AUS、UK、EU结构，不新增按钮或灯光。\n00:04.0-00:07.0，产品插入墙插，前部接口朝向镜头，动作稳定真实，不表现电压转换。\n00:07.0-00:10.0，手机、耳机盒、智能手表或移动电源线缆连接到四个USB接口中的多个接口，画面不夸张，线缆自然摆放。\n\n同步美式英语口播：“At the gate, I use the built-in plug style that matches the outlet, then charge my phone, earbuds, watch, and power bank from one spot.”\n保留自然环境声、轻微产品插入和线缆声音、真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在同一个安静机场登机口座位区，柔和自然窗光，随身登机箱和小包在旁。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU，浅灰标识和外壳接缝清楚。参考图1功能图用于墙插使用关系，参考图2产品白底用于整体外观，参考图3侧面细节用于滑块结构。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，自拍反应，达人把产品放在登机箱上，语气像真实测评提醒，表情自然可信。\n00:02.0-00:05.0，近景展示产品前面ANRMESUN Logo、65 GaN W标记、通用插座和四个USB接口，避免海报感，不生成文字叠加。\n00:05.0-00:08.0，POV收纳镜头，产品放入随身包小隔层，旁边只有少量线缆，表现旅行充电配置更干净。\n00:08.0-00:10.0，结尾机场座位宽景，达人拿手机看电量，产品仍在充电台使用，真实自然收尾。\n\n同步美式英语口播：“It does not convert voltage, so I still check my device label. But for plug shape and USB charging, it makes travel days feel cleaner.”\n保留自然环境声、轻微拉链和产品放入包内声音、真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的机场登机口充电台场景、柔和自然窗光、早30多岁非亚裔女性旅行达人的手部风格、浅色牛仔外套袖口和真实手机手持UGC质感。产品只参考Skill A标准参考图：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部灰色ANRMESUN Logo和65 GaN W标记，侧面三个珊瑚橙插头选择滑块标记US/AUS、UK、EU，浅面板缝和端口面板边框。参考图1侧面细节用于滑块动作，参考图2产品白底用于整体外观，参考图3功能图用于使用关系。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png 。不新增产品结构，不新增未确认功能，不生成说明文字。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，机场充电台桌面稳定特写，手从画面外拿起白色ANRMESUN适配器，动作简单，产品不变形。\n00:02.0-00:04.0，侧面近景，依次展示三个珊瑚橙插头选择滑块及US/AUS、UK、EU位置结构，动作慢而清楚。\n00:04.0-00:06.0，前部近景，镜头掠过顶部通用插座、两个USB-A、两个USB-C、65 GaN W标记和Logo。\n00:06.0-00:08.0，手将产品放在墙插旁准备使用，不表现电压转换，只表现插头形状适配与USB充电关系。\n00:08.0-00:10.0，产品在桌面小幅旋转美观特写，白色主体、珊瑚橙接口内衬和外壳接缝保持准确，可作为剪辑收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人为早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在安静机场登机口座位区和充电台旁，旁边有随身登机箱，柔和自然窗光。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU，外壳有浅面板缝和端口面板边框。参考图1产品白底用于产品外观，参考图2产品功能用于接口位置，参考图3侧面细节用于滑块位置。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:00.5，手持近景，机场座位旁打开杂乱充电小包，几条线和普通充电头露出，达人表情无奈。\n00:00.5-00:01.0，POV近景，手指拨开线缆，表现旅行充电混乱。\n00:01.0-00:01.5，产品从包侧自然拿出，白色主体和珊瑚橙细节清楚可见。\n00:01.5-00:03.0，自拍半身，达人在机场登机口轻松展示产品，不出现文字贴纸。\n00:03.0-00:06.0，桌面近景，展示前部两个USB-A、两个USB-C和顶部通用插座。\n00:06.0-00:10.0，产品放回随身小包，旁边线缆明显减少，表现收纳更简单。\n\n同步美式英语口播：“I stopped packing a whole bag of chargers for one trip. This one adapter gives me two USB-C, two USB-A, and a universal socket in my carry-on.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的同一位早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在同一个安静机场登机口充电台旁，柔和自然窗光，随身登机箱在旁边。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU。参考图1侧面细节用于滑块和插脚选择结构，参考图2产品白底用于整体外观，参考图3功能图用于墙插和多设备充电关系。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，机场充电台旁，手拿产品靠近墙面插座，保持产品外观准确，镜头轻微手持移动。\n00:02.0-00:04.0，侧面特写，手指轻推珊瑚橙插头选择滑块，只展示US/AUS、UK、EU结构，不新增按钮或灯光。\n00:04.0-00:07.0，产品插入墙插，前部接口朝向镜头，动作稳定真实，不表现电压转换。\n00:07.0-00:10.0，手机、耳机盒、智能手表或移动电源线缆连接到四个USB接口中的多个接口，画面不夸张，线缆自然摆放。\n\n同步美式英语口播：“At the gate, I use the built-in plug style that matches the outlet, then charge my phone, earbuds, watch, and power bank from one spot.”\n保留自然环境声、轻微产品插入和线缆声音、真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位早30多岁非亚裔女性旅行达人，卷曲 auburn 头发低低扎起，穿浅色牛仔外套和奶油色T恤，在同一个安静机场登机口座位区，柔和自然窗光，随身登机箱和小包在旁。使用参考图中的ANRMESUN Universal Travel Charger产品：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部有灰色ANRMESUN Logo和65 GaN W标记，侧面有三个珊瑚橙插头选择滑块，标记US/AUS、UK、EU，浅灰标识和外壳接缝清楚。参考图1功能图用于墙插使用关系，参考图2产品白底用于整体外观，参考图3侧面细节用于滑块结构。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png 。产品只参考Skill A标准参考图，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，自拍反应，达人把产品放在登机箱上，语气像真实测评提醒，表情自然可信。\n00:02.0-00:05.0，近景展示产品前面ANRMESUN Logo、65 GaN W标记、通用插座和四个USB接口，避免海报感，不生成文字叠加。\n00:05.0-00:08.0，POV收纳镜头，产品放入随身包小隔层，旁边只有少量线缆，表现旅行充电配置更干净。\n00:08.0-00:10.0，结尾机场座位宽景，达人拿手机看电量，产品仍在充电台使用，真实自然收尾。\n\n同步美式英语口播：“It does not convert voltage, so I still check my device label. But for plug shape and USB charging, it makes travel days feel cleaner.”\n保留自然环境声、轻微拉链和产品放入包内声音、真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "anrmesun_universal_travel_charger_with_2_usb-a-001-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的机场登机口充电台场景、柔和自然窗光、早30多岁非亚裔女性旅行达人的手部风格、浅色牛仔外套袖口和真实手机手持UGC质感。产品只参考Skill A标准参考图：白色紧凑立式圆角方块，顶部/前部通用AC插座带橙色内部安全挡片，前部下方两个USB-A和两个USB-C接口，前部灰色ANRMESUN Logo和65 GaN W标记，侧面三个珊瑚橙插头选择滑块标记US/AUS、UK、EU，浅面板缝和端口面板边框。参考图1侧面细节用于滑块动作，参考图2产品白底用于整体外观，参考图3功能图用于使用关系。参考图URL：https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_detail_side.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_white_bg.png ，https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/anrmesun_universal_travel_charger_with_2_usb-a/images/product_function.png 。不新增产品结构，不新增未确认功能，不生成说明文字。\n必须保持产品白色主体与珊瑚橙滑块、接口内衬的颜色关系不变；保持紧凑立式方块造型、圆角和斜面比例不变；保持顶部通用插座、前部2个USB-A与2个USB-C接口的数量和位置不变；保持侧面三个插头选择滑块及US/AUS、UK、EU对应结构不变；保持ANRMESUN Logo位于前部斜面中央；保持前部65 GaN W标记、面板边框和外壳接缝；不要增加原始产品不存在的配件。不要把产品变成插线板、普通墙充、电压转换器或其他品类；不要虚构电压转换功能；不要增加或减少USB接口、插孔、滑块、插脚、按钮、灯光、屏幕或装饰；不要改变产品颜色、Logo、标签位置、结构、纹理和视觉比例；不要把65W、2400W、安全保护或认证表现为未经验证的绝对保证；不要复制平台水印、尺寸线、国家地标拼图、营销标题或卖点图标。\n\n00:00-00:02.0，机场充电台桌面稳定特写，手从画面外拿起白色ANRMESUN适配器，动作简单，产品不变形。\n00:02.0-00:04.0，侧面近景，依次展示三个珊瑚橙插头选择滑块及US/AUS、UK、EU位置结构，动作慢而清楚。\n00:04.0-00:06.0，前部近景，镜头掠过顶部通用插座、两个USB-A、两个USB-C、65 GaN W标记和Logo。\n00:06.0-00:08.0，手将产品放在墙插旁准备使用，不表现电压转换，只表现插头形状适配与USB充电关系。\n00:08.0-00:10.0，产品在桌面小幅旋转美观特写，白色主体、珊瑚橙接口内衬和外壳接缝保持准确，可作为剪辑收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T09:13:47.694Z"
+}
