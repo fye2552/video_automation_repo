@@ -1,0 +1,86 @@
+{
+  "script_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007",
+  "product_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "product_folder": "products/grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007",
+    "product_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess",
+    "angle": "Trying to scrub grout lines by stepping on a wet floor rag with your foot just slips around and misses the recessed grime; use the V-shaped stand-up brush and professional formula to lock directly into the groove.",
+    "hook": "Shuffling a towel around with your foot won't reach what's stuck deep in your grout lines.",
+    "structure_signature": "towel_foot_shuffle_misses_groove_vbrush_locks_in_kitchen_laundry_hallway_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {
+      "video_001_part_01": {
+        "duration": "10",
+        "global_time": "0-10s",
+        "timeline": [
+          "0-3s: Close-up handheld phone shot of someone awkwardly stepping on a wet rag on a kitchen tile floor, trying to scrub a dirty grout line with their foot. The towel slips off, leaving the dark brown grout groove completely untouched and frustratingly dirty.",
+          "3-6s: Fast cut to the dual-action formula from the tall ribbed-neck white 32 oz Grout-eez bottle with red and blue label being poured onto the line, followed immediately by the wide bright blue V-shaped stand-up grout brush attached to a threaded pole locking directly into the groove while standing upright.",
+          "6-10s: Fast-cut scene 1 showing the first clear result in the kitchen; a single pass of the dense white twisted nylon bristles effortlessly lifts embedded grime, instantly revealing a clean, restored grout line."
+        ],
+        "voiceover": "Shuffling a towel around with your foot won't reach what's stuck deep in your grout lines. Stop wasting your effort. Apply this professional-strength formula and let the V-shaped stand-up brush lock right into the grooves.",
+        "text_overlay": "Towel scrubbing misses deep grout line dirt!"
+      },
+      "video_001_part_02": {
+        "duration": "10",
+        "global_time": "10-20s",
+        "timeline": [
+          "0-4s: Fast-cut scene 2 in a laundry room ceramic tile environment; the bright blue V-shaped brush head swivels smoothly around tight corners and edges near the washing machine, loosening dirt without scratching the tile.",
+          "4-8s: Fast-cut scene 3 showing a wide view of a well-lit hallway floor with beautifully restored, bright grout lines, making the entire ceramic tile space look immaculately clean and refreshed.",
+          "8-10s: Short, light CTA overlay with a clean final shot of the clean tile floor and the brush resting neatly beside the bottle."
+        ],
+        "voiceover": "It swivels easily around tight edges and restores dirty lines fast without kneeling. Make your space cleaner and cozier.",
+        "text_overlay": "Make your space cleaner and cozier."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic 9:16 handheld phone-shot style. Timeline: 0-3s: Show a real-life wrong behavior using a close-up shot of a person awkwardly stepping on a wet towel on a tile floor, trying to scrub a dirty grout line with their foot as the towel slips off, amplifying the frustration. 3-6s: Quickly introduce the product as the direct solution, showing liquid cleaner from the tall ribbed-neck white 32 oz Grout-eez bottle with red and blue label applied to the grout, then the wide bright blue V-shaped stand-up grout brush head with dense white nylon bristles attached to a threaded pole gliding effortlessly into the recessed groove. 6-10s: Fast-cut scene 1 showing the first clear result in a kitchen, where the blue brush easily lifts dark embedded grime to reveal a clean white grout line. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic 9:16 handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 in a laundry room ceramic tile environment, showing the bright blue V-shaped brush head swiveling easily along baseboards and tight grout lines while the user stands upright. 4-8s: Fast-cut scene 3 showing the final result across a bright hallway ceramic floor with beautifully restored, clean grout lines that make the space look organized and fresh. 8-10s: Short CTA with clean on-screen text saying 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic 9:16 handheld phone-shot style. Timeline: 0-3s: Show a real-life wrong behavior using a close-up shot of a person awkwardly stepping on a wet towel on a tile floor, trying to scrub a dirty grout line with their foot as the towel slips off, amplifying the frustration. 3-6s: Quickly introduce the product as the direct solution, showing liquid cleaner from the tall ribbed-neck white 32 oz Grout-eez bottle with red and blue label applied to the grout, then the wide bright blue V-shaped stand-up grout brush head with dense white nylon bristles attached to a threaded pole gliding effortlessly into the recessed groove. 6-10s: Fast-cut scene 1 showing the first clear result in a kitchen, where the blue brush easily lifts dark embedded grime to reveal a clean white grout line. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "grout_cleaner_kit_with_stand-up_brush_clean_tile_floors_without_kneeling_profess-007-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic 9:16 handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 in a laundry room ceramic tile environment, showing the bright blue V-shaped brush head swiveling easily along baseboards and tight grout lines while the user stands upright. 4-8s: Fast-cut scene 3 showing the final result across a bright hallway ceramic floor with beautifully restored, clean grout lines that make the space look organized and fresh. 8-10s: Short CTA with clean on-screen text saying 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T11:59:51.195Z"
+}
