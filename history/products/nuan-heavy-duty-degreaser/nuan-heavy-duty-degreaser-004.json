@@ -1,0 +1,60 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-004",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-004",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "baked-on orange grease film on an air fryer basket stays slick when rubbed with hot water and a dish brush",
+    "hook": "Extreme close-up of a greasy air fryer basket corner with baked-on orange oil film as a hand scrubs with a wet dish brush, but the bristles slide over the grease and leave shiny residue behind.",
+    "structure_signature": "air_fryer_basket_baked_grease_wet_dish_brush_slippery_residue_nuan_spray_wait_wipe_before_after_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up inside an air fryer basket corner showing baked-on orange grease and sticky crumbs. A familiar wet dish brush scrubs with hot water, but the grease stays slick and the brush just pushes oily residue into the mesh corners.",
+        "3-6s": "The same brush keeps scrubbing harder on the same greasy basket, bristles bend, water turns cloudy, crumbs smear along the metal, and the hand pauses with visible frustration because the corner still looks shiny and coated.",
+        "6-10s": "NUAN Heavy Duty Kitchen Degreaser Spray enters naturally beside the basket; the white trigger bottle with green NUAN label sprays light foam onto the same greasy corner, waits briefly, then a blue microfiber towel wipes through the loosened grease. End on a handheld before-after tilt showing the previously greasy corner now visibly cleaner beside the still-dirty edge, with a light voice CTA: 'Try NUAN for everyday kitchen grease.'"
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style in a normal US kitchen, natural imperfect lighting, no studio polish. Timeline: 0-3s extreme close-up inside a black metal air fryer basket corner with baked-on orange grease film, sticky crumbs, and oily shine; a familiar ordinary method fails as a hand uses hot water and a wet dish brush to scrub, but the bristles slide over the grease, push crumbs into the mesh corners, and leave shiny residue instead of lifting it. 3-6s continue the same failed method on the exact same greasy area; the hand scrubs harder, brush bristles bend, cloudy water spreads, orange grease smears wider along the basket edge, residue stays visible, and the hand pauses with small believable frustration. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side of the same counter, not as a perfect product hero shot; preserve the exact product identity from the reference images: curved white plastic trigger spray bottle, wide lower body, narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top, large Heavy Duty Degreaser label text, peach scent badge/icon, correct 500ml handheld proportions, same color, shape, material, label position, texture, and visible structure. The bottle sprays realistic light foam coverage onto the same greasy air fryer basket corner, briefly waits, then a blue microfiber towel wipes through the loosened grease with normal hand pressure. Finish with a credible handheld before-after proof tilt on the same basket: the cleaned corner is visibly clearer and less oily beside a still-dirty untreated edge for contrast, no magical instant disappearance, no exaggerated chemical bubbling. Include only natural spoken-style CTA at the end: 'Try NUAN for everyday kitchen grease.' Use the provided product reference images as exact product identity; use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details; use the function reference image only to understand real spray-wait-wipe usage and do not invent new functions. Forbid UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra buttons, lights, ports, packaging changes, product drift, magical cleanup, exaggerated chemical effects, unrealistic sparkle effects, or changing the product category.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-004-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style in a normal US kitchen, natural imperfect lighting, no studio polish. Timeline: 0-3s extreme close-up inside a black metal air fryer basket corner with baked-on orange grease film, sticky crumbs, and oily shine; a familiar ordinary method fails as a hand uses hot water and a wet dish brush to scrub, but the bristles slide over the grease, push crumbs into the mesh corners, and leave shiny residue instead of lifting it. 3-6s continue the same failed method on the exact same greasy area; the hand scrubs harder, brush bristles bend, cloudy water spreads, orange grease smears wider along the basket edge, residue stays visible, and the hand pauses with small believable frustration. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side of the same counter, not as a perfect product hero shot; preserve the exact product identity from the reference images: curved white plastic trigger spray bottle, wide lower body, narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top, large Heavy Duty Degreaser label text, peach scent badge/icon, correct 500ml handheld proportions, same color, shape, material, label position, texture, and visible structure. The bottle sprays realistic light foam coverage onto the same greasy air fryer basket corner, briefly waits, then a blue microfiber towel wipes through the loosened grease with normal hand pressure. Finish with a credible handheld before-after proof tilt on the same basket: the cleaned corner is visibly clearer and less oily beside a still-dirty untreated edge for contrast, no magical instant disappearance, no exaggerated chemical bubbling. Include only natural spoken-style CTA at the end: 'Try NUAN for everyday kitchen grease.' Use the provided product reference images as exact product identity; use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details; use the function reference image only to understand real spray-wait-wipe usage and do not invent new functions. Forbid UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra buttons, lights, ports, packaging changes, product drift, magical cleanup, exaggerated chemical effects, unrealistic sparkle effects, or changing the product category.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-004-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style in a normal US kitchen, natural imperfect lighting, no studio polish. Timeline: 0-3s extreme close-up inside a black metal air fryer basket corner with baked-on orange grease film, sticky crumbs, and oily shine; a familiar ordinary method fails as a hand uses hot water and a wet dish brush to scrub, but the bristles slide over the grease, push crumbs into the mesh corners, and leave shiny residue instead of lifting it. 3-6s continue the same failed method on the exact same greasy area; the hand scrubs harder, brush bristles bend, cloudy water spreads, orange grease smears wider along the basket edge, residue stays visible, and the hand pauses with small believable frustration. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side of the same counter, not as a perfect product hero shot; preserve the exact product identity from the reference images: curved white plastic trigger spray bottle, wide lower body, narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top, large Heavy Duty Degreaser label text, peach scent badge/icon, correct 500ml handheld proportions, same color, shape, material, label position, texture, and visible structure. The bottle sprays realistic light foam coverage onto the same greasy air fryer basket corner, briefly waits, then a blue microfiber towel wipes through the loosened grease with normal hand pressure. Finish with a credible handheld before-after proof tilt on the same basket: the cleaned corner is visibly clearer and less oily beside a still-dirty untreated edge for contrast, no magical instant disappearance, no exaggerated chemical bubbling. Include only natural spoken-style CTA at the end: 'Try NUAN for everyday kitchen grease.' Use the provided product reference images as exact product identity; use the detail and side reference image to preserve material, side structure, edge shape, texture, and visible details; use the function reference image only to understand real spray-wait-wipe usage and do not invent new functions. Forbid UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra buttons, lights, ports, packaging changes, product drift, magical cleanup, exaggerated chemical effects, unrealistic sparkle effects, or changing the product category.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T08:42:10.927Z"
+}
