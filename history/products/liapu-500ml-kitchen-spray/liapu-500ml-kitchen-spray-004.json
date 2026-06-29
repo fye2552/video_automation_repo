@@ -1,0 +1,83 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-004",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_e",
+  "skill_path": "skills/skill_e.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-004",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Using a wet sponge on the underside of a greasy range hood only turns old oil into a slippery drip-and-smear mess; Liapu enters as the targeted spray that loosens the hood grease and wipes clean with no harsh leftover film.",
+    "hook": "I thought a wet sponge would fix this range hood grease — it made it worse.",
+    "structure_signature": "wrong_wet_sponge_range_hood_grease_drip_to_liapu_spray_wipe_clean_no_residue_light_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "active_skill": "skill_e",
+      "duration_seconds": 10,
+      "market": "US",
+      "language": "American English",
+      "voiceover": "I thought a wet sponge would fix this range hood grease — it made it worse. Look at that sticky drip. Now I spray Liapu, wipe once, and it actually comes clean. Try it on your next greasy kitchen spot.",
+      "visual_timeline": [
+        {
+          "time": "0-3s",
+          "beat": "Familiar wrong-use hook",
+          "visual": "Handheld POV under a stainless range hood. A woman wipes the greasy underside with a wet sponge; yellow-brown grease smears wider and a sticky drip trails down toward her hand."
+        },
+        {
+          "time": "3-5s",
+          "beat": "Visible pain amplification",
+          "visual": "Close-up of the sponge lifting away, showing oily residue on the sponge and a shiny greasy streak still left on the hood edge. Her hand pauses in frustration."
+        },
+        {
+          "time": "5-8.5s",
+          "beat": "Natural product entry and action",
+          "visual": "She reaches to the counter and brings in the Liapu 500ml Kitchen Spray Cleaner & Degreaser. The white plastic cylindrical bottle, trigger sprayer, translucent body, and yellow front label stay clear. She sprays the greasy hood edge 2-3 times, then wipes with a clean paper towel."
+        },
+        {
+          "time": "8.5-10s",
+          "beat": "Credible result proof and light CTA",
+          "visual": "Same hood edge from a stable close angle now looks clean and evenly reflective, with the dirty paper towel briefly visible. She holds the bottle beside the clean area and gives a small satisfied nod."
+        }
+      ],
+      "product_consistency_rules": [
+        "Preserve white plastic bottle body, yellow front-center label, translucent bottle material, trigger sprayer, cylindrical 500ml proportions, smooth plastic texture, and label placement.",
+        "Do not add buttons, lights, screens, cords, extra accessories, new nozzle parts, decorative elements, or altered packaging.",
+        "No UI, subtitles, stickers, text overlays, split-screen layouts, icons, banners, or exaggerated chemical effects."
+      ],
+      "claims_used": [
+        "Quick grease removal",
+        "No harsh chemical residue / no residue",
+        "Lemon fresh scent implied only through voice or natural product context, not visual ingredient claims"
+      ],
+      "cta": "Try it on your next greasy kitchen spot."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-004-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+        "promptText": "Create one complete approximately 10-second vertical 9:16 TikTok-style UGC ad in realistic handheld phone-shot style inside a modern American home kitchen with a stainless steel range hood, stove below, white countertop, warm natural household light, slight handheld movement, natural cleaning sounds, no platform UI, no subtitles, no stickers, no text overlays, no split screen, no banners, no icons, no watermarks, and no exaggerated chemical effects. Use a relatable adult woman home cook, casual sweater, natural hands, realistic movement. Preserve the product exactly from the reference image: Liapu 500ml Kitchen Spray Cleaner & Degreaser, white smooth plastic cylindrical spray bottle, translucent bottle showing liquid level, trigger sprayer with nozzle, yellow front-center label with CLEAN UP KITCHEN OIL STAINS and NET: 500ml, same shape, proportions, material, color, and label placement; do not add accessories, buttons, lights, screens, cords, extra decoration, or change the packaging. 0-3s familiar wrong-use hook: handheld POV close under the stainless range hood as the woman tries cleaning old greasy hood residue with only a wet sponge; the sponge drags across the surface and spreads yellow-brown oil into a wider shiny smear, with a sticky drip starting near the edge. Spoken line: “I thought a wet sponge would fix this range hood grease — it made it worse.” 3-5s visible pain amplification: tight close-up as she pulls the sponge away, showing oily residue on the sponge, a greasy streak still stuck on the hood edge, and her hand hesitating in frustration; keep it realistic, not disgusting or extreme. Spoken line: “Look at that sticky drip.” 5-8.5s natural product entry and clear product action: she reaches to the nearby counter and brings in the Liapu bottle, label facing camera for a brief clear view, then aims the trigger sprayer at the greasy hood edge and sprays 2-3 times; a normal fine cleaning mist wets the grease, then she wipes firmly once or twice with a clean white paper towel, showing the grease lifting onto the towel as the metal surface clears. Spoken line: “Now I spray Liapu, wipe once, and it actually comes clean.” 8.5-10s credible before-after result proof and light CTA: hold the camera at the same hood-edge angle; the wiped section is now clean, smooth, and evenly reflective while the dirty paper towel is briefly visible in her other hand; she holds the Liapu bottle beside the cleaned area with the yellow label facing camera and gives a small satisfied nod. Spoken line: “Try it on your next greasy kitchen spot.” Keep the before-after proof natural through camera continuity, not a graphic comparison. Emphasize quick grease removal and no visible residue through the real wipe result only. Do not show floating product, poster layouts, measurement lines, germ graphics, percentage graphics, or any generated on-screen text beyond the physical product label.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "single_video_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-004-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+      "promptText": "Create one complete approximately 10-second vertical 9:16 TikTok-style UGC ad in realistic handheld phone-shot style inside a modern American home kitchen with a stainless steel range hood, stove below, white countertop, warm natural household light, slight handheld movement, natural cleaning sounds, no platform UI, no subtitles, no stickers, no text overlays, no split screen, no banners, no icons, no watermarks, and no exaggerated chemical effects. Use a relatable adult woman home cook, casual sweater, natural hands, realistic movement. Preserve the product exactly from the reference image: Liapu 500ml Kitchen Spray Cleaner & Degreaser, white smooth plastic cylindrical spray bottle, translucent bottle showing liquid level, trigger sprayer with nozzle, yellow front-center label with CLEAN UP KITCHEN OIL STAINS and NET: 500ml, same shape, proportions, material, color, and label placement; do not add accessories, buttons, lights, screens, cords, extra decoration, or change the packaging. 0-3s familiar wrong-use hook: handheld POV close under the stainless range hood as the woman tries cleaning old greasy hood residue with only a wet sponge; the sponge drags across the surface and spreads yellow-brown oil into a wider shiny smear, with a sticky drip starting near the edge. Spoken line: “I thought a wet sponge would fix this range hood grease — it made it worse.” 3-5s visible pain amplification: tight close-up as she pulls the sponge away, showing oily residue on the sponge, a greasy streak still stuck on the hood edge, and her hand hesitating in frustration; keep it realistic, not disgusting or extreme. Spoken line: “Look at that sticky drip.” 5-8.5s natural product entry and clear product action: she reaches to the nearby counter and brings in the Liapu bottle, label facing camera for a brief clear view, then aims the trigger sprayer at the greasy hood edge and sprays 2-3 times; a normal fine cleaning mist wets the grease, then she wipes firmly once or twice with a clean white paper towel, showing the grease lifting onto the towel as the metal surface clears. Spoken line: “Now I spray Liapu, wipe once, and it actually comes clean.” 8.5-10s credible before-after result proof and light CTA: hold the camera at the same hood-edge angle; the wiped section is now clean, smooth, and evenly reflective while the dirty paper towel is briefly visible in her other hand; she holds the Liapu bottle beside the cleaned area with the yellow label facing camera and gives a small satisfied nod. Spoken line: “Try it on your next greasy kitchen spot.” Keep the before-after proof natural through camera continuity, not a graphic comparison. Emphasize quick grease removal and no visible residue through the real wipe result only. Do not show floating product, poster layouts, measurement lines, germ graphics, percentage graphics, or any generated on-screen text beyond the physical product label.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T03:47:19.890Z"
+}
