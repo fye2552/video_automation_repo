@@ -1,0 +1,60 @@
+{
+  "script_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish-002",
+  "product_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/wood-floor-restorer-polish-16oz-_high-gloss-finish",
+  "product_folder": "products/wood-floor-restorer-polish-16oz-_high-gloss-finish",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish-002",
+    "product_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish",
+    "angle": "sunlit chair-drag micro-scratches and dull dry-looking hardwood that ordinary microfiber buffing cannot revive",
+    "hook": "extreme close-up of fine chair-leg scratches catching sunlight while a homeowner rubs hard with a dry microfiber cloth, but the dull scratched patch stays flat and dusty-looking",
+    "structure_signature": "chair_drag_micro_scratches_dry_microfiber_buffing_fails_daxaxa_polish_flat_mop_time_lapse_gloss_before_after_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up on a warm hardwood floor near a dining chair: fine chair-drag scratches and a dull dry patch catch the window light. A hand uses a familiar dry microfiber cloth to buff the spot, but the scratches still show and the area looks uneven.",
+        "3-6s": "The same hand keeps rubbing with more pressure, changing direction and trying to buff faster. The cloth pushes dust into the grain, the dull patch looks streakier in the light, and the effort feels frustrating without improving the finish.",
+        "6-10s": "The DAXAXA Wood Floor Restorer & Polish 16oz enters naturally beside the same floor patch. A small amount is applied to a clean flat mop pad and spread evenly with the grain over the exact area. Use a quick realistic time-lapse after drying to show the treated side glossier, fine scratches less noticeable, and a clear before-after contrast in the same handheld shot. Light spoken CTA: “Bring the shine back without overthinking it.”"
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/wood-floor-restorer-polish-16oz-_high-gloss-finish/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning-product ad in 9:16, realistic handheld phone-shot style, natural home lighting, no tripod-perfect commercial look. Use the provided product reference image as the exact identity for DAXAXA Wood Floor Restorer & Polish 16oz: tall glossy red plastic bottle, rounded shoulders, narrow neck, ribbed blue screw cap, blue main front label with yellow upper panel and cyan/light-blue diagonal accent, small red DAXAXA brand badge near upper left of the label, large Hardwood Polish identity, glossy printed label, correct bottle proportions and visible structure. Do not change color, label, shape, material, size ratio, cap, logo position, texture, or visible structure. Timeline inside this single continuous video: 0-3s: extreme close-up of a credible wood-floor cleaning pain on the same warm hardwood planks near a dining chair, showing fine chair-leg drag scratches, dusty grain, and a dull dry-looking patch catching sunlight. A homeowner’s hand tries the familiar ordinary method: firm rubbing with a dry microfiber cloth. The cloth moves back and forth, but the scratches and dullness remain obvious. Do not show the product yet. 3-6s: continue the same failed method on the exact same patch. The hand rubs harder and changes direction, the cloth bunches up, dust gets pushed into the wood grain, the sunlight reveals uneven streaks and effort, and the person’s hand pauses with believable frustration. Keep it grounded and realistic, no exaggerated damage. 6-10s: the DAXAXA Wood Floor Restorer & Polish bottle enters naturally at floor level beside the same scratched patch, label facing camera briefly but not as a perfect packshot. A small amount of polish is applied to a clean flat mop pad or soft applicator cloth, then spread evenly in one direction with the wood grain over the same area. Show real cleaning/restoring action: a thin wet sheen being smoothed out, not magical instant disappearance. Include a quick credible time-lapse jump after drying to a glossier finish; finish on the same camera angle with a simple before-after contrast made by the untreated dull scratched edge beside the treated glossier area, fine scratches visibly less noticeable, reflections cleaner but not mirror-fake. Add a light natural spoken CTA only: “Bring the shine back without overthinking it.” Forbid on-screen UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra bottles, trigger sprayer shape, product drift, magical cleanup, bubbling, smoke, glowing effects, exaggerated chemical reactions, floating icons, diagram arrows, oversized poster headlines, or claims that look like a safety guarantee.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish-002-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/wood-floor-restorer-polish-16oz-_high-gloss-finish/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning-product ad in 9:16, realistic handheld phone-shot style, natural home lighting, no tripod-perfect commercial look. Use the provided product reference image as the exact identity for DAXAXA Wood Floor Restorer & Polish 16oz: tall glossy red plastic bottle, rounded shoulders, narrow neck, ribbed blue screw cap, blue main front label with yellow upper panel and cyan/light-blue diagonal accent, small red DAXAXA brand badge near upper left of the label, large Hardwood Polish identity, glossy printed label, correct bottle proportions and visible structure. Do not change color, label, shape, material, size ratio, cap, logo position, texture, or visible structure. Timeline inside this single continuous video: 0-3s: extreme close-up of a credible wood-floor cleaning pain on the same warm hardwood planks near a dining chair, showing fine chair-leg drag scratches, dusty grain, and a dull dry-looking patch catching sunlight. A homeowner’s hand tries the familiar ordinary method: firm rubbing with a dry microfiber cloth. The cloth moves back and forth, but the scratches and dullness remain obvious. Do not show the product yet. 3-6s: continue the same failed method on the exact same patch. The hand rubs harder and changes direction, the cloth bunches up, dust gets pushed into the wood grain, the sunlight reveals uneven streaks and effort, and the person’s hand pauses with believable frustration. Keep it grounded and realistic, no exaggerated damage. 6-10s: the DAXAXA Wood Floor Restorer & Polish bottle enters naturally at floor level beside the same scratched patch, label facing camera briefly but not as a perfect packshot. A small amount of polish is applied to a clean flat mop pad or soft applicator cloth, then spread evenly in one direction with the wood grain over the same area. Show real cleaning/restoring action: a thin wet sheen being smoothed out, not magical instant disappearance. Include a quick credible time-lapse jump after drying to a glossier finish; finish on the same camera angle with a simple before-after contrast made by the untreated dull scratched edge beside the treated glossier area, fine scratches visibly less noticeable, reflections cleaner but not mirror-fake. Add a light natural spoken CTA only: “Bring the shine back without overthinking it.” Forbid on-screen UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra bottles, trigger sprayer shape, product drift, magical cleanup, bubbling, smoke, glowing effects, exaggerated chemical reactions, floating icons, diagram arrows, oversized poster headlines, or claims that look like a safety guarantee.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "wood-floor-restorer-polish-16oz-_high-gloss-finish-002-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/wood-floor-restorer-polish-16oz-_high-gloss-finish/images/product_detail_side.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning-product ad in 9:16, realistic handheld phone-shot style, natural home lighting, no tripod-perfect commercial look. Use the provided product reference image as the exact identity for DAXAXA Wood Floor Restorer & Polish 16oz: tall glossy red plastic bottle, rounded shoulders, narrow neck, ribbed blue screw cap, blue main front label with yellow upper panel and cyan/light-blue diagonal accent, small red DAXAXA brand badge near upper left of the label, large Hardwood Polish identity, glossy printed label, correct bottle proportions and visible structure. Do not change color, label, shape, material, size ratio, cap, logo position, texture, or visible structure. Timeline inside this single continuous video: 0-3s: extreme close-up of a credible wood-floor cleaning pain on the same warm hardwood planks near a dining chair, showing fine chair-leg drag scratches, dusty grain, and a dull dry-looking patch catching sunlight. A homeowner’s hand tries the familiar ordinary method: firm rubbing with a dry microfiber cloth. The cloth moves back and forth, but the scratches and dullness remain obvious. Do not show the product yet. 3-6s: continue the same failed method on the exact same patch. The hand rubs harder and changes direction, the cloth bunches up, dust gets pushed into the wood grain, the sunlight reveals uneven streaks and effort, and the person’s hand pauses with believable frustration. Keep it grounded and realistic, no exaggerated damage. 6-10s: the DAXAXA Wood Floor Restorer & Polish bottle enters naturally at floor level beside the same scratched patch, label facing camera briefly but not as a perfect packshot. A small amount of polish is applied to a clean flat mop pad or soft applicator cloth, then spread evenly in one direction with the wood grain over the same area. Show real cleaning/restoring action: a thin wet sheen being smoothed out, not magical instant disappearance. Include a quick credible time-lapse jump after drying to a glossier finish; finish on the same camera angle with a simple before-after contrast made by the untreated dull scratched edge beside the treated glossier area, fine scratches visibly less noticeable, reflections cleaner but not mirror-fake. Add a light natural spoken CTA only: “Bring the shine back without overthinking it.” Forbid on-screen UI, subtitles, stickers, captions, text overlays, watermarks, invented accessories, extra bottles, trigger sprayer shape, product drift, magical cleanup, bubbling, smoke, glowing effects, exaggerated chemical reactions, floating icons, diagram arrows, oversized poster headlines, or claims that look like a safety guarantee.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T07:40:20.506Z"
+}
