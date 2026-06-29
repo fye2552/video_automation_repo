@@ -1,0 +1,205 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-003",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_e",
+  "skill_path": "skills/skill_e.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-003",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Regular kitchen wipes may work for crumbs and quick touch-ups, but they slide over sticky grease on cabinet handles and range hood edges; Liapu enters as the targeted degreasing spray that cuts the film, wipes clean, and adds antibacterial reassurance.",
+    "hook": "Regular wipes were just sliding over this greasy cabinet film.",
+    "structure_signature": "wrong_regular_wipe_sticky_cabinet_film_to_targeted_degreaser_spray_wipe_clean_antibacterial_cta",
+    "scene_order": [
+      "scene_01_wrong_wipe_sticky_cabinet_film",
+      "scene_02_product_entry_spray_on_cabinet_and_hood_edge",
+      "scene_03_clean_touch_test_antibacterial_cta",
+      "broll_coverage_product_mist_and_lemon_counter"
+    ],
+    "script_record": {
+      "active_skill": "skill_e",
+      "creative_method": "wrong-use amplification",
+      "market": "US",
+      "language": "American English",
+      "duration_total": "30s main video + 8-10s independent b-roll",
+      "ratio": "9:16",
+      "style": "realistic handheld UGC phone-shot kitchen demo",
+      "talent": {
+        "description": "A relatable American woman in her early 40s, casual home clothes, natural makeup, filming in her own kitchen after cooking.",
+        "performance": "slightly frustrated at first, then calmly impressed, conversational and credible"
+      },
+      "product_consistency_lock": {
+        "must_keep": [
+          "white plastic cylindrical bottle body",
+          "yellow front-center label",
+          "trigger sprayer with nozzle",
+          "translucent bottle showing liquid level",
+          "500ml standard spray bottle proportions",
+          "smooth plastic texture",
+          "logo and label position unchanged"
+        ],
+        "must_avoid": [
+          "do not change product category",
+          "do not change bottle color, shape, material, packaging, texture, or proportions",
+          "do not add buttons, lights, screens, ports, decorative parts, or extra attachments",
+          "do not create text overlays, banners, split screens, platform UI, subtitles, stickers, or watermarks",
+          "do not show exaggerated special effects or unsupported cleaning claims"
+        ]
+      },
+      "voiceover_full": "Regular wipes were just sliding over this greasy cabinet film. See that sticky streak? After cooking, it ends up on the handles and hood edge too. So now I spray Liapu right on the greasy spots, wait a few seconds, and wipe. It cuts through that oily layer instead of pushing it around. Now it feels clean, not tacky. No harsh residue, just a light lemon scent, and it kills 99.9% of bacteria. Way easier for everyday kitchen cleanup.",
+      "segments": [
+        {
+          "scene_id": "scene_01_wrong_wipe_sticky_cabinet_film",
+          "duration": "10",
+          "scene_goal": "Amplify the familiar wrong method: using a regular kitchen wipe on greasy cabinet film and making the sticky streak visible.",
+          "voiceover": "Regular wipes were just sliding over this greasy cabinet film. See that sticky streak? After cooking, it ends up on the handles and hood edge too.",
+          "shots": [
+            "00:00-00:02.5 close handheld POV of a white lower cabinet door near the stove; hand wipes the greasy area with a regular disposable kitchen wipe, but the surface stays streaky and shiny",
+            "00:02.5-00:05.0 close-up of fingers lightly touching the cabinet handle, showing tacky oily residue and a faint yellow-brown mark on the wipe",
+            "00:05.0-00:07.0 camera tilts to the underside/front edge of the stainless range hood where a thin greasy film catches the light",
+            "00:07.0-00:10.0 medium selfie reaction in the kitchen; talent holds up the used wipe with a frustrated but relatable expression, product not introduced yet"
+          ],
+          "onscreen_text": "none",
+          "audio_notes": "natural kitchen room tone, soft wipe friction, no music required"
+        },
+        {
+          "scene_id": "scene_02_product_entry_spray_on_cabinet_and_hood_edge",
+          "duration": "10",
+          "scene_goal": "Introduce Liapu naturally from the counter and show the complete spray-and-wipe action on greasy cabinet/hood exterior surfaces.",
+          "voiceover": "So now I spray Liapu right on the greasy spots, wait a few seconds, and wipe. It cuts through that oily layer instead of pushing it around.",
+          "shots": [
+            "00:00-00:02.0 hand reaches to the kitchen counter and picks up Liapu spray bottle; front yellow label faces camera clearly for a moment",
+            "00:02.0-00:04.5 close POV of product aimed at greasy cabinet handle area; trigger is pressed 2 times and fine mist lands on the oily film",
+            "00:04.5-00:06.0 close-up of liquid sitting on the greasy streak, visibly wetting the surface without dramatic CGI",
+            "00:06.0-00:08.0 hand wipes the sprayed cabinet surface with a clean white paper towel in one steady pass",
+            "00:08.0-00:10.0 camera moves to range hood edge; one quick spray and wipe begins, showing the same product action without making a split-screen comparison"
+          ],
+          "onscreen_text": "none",
+          "audio_notes": "trigger spray sound, paper towel wipe sound, natural handheld movement"
+        },
+        {
+          "scene_id": "scene_03_clean_touch_test_antibacterial_cta",
+          "duration": "10",
+          "scene_goal": "Show stable result proof with touch test, mention no residue, lemon scent, and 99.9% antibacterial claim in voiceover only.",
+          "voiceover": "Now it feels clean, not tacky. No harsh residue, just a light lemon scent, and it kills 99.9% of bacteria. Way easier for everyday kitchen cleanup.",
+          "shots": [
+            "00:00-00:03.0 stable close-up of the cleaned cabinet handle and surrounding door surface; talent runs fingertips over it and shows fingers clean",
+            "00:03.0-00:05.0 slow handheld pan across the cleaned range hood front edge with soft reflection from kitchen light",
+            "00:05.0-00:07.5 medium selfie shot; talent holds Liapu next to the cleaned cabinet, label facing camera, relaxed satisfied smile",
+            "00:07.5-00:10.0 product close-up on the counter in front of the clean kitchen background; hand lightly turns bottle so yellow label and trigger sprayer remain visible"
+          ],
+          "onscreen_text": "none",
+          "audio_notes": "calm voiceover, light kitchen ambience, no generated captions"
+        },
+        {
+          "scene_id": "broll_coverage_product_mist_and_lemon_counter",
+          "duration": "8-10",
+          "scene_goal": "Independent coverage b-roll for editing: product beauty/use details, mist, lemon scent cue, no new claims.",
+          "voiceover": "",
+          "shots": [
+            "00:00-00:02.0 Liapu bottle standing upright on white kitchen counter, yellow front label centered, clean cabinets softly blurred behind",
+            "00:02.0-00:04.0 hand picks up bottle and presses trigger once toward an empty safe section of counter, showing fine mist clearly",
+            "00:04.0-00:06.0 close-up of bottle beside a sliced lemon as a simple scent cue, no ingredient claim",
+            "00:06.0-00:08.0 slow handheld product rotation showing translucent bottle body and liquid level",
+            "00:08.0-00:10.0 static product hero on counter with clean kitchen background, realistic UGC lighting"
+          ],
+          "onscreen_text": "none",
+          "audio_notes": "no voiceover, natural spray sound only"
+        }
+      ],
+      "claim_safety": {
+        "supported_claims_used": [
+          "quick grease removal",
+          "no harsh residue / no residue",
+          "lemon fresh scent",
+          "kills 99.9% of bacteria"
+        ],
+        "visual_claim_limits": [
+          "antibacterial claim is spoken only",
+          "no bacteria graphics, shield icons, medical imagery, lab visuals, or percentage text generated on screen",
+          "result shown as realistic cleaned surface, not impossible instant magic"
+        ]
+      },
+      "deduplication_note": "Avoids prior dish-soap scrubbing and dry-paper-towel smearing structures by focusing on regular kitchen wipes failing on sticky cabinet and range hood film, with touch-test proof."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-003-scene-01",
+        "scene_id": "scene_01_wrong_wipe_sticky_cabinet_film",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png",
+        "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频。场景是普通现代美国家庭厨房，白色橱柜，不锈钢灶台和抽油烟机，烹饪后有轻微油污。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n本段重点是错误使用方式放大：达人先不用产品，而是用普通一次性厨房湿巾擦油腻的橱柜门和把手，但油膜没有真正擦掉，只留下发亮的粘腻条纹。不要让达人显得愚蠢，只表现这种方法很常见但低效。\n\n00:00-00:02.5，POV近景，手拿普通厨房湿巾擦白色橱柜门靠近灶台的位置，表面有薄薄黄色油膜，湿巾擦过后仍然有发亮粘腻痕迹。\n00:02.5-00:05.0，极近景，手指轻触橱柜把手和擦过的表面，指尖有轻微油感，湿巾上出现淡黄褐色油渍。\n00:05.0-00:07.0，手持镜头上移到不锈钢抽油烟机前缘，灯光下可以看到薄薄油膜和烹饪飞溅痕迹。\n00:07.0-00:10.0，切到达人半身自拍，40岁左右美国女性，居家休闲上衣，自然妆容，表情无奈但真实，手里拿着用过的湿巾，产品暂时不出现。\n\n同步美式英语口播：\"Regular wipes were just sliding over this greasy cabinet film. See that sticky streak? After cooking, it ends up on the handles and hood edge too.\"\n\n保持真实手机拍摄质感，轻微手持晃动，自然厨房环境声和擦拭声。不要出现分屏、海报式对比、箭头标注、夸张特效或产品包装变形。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-003-scene-02",
+        "scene_id": "scene_02_product_entry_spray_on_cabinet_and_hood_edge",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频，延续上一段的现代美国家庭厨房、白色橱柜、不锈钢灶台和抽油烟机。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:02.0，手从厨房台面自然拿起 Liapu 喷雾瓶，黄色标签正面朝向镜头短暂停留，产品清晰但不做商业棚拍感。\n00:02.0-00:04.5，POV近景，手握产品对准刚才油腻的橱柜把手区域，按压扳机2次，细腻白色雾状喷雾落在油膜表面。\n00:04.5-00:06.0，微距近景，喷液润湿粘腻油膜，油污边缘开始松动和变得容易擦拭，不使用夸张CG特效。\n00:06.0-00:08.0，手拿干净白色厨房纸巾，一次稳定擦过喷洒区域，擦过后露出干净、不发粘的白色橱柜表面。\n00:08.0-00:10.0，镜头移到不锈钢抽油烟机前缘，产品再次对准油膜轻喷一次，纸巾开始擦拭，展示同样动作可用于厨房外部表面。\n\n同步美式英语口播：\"So now I spray Liapu right on the greasy spots, wait a few seconds, and wipe. It cuts through that oily layer instead of pushing it around.\"\n\n真实手持拍摄，保留喷雾声和纸巾擦拭声。不要生成任何文字、说明卡、细菌图标、百分比数字、分屏before-after或箭头。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-003-scene-03",
+        "scene_id": "scene_03_clean_touch_test_antibacterial_cta",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+        "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频，延续前两段同一位美国女性达人、同一现代美国家庭厨房、白色橱柜、不锈钢抽油烟机和自然室内光。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:03.0，稳定近景展示刚清洁后的白色橱柜把手和门板，表面干净不发亮不粘腻，达人用干净手指轻轻划过，再把手指转向镜头，手指保持干净。\n00:03.0-00:05.0，手持镜头缓慢扫过清洁后的不锈钢抽油烟机前缘，表面有自然反光，没有油膜和化学残留感。\n00:05.0-00:07.5，切到达人半身自拍，她把 Liapu 喷雾瓶举在清洁后的橱柜旁，黄色标签正面朝向镜头，微笑自然，像给朋友推荐。\n00:07.5-00:10.0，产品近景放在厨房台面上，达人手轻轻转动瓶身但保持正面标签可辨认，背景是干净厨房，真实UGC收尾。\n\n同步美式英语口播：\"Now it feels clean, not tacky. No harsh residue, just a light lemon scent, and it kills 99.9% of bacteria. Way easier for everyday kitchen cleanup.\"\n\n杀菌卖点只能通过口播表达，不要在画面中生成细菌、盾牌、99.9%数字、实验室图标或医疗感视觉。不要出现分屏、海报式对比或夸张特效。保留自然厨房环境声。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-003-scene-04",
+        "scene_id": "broll_coverage_product_mist_and_lemon_counter",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "生成一段8-10秒9:16竖屏独立产品功能补位B-roll，真实手机手持UGC质感，现代美国家庭厨房，白色石英台面，背景为干净橱柜和不锈钢厨房电器，柔和自然光。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:02.0，Liapu喷雾瓶直立放在白色厨房台面中央，黄色标签正对镜头，背景轻微虚化。\n00:02.0-00:04.0，手拿起瓶身，对准空的安全台面区域按压扳机一次，清晰看到细腻喷雾从喷嘴喷出，保留真实喷雾声。\n00:04.0-00:06.0，产品放回台面，旁边出现一颗切开的新鲜柠檬作为柠檬清香的生活化暗示，柠檬只是道具，不要生成成分说明或文字。\n00:06.0-00:08.0，手轻轻旋转瓶身，展示半透明瓶身和液位，黄色标签、白色瓶身、扳机喷头始终保持正确比例。\n00:08.0-00:10.0，产品静置在台面上，干净厨房背景，稳定收尾，方便后期裁剪。\n\n本段不需要口播，不展示完整口型表演。不要生成任何文字、百分比数字、细菌图标、说明卡、分屏、箭头或商业海报式画面。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-003-scene-01",
+      "scene_id": "scene_01_wrong_wipe_sticky_cabinet_film",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_function.png",
+      "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频。场景是普通现代美国家庭厨房，白色橱柜，不锈钢灶台和抽油烟机，烹饪后有轻微油污。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n本段重点是错误使用方式放大：达人先不用产品，而是用普通一次性厨房湿巾擦油腻的橱柜门和把手，但油膜没有真正擦掉，只留下发亮的粘腻条纹。不要让达人显得愚蠢，只表现这种方法很常见但低效。\n\n00:00-00:02.5，POV近景，手拿普通厨房湿巾擦白色橱柜门靠近灶台的位置，表面有薄薄黄色油膜，湿巾擦过后仍然有发亮粘腻痕迹。\n00:02.5-00:05.0，极近景，手指轻触橱柜把手和擦过的表面，指尖有轻微油感，湿巾上出现淡黄褐色油渍。\n00:05.0-00:07.0，手持镜头上移到不锈钢抽油烟机前缘，灯光下可以看到薄薄油膜和烹饪飞溅痕迹。\n00:07.0-00:10.0，切到达人半身自拍，40岁左右美国女性，居家休闲上衣，自然妆容，表情无奈但真实，手里拿着用过的湿巾，产品暂时不出现。\n\n同步美式英语口播：\"Regular wipes were just sliding over this greasy cabinet film. See that sticky streak? After cooking, it ends up on the handles and hood edge too.\"\n\n保持真实手机拍摄质感，轻微手持晃动，自然厨房环境声和擦拭声。不要出现分屏、海报式对比、箭头标注、夸张特效或产品包装变形。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-003-scene-02",
+      "scene_id": "scene_02_product_entry_spray_on_cabinet_and_hood_edge",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频，延续上一段的现代美国家庭厨房、白色橱柜、不锈钢灶台和抽油烟机。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:02.0，手从厨房台面自然拿起 Liapu 喷雾瓶，黄色标签正面朝向镜头短暂停留，产品清晰但不做商业棚拍感。\n00:02.0-00:04.5，POV近景，手握产品对准刚才油腻的橱柜把手区域，按压扳机2次，细腻白色雾状喷雾落在油膜表面。\n00:04.5-00:06.0，微距近景，喷液润湿粘腻油膜，油污边缘开始松动和变得容易擦拭，不使用夸张CG特效。\n00:06.0-00:08.0，手拿干净白色厨房纸巾，一次稳定擦过喷洒区域，擦过后露出干净、不发粘的白色橱柜表面。\n00:08.0-00:10.0，镜头移到不锈钢抽油烟机前缘，产品再次对准油膜轻喷一次，纸巾开始擦拭，展示同样动作可用于厨房外部表面。\n\n同步美式英语口播：\"So now I spray Liapu right on the greasy spots, wait a few seconds, and wipe. It cuts through that oily layer instead of pushing it around.\"\n\n真实手持拍摄，保留喷雾声和纸巾擦拭声。不要生成任何文字、说明卡、细菌图标、百分比数字、分屏before-after或箭头。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-003-scene-03",
+      "scene_id": "scene_03_clean_touch_test_antibacterial_cta",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_detail_side.png",
+      "promptText": "生成一段10秒9:16竖屏真实手机手持UGC厨房清洁短视频，延续前两段同一位美国女性达人、同一现代美国家庭厨房、白色橱柜、不锈钢抽油烟机和自然室内光。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:03.0，稳定近景展示刚清洁后的白色橱柜把手和门板，表面干净不发亮不粘腻，达人用干净手指轻轻划过，再把手指转向镜头，手指保持干净。\n00:03.0-00:05.0，手持镜头缓慢扫过清洁后的不锈钢抽油烟机前缘，表面有自然反光，没有油膜和化学残留感。\n00:05.0-00:07.5，切到达人半身自拍，她把 Liapu 喷雾瓶举在清洁后的橱柜旁，黄色标签正面朝向镜头，微笑自然，像给朋友推荐。\n00:07.5-00:10.0，产品近景放在厨房台面上，达人手轻轻转动瓶身但保持正面标签可辨认，背景是干净厨房，真实UGC收尾。\n\n同步美式英语口播：\"Now it feels clean, not tacky. No harsh residue, just a light lemon scent, and it kills 99.9% of bacteria. Way easier for everyday kitchen cleanup.\"\n\n杀菌卖点只能通过口播表达，不要在画面中生成细菌、盾牌、99.9%数字、实验室图标或医疗感视觉。不要出现分屏、海报式对比或夸张特效。保留自然厨房环境声。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-003-scene-04",
+      "scene_id": "broll_coverage_product_mist_and_lemon_counter",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "生成一段8-10秒9:16竖屏独立产品功能补位B-roll，真实手机手持UGC质感，现代美国家庭厨房，白色石英台面，背景为干净橱柜和不锈钢厨房电器，柔和自然光。画面不得出现平台水印、App界面、账号栏、点赞评论按钮、自动字幕、贴纸、边框UI或任何后期文字。\n\n产品必须严格参考输入图片中的 Liapu 500ml Kitchen Spray Cleaner & Degreaser：白色塑料圆柱形喷雾瓶，黄色正面标签位于瓶身前中部，标签可见 CLEAN UP KITCHEN OIL STAINS 和 NET: 500ml，扳机式喷头，半透明瓶身可见液位，光滑塑料材质。保持产品颜色、形状、材质、比例、喷头结构和标签位置不变。不要增加按钮、灯光、接口、装饰、额外配件或改变品类。\n\n00:00-00:02.0，Liapu喷雾瓶直立放在白色厨房台面中央，黄色标签正对镜头，背景轻微虚化。\n00:02.0-00:04.0，手拿起瓶身，对准空的安全台面区域按压扳机一次，清晰看到细腻喷雾从喷嘴喷出，保留真实喷雾声。\n00:04.0-00:06.0，产品放回台面，旁边出现一颗切开的新鲜柠檬作为柠檬清香的生活化暗示，柠檬只是道具，不要生成成分说明或文字。\n00:06.0-00:08.0，手轻轻旋转瓶身，展示半透明瓶身和液位，黄色标签、白色瓶身、扳机喷头始终保持正确比例。\n00:08.0-00:10.0，产品静置在台面上，干净厨房背景，稳定收尾，方便后期裁剪。\n\n本段不需要口播，不展示完整口型表演。不要生成任何文字、百分比数字、细菌图标、说明卡、分屏、箭头或商业海报式画面。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T02:52:33.293Z"
+}
