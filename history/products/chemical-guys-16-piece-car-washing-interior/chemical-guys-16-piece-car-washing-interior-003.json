@@ -1,0 +1,60 @@
+{
+  "script_id": "chemical-guys-16-piece-car-washing-interior-003",
+  "product_id": "chemical-guys-16-piece-car-washing-interior",
+  "active_skill": "skill_e",
+  "skill_path": "skills/skill_e.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/chemical-guys-16-piece-car-washing-interior",
+  "product_folder": "products/chemical-guys-16-piece-car-washing-interior",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "chemical-guys-16-piece-car-washing-interior-003",
+    "product_id": "chemical-guys-16-piece-car-washing-interior",
+    "angle": "Stop scrubbing brake dust off wheels with a dry old rag that only grinds gray residue into the spokes; switch to the Chemical Guys kit’s Sticky Citrus Wheel Cleaner and green bristle wheel brush for a more controlled wheel clean.",
+    "hook": "I tried wiping brake dust with an old rag, and it just smeared gray grime everywhere.",
+    "structure_signature": "dry_rag_brake_dust_smear_wheel_cleaner_brush_same_wheel_result_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up on a car wheel spoke with visible gray brake dust and road grime; a hand uses an old dry rag and the dust smears instead of lifting.",
+        "3-6s": "The same rag keeps rubbing the same wheel area with more pressure, leaving cloudy gray streaks in the corners and making the hand movement look repetitive and frustrating.",
+        "6-10s": "The Chemical Guys kit enters from the driveway beside the car; show the camo bucket and the Sticky Citrus Wheel Cleaner with green wheel brush from the kit, then clean the same wheel section and finish on a stable before-after comparison with a light CTA."
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical 9:16 TikTok-style UGC cleaning ad, realistic handheld phone-shot in a sunny home driveway beside a parked car. No platform UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no magical cleanup, no exaggerated chemical foam or unrealistic reaction. Preserve the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit exactly from the reference image: blue-white-black-gray camo plastic detailing bucket as the largest item with large circular Chemical Guys logo in the same position, multicolor Chemical Guys product bottles with printed labels, orange Sticky Citrus Wheel Cleaner spray bottle, green bristle wheel brush, green chenille wash mitt, green-and-black TORQ Foam Blaster with clear reservoir, blue microfiber towels and applicator pads, black textured Cyclone Dirt Trap disc, correct plastic and microfiber materials, correct proportions, shapes, colors, label placement, and visible structure. 0-3s: extreme close-up of a real car wheel spoke and lug area covered in gray brake dust and road grime; a hand uses an ordinary old dry rag to wipe the dusty spoke, but the familiar method visibly fails as the grime smears into cloudy gray streaks and stays packed in the corners. 3-6s: stay on the same wheel area and continue the failed method; the hand scrubs harder with the same rag, the rag gets darker, the residue spreads across the spoke, and the motion shows extra effort and mild frustration without looking silly or unsafe. 6-10s: the Chemical Guys kit enters naturally from the ground beside the tire; briefly show the accurate camo bucket and kit pieces, then a hand picks up the orange Sticky Citrus Wheel Cleaner and the green bristle wheel brush from the kit, sprays the same stained wheel section, brushes with normal physical scrubbing, and wipes/rinses just enough to reveal a credible cleaner area on the same wheel. Finish on a stable close-up before-after proof: one section still dusty and one freshly cleaned section with reduced brake dust and clearer wheel finish, not perfect showroom magic. Natural driveway sounds and conversational US-market voiceover only: 'I tried wiping brake dust with an old rag, and it just smeared gray grime everywhere. This kit made the wheel way easier to actually clean. If your wheels look like mine, try this setup.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "chemical-guys-16-piece-car-washing-interior-003-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical 9:16 TikTok-style UGC cleaning ad, realistic handheld phone-shot in a sunny home driveway beside a parked car. No platform UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no magical cleanup, no exaggerated chemical foam or unrealistic reaction. Preserve the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit exactly from the reference image: blue-white-black-gray camo plastic detailing bucket as the largest item with large circular Chemical Guys logo in the same position, multicolor Chemical Guys product bottles with printed labels, orange Sticky Citrus Wheel Cleaner spray bottle, green bristle wheel brush, green chenille wash mitt, green-and-black TORQ Foam Blaster with clear reservoir, blue microfiber towels and applicator pads, black textured Cyclone Dirt Trap disc, correct plastic and microfiber materials, correct proportions, shapes, colors, label placement, and visible structure. 0-3s: extreme close-up of a real car wheel spoke and lug area covered in gray brake dust and road grime; a hand uses an ordinary old dry rag to wipe the dusty spoke, but the familiar method visibly fails as the grime smears into cloudy gray streaks and stays packed in the corners. 3-6s: stay on the same wheel area and continue the failed method; the hand scrubs harder with the same rag, the rag gets darker, the residue spreads across the spoke, and the motion shows extra effort and mild frustration without looking silly or unsafe. 6-10s: the Chemical Guys kit enters naturally from the ground beside the tire; briefly show the accurate camo bucket and kit pieces, then a hand picks up the orange Sticky Citrus Wheel Cleaner and the green bristle wheel brush from the kit, sprays the same stained wheel section, brushes with normal physical scrubbing, and wipes/rinses just enough to reveal a credible cleaner area on the same wheel. Finish on a stable close-up before-after proof: one section still dusty and one freshly cleaned section with reduced brake dust and clearer wheel finish, not perfect showroom magic. Natural driveway sounds and conversational US-market voiceover only: 'I tried wiping brake dust with an old rag, and it just smeared gray grime everywhere. This kit made the wheel way easier to actually clean. If your wheels look like mine, try this setup.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "chemical-guys-16-piece-car-washing-interior-003-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical 9:16 TikTok-style UGC cleaning ad, realistic handheld phone-shot in a sunny home driveway beside a parked car. No platform UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no magical cleanup, no exaggerated chemical foam or unrealistic reaction. Preserve the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit exactly from the reference image: blue-white-black-gray camo plastic detailing bucket as the largest item with large circular Chemical Guys logo in the same position, multicolor Chemical Guys product bottles with printed labels, orange Sticky Citrus Wheel Cleaner spray bottle, green bristle wheel brush, green chenille wash mitt, green-and-black TORQ Foam Blaster with clear reservoir, blue microfiber towels and applicator pads, black textured Cyclone Dirt Trap disc, correct plastic and microfiber materials, correct proportions, shapes, colors, label placement, and visible structure. 0-3s: extreme close-up of a real car wheel spoke and lug area covered in gray brake dust and road grime; a hand uses an ordinary old dry rag to wipe the dusty spoke, but the familiar method visibly fails as the grime smears into cloudy gray streaks and stays packed in the corners. 3-6s: stay on the same wheel area and continue the failed method; the hand scrubs harder with the same rag, the rag gets darker, the residue spreads across the spoke, and the motion shows extra effort and mild frustration without looking silly or unsafe. 6-10s: the Chemical Guys kit enters naturally from the ground beside the tire; briefly show the accurate camo bucket and kit pieces, then a hand picks up the orange Sticky Citrus Wheel Cleaner and the green bristle wheel brush from the kit, sprays the same stained wheel section, brushes with normal physical scrubbing, and wipes/rinses just enough to reveal a credible cleaner area on the same wheel. Finish on a stable close-up before-after proof: one section still dusty and one freshly cleaned section with reduced brake dust and clearer wheel finish, not perfect showroom magic. Natural driveway sounds and conversational US-market voiceover only: 'I tried wiping brake dust with an old rag, and it just smeared gray grime everywhere. This kit made the wheel way easier to actually clean. If your wheels look like mine, try this setup.'",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T06:30:44.906Z"
+}
