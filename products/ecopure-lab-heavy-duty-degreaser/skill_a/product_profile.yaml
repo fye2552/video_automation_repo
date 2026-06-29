@@ -1,0 +1,166 @@
+sku_id: "EcoPure Lab Heavy Duty Degreaser – Powerful Kitchen Degreaser Spray, Grease Remover for Stove, Oven, Range Hood"
+product_name: "EcoPure Lab Heavy Duty Degreaser"
+category: "heavy duty kitchen degreaser spray"
+source_folder: "E:/test001/EcoPure Lab Heavy Duty Degreaser – Powerful Kitchen Degreaser Spray, Grease Remover for Stove, Oven, Range Hood/"
+output_folder: "E:/test001-1/product_reference_pack/EcoPure Lab Heavy Duty Degreaser – Powerful Kitchen Degreaser Spray, Grease Remover for Stove, Oven, Range Hood/"
+
+source_text:
+  title: "EcoPure Lab Heavy Duty Degreaser – Powerful Kitchen Degreaser Spray, Grease Remover for Stove, Oven, Range Hood & Grill – Removes Tough Oil, Burnt Grease & Stains Fast – No Residue, Non-Toxic Enzyme Cleaner"
+  claims:
+    - "removes tough oil, burnt grease, and stains"
+    - "for stove, oven, range hood, and grill"
+    - "fast action"
+    - "no residue"
+    - "non-toxic enzyme cleaner"
+
+product_identity:
+  brand: "EcoPure Lab"
+  product_line: "Heavy Duty Degreaser"
+  form_factor: "white trigger spray bottle"
+  capacity: "10.1 fl oz / 300 ml"
+  scent_or_variant:
+    - "neutral shown on label"
+    - "fresh citrus scent shown in some references"
+  packaging:
+    - "white spray bottle with orange and dark navy label"
+    - "matching orange rectangular retail box with dark navy footer"
+  visible_label_elements:
+    - "EcoPure Lab logo near upper label"
+    - "large Heavy Duty Degreaser title"
+    - "Foaming Action subtitle"
+    - "before-after stovetop image panel"
+    - "orange upper label area"
+    - "dark navy bottom band with net contents"
+  caution_notes_from_packaging:
+    - "Eye irritant"
+    - "Read back panel carefully"
+
+visual_identity:
+  primary_colors:
+    - "white bottle and white trigger nozzle"
+    - "bright orange label and box"
+    - "dark navy lower label and box footer"
+  accent_colors:
+    - "white bold product lettering"
+    - "black and gray stovetop image panel"
+    - "small orange/white icons"
+  material_finish:
+    - "smooth white molded plastic bottle"
+    - "ribbed white screw collar"
+    - "glossy printed label"
+    - "paperboard retail box"
+  shape_details:
+    - "white trigger sprayer with short rectangular nozzle"
+    - "ribbed screw collar under the nozzle"
+    - "bottle body has molded finger grooves along one side"
+    - "rounded rectangular lower bottle body"
+    - "front label follows a curved triangular orange field over a dark navy footer"
+  logo_position: "EcoPure Lab logo near the top of the orange label and top of box front"
+
+selling_points:
+  - "heavy duty kitchen degreaser for greasy appliances"
+  - "foaming action shown dissolving sticky grease"
+  - "removes oil, burnt grease, and stains"
+  - "used on stovetops, range hoods, ovens, grills, microwave doors, sinks, and tile backsplash"
+  - "shown as no-residue and fast-acting in source copy"
+  - "300 ml compact spray bottle"
+  - "matching retail box improves packshot recognition"
+
+usage_scenes:
+  primary:
+    - "spraying foaming degreaser onto a greasy range hood"
+    - "spraying onto a stained stovetop burner area"
+    - "wiping foamed cleaner from a black glass stovetop"
+    - "cleaning grease from oven or microwave surfaces"
+  secondary:
+    - "BBQ grill grate cleaning"
+    - "tile backsplash grease removal"
+    - "kitchen sink cleaning"
+
+image_reference_audit:
+  - file: "6a7ff6cc99d54a36b9d678eeaf26a30b~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "clean packshot reference"
+    useful_for:
+      - "bottle and box design"
+      - "orange and navy label colors"
+      - "300 ml capacity"
+      - "retail box caution/footer details"
+    risks:
+      - "small label text and caution copy may distort if reproduced exactly"
+  - file: "7cc628290b8346fca5953ef558bdc11d~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "hero sales poster"
+    useful_for:
+      - "spray action direction"
+      - "stovetop before-after concept"
+      - "icons for foaming action, grease dissolving, multi-surface, easy use"
+    risks:
+      - "large headline, before-after labels, and icons should be avoided"
+  - file: "7332614cacfe4bd1b1dc7b0fcd5a13a2~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "range hood spraying scene"
+    useful_for:
+      - "handheld spray use"
+      - "white foam on stainless range hood and stovetop"
+    risks:
+      - "large orange bottom banner and exaggerated foam drips"
+  - file: "077aaf4c01584abba3c7f2b24f920b34~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "before-after results poster"
+    useful_for:
+      - "stove burner, range hood filter, and sink cleaning result references"
+    risks:
+      - "comparison grid and text labels"
+  - file: "a81885040d8a40b1a1eb65d79bd5aefa~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "stovetop spray poster"
+    useful_for:
+      - "hand spraying cleaner onto greasy stainless stovetop"
+      - "label close-up on bottle"
+    risks:
+      - "claim text includes bacteria-related language; avoid unless supported by final product copy"
+  - file: "be68aa5210a844498bad437a0758b069~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "range hood foaming poster"
+    useful_for:
+      - "foam clinging to range hood and stove"
+      - "foaming power visual"
+    risks:
+      - "large headline and bubble callouts"
+  - file: "ad3bec16f561495aa736d6bdfd7f34b3~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "black glass stovetop wiping scene"
+    useful_for:
+      - "bottle standing beside foam"
+      - "blue glove wiping with gray cloth"
+    risks:
+      - "large headline copy and safety claim text"
+  - file: "7ab44afa831a4fe3a7767114972279a6~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "microwave or oven exterior cleaning scene"
+    useful_for:
+      - "person spraying a greasy appliance door"
+      - "realistic kitchen context"
+    risks:
+      - "large orange banner text"
+  - file: "e05b7507d1be4701894d0053b64a5acf~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    role: "multi-use application collage"
+    useful_for:
+      - "stovetop, BBQ grill, range hood, and tile backsplash use cases"
+    risks:
+      - "large headline and multi-panel collage"
+
+generation_guidance:
+  keep:
+    - "EcoPure Lab brand"
+    - "white trigger spray bottle"
+    - "orange label with dark navy bottom band"
+    - "Heavy Duty Degreaser / Foaming Action visual identity"
+    - "10.1 fl oz / 300 ml capacity cue"
+    - "matching orange retail box for packshot"
+    - "foam on greasy kitchen surfaces"
+  avoid:
+    - "large poster headlines"
+    - "before-after split graphics"
+    - "bubble callouts and floating icons"
+    - "overstated disinfectant or bacteria-killing claims"
+    - "unreadable dense warning text"
+    - "changing the product to a green or yellow-label cleaner"
+
+image_prompts:
+  white_background_packshot: "Create a clean e-commerce packshot on a pure white background for EcoPure Lab Heavy Duty Degreaser. Show one white trigger spray bottle with a short rectangular white nozzle, ribbed white collar, molded finger grooves on the side, and a curved orange front label over a dark navy bottom band. The label should show the EcoPure Lab logo near the top, bold Heavy Duty Degreaser wording, Foaming Action subtitle, a small stovetop grease image panel, and a 10.1 fl oz / 300 ml capacity cue. Place the matching orange retail box slightly behind the bottle at a three-quarter angle with the same orange and navy design. Studio lighting, realistic plastic texture, crisp label edges, subtle shadow. No poster headline, no before-after layout, no floating icons, no extra brands."
+  product_detail_collage: "Create a premium product-detail catalog image for EcoPure Lab Heavy Duty Degreaser kitchen spray. Center the white 300 ml trigger bottle and orange retail box on a light gray studio background, then add four clean close-up detail panels showing: the white trigger nozzle spraying fine foam, the ribbed screw collar and molded finger-groove bottle body, the orange and dark navy label with EcoPure Lab logo and Heavy Duty Degreaser Foaming Action identity, and the foam texture lifting grease from a stainless stovetop surface. Keep the composition tidy and high-end, with realistic reflections and minimal readable text. Avoid large advertising headlines, before-after labels, bubble callouts, and cluttered poster graphics."
+  realistic_usage_scene: "Create a realistic American kitchen cleaning scene featuring EcoPure Lab Heavy Duty Degreaser. A hand holds the recognizable white trigger bottle with orange label, dark navy footer, EcoPure Lab logo, and Heavy Duty Degreaser identity, spraying foaming cleaner onto a greasy stainless range hood above a stovetop. Show white foam clinging to brown cooking grease and beginning to loosen it, with a gray cleaning cloth nearby. Natural kitchen daylight, practical realism, product label visible but not oversized. No giant text, no before-after split, no floating icons, no exaggerated chemical smoke."
