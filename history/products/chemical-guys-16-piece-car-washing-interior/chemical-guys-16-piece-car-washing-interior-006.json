@@ -1,0 +1,60 @@
+{
+  "script_id": "chemical-guys-16-piece-car-washing-interior-006",
+  "product_id": "chemical-guys-16-piece-car-washing-interior",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/chemical-guys-16-piece-car-washing-interior",
+  "product_folder": "products/chemical-guys-16-piece-car-washing-interior",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "chemical-guys-16-piece-car-washing-interior-006",
+    "product_id": "chemical-guys-16-piece-car-washing-interior",
+    "angle": "Stop trying to clean sticky coffee splatter in a car cup holder with a dry napkin that shreds and leaves brown residue; use the Chemical Guys kit’s Total Interior Cleaner and blue microfiber towel for a cleaner same-spot interior detail.",
+    "hook": "I tried wiping this sticky cup holder mess with a napkin, and it just made little paper bits stick to it.",
+    "structure_signature": "sticky_cup_holder_coffee_napkin_shreds_total_interior_microfiber_same_spot_result_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up inside a car cup holder with dried coffee rings and sticky brown splatter. A hand presses a dry fast-food napkin into the cup holder and rubs, but the napkin tears and leaves white paper fibers stuck in the residue.",
+        "3-6s": "The same napkin keeps rubbing the same cup holder. The coffee residue smears wider along the plastic grooves, paper bits cling to the sticky spots, and the hand pauses with visible frustration from the extra mess.",
+        "6-10s": "The Chemical Guys kit enters naturally beside the open car door, preserving the blue-white-black-gray camo bucket, circular Chemical Guys logo, multicolor bottles, green mitt, foam blaster, blue microfiber towels, applicators, wheel brush, and Dirt Trap proportions. The blue Total Interior Cleaner spray bottle and blue microfiber towel clean the same cup holder with realistic wiping pressure. Finish on a close before-after angle: one edge still shows the original sticky ring while the cleaned side looks matte, clear, and residue-free. Light spoken CTA: Check it out for your next car cleanup."
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural garage or driveway lighting, no polished studio look. Timeline: 0-3s extreme close-up inside a real car cup holder with dried sticky coffee rings, brown splatter, crumbs, and tacky residue in the plastic grooves. A familiar ordinary method fails: a hand uses a dry fast-food napkin to scrub the cup holder, but the napkin drags across the sticky stain, tears slightly, and leaves tiny white paper fibers stuck in the coffee residue. Do not show the product yet. 3-6s stay on the same cup holder and continue the failed napkin method; the hand rubs harder, the brown residue smears wider, paper bits cling to the grooves, and the motion feels effortful and frustrating but realistic, not exaggerated. 6-10s the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit enters naturally beside the open car door on the floor: preserve the exact product identity from the reference images, including the blue-white-black-gray camo round detailing bucket with large circular Chemical Guys logo, smooth plastic cleaner bottles with printed labels, correct bottle colors, green chenille wash mitt, green and black TORQ Foam Blaster 6 Pro with clear reservoir, blue microfiber towels, blue applicator pads, green bristle wheel brush, black Cyclone Dirt Trap disc, shapes, materials, proportions, textures, logo positions, and visible structure. A hand picks up the blue Total Interior Cleaner spray bottle from the kit and a blue microfiber towel, applies cleaner to the same cup holder area, then wipes with realistic pressure and repeated passes. Show real cleaning action: residue lifts gradually into the towel, crumbs and paper fibers are removed by the towel, and the plastic grooves become visibly cleaner without magical instant cleanup or exaggerated chemical effects. Finish with credible result proof on the same cup holder: a close before-after contrast where one small edge still shows the original sticky ring and the cleaned side is matte, clear, and residue-free, with the Chemical Guys kit still visible in the background. End with a light natural spoken CTA only: “Check it out for your next car cleanup.” No UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no extra buttons, no lights, no interfaces, no changed packaging, no changed product category, and no perfect impossible cleanup.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "chemical-guys-16-piece-car-washing-interior-006-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural garage or driveway lighting, no polished studio look. Timeline: 0-3s extreme close-up inside a real car cup holder with dried sticky coffee rings, brown splatter, crumbs, and tacky residue in the plastic grooves. A familiar ordinary method fails: a hand uses a dry fast-food napkin to scrub the cup holder, but the napkin drags across the sticky stain, tears slightly, and leaves tiny white paper fibers stuck in the coffee residue. Do not show the product yet. 3-6s stay on the same cup holder and continue the failed napkin method; the hand rubs harder, the brown residue smears wider, paper bits cling to the grooves, and the motion feels effortful and frustrating but realistic, not exaggerated. 6-10s the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit enters naturally beside the open car door on the floor: preserve the exact product identity from the reference images, including the blue-white-black-gray camo round detailing bucket with large circular Chemical Guys logo, smooth plastic cleaner bottles with printed labels, correct bottle colors, green chenille wash mitt, green and black TORQ Foam Blaster 6 Pro with clear reservoir, blue microfiber towels, blue applicator pads, green bristle wheel brush, black Cyclone Dirt Trap disc, shapes, materials, proportions, textures, logo positions, and visible structure. A hand picks up the blue Total Interior Cleaner spray bottle from the kit and a blue microfiber towel, applies cleaner to the same cup holder area, then wipes with realistic pressure and repeated passes. Show real cleaning action: residue lifts gradually into the towel, crumbs and paper fibers are removed by the towel, and the plastic grooves become visibly cleaner without magical instant cleanup or exaggerated chemical effects. Finish with credible result proof on the same cup holder: a close before-after contrast where one small edge still shows the original sticky ring and the cleaned side is matte, clear, and residue-free, with the Chemical Guys kit still visible in the background. End with a light natural spoken CTA only: “Check it out for your next car cleanup.” No UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no extra buttons, no lights, no interfaces, no changed packaging, no changed product category, and no perfect impossible cleanup.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "chemical-guys-16-piece-car-washing-interior-006-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/chemical-guys-16-piece-car-washing-interior/images/product_detail_side.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural garage or driveway lighting, no polished studio look. Timeline: 0-3s extreme close-up inside a real car cup holder with dried sticky coffee rings, brown splatter, crumbs, and tacky residue in the plastic grooves. A familiar ordinary method fails: a hand uses a dry fast-food napkin to scrub the cup holder, but the napkin drags across the sticky stain, tears slightly, and leaves tiny white paper fibers stuck in the coffee residue. Do not show the product yet. 3-6s stay on the same cup holder and continue the failed napkin method; the hand rubs harder, the brown residue smears wider, paper bits cling to the grooves, and the motion feels effortful and frustrating but realistic, not exaggerated. 6-10s the Chemical Guys 16-Piece Car Washing and Interior Detailing Kit enters naturally beside the open car door on the floor: preserve the exact product identity from the reference images, including the blue-white-black-gray camo round detailing bucket with large circular Chemical Guys logo, smooth plastic cleaner bottles with printed labels, correct bottle colors, green chenille wash mitt, green and black TORQ Foam Blaster 6 Pro with clear reservoir, blue microfiber towels, blue applicator pads, green bristle wheel brush, black Cyclone Dirt Trap disc, shapes, materials, proportions, textures, logo positions, and visible structure. A hand picks up the blue Total Interior Cleaner spray bottle from the kit and a blue microfiber towel, applies cleaner to the same cup holder area, then wipes with realistic pressure and repeated passes. Show real cleaning action: residue lifts gradually into the towel, crumbs and paper fibers are removed by the towel, and the plastic grooves become visibly cleaner without magical instant cleanup or exaggerated chemical effects. Finish with credible result proof on the same cup holder: a close before-after contrast where one small edge still shows the original sticky ring and the cleaned side is matte, clear, and residue-free, with the Chemical Guys kit still visible in the background. End with a light natural spoken CTA only: “Check it out for your next car cleanup.” No UI, no subtitles, no stickers, no text overlays, no watermarks, no invented accessories, no product drift, no extra buttons, no lights, no interfaces, no changed packaging, no changed product category, and no perfect impossible cleanup.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T08:32:34.048Z"
+}
