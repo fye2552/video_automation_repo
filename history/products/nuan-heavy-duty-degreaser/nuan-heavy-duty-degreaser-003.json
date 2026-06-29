@@ -1,0 +1,60 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-003",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-003",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "microwave door interior grease splatter turns into oily haze when wiped with a plain wet dishcloth",
+    "hook": "Extreme close-up inside a microwave door glass and inner rim showing dried yellow-brown grease splatters as a plain wet dishcloth rubs across them, spreading the grease into a cloudy oily haze instead of removing it.",
+    "structure_signature": "microwave_inner_door_grease_splatter_plain_wet_dishcloth_oily_haze_nuan_spray_wait_wipe_before_after_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up of dried yellow-brown grease splatters on the inside microwave door glass and plastic rim; a plain wet dishcloth wipes back and forth but the grease only spreads into a cloudy oily film.",
+        "3-6s": "The same wet dishcloth keeps rubbing harder on the same microwave area, leaving wider streaks, small stuck-on spots, and visible hand effort; the cloth looks greasy and the surface still looks hazy.",
+        "6-10s": "NUAN Heavy Duty Kitchen Degreaser Spray enters naturally beside the open microwave, preserving the exact white trigger bottle, green label, black NUAN logo, peach badge, ribbed collar, and proportions; a hand sprays light foam on the same greasy area, waits briefly, wipes with a blue cleaning towel, then tilts the phone to show the cleaned clear section against the untouched smeared edge for a credible before-after proof; light spoken CTA: “For greasy kitchen messes, try NUAN.”"
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style with natural kitchen lighting, slight hand movement, no polished studio look. Timeline: 0-3s extreme close-up inside an open microwave door, focused on dried yellow-brown grease splatters on the inner glass and white plastic rim; a familiar ordinary method fails as a plain wet dishcloth rubs across the splatters and spreads them into a cloudy oily haze, leaving visible streaks instead of lifting the grease. 3-6s continue the same failed method on the same exact microwave area; the hand rubs harder with the wet dishcloth, effort increases, the cloth looks greasy, the haze gets wider, tiny stuck-on spots remain, and the user’s frustration is shown only through faster wiping and a small pause, not exaggerated acting. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side beside the open microwave; preserve the product identity exactly from the reference images: white plastic trigger spray bottle, curved wide lower body and narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top of the label, large Heavy Duty Degreaser label area, small peach scent badge/icon, correct 500ml handheld proportions, smooth plastic material, no product drift. A hand sprays realistic light foam coverage onto the same greasy microwave door section, waits briefly, then wipes with the blue cleaning towel from the kit; show real cleaning action with the grease gradually lifting under the towel, no magical instant cleanup and no exaggerated chemical reaction. Finish by tilting the phone close to the surface to show credible result proof: a clean clear wiped section beside a small untouched smeared edge for before-after contrast, with the NUAN bottle still visible in the background. End with a natural light spoken CTA only: “For greasy kitchen messes, try NUAN.” Use the provided product reference images as the exact product identity. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real kitchen grease-cleaning usage; do not invent new functions. Forbid UI, subtitles, stickers, text overlays, watermarks, captions, floating graphics, invented accessories, extra buttons, lights, packaging changes, product color changes, product shape changes, product material changes, logo movement, magical cleanup, smoke, sparks, bubbling chemical effects, or unrealistic before-after transformations.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-003-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style with natural kitchen lighting, slight hand movement, no polished studio look. Timeline: 0-3s extreme close-up inside an open microwave door, focused on dried yellow-brown grease splatters on the inner glass and white plastic rim; a familiar ordinary method fails as a plain wet dishcloth rubs across the splatters and spreads them into a cloudy oily haze, leaving visible streaks instead of lifting the grease. 3-6s continue the same failed method on the same exact microwave area; the hand rubs harder with the wet dishcloth, effort increases, the cloth looks greasy, the haze gets wider, tiny stuck-on spots remain, and the user’s frustration is shown only through faster wiping and a small pause, not exaggerated acting. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side beside the open microwave; preserve the product identity exactly from the reference images: white plastic trigger spray bottle, curved wide lower body and narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top of the label, large Heavy Duty Degreaser label area, small peach scent badge/icon, correct 500ml handheld proportions, smooth plastic material, no product drift. A hand sprays realistic light foam coverage onto the same greasy microwave door section, waits briefly, then wipes with the blue cleaning towel from the kit; show real cleaning action with the grease gradually lifting under the towel, no magical instant cleanup and no exaggerated chemical reaction. Finish by tilting the phone close to the surface to show credible result proof: a clean clear wiped section beside a small untouched smeared edge for before-after contrast, with the NUAN bottle still visible in the background. End with a natural light spoken CTA only: “For greasy kitchen messes, try NUAN.” Use the provided product reference images as the exact product identity. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real kitchen grease-cleaning usage; do not invent new functions. Forbid UI, subtitles, stickers, text overlays, watermarks, captions, floating graphics, invented accessories, extra buttons, lights, packaging changes, product color changes, product shape changes, product material changes, logo movement, magical cleanup, smoke, sparks, bubbling chemical effects, or unrealistic before-after transformations.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-003-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style with natural kitchen lighting, slight hand movement, no polished studio look. Timeline: 0-3s extreme close-up inside an open microwave door, focused on dried yellow-brown grease splatters on the inner glass and white plastic rim; a familiar ordinary method fails as a plain wet dishcloth rubs across the splatters and spreads them into a cloudy oily haze, leaving visible streaks instead of lifting the grease. 3-6s continue the same failed method on the same exact microwave area; the hand rubs harder with the wet dishcloth, effort increases, the cloth looks greasy, the haze gets wider, tiny stuck-on spots remain, and the user’s frustration is shown only through faster wiping and a small pause, not exaggerated acting. 6-10s NUAN Heavy Duty Kitchen Degreaser Spray enters naturally from the side beside the open microwave; preserve the product identity exactly from the reference images: white plastic trigger spray bottle, curved wide lower body and narrow neck, white ribbed collar, white trigger nozzle, glossy green front label, black NUAN logo near the top of the label, large Heavy Duty Degreaser label area, small peach scent badge/icon, correct 500ml handheld proportions, smooth plastic material, no product drift. A hand sprays realistic light foam coverage onto the same greasy microwave door section, waits briefly, then wipes with the blue cleaning towel from the kit; show real cleaning action with the grease gradually lifting under the towel, no magical instant cleanup and no exaggerated chemical reaction. Finish by tilting the phone close to the surface to show credible result proof: a clean clear wiped section beside a small untouched smeared edge for before-after contrast, with the NUAN bottle still visible in the background. End with a natural light spoken CTA only: “For greasy kitchen messes, try NUAN.” Use the provided product reference images as the exact product identity. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand real kitchen grease-cleaning usage; do not invent new functions. Forbid UI, subtitles, stickers, text overlays, watermarks, captions, floating graphics, invented accessories, extra buttons, lights, packaging changes, product color changes, product shape changes, product material changes, logo movement, magical cleanup, smoke, sparks, bubbling chemical effects, or unrealistic before-after transformations.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T07:38:47.501Z"
+}
