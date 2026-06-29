@@ -1,0 +1,60 @@
+{
+  "script_id": "grout-cleaner-kit-with-stand-up-brush-003",
+  "product_id": "grout-cleaner-kit-with-stand-up-brush",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/grout-cleaner-kit-with-stand-up-brush",
+  "product_folder": "products/grout-cleaner-kit-with-stand-up-brush",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "grout-cleaner-kit-with-stand-up-brush-003",
+    "product_id": "grout-cleaner-kit-with-stand-up-brush",
+    "angle": "Paper towels and basic spray push greasy kitchen splatter deeper into light grout instead of lifting it",
+    "hook": "That greasy line by the stove looked worse every time I wiped it with a paper towel.",
+    "structure_signature": "greasy_grout_paper_towel_fail_product_reveal_scrub_proof_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "timeline": {
+        "0-3s": "Extreme close-up of a light ceramic kitchen tile grout line beside a stove edge with greasy brown splatter and crumbs; a hand uses a paper towel with basic household spray, but the towel only drags the grime across the grout and leaves a darker wet streak.",
+        "3-6s": "The same hand keeps wiping harder with the paper towel in the same close-up; the tile surface gets streaky, the grout line stays dark, small residue smears widen, and the hand pauses in visible frustration.",
+        "6-10s": "The white 32 oz Grout-eez bottle with red and blue label enters naturally beside the same grout line, cleaner is applied, then the bright blue V-shaped brush head with dense white bristles scrubs the same line; grime lifts realistically with effort, a quick wipe reveals a visibly cleaner grout strip next to the untouched dirty section, ending with a light spoken CTA: Check it out for stubborn grout lines."
+      }
+    },
+    "scenes": [
+      {
+        "job_id": "temporary_job_id",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural kitchen lighting, no subtitles and no text overlays. Timeline: 0-3s extreme close-up on a ceramic kitchen tile floor grout line next to a stove base: light grout has greasy brown splatter, dust, and tiny crumbs. A real hand tries the familiar ordinary method, spraying a basic household cleaner and wiping with a paper towel. The paper towel only spreads the greasy stain, leaves a darker wet streak in the grout, and the tile surface looks smeary. 3-6s continue the same failed method on the same stain: the hand wipes harder back and forth with the paper towel, the towel gets dirty, residue smears wider across the tile edges, the grout line remains dark, and the motion shows believable effort and mild frustration. 6-10s the Grout Cleaner Kit enters naturally beside the same spot: show the exact white 32 oz Grout-eez cleaner bottle with ribbed white neck, white cap, glossy red and blue front label with Clean-eez logo at the top, and the bright blue wide low V-shaped grout brush head with angled blue threaded socket and dense white twisted nylon bristles. Apply a small realistic amount of cleaner to the same grout line, then use the blue V-shaped brush head to scrub along the grout groove; grime loosens realistically with physical brushing, not magically. Wipe once to reveal a noticeably cleaner strip of grout directly beside an untouched dirty section for credible before-after contrast. End with the product bottle and brush head visible near the cleaned line and a natural spoken light CTA: “Check it out for stubborn grout lines.” Preserve product identity from the reference images exactly: keep product color, label, shape, material, proportions, ribbed neck, cap, brush head structure, bristle color, bristle density, angled socket, and logo position unchanged. Use the detail and function references only to preserve true product structure and real usage; do not invent new functions. Do not add a pole or any extra accessories not shown as part of the product. No UI, subtitles, stickers, text overlays, watermarks, floating graphics, invented packaging, product drift, magical cleanup, glowing effects, smoke, foam explosions, exaggerated chemical reactions, or unrealistic instant transformation. Keep the result credible for ceramic or porcelain tile grout only, not natural stone.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "final_moyin_jobs": [
+      {
+        "job_id": "grout-cleaner-kit-with-stand-up-brush-003-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+        "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural kitchen lighting, no subtitles and no text overlays. Timeline: 0-3s extreme close-up on a ceramic kitchen tile floor grout line next to a stove base: light grout has greasy brown splatter, dust, and tiny crumbs. A real hand tries the familiar ordinary method, spraying a basic household cleaner and wiping with a paper towel. The paper towel only spreads the greasy stain, leaves a darker wet streak in the grout, and the tile surface looks smeary. 3-6s continue the same failed method on the same stain: the hand wipes harder back and forth with the paper towel, the towel gets dirty, residue smears wider across the tile edges, the grout line remains dark, and the motion shows believable effort and mild frustration. 6-10s the Grout Cleaner Kit enters naturally beside the same spot: show the exact white 32 oz Grout-eez cleaner bottle with ribbed white neck, white cap, glossy red and blue front label with Clean-eez logo at the top, and the bright blue wide low V-shaped grout brush head with angled blue threaded socket and dense white twisted nylon bristles. Apply a small realistic amount of cleaner to the same grout line, then use the blue V-shaped brush head to scrub along the grout groove; grime loosens realistically with physical brushing, not magically. Wipe once to reveal a noticeably cleaner strip of grout directly beside an untouched dirty section for credible before-after contrast. End with the product bottle and brush head visible near the cleaned line and a natural spoken light CTA: “Check it out for stubborn grout lines.” Preserve product identity from the reference images exactly: keep product color, label, shape, material, proportions, ribbed neck, cap, brush head structure, bristle color, bristle density, angled socket, and logo position unchanged. Use the detail and function references only to preserve true product structure and real usage; do not invent new functions. Do not add a pole or any extra accessories not shown as part of the product. No UI, subtitles, stickers, text overlays, watermarks, floating graphics, invented packaging, product drift, magical cleanup, glowing effects, smoke, foam explosions, exaggerated chemical reactions, or unrealistic instant transformation. Keep the result credible for ceramic or porcelain tile grout only, not natural stone.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "grout-cleaner-kit-with-stand-up-brush-003-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+      "promptText": "Create one complete approximately 10-second vertical TikTok-style UGC cleaning ad in 9:16, realistic handheld phone-shot style, natural kitchen lighting, no subtitles and no text overlays. Timeline: 0-3s extreme close-up on a ceramic kitchen tile floor grout line next to a stove base: light grout has greasy brown splatter, dust, and tiny crumbs. A real hand tries the familiar ordinary method, spraying a basic household cleaner and wiping with a paper towel. The paper towel only spreads the greasy stain, leaves a darker wet streak in the grout, and the tile surface looks smeary. 3-6s continue the same failed method on the same stain: the hand wipes harder back and forth with the paper towel, the towel gets dirty, residue smears wider across the tile edges, the grout line remains dark, and the motion shows believable effort and mild frustration. 6-10s the Grout Cleaner Kit enters naturally beside the same spot: show the exact white 32 oz Grout-eez cleaner bottle with ribbed white neck, white cap, glossy red and blue front label with Clean-eez logo at the top, and the bright blue wide low V-shaped grout brush head with angled blue threaded socket and dense white twisted nylon bristles. Apply a small realistic amount of cleaner to the same grout line, then use the blue V-shaped brush head to scrub along the grout groove; grime loosens realistically with physical brushing, not magically. Wipe once to reveal a noticeably cleaner strip of grout directly beside an untouched dirty section for credible before-after contrast. End with the product bottle and brush head visible near the cleaned line and a natural spoken light CTA: “Check it out for stubborn grout lines.” Preserve product identity from the reference images exactly: keep product color, label, shape, material, proportions, ribbed neck, cap, brush head structure, bristle color, bristle density, angled socket, and logo position unchanged. Use the detail and function references only to preserve true product structure and real usage; do not invent new functions. Do not add a pole or any extra accessories not shown as part of the product. No UI, subtitles, stickers, text overlays, watermarks, floating graphics, invented packaging, product drift, magical cleanup, glowing effects, smoke, foam explosions, exaggerated chemical reactions, or unrealistic instant transformation. Keep the result credible for ceramic or porcelain tile grout only, not natural stone.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-29T06:59:23.183Z"
+}
