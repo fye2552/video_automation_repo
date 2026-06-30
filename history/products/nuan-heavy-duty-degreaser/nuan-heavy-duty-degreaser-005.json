@@ -1,0 +1,105 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-005",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-005",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "oven glass door grease fog smeared worse by generic glass cleaner",
+    "hook": "Squinting through a heavily grease-fogged oven door, trying to see the food inside, while a standard glass cleaner just makes the brown baked-on grease smear into a cloudy mess.",
+    "structure_signature": "oven_glass_door_grease_fog_glass_cleaner_smear_nuan_spray_foam_wipe_clear_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": "Can't even see what you're baking? Glass cleaners just smear oven grease into a sticky, cloudy mess.",
+      "segment_02": "That's why I switched to NUAN. Just spray the heavy-duty foam directly onto that baked-on grime and let it sit for a minute.",
+      "segment_03": "Wipe it away, and it cuts right through! Plus, it has a fresh peach scent. Finally, a clear view of dinner.",
+      "broll_coverage": "No voiceover needed. Independent functionality footage."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-005-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，油腻模糊的烤箱玻璃门，棕色油污让人看不清内部。\n00:00.5-00:01.0，特写镜头，普通玻璃清洁剂擦拭后，油污反而变成浑浊粘腻的糊状。\n00:01.0-00:01.5，特写镜头，画面中出现NUAN去油污喷雾的白色喷瓶和绿色标签。\n00:01.5-00:03.0，中景镜头，达人拿着脏抹布露出烦躁的表情，随后展示NUAN产品。\n00:03.0-00:06.0，特写镜头，手指按下喷头，将绵密的泡沫喷洒在烤箱门上。\n00:06.0-00:10.0，特写镜头，大量白色泡沫覆盖住顽固的棕色油污，不夸张。\n\n同步美式英语口播：“Can't even see what you're baking? Glass cleaners just smear oven grease into a sticky, cloudy mess.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-005-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人手持NUAN去油污喷雾，向镜头稳定展示白色的瓶身和带有桃子图标的绿色标签。\n00:03.0-00:06.0，特写镜头，丰富的清洁泡沫厚厚地覆盖在烤箱门厚重的棕色油污上。\n00:06.0-00:10.0，特写镜头，等待过程中，泡沫逐渐开始溶解底层的棕色烤焦油脂，产生真实的效果反应，不夸张。\n\n同步美式英语口播：“That's why I switched to NUAN. Just spray the heavy-duty foam directly onto that baked-on grime and let it sit for a minute.”\n保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-005-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写镜头，一只手戴着透明一次性手套，拿着蓝色超细纤维毛巾，轻松擦拭刚才喷过泡沫的区域。\n00:03.0-00:06.0，特写镜头，毛巾擦过的地方立刻恢复玻璃的透亮，油污被顺利带走，对比非常明显。\n00:06.0-00:10.0，中景镜头，达人展示干净透亮的烤箱玻璃门，并微笑着深呼吸，表现出闻到水蜜桃清香的愉悦感。\n\n同步美式英语口播：“Wipe it away, and it cuts right through! Plus, it has a fresh peach scent. Finally, a clear view of dinner.”\n保留自然环境声、轻微擦拭声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-005-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的美式厨房场景、光线和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写镜头，干净厨房台面上，平稳展示NUAN去油污喷雾的白色瓶身和绿色标签。\n00:02.0-00:04.0，特写镜头，手持喷雾对着油腻的厨房水槽边缘喷洒。\n00:04.0-00:06.0，特写镜头，白色泡沫覆盖在污渍上进行渗透。\n00:06.0-00:08.0，特写镜头，用蓝色毛巾一抹，水槽边缘恢复不锈钢的光洁表面。\n00:08.0-00:10.0，中景镜头，NUAN喷雾和折叠好的蓝色毛巾在台面上自然摆放收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-005-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，油腻模糊的烤箱玻璃门，棕色油污让人看不清内部。\n00:00.5-00:01.0，特写镜头，普通玻璃清洁剂擦拭后，油污反而变成浑浊粘腻的糊状。\n00:01.0-00:01.5，特写镜头，画面中出现NUAN去油污喷雾的白色喷瓶和绿色标签。\n00:01.5-00:03.0，中景镜头，达人拿着脏抹布露出烦躁的表情，随后展示NUAN产品。\n00:03.0-00:06.0，特写镜头，手指按下喷头，将绵密的泡沫喷洒在烤箱门上。\n00:06.0-00:10.0，特写镜头，大量白色泡沫覆盖住顽固的棕色油污，不夸张。\n\n同步美式英语口播：“Can't even see what you're baking? Glass cleaners just smear oven grease into a sticky, cloudy mess.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-005-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人手持NUAN去油污喷雾，向镜头稳定展示白色的瓶身和带有桃子图标的绿色标签。\n00:03.0-00:06.0，特写镜头，丰富的清洁泡沫厚厚地覆盖在烤箱门厚重的棕色油污上。\n00:06.0-00:10.0，特写镜头，等待过程中，泡沫逐渐开始溶解底层的棕色烤焦油脂，产生真实的效果反应，不夸张。\n\n同步美式英语口播：“That's why I switched to NUAN. Just spray the heavy-duty foam directly onto that baked-on grime and let it sit for a minute.”\n保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-005-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定达人在美式厨房，使用NUAN Heavy Duty Kitchen Degreaser Spray。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写镜头，一只手戴着透明一次性手套，拿着蓝色超细纤维毛巾，轻松擦拭刚才喷过泡沫的区域。\n00:03.0-00:06.0，特写镜头，毛巾擦过的地方立刻恢复玻璃的透亮，油污被顺利带走，对比非常明显。\n00:06.0-00:10.0，中景镜头，达人展示干净透亮的烤箱玻璃门，并微笑着深呼吸，表现出闻到水蜜桃清香的愉悦感。\n\n同步美式英语口播：“Wipe it away, and it cuts right through! Plus, it has a fresh peach scent. Finally, a clear view of dinner.”\n保留自然环境声、轻微擦拭声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-005-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的美式厨房场景、光线和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色喷瓶、宽下半身、窄颈部、白色罗纹颈环、绿色正面标签、黑色NUAN Logo一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写镜头，干净厨房台面上，平稳展示NUAN去油污喷雾的白色瓶身和绿色标签。\n00:02.0-00:04.0，特写镜头，手持喷雾对着油腻的厨房水槽边缘喷洒。\n00:04.0-00:06.0，特写镜头，白色泡沫覆盖在污渍上进行渗透。\n00:06.0-00:08.0，特写镜头，用蓝色毛巾一抹，水槽边缘恢复不锈钢的光洁表面。\n00:08.0-00:10.0，中景镜头，NUAN喷雾和折叠好的蓝色毛巾在台面上自然摆放收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-30T11:49:22.531Z"
+}
