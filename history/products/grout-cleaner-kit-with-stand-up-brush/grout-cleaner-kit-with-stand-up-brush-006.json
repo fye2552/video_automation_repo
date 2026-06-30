@@ -1,0 +1,105 @@
+{
+  "script_id": "grout-cleaner-kit-with-stand-up-brush-006",
+  "product_id": "grout-cleaner-kit-with-stand-up-brush",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/grout-cleaner-kit-with-stand-up-brush",
+  "product_folder": "products/grout-cleaner-kit-with-stand-up-brush",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "grout-cleaner-kit-with-stand-up-brush-006",
+    "product_id": "grout-cleaner-kit-with-stand-up-brush",
+    "angle": "The satisfying process of chemical lifting followed by effortless stand-up sweeping that removes deep grime from a high-traffic tile path",
+    "hook": "Have you ever noticed that one high-traffic tile path in your house getting darker and darker? Dirt just gets packed in there.",
+    "structure_signature": "high_traffic_dark_path_pain_apply_cleaner_wait_stand_up_brush_sweep_reveal_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": "Have you ever noticed that one high-traffic tile path in your house getting darker and darker? Dirt just gets packed in there.",
+      "segment_02": "I applied this professional-strength grout cleaner and let it sit. Then, using this V-shaped brush on a pole, I scrubbed without ever getting on my knees.",
+      "segment_03": "The twisted bristles reach deep into the lines without scratching. I just mopped it away, and the grout looks totally brand new again.",
+      "broll_coverage": "(No voiceover)"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，使用参考图中的瓷砖缝隙清洁剂。产品只参考Skill A标准参考图，保持白色32盎司瓶身、红蓝标签、罗纹瓶颈一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、保持产品比例不变、保持Logo位置不变、不要增加原始产品不存在的配件、不要改变产品品类。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，手持手机俯拍，展示客厅高频走动区域的一条发黑的脏瓷砖缝隙。\n00:00.5-00:01.0，特写镜头，镜头微微晃动，强调缝隙里的顽固污垢。\n00:01.0-00:01.5，中景镜头，一只手拿着白色的清洁剂瓶子出现在画面中。\n00:01.5-00:03.0，特写镜头，手持瓶子将液体沿着发黑的瓷砖缝隙倒下。\n00:03.0-00:06.0，特写镜头，清洁剂液体覆盖在瓷砖缝上，开始产生化学反应。\n00:06.0-00:10.0，中景镜头，达人自然站立等待，展示让清洁剂静置几分钟的真实生活感。\n\n同步美式英语口播：“Have you ever noticed that one high-traffic tile path in your house getting darker and darker? Dirt just gets packed in there.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，使用参考图中的V型地缝刷。产品只参考Skill A标准参考图，保持亮蓝色V型刷头、白色尼龙刷毛一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、不要增加原始产品不存在的配件、不要改变产品品类。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人手持接了长杆的蓝色V型刷头站立，不弯腰不跪地，轻松开始刷洗地缝。\n00:03.0-00:06.0，特写镜头，展示蓝色V型刷头完美卡在瓷砖缝隙中，随着刷洗动作松动污垢。\n00:06.0-00:10.0，第一人称俯拍镜头，达人双手握杆，轻松推拉刷头，展示刷头可旋转的灵活性和刷毛对污垢的清洁过程，不夸张。\n\n同步美式英语口播：“I applied this professional-strength grout cleaner and let it sit. Then, using this V-shaped brush on a pole, I scrubbed without ever getting on my knees.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，展示清洁后的效果。产品只参考Skill A标准参考图，保持产品一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、不要增加原始产品不存在的配件、不要虚构不存在的功能。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，第一人称俯拍镜头，达人拿一把家用拖把将刷出来的脏水擦拭干净，露出下方颜色变浅的瓷砖缝隙。\n00:03.0-00:06.0，特写镜头，镜头缓慢扫过刚刚清洁完的区域，展示缝隙颜色的真实改善，污垢被彻底去除，不夸张变形。\n00:06.0-00:10.0，中景镜头，达人手里拿着白色清洁剂瓶子和蓝色刷头，面对镜头露出满意的微笑，展示产品整体组合。\n\n同步美式英语口播：“The twisted bristles reach deep into the lines without scratching. I just mopped it away, and the grout looks totally brand new again.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮的居家客厅或走廊、自然室内光线、白人女性手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色32盎司瓶身和蓝色V型刷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。保持产品颜色不变、保持产品形状不变、保持产品材质不变。\n\n00:00-00:02.0，特写镜头，手部握住白色的清洁剂瓶子，稳稳地展示红蓝标签和罗纹瓶颈。\n00:02.0-00:04.0，特写镜头，不接长杆的情况下，单手拿着亮蓝色V型刷头，将刷毛对准一条瓷砖缝隙放进去。\n00:04.0-00:06.0，特写镜头，展示蓝色刷头宽大低矮的形状和白色扭曲尼龙刷毛完美贴合缝隙的材质细节，不滑动。\n00:06.0-00:08.0，特写镜头，手部轻轻在缝隙里前后推动几下刷头，展示刷头清理缝隙深处的机械动作。\n00:08.0-00:10.0，俯拍特写镜头，刷头旁边摆放着白色的清洁剂瓶子，作为产品静态展示收尾，可剪掉。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，使用参考图中的瓷砖缝隙清洁剂。产品只参考Skill A标准参考图，保持白色32盎司瓶身、红蓝标签、罗纹瓶颈一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、保持产品比例不变、保持Logo位置不变、不要增加原始产品不存在的配件、不要改变产品品类。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，手持手机俯拍，展示客厅高频走动区域的一条发黑的脏瓷砖缝隙。\n00:00.5-00:01.0，特写镜头，镜头微微晃动，强调缝隙里的顽固污垢。\n00:01.0-00:01.5，中景镜头，一只手拿着白色的清洁剂瓶子出现在画面中。\n00:01.5-00:03.0，特写镜头，手持瓶子将液体沿着发黑的瓷砖缝隙倒下。\n00:03.0-00:06.0，特写镜头，清洁剂液体覆盖在瓷砖缝上，开始产生化学反应。\n00:06.0-00:10.0，中景镜头，达人自然站立等待，展示让清洁剂静置几分钟的真实生活感。\n\n同步美式英语口播：“Have you ever noticed that one high-traffic tile path in your house getting darker and darker? Dirt just gets packed in there.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，使用参考图中的V型地缝刷。产品只参考Skill A标准参考图，保持亮蓝色V型刷头、白色尼龙刷毛一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、不要增加原始产品不存在的配件、不要改变产品品类。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人手持接了长杆的蓝色V型刷头站立，不弯腰不跪地，轻松开始刷洗地缝。\n00:03.0-00:06.0，特写镜头，展示蓝色V型刷头完美卡在瓷砖缝隙中，随着刷洗动作松动污垢。\n00:06.0-00:10.0，第一人称俯拍镜头，达人双手握杆，轻松推拉刷头，展示刷头可旋转的灵活性和刷毛对污垢的清洁过程，不夸张。\n\n同步美式英语口播：“I applied this professional-strength grout cleaner and let it sit. Then, using this V-shaped brush on a pole, I scrubbed without ever getting on my knees.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定达人（30代白人女性）在明亮的居家客厅或走廊，铺有浅色瓷砖，展示清洁后的效果。产品只参考Skill A标准参考图，保持产品一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。保持产品颜色不变、保持产品形状不变、保持产品材质不变、不要增加原始产品不存在的配件、不要虚构不存在的功能。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，第一人称俯拍镜头，达人拿一把家用拖把将刷出来的脏水擦拭干净，露出下方颜色变浅的瓷砖缝隙。\n00:03.0-00:06.0，特写镜头，镜头缓慢扫过刚刚清洁完的区域，展示缝隙颜色的真实改善，污垢被彻底去除，不夸张变形。\n00:06.0-00:10.0，中景镜头，达人手里拿着白色清洁剂瓶子和蓝色刷头，面对镜头露出满意的微笑，展示产品整体组合。\n\n同步美式英语口播：“The twisted bristles reach deep into the lines without scratching. I just mopped it away, and the grout looks totally brand new again.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "grout-cleaner-kit-with-stand-up-brush-006-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/grout-cleaner-kit-with-stand-up-brush/images/product_white_bg.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮的居家客厅或走廊、自然室内光线、白人女性手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色32盎司瓶身和蓝色V型刷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。保持产品颜色不变、保持产品形状不变、保持产品材质不变。\n\n00:00-00:02.0，特写镜头，手部握住白色的清洁剂瓶子，稳稳地展示红蓝标签和罗纹瓶颈。\n00:02.0-00:04.0，特写镜头，不接长杆的情况下，单手拿着亮蓝色V型刷头，将刷毛对准一条瓷砖缝隙放进去。\n00:04.0-00:06.0，特写镜头，展示蓝色刷头宽大低矮的形状和白色扭曲尼龙刷毛完美贴合缝隙的材质细节，不滑动。\n00:06.0-00:08.0，特写镜头，手部轻轻在缝隙里前后推动几下刷头，展示刷头清理缝隙深处的机械动作。\n00:08.0-00:10.0，俯拍特写镜头，刷头旁边摆放着白色的清洁剂瓶子，作为产品静态展示收尾，可剪掉。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-06-30T11:46:25.211Z"
+}
