@@ -1,0 +1,110 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-006",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-006",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "kitchen backsplash sticky grease getting torn paper towel lint stuck to it",
+    "hook": "POV: trying to wipe that sticky grease off your kitchen wall, and now you have torn paper towel stuck to it.",
+    "structure_signature": "kitchen_backsplash_grease_dry_paper_towel_lint_nuan_spray_foam_wipe_clean_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": {
+        "voiceover": "Trying to clean kitchen wall grease with a dry towel is a nightmare. But then I found NUAN heavy duty degreaser."
+      },
+      "segment_02": {
+        "voiceover": "It has a fresh peach scent! Just spray the foam, wait a bit, and wipe it away. The grease melts off instantly without heavy scrubbing."
+      },
+      "segment_03": {
+        "voiceover": "It works on stovetops, range hoods, and cookware too. Grab your 500-milliliter bottle today and make kitchen cleanup a breeze."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-006-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（非亚裔，休闲家居服，真实居家环境）在厨房，使用产品。产品只参考Skill A标准参考图，保持白色曲线瓶身、绿色标签、黑色NUAN Logo等关键外观特征一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，灶台后方瓷砖墙面上厚厚的黄色黏腻油污。\n00:00.5-00:01.0，特写镜头，一只手拿着干纸巾试图擦拭油污，纸巾粘在油污上破裂碎掉，留下难看的纸屑。\n00:01.0-00:01.5，特写镜头，带有绿色标签的NUAN白色喷雾瓶入画。\n00:01.5-00:03.0，中景镜头，达人单手拿着NUAN除油剂，露出惊喜和找到救星的表情。\n00:03.0-00:06.0，特写镜头，手持喷雾瓶对着瓷砖墙面的油污喷射，喷出丰富的白色泡沫。\n00:06.0-00:10.0，特写镜头，白色泡沫覆盖在油污和碎纸屑上，油脂开始被分解溶解。\n\n同步美式英语口播：“Trying to clean kitchen wall grease with a dry towel is a nightmare. But then I found NUAN heavy duty degreaser.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-006-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的非亚裔达人在厨房的场景。产品只参考Skill A标准参考图，保持白色瓶身、绿色标签一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人展示产品正面，用手指着绿色标签上的水蜜桃图标，深呼吸闻一下，做出满意的表情。\n00:03.0-00:06.0，特写镜头，等待片刻后，一只手拿着蓝色的清洁毛巾轻轻擦拭墙面上的泡沫。\n00:06.0-00:10.0，特写镜头，擦拭过的地方立刻露出干净光洁的瓷砖表面，纸屑和油污被完全带走，毫无残留，产生真实场景改善，不夸张。\n\n同步美式英语口播：“It has a fresh peach scent! Just spray the foam, wait a bit, and wipe it away. The grease melts off instantly without heavy scrubbing.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-006-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续非亚裔达人在明亮厨房的场景。产品只参考Skill A标准参考图，保持白底绿标喷雾瓶特征一致，不参考原始海报、尺寸图，不生成说明文字，不改变产品结构。画面自然真实。\n\n00:00-00:03.0，特写镜头，手持NUAN喷雾对准满是油污的烤盘喷射泡沫，动作干脆利落。\n00:03.0-00:06.0，中景镜头，达人站在干净整洁的厨房里，手里拿着NUAN除油剂，微笑着点头向镜头推荐。\n00:06.0-00:10.0，特写镜头，一瓶NUAN除油剂和配套的绿色外包装盒清晰地放在光洁的厨房流理台上，旁边是一块干净的蓝色毛巾，画面稳定，作为自然结尾。\n\n同步美式英语口播：“It works on stovetops, range hoods, and cookware too. Grab your 500-milliliter bottle today and make kitchen cleanup a breeze.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-006-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的厨房场景、光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色喷雾瓶和绿色标签等关键外观特征一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写镜头，镜头稳定拍摄一个底部带有黄色粘稠油渍的平底锅。\n00:02.0-00:04.0，特写镜头，一只手拿着带有NUAN Logo的白色喷雾瓶向平底锅底部喷出白色泡沫。\n00:04.0-00:06.0，特写镜头，细腻的白色泡沫覆盖在平底锅底部的油渍上。\n00:06.0-00:08.0，特写镜头，戴着透明一次性塑料手套的手用蓝色清洁毛巾一抹，擦去泡沫，露出金属锅底原本的干净光泽。\n00:08.0-00:10.0，特写镜头，干净的平底锅旁边放着NUAN产品喷雾瓶，画面平稳自然收尾，可剪掉。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-006-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（非亚裔，休闲家居服，真实居家环境）在厨房，使用产品。产品只参考Skill A标准参考图，保持白色曲线瓶身、绿色标签、黑色NUAN Logo等关键外观特征一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，特写镜头，灶台后方瓷砖墙面上厚厚的黄色黏腻油污。\n00:00.5-00:01.0，特写镜头，一只手拿着干纸巾试图擦拭油污，纸巾粘在油污上破裂碎掉，留下难看的纸屑。\n00:01.0-00:01.5，特写镜头，带有绿色标签的NUAN白色喷雾瓶入画。\n00:01.5-00:03.0，中景镜头，达人单手拿着NUAN除油剂，露出惊喜和找到救星的表情。\n00:03.0-00:06.0，特写镜头，手持喷雾瓶对着瓷砖墙面的油污喷射，喷出丰富的白色泡沫。\n00:06.0-00:10.0，特写镜头，白色泡沫覆盖在油污和碎纸屑上，油脂开始被分解溶解。\n\n同步美式英语口播：“Trying to clean kitchen wall grease with a dry towel is a nightmare. But then I found NUAN heavy duty degreaser.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-006-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的非亚裔达人在厨房的场景。产品只参考Skill A标准参考图，保持白色瓶身、绿色标签一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，中景镜头，达人展示产品正面，用手指着绿色标签上的水蜜桃图标，深呼吸闻一下，做出满意的表情。\n00:03.0-00:06.0，特写镜头，等待片刻后，一只手拿着蓝色的清洁毛巾轻轻擦拭墙面上的泡沫。\n00:06.0-00:10.0，特写镜头，擦拭过的地方立刻露出干净光洁的瓷砖表面，纸屑和油污被完全带走，毫无残留，产生真实场景改善，不夸张。\n\n同步美式英语口播：“It has a fresh peach scent! Just spray the foam, wait a bit, and wipe it away. The grease melts off instantly without heavy scrubbing.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-006-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续非亚裔达人在明亮厨房的场景。产品只参考Skill A标准参考图，保持白底绿标喷雾瓶特征一致，不参考原始海报、尺寸图，不生成说明文字，不改变产品结构。画面自然真实。\n\n00:00-00:03.0，特写镜头，手持NUAN喷雾对准满是油污的烤盘喷射泡沫，动作干脆利落。\n00:03.0-00:06.0，中景镜头，达人站在干净整洁的厨房里，手里拿着NUAN除油剂，微笑着点头向镜头推荐。\n00:06.0-00:10.0，特写镜头，一瓶NUAN除油剂和配套的绿色外包装盒清晰地放在光洁的厨房流理台上，旁边是一块干净的蓝色毛巾，画面稳定，作为自然结尾。\n\n同步美式英语口播：“It works on stovetops, range hoods, and cookware too. Grab your 500-milliliter bottle today and make kitchen cleanup a breeze.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-006-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的厨房场景、光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色喷雾瓶和绿色标签等关键外观特征一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写镜头，镜头稳定拍摄一个底部带有黄色粘稠油渍的平底锅。\n00:02.0-00:04.0，特写镜头，一只手拿着带有NUAN Logo的白色喷雾瓶向平底锅底部喷出白色泡沫。\n00:04.0-00:06.0，特写镜头，细腻的白色泡沫覆盖在平底锅底部的油渍上。\n00:06.0-00:08.0，特写镜头，戴着透明一次性塑料手套的手用蓝色清洁毛巾一抹，擦去泡沫，露出金属锅底原本的干净光泽。\n00:08.0-00:10.0，特写镜头，干净的平底锅旁边放着NUAN产品喷雾瓶，画面平稳自然收尾，可剪掉。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T07:57:39.491Z"
+}
