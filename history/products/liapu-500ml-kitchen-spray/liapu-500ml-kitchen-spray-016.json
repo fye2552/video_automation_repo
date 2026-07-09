@@ -1,0 +1,106 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-016",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-016",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "active_skill": "skill_b",
+    "angle": "Washing greasy pans leaves a slippery, cloudy oil film in the kitchen sink that regular sponges just smear around; Liapu spray instantly dissolves this sink residue for a clean, lemon-fresh, antibacterial finish.",
+    "hook": "Ever wash a greasy pan and it leaves that disgusting oily film all over your stainless steel sink?",
+    "structure_signature": "wrong_sponge_greasy_sink_film_to_liapu_spray_dissolve_wipe_clean_antibacterial_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": "Ever wash a greasy pan and it leaves that disgusting oily film all over your stainless steel sink? A regular sponge just spreads it around.",
+      "segment_02": "I switched to this Liapu degreaser. Just spray it directly on the slick residue, let it sit for a few seconds, and wipe it away.",
+      "segment_03": "It completely cuts through the grease with zero cloudy residue left behind. Plus, it kills 99.9% of bacteria and smells like fresh lemons.",
+      "broll_coverage": ""
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-016-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人（28岁亚裔男性，黑色短发，穿着黑色休闲T恤）在现代公寓厨房，深灰色花岗岩台面，不锈钢水槽，明亮日间窗光，使用参考图2中的Liapu喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV手持手机特写，镜头对准不锈钢水槽内壁，达人手指入画划过水槽侧面残留的恶心油腻水膜。\n00:00.5-00:01.0，微距特写，水槽表面挂着浑浊的油渍残留和水珠。\n00:01.0-00:01.5，切换至亚裔男达人半身自拍，表情皱眉嫌弃。\n00:01.5-00:03.0，达人自拍继续，拿着一块普通的黄色海绵无奈地展示，口播吐槽。\n00:03.0-00:06.0，POV镜头，达人用黄色海绵擦拭水槽边缘，油腻膜不仅没被擦干净，反而被涂抹得面积更大，形成浑浊的一片。\n00:06.0-00:10.0，POV镜头，达人从画面外拿起Liapu喷雾瓶，带到画面中心展示产品正面黄色标签和半透明瓶身。\n\n同步美式英语口播：“Ever wash a greasy pan and it leaves that disgusting oily film all over your stainless steel sink? A regular sponge just spreads it around.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-016-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续第一段的亚裔男达人、现代公寓厨房、深灰色花岗岩台面、不锈钢水槽和明亮日间窗光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人的手拿着Liapu喷雾瓶，对准水槽里的油腻残留区域按压喷头，喷出细密的白色雾状液体覆盖油膜。\n00:03.0-00:06.0，微距镜头贴近水槽表面，清晰展示喷洒后的液体迅速浸润并开始溶解这层浑浊的油膜，油污出现松动分解的自然反应。\n00:06.0-00:10.0，POV近景，达人换用一张干净的白色厨房纸巾，在喷洒区域轻松一抹，原本油滑浑浊的不锈钢表面瞬间变得干净反光，形成明显的去污对比。\n\n同步美式英语口播：“I switched to this Liapu degreaser. Just spray it directly on the slick residue, let it sit for a few seconds, and wipe it away.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-016-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前两段的亚裔男达人、现代公寓厨房、深灰色花岗岩台面、不锈钢水槽和明亮日间窗光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV镜头缓慢扫过刚刚擦拭过的水槽边缘，不锈钢表面干净清爽，没有任何浑浊残留或化学膜，清澈地反射出窗外的光线。\n00:03.0-00:06.0，切换至亚裔男达人半身自拍，手里拿着Liapu喷雾瓶放在胸前，表情惊喜满意，向观众点头推荐。\n00:06.0-00:10.0，产品特写，达人双手拿着产品展示正面标签，黄色标签清晰可见，手指轻点半透明瓶身，展示完成态。\n\n同步美式英语口播：“It completely cuts through the grease with zero cloudy residue left behind. Plus, it kills 99.9% of bacteria and smells like fresh lemons.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-016-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代公寓厨房场景、深灰色花岗岩台面、明亮日间窗光环境、亚裔男性手部特征和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV特写，达人的手将Liapu喷雾瓶平稳放置在深灰色花岗岩台面上，黄色标签正对镜头，背景是干净的不锈钢水槽。\n00:02.0-00:04.0，POV特写，达人手握喷雾瓶对准空的水槽按压喷头，喷出均匀细腻的白色喷雾。\n00:04.0-00:06.0，POV桌上特写，Liapu喷雾产品旁边摆放半个新鲜的黄柠檬，明亮自然的光线打在瓶身和柠檬上，暗示柠檬香味（柠檬仅为合法道具，不暗示成分）。\n00:06.0-00:08.0，POV特写，达人手指轻轻旋转瓶身，从正面黄色标签转向侧面，展示半透明质感中液体的轻微晃动。\n00:08.0-00:10.0，POV中景，产品静置在台面中央，背景虚化，作为自然收尾备用镜头。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-016-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人（28岁亚裔男性，黑色短发，穿着黑色休闲T恤）在现代公寓厨房，深灰色花岗岩台面，不锈钢水槽，明亮日间窗光，使用参考图2中的Liapu喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV手持手机特写，镜头对准不锈钢水槽内壁，达人手指入画划过水槽侧面残留的恶心油腻水膜。\n00:00.5-00:01.0，微距特写，水槽表面挂着浑浊的油渍残留和水珠。\n00:01.0-00:01.5，切换至亚裔男达人半身自拍，表情皱眉嫌弃。\n00:01.5-00:03.0，达人自拍继续，拿着一块普通的黄色海绵无奈地展示，口播吐槽。\n00:03.0-00:06.0，POV镜头，达人用黄色海绵擦拭水槽边缘，油腻膜不仅没被擦干净，反而被涂抹得面积更大，形成浑浊的一片。\n00:06.0-00:10.0，POV镜头，达人从画面外拿起Liapu喷雾瓶，带到画面中心展示产品正面黄色标签和半透明瓶身。\n\n同步美式英语口播：“Ever wash a greasy pan and it leaves that disgusting oily film all over your stainless steel sink? A regular sponge just spreads it around.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-016-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续第一段的亚裔男达人、现代公寓厨房、深灰色花岗岩台面、不锈钢水槽和明亮日间窗光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人的手拿着Liapu喷雾瓶，对准水槽里的油腻残留区域按压喷头，喷出细密的白色雾状液体覆盖油膜。\n00:03.0-00:06.0，微距镜头贴近水槽表面，清晰展示喷洒后的液体迅速浸润并开始溶解这层浑浊的油膜，油污出现松动分解的自然反应。\n00:06.0-00:10.0，POV近景，达人换用一张干净的白色厨房纸巾，在喷洒区域轻松一抹，原本油滑浑浊的不锈钢表面瞬间变得干净反光，形成明显的去污对比。\n\n同步美式英语口播：“I switched to this Liapu degreaser. Just spray it directly on the slick residue, let it sit for a few seconds, and wipe it away.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-016-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前两段的亚裔男达人、现代公寓厨房、深灰色花岗岩台面、不锈钢水槽和明亮日间窗光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV镜头缓慢扫过刚刚擦拭过的水槽边缘，不锈钢表面干净清爽，没有任何浑浊残留或化学膜，清澈地反射出窗外的光线。\n00:03.0-00:06.0，切换至亚裔男达人半身自拍，手里拿着Liapu喷雾瓶放在胸前，表情惊喜满意，向观众点头推荐。\n00:06.0-00:10.0，产品特写，达人双手拿着产品展示正面标签，黄色标签清晰可见，手指轻点半透明瓶身，展示完成态。\n\n同步美式英语口播：“It completely cuts through the grease with zero cloudy residue left behind. Plus, it kills 99.9% of bacteria and smells like fresh lemons.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-016-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代公寓厨房场景、深灰色花岗岩台面、明亮日间窗光环境、亚裔男性手部特征和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV特写，达人的手将Liapu喷雾瓶平稳放置在深灰色花岗岩台面上，黄色标签正对镜头，背景是干净的不锈钢水槽。\n00:02.0-00:04.0，POV特写，达人手握喷雾瓶对准空的水槽按压喷头，喷出均匀细腻的白色喷雾。\n00:04.0-00:06.0，POV桌上特写，Liapu喷雾产品旁边摆放半个新鲜的黄柠檬，明亮自然的光线打在瓶身和柠檬上，暗示柠檬香味（柠檬仅为合法道具，不暗示成分）。\n00:06.0-00:08.0，POV特写，达人手指轻轻旋转瓶身，从正面黄色标签转向侧面，展示半透明质感中液体的轻微晃动。\n00:08.0-00:10.0，POV中景，产品静置在台面中央，背景虚化，作为自然收尾备用镜头。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T08:36:09.167Z"
+}
