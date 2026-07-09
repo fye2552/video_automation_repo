@@ -1,0 +1,108 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-007",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-007",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "sticky yellow grease film on a roasting tray resistant to regular dish soap",
+    "hook": "Fingers touching a sticky grease film on a metal roasting tray where regular dish soap suds slide off without cutting the grease.",
+    "structure_signature": "roasting_tray_sticky_grease_dish_soap_fail_nuan_spray_foam_wipe_clean_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "target_market": "US",
+      "language": "en-US",
+      "creator_profile": "Non-Asian female creator in her early 30s, casual home kitchen setting, warm under-cabinet LED lighting",
+      "segment_01_vo": "I scrubbed this roasting tray twice with regular dish soap, and this sticky grease film wouldn't budge. That's when I grabbed NUAN Heavy Duty Degreaser Spray.",
+      "segment_02_vo": "Just spray the dense foam right over the grease stains and let it sit. It has a light peach scent and cuts through stubborn kitchen oil fast.",
+      "segment_03_vo": "One wipe with a cleaning towel and the sticky residue lifts off completely without hard scrubbing. Look how clean and grease-free the surface looks now!",
+      "broll_coverage_vo": ""
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-007-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人（30岁左右欧美女性）在暖色灯光现代家庭厨房，使用参考图2中的NUAN重油污清洁喷雾产品。产品只参考Skill A标准参考图，保持白色曲线扳机式塑料喷雾瓶、绿色光泽正面标签、黑色NUAN Logo位置及比例等关键外观特征一致，不参考原始海报、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。必须遵守约束：保持产品颜色、形状、材质与比例不变，不要增加原始产品不存在的配件。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，手持俯拍近景，达人用手指摸过刚洗过却仍然发粘发黄的金属烤盘表面，留下油腻指印痕迹。\n00:00.5-00:01.0，手机特写镜头，展示普通洗洁精泡沫滑过油渍表面却无法分解粘腻油膜的细节反差。\n00:01.0-00:01.5，手持中景，达人手持NUAN重油污清洁喷雾瓶入镜，瓶身正面绿色标签与黑色Logo清晰展示。\n00:01.5-00:03.0，达人面对镜头自然手持展示喷雾瓶身，表现发现厨房去油好物的神态转折。\n00:03.0-00:06.0，手部动作特写，达人单手握住喷雾手柄，将白底绿标喷雾瓶对准油腻的金属烤盘表面准备喷涂。\n00:06.0-00:10.0，手持镜头跟随，展示喷头精准朝厨房重油表面覆盖喷涂的准备动作，自然真实不夸张。\n\n同步美式英语口播：“I scrubbed this roasting tray twice with regular dish soap, and this sticky grease film wouldn't budge. That's when I grabbed NUAN Heavy Duty Degreaser Spray.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-007-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位固定达人在家庭厨房场景，使用参考图中的NUAN重油污清洁喷雾。产品只参考Skill A标准参考图，保持白色扳机式喷头、绿色光泽标签与黑色Logo的外观特征一致，不生成说明文字，不改变产品结构。必须遵守约束：保持产品颜色、形状、材质不变，不要增加多余按钮、灯光或虚构功能。\n\n00:00-00:03.0，手持特写镜头，单手扣动白色扳机喷头，喷出均匀且绵密的泡沫分布在金属烤盘的发粘油渍区域。\n00:03.0-00:06.0，俯拍中特写，展示绵密清洁泡沫覆盖在顽固油渍表面静置，泡沫包裹并开始渗透油污。\n00:06.0-00:10.0，手持移动微距视角，展示泡沫在重油污表面起效的过程，画面干净真实，呈现淡淡水蜜桃香气清洁氛围。\n\n同步美式英语口播：“Just spray the dense foam right over the grease stains and let it sit. It has a light peach scent and cuts through stubborn kitchen oil fast.”\n保留自然环境声、轻微喷雾操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-007-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位固定达人在家庭厨房场景，展示NUAN重油污清洁喷雾擦拭清洁的真实效果。产品只参考Skill A标准参考图，保持产品及厨房表面自然真实，不参考对比海报，不夸张变形。\n\n00:00-00:03.0，手持特写镜头，达人单手拿清洁布轻松推过静置后的烤盘表面，泡沫和化开的黄油渍立刻被一步带走。\n00:03.0-00:06.0，跟随近景，连续擦拭画面，露出一道清晰透亮、无粘腻残留的金属表面光泽，展示去重油真实效果。\n00:06.0-00:10.0，达人单手竖起一侧洁净光亮的烤盘并轻微倾斜展示，画面边缘放置白底绿标的NUAN清洁喷雾瓶，满意的真实微笑感。\n\n同步美式英语口播：“One wipe with a cleaning towel and the sticky residue lifts off completely without hard scrubbing. Look how clean and grease-free the surface looks now!”\n保留自然环境声、轻微擦拭声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-007-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的家庭厨房场景、暖色光线、达人手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色曲线喷雾瓶与绿色标签等关键外观特征一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，手持特写镜头，达人手部将NUAN重油污清洁喷雾瓶放在厨房料理台面稳定展示，产品标签清晰一致。\n00:02.0-00:04.0，微距镜头，手部握住白色喷嘴并将白色螺纹锁扣调整到位，动作简单规范。\n00:04.0-00:06.0，中景特写，单手扣动扳机对准另一处厨房油腻表面（如金属厨具底面）喷出均匀泡沫，不虚构未确认功能。\n00:06.0-00:08.0，特写镜头，清洁布顺畅一擦即净，呈现干净清爽的表面改善结果，自然不夸张。\n00:08.0-00:10.0，手持镜头稍微拉远，自然展示桌面洁净状态与喷雾瓶收尾，可后期剪切。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-007-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人（30岁左右欧美女性）在暖色灯光现代家庭厨房，使用参考图2中的NUAN重油污清洁喷雾产品。产品只参考Skill A标准参考图，保持白色曲线扳机式塑料喷雾瓶、绿色光泽正面标签、黑色NUAN Logo位置及比例等关键外观特征一致，不参考原始海报、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。必须遵守约束：保持产品颜色、形状、材质与比例不变，不要增加原始产品不存在的配件。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，手持俯拍近景，达人用手指摸过刚洗过却仍然发粘发黄的金属烤盘表面，留下油腻指印痕迹。\n00:00.5-00:01.0，手机特写镜头，展示普通洗洁精泡沫滑过油渍表面却无法分解粘腻油膜的细节反差。\n00:01.0-00:01.5，手持中景，达人手持NUAN重油污清洁喷雾瓶入镜，瓶身正面绿色标签与黑色Logo清晰展示。\n00:01.5-00:03.0，达人面对镜头自然手持展示喷雾瓶身，表现发现厨房去油好物的神态转折。\n00:03.0-00:06.0，手部动作特写，达人单手握住喷雾手柄，将白底绿标喷雾瓶对准油腻的金属烤盘表面准备喷涂。\n00:06.0-00:10.0，手持镜头跟随，展示喷头精准朝厨房重油表面覆盖喷涂的准备动作，自然真实不夸张。\n\n同步美式英语口播：“I scrubbed this roasting tray twice with regular dish soap, and this sticky grease film wouldn't budge. That's when I grabbed NUAN Heavy Duty Degreaser Spray.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-007-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位固定达人在家庭厨房场景，使用参考图中的NUAN重油污清洁喷雾。产品只参考Skill A标准参考图，保持白色扳机式喷头、绿色光泽标签与黑色Logo的外观特征一致，不生成说明文字，不改变产品结构。必须遵守约束：保持产品颜色、形状、材质不变，不要增加多余按钮、灯光或虚构功能。\n\n00:00-00:03.0，手持特写镜头，单手扣动白色扳机喷头，喷出均匀且绵密的泡沫分布在金属烤盘的发粘油渍区域。\n00:03.0-00:06.0，俯拍中特写，展示绵密清洁泡沫覆盖在顽固油渍表面静置，泡沫包裹并开始渗透油污。\n00:06.0-00:10.0，手持移动微距视角，展示泡沫在重油污表面起效的过程，画面干净真实，呈现淡淡水蜜桃香气清洁氛围。\n\n同步美式英语口播：“Just spray the dense foam right over the grease stains and let it sit. It has a light peach scent and cuts through stubborn kitchen oil fast.”\n保留自然环境声、轻微喷雾操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-007-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续同一位固定达人在家庭厨房场景，展示NUAN重油污清洁喷雾擦拭清洁的真实效果。产品只参考Skill A标准参考图，保持产品及厨房表面自然真实，不参考对比海报，不夸张变形。\n\n00:00-00:03.0，手持特写镜头，达人单手拿清洁布轻松推过静置后的烤盘表面，泡沫和化开的黄油渍立刻被一步带走。\n00:03.0-00:06.0，跟随近景，连续擦拭画面，露出一道清晰透亮、无粘腻残留的金属表面光泽，展示去重油真实效果。\n00:06.0-00:10.0，达人单手竖起一侧洁净光亮的烤盘并轻微倾斜展示，画面边缘放置白底绿标的NUAN清洁喷雾瓶，满意的真实微笑感。\n\n同步美式英语口播：“One wipe with a cleaning towel and the sticky residue lifts off completely without hard scrubbing. Look how clean and grease-free the surface looks now!”\n保留自然环境声、轻微擦拭声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-007-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的家庭厨房场景、暖色光线、达人手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色曲线喷雾瓶与绿色标签等关键外观特征一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，手持特写镜头，达人手部将NUAN重油污清洁喷雾瓶放在厨房料理台面稳定展示，产品标签清晰一致。\n00:02.0-00:04.0，微距镜头，手部握住白色喷嘴并将白色螺纹锁扣调整到位，动作简单规范。\n00:04.0-00:06.0，中景特写，单手扣动扳机对准另一处厨房油腻表面（如金属厨具底面）喷出均匀泡沫，不虚构未确认功能。\n00:06.0-00:08.0，特写镜头，清洁布顺畅一擦即净，呈现干净清爽的表面改善结果，自然不夸张。\n00:08.0-00:10.0，手持镜头稍微拉远，自然展示桌面洁净状态与喷雾瓶收尾，可后期剪切。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T08:07:09.088Z"
+}
