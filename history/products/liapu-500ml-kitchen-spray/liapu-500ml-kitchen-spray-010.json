@@ -1,0 +1,104 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-010",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-010",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "DIY baking soda paste just creates a crusty mess on gas stovetop grease; Liapu spray dissolves the thick oil splatter immediately for a one-wipe clean.",
+    "hook": "I tried that baking soda hack on my greasy stovetop and it just made a crusty mess.",
+    "structure_signature": "wrong_diy_baking_soda_paste_stovetop_grease_to_liapu_spray_wipe_clean_antibacterial_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": "I tried that baking soda hack on my greasy stovetop and it just made a crusty mess. Then I found this Liapu spray.",
+      "segment_02": "You literally just spray it on the oil splatter, let it sit for a few seconds, and wipe. It breaks down the heavy grease instantly.",
+      "segment_03": "No weird residue, just a fresh lemon scent. Plus it kills 99.9% of kitchen bacteria like Salmonella. This is a total game changer."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-010-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV手持特写，镜头对准燃气灶旁厚厚的黄褐色油污，上面覆盖着结块的小苏打白色糊状物。\n00:00.5-00:01.0，POV镜头，一只手拿着海绵试图擦拭糊状物，结果只把油污和白粉抹得更脏更粘。\n00:01.0-00:01.5，切换至达人半身自拍，他皱着眉头无奈地摇头，展示沾有油腻白色糊状物的手套。\n00:01.5-00:03.0，达人自拍，表情一转，露出“但我发现了好东西”的微笑，从画外拿起Liapu喷雾瓶。\n00:03.0-00:06.0，POV镜头，达人手持Liapu喷雾瓶，将黄色标签正面朝向镜头展示几秒钟，背景是脏灶台。\n00:06.0-00:10.0，达人将喷嘴对准灶台上最脏的油垢区域，准备喷洒。\n\n同步美式英语口播：“I tried that baking soda hack on my greasy stovetop and it just made a crusty mess. Then I found this Liapu spray.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-010-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前一段的固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不改变产品结构。\n\n00:00-00:03.0，POV手持特写，达人单手握住Liapu喷雾瓶，连续按压扳机喷头2次，细腻的白色雾状液体准确覆盖在厚重的黄褐色油污上。\n00:03.0-00:06.0，微距POV，镜头贴近油污表面，展示喷雾液体迅速浸润油垢，黄色的油渍边缘开始软化溶解（自然化学反应，不夸张）。\n00:06.0-00:10.0，POV镜头，达人用一张干净的厨房纸巾在喷洒过的区域轻轻一擦，纸巾带走所有油污，瞬间露出下方干净反光的不锈钢灶台表面。\n\n同步美式英语口播：“You literally just spray it on the oil splatter, let it sit for a few seconds, and wipe. It breaks down the heavy grease instantly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-010-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前一段的固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不改变产品结构。\n\n00:00-00:03.0，POV平移镜头，缓慢扫过已经完全擦拭干净的燃气灶表面，金属表面光洁如新，没有任何油腻残留或化学膜反光。\n00:03.0-00:06.0，切换至达人半身自拍，他满意地微笑着，单手将Liapu喷雾瓶举在胸前，黄色标签清晰可见。\n00:06.0-00:10.0，达人双手拿着瓶子，用大拇指轻轻抚摸瓶身侧面，点头肯定，自然光线照在半透明瓶身上，展现清洁后的清爽氛围。\n\n同步美式英语口播：“No weird residue, just a fresh lemon scent. Plus it kills 99.9% of kitchen bacteria like Salmonella. This is a total game changer.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-010-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代极简厨房场景、深灰色大理石台面、白天明亮自然光和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV中景，达人将Liapu喷雾瓶平稳放置在深灰色大理石台面上，黄色标签正对镜头，背景是干净的厨房虚化。\n00:02.0-00:04.0，POV侧面特写，达人按压喷头，镜头捕捉到细腻的白色喷雾在空中均匀扩散的瞬间，背景干净。\n00:04.0-00:06.0，POV桌上镜头，喷雾瓶旁放着两片刚切开的新鲜黄柠檬，阳光打在柠檬和瓶身上，画面清爽，暗示柠檬香气。\n00:06.0-00:08.0，POV特写，达人单手缓慢旋转瓶身，从正面的黄色标签转至侧面的半透明瓶身，展示内部清澈液体的晃动。\n00:08.0-00:10.0，POV全景，产品静置在台面中央，旁边放着干净的厨房纸巾，画面自然定格，方便后期裁剪。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-010-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV手持特写，镜头对准燃气灶旁厚厚的黄褐色油污，上面覆盖着结块的小苏打白色糊状物。\n00:00.5-00:01.0，POV镜头，一只手拿着海绵试图擦拭糊状物，结果只把油污和白粉抹得更脏更粘。\n00:01.0-00:01.5，切换至达人半身自拍，他皱着眉头无奈地摇头，展示沾有油腻白色糊状物的手套。\n00:01.5-00:03.0，达人自拍，表情一转，露出“但我发现了好东西”的微笑，从画外拿起Liapu喷雾瓶。\n00:03.0-00:06.0，POV镜头，达人手持Liapu喷雾瓶，将黄色标签正面朝向镜头展示几秒钟，背景是脏灶台。\n00:06.0-00:10.0，达人将喷嘴对准灶台上最脏的油垢区域，准备喷洒。\n\n同步美式英语口播：“I tried that baking soda hack on my greasy stovetop and it just made a crusty mess. Then I found this Liapu spray.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-010-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前一段的固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不改变产品结构。\n\n00:00-00:03.0，POV手持特写，达人单手握住Liapu喷雾瓶，连续按压扳机喷头2次，细腻的白色雾状液体准确覆盖在厚重的黄褐色油污上。\n00:03.0-00:06.0，微距POV，镜头贴近油污表面，展示喷雾液体迅速浸润油垢，黄色的油渍边缘开始软化溶解（自然化学反应，不夸张）。\n00:06.0-00:10.0，POV镜头，达人用一张干净的厨房纸巾在喷洒过的区域轻轻一擦，纸巾带走所有油污，瞬间露出下方干净反光的不锈钢灶台表面。\n\n同步美式英语口播：“You literally just spray it on the oil splatter, let it sit for a few seconds, and wipe. It breaks down the heavy grease instantly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-010-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前一段的固定达人（30岁亚裔男性，穿着休闲灰色连帽衫，短发）在现代极简厨房，深灰色大理石台面，不锈钢燃气灶，白天明亮自然光。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不改变产品结构。\n\n00:00-00:03.0，POV平移镜头，缓慢扫过已经完全擦拭干净的燃气灶表面，金属表面光洁如新，没有任何油腻残留或化学膜反光。\n00:03.0-00:06.0，切换至达人半身自拍，他满意地微笑着，单手将Liapu喷雾瓶举在胸前，黄色标签清晰可见。\n00:06.0-00:10.0，达人双手拿着瓶子，用大拇指轻轻抚摸瓶身侧面，点头肯定，自然光线照在半透明瓶身上，展现清洁后的清爽氛围。\n\n同步美式英语口播：“No weird residue, just a fresh lemon scent. Plus it kills 99.9% of kitchen bacteria like Salmonella. This is a total game changer.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-010-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代极简厨房场景、深灰色大理石台面、白天明亮自然光和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV中景，达人将Liapu喷雾瓶平稳放置在深灰色大理石台面上，黄色标签正对镜头，背景是干净的厨房虚化。\n00:02.0-00:04.0，POV侧面特写，达人按压喷头，镜头捕捉到细腻的白色喷雾在空中均匀扩散的瞬间，背景干净。\n00:04.0-00:06.0，POV桌上镜头，喷雾瓶旁放着两片刚切开的新鲜黄柠檬，阳光打在柠檬和瓶身上，画面清爽，暗示柠檬香气。\n00:06.0-00:08.0，POV特写，达人单手缓慢旋转瓶身，从正面的黄色标签转至侧面的半透明瓶身，展示内部清澈液体的晃动。\n00:08.0-00:10.0，POV全景，产品静置在台面中央，旁边放着干净的厨房纸巾，画面自然定格，方便后期裁剪。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T06:16:45.625Z"
+}
