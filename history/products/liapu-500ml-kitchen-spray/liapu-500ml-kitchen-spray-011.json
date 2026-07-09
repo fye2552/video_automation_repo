@@ -1,0 +1,100 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-011",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-011",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Regular all-purpose cleaners just drip down greasy kitchen backsplashes without breaking up the baked-on oil; Liapu spray clings and dissolves the mess instantly for a streak-free wipe.",
+    "hook": "I was so tired of my regular cleaner just dripping down this greasy backsplash without doing anything.",
+    "structure_signature": "wrong_regular_cleaner_drip_backsplash_grease_to_liapu_spray_wipe_streak_free_antibacterial_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-011-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的产品，保持产品白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头、半透明瓶身一致，不新增产品结构。达人为42岁亚裔女性，身穿墨绿色围裙，在明亮现代厨房的白色地铁砖防溅墙前。\n00:00-00:00.5，POV手持特写，达人手指抹过油腻的防溅墙瓷砖，沾上黄色油垢。\n00:00.5-00:01.0，微距特写，瓷砖缝隙里顽固的黄色油渍。\n00:01.0-00:01.5，达人半身自拍，无奈地叹气。\n00:01.5-00:03.0，达人半身自拍，表情苦恼地口播。\n00:03.0-00:06.0，POV镜头扫过灶台后方大面积的油污瓷砖，展示油腻的反光。\n00:06.0-00:10.0，达人将Liapu喷雾瓶举到镜头前展示正面黄色标签。\n同步美式英语口播：“I was so tired of my regular cleaner just dripping down this greasy backsplash without doing anything.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-011-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的亚裔女性达人（42岁，墨绿色围裙）和现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签、扳机式喷头一致。\n00:00-00:03.0，POV特写，达人手持Liapu喷雾瓶对准油腻的瓷砖按压喷洒，白色细雾覆盖在油渍上。\n00:03.0-00:06.0，微距特写，喷雾接触到油污后迅速浸润，油渍开始溶解松动。\n00:06.0-00:10.0，POV近景，达人用干纸巾轻轻一擦，原本顽固的油污瞬间被抹去，露出光洁明亮的白色瓷砖表面。\n同步美式英语口播：“But this Liapu spray is built for heavy-duty grease. You just spray, let it sit, and wipe it all away effortlessly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-011-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的亚裔女性达人和现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签、扳机式喷头一致。\n00:00-00:03.0，POV镜头缓慢扫过已经清洁干净的防溅墙瓷砖，毫无残留，光亮如新。\n00:03.0-00:06.0，达人半身自拍，面带满意的微笑，手拿Liapu喷雾瓶在胸前。\n00:06.0-00:10.0，达人双手拿着产品特写，展示黄色标签，大拇指轻轻摩挲瓶身。\n同步美式英语口播：“No greasy film left behind, and it kills 99.9% of bacteria. This is a total game changer for my kitchen.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-011-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签一致，不新增产品结构。\n00:00-00:02.0，POV特写，产品平稳放置在干净的厨房大理石台面上，背景虚化。\n00:02.0-00:04.0，POV特写，达人按压喷头，细密的白色雾状液体在空中均匀散开。\n00:04.0-00:06.0，POV镜头，产品旁边放着几片新鲜切开的黄柠檬，暗示柠檬清香。\n00:06.0-00:08.0，POV特写，达人缓慢旋转半透明的喷雾瓶，展示里面的液体晃动。\n00:08.0-00:10.0，POV广角，产品静置在台面中央，阳光洒在瓶身上，自然收尾。\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-011-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的产品，保持产品白色塑料圆柱形喷雾瓶、正面黄色标签\"CLEAN UP KITCHEN OIL STAINS\"、扳机式喷头、半透明瓶身一致，不新增产品结构。达人为42岁亚裔女性，身穿墨绿色围裙，在明亮现代厨房的白色地铁砖防溅墙前。\n00:00-00:00.5，POV手持特写，达人手指抹过油腻的防溅墙瓷砖，沾上黄色油垢。\n00:00.5-00:01.0，微距特写，瓷砖缝隙里顽固的黄色油渍。\n00:01.0-00:01.5，达人半身自拍，无奈地叹气。\n00:01.5-00:03.0，达人半身自拍，表情苦恼地口播。\n00:03.0-00:06.0，POV镜头扫过灶台后方大面积的油污瓷砖，展示油腻的反光。\n00:06.0-00:10.0，达人将Liapu喷雾瓶举到镜头前展示正面黄色标签。\n同步美式英语口播：“I was so tired of my regular cleaner just dripping down this greasy backsplash without doing anything.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-011-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的亚裔女性达人（42岁，墨绿色围裙）和现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签、扳机式喷头一致。\n00:00-00:03.0，POV特写，达人手持Liapu喷雾瓶对准油腻的瓷砖按压喷洒，白色细雾覆盖在油渍上。\n00:03.0-00:06.0，微距特写，喷雾接触到油污后迅速浸润，油渍开始溶解松动。\n00:06.0-00:10.0，POV近景，达人用干纸巾轻轻一擦，原本顽固的油污瞬间被抹去，露出光洁明亮的白色瓷砖表面。\n同步美式英语口播：“But this Liapu spray is built for heavy-duty grease. You just spray, let it sit, and wipe it all away effortlessly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-011-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续上一段的亚裔女性达人和现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签、扳机式喷头一致。\n00:00-00:03.0，POV镜头缓慢扫过已经清洁干净的防溅墙瓷砖，毫无残留，光亮如新。\n00:03.0-00:06.0，达人半身自拍，面带满意的微笑，手拿Liapu喷雾瓶在胸前。\n00:06.0-00:10.0，达人双手拿着产品特写，展示黄色标签，大拇指轻轻摩挲瓶身。\n同步美式英语口播：“No greasy film left behind, and it kills 99.9% of bacteria. This is a total game changer for my kitchen.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-011-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代厨房场景。产品只参考图1，保持白色瓶身、黄色标签一致，不新增产品结构。\n00:00-00:02.0，POV特写，产品平稳放置在干净的厨房大理石台面上，背景虚化。\n00:02.0-00:04.0，POV特写，达人按压喷头，细密的白色雾状液体在空中均匀散开。\n00:04.0-00:06.0，POV镜头，产品旁边放着几片新鲜切开的黄柠檬，暗示柠檬清香。\n00:06.0-00:08.0，POV特写，达人缓慢旋转半透明的喷雾瓶，展示里面的液体晃动。\n00:08.0-00:10.0，POV广角，产品静置在台面中央，阳光洒在瓶身上，自然收尾。\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T06:47:50.521Z"
+}
