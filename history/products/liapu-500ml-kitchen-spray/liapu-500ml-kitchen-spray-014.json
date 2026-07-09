@@ -1,0 +1,104 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-014",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-014",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Harsh chemical degreasers leave toxic fumes on food prep surfaces like kitchen islands; Liapu cuts heavy grease fast with a natural lemon scent, zero residue, and 99.9% antibacterial action.",
+    "hook": "I hated using harsh chemical degreasers where my kids eat because of the toxic smell.",
+    "structure_signature": "wrong_harsh_chemical_fumes_kitchen_island_to_liapu_spray_lemon_scent_no_residue_antibacterial_cta",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": "I hated using harsh chemical degreasers where my kids eat because of the toxic smell. But this greasy island needed something strong.",
+      "segment_02": "Then I found Liapu. You just spray this heavy-duty degreaser and wipe. It cuts right through the oil without any chemical fumes.",
+      "segment_03": "It leaves zero residue, smells like fresh lemons, and kills 99.9% of bacteria. This is a game changer for food prep areas."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-014-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV近景，一只手（男性）正拿着一块抹布在油腻腻的中岛台面上费力擦拭，台面上有明显的反光油渍。\n00:00.5-00:01.0，特写镜头，手背停下，达人（28岁亚裔男性，短黑发，灰色连帽卫衣）在背景中微微皱眉，用手扇了扇鼻子，暗示化学清洁剂气味刺鼻。\n00:01.0-00:01.5，POV镜头，达人将一瓶普通的无标签清洁剂推开，画面中心聚焦在顽固的油污台面上。\n00:01.5-00:03.0，POV镜头，达人另一只手拿着Liapu喷雾瓶（白瓶黄标）进入画面，停在油污上方。\n00:03.0-00:06.0，特写镜头，达人按下扳机喷头，白色的细密水雾均匀喷洒在中岛台面的油渍上。\n00:06.0-00:10.0，POV镜头，达人拿着Liapu喷雾稍微转动瓶身展示黄色标签，背景是已经喷上清洁剂的台面，达人表情轻松。\n\n同步美式英语口播：“I hated using harsh chemical degreasers where my kids eat because of the toxic smell. But this greasy island needed something strong.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-014-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人手持Liapu喷雾瓶对准中岛台面上一块厚重的烹饪油污连续按压喷头，白色喷雾覆盖油渍表面。\n00:03.0-00:06.0，微距特写，喷洒后的液体迅速在油污上浸润，油渍边缘开始自然乳化松动，展示无化学刺激气味的温和去油过程。\n00:06.0-00:10.0，POV镜头，达人用一张干净的厨房纸巾在喷洒区域轻轻一擦，立刻露出下方干净反光的花岗岩台面，形成脏净分明的清晰路径。\n\n同步美式英语口播：“Then I found Liapu. You just spray this heavy-duty degreaser and wipe. It cuts right through the oil without any chemical fumes.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-014-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人的手在擦干净的花岗岩台面上轻轻滑过，台面反光一尘不染，展示完全没有粘腻残留物（No residue）的清爽感。\n00:03.0-00:06.0，达人半身出镜，站在明亮的厨房里，右手将Liapu喷雾举在胸前，面带满意的微笑，深呼吸做了一个闻到清新柠檬香气的放松动作。\n00:06.0-00:10.0，POV镜头，达人双手拿着Liapu喷雾展示，黄色标签朝前，背景是干净整洁的厨房中岛，自然收尾。\n\n同步美式英语口播：“It leaves zero residue, smells like fresh lemons, and kills 99.9% of bacteria. This is a game changer for food prep areas.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-014-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代美式厨房（花岗岩中岛台面，明亮早晨自然光）、男性达人手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV中景，一瓶Liapu去油污喷雾平稳直立放置在干净的花岗岩台面上，黄色标签正对镜头，旁边放着两颗新鲜的黄柠檬。\n00:02.0-00:04.0，POV特写，达人单手握住喷雾瓶按压扳机，聚焦于喷嘴喷出的均匀白色细腻雾状喷雾，背景虚化。\n00:04.0-00:06.0，POV特写，镜头拉近展示半透明的白色瓶身，光线穿透瓶体，可以清晰看到内部液体的自然晃动。\n00:06.0-00:08.0，POV俯拍，达人用一张干燥的纸巾在刚喷过喷雾的干净台面上轻擦，纸巾滑顺无阻力，展示无残留特性。\n00:08.0-00:10.0，POV广角，产品静置在中岛台面中央，阳光洒在台面上，画面整洁明亮，自然收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-014-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，POV近景，一只手（男性）正拿着一块抹布在油腻腻的中岛台面上费力擦拭，台面上有明显的反光油渍。\n00:00.5-00:01.0，特写镜头，手背停下，达人（28岁亚裔男性，短黑发，灰色连帽卫衣）在背景中微微皱眉，用手扇了扇鼻子，暗示化学清洁剂气味刺鼻。\n00:01.0-00:01.5，POV镜头，达人将一瓶普通的无标签清洁剂推开，画面中心聚焦在顽固的油污台面上。\n00:01.5-00:03.0，POV镜头，达人另一只手拿着Liapu喷雾瓶（白瓶黄标）进入画面，停在油污上方。\n00:03.0-00:06.0，特写镜头，达人按下扳机喷头，白色的细密水雾均匀喷洒在中岛台面的油渍上。\n00:06.0-00:10.0，POV镜头，达人拿着Liapu喷雾稍微转动瓶身展示黄色标签，背景是已经喷上清洁剂的台面，达人表情轻松。\n\n同步美式英语口播：“I hated using harsh chemical degreasers where my kids eat because of the toxic smell. But this greasy island needed something strong.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-014-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人手持Liapu喷雾瓶对准中岛台面上一块厚重的烹饪油污连续按压喷头，白色喷雾覆盖油渍表面。\n00:03.0-00:06.0，微距特写，喷洒后的液体迅速在油污上浸润，油渍边缘开始自然乳化松动，展示无化学刺激气味的温和去油过程。\n00:06.0-00:10.0，POV镜头，达人用一张干净的厨房纸巾在喷洒区域轻轻一擦，立刻露出下方干净反光的花岗岩台面，形成脏净分明的清晰路径。\n\n同步美式英语口播：“Then I found Liapu. You just spray this heavy-duty degreaser and wipe. It cuts right through the oil without any chemical fumes.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-014-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考虚拟达人在现代美式厨房（花岗岩中岛台面，明亮早晨自然光），使用参考图中的Liapu厨房去油污喷雾。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，POV特写，达人的手在擦干净的花岗岩台面上轻轻滑过，台面反光一尘不染，展示完全没有粘腻残留物（No residue）的清爽感。\n00:03.0-00:06.0，达人半身出镜，站在明亮的厨房里，右手将Liapu喷雾举在胸前，面带满意的微笑，深呼吸做了一个闻到清新柠檬香气的放松动作。\n00:06.0-00:10.0，POV镜头，达人双手拿着Liapu喷雾展示，黄色标签朝前，背景是干净整洁的厨房中岛，自然收尾。\n\n同步美式英语口播：“It leaves zero residue, smells like fresh lemons, and kills 99.9% of bacteria. This is a game changer for food prep areas.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-014-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的现代美式厨房（花岗岩中岛台面，明亮早晨自然光）、男性达人手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持白色塑料圆柱形喷雾瓶、正面黄色标签、扳机式喷头外观一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，POV中景，一瓶Liapu去油污喷雾平稳直立放置在干净的花岗岩台面上，黄色标签正对镜头，旁边放着两颗新鲜的黄柠檬。\n00:02.0-00:04.0，POV特写，达人单手握住喷雾瓶按压扳机，聚焦于喷嘴喷出的均匀白色细腻雾状喷雾，背景虚化。\n00:04.0-00:06.0，POV特写，镜头拉近展示半透明的白色瓶身，光线穿透瓶体，可以清晰看到内部液体的自然晃动。\n00:06.0-00:08.0，POV俯拍，达人用一张干燥的纸巾在刚喷过喷雾的干净台面上轻擦，纸巾滑顺无阻力，展示无残留特性。\n00:08.0-00:10.0，POV广角，产品静置在中岛台面中央，阳光洒在台面上，画面整洁明亮，自然收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-09T08:05:50.587Z"
+}
