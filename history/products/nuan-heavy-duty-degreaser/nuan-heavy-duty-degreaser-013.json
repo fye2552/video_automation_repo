@@ -1,0 +1,98 @@
+{
+  "script_id": "nuan-heavy-duty-degreaser-013",
+  "product_id": "nuan-heavy-duty-degreaser",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/nuan-heavy-duty-degreaser",
+  "product_folder": "products/nuan-heavy-duty-degreaser",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "nuan-heavy-duty-degreaser-013",
+    "product_id": "nuan-heavy-duty-degreaser",
+    "angle": "scrubbing a grease-clogged splatter screen with a dish brush just pushes grime deeper into the wire mesh",
+    "hook": "Extreme close-up of a greasy metal wire splatter screen as a soapy dish brush scrubs it, pushing the sticky yellow oil deeper into the fine mesh instead of cleaning it.",
+    "structure_signature": "splatter_screen_mesh_grease_dish_brush_clog_nuan_spray_foam_melt_fast_cut_stovetop_fast_cut_microwave_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "pain_conflict",
+          "scene": "Extreme close-up: A hand scrubs a greasy fine-mesh wire splatter screen with a soapy dish brush. The yellow grease just gets mashed deeper into the tiny holes, looking messy and frustrating."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "product_solution",
+          "scene": "The white NUAN spray bottle with its green label enters the frame. The white trigger nozzle sprays a thick, dense white foam directly onto the mesh, instantly melting and lifting the trapped yellow grease."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "fast_cut_scene_1",
+          "scene": "Fast cut: A blue microfiber cleaning towel wipes cleanly across the mesh in one satisfying swipe, revealing gleaming, perfectly clean metal underneath."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "fast_cut_scene_2",
+          "scene": "Fast cut: A heavily greased glass stovetop is quickly sprayed with the NUAN foam and wiped effortlessly clean with the blue towel, leaving a flawless reflective surface."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "fast_cut_scene_3",
+          "scene": "Fast cut: A gloved hand wipes the dissolving NUAN foam off a dirty microwave interior tray, leaving the inside spotless and fresh."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "cta",
+          "scene": "Gentle aesthetic shot of the white and green NUAN spray bottle resting neatly next to the sparkling clean stovetop. Text overlay appears: 'A simple upgrade for everyday use.'"
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "nuan-heavy-duty-degreaser-013-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Timeline: 0-3s: Show a real-life wrong behavior using extreme close-up details. A hand scrubs a sticky, grease-clogged wire splatter screen with a soapy dish brush, mashing the yellow oil deeper into the fine mesh instead of cleaning it. 3-6s: Quickly introduce the exact NUAN white trigger spray bottle as the direct solution. A hand uses the bottle to spray thick white foam onto the mesh, instantly melting the grease. 6-10s: Fast-cut scene 1 showing the first clear result as a blue microfiber towel wipes the mesh clean in one swipe, revealing gleaming metal. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused. Use the provided product reference images exactly, preserving the curved white bottle, glossy green label with NUAN logo, peach icon, and white trigger nozzle. Do not invent extra accessories.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "nuan-heavy-duty-degreaser-013-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment, showing a greasy glass stovetop being sprayed with NUAN foam and wiped flawlessly clean in one smooth motion. 4-8s: Fast-cut scene 3 showing a hand wearing a transparent plastic glove wiping the NUAN foam off a dirty microwave interior tray, leaving it spotless and fresh. 8-10s: Short CTA scene showing the NUAN spray bottle resting neatly next to the sparkling clean stove with a text overlay: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Preserve the exact white spray bottle, glossy green label with black NUAN logo, peach icon, and white ribbed collar. Do not alter the product shape, material, or color.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "nuan-heavy-duty-degreaser-013-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Timeline: 0-3s: Show a real-life wrong behavior using extreme close-up details. A hand scrubs a sticky, grease-clogged wire splatter screen with a soapy dish brush, mashing the yellow oil deeper into the fine mesh instead of cleaning it. 3-6s: Quickly introduce the exact NUAN white trigger spray bottle as the direct solution. A hand uses the bottle to spray thick white foam onto the mesh, instantly melting the grease. 6-10s: Fast-cut scene 1 showing the first clear result as a blue microfiber towel wipes the mesh clean in one swipe, revealing gleaming metal. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused. Use the provided product reference images exactly, preserving the curved white bottle, glossy green label with NUAN logo, peach icon, and white trigger nozzle. Do not invent extra accessories.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "nuan-heavy-duty-degreaser-013-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/nuan-heavy-duty-degreaser/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment, showing a greasy glass stovetop being sprayed with NUAN foam and wiped flawlessly clean in one smooth motion. 4-8s: Fast-cut scene 3 showing a hand wearing a transparent plastic glove wiping the NUAN foam off a dirty microwave interior tray, leaving it spotless and fresh. 8-10s: Short CTA scene showing the NUAN spray bottle resting neatly next to the sparkling clean stove with a text overlay: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Preserve the exact white spray bottle, glossy green label with black NUAN logo, peach icon, and white ribbed collar. Do not alter the product shape, material, or color.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-10T09:26:01.524Z"
+}
