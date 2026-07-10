@@ -1,0 +1,63 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-021",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-021",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Trying to chip off dried, hardened grease on an oven exterior with a plastic spatula just risks snapping the tool; Liapu spray effortlessly melts the stubborn dots for a one-swipe clean across ovens, microwaves, and BBQ stations.",
+    "hook": "Stop trying to scrape baked-on grease with a plastic spatula—you're just going to snap it.",
+    "structure_signature": "wrong_plastic_spatula_scrape_hardened_grease_to_liapu_spray_melt_fastcut_oven_microwave_bbq_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-021-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-3s: Close up POV. A hand awkwardly bends a plastic spatula trying to scrape dried, amber-colored hard grease spots from a stainless steel oven exterior. The grease stays stuck. 3-6s: A hand brings in the white Liapu spray bottle (yellow label) and sprays mist over the hard grease. It softens instantly and is wiped away with a paper towel. 6-10s: Fast-cut scene 1 showing the pristine, shiny oven exterior with zero residue. Maintain exact product identity from the reference image. Keep pacing fast and product-focused. Do not end with a CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-021-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Continuation of the previous segment. Realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2. Hand sprays Liapu onto a sticky, greasy microwave button panel and wipes it crystal clear with one swipe. 4-8s: Fast-cut scene 3. Spraying and effortlessly wiping thick greasy drips off an outdoor BBQ side table, leaving a spotless finish. 8-10s: Short CTA. The Liapu spray bottle rests prominently on a sparkling clean kitchen counter next to a fresh lemon. Maintain exact product identity from the reference image. No generated text or logos.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-021-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-3s: Close up POV. A hand awkwardly bends a plastic spatula trying to scrape dried, amber-colored hard grease spots from a stainless steel oven exterior. The grease stays stuck. 3-6s: A hand brings in the white Liapu spray bottle (yellow label) and sprays mist over the hard grease. It softens instantly and is wiped away with a paper towel. 6-10s: Fast-cut scene 1 showing the pristine, shiny oven exterior with zero residue. Maintain exact product identity from the reference image. Keep pacing fast and product-focused. Do not end with a CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-021-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Continuation of the previous segment. Realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2. Hand sprays Liapu onto a sticky, greasy microwave button panel and wipes it crystal clear with one swipe. 4-8s: Fast-cut scene 3. Spraying and effortlessly wiping thick greasy drips off an outdoor BBQ side table, leaving a spotless finish. 8-10s: Short CTA. The Liapu spray bottle rests prominently on a sparkling clean kitchen counter next to a fresh lemon. Maintain exact product identity from the reference image. No generated text or logos.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-10T09:24:42.010Z"
+}
