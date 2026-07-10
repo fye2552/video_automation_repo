@@ -1,0 +1,82 @@
+{
+  "script_id": "liapu-500ml-kitchen-spray-019",
+  "product_id": "liapu-500ml-kitchen-spray",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/liapu-500ml-kitchen-spray",
+  "product_folder": "products/liapu-500ml-kitchen-spray",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "liapu-500ml-kitchen-spray-019",
+    "product_id": "liapu-500ml-kitchen-spray",
+    "angle": "Thin disinfecting wipes just shred, pill up, and smear when rubbed against sticky kitchen grease; Liapu 500ml Kitchen Spray instantly dissolves heavy oil film across trash can lids, range hoods, and BBQ shelves for a fast, zero-residue wipe.",
+    "hook": "Stop wasting thin wipes on sticky kitchen grease—they just shred and smear.",
+    "structure_signature": "wrong_disinfecting_wipe_shredding_sticky_grease_to_liapu_spray_fastcut_hood_bbq_spotless_kitchen_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {
+      "video_001_part_01": {
+        "global_time_range": "0-10s",
+        "timeline_breakdown": [
+          "0-3s: Pain conflict close-up showing a hand vigorously rubbing a thin disinfecting wipe over a sticky, yellow-grease-coated kitchen trash can lid; the wipe drags, shreds into lint pills, and smears the sticky buildup without lifting it.",
+          "3-6s: Product quick solution where Liapu 500ml Kitchen Spray enters immediately, misting the sticky grease and lint residue; the oily film dissolves on contact and a paper towel effortlessly wipes the surface completely clean in one smooth swipe.",
+          "6-10s: Fast-cut scene 1 showing the first clear result on a grease-splattered stainless steel range hood exterior, wiping through stubborn cooking splatter to reveal a mirror-bright, residue-free finish."
+        ],
+        "voiceover": "Stop wasting thin wipes on sticky kitchen grease—they just shred and smear. Liapu Kitchen Spray breaks down heavy oil on contact so you can wipe it completely clean in seconds with zero sticky residue."
+      },
+      "video_001_part_02": {
+        "global_time_range": "10-20s",
+        "timeline_breakdown": [
+          "0-4s (Global 10-14s): Fast-cut scene 2 in a different outdoor usage environment showing an oily BBQ grill side shelf being sprayed with Liapu and wiped down to reveal smooth, clean metal instantly.",
+          "4-8s (Global 14-18s): Fast-cut scene 3 showing the final result across a bright, pristine home kitchen with gleaming stovetops, spotless countertops, and sparkling exterior appliances.",
+          "8-10s (Global 18-20s): Short light CTA with the Liapu bottle resting cleanly on the bright quartz countertop."
+        ],
+        "voiceover": "From outdoor grill shelves to everyday kitchen splatter, get a sparkling clean finish without the harsh chemical film. Upgrade your kitchen cleanup today."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "liapu-500ml-kitchen-spray-019-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "Create a 10-second vertical TikTok-style ad video.\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point: a hand tries to vigorously rub a thin disinfecting wipe across a sticky, grease-coated kitchen trash can lid and oven handle; the wipe drags, shreds, and leaves sticky lint pilled up in the yellow oil film without cleaning it.\n3-6s: Quickly introduce the product as the direct solution: the Liapu 500ml Kitchen Spray bottle enters the frame, spraying a fine white mist over the sticky grease and lint residue; the oil immediately breaks down, and a clean paper towel wipes the surface completely smooth and clean in one swipe.\n6-10s: Fast-cut scene 1 showing the first clear result: a close-up fast-cut demonstration on a grease-splattered stainless steel range hood where the spray cuts through thick grease, leaving a sparkling mirror-bright reflection and no harsh chemical residue.\nUse the provided product reference images as the exact product identity.\nDo not change the product color, shape, material, size ratio, logo position, texture, or visible structure.\nDo not invent extra accessories, buttons, lights, packaging, or exaggerated functions.\nDo not start with a perfect product shot.\nDo not end with a CTA in this segment.\nKeep the pacing fast, clear, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "liapu-500ml-kitchen-spray-019-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+        "promptText": "Create a 10-second vertical TikTok-style ad video.\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment: a fast cut to an outdoor BBQ grill side shelf covered in tough, baked-on cooking grease; the Liapu spray is applied and wiped off effortlessly, restoring the metal surface to a clean, slick finish.\n4-8s: Fast-cut scene 3 showing final result, cleanliness, and improved usage: a fast cut to a wide, sunlit kitchen showing spotless countertops, gleaming stovetops, and clean exterior appliances, conveying a fresh, hygienic, and inviting home atmosphere.\n8-10s: Short CTA: text and voiceover saying \"Upgrade your kitchen cleanup today.\" while the Liapu 500ml Kitchen Spray bottle rests cleanly on the sparkling kitchen countertop.\nThis segment should feel like the continuation of the previous 10-second segment.\nKeep the same product identity, visual style, pacing, and usage logic.\nUse the provided product reference images as the exact product identity.\nDo not change the product color, shape, material, size ratio, logo position, texture, or visible structure.\nDo not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "liapu-500ml-kitchen-spray-019-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "Create a 10-second vertical TikTok-style ad video.\nTimeline:\n0-3s: Show a real-life wrong or inefficient behavior using close-up details to amplify the pain point: a hand tries to vigorously rub a thin disinfecting wipe across a sticky, grease-coated kitchen trash can lid and oven handle; the wipe drags, shreds, and leaves sticky lint pilled up in the yellow oil film without cleaning it.\n3-6s: Quickly introduce the product as the direct solution: the Liapu 500ml Kitchen Spray bottle enters the frame, spraying a fine white mist over the sticky grease and lint residue; the oil immediately breaks down, and a clean paper towel wipes the surface completely smooth and clean in one swipe.\n6-10s: Fast-cut scene 1 showing the first clear result: a close-up fast-cut demonstration on a grease-splattered stainless steel range hood where the spray cuts through thick grease, leaving a sparkling mirror-bright reflection and no harsh chemical residue.\nUse the provided product reference images as the exact product identity.\nDo not change the product color, shape, material, size ratio, logo position, texture, or visible structure.\nDo not invent extra accessories, buttons, lights, packaging, or exaggerated functions.\nDo not start with a perfect product shot.\nDo not end with a CTA in this segment.\nKeep the pacing fast, clear, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "liapu-500ml-kitchen-spray-019-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/liapu-500ml-kitchen-spray/images/product_white_bg.png",
+      "promptText": "Create a 10-second vertical TikTok-style ad video.\nTimeline:\n0-4s: Fast-cut scene 2 in a different real-life usage environment: a fast cut to an outdoor BBQ grill side shelf covered in tough, baked-on cooking grease; the Liapu spray is applied and wiped off effortlessly, restoring the metal surface to a clean, slick finish.\n4-8s: Fast-cut scene 3 showing final result, cleanliness, and improved usage: a fast cut to a wide, sunlit kitchen showing spotless countertops, gleaming stovetops, and clean exterior appliances, conveying a fresh, hygienic, and inviting home atmosphere.\n8-10s: Short CTA: text and voiceover saying \"Upgrade your kitchen cleanup today.\" while the Liapu 500ml Kitchen Spray bottle rests cleanly on the sparkling kitchen countertop.\nThis segment should feel like the continuation of the previous 10-second segment.\nKeep the same product identity, visual style, pacing, and usage logic.\nUse the provided product reference images as the exact product identity.\nDo not change the product color, shape, material, size ratio, logo position, texture, or visible structure.\nDo not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-10T06:46:20.816Z"
+}
