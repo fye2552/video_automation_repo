@@ -1,0 +1,98 @@
+{
+  "script_id": "bedsure_cooling_thin_thick_mat_for_dogs-004",
+  "product_id": "bedsure_cooling_thin_thick_mat_for_dogs",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/bedsure_cooling_thin_thick_mat_for_dogs",
+  "product_folder": "products/bedsure_cooling_thin_thick_mat_for_dogs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "bedsure_cooling_thin_thick_mat_for_dogs-004",
+    "product_id": "bedsure_cooling_thin_thick_mat_for_dogs",
+    "angle": "Restless, overheated dog unable to settle on a hot rug, solved by instant passive cooling mat placement",
+    "hook": "A restless, panting dog shifts uncomfortably on a thick, stuffy rug, struggling to find a cool spot in the summer heat.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {
+      "style": "pain_conflict_fast_cut",
+      "duration": 20,
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "pain_conflict",
+          "scene": "Close-up of a panting, restless dog trying to lie down on a thick, hot living room rug but constantly shifting because it's too warm."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "product_solution",
+          "scene": "A hand suddenly tosses down the pale ice-blue Bedsure cooling mat directly over the rug, laying flat instantly."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "fast_cut_scene_1",
+          "scene": "The dog is now lying perfectly still on the soft wave-quilted pale blue mat, eyes closed, visibly cooled down and relaxed."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "fast_cut_scene_2",
+          "scene": "Quick cut to the same pale ice-blue mat placed neatly inside a wire dog crate, the dog sleeping peacefully on top."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "fast_cut_scene_3",
+          "scene": "Quick cut to the mat placed on hardwood floor near a sunny sliding door, dog lounging happily, showing the white edge piping and gray non-slip underside."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "cta",
+          "scene": "Text overlay appears: 'Your dog's cozy spot starts here.' Final shot of the resting dog."
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-004-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Show a real-life pain conflict with a dog panting heavily and shifting restlessly on a thick, hot rug. 3-6s: Quickly introduce the product as a direct solution; a hand places a pale ice-blue rectangular cooling mat with white edge piping flat onto the floor. 6-10s: Fast-cut scene 1 showing the dog lying peacefully on the soft wave-quilted pale blue mat, instantly relaxed. Use the provided product reference images as the exact product identity. Keep the product as a thin flat mat with rounded corners. Do not invent cords, gel, or electric parts. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-004-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 showing the exact same pale ice-blue quilted cooling mat placed inside a metal dog crate, dog sleeping comfortably on it. 4-8s: Fast-cut scene 3 showing the mat on a hardwood floor by a glass door, dog lounging happily, briefly revealing the light gray dotted non-slip underside. 8-10s: Short text overlay CTA 'Your dog's cozy spot starts here.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Keep the pale ice blue color, white piping, and rounded corners. No gel or electric parts.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-004-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Show a real-life pain conflict with a dog panting heavily and shifting restlessly on a thick, hot rug. 3-6s: Quickly introduce the product as a direct solution; a hand places a pale ice-blue rectangular cooling mat with white edge piping flat onto the floor. 6-10s: Fast-cut scene 1 showing the dog lying peacefully on the soft wave-quilted pale blue mat, instantly relaxed. Use the provided product reference images as the exact product identity. Keep the product as a thin flat mat with rounded corners. Do not invent cords, gel, or electric parts. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-004-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 showing the exact same pale ice-blue quilted cooling mat placed inside a metal dog crate, dog sleeping comfortably on it. 4-8s: Fast-cut scene 3 showing the mat on a hardwood floor by a glass door, dog lounging happily, briefly revealing the light gray dotted non-slip underside. 8-10s: Short text overlay CTA 'Your dog's cozy spot starts here.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Keep the pale ice blue color, white piping, and rounded corners. No gel or electric parts.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-13T11:14:55.234Z"
+}
