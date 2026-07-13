@@ -1,0 +1,104 @@
+{
+  "script_id": "bedsure_cooling_thin_thick_mat_for_dogs-001",
+  "product_id": "bedsure_cooling_thin_thick_mat_for_dogs",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/bedsure_cooling_thin_thick_mat_for_dogs",
+  "product_folder": "products/bedsure_cooling_thin_thick_mat_for_dogs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "bedsure_cooling_thin_thick_mat_for_dogs-001",
+    "product_id": "bedsure_cooling_thin_thick_mat_for_dogs",
+    "angle": "Safe and mess-free summer cooling relief for dogs without gel or cords",
+    "hook": "Is your dog panting all summer? I finally found a cooling mat that actually works and has zero messy gel or cords.",
+    "structure_signature": "3x10s_segments_plus_broll_ugc_review",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "segment_04_broll"
+    ],
+    "script_record": {
+      "segment_01": "Is your dog panting all summer? I finally found a cooling mat that actually works and has zero messy gel or cords.",
+      "segment_02": "It uses cool-to-the-touch breathable fabric to release body heat naturally. Plus, the non-slip bottom keeps it perfectly in place on my hardwood floors.",
+      "segment_03": "The best part? It's machine washable and totally fur-resistant. Give your furry best friend the ultimate summer upgrade today!"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，近景自拍，达人表情苦恼，指着地上暗示狗狗怕热。\n00:00.5-00:01.0，镜头下移，展示普通的硬木地板。\n00:01.0-00:01.5，特写，达人手里拿着淡冰蓝色的Bedsure宠物冷感垫出现。\n00:01.5-00:03.0，中景，达人微笑着将冷感垫铺在客厅地板上。\n00:03.0-00:06.0，特写，达人的手掌贴在淡冰蓝色的波浪绗缝表面上，轻轻抚摸展示凉感和柔软度。\n00:06.0-00:10.0，全景，一只狗狗自然地走过来，趴在垫子上，显得很舒服，不夸张。\n\n同步美式英语口播：“Is your dog panting all summer? I finally found a cooling mat that actually works and has zero messy gel or cords.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形、浅灰色防滑底一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写，达人掀起冷感垫的一角，展示背面浅灰色的防滑点胶纹理。\n00:03.0-00:06.0，特写，达人用手轻轻按压垫子表面，展示其轻薄但有内部PP棉填充的质感，不产生极端形变。\n00:06.0-00:10.0，中景，达人将垫子轻松折叠起来，展示其便携性，然后对着镜头满意地点头。\n\n同步美式英语口播：“It uses cool-to-the-touch breathable fabric to release body heat naturally. Plus, the non-slip bottom keeps it perfectly in place on my hardwood floors.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写，达人用手在淡蓝色的垫子表面轻轻一扫，展示表面不易粘毛的特性。\n00:03.0-00:06.0，中景，狗狗安静地躺在垫子上休息，达人坐在一旁抚摸狗狗的头，画面温馨。\n00:06.0-00:10.0，近景自拍，达人手持折叠好的冷感垫，对着镜头兴奋地推荐，随后指向屏幕下方。\n\n同步美式英语口播：“The best part? It's machine washable and totally fur-resistant. Give your furry best friend the ultimate summer upgrade today!”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-04",
+        "scene_id": "segment_04_broll",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的阳光明媚的客厅、明亮自然光、年轻白人女性手部、休闲夏装和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形、浅灰色防滑底一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写，镜头稳定对准平铺在地板上的淡冰蓝色冷感垫。\n00:02.0-00:04.0，特写，一只手入画，沿着波浪绗缝的纹理缓慢滑动，展示表面材质。\n00:04.0-00:06.0，特写，手捏起垫子边缘的白色包边，翻开一角，清晰展示背面的浅灰色防滑点纹理。\n00:06.0-00:08.0，特写，手松开垫子，垫子自然回落平铺在硬木地板上。\n00:08.0-00:10.0，中景，垫子平整地铺在硬木地板上，展示完整的矩形圆角外观。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，近景自拍，达人表情苦恼，指着地上暗示狗狗怕热。\n00:00.5-00:01.0，镜头下移，展示普通的硬木地板。\n00:01.0-00:01.5，特写，达人手里拿着淡冰蓝色的Bedsure宠物冷感垫出现。\n00:01.5-00:03.0，中景，达人微笑着将冷感垫铺在客厅地板上。\n00:03.0-00:06.0，特写，达人的手掌贴在淡冰蓝色的波浪绗缝表面上，轻轻抚摸展示凉感和柔软度。\n00:06.0-00:10.0，全景，一只狗狗自然地走过来，趴在垫子上，显得很舒服，不夸张。\n\n同步美式英语口播：“Is your dog panting all summer? I finally found a cooling mat that actually works and has zero messy gel or cords.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形、浅灰色防滑底一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写，达人掀起冷感垫的一角，展示背面浅灰色的防滑点胶纹理。\n00:03.0-00:06.0，特写，达人用手轻轻按压垫子表面，展示其轻薄但有内部PP棉填充的质感，不产生极端形变。\n00:06.0-00:10.0，中景，达人将垫子轻松折叠起来，展示其便携性，然后对着镜头满意地点头。\n\n同步美式英语口播：“It uses cool-to-the-touch breathable fabric to release body heat naturally. Plus, the non-slip bottom keeps it perfectly in place on my hardwood floors.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。固定虚拟达人（30岁左右白人女性，穿着休闲夏装）在阳光明媚的客厅，使用Bedsure宠物冷感垫。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写，达人用手在淡蓝色的垫子表面轻轻一扫，展示表面不易粘毛的特性。\n00:03.0-00:06.0，中景，狗狗安静地躺在垫子上休息，达人坐在一旁抚摸狗狗的头，画面温馨。\n00:06.0-00:10.0，近景自拍，达人手持折叠好的冷感垫，对着镜头兴奋地推荐，随后指向屏幕下方。\n\n同步美式英语口播：“The best part? It's machine washable and totally fur-resistant. Give your furry best friend the ultimate summer upgrade today!”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "bedsure_cooling_thin_thick_mat_for_dogs-001-scene-04",
+      "scene_id": "segment_04_broll",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/bedsure_cooling_thin_thick_mat_for_dogs/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的阳光明媚的客厅、明亮自然光、年轻白人女性手部、休闲夏装和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持淡冰蓝色、波浪绗缝、白色包边、圆角矩形、浅灰色防滑底一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，特写，镜头稳定对准平铺在地板上的淡冰蓝色冷感垫。\n00:02.0-00:04.0，特写，一只手入画，沿着波浪绗缝的纹理缓慢滑动，展示表面材质。\n00:04.0-00:06.0，特写，手捏起垫子边缘的白色包边，翻开一角，清晰展示背面的浅灰色防滑点纹理。\n00:06.0-00:08.0，特写，手松开垫子，垫子自然回落平铺在硬木地板上。\n00:08.0-00:10.0，中景，垫子平整地铺在硬木地板上，展示完整的矩形圆角外观。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-13T09:36:32.738Z"
+}
