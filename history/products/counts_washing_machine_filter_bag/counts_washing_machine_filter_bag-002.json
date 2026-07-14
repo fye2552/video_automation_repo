@@ -1,0 +1,104 @@
+{
+  "script_id": "counts_washing_machine_filter_bag-002",
+  "product_id": "counts_washing_machine_filter_bag",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/counts_washing_machine_filter_bag",
+  "product_folder": "products/counts_washing_machine_filter_bag",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "counts_washing_machine_filter_bag-002",
+    "product_id": "counts_washing_machine_filter_bag",
+    "angle": "Curiosity and satisfying debris reveal in a top-loader",
+    "hook": "Ever wonder what's floating around in your top-loader while it runs?",
+    "structure_signature": "curiosity_hook_machine_action_satisfying_reveal",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01_vo": "Ever wonder what's floating around in your top-loader while it runs? I tossed this little floating net in my laundry today.",
+      "segment_02_vo": "It just floats right on top of the water. The blue domes keep it up, while this long cone mesh catches hair, lint, and loose debris.",
+      "segment_03_vo": "Look at what it caught after just one cycle! My dark clothes come out so much cleaner now. Just empty it, rinse, and reuse."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "counts_washing_machine_filter_bag-002-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的虚拟达人(30多岁白人女性)在明亮的家庭洗衣房场景，使用参考图中的产品。产品只参考Skill A标准参考图，保持核心外观特征一致，不参考原始海报文字，不改变产品结构。必须遵守：保持产品为单只出镜，保持蓝色浮球配色不变，白色圆形外框不变，顶部四个球形浮漂不变(中间一个外围三个)，白色三向支撑结构不变，长锥形白色细网袋不变。不要在同一张图中生成多只产品，不要增加拉链绳带装饰，不要生成文字。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，[特写镜头]，[打开波轮洗衣机盖子，水面有些许泡沫]。\n00:00.5-00:01.0，[主观镜头]，[看向洗衣机内部正在搅拌的水流]。\n00:01.0-00:01.5，[特写镜头]，[一只手拿着单只漂浮过滤网袋出现]。\n00:01.5-00:03.0，[中景镜头]，[达人面对镜头说话，表情好奇，手持产品]。\n00:03.0-00:06.0，[特写镜头]，[将单只过滤网袋轻轻扔进有衣物和水的洗衣机里]。\n00:06.0-00:10.0，[特写镜头]，[过滤网袋在水面上平稳漂浮，蓝色的四个浮球在水面上，白色的锥形网袋在水下]。\n\n同步美式英语口播：“Ever wonder what's floating around in your top-loader while it runs? I tossed this little floating net in my laundry today.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "counts_washing_machine_filter_bag-002-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。达人与洗衣房场景保持一致。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球不变，白色外框不变，顶部四个球形浮漂不变(中间一外围三)，白色三向支撑结构不变，长锥形白色细网袋不变。不要生成三只产品，不改变结构。\n\n00:00-00:03.0，[特写镜头]，[洗衣机运行，水流涌动，单只蓝白相间的过滤网袋稳定地漂浮在水面上，不沉没]。\n00:03.0-00:06.0，[中景镜头]，[达人站在洗衣机旁，指向机器内部，点头赞同表情满意]。\n00:06.0-00:10.0，[特写镜头]，[水流旋转，水中的细碎毛发自然地流向底部的锥形白色细网袋周围]。\n\n同步美式英语口播：“It just floats right on top of the water. The blue domes keep it up, while this long cone mesh catches hair, lint, and loose debris.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "counts_washing_machine_filter_bag-002-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。达人与场景保持一致。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球与白色框架网袋特征。绝对不要生成夸张的大块垃圾或完全净化水体的效果，杂物必须真实克制。不生成多只产品。\n\n00:00-00:04.0，[特写镜头]，[手从洗衣机里捞出这只单只过滤网袋，白色长锥形网袋尖端有少量真实克制的收集毛发和纸屑]。\n00:04.0-00:07.0，[中景镜头]，[达人展示捞出的网袋，表情惊讶又满意，另一只手里拿着一件干净的深色衣服]。\n00:07.0-00:10.0，[特写镜头]，[手部将网袋轻轻翻转，倒出收集的杂物，网袋主体依然保持完好]。\n\n同步美式英语口播：“Look at what it caught after just one cycle! My dark clothes come out so much cleaner now. Just empty it, rinse, and reuse.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "counts_washing_machine_filter_bag-002-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_white_bg.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球(中一外三)、白色圆形外框、长锥形白色细网袋不变。不新增未确认功能，不生成说明文字或包装。\n\n00:00-00:02.0，[特写镜头]，[单只过滤网袋平放在木质桌面上，展示白色的圆形外框和四个蓝色浮球]。\n00:02.0-00:04.0，[特写镜头]，[手指轻轻戳一下中间的蓝色浮球，展示其光滑质感]。\n00:04.0-00:06.0，[特写镜头]，[手部拿起单只网袋，镜头跟随展示下方长锥形白色细网袋的细腻网孔材质]。\n00:06.0-00:08.0，[特写镜头]，[将单只网袋轻轻放入清澈的水盆中，立刻平稳浮在水面上]。\n00:08.0-00:10.0，[特写镜头]，[水面平视视角，四个蓝色的浮球在水上，白色网锥在水下，画面自然真实]。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "counts_washing_machine_filter_bag-002-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的虚拟达人(30多岁白人女性)在明亮的家庭洗衣房场景，使用参考图中的产品。产品只参考Skill A标准参考图，保持核心外观特征一致，不参考原始海报文字，不改变产品结构。必须遵守：保持产品为单只出镜，保持蓝色浮球配色不变，白色圆形外框不变，顶部四个球形浮漂不变(中间一个外围三个)，白色三向支撑结构不变，长锥形白色细网袋不变。不要在同一张图中生成多只产品，不要增加拉链绳带装饰，不要生成文字。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，[特写镜头]，[打开波轮洗衣机盖子，水面有些许泡沫]。\n00:00.5-00:01.0，[主观镜头]，[看向洗衣机内部正在搅拌的水流]。\n00:01.0-00:01.5，[特写镜头]，[一只手拿着单只漂浮过滤网袋出现]。\n00:01.5-00:03.0，[中景镜头]，[达人面对镜头说话，表情好奇，手持产品]。\n00:03.0-00:06.0，[特写镜头]，[将单只过滤网袋轻轻扔进有衣物和水的洗衣机里]。\n00:06.0-00:10.0，[特写镜头]，[过滤网袋在水面上平稳漂浮，蓝色的四个浮球在水面上，白色的锥形网袋在水下]。\n\n同步美式英语口播：“Ever wonder what's floating around in your top-loader while it runs? I tossed this little floating net in my laundry today.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "counts_washing_machine_filter_bag-002-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。达人与洗衣房场景保持一致。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球不变，白色外框不变，顶部四个球形浮漂不变(中间一外围三)，白色三向支撑结构不变，长锥形白色细网袋不变。不要生成三只产品，不改变结构。\n\n00:00-00:03.0，[特写镜头]，[洗衣机运行，水流涌动，单只蓝白相间的过滤网袋稳定地漂浮在水面上，不沉没]。\n00:03.0-00:06.0，[中景镜头]，[达人站在洗衣机旁，指向机器内部，点头赞同表情满意]。\n00:06.0-00:10.0，[特写镜头]，[水流旋转，水中的细碎毛发自然地流向底部的锥形白色细网袋周围]。\n\n同步美式英语口播：“It just floats right on top of the water. The blue domes keep it up, while this long cone mesh catches hair, lint, and loose debris.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "counts_washing_machine_filter_bag-002-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。达人与场景保持一致。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球与白色框架网袋特征。绝对不要生成夸张的大块垃圾或完全净化水体的效果，杂物必须真实克制。不生成多只产品。\n\n00:00-00:04.0，[特写镜头]，[手从洗衣机里捞出这只单只过滤网袋，白色长锥形网袋尖端有少量真实克制的收集毛发和纸屑]。\n00:04.0-00:07.0，[中景镜头]，[达人展示捞出的网袋，表情惊讶又满意，另一只手里拿着一件干净的深色衣服]。\n00:07.0-00:10.0，[特写镜头]，[手部将网袋轻轻翻转，倒出收集的杂物，网袋主体依然保持完好]。\n\n同步美式英语口播：“Look at what it caught after just one cycle! My dark clothes come out so much cleaner now. Just empty it, rinse, and reuse.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "counts_washing_machine_filter_bag-002-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_white_bg.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图。必须遵守：保持产品为单只出镜，保持蓝色浮球(中一外三)、白色圆形外框、长锥形白色细网袋不变。不新增未确认功能，不生成说明文字或包装。\n\n00:00-00:02.0，[特写镜头]，[单只过滤网袋平放在木质桌面上，展示白色的圆形外框和四个蓝色浮球]。\n00:02.0-00:04.0，[特写镜头]，[手指轻轻戳一下中间的蓝色浮球，展示其光滑质感]。\n00:04.0-00:06.0，[特写镜头]，[手部拿起单只网袋，镜头跟随展示下方长锥形白色细网袋的细腻网孔材质]。\n00:06.0-00:08.0，[特写镜头]，[将单只网袋轻轻放入清澈的水盆中，立刻平稳浮在水面上]。\n00:08.0-00:10.0，[特写镜头]，[水面平视视角，四个蓝色的浮球在水上，白色网锥在水下，画面自然真实]。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-14T09:32:18.478Z"
+}
