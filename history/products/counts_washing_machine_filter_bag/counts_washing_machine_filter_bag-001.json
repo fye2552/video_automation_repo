@@ -1,0 +1,103 @@
+{
+  "script_id": "counts_washing_machine_filter_bag-001",
+  "product_id": "counts_washing_machine_filter_bag",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/counts_washing_machine_filter_bag",
+  "product_folder": "products/counts_washing_machine_filter_bag",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "counts_washing_machine_filter_bag-001",
+    "product_id": "counts_washing_machine_filter_bag",
+    "angle": "Lint and pet hair ruining freshly washed clothes, fixed instantly",
+    "hook": "Freshly washed dark clothes covered in lint",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "pain_point": "Clothes coming out of the washing machine still covered in lint and pet hair.",
+      "conflict_hook": "Pulling a dark shirt from the washer only to find it ruined by white lint and hair.",
+      "product_solution": "Dropping the floating filter bag directly into the washer to catch debris automatically.",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "pain_conflict",
+          "scene": "Handheld shot pulling a wet dark shirt out of a washing machine. It is frustratingly covered in white lint, paper fragments, and pet hair."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "product_solution",
+          "scene": "A hand drops the single floating filter (white rim, four blue float domes, cone mesh bag) into the washing machine full of water and clothes."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "fast_cut_scene_1",
+          "scene": "Washer running. The filter bobs on the water surface, blue domes floating while the white mesh cone spins below, actively trapping debris."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "fast_cut_scene_2",
+          "scene": "Close-up lifting the single filter bag out of the washer. The white translucent mesh cone is full of trapped gray lint and hair."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "fast_cut_scene_3",
+          "scene": "Emptying the lint out of the mesh into a trash can, then lifting out perfectly clean, lint-free clothes from the washer."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "cta",
+          "scene": "Light CTA text overlay: 'Make your laundry cleaner today.' over the clean clothes."
+        }
+      ],
+      "cta": "Make your laundry cleaner today.",
+      "dedupe_key": "lint_on_dark_clothes_floating_filter_solution"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "counts_washing_machine_filter_bag-001-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-3s: Show a real-life wrong or inefficient behavior—close-up of hands pulling a freshly washed wet dark shirt out of a washing machine, frustratingly covered in white lint and pet hair to amplify the pain point. 3-6s: Quickly introduce the product solution—a hand tosses a single floating filter (white rim, exactly four blue float domes, long white cone mesh bag) into the water surface of the top-loading washing machine. 6-10s: Fast-cut scene 1 showing the washer running, the blue float domes bobbing clearly above the water surface while the mesh bag floats downwards in the water collecting debris. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, texture, or visible structure. Do not invent extra accessories. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "counts_washing_machine_filter_bag-001-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 showing a close-up of lifting the single filter bag out of the washer, the white mesh cone visibly holding trapped gray lint and hair inside. 4-8s: Fast-cut scene 3 showing perfectly clean dark clothes being pulled out of the washing machine effortlessly, completely free of lint. 8-10s: Short text CTA overlay 'Make your laundry cleaner today.' This segment should feel like the continuation of the previous 10-second segment. Keep the exact same product identity (white circular rim, exactly four blue float domes, white fine-mesh collection bag), visual style, pacing, and usage logic. Do not change the product color, shape, material, size ratio, or visible structure. Do not invent extra accessories, packaging, or exaggerated magic effects.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "counts_washing_machine_filter_bag-001-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-3s: Show a real-life wrong or inefficient behavior—close-up of hands pulling a freshly washed wet dark shirt out of a washing machine, frustratingly covered in white lint and pet hair to amplify the pain point. 3-6s: Quickly introduce the product solution—a hand tosses a single floating filter (white rim, exactly four blue float domes, long white cone mesh bag) into the water surface of the top-loading washing machine. 6-10s: Fast-cut scene 1 showing the washer running, the blue float domes bobbing clearly above the water surface while the mesh bag floats downwards in the water collecting debris. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, texture, or visible structure. Do not invent extra accessories. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "counts_washing_machine_filter_bag-001-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene 2 showing a close-up of lifting the single filter bag out of the washer, the white mesh cone visibly holding trapped gray lint and hair inside. 4-8s: Fast-cut scene 3 showing perfectly clean dark clothes being pulled out of the washing machine effortlessly, completely free of lint. 8-10s: Short text CTA overlay 'Make your laundry cleaner today.' This segment should feel like the continuation of the previous 10-second segment. Keep the exact same product identity (white circular rim, exactly four blue float domes, white fine-mesh collection bag), visual style, pacing, and usage logic. Do not change the product color, shape, material, size ratio, or visible structure. Do not invent extra accessories, packaging, or exaggerated magic effects.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-14T08:51:52.121Z"
+}
