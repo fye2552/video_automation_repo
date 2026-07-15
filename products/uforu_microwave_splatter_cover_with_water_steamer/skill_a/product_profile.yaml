@@ -1,0 +1,86 @@
+sku_id: "uforu_microwave_splatter_cover_with_water_steamer"
+product_name: "UFORU Microwave Splatter Cover with Water Steamer"
+category: "Microwave splatter cover with water reservoir and steam function"
+
+source_info:
+  title: "UFORU Microwave Splatter Cover with Water Steamer, 10 inch Clear Microwave Plate Cover Lid for Food, Kitchen Gadgets Accessories for Microwave Oven Kitchenware Utensils"
+  description: "A 10-inch transparent microwave plate cover made from food-grade polycarbonate. It is designed to reduce food splatter during heating and includes a side water reservoir for adding a small amount of water, a top steam vent control, an integrated reinforced handle, and a lower drainage groove for collecting excess condensation."
+
+visual_identity:
+  main_color: "Transparent clear"
+  secondary_color: "Olive green"
+  material: "Clear food-grade polycarbonate with olive-green plastic trim and controls"
+  shape: "Low hemispherical transparent dome with a wide circular base rim"
+  texture: "Smooth glossy transparent plastic with matte olive-green accent parts"
+  logo_position: "No confirmed logo printed on the product body"
+  size_ratio: "Approximately 10 inches in diameter; low-profile dome sized to cover a standard dinner plate"
+
+key_visual_features:
+  - "Single transparent hemispherical microwave cover"
+  - "Wide olive-green circular base rim"
+  - "Integrated olive-green arched lifting handle positioned near the upper rear of the dome"
+  - "Clear rectangular side water reservoir with a flat olive-green lid"
+  - "Small circular top steam vent with an olive-green sliding control"
+  - "Olive-green latch-like tabs spaced around the outer base rim"
+  - "Transparent dome remains clear enough to see the plate and food underneath"
+  - "Lower drainage groove designed to collect excess condensation"
+
+selling_points:
+  - "Helps reduce food and grease splatter inside the microwave"
+  - "Side water reservoir supports steam-assisted reheating"
+  - "Helps retain moisture in reheated food"
+  - "Integrated reinforced handle provides a stable lifting point"
+  - "Approximately 10-inch size fits many standard plates and bowls"
+  - "Reusable alternative to disposable plastic wrap"
+  - "Bottom drainage groove helps collect excess condensed water"
+  - "Suitable for microwave and refrigerator use within the confirmed temperature limits"
+
+usage_scenes:
+  - "Covering a standard dinner plate inside a household microwave"
+  - "A small amount of water being poured into the clear side reservoir before reheating"
+  - "Lifted from a heated plate by the integrated olive-green handle"
+  - "Placed over leftovers to reduce splatter and help retain moisture"
+
+must_keep:
+  - "保持产品为单只出镜"
+  - "保持透明半球形罩体不变"
+  - "保持橄榄绿色圆形底部边框不变"
+  - "保持顶部后侧一体式橄榄绿色弧形提手不变"
+  - "保持侧边透明矩形储水槽及橄榄绿色平盖不变"
+  - "保持顶部中央圆形蒸汽孔及绿色滑动控制件不变"
+  - "保持底部边框周围的绿色卡扣状结构不变"
+  - "保持产品约10英寸的圆形比例不变"
+  - "保持罩体清晰透明，能够看见内部餐盘和食物"
+  - "不要增加原始产品不存在的配件"
+
+must_avoid:
+  - "不要在同一张图中生成两个或多个产品"
+  - "不要把侧边储水槽改成顶部水杯、喷嘴或独立水壶"
+  - "不要把顶部蒸汽孔改成按钮、电子屏幕或旋钮"
+  - "不要增加第二个提手、折叠把手、侧把手或长柄"
+  - "不要改变透明罩体、绿色边框、储水槽和提手的位置关系"
+  - "不要把产品生成成硅胶折叠罩、金属罩、保鲜盒或普通塑料碗盖"
+  - "不要增加文字、箭头、尺寸线、品牌水印或包装"
+  - "不要生成夸张蒸汽、爆炸飞溅、食物悬浮或不真实的加热效果"
+  - "不要让罩体与食物直接接触"
+
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+
+source_image_audit:
+  - file: "image (8).png"
+    type: "product appearance source; usage source; selling-point poster"
+    use: "Best source for the overall transparent dome, olive-green rim, integrated arched handle, side reservoir, top steam vent, and plate-covering relationship"
+    direct_generation_risk: "Contains food, a plate, and a large brand word outside the product body"
+
+  - file: "image (9).png"
+    type: "usage/function source; detail source; selling-point poster"
+    use: "Best source confirming that water is poured into the clear side reservoir and that the product covers a plate inside a microwave"
+    direct_generation_risk: "Composite advertising layout with a hand, food, microwave inset, pouring water, and multiple actions"
+
+  - file: "image (10).png"
+    type: "product appearance source; detail source; multi-panel function poster"
+    use: "Best source for the empty product silhouette and additional views of the side reservoir, top vent, handle, and microwave placement"
+    direct_generation_risk: "Multi-panel composition with repeated product views and small usage insets"
