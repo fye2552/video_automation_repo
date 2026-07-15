@@ -1,0 +1,50 @@
+{
+  "script_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes-002",
+  "product_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes",
+  "active_skill": "skill_e",
+  "skill_path": "skills/skill_e.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/pawfirst_12_pcs_pet_cleaning_glove_wipes",
+  "product_folder": "products/pawfirst_12_pcs_pet_cleaning_glove_wipes",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes-002",
+    "product_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes",
+    "angle": "Clumsy spray bottle and paper towel fail vs. easy one-handed glove wipe for quick daily touch-ups",
+    "hook": "Owner juggling a spray bottle and paper towel, dog pulls paw away as the paper shreds into a messy clump",
+    "structure_signature": "wrong_use_pain_product_action_result_cta",
+    "scene_order": [
+      "video_001"
+    ],
+    "script_record": {
+      "video_001": {
+        "visual": "0-3s: Handheld close-up showing a person clumsily holding a spray bottle in one hand and a thin paper towel in the other, trying to wipe a calm dog's paw; the paper towel shreds and leaves wet clumps on the fur. 3-5s: Extreme close-up on the frustrating mess of wet paper bits stuck to the dog's paw, highlighting the annoying inefficiency. 5-8.5s: The person's hand reaches into a royal-blue pouch with an orange header, pulls out a soft, white, five-finger moist nonwoven glove wipe with raised pearl-like 3D dots. The person wears the glove and gently wipes the dog's paw with one easy, smooth hand motion. 8.5-10s: Close-up of the clean, residue-free dog paw beside the dirty textured glove, proving the mess is gone, as the person gives the dog a quick gentle pat.",
+        "audio": "I used to juggle sprays and paper towels just to clean up after a walk. It always shredded and left an annoying mess. Then I switched to these textured grooming gloves. One quick wipe and we're done. So much easier.",
+        "duration": 10
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes-002-scene-01",
+        "scene_id": "video_001",
+        "promptImage": "",
+        "promptText": "Create one complete 10-second vertical 9:16 TikTok-style UGC ad. 0-3s: Handheld close-up showing a person clumsily holding a spray bottle in one hand and a thin paper towel in the other, trying to wipe a calm dog's paw; the paper towel shreds and leaves wet clumps on the fur. 3-5s: Extreme close-up on the frustrating mess of wet paper bits stuck to the dog's paw, highlighting the annoying inefficiency. 5-8.5s: The person's hand reaches into a royal-blue retail pouch with an orange header, pulls out a soft, white, five-finger moist nonwoven glove wipe with raised pearl-like 3D dots. The person wears the glove and gently wipes the dog's paw with one easy, smooth hand motion. 8.5-10s: Close-up of the clean, residue-free dog paw beside the dirty textured white glove, proving the mess is gone, as the person gives the dog a quick gentle pat. Realistic handheld phone-shot style, natural household lighting. No UI, no subtitles, no text overlays, no watermarks.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "single_video_extra_scenes_skipped": false
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "pawfirst_12_pcs_pet_cleaning_glove_wipes-002-scene-01",
+      "scene_id": "video_001",
+      "promptImage": "",
+      "promptText": "Create one complete 10-second vertical 9:16 TikTok-style UGC ad. 0-3s: Handheld close-up showing a person clumsily holding a spray bottle in one hand and a thin paper towel in the other, trying to wipe a calm dog's paw; the paper towel shreds and leaves wet clumps on the fur. 3-5s: Extreme close-up on the frustrating mess of wet paper bits stuck to the dog's paw, highlighting the annoying inefficiency. 5-8.5s: The person's hand reaches into a royal-blue retail pouch with an orange header, pulls out a soft, white, five-finger moist nonwoven glove wipe with raised pearl-like 3D dots. The person wears the glove and gently wipes the dog's paw with one easy, smooth hand motion. 8.5-10s: Close-up of the clean, residue-free dog paw beside the dirty textured white glove, proving the mess is gone, as the person gives the dog a quick gentle pat. Realistic handheld phone-shot style, natural household lighting. No UI, no subtitles, no text overlays, no watermarks.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-15T08:18:21.797Z"
+}
