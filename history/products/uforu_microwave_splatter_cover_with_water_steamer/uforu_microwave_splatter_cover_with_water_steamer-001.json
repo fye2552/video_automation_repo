@@ -1,0 +1,117 @@
+{
+  "script_id": "uforu_microwave_splatter_cover_with_water_steamer-001",
+  "product_id": "uforu_microwave_splatter_cover_with_water_steamer",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/uforu_microwave_splatter_cover_with_water_steamer",
+  "product_folder": "products/uforu_microwave_splatter_cover_with_water_steamer",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "uforu_microwave_splatter_cover_with_water_steamer-001",
+    "product_id": "uforu_microwave_splatter_cover_with_water_steamer",
+    "angle": "Moisture-retaining problem-solution for dry leftovers",
+    "hook": "Tired of dry, rubbery leftovers and messy microwave explosions?",
+    "structure_signature": "problem_demo_result_broll_coverage",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "script_record": {
+      "segment_01": {
+        "voiceover": "Tired of dry, rubbery leftovers and microwave explosions? This UFORU cover is a game changer. It stops splatters completely while reheating your food perfectly.",
+        "action": "POV shot showing messy microwave, transitioning to creator holding the UFORU cover. Covering a plate and pouring water into the side reservoir."
+      },
+      "segment_02": {
+        "voiceover": "Just add a little water to the side reservoir and adjust the top vent. The steam locks in moisture, so your meals taste freshly cooked every time.",
+        "action": "Hand adjusting top green steam vent, closing microwave door, and showing food heating gently through the clear dome without crazy steam."
+      },
+      "segment_03": {
+        "voiceover": "The drainage groove catches extra water, keeping your plate mess-free. Stop eating sad leftovers and upgrade your kitchen routine today.",
+        "action": "Taking plate out, lifting cover via green handle to reveal fresh food. Close-up on bottom green rim catching condensation. Creator takes a bite."
+      },
+      "broll_coverage": {
+        "voiceover": "",
+        "action": "Stable beauty shots of product on counter, hand pouring water into side reservoir and closing green lid, showing fit over a standard bowl."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。不要把侧边储水槽改成顶部水杯或独立水壶。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，第一人称POV镜头，打开微波炉看到一盘溅满油污和干瘪的剩饭。\n00:00.5-00:01.0，第一人称POV特写镜头，看着干巴巴的食物，表达不满意的情绪。\n00:01.0-00:01.5，中景镜头，达人将带有橄榄绿边框和透明罩体的UFORU防溅罩拿入画面。\n00:01.5-00:03.0，特写镜头，手持防溅罩，展示顶部绿色弧形提手和清晰透明的罩体。\n00:03.0-00:06.0，特写镜头，手握提手，将防溅罩平稳地盖在一个标准的西餐盘上。\n00:06.0-00:10.0，侧面特写镜头，用小水壶向侧面透明矩形储水槽内倒入少许清水。\n\n同步美式英语口播：“Tired of dry, rubbery leftovers and microwave explosions? This UFORU cover is a game changer. It stops splatters completely while reheating your food perfectly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不要把顶部蒸汽孔改成按钮、电子屏幕或旋钮，不要让罩体与食物直接接触。不生成尺寸线，不生成说明文字。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写镜头，手部在防溅罩顶部滑动橄榄绿色的圆形蒸汽孔控制件，动作清晰。\n00:03.0-00:06.0，中景镜头，关上微波炉门并启动加热，透过透明罩体清晰看到内部的餐盘和食物。\n00:06.0-00:10.0，特写镜头，微波炉运作中，罩体内部出现轻微真实的水汽，但不夸张蒸汽，食物看起来正被温和加热。\n\n同步美式英语口播：“Just add a little water to the side reservoir and adjust the top vent. The steam locks in moisture, so your meals taste freshly cooked every time.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖一致，不要增加第二个提手或折叠把手，不生成夸张特效。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，第一人称POV镜头，从微波炉取出餐盘，通过绿色提手揭开防溅罩，展示热气腾腾、不干瘪的美味食物。\n00:03.0-00:06.0，特写镜头，展示防溅罩底部的橄榄绿色边框引水槽，成功收集了多余的冷凝水滴，保持餐盘干净。\n00:06.0-00:10.0，中景镜头，达人微笑着一手拿着防溅罩，一手用叉子吃了一口加热好的食物，表情满足。\n\n同步美式英语口播：“The drainage groove catches extra water, keeping your plate mess-free. Stop eating sad leftovers and upgrade your kitchen routine today.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮的现代美式厨房、自然光线、30多岁白人女性休闲服饰和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，稳定特写镜头，防溅罩单独放置在厨房台面上，展示光泽透明的材质和橄榄绿色边框。\n00:02.0-00:04.0，特写镜头，一只手正在将水从一个小杯子平稳倒入侧边透明矩形储水槽中。\n00:04.0-00:06.0，特写镜头，手部将侧边储水槽的橄榄绿色平盖轻轻盖上。\n00:06.0-00:08.0，侧面中景镜头，展示产品约10英寸的比例，完美覆盖在一个标准的汤碗上方。\n00:08.0-00:10.0，稳定特写镜头，产品与微波炉的自然合影收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。不要把侧边储水槽改成顶部水杯或独立水壶。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:00.5，第一人称POV镜头，打开微波炉看到一盘溅满油污和干瘪的剩饭。\n00:00.5-00:01.0，第一人称POV特写镜头，看着干巴巴的食物，表达不满意的情绪。\n00:01.0-00:01.5，中景镜头，达人将带有橄榄绿边框和透明罩体的UFORU防溅罩拿入画面。\n00:01.5-00:03.0，特写镜头，手持防溅罩，展示顶部绿色弧形提手和清晰透明的罩体。\n00:03.0-00:06.0，特写镜头，手握提手，将防溅罩平稳地盖在一个标准的西餐盘上。\n00:06.0-00:10.0，侧面特写镜头，用小水壶向侧面透明矩形储水槽内倒入少许清水。\n\n同步美式英语口播：“Tired of dry, rubbery leftovers and microwave explosions? This UFORU cover is a game changer. It stops splatters completely while reheating your food perfectly.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不要把顶部蒸汽孔改成按钮、电子屏幕或旋钮，不要让罩体与食物直接接触。不生成尺寸线，不生成说明文字。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，特写镜头，手部在防溅罩顶部滑动橄榄绿色的圆形蒸汽孔控制件，动作清晰。\n00:03.0-00:06.0，中景镜头，关上微波炉门并启动加热，透过透明罩体清晰看到内部的餐盘和食物。\n00:06.0-00:10.0，特写镜头，微波炉运作中，罩体内部出现轻微真实的水汽，但不夸张蒸汽，食物看起来正被温和加热。\n\n同步美式英语口播：“Just add a little water to the side reservoir and adjust the top vent. The steam locks in moisture, so your meals taste freshly cooked every time.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人/虚拟达人在明亮的现代美式厨房，使用参考图2中的UFORU微波炉防溅罩。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖一致，不要增加第二个提手或折叠把手，不生成夸张特效。画面自然真实，像创作者用手机随手拍摄。\n\n00:00-00:03.0，第一人称POV镜头，从微波炉取出餐盘，通过绿色提手揭开防溅罩，展示热气腾腾、不干瘪的美味食物。\n00:03.0-00:06.0，特写镜头，展示防溅罩底部的橄榄绿色边框引水槽，成功收集了多余的冷凝水滴，保持餐盘干净。\n00:06.0-00:10.0，中景镜头，达人微笑着一手拿着防溅罩，一手用叉子吃了一口加热好的食物，表情满足。\n\n同步美式英语口播：“The drainage groove catches extra water, keeping your plate mess-free. Stop eating sad leftovers and upgrade your kitchen routine today.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "uforu_microwave_splatter_cover_with_water_steamer-001-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的明亮的现代美式厨房、自然光线、30多岁白人女性休闲服饰和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持单只出镜、透明半球形罩体、橄榄绿色圆形底部边框、顶部后侧一体式橄榄绿色弧形提手、侧边透明矩形储水槽及绿色平盖、顶部中央圆形蒸汽孔及绿色滑动控制件一致，不新增产品结构，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，稳定特写镜头，防溅罩单独放置在厨房台面上，展示光泽透明的材质和橄榄绿色边框。\n00:02.0-00:04.0，特写镜头，一只手正在将水从一个小杯子平稳倒入侧边透明矩形储水槽中。\n00:04.0-00:06.0，特写镜头，手部将侧边储水槽的橄榄绿色平盖轻轻盖上。\n00:06.0-00:08.0，侧面中景镜头，展示产品约10英寸的比例，完美覆盖在一个标准的汤碗上方。\n00:08.0-00:10.0，稳定特写镜头，产品与微波炉的自然合影收尾。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-15T03:49:24.401Z"
+}
