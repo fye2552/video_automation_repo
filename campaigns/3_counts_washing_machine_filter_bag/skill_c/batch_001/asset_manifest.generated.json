@@ -1,0 +1,14 @@
+{
+  "sku_id": "3_counts_washing_machine_filter_bag",
+  "product_name": "3 Counts Washing Machine Filter Bag, Reusable Floating Hair Filter for Laundry",
+  "batch_id": "batch_001",
+  "required_assets": {
+    "product_profile": "E:/test001-1/7.15/counts_washing_machine_filter_bag/product_profile.yaml",
+    "white_background_reference": "E:/test001-1/7.15/counts_washing_machine_filter_bag/images/product_white_bg.jpeg"
+  },
+  "optional_assets": {
+    "detail_reference": "E:/test001-1/7.15/counts_washing_machine_filter_bag/images/product_detail_side.jpeg",
+    "function_reference": null
+  },
+  "product_lock": "One single filter only: white circular outer rim, exactly four sky-blue rounded float domes (one central and three outer), white three-spoke support, and one long pointed cone-shaped fine white mesh bag."
+}
