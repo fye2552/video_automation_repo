@@ -1,0 +1,7 @@
+sku_id: 3_counts_washing_machine_filter_bag
+hook:
+  visual: Creator pinches a few loose hairs from a freshly washed pale shirt and looks mildly annoyed.
+  voiceover: "Still picking loose hair and lint off clean clothes?"
+conflict_to_solution_transition:
+  action: She stops picking at the shirt, holds one exact floating mesh filter beside the top-loading washer, then lowers it into the wash water.
+  pacing: Fast, clear hard cut with no title cards or overlays.
