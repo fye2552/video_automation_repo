@@ -1,0 +1,67 @@
+﻿{
+    "sku_id":  "3_counts_washing_machine_filter_bag",
+    "batch_id":  "batch_001",
+    "provider":  "GitHub contents API",
+    "uploads":  [
+                    {
+                        "local_path":  "E:\\test001-1\\7.15\\counts_washing_machine_filter_bag\\images\\product_white_bg.jpeg",
+                        "github_path":  "products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_white_bg.jpeg",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_white_bg.jpeg",
+                        "uploaded_at":  "2026-07-19T21:52:38.6350989+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\test001-1\\7.15\\counts_washing_machine_filter_bag\\images\\product_detail_side.jpeg",
+                        "github_path":  "products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_detail_side.jpeg",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_detail_side.jpeg",
+                        "uploaded_at":  "2026-07-19T21:52:42.1256349+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\asset_manifest.generated.json",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/asset_manifest.generated.json",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/asset_manifest.generated.json",
+                        "uploaded_at":  "2026-07-19T21:52:43.4463186+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\strategy\\pain_points.yaml",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/pain_points.yaml",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/pain_points.yaml",
+                        "uploaded_at":  "2026-07-19T21:52:44.8302641+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\strategy\\conflict_hooks.yaml",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/conflict_hooks.yaml",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/conflict_hooks.yaml",
+                        "uploaded_at":  "2026-07-19T21:52:46.1545417+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\strategy\\scene_sequences.yaml",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/scene_sequences.yaml",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/scene_sequences.yaml",
+                        "uploaded_at":  "2026-07-19T21:52:47.4896976+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\strategy\\scripts.yaml",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/scripts.yaml",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/strategy/scripts.yaml",
+                        "uploaded_at":  "2026-07-19T21:52:48.8539278+08:00"
+                    },
+                    {
+                        "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\prompts\\prompt_payloads.json",
+                        "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/prompts/prompt_payloads.json",
+                        "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/prompts/prompt_payloads.json",
+                        "uploaded_at":  "2026-07-19T21:52:50.1959091+08:00"
+                    }
+                ],
+    "post_generation_artifacts":  [
+                                      {
+                                          "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\api\\polling_log.json",
+                                          "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/api/polling_log.json",
+                                          "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/api/polling_log.json"
+                                      },
+                                      {
+                                          "local_path":  "E:\\.codex\\campaign_output\\3_counts_washing_machine_filter_bag_skill_c\\github\\github_upload_log.json",
+                                          "github_path":  "campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/github/github_upload_log.json",
+                                          "cdn_url":  "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/campaigns/3_counts_washing_machine_filter_bag/skill_c/batch_001/github/github_upload_log.json"
+                                      }
+                                  ]
+}
