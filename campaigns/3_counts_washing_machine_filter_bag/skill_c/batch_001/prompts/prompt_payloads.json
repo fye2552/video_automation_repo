@@ -1,0 +1,26 @@
+{
+  "sku_id": "3_counts_washing_machine_filter_bag",
+  "batch_id": "batch_001",
+  "provider": "omni-fast",
+  "format": {
+    "duration_seconds_per_segment": 10,
+    "aspect_ratio": "9:16",
+    "resolution": "720p"
+  },
+  "reference_images": [
+    "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_white_bg.jpeg",
+    "https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/3_counts_washing_machine_filter_bag/skill_c/batch_001/product_detail_side.jpeg"
+  ],
+  "segments": [
+    {
+      "id": "video_001_part_01",
+      "prompt": "Create a 10-second vertical 9:16 realistic phone-shot US laundry UGC video. Use the supplied reference images as the only product design authority. Product lock: exactly one single floating washing-machine lint filter, a white circular outer rim, exactly four sky-blue rounded float domes with one central dome and three outer domes, white three-spoke support structure, and one long pointed cone-shaped fine white mesh bag. Never show more than one filter or alter its shape, colors, dome count, rim, supports, or mesh length. Bright ordinary American laundry room with a white top-loading washing machine. 0-3s: close-up, a young adult American woman in casual home clothes gently pinches a few loose hairs and lint from a freshly washed pale shirt, looking mildly frustrated; this is realistic, not dramatic. 3-6s: hard cut, she shows one exact filter beside the open top-loading washer and lowers it into the wash water with laundry. 6-10s: close low-angle washer view; the single white ring and four blue domes float naturally at the water surface while the long tapered mesh cone hangs downward, with laundry moving gently below. Natural laundry-room ambience. Natural female US English voice-over: Still picking loose hair and lint off clean clothes? I drop this little floating filter in with the wash to catch what is floating around. No subtitles, captions, text overlays, logos, labels, watermarks, UI, arrows, stickers, pricing, magical suction, oversized debris, or exaggerated cleaning claims.",
+      "negative_prompt": "multiple filters, washing ball, drain strainer, fixed filter, buttons, handles, text, logos, false product features, cartoon, deformed hands, impossible water physics"
+    },
+    {
+      "id": "video_001_part_02",
+      "prompt": "Create a 10-second vertical 9:16 realistic phone-shot US laundry UGC video that continues the same product and room. Use the supplied reference images as the only product design authority. Product lock: exactly one single floating washing-machine lint filter, a white circular outer rim, exactly four sky-blue rounded float domes with one central dome and three outer domes, white three-spoke support structure, and one long pointed cone-shaped fine white mesh bag. Never show more than one filter or alter its shape, colors, dome count, rim, supports, or mesh length. 0-4s: inside an open white top-loading washer during a gentle wash view, one exact filter floats naturally at the surface while clothing moves beneath it; the mesh cone hangs into the water. 4-8s: the same young adult American woman lifts out the same filter after washing; only a small realistic amount of loose hair and lint sits in the mesh, then she rinses the mesh in a laundry sink. 8-10s: the single clean filter rests beside the washer and she gives a small satisfied gesture toward the camera. Natural laundry-room ambience and soft water sounds. Natural female US English voice-over: It floats right on top while the mesh hangs below. After the wash, just empty and rinse it. A simple little helper for laundry day. No subtitles, captions, text overlays, logos, labels, watermarks, UI, arrows, stickers, prices, magical suction, perfect-clean claims, or exaggerated debris.",
+      "negative_prompt": "multiple filters, washing ball, drain strainer, fixed filter, buttons, handles, text, logos, false product features, cartoon, deformed hands, impossible water physics"
+    }
+  ]
+}
