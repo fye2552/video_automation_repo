@@ -1,0 +1,22 @@
+sku_id: 3_counts_washing_machine_filter_bag
+format: vertical_9_16
+total_duration_seconds: 20
+segments:
+  - id: video_001_part_01
+    duration_seconds: 10
+    beats:
+      - seconds: 0-3
+        scene: Pale clean shirt beside a white top-loading washer; creator removes a few loose fibers by hand.
+      - seconds: 3-6
+        scene: Creator shows one product unit and lowers it into the open washer over water and laundry.
+      - seconds: 6-10
+        scene: Close low angle inside the washer; the white ring and four blue domes float at the surface while the long mesh cone hangs below.
+  - id: video_001_part_02
+    duration_seconds: 10
+    beats:
+      - seconds: 0-4
+        scene: Washer wash-cycle view; one filter floats naturally as laundry moves gently beneath it.
+      - seconds: 4-8
+        scene: Creator removes the same filter after washing; a small amount of loose hair and lint is visible in the mesh and is rinsed away at a sink.
+      - seconds: 8-10
+        scene: Single clean filter rests beside the washer; creator gives a small satisfied gesture toward camera.
