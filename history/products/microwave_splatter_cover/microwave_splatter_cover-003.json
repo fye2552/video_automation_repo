@@ -1,0 +1,124 @@
+{
+  "script_id": "microwave_splatter_cover-003",
+  "product_id": "microwave_splatter_cover",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/microwave_splatter_cover",
+  "product_folder": "products/microwave_splatter_cover",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "microwave_splatter_cover-003",
+    "product_id": "microwave_splatter_cover",
+    "angle": "Absurd grandfather in full retro scuba diving gear swoops into the kitchen with the UFORU steam cover to rescue rubbery, moisture-drained reheated chicken wings.",
+    "hook": "Close-up of a rubbery, tough chicken wing popping and shriveling under harsh microwave heat, losing all moisture.",
+    "structure_signature": "real_pain_hook_absurd_rescuer_quick_solution_fast_cuts_cta",
+    "scene_order": [
+      "0-1.5s: Pain point hook",
+      "1.5-3s: Scuba granddad enters with cover",
+      "3-6s: Water added and cover placed over wings",
+      "6-10s: Microwave steam reheating result",
+      "10-14s: Drainage channel pouring condensed water",
+      "14-18s: Lifting cover to reveal juicy chicken wings",
+      "18-20s: Light call-to-action"
+    ],
+    "script_record": {
+      "script_id": "temp_script_001",
+      "duration": 20,
+      "style": "low_risk_rescuer_fast_cut",
+      "pain_point": "Reheated chicken wings turning rubbery, dry, and popping messy grease across the microwave.",
+      "conflict_hook": "Scuba granddad bursts in wearing bright yellow vintage scuba goggles and a snorkel, carrying the UFORU splatter cover.",
+      "product_solution": "Adding fresh water to the transparent side reservoir to keep food juicy while catching grease splatters.",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "真实痛点钩子",
+          "scene": "Close-up shot of dry chicken wings popping and spitting grease inside a dirty microwave without a cover."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "荒诞成年亲属携产品入场",
+          "scene": "An absurd grandfather dressed in vintage scuba gear enters holding the transparent UFORU cover with olive-green rim and says, 'Keep it juicy!'"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "Granddad pours water into the clear side reservoir and places the dome cover directly over the plate of wings inside the microwave."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Fast-cut of the transparent dome trapping splatter as gentle internal steam circulates over the wings during reheating."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Fast-cut showing excess steam condensation flowing along the lower rim drainage channel and pouring cleanly out of the lower spout."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Fast-cut of granddad lifting the cover by its upper rear olive-green handle, revealing perfectly juicy, steaming chicken wings."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Text overlay and voiceover: 'Keep every meal juicy and clean. Get yours today.'"
+        }
+      ],
+      "cta": "Keep every meal juicy and clean. Get yours today.",
+      "dedupe_key": "uforu_scuba_granddad_juicy_wings"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "microwave_splatter_cover-003-scene-01",
+        "scene_id": "0-10s_segment",
+        "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_white_bg.jpeg)",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a dry chicken wing popping and spitting grease inside a microwave. No product and no rescuer. 1.5-3s: An absurd adult grandfather wearing yellow vintage scuba goggles and snorkel enters carrying the exact single low transparent hemispherical microwave cover with olive-green circular base rim, arched upper rear handle, and front side water reservoir from the first frame, placing it over the plate and saying 'Keep it juicy!'. 3-6s: Quickly show water poured into the clear side water reservoir with olive-green top cover and placed over food as the direct steam solution. 6-10s: Fast-cut scene 1 showing the transparent dome trapping splatter while steam circulates inside during reheating. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "microwave_splatter_cover-003-scene-02",
+        "scene_id": "10-20s_segment",
+        "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_detail_side.png](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_detail_side.png)",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a clean kitchen showing collected condensation water flowing along the lower olive-green drainage channel and pouring out through the small lower round transparent drainage outlet into a sink. 4-8s: Fast-cut scene 3 showing a hand lifting the cover using the integrated olive-green arched handle on the upper rear side, revealing perfectly moist, steaming food on a dinner plate. 8-10s: Short CTA showing the product neatly placed on a bright counter with clear English text overlay: 'Keep every meal juicy and clean. Get yours today.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.324,
+    "duplicate_comparison": {
+      "score": 0.3236486486486487,
+      "history_script_id": "microwave_splatter_cover-002",
+      "similarities": {
+        "hook": 0.21428571428571427,
+        "angle": 0.16216216216216217,
+        "structure_signature": 1,
+        "scene_order": 0
+      }
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "microwave_splatter_cover-003-scene-01",
+      "scene_id": "0-10s_segment",
+      "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_white_bg.jpeg)",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a dry chicken wing popping and spitting grease inside a microwave. No product and no rescuer. 1.5-3s: An absurd adult grandfather wearing yellow vintage scuba goggles and snorkel enters carrying the exact single low transparent hemispherical microwave cover with olive-green circular base rim, arched upper rear handle, and front side water reservoir from the first frame, placing it over the plate and saying 'Keep it juicy!'. 3-6s: Quickly show water poured into the clear side water reservoir with olive-green top cover and placed over food as the direct steam solution. 6-10s: Fast-cut scene 1 showing the transparent dome trapping splatter while steam circulates inside during reheating. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "microwave_splatter_cover-003-scene-02",
+      "scene_id": "10-20s_segment",
+      "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_detail_side.png](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/microwave_splatter_cover/images/product_detail_side.png)",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a clean kitchen showing collected condensation water flowing along the lower olive-green drainage channel and pouring out through the small lower round transparent drainage outlet into a sink. 4-8s: Fast-cut scene 3 showing a hand lifting the cover using the integrated olive-green arched handle on the upper rear side, revealing perfectly moist, steaming food on a dinner plate. 8-10s: Short CTA showing the product neatly placed on a bright counter with clear English text overlay: 'Keep every meal juicy and clean. Get yours today.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-24T10:00:10.095Z"
+}
