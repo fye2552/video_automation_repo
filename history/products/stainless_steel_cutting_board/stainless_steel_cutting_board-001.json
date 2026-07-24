@@ -1,0 +1,118 @@
+{
+  "script_id": "stainless_steel_cutting_board-001",
+  "product_id": "stainless_steel_cutting_board",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_cutting_board",
+  "product_folder": "products/stainless_steel_cutting_board",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "stainless_steel_cutting_board-001",
+    "product_id": "stainless_steel_cutting_board",
+    "angle": "low_risk_rescuer_fast_cut_hygiene",
+    "hook": "Close-up of a stained, smelly wooden cutting board absorbing food juices with a frustrated home cook looking on.",
+    "structure_signature": "low_risk_rescuer_fast_cut_20s",
+    "scene_order": [
+      "scene_01",
+      "scene_02"
+    ],
+    "script_record": {
+      "sku_id": "stainless_steel_chopping_board",
+      "style": "low_risk_rescuer_fast_cut",
+      "duration": 20,
+      "pain_point": "Traditional wooden and plastic cutting boards trap odors, stains, and bacteria over time.",
+      "conflict_hook": "An ordinary kitchen mess where the old board looks unclean and unsafe.",
+      "product_solution": "An adult family member wearing an elegant tuxedo enters unexpectedly carrying the stainless steel chopping board with a folded lip, placing it firmly on the counter.",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "Real pain-point hook",
+          "scene": "Close-up on a worn wooden cutting board showing deep knife marks and food stains."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "Absurd adult family rescuer enters with product",
+          "scene": "An adult son dressed in a formal tuxedo enters the kitchen carrying the silver stainless steel chopping board with a downward-folded lip, saying: 'Time for an upgrade!'"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "Product solution",
+          "scene": "The stainless steel board is placed cleanly on the countertop, instantly replacing the messy old board."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "Fast-cut scene 1",
+          "scene": "Slicing fresh green cucumbers smoothly on the hygienic reflective metal surface."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "Fast-cut scene 2",
+          "scene": "Carving juicy grilled meat with zero staining or liquid absorption on the board."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "Fast-cut scene 3",
+          "scene": "Rinsing the smooth metallic surface effortlessly under running tap water in seconds."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "A clean, modern kitchen setup showing the sleek board with text overlay: 'A simple upgrade for everyday use.'"
+        }
+      ],
+      "cta": "A simple upgrade for everyday use."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_cutting_board-001-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg)",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a stained old cutting board. No product and no rescuer. 1.5-3s: An absurd adult family rescuer in a formal tuxedo enters carrying the exact silver stainless steel chopping board with a downward-folded lip from the first frame, takes it directly to the counter, and says 'Time for an upgrade!'. 3-6s: Quickly show the stainless steel board as the direct solution and show the issue being fixed. 6-10s: Fast-cut scene 1 showing cucumbers sliced cleanly on the smooth metallic surface. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as exact product identity. Do not change color, shape, material, or the distinctive downward-folded lip along one long edge.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "stainless_steel_cutting_board-001-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg)",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life kitchen usage environment, carving meat on the stainless steel board. 4-8s: Fast-cut scene 3 showing effortless rinsing under tap water for clean results. 8-10s: Short CTA showing 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, silver metallic stainless steel appearance, smooth reflective surface, and the visible 1 cm downward-folded lip along one long edge. Do not change product features or add unconfirmed elements.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      }
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_cutting_board-001-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg)",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a stained old cutting board. No product and no rescuer. 1.5-3s: An absurd adult family rescuer in a formal tuxedo enters carrying the exact silver stainless steel chopping board with a downward-folded lip from the first frame, takes it directly to the counter, and says 'Time for an upgrade!'. 3-6s: Quickly show the stainless steel board as the direct solution and show the issue being fixed. 6-10s: Fast-cut scene 1 showing cucumbers sliced cleanly on the smooth metallic surface. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as exact product identity. Do not change color, shape, material, or the distinctive downward-folded lip along one long edge.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "stainless_steel_cutting_board-001-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "[https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg](https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_cutting_board/images/product_white_bg.jpeg)",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life kitchen usage environment, carving meat on the stainless steel board. 4-8s: Fast-cut scene 3 showing effortless rinsing under tap water for clean results. 8-10s: Short CTA showing 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, silver metallic stainless steel appearance, smooth reflective surface, and the visible 1 cm downward-folded lip along one long edge. Do not change product features or add unconfirmed elements.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-24T10:59:53.287Z"
+}
