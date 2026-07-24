@@ -1,0 +1,110 @@
+{
+  "script_id": "microwave_splatter_cover-001",
+  "product_id": "microwave_splatter_cover",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/microwave_splatter_cover",
+  "product_folder": "products/microwave_splatter_cover",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "microwave_splatter_cover-001",
+    "product_id": "microwave_splatter_cover",
+    "angle": "Absurd adult family rescuer intervenes with a steam-assisted microwave cover to prevent messy food splatters and dry reheated meals.",
+    "hook": "Close-up of messy sauce exploding all over the microwave interior walls while reheating dry pasta.",
+    "structure_signature": "real_pain_hook_absurd_rescuer_quick_solution_fast_cuts_cta",
+    "scene_order": [
+      "0-1.5s: Real Pain Hook",
+      "1.5-3s: Absurd Adult Family Rescuer",
+      "3-6s: Product Solution",
+      "6-10s: Fast Cut Scene 1",
+      "10-14s: Fast Cut Scene 2",
+      "14-18s: Fast Cut Scene 3",
+      "18-20s: CTA"
+    ],
+    "script_record": {
+      "sku_id": "uforu_microwave_splatter_cover_with_water_steamer",
+      "style": "low_risk_rescuer_fast_cut",
+      "pain_point": "Microwave explosions and dry, rubbery reheated food",
+      "conflict_hook": "Messy microwave sauce splatters and ruined dinner",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "真实痛点钩子",
+          "scene": "Close-up of sauce popping and splattering across microwave walls as dry pasta heats."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "荒诞成年亲属携产品入场",
+          "scene": "An absurd adult grandma in full silk fencing gear marches in carrying the UFORU clear microwave splatter cover with olive green rim, placing it directly over the plate while saying 'Stop the mess!'."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "Clean water is poured into the clear side reservoir; steam retains moisture as food heats neatly without splattering."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Lifting the cover using the olive-green top handle, revealing perfectly juicy, fresh-looking reheated pasta."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Showing condensation collecting in the lower channel and pouring neatly out of the lower drainage outlet."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Rinsing the transparent polycarbonate cover under the sink with quick, effortless cleanup."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Text overlay: 'A simple upgrade for everyday use. Check it out today.'"
+        }
+      ],
+      "cta": "A simple upgrade for everyday use. Check it out today."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "microwave_splatter_cover-001-scene-01",
+        "scene_id": "segment_1_0_10s",
+        "promptImage": "[https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg](https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg)",
+        "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail: tomato sauce popping and exploding across messy glass microwave walls while reheating dry food. No product and no rescuer. 1.5-3s: An absurd adult grandma dressed in full fencing suit enters carrying the exact single low transparent hemispherical UFORU microwave splatter cover with wide olive-green circular base rim and side water reservoir from the first frame, takes it directly to the microwave, covers the plate, and says 'Stop the mess!'. 3-6s: Quickly show the product as the direct solution, pouring clean water into the side reservoir to generate steam and keep food moist and mess-free. 6-10s: Fast-cut scene 1 showing the first clear result as the cover is lifted by its olive-green arched handle to reveal hot, moist food with zero splatter inside the clean microwave. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "microwave_splatter_cover-001-scene-02",
+        "scene_id": "segment_2_10_20s",
+        "promptImage": "[https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg](https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg)",
+        "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment showing collected condensation flowing along the lower clear drainage channel and being poured out through the small lower drainage outlet. 4-8s: Fast-cut scene 3 showing final result, rinsing the smooth clear polycarbonate cover directly under the faucet with effortless cleaning. 8-10s: Short CTA showing the product neatly stored on a modern kitchen counter with clear text overlay: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ]
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "microwave_splatter_cover-001-scene-01",
+      "scene_id": "segment_1_0_10s",
+      "promptImage": "[https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg](https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg)",
+      "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail: tomato sauce popping and exploding across messy glass microwave walls while reheating dry food. No product and no rescuer. 1.5-3s: An absurd adult grandma dressed in full fencing suit enters carrying the exact single low transparent hemispherical UFORU microwave splatter cover with wide olive-green circular base rim and side water reservoir from the first frame, takes it directly to the microwave, covers the plate, and says 'Stop the mess!'. 3-6s: Quickly show the product as the direct solution, pouring clean water into the side reservoir to generate steam and keep food moist and mess-free. 6-10s: Fast-cut scene 1 showing the first clear result as the cover is lifted by its olive-green arched handle to reveal hot, moist food with zero splatter inside the clean microwave. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "microwave_splatter_cover-001-scene-02",
+      "scene_id": "segment_2_10_20s",
+      "promptImage": "[https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg](https://cdn.jsdelivr.net/gh/fye2552/video_automation_repo@main/products/microwave_splatter_cover/product_white_bg.jpeg)",
+      "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment showing collected condensation flowing along the lower clear drainage channel and being poured out through the small lower drainage outlet. 4-8s: Fast-cut scene 3 showing final result, rinsing the smooth clear polycarbonate cover directly under the faucet with effortless cleaning. 8-10s: Short CTA showing the product neatly stored on a modern kitchen counter with clear text overlay: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-24T07:35:08.831Z"
+}
