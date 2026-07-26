@@ -1,0 +1,60 @@
+{
+  "script_id": "3-stage_professional_sharpening_tool-001",
+  "product_id": "3-stage_professional_sharpening_tool",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_target_shelf_intro_v6.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/3-stage_professional_sharpening_tool",
+  "product_folder": "products/3-stage_professional_sharpening_tool",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "3-stage_professional_sharpening_tool-001",
+    "product_id": "3-stage_professional_sharpening_tool",
+    "angle": "Target discovery to direct pain-point resolution for home cooks",
+    "hook": "Shopper drops iced coffee while panning smoothly to the sharpener on a Target shelf",
+    "structure_signature": "omini-flash-10s-target-surprise-product-introduction",
+    "scene_order": [
+      "scene_01"
+    ],
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "3-stage_professional_sharpening_tool-001-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/3-stage_professional_sharpening_tool/images/product_detail_side.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok Shop产品介绍视频。全片固定在明亮整洁的美国 Target 商超厨房工具货架通道，视频内部固定使用两个镜头，只在约2.0秒处硬切一次。第一镜头负责主角发现产品时立即开始平滑右移，平移过程中咖啡脱手，镜头不中断地移至产品；第二镜头负责主角取下同一产品并面对观众主观镜头介绍。不得改成全程连续跟拍。保持同一名主角、同一套服装、同一货架陈列格、同一光线和同一套产品。冰咖啡和红色购物篮只在第一镜头出现。\n\n上传的产品参考图为最高优先级。先按“数量 → 主轮廓 → 方向与比例 → 厚度与边缘 → 关键结构 → 反向禁止”写出产品外观锁定合同。全片只出现一套完整裸露的带一体式手柄的手动磨刀器展示样品，严格保持哑光黑色机身与红色防滑细节、横向放置、长边约为短边的3倍、低矮底座且底部有一圈连续的红色防滑包边、左侧黑色底座顶部恰好三个平行的银色弧形磨刀槽罩（内有黑色U形开口）与右侧延伸的长弧形红黑手柄、无文字Logo和人物手掌相对尺寸不变。不得生成电动磨刀机、纯磨刀石、分离式独立手柄、四个或两个槽、锯齿刀和发光特效。产品名称不得替代轮廓描述。\n\n主角为普通美国成年黑人女性消费者，保持固定短卷发、休闲牛仔外套和白色T恤。第一镜头中，她左手拿无文字透明杯装冰咖啡，右手提无文字纯红色塑料购物篮；第二镜头中两者均不出现。商店不出现 Target 字样、圆靶 Logo、真实品牌、虚构品牌词、乱码文字、价格牌、促销牌、低库存和售罄标签。\n\n0.0–2.0秒，第一镜头：\n开场采用固定中广角观察镜头，主角站在画面左侧偏中位置，面向右侧货架。她看见货架的瞬间眼睛骤然睁大；在眼神刚变化时，摄影机立刻以稳定速度开始一次不中断的平滑向右移动，保持同一高度和焦段，不推拉、不旋转、不绕人物。摄影机已经右移约0.2秒后，她左手透明冰咖啡杯才因意外惊讶脱离手掌并垂直下落。摄影机保持原速度持续右移，不为咖啡停顿、加速和改变方向，只追向产品，不拍摄咖啡落地，不跟随咖啡，不回头；主角、红色购物篮和下落咖啡自然退出画面。镜头最终完全对准同一个开放展示位中整齐陈列的唯一一套裸露展示样品，相邻陈列格仍摆放无品牌普通同类用品，整排货架不得空置。主角不取货、不触碰产品、不转身面对镜头、不说话。不得出现围观人群、抢购、最后一件、低库存和售罄暗示。\n\n约2.0秒：\n使用一次明确硬切。硬切后仍是同一主角、同一服装、同一货架通道、同一展示位、同一光线和同一套展示样品。冰咖啡和红色购物篮不得在第二镜头出现。\n\n2.0–4.0秒，第二镜头：\n镜头切到货架正前方的观众主观中近景。主角已经从同一展示位完全取下同一套展示样品，正面对镜头，将产品完整展示在胸前。产品横竖方向、长宽比例、厚度、边缘形态和关键结构的位置与参考图一致；不得因为手持动作改变产品类别。原展示位在主角身后自然空置，但不出现缺货、售罄和低库存标志。主角自然说：\n\"Love cooking dinner, but hate struggling with a dull knife?\"\n\n4.0–8.6秒，第二镜头继续：\n主角保持原位，始终手持同一套产品面对观众主观镜头。轻微倾斜产品以清晰展示顶部的三个银色磨刀槽罩。她自然说：\n\"This three stage sharpener restores edges fast. That makes everyday prep a lot simpler.\"\n全程不切换使用场景，不进行功能验证，不增加独立产品特写、额外道具、第三镜头和前后对比。\n\n8.6–10.0秒，第二镜头继续：\n主角保持产品最清楚的展示角度，说完最后一句的同时，一只手稳定产品，另一只手抬起食指，明确向画面左下角指一次。不得变成摊手、左右挥动和普通讲解手势。最后0.4秒保持人物、产品和指向动作清楚同框。\n\n全局限制：全程无字幕、无屏幕文字、无品牌文字、无乱码字母、无墙面招牌、无箭头、无价格、无折扣、无倒计时、无平台UI、无水印、无背景音乐。货架中只出现一套同款产品，必须被定义为开放展示样品，不得被定义为最后库存。产品的外观、数量、轮廓、长宽比例、横竖方向、厚度、边缘形态和关键结构在两个镜头之间完全一致。不得改成连续跟拍，不得增加第三镜头，不进行功能测试，不提供多选动作路径。英文台词只能写在各自对应的时间段内，分镜结束后不得再次单独汇总“完整英文口播”，不得重复任何台词。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "3-stage_professional_sharpening_tool-001-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/3-stage_professional_sharpening_tool/images/product_detail_side.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok Shop产品介绍视频。全片固定在明亮整洁的美国 Target 商超厨房工具货架通道，视频内部固定使用两个镜头，只在约2.0秒处硬切一次。第一镜头负责主角发现产品时立即开始平滑右移，平移过程中咖啡脱手，镜头不中断地移至产品；第二镜头负责主角取下同一产品并面对观众主观镜头介绍。不得改成全程连续跟拍。保持同一名主角、同一套服装、同一货架陈列格、同一光线和同一套产品。冰咖啡和红色购物篮只在第一镜头出现。\n\n上传的产品参考图为最高优先级。先按“数量 → 主轮廓 → 方向与比例 → 厚度与边缘 → 关键结构 → 反向禁止”写出产品外观锁定合同。全片只出现一套完整裸露的带一体式手柄的手动磨刀器展示样品，严格保持哑光黑色机身与红色防滑细节、横向放置、长边约为短边的3倍、低矮底座且底部有一圈连续的红色防滑包边、左侧黑色底座顶部恰好三个平行的银色弧形磨刀槽罩（内有黑色U形开口）与右侧延伸的长弧形红黑手柄、无文字Logo和人物手掌相对尺寸不变。不得生成电动磨刀机、纯磨刀石、分离式独立手柄、四个或两个槽、锯齿刀和发光特效。产品名称不得替代轮廓描述。\n\n主角为普通美国成年黑人女性消费者，保持固定短卷发、休闲牛仔外套和白色T恤。第一镜头中，她左手拿无文字透明杯装冰咖啡，右手提无文字纯红色塑料购物篮；第二镜头中两者均不出现。商店不出现 Target 字样、圆靶 Logo、真实品牌、虚构品牌词、乱码文字、价格牌、促销牌、低库存和售罄标签。\n\n0.0–2.0秒，第一镜头：\n开场采用固定中广角观察镜头，主角站在画面左侧偏中位置，面向右侧货架。她看见货架的瞬间眼睛骤然睁大；在眼神刚变化时，摄影机立刻以稳定速度开始一次不中断的平滑向右移动，保持同一高度和焦段，不推拉、不旋转、不绕人物。摄影机已经右移约0.2秒后，她左手透明冰咖啡杯才因意外惊讶脱离手掌并垂直下落。摄影机保持原速度持续右移，不为咖啡停顿、加速和改变方向，只追向产品，不拍摄咖啡落地，不跟随咖啡，不回头；主角、红色购物篮和下落咖啡自然退出画面。镜头最终完全对准同一个开放展示位中整齐陈列的唯一一套裸露展示样品，相邻陈列格仍摆放无品牌普通同类用品，整排货架不得空置。主角不取货、不触碰产品、不转身面对镜头、不说话。不得出现围观人群、抢购、最后一件、低库存和售罄暗示。\n\n约2.0秒：\n使用一次明确硬切。硬切后仍是同一主角、同一服装、同一货架通道、同一展示位、同一光线和同一套展示样品。冰咖啡和红色购物篮不得在第二镜头出现。\n\n2.0–4.0秒，第二镜头：\n镜头切到货架正前方的观众主观中近景。主角已经从同一展示位完全取下同一套展示样品，正面对镜头，将产品完整展示在胸前。产品横竖方向、长宽比例、厚度、边缘形态和关键结构的位置与参考图一致；不得因为手持动作改变产品类别。原展示位在主角身后自然空置，但不出现缺货、售罄和低库存标志。主角自然说：\n\"Love cooking dinner, but hate struggling with a dull knife?\"\n\n4.0–8.6秒，第二镜头继续：\n主角保持原位，始终手持同一套产品面对观众主观镜头。轻微倾斜产品以清晰展示顶部的三个银色磨刀槽罩。她自然说：\n\"This three stage sharpener restores edges fast. That makes everyday prep a lot simpler.\"\n全程不切换使用场景，不进行功能验证，不增加独立产品特写、额外道具、第三镜头和前后对比。\n\n8.6–10.0秒，第二镜头继续：\n主角保持产品最清楚的展示角度，说完最后一句的同时，一只手稳定产品，另一只手抬起食指，明确向画面左下角指一次。不得变成摊手、左右挥动和普通讲解手势。最后0.4秒保持人物、产品和指向动作清楚同框。\n\n全局限制：全程无字幕、无屏幕文字、无品牌文字、无乱码字母、无墙面招牌、无箭头、无价格、无折扣、无倒计时、无平台UI、无水印、无背景音乐。货架中只出现一套同款产品，必须被定义为开放展示样品，不得被定义为最后库存。产品的外观、数量、轮廓、长宽比例、横竖方向、厚度、边缘形态和关键结构在两个镜头之间完全一致。不得改成连续跟拍，不得增加第三镜头，不进行功能测试，不提供多选动作路径。英文台词只能写在各自对应的时间段内，分镜结束后不得再次单独汇总“完整英文口播”，不得重复任何台词。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-26T10:30:56.768Z"
+}
