@@ -1,0 +1,73 @@
+{
+  "script_id": "3_stage_professional_knife_sharpener-006",
+  "product_id": "3_stage_professional_knife_sharpener",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/3_stage_professional_knife_sharpener",
+  "product_folder": "products/3_stage_professional_knife_sharpener",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "3_stage_professional_knife_sharpener-006",
+    "product_id": "3_stage_professional_knife_sharpener",
+    "angle": "First-person POV demonstration showing direct one-way pull sharpening of a kitchen chef's knife followed by disassembly of the detachable sharpening head for easy cleanup",
+    "hook": "No spoken hook - direct first-person visual action of chef knife sharpening",
+    "structure_signature": "first-person-product-usage-two-scene",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Insert the knife blade into the sharpening slot vertically",
+        "Pull the knife backward towards the user"
+      ]
+    },
+    "script_record": {
+      "video_generation_prompt": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双自然肤色的手、部分前臂、产品和当前木质厨房台面；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一个磨刀器，严格保持红黑相间的弧度握把、方形黑色底座、带有3个银色金属V型槽的可拆卸磨刀头不变。全程无对白、无旁白、无背景音乐、无字幕，只保留磨刀器摩擦声、拔插咬合声和厨房环境音。\n\n0.0sec-5.0sec\n第一人称视角下，左手紧紧握住磨刀器的红黑弧度手柄，将其固定在木质台面上。右手拿着一把平直刃口的主厨刀，垂直插入金属磨刀槽，以恒定力道单向向后拉过磨刀槽，重复两次，绝无来回拉锯或前推。4.0秒到5.0秒，右手将刀移开，左手轻轻摇晃磨刀器手柄，底座稳稳贴合台面无位移。\n\n5.0sec-10.0sec\n直接硬切至相同台面近景。第一人称视角下，左手固定住磨刀器黑色底座，右手向上用力将银色金属磨刀头整块拔出，露出中空的安装槽槽口，展示可拆卸清洗的结构。9.0秒到10.0秒，右手将金属磨刀头重新向下对准卡槽按回，发出清脆的卡合声，扣紧后左手轻碰刀头确认其固定不松动。\n\n全局限制：两段均保持同一个红黑磨刀器及可拆卸金属磨刀头；不得使用剪刀、锯齿刀或波浪刀；磨刀时绝不出现前推或来回拉锯动作；禁止任何火花特效；不得出现第二件产品、使用者脸部、第三人称机位、额外手部、背景音乐和人工转场音效。"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "3_stage_professional_knife_sharpener-006-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/3_stage_professional_knife_sharpener/images/product_white_bg.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双自然肤色的手、部分前臂、产品和当前木质厨房台面；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一个磨刀器，严格保持红黑相间的弧度握把、方形黑色底座、带有3个银色金属V型槽的可拆卸磨刀头不变。全程无对白、无旁白、无背景音乐、无字幕，只保留磨刀器摩擦声、拔插咬合声和厨房环境音。\n\n0.0sec-5.0sec\n第一人称视角下，左手紧紧握住磨刀器的红黑弧度手柄，将其固定在木质台面上。右手拿着一把平直刃口的主厨刀，垂直插入金属磨刀槽，以恒定力道单向向后拉过磨刀槽，重复两次，绝无来回拉锯或前推。4.0秒到5.0秒，右手将刀移开，左手轻轻摇晃磨刀器手柄，底座稳稳贴合台面无位移。\n\n5.0sec-10.0sec\n直接硬切至相同台面近景。第一人称视角下，左手固定住磨刀器黑色底座，右手向上用力将银色金属磨刀头整块拔出，露出中空的安装槽槽口，展示可拆卸清洗的结构。9.0秒到10.0秒，右手将金属磨刀头重新向下对准卡槽按回，发出清脆的卡合声，扣紧后左手轻碰刀头确认其固定不松动。\n\n全局限制：两段均保持同一个红黑磨刀器及可拆卸金属磨刀头；不得使用剪刀、锯齿刀或波浪刀；磨刀时绝不出现前推或来回拉锯动作；禁止任何火花特效；不得出现第二件产品、使用者脸部、第三人称机位、额外手部、背景音乐 and 人工转场音效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.028,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.02777777777777778,
+      "history_script_id": "3_stage_professional_knife_sharpener-005",
+      "similarities": {
+        "hook": 0.47368421052631576,
+        "angle": 0.2777777777777778,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.14285714285714285,
+        "scene_order": 1
+      },
+      "structural_score": 0.571
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "3_stage_professional_knife_sharpener-006-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/3_stage_professional_knife_sharpener/images/product_white_bg.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双自然肤色的手、部分前臂、产品和当前木质厨房台面；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一个磨刀器，严格保持红黑相间的弧度握把、方形黑色底座、带有3个银色金属V型槽的可拆卸磨刀头不变。全程无对白、无旁白、无背景音乐、无字幕，只保留磨刀器摩擦声、拔插咬合声和厨房环境音。\n\n0.0sec-5.0sec\n第一人称视角下，左手紧紧握住磨刀器的红黑弧度手柄，将其固定在木质台面上。右手拿着一把平直刃口的主厨刀，垂直插入金属磨刀槽，以恒定力道单向向后拉过磨刀槽，重复两次，绝无来回拉锯或前推。4.0秒到5.0秒，右手将刀移开，左手轻轻摇晃磨刀器手柄，底座稳稳贴合台面无位移。\n\n5.0sec-10.0sec\n直接硬切至相同台面近景。第一人称视角下，左手固定住磨刀器黑色底座，右手向上用力将银色金属磨刀头整块拔出，露出中空的安装槽槽口，展示可拆卸清洗的结构。9.0秒到10.0秒，右手将金属磨刀头重新向下对准卡槽按回，发出清脆的卡合声，扣紧后左手轻碰刀头确认其固定不松动。\n\n全局限制：两段均保持同一个红黑磨刀器及可拆卸金属磨刀头；不得使用剪刀、锯齿刀或波浪刀；磨刀时绝不出现前推或来回拉锯动作；禁止任何火花特效；不得出现第二件产品、使用者脸部、第三人称机位、额外手部、背景音乐 and 人工转场音效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-28T12:59:20.571Z"
+}
