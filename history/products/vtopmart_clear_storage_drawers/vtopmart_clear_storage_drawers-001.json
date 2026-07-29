@@ -1,0 +1,66 @@
+{
+  "script_id": "vtopmart_clear_storage_drawers-001",
+  "product_id": "vtopmart_clear_storage_drawers",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/vtopmart_clear_storage_drawers",
+  "product_folder": "products/vtopmart_clear_storage_drawers",
+  "selected_script": {
+    "script_id": "vtopmart_clear_storage_drawers-001",
+    "product_id": "vtopmart_clear_storage_drawers",
+    "angle": "First-person POV showing easy closet clothing organization and effortless access using stackable clear drawers",
+    "hook": "See how easily you can pull out and access your clothes without unstacking your organizers",
+    "structure_signature": "first-person-product-usage-two-scene-video-prompt-generator",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "vtopmart_clear_storage_drawers-001-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/vtopmart_clear_storage_drawers/images/product_function.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双自然肤色的手、浅色长袖衣袖、产品和当前衣柜收纳区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现叠放的同一款完全透明叠放抽屉，严格保持宽扁的矩形抽屉外形、完全透明硬质塑料材质、外框架带内部滑动轨道、抽屉面板上跑道圆镂空把手、边缘的网格状加强筋结构不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称衣柜环境音和塑料抽屉拉动摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看衣柜格内叠放的完全透明收纳抽屉，右手拉住下层抽屉的跑道圆镂空把手顺畅拉出，放入一件整齐折叠的深色衣服。4.0秒后，右手将抽屉推回原位，并用掌心轻压抽屉前板一次，抽屉与外框保持平整严丝合缝。保留抽屉滑动的轻微塑料摩擦声。\n\n5.0sec-10.0sec\n直接硬切到近景，隔着透明抽屉面板清晰可见里面整齐码放的衣服。第一人称右手拉开抽屉，直接从抽屉最里侧拿出一件白色T恤，上方叠放的抽屉稳固不移位。9.0秒后，用食指将抽屉推回并轻触把手边缘，整叠收纳箱纹丝不动保持稳定。保留衣服拿取和抽屉滑动声。\n\n全局限制：两段均保持同一款完全透明、宽扁矩形、带有跑道圆拉手和边缘网格加强筋的抽屉；不得出现金属滑轨、滑轮、锁扣、第二种颜色的收纳箱、夸张飞溅、发光特效、使用者脸部、第三人称机位、额外手部 and 人工转场音效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "vtopmart_clear_storage_drawers-001-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/vtopmart_clear_storage_drawers/images/product_function.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双自然肤色的手、浅色长袖衣袖、产品和当前衣柜收纳区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现叠放的同一款完全透明叠放抽屉，严格保持宽扁的矩形抽屉外形、完全透明硬质塑料材质、外框架带内部滑动轨道、抽屉面板上跑道圆镂空把手、边缘的网格状加强筋结构不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称衣柜环境音和塑料抽屉拉动摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看衣柜格内叠放的完全透明收纳抽屉，右手拉住下层抽屉的跑道圆镂空把手顺畅拉出，放入一件整齐折叠的深色衣服。4.0秒后，右手将抽屉推回原位，并用掌心轻压抽屉前板一次，抽屉与外框保持平整严丝合缝。保留抽屉滑动的轻微塑料摩擦声。\n\n5.0sec-10.0sec\n直接硬切到近景，隔着透明抽屉面板清晰可见里面整齐码放的衣服。第一人称右手拉开抽屉，直接从抽屉最里侧拿出一件白色T恤，上方叠放的抽屉稳固不移位。9.0秒后，用食指将抽屉推回并轻触把手边缘，整叠收纳箱纹丝不动保持稳定。保留衣服拿取和抽屉滑动声。\n\n全局限制：两段均保持同一款完全透明、宽扁矩形、带有跑道圆拉手和边缘网格加强筋的抽屉；不得出现金属滑轨、滑轮、锁扣、第二种颜色的收纳箱、夸张飞溅、发光特效、使用者脸部、第三人称机位、额外手部 and 人工转场音效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-29T07:15:50.987Z"
+}
