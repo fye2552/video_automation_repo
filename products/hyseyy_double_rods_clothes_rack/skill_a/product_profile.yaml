@@ -1,0 +1,94 @@
+sku_id: "hyseyy_double_rods_clothes_rack"
+product_name: "HYSEYY Double Rods Clothes Rack"
+category: "Home Storage & Garment Racks"
+source_info:
+  title: "HYSEYY Double Rods Clothes Rack, Rolling Clothing Rack for Hanging Clothes Portable Wardrobe Rack, Metal Garment Rack Sturdy Coat Rack for Bedroom Laundry Living Room, Black"
+  description: "High and low double rods design with side extension rods and bottom shelf. Holds up to 210 lbs total (160 lbs for hanging rods, 50 lbs for bottom shelf). Made of 22mm diameter steel with thread rolling assembly. Features 360-degree swivel wheels (2 lockable). Dimensions: 44.3\"W x 16.5\"D x 63.0\"H."
+visual_identity:
+  main_color: "Black"
+  secondary_color: "Silver"
+  material: "Heavy-duty 22mm steel tubing, metal wheels, plastic caps"
+  shape: "Free-standing dual-bar rolling garment rack"
+  texture: "Matte black powder-coated metal with threaded joint grooves"
+  logo_position: "Unbranded exterior"
+  size_ratio: "44.3 in Wide x 16.5 in Deep x 63.0 in High (Front rod height 52.7 in)"
+key_visual_features:
+  - "High-low staggered double hanging rods"
+  - "Side extension rods for hanging bags, towels, and accessories"
+  - "Bottom dual-pipe storage rack for shoes and boxes"
+  - "Thread rolling screwless-style inter-tube connections"
+  - "4 heavy-duty industrial swivel caster wheels (2 with brake levers)"
+selling_points:
+  - "Heavy-duty 210 lbs total load capacity"
+  - "Thread rolling mounting for fast, wobbly-free assembly"
+  - "Double rods maximize vertical hanging space"
+  - "360-degree lockable swivel wheels for easy mobility"
+  - "Versatile side bars and bottom storage shelf"
+usage_scenes:
+  - "Bedroom"
+  - "Laundry room"
+  - "Living room"
+  - "Closet extension"
+must_keep:
+  - "保持黑色磨砂金属管身与高低双杠挂杆结构不变"
+  - "保持底部双管层架与4个万向轮结构不变"
+  - "保持侧面伸展挂杆形态与比例不变"
+  - "不要增加原始产品不存在的布套、抽屉或装饰物"
+must_avoid:
+  - "不要改变产品品类"
+  - "不要虚构不存在的功能"
+  - "不要改变螺纹旋转对接的拆装结构"
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+source_image_audit:
+  - file: "716ekUcPypL._AC_SX679_.jpg"
+    type: "product appearance source"
+    use: "White background product reference"
+    direct_generation_risk: "Low"
+  - file: "713ERms8jCL._AC_SL1500_.jpg"
+    type: "detail/texture source"
+    use: "Dimensional diagram and structural proportion reference"
+    direct_generation_risk: "Medium (contains overlay texts and dimension lines)"
+  - file: "71UwsY-kECL._AC_SX679_.jpg"
+    type: "detail/texture source"
+    use: "Thread rolling assembly mechanism close-up reference"
+    direct_generation_risk: "High (contains comparison text overlays)"
+  - file: "71yASGfgVhL._AC_SL1500_.jpg"
+    type: "usage/function source"
+    use: "In-use lifestyle context reference in bedroom setting"
+    direct_generation_risk: "Medium (contains full clothes styling and ambient background)"
+
+instructions_for_use:
+  source_confidence: "confirmed"
+  source: "official description, packaging diagrams, and dimensional charts"
+  intended_user: "adult home user"
+  prerequisites:
+    - "Unpack all labeled metal rods (A-I), casters (J-K), screws, and Allen wrench tools"
+    - "Assemble on a flat, level floor surface"
+  compatible_items:
+    - "Hanging garments (coats, dresses, shirts, pants)"
+    - "Side storage: bags, hats, belts, towels, umbrellas"
+    - "Bottom storage: shoe boxes, luggage, shoes"
+  steps:
+    - step: 1
+      action: "Screw the four 360° caster wheels into the bottom base frames"
+      object_or_contact_point: "Bottom base tubes (C)"
+    - step: 2
+      action: "Connect vertical rods using thread rolling mounting (twist and screw tubes directly together)"
+      object_or_contact_point: "Threaded tube joints (D & E)"
+    - step: 3
+      action: "Attach the high and low horizontal top hanging rods and side extension bars"
+      object_or_contact_point: "Top T-connectors and extension bars (F & G)"
+    - step: 4
+      action: "Press down wheel locks to secure the rack in place when stationary"
+      object_or_contact_point: "Caster brake levers"
+  safety_constraints:
+    - "Do not exceed maximum weight capacity of 210 lbs total (160 lbs on upper rods, 50 lbs on bottom shelf)"
+  prohibited_actions:
+    - "Do not climb or sit on the garment rack"
+    - "Do not force screw connections improperly to avoid thread damage"
+  video_constraints:
+    - "Use only the confirmed steps above. Do not infer any missing action, direction, order, angle, or repetition count."
+    - "If a required action is not confirmed, show a neutral product display or placement shot instead of performing the action."
