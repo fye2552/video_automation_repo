@@ -1,0 +1,70 @@
+{
+  "script_id": "hyseyy_double_rods_clothes_rack-002",
+  "product_id": "hyseyy_double_rods_clothes_rack",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/hyseyy_double_rods_clothes_rack",
+  "product_folder": "products/hyseyy_double_rods_clothes_rack",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "hyseyy_double_rods_clothes_rack-002",
+    "product_id": "hyseyy_double_rods_clothes_rack",
+    "angle": "First-person POV showcasing the quick wheel locking stability and practical heavy-duty hanging capacity of the dual-rod rolling clothes rack.",
+    "hook": "Visual hook: Direct POV of hands locking the heavy-duty caster brakes, rendering the rolling rack completely stationary.",
+    "structure_signature": "first-person-pov-two-scene-stability-showcase",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "step_4"
+      ]
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "hyseyy_double_rods_clothes_rack-002-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_white_bg.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双成年人的手、部分前臂、产品和当前卧室木地板区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持黑色磨砂金属管身、高低双杠挂杆、底部双管层架、4个黑色万向轮以及两侧伸展挂杆的外观结构不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、滑轮卡锁扣击声和衣架与金属杆碰撞的真实摩擦声。\n\n0.0sec-5.0sec\n第一人称视角俯看卧室地面上的衣帽架底部，一只手伸向带有刹车拨片的万向轮，用手指将刹车拨片向下按紧以锁定车轮；4.0 秒后手握住下方的黑色金属管轻推一次，轮子锁死，架子稳固不发生任何位移。保留清脆的锁轮扣击声。\n\n5.0sec-10.0sec\n直接硬切到同一衣帽架中景，第一人称双手拿着两个挂有大衣的衣架，平稳挂到高侧的黑色金属横杆上至 9.0 秒；最后 1 秒用右手轻轻下拉一下衣架，高低双杆挂架保持纹丝不动。保留衣架挂钩与磨砂金属杆碰撞的真实声响。\n\n全局限制：两段均保持同一款黑色双杆金属衣帽架；不得出现第二件产品、拼装过程、过度剧烈摇晃、夸张变形、发光特效、使用者正脸、第三人称跟拍和任何人工后期文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "hyseyy_double_rods_clothes_rack-002-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_white_bg.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双成年人的手、部分前臂、产品和当前卧室木地板区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持黑色磨砂金属管身、高低双杠挂杆、底部双管层架、4个黑色万向轮以及两侧伸展挂杆的外观结构不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、滑轮卡锁扣击声和衣架与金属杆碰撞的真实摩擦声。\n\n0.0sec-5.0sec\n第一人称视角俯看卧室地面上的衣帽架底部，一只手伸向带有刹车拨片的万向轮，用手指将刹车拨片向下按紧以锁定车轮；4.0 秒后手握住下方的黑色金属管轻推一次，轮子锁死，架子稳固不发生任何位移。保留清脆的锁轮扣击声。\n\n5.0sec-10.0sec\n直接硬切到同一衣帽架中景，第一人称双手拿着两个挂有大衣的衣架，平稳挂到高侧的黑色金属横杆上至 9.0 秒；最后 1 秒用右手轻轻下拉一下衣架，高低双杆挂架保持纹丝不动。保留衣架挂钩与磨砂金属杆碰撞的真实声响。\n\n全局限制：两段均保持同一款黑色双杆金属衣帽架；不得出现第二件产品、拼装过程、过度剧烈摇晃、夸张变形、发光特效、使用者正脸、第三人称跟拍和任何人工后期文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T00:48:29.547Z"
+}
