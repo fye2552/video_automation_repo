@@ -1,0 +1,125 @@
+{
+  "script_id": "command-broom-grippers-005",
+  "product_id": "command-broom-grippers",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/command-broom-grippers",
+  "product_folder": "products/command-broom-grippers",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "command-broom-grippers-005",
+    "product_id": "command-broom-grippers",
+    "angle": "Absurd scuba grandpa rescues kitchen from sliding broom clutter",
+    "hook": "Close-up of a broom sliding down a tiled kitchen corner wall, knocking over a dustpan onto the floor",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_id": "video_001",
+      "total_duration": 20,
+      "aspect_ratio": "9:16",
+      "language": "English",
+      "style": "low_risk_rescuer_fast_cut",
+      "segments": [
+        {
+          "segment_id": "video_001_part_01",
+          "segment_index": 1,
+          "duration": 10,
+          "global_time_range": "0-10s",
+          "timeline": [
+            "0-1.5s: Close-up of a broom sliding down a kitchen wall and falling.",
+            "1.5-3s: An absurd grandpa in full scuba gear enters carrying the Command Broom Gripper.",
+            "3-6s: The broom handle is pushed into the Command Broom Gripper on the wall, securing it.",
+            "6-10s: Fast-cut scene 1 showing the broom hanging neatly off the floor."
+          ],
+          "reference_images": [
+            "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg",
+            "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_detail_side.jpeg",
+            "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_function.jpeg"
+          ]
+        },
+        {
+          "segment_id": "video_001_part_02",
+          "segment_index": 2,
+          "duration": 10,
+          "global_time_range": "10-20s",
+          "timeline": [
+            "0-4s: Fast-cut scene 2 showing a mop hanging securely in a clean laundry room.",
+            "4-8s: Fast-cut scene 3 showing a wet swiffer hanging perfectly off the floor in a pantry.",
+            "8-10s: CTA reading 'Make your space cleaner and cozier.'"
+          ],
+          "reference_images": [
+            "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg"
+          ]
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "command-broom-grippers-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Timeline: 0-1.5s: Close-up of a wooden broom sliding down a tiled kitchen corner wall and falling. No product, no rescuer. 1.5-3s: An absurd grandpa in full scuba diving gear (wetsuit, mask, snorkel) enters the frame carrying the Command Broom Gripper (white bracket, grey rubber jaws). He holds the gripper and says 'Stick it up!'. 3-6s: The broom handle is pushed directly into the Command Broom Gripper, mounted on the wall, showing it instantly holds. 6-10s: Fast-cut scene 1 showing the broom hanging neatly and securely off the floor. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "command-broom-grippers-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-4s: Fast-cut scene 2 showing a wet mop hanging securely in the Command Broom Gripper on a clean white laundry room wall. 4-8s: Fast-cut scene 3 showing a microfiber cleaning tool hanging perfectly organized inside a kitchen pantry. 8-10s: Short CTA overlay reading 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.013,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.0125,
+      "history_script_id": "command-broom-grippers-004",
+      "similarities": {
+        "hook": 0.13793103448275862,
+        "angle": 0.125,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.16666666666666666,
+        "scene_order": 1
+      },
+      "structural_score": 0.583
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "command-broom-grippers-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Timeline: 0-1.5s: Close-up of a wooden broom sliding down a tiled kitchen corner wall and falling. No product, no rescuer. 1.5-3s: An absurd grandpa in full scuba diving gear (wetsuit, mask, snorkel) enters the frame carrying the Command Broom Gripper (white bracket, grey rubber jaws). He holds the gripper and says 'Stick it up!'. 3-6s: The broom handle is pushed directly into the Command Broom Gripper, mounted on the wall, showing it instantly holds. 6-10s: Fast-cut scene 1 showing the broom hanging neatly and securely off the floor. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "command-broom-grippers-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/command-broom-grippers/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Timeline: 0-4s: Fast-cut scene 2 showing a wet mop hanging securely in the Command Broom Gripper on a clean white laundry room wall. 4-8s: Fast-cut scene 3 showing a microfiber cleaning tool hanging perfectly organized inside a kitchen pantry. 8-10s: Short CTA overlay reading 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T01:43:57.174Z"
+}
