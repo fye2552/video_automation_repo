@@ -1,0 +1,103 @@
+sku_id: "woven-cotton-3-tier-over-the-door-basket"
+product_name: "Woven Cotton 3-Tier Over the Door Basket"
+category: "Home Storage & Organization / Hanging Baskets"
+source_info:
+  title: "Woven cotton 3-Tier Over the Door Basket, Wall-Mounted Jute Bathroom Storage Organizer – Decorative Nursery Baskets, Perfect for Busy Mom/Dad to Store Diapers & Toys small basket Gift Hook laundry basket house organizers"
+  description: "Woven Cotton 3-Tier Over the Door Basket. Ideal for Busy Parents: This wall-mounted jute bathroom storage organizer is perfect for storing diapers and toys. It's a decorative nursery basket that doubles as a gift hook and laundry basket. Ideal for busy moms and dads, it keeps your home organized effortlessly. 3-Tier Design: The basket features three tiers, providing ample space for small items. It's over-the-door, saving floor space. Versatile Use: Use it as a nursery basket, gift hook, or laundry basket. It's a practical house organizer that fits seamlessly into any home. Decorative Touch: Add a touch of elegance to your bathroom or nursery with this woven cotton basket. It's both functional and stylish."
+visual_identity:
+  main_color: "Natural Jute / Tan / Light Brown"
+  secondary_color: "Silver (metal hook)"
+  material: "Woven Cotton / Jute Rope / Metal"
+  shape: "3-tiered hanging organizer with curved woven basket tiers connected by vertical rope"
+  texture: "Braided and woven rope texture"
+  logo_position: "None"
+  size_ratio: "Total height: 44.5 inches; Basket width: 11 inches; Basket height: 6.3 inches; Basket depth: 8.7 inches"
+key_visual_features:
+  - "3-tier woven basket structure stacked vertically"
+  - "Sturdy braided hanging rope with top loop"
+  - "Thickened knot connections joining tiers"
+  - "Includes metal over-the-door / wall hanging hook"
+  - "16 lbs load capacity capability"
+selling_points:
+  - "3-tier space-saving hanging design (over the door or wall-mounted)"
+  - "Large load capacity (up to 16 lbs)"
+  - "No assembly required – ready to hang out of the box"
+  - "Versatile storage for nursery (diapers/toys), bathroom (toiletries/towels), or bedroom"
+  - "Stylish woven aesthetic that adds elegance to home decor"
+usage_scenes:
+  - "Nursery storage (diapers, baby toys, wipes)"
+  - "Bathroom organization (shampoo, conditioner, skincare, towels)"
+  - "Over-the-door home storage for small daily accessories"
+must_keep:
+  - "保持产品颜色不变"
+  - "保持产品形状不变"
+  - "保持产品材质不变"
+  - "保持产品比例不变"
+  - "保持Logo位置不变"
+  - "不要增加原始产品不存在的配件"
+must_avoid:
+  - "不要改变产品品类"
+  - "不要虚构不存在的功能"
+  - "不要增加多余按钮、灯光、接口或装饰"
+  - "不要改变包装、结构、纹理和视觉比例"
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+source_image_audit:
+  - file: "8d63fc3923fb4016a214ebf84d1bf184~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "detail/texture source"
+    use: "Shows close-up woven material and braided rope detail"
+    direct_generation_risk: "Low"
+  - file: "425e658ef7a04bf294a3fe71ac13b58f~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "size chart / selling-point poster"
+    use: "Analysis-only for size measurements (44.5in, 11in, 6.3in, 8.7in) and storage category callouts"
+    direct_generation_risk: "High - contains overlay text, dimension lines, and icons"
+  - file: "68202dc1b79547d2a6eb539788c09e23~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "detail/texture source"
+    use: "Shows hanging top rope, loop structure, and metal hook attachment"
+    direct_generation_risk: "Medium - includes inset circle graphics"
+  - file: "90184d80d43447b6af933f151eb1718b~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "product appearance source"
+    use: "Clean product cutout view showing full 3-tier structure and included door hook"
+    direct_generation_risk: "Low"
+  - file: "d18b9749d6394b77bb92edf2e09b7fbc~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "usage/function source / selling-point poster"
+    use: "Shows product in use filled with toiletries, load capacity badge (16 lbs), and closeups"
+    direct_generation_risk: "High - contains overlay text badges and diagram callouts"
+
+instructions_for_use:
+  source_confidence: "confirmed"
+  source: "product images and description"
+  intended_user: "adult home user / parent"
+  prerequisites:
+    - "Provide an available door edge or wall hook"
+  compatible_items:
+    - "Diapers, baby wipes, small toys"
+    - "Shampoo bottles, conditioner, skincare items, towels"
+  steps:
+    - step: 1
+      action: "Hang the metal hook over the top of a door or mount onto a wall stud/hook"
+      object_or_contact_point: "Metal door hook / wall mount"
+      orientation_or_position: "Top edge of door or wall surface"
+      motion: "Place over edge"
+      repetitions: "1"
+    - step: 2
+      action: "Suspend the woven basket assembly by slipping the top rope loop onto the hook"
+      object_or_contact_point: "Top braided rope loop"
+      orientation_or_position: "Centered on hook"
+      motion: "Hang vertically"
+      repetitions: "1"
+    - step: 3
+      action: "Place items loosely inside the 3 woven basket tiers"
+      object_or_contact_point: "Basket compartments"
+      orientation_or_position: "Upright storage"
+      motion: "Place inside"
+      repetitions: "As needed"
+  safety_constraints:
+    - "Do not exceed maximum weight capacity of 16 lbs"
+  prohibited_actions:
+    - "Do not pull down excessively on individual baskets"
+  video_constraints:
+    - "Use only the confirmed steps above. Do not infer any missing action, direction, order, angle, or repetition count."
+    - "If a required action is not confirmed, show a neutral product display or placement shot instead of performing the action."
