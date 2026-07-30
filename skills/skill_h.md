@@ -1,5 +1,5 @@
----
-name: low-risk-rescuer-fast-cut-generator
+﻿---
+name: low-ri<REDACTED_API_KEY>
 description: "Generate 20-second low-risk-rescuer fast-cut UGC/Omini ad videos from a Skill A product reference pack. Use after product-reference-standardizer has produced product_profile.yaml and images/product_white_bg.jpeg, when the user wants Skill H: a real pain-point hook, an absurd adult family rescuer entering with the correct product, quick product solution, three fast-cut usage scenes, short CTA, two 10-second Moyin/Omini segment submissions per video, artifact upload, MP4 downloads, and saved prompt history."
 ---
 
