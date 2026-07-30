@@ -1,0 +1,96 @@
+sku_id: "rolling-backrest-chair-noiseless-wheel-stool"
+product_name: "Rolling Backrest Chair Stool with Noiseless Wheels"
+category: "Home & Office Furniture / Low Rolling Stools"
+source_info:
+  title: "1 Count Rolling Backarest Chair, Noiseless Wheel Stool with Skin-Friendly Fabric Cover"
+  description: "【Multi functional roller stool】 A soft garage stool that can be used for car repairs, knee exercises, push ups, home office floor cleaning, home office workers, and more. 【Easy to store and save space】 The compact design makes it very easy to store under the bed and in cabinets. Not taking up too much space. Easy to disassemble, the roller can also be disassembled when not in use. 【360-degree rotation】Equipped with four high-quality swivel casters to ensure enhanced durability and stability. The wheels have a smooth 360 degree rotation function, combining flexible maneuverability with silent design. 【Comfortable cushion】This roller stool provides a comfortable seating area and is filled with resilient sponge for optimal comfort. The surface is decorated with soft which is both skin friendly and durable. With and odorless characteristics, the seat requires minimal maintenance and is easy to clean. 【Sturdy support structure】Durable and sturdy bracket: The roller stool bracket is made of high-quality metal processed by high-density extrusion. Thicker design. Even when used in a humid environment, it is not easy to rust."
+visual_identity:
+  main_color: "Dark Grey (cushion / backrest cover)"
+  secondary_color: "Off-White / Cream (metal frame & caster wheels)"
+  material: "Skin-friendly PU Leather / Fabric Cover, High-density Sponge, Extruded Metal Tubing, Plastic Casters"
+  shape: "Low-profile rolling stool with curved padded backrest, square cushioned seat, and four-legged tubular frame"
+  texture: "Smooth, plush padded leatherette / fabric texture on cushion and backrest; smooth matte metal frame"
+  logo_position: "None"
+  size_ratio: "Base width & length: 11.81 in x 11.81 in; Seat height: 9.84 in; Backrest height: 8.66 in"
+key_visual_features:
+  - "Plush tufted top cushion seat with wide perimeter stitching"
+  - "Curved ergonomic low backrest cushion attached to twin vertical support bars"
+  - "White tubular metal frame structure"
+  - "Four 360-degree silent swivel caster wheels"
+selling_points:
+  - "Low-profile ergonomic design protecting knees during low-level tasks (cleaning, repairs, floor work)"
+  - "360-degree smooth, silent swivel caster wheels for effortless maneuverability"
+  - "Plush resilient sponge cushion covered in soft, easy-to-clean skin-friendly material"
+  - "Rust-resistant sturdy metal frame with high load support"
+  - "Compact and easy to store under beds or inside cabinets"
+usage_scenes:
+  - "Car repairs and detailing in garage"
+  - "Low-level household cleaning (skirting boards, floor wiping)"
+  - "Home office or floor-level sedentary activities"
+  - "Physical exercises, stretching, or knee rehabilitation"
+must_keep:
+  - "保持产品颜色不变"
+  - "保持产品形状不变"
+  - "保持产品材质不变"
+  - "保持产品比例不变"
+  - "保持Logo位置不变"
+  - "不要增加原始产品不存在的配件"
+must_avoid:
+  - "不要改变产品品类"
+  - "不要虚构不存在的功能"
+  - "不要增加多余按钮、灯光、接口或装饰"
+  - "不要改变包装、结构、纹理和视觉比例"
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+source_image_audit:
+  - file: "2b2186b984544bd0870c396ae5247f91~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "product appearance source"
+    use: "Clean full product view showing dark grey cushion/backrest and white tubular frame"
+    direct_generation_risk: "Low"
+  - file: "4d1343cce8e8475b8d2eb1780b3459d0~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "detail/texture source / selling-point poster"
+    use: "Closeup top angle showing wide seat surface texture and tufting"
+    direct_generation_risk: "Medium - contains text overlay ('Comfortable Wide Seat Surface')"
+  - file: "31f904436b3c42b88f777e7800f5af17~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "size chart"
+    use: "Analysis-only for precise product dimensions (11.81in x 11.81in, 9.84in seat height, 8.66in backrest height)"
+    direct_generation_risk: "High - text, arrows, dimension labels"
+  - file: "500e73718a7f4cf984c052df5e889aaf~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "selling-point poster / color variant"
+    use: "Shows orange variant with caster rotation graphic callouts"
+    direct_generation_risk: "High - text overlay, directional arrows, non-primary color"
+  - file: "975890f72fe74c159fe29a419de6b2e9~tplv-fhlh96nyum-resize-webp_800_800.webp"
+    type: "product appearance source"
+    use: "Clean cutout duplicate view of primary grey color option"
+    direct_generation_risk: "Low"
+
+instructions_for_use:
+  source_confidence: "confirmed"
+  source: "product description"
+  intended_user: "adult home user / mechanic / cleaner"
+  prerequisites:
+    - "Ensure floor surface is flat and free of heavy obstructions"
+  compatible_items:
+    - "Low-level floor cleaning tools, automotive detailing supplies"
+  steps:
+    - step: 1
+      action: "Sit squarely on the plush center seat cushion with back against the curved backrest"
+      object_or_contact_point: "Top seat cushion and lower backrest"
+      orientation_or_position: "Upright low seated position"
+      motion: "Sit down softly"
+      repetitions: "1"
+    - step: 2
+      action: "Glide across smooth indoor flooring using feet to push, allowing 360-degree swivel wheels to roll smoothly"
+      object_or_contact_point: "360-degree caster wheels"
+      orientation_or_position: "Parallel to floor surface"
+      motion: "Multi-directional rolling movement"
+      repetitions: "As needed"
+  safety_constraints:
+    - "Use on smooth, flat indoor surfaces to prevent tipping"
+  prohibited_actions:
+    - "Do not stand upright on the stool seat"
+  video_constraints:
+    - "Use only the confirmed steps above. Do not infer any missing action, direction, order, angle, or repetition count."
+    - "If a required action is not confirmed, show a neutral product display or placement shot instead of performing the action."
