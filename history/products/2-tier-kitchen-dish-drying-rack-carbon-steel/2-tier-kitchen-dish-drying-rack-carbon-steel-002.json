@@ -1,0 +1,73 @@
+{
+  "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-002",
+  "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "product_folder": "products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-002",
+    "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+    "angle": "First-person POV step interlocking assembly and under-tray drainage spout alignment.",
+    "hook": "Visual snap-fitting of the upper rack frame followed by extending the retractable water spout into the sink basin.",
+    "structure_signature": "first-person-product-usage-two-scene-video-prompt-generator",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        2,
+        4
+      ]
+    },
+    "script_record": {
+      "video_generation_prompt": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，只在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅灰色长袖前臂、产品和当前厨房工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只双层黑色碳钢碗碟沥水架，严格保持哑光黑色涂层、上层碗碟架、下层平网、侧边塑料筷勺盒、木质拉手切菜板架和底部带排水嘴的黑色塑料接水盘不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、卡合声、水流声和抽拉摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯视厨房台面，双手握住哑光黑色双层沥水架的上层支架，垂直向下对准底座卡槽，用力向下按压将支架两侧滑扣卡入底座卡槽内，发出清脆的卡合声；4.0秒后双手在架子顶部轻压晃动一次以验证卡合稳固，沥水架结构保持牢固稳定。保留塑料卡合和厨房环境声。\n\n5.0sec-10.0sec\n画面直接硬切到洗手池边缘近景，第一人称右手伸向架子底部，拉出底部的伸缩排水嘴并旋转，将其直接对准水槽内侧下方；9.0秒时右手轻触一下排水嘴外沿以验证对齐方向和防滑定位，排水嘴稳定停留在原位，水顺着水嘴流向水槽。保留水流声和轻微塑料滑动摩擦声。\n\n全局限制：两段均保持同一款哑光黑色双层沥水架、配件位置和材质比例不变；不得出现第二只沥水架、重度脏污、使用者脸部、镜中倒影、第三人称镜头、虚构的电动部件、发光按钮、无文字字幕和人工音效。"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-002-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_function.jpeg",
+        "promptText": "时长：10秒，比例：9:16。第一人称视角拍摄。0.0sec-5.0sec：双手将上层哑光黑色碗碟架插扣向下对准底盘凹槽垂直按压，发出塑料卡扣扣合声音，4.0秒时双手在顶部轻按两次，架体稳固不摇晃。5.0sec-10.0sec：画面硬切至水槽旁，右手旋转底部黑色塑料排水嘴并向外拉伸，使排水嘴越过水槽边缘，9.0秒时右手食指轻按排水嘴外侧，排水嘴保持原位对齐无松动，水珠顺流滑入水槽。无任何文字、无背景音乐，只保留自然按压与水流环境声。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.022,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.021739130434782608,
+      "history_script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-001",
+      "similarities": {
+        "hook": 0.14814814814814814,
+        "angle": 0.21739130434782608,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-002-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_function.jpeg",
+      "promptText": "时长：10秒，比例：9:16。第一人称视角拍摄。0.0sec-5.0sec：双手将上层哑光黑色碗碟架插扣向下对准底盘凹槽垂直按压，发出塑料卡扣扣合声音，4.0秒时双手在顶部轻按两次，架体稳固不摇晃。5.0sec-10.0sec：画面硬切至水槽旁，右手旋转底部黑色塑料排水嘴并向外拉伸，使排水嘴越过水槽边缘，9.0秒时右手食指轻按排水嘴外侧，排水嘴保持原位对齐无松动，水珠顺流滑入水槽。无任何文字、无背景音乐，只保留自然按压与水流环境声。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T03:19:16.990Z"
+}
