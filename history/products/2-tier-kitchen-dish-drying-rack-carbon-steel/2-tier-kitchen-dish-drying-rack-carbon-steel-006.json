@@ -1,0 +1,70 @@
+{
+  "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-006",
+  "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_shelf_single_sample.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "product_folder": "products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-006",
+    "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+    "angle": "Matte black 2-tier dish rack social shelf grab introduction targeting wet countertops with rotatable drain spout feature.",
+    "hook": "Wash dishes at home, but hate the wet countertop afterward?",
+    "structure_signature": "omini-flash-10s-crowd-product-introduction",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        4
+      ]
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-006-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/2-Tier_Carbon_Steel_Dish_Rack_202607301106.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok Shop产品介绍视频。全片固定在无品牌厨房收纳用品货架通道，视频内部固定使用两个镜头，只在约2.2秒处硬切一次。第一镜头负责用货架单样品和三名购物者的安静犹豫制造好奇，第二镜头负责主角取下同一产品并面对观众主观镜头介绍。不得改成全程连续跟拍。保持同一名主角、同一套服装、同一货架陈列格、同一光线、同一背景人群和同一只产品。上传的产品参考图为最高优先级。全片只出现1只裸露的哑光黑色双层碳钢沥水架展示样品，严格保持哑光黑色、双层金属网状结构、顶部垂直盘子槽与侧边杯子挂钩、底部平整碗架、侧面挂置的筷子筒与砧板架、底部带伸缩旋转排水嘴的塑料托盘不变。保持宽大于高的矩形比例。不得生成白色、三层结构、木质主框架、圆柱形外观、或带盖封闭式箱体等错误形态。主角为一名20多岁、穿着日常灰色卫衣的美国年轻女性。背景固定出现三名外形和服装不同的成年购物者。商店墙面和货架无真实品牌、无虚构品牌词、无乱码文字、无价格牌、无促销牌、无低库存和售罄标签。0.0–2.2秒，第一镜头：开场采用从货架通道外侧拍摄的固定中广角镜头。三名购物者围在同一个厨房收纳货架陈列格前形成清楚浅半圆，身体背面和侧面朝向镜头，视线统一看向陈列格中唯一一只裸露的哑光黑色双层沥水架展示样品。三人表现为安静观察和轻微犹豫，不交谈、不争抢。该陈列格只摆放这一只同款展示样品，相邻陈列格仍摆放其他无品牌厨房储物罐，整排货架没有空置。人群轻度遮挡产品，只露出少量黑色金属网格与侧面筷子筒局部，第一帧不得完整看清产品全貌。主角从画面左侧通道外圈进入，侧身穿过两名购物者之间的狭窄空隙，其他人物只轻微挪动肩膀让出空间。主角到达货架前，双手接触该黑色沥水架并开始将其从货架向外取下。第一镜头在产品刚离开陈列位置、仍接近货架时结束。主角在这一镜头不转身、不面对镜头、不说话。摄影机不跟随绕位。画面不得出现“最后一件”、低库存、售罄和抢购暗示。约2.2秒：使用一次明确硬切。硬切后仍是同一主角、同一服装、同一货架通道、同一产品陈列格、同一光线、同一背景人物和同一只黑色双层沥水架展示样品。2.2–4.2秒，第二镜头：镜头切到货架正前方的观众主观中近景。主角已经从同一陈列格完全取下同一只沥水架，正面对镜头，将沥水架完整展示在胸前，双手握住两侧金属框架。产品比例与参考图一致。原陈列格在主角身后自然空置，但不出现缺货、售罄和低库存标志。主角看着镜头自然说：“Wash dishes at home, but hate the wet countertop afterward?”4.2–8.6秒，第二镜头继续：主角保持原位，始终手持同一只沥水架。她单手将沥水架稍微倾斜，用另一只手轻微转动并拉伸底部的360度可旋转排水嘴。她看着镜头自然说：“This 2-tier rack drains water directly into your sink.” 全程不切换使用场景，不进行功能验证，不增加独立产品特写、额外道具、第三镜头和前后对比。8.6–10.0秒，第二镜头继续：主角将排水嘴收回，保持沥水架在胸前的最清楚展示角度，说完最后一句的同时，一只手稳定沥水架，另一只手抬起食指，明确向画面左下角指一次。不得变成摊手、左右挥动和普通讲解手势。最后0.4秒保持人物、产品和指向动作清楚同框。完整英文口播：“Wash dishes at home, but hate the wet countertop afterward? This 2-tier rack drains water directly into your sink.”全局限制：全程无字幕、无屏幕文字、无品牌文字、无乱码字母、无墙面招牌、无箭头、无价格、无折扣、无倒计时、无平台UI、无水印、无背景音乐。背景人群只负责第一镜头的好奇心，不表达真实销量、热销、抢购、稀缺和社会证明。货架中只出现一只同款产品，必须被定义为开放展示样品，不得被定义为最后库存。产品外观、数量、长宽比例、横竖方向和关键结构在两个镜头之间完全一致。不得改成连续跟拍，不得增加第三镜头，不进行功能测试，不提供多选动作路径。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.063,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.06315789473684211,
+      "history_script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-003",
+      "similarities": {
+        "hook": 0.8,
+        "angle": 0.631578947368421,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-006-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/2-Tier_Carbon_Steel_Dish_Rack_202607301106.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok Shop产品介绍视频。全片固定在无品牌厨房收纳用品货架通道，视频内部固定使用两个镜头，只在约2.2秒处硬切一次。第一镜头负责用货架单样品和三名购物者的安静犹豫制造好奇，第二镜头负责主角取下同一产品并面对观众主观镜头介绍。不得改成全程连续跟拍。保持同一名主角、同一套服装、同一货架陈列格、同一光线、同一背景人群和同一只产品。上传的产品参考图为最高优先级。全片只出现1只裸露的哑光黑色双层碳钢沥水架展示样品，严格保持哑光黑色、双层金属网状结构、顶部垂直盘子槽与侧边杯子挂钩、底部平整碗架、侧面挂置的筷子筒与砧板架、底部带伸缩旋转排水嘴的塑料托盘不变。保持宽大于高的矩形比例。不得生成白色、三层结构、木质主框架、圆柱形外观、或带盖封闭式箱体等错误形态。主角为一名20多岁、穿着日常灰色卫衣的美国年轻女性。背景固定出现三名外形和服装不同的成年购物者。商店墙面和货架无真实品牌、无虚构品牌词、无乱码文字、无价格牌、无促销牌、无低库存和售罄标签。0.0–2.2秒，第一镜头：开场采用从货架通道外侧拍摄的固定中广角镜头。三名购物者围在同一个厨房收纳货架陈列格前形成清楚浅半圆，身体背面和侧面朝向镜头，视线统一看向陈列格中唯一一只裸露的哑光黑色双层沥水架展示样品。三人表现为安静观察和轻微犹豫，不交谈、不争抢。该陈列格只摆放这一只同款展示样品，相邻陈列格仍摆放其他无品牌厨房储物罐，整排货架没有空置。人群轻度遮挡产品，只露出少量黑色金属网格与侧面筷子筒局部，第一帧不得完整看清产品全貌。主角从画面左侧通道外圈进入，侧身穿过两名购物者之间的狭窄空隙，其他人物只轻微挪动肩膀让出空间。主角到达货架前，双手接触该黑色沥水架并开始将其从货架向外取下。第一镜头在产品刚离开陈列位置、仍接近货架时结束。主角在这一镜头不转身、不面对镜头、不说话。摄影机不跟随绕位。画面不得出现“最后一件”、低库存、售罄和抢购暗示。约2.2秒：使用一次明确硬切。硬切后仍是同一主角、同一服装、同一货架通道、同一产品陈列格、同一光线、同一背景人物和同一只黑色双层沥水架展示样品。2.2–4.2秒，第二镜头：镜头切到货架正前方的观众主观中近景。主角已经从同一陈列格完全取下同一只沥水架，正面对镜头，将沥水架完整展示在胸前，双手握住两侧金属框架。产品比例与参考图一致。原陈列格在主角身后自然空置，但不出现缺货、售罄和低库存标志。主角看着镜头自然说：“Wash dishes at home, but hate the wet countertop afterward?”4.2–8.6秒，第二镜头继续：主角保持原位，始终手持同一只沥水架。她单手将沥水架稍微倾斜，用另一只手轻微转动并拉伸底部的360度可旋转排水嘴。她看着镜头自然说：“This 2-tier rack drains water directly into your sink.” 全程不切换使用场景，不进行功能验证，不增加独立产品特写、额外道具、第三镜头和前后对比。8.6–10.0秒，第二镜头继续：主角将排水嘴收回，保持沥水架在胸前的最清楚展示角度，说完最后一句的同时，一只手稳定沥水架，另一只手抬起食指，明确向画面左下角指一次。不得变成摊手、左右挥动和普通讲解手势。最后0.4秒保持人物、产品和指向动作清楚同框。完整英文口播：“Wash dishes at home, but hate the wet countertop afterward? This 2-tier rack drains water directly into your sink.”全局限制：全程无字幕、无屏幕文字、无品牌文字、无乱码字母、无墙面招牌、无箭头、无价格、无折扣、无倒计时、无平台UI、无水印、无背景音乐。背景人群只负责第一镜头的好奇心，不表达真实销量、热销、抢购、稀缺和社会证明。货架中只出现一只同款产品，必须被定义为开放展示样品，不得被定义为最后库存。产品外观、数量、长宽比例、横竖方向和关键结构在两个镜头之间完全一致。不得改成连续跟拍，不得增加第三镜头，不进行功能测试，不提供多选动作路径。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T06:57:29.506Z"
+}
