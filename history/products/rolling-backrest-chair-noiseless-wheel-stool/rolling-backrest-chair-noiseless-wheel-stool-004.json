@@ -1,0 +1,98 @@
+{
+  "script_id": "rolling-backrest-chair-noiseless-wheel-stool-004",
+  "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/rolling-backrest-chair-noiseless-wheel-stool",
+  "product_folder": "products/rolling-backrest-chair-noiseless-wheel-stool",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "rolling-backrest-chair-noiseless-wheel-stool-004",
+    "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+    "angle": "Absurd elderly family rescuer introducing a silent rolling chair for low-level floor work",
+    "hook": "Tired of kneeling and straining your knees while cleaning floor edges?",
+    "structure_signature": "low-risk-rescuer-fast-cut-20s",
+    "scene_order": [
+      "scene_01",
+      "scene_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Sit squarely on the plush center seat cushion with back against the curved backrest",
+        "Glide across smooth indoor flooring using feet to push, allowing 360-degree swivel wheels to roll smoothly"
+      ]
+    },
+    "script_record": {
+      "0-1.5s": "Show close-up of a person's knees kneeling painfully on a hard floor while wiping a dusty baseboard, showing physical discomfort. No product visible.",
+      "1.5-3s": "An absurd grandfather in a formal black tuxedo enters carrying the low-profile rolling stool (dark grey cushion/backrest, white metal frame). He sits down softly squarely on the cushion with his back against the backrest and says, 'Rest your knees!'",
+      "3-6s": "The grandfather glides across the smooth indoor floor using his feet to push, the 360-degree swivel wheels rolling smoothly.",
+      "6-10s": "Fast-cut scene showing the stool rolling smoothly parallel to the flat kitchen floor.",
+      "10-14s": "An adult sitting squarely on the dark grey cushion, gliding next to a car tire in a flat garage, detailing the wheel effortlessly.",
+      "14-18s": "A user sitting on the stool cleaning skirting boards in a bright living room, pushing with their feet to roll smoothly.",
+      "18-20s": "CTA text overlay: 'Upgrade your floor comfort today.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "rolling-backrest-chair-noiseless-wheel-stool-004-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of an adult's knees kneeling painfully on a hard wooden floor while cleaning a dusty baseboard, showing discomfort. No product visible. 1.5-3s: An absurd grandfather in a formal black tuxedo enters carrying the low-profile rolling stool (exact design: dark grey plush seat and curved backrest, white metal frame). He sits down softly squarely on the plush center seat cushion with his back against the curved backrest and says 'Rest your knees!'. 3-6s: The grandfather glides across the smooth indoor flooring using his feet to push, allowing the 360-degree swivel wheels to roll smoothly. 6-10s: Fast-cut scene showing the stool rolling smoothly parallel to the flat floor. Do not start with a perfect product shot. Do not end with a CTA. Keep the pacing fast, clear, and product-focused. Do not change the product color, shape, material, size ratio, or visible structure. Do not invent extra accessories or standing actions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "rolling-backrest-chair-noiseless-wheel-stool-004-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing an adult user sitting squarely on the dark grey low rolling stool in a clean garage, gliding smoothly parallel to the flat concrete floor to work on a car wheel, using feet to push. 4-8s: Fast-cut scene 3 showing the user sitting on the stool to clean skirting boards in a bright living room, rolling smoothly. 8-10s: Short CTA text overlay: 'Upgrade your floor comfort today.' This segment is the continuation of the previous 10-second segment. Keep the same product identity (dark grey cushion, white frame, swivel wheels) and usage logic. No standing upright on the stool. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.01,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.009523809523809525,
+      "history_script_id": "rolling-backrest-chair-noiseless-wheel-stool-001",
+      "similarities": {
+        "hook": 0.041666666666666664,
+        "angle": 0.09523809523809523,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0.5
+      },
+      "structural_score": 0.25
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "rolling-backrest-chair-noiseless-wheel-stool-004-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of an adult's knees kneeling painfully on a hard wooden floor while cleaning a dusty baseboard, showing discomfort. No product visible. 1.5-3s: An absurd grandfather in a formal black tuxedo enters carrying the low-profile rolling stool (exact design: dark grey plush seat and curved backrest, white metal frame). He sits down softly squarely on the plush center seat cushion with his back against the curved backrest and says 'Rest your knees!'. 3-6s: The grandfather glides across the smooth indoor flooring using his feet to push, allowing the 360-degree swivel wheels to roll smoothly. 6-10s: Fast-cut scene showing the stool rolling smoothly parallel to the flat floor. Do not start with a perfect product shot. Do not end with a CTA. Keep the pacing fast, clear, and product-focused. Do not change the product color, shape, material, size ratio, or visible structure. Do not invent extra accessories or standing actions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "rolling-backrest-chair-noiseless-wheel-stool-004-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing an adult user sitting squarely on the dark grey low rolling stool in a clean garage, gliding smoothly parallel to the flat concrete floor to work on a car wheel, using feet to push. 4-8s: Fast-cut scene 3 showing the user sitting on the stool to clean skirting boards in a bright living room, rolling smoothly. 8-10s: Short CTA text overlay: 'Upgrade your floor comfort today.' This segment is the continuation of the previous 10-second segment. Keep the same product identity (dark grey cushion, white frame, swivel wheels) and usage logic. No standing upright on the stool. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T03:51:02.493Z"
+}
