@@ -1,0 +1,99 @@
+{
+  "script_id": "hyseyy_double_rods_clothes_rack-005",
+  "product_id": "hyseyy_double_rods_clothes_rack",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/hyseyy_double_rods_clothes_rack",
+  "product_folder": "products/hyseyy_double_rods_clothes_rack",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "hyseyy_double_rods_clothes_rack-005",
+    "product_id": "hyseyy_double_rods_clothes_rack",
+    "angle": "Absurd tuxedo-clad husband rescues wife from an overflowing, collapsing over-the-door hanger in a messy bedroom using a heavy-duty rolling double rod clothes rack.",
+    "hook": "Is your door hanger collapsing under the weight of winter coats?",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2,
+        4
+      ]
+    },
+    "script_record": {
+      "0-1.5s": "Show close-up of a bedroom door hanger bending and cracking under the weight of heavy coats and bags.",
+      "1.5-3s": "Husband enters wearing a full tuxedo, carrying the HYSEYY Double Rods Clothes Rack. He places it down and says: 'I got this, honey!'",
+      "3-6s": "Fast assembly demonstration: Screw the four 360° caster wheels into the bottom base frames, then connect vertical rods using thread rolling mounting by twisting the tubes together.",
+      "6-10s": "Close-up of pressing down the caster brake levers to secure the rack, then hanging heavy winter coats neatly on the staggered high-low black metal rods.",
+      "10-14s": "The husband hangs bags on the side extension bars and arranges shoe boxes on the bottom dual-pipe storage rack in the bedroom.",
+      "14-18s": "Show the rack holding up to 210 lbs of clothes, standing sturdy and wobbly-free in the bedroom.",
+      "18-20s": "CTA: Upgrade your bedroom storage today."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "hyseyy_double_rods_clothes_rack-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show close-up of a bedroom door hanger bending under heavy coats. No product and no rescuer. 1.5-3s: An absurd adult husband in a tuxedo enters carrying the exact black HYSEYY Double Rods Clothes Rack, takes it directly to the bedroom corner, and says 'I got this, honey!'. 3-6s: Quickly show the product as the direct solution, demonstrating hands twisting vertical tubes together using thread rolling mounting. 6-10s: Fast-cut scene 1 showing hands pressing down the caster brake levers to secure the rack, then hanging a heavy coat on the high-low black metal rods. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "hyseyy_double_rods_clothes_rack-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing bags being hung on the side extension bars and shoe boxes placed on the bottom dual-pipe shelf of the black clothes rack in the bedroom. 4-8s: Fast-cut scene 3 showing the final organized, sturdy, wobbly-free dual-rod rolling rack holding multiple heavy coats and garments. 8-10s: Short CTA showing text overlay: 'Upgrade your bedroom storage today.'. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.017,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.017499999999999998,
+      "history_script_id": "hyseyy_double_rods_clothes_rack-002",
+      "similarities": {
+        "hook": 0.07692307692307693,
+        "angle": 0.175,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "hyseyy_double_rods_clothes_rack-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show close-up of a bedroom door hanger bending under heavy coats. No product and no rescuer. 1.5-3s: An absurd adult husband in a tuxedo enters carrying the exact black HYSEYY Double Rods Clothes Rack, takes it directly to the bedroom corner, and says 'I got this, honey!'. 3-6s: Quickly show the product as the direct solution, demonstrating hands twisting vertical tubes together using thread rolling mounting. 6-10s: Fast-cut scene 1 showing hands pressing down the caster brake levers to secure the rack, then hanging a heavy coat on the high-low black metal rods. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "hyseyy_double_rods_clothes_rack-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/hyseyy_double_rods_clothes_rack/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing bags being hung on the side extension bars and shoe boxes placed on the bottom dual-pipe shelf of the black clothes rack in the bedroom. 4-8s: Fast-cut scene 3 showing the final organized, sturdy, wobbly-free dual-rod rolling rack holding multiple heavy coats and garments. 8-10s: Short CTA showing text overlay: 'Upgrade your bedroom storage today.'. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T01:45:00.065Z"
+}
