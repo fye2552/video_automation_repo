@@ -1,0 +1,74 @@
+{
+  "script_id": "woven-cotton-3-tier-over-the-door-basket-006",
+  "product_id": "woven-cotton-3-tier-over-the-door-basket",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/woven-cotton-3-tier-over-the-door-basket",
+  "product_folder": "products/woven-cotton-3-tier-over-the-door-basket",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "woven-cotton-3-tier-over-the-door-basket-006",
+    "product_id": "woven-cotton-3-tier-over-the-door-basket",
+    "angle": "First-person POV of mounting the 3-tier woven basket over a bathroom door and storing daily toiletries inside.",
+    "hook": "POV of mounting a silver hook onto the door top and hanging the natural jute 3-tier basket loop.",
+    "structure_signature": "first-person-product-usage-two-scene-video-prompt-generator",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Hang the metal hook over the top of a door or mount onto a wall stud/hook",
+        "Suspend the woven basket assembly by slipping the top rope loop onto the hook",
+        "Place items loosely inside the 3 woven basket tiers"
+      ]
+    },
+    "script_record": {
+      "video_generation_prompt": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅色长袖前臂、产品和当前浴室门区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只三层编织挂篮，严格保持天然黄褐色编织棉绳材质、三层弧形篮筐结构、顶部编织吊绳圆环、银色金属门后挂钩不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称浴室环境音、金属撞击门板声和物品放置声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯看白色的房门顶部，双手将银色挂钩挂在门板上沿，随后将挂篮顶部的粗编织绳套环挂入钩子中，让挂篮垂直悬挂；在 4.0 秒时右手轻拉一下挂篮绳子确认挂接稳固。保留绳子与金属挂钩摩擦的真实声音。\n\n5.0sec-10.0sec\n直接硬切到挂篮正面近景，双手将一瓶洗发水和两卷白色毛巾分别放入中下两层篮筐内；在 9.0 秒时右手轻扶篮筐边缘一下，篮筐保持垂直承托不松动。保留物品落入篮内的摩擦声与环境声。\n\n全局限制：两段均保持同一只三层黄褐色编织挂篮、银色金属挂钩与编织吊绳；不得出现第二只挂篮、塑料材质、拉链、文字标签、水印、重度脏污、使用者脸部、第三人称机位、额外手部和人工转场音效。"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "woven-cotton-3-tier-over-the-door-basket-006-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_function.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅色长袖前臂、产品和当前浴室门区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只三层编织挂篮，严格保持天然黄褐色编织棉绳材质、三层弧形篮筐结构、顶部编织吊绳圆环、银色金属门后挂钩不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称浴室环境音、金属撞击门板声和物品放置声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯看白色的房门顶部，双手将银色挂钩挂在门板上沿，随后将挂篮顶部的粗编织绳套环挂入钩子中，让挂篮垂直悬挂；在 4.0 秒时右手轻拉一下挂篮绳子确认挂接稳固。保留绳子与金属挂钩摩擦的真实声音。\n\n5.0sec-10.0sec\n直接硬切到挂篮正面近景，双手将一瓶洗发水和两卷白色毛巾分别放入中下两层篮筐内；在 9.0 秒时右手轻扶篮筐边缘一下，篮筐保持垂直承托不松动。保留物品落入篮内的摩擦声与环境声。\n\n全局限制：两段均保持同一只三层黄褐色编织挂篮、银色金属挂钩与编织吊绳；不得出现第二只挂篮、塑料材质、拉链、文字标签、水印、重度脏污、使用者脸部、第三人称机位、额外手部和人工转场音效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.085,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.085,
+      "history_script_id": "woven-cotton-3-tier-over-the-door-basket-002",
+      "similarities": {
+        "hook": 0.3333333333333333,
+        "angle": 0.85,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "woven-cotton-3-tier-over-the-door-basket-006-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_function.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅色长袖前臂、产品和当前浴室门区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只三层编织挂篮，严格保持天然黄褐色编织棉绳材质、三层弧形篮筐结构、顶部编织吊绳圆环、银色金属门后挂钩不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称浴室环境音、金属撞击门板声和物品放置声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯看白色的房门顶部，双手将银色挂钩挂在门板上沿，随后将挂篮顶部的粗编织绳套环挂入钩子中，让挂篮垂直悬挂；在 4.0 秒时右手轻拉一下挂篮绳子确认挂接稳固。保留绳子与金属挂钩摩擦的真实声音。\n\n5.0sec-10.0sec\n直接硬切到挂篮正面近景，双手将一瓶洗发水和两卷白色毛巾分别放入中下两层篮筐内；在 9.0 秒时右手轻扶篮筐边缘一下，篮筐保持垂直承托不松动。保留物品落入篮内的摩擦声与环境声。\n\n全局限制：两段均保持同一只三层黄褐色编织挂篮、银色金属挂钩与编织吊绳；不得出现第二只挂篮、塑料材质、拉链、文字标签、水印、重度脏污、使用者脸部、第三人称机位、额外手部和人工转场音效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T09:51:16.666Z"
+}
