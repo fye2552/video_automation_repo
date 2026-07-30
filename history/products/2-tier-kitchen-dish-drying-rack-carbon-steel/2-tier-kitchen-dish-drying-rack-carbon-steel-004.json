@@ -1,0 +1,100 @@
+{
+  "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004",
+  "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "product_folder": "products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004",
+    "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+    "angle": "Husband in a yellow raincoat rescues a flooded kitchen countertop by setting up a 2-tier matte black carbon steel dish rack.",
+    "hook": "Is your kitchen countertop constantly drowning in dishwater?",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "scene_01",
+      "scene_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        2,
+        3,
+        4
+      ]
+    },
+    "script_record": {
+      "sku_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+      "skill": "H",
+      "provider": "omini",
+      "video_id": "video_001",
+      "total_duration": 20,
+      "aspect_ratio": "9:16",
+      "language": "English",
+      "style": "low_risk_rescuer_fast_cut"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of water pooling messy countertops under hand-washed dishes. No product, no rescuer. 1.5-3s: An absurd adult husband in a bright yellow raincoat indoors enters holding the exact 2-tier matte black carbon steel dish rack and says 'Dry zone incoming!'. 3-6s: Shows the product solving the mess. Action: Snap the side bracket of upper rack into the bottom base slot to lock the frame. 6-10s: Fast-cut scene 1 showing plates stacked in the top tier of the matte black rack. Use the provided reference images to keep color, shape, material, and structure unchanged. Do not start with a perfect product shot. Do not end with a CTA. Keep pacing fast, clear, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_function.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing a hand attaching the side utensil caddy and cutting board rack onto the outer side wire frame of the matte black rack next to the kitchen sink. 4-8s: Fast-cut scene 3 showing a close-up of the bottom 360-degree drainage spout being rotated and extended over the sink basin edge to drain water directly, keeping the countertop dry. 8-10s: Short CTA showing the organized rack with text overlay: 'Upgrade your sink today.' This segment is the continuation of the previous segment. Keep the same product identity: matte black 2-tier carbon steel wire frame, matching the reference images.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.022,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.022222222222222223,
+      "history_script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-003",
+      "similarities": {
+        "hook": 0.06666666666666667,
+        "angle": 0.2222222222222222,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0.5
+      },
+      "structural_score": 0.25
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of water pooling messy countertops under hand-washed dishes. No product, no rescuer. 1.5-3s: An absurd adult husband in a bright yellow raincoat indoors enters holding the exact 2-tier matte black carbon steel dish rack and says 'Dry zone incoming!'. 3-6s: Shows the product solving the mess. Action: Snap the side bracket of upper rack into the bottom base slot to lock the frame. 6-10s: Fast-cut scene 1 showing plates stacked in the top tier of the matte black rack. Use the provided reference images to keep color, shape, material, and structure unchanged. Do not start with a perfect product shot. Do not end with a CTA. Keep pacing fast, clear, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-004-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_function.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing a hand attaching the side utensil caddy and cutting board rack onto the outer side wire frame of the matte black rack next to the kitchen sink. 4-8s: Fast-cut scene 3 showing a close-up of the bottom 360-degree drainage spout being rotated and extended over the sink basin edge to drain water directly, keeping the countertop dry. 8-10s: Short CTA showing the organized rack with text overlay: 'Upgrade your sink today.' This segment is the continuation of the previous segment. Keep the same product identity: matte black 2-tier carbon steel wire frame, matching the reference images.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T03:49:42.345Z"
+}
