@@ -1,0 +1,77 @@
+{
+  "script_id": "rolling-backrest-chair-noiseless-wheel-stool-007",
+  "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/rolling-backrest-chair-noiseless-wheel-stool",
+  "product_folder": "products/rolling-backrest-chair-noiseless-wheel-stool",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "rolling-backrest-chair-noiseless-wheel-stool-007",
+    "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+    "angle": "POV Floor-Level Cleaning Mobility and Sitting Support Test",
+    "hook": "POV looking down as you sit softly on a low-profile dark grey rolling stool with off-white frame",
+    "structure_signature": "first-person-product-usage-two-scene-video",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Sit squarely on the plush center seat cushion with back against the curved backrest",
+        "Glide across smooth indoor flooring using feet to push, allowing 360-degree swivel wheels to roll smoothly"
+      ]
+    },
+    "script_record": {
+      "scene_01": {
+        "scene_id": "scene_01",
+        "scene_number": 1,
+        "scene_text": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，只在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的脚、前臂、产品和当前平整室内木地板工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[深灰色座垫和靠背、乳白色金属支架和静音万向轮、方形厚座垫及带双竖杆的弧形低靠背、11.81 in x 11.81 in底座尺寸]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、轻微海绵压缩声和万向轮滑动声。\n\n0.0sec-5.0sec\n第一人称低头俯视视角，高度约离地90厘米。使用者在平坦的浅色木地板上，慢慢向下方落座。臀部平稳、轻柔地坐在方形深灰色毛绒软座垫正中央，背部自然靠在双竖杆支撑的弧形低靠背上，完成1次坐下动作；4.0秒时，第一人称右手轻轻在身后的靠背边缘按压一次以确认其结构牢固稳当。伴随坐下时海绵压缩声与衣物摩擦声。\n\n5.0sec-10.0sec\n直接硬切到同一房间的第一人称水平视角，高度约离地80厘米。使用者双脚着地向前并向侧面轻推地面，推动座椅在平坦的木地板上以多方向平稳滑行；镜头跟随着滑行方向微微晃动，露出下方的乳白色金属框架和四个正在360度流畅转动的白色静音万向轮；9.0秒时停止滑行，右脚尖轻踩地以确认停止，双脚落地保持静止，座椅稳稳停在原处不晃动。伴随万向轮在木地板上几乎无声滚动的轻微摩擦声。\n\n全局限制：两段均保持同一只低矮靠背轮椅，深灰色座垫与靠背，乳白色金属管架，四个白色万向轮；不得出现第二只轮椅、使用者脸部、站立在椅面上、身体躯干、镜中倒影、任何组装配件、文字、水印、背景音乐。"
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "rolling-backrest-chair-noiseless-wheel-stool-007-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，只在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的脚、前臂、产品和当前平整室内木地板工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[深灰色座垫和靠背、乳白色金属支架和静音万向轮、方形厚座垫及带双竖杆的弧形低靠背、11.81 in x 11.81 in底座尺寸]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、轻微海绵压缩声和万向轮滑动声。\n\n0.0sec-5.0sec\n第一人称低头俯视视角，高度约离地90厘米。使用者在平坦的浅色木地板上，慢慢向下方落座。臀部平稳、轻柔地坐在方形深灰色毛绒软座垫正中央，背部自然靠在双竖杆支撑的弧形低靠背上，完成1次坐下动作；4.0秒时，第一人称右手轻轻在身后的靠背边缘按压一次以确认其结构牢固稳当。伴随坐下时海绵压缩声与衣物摩擦声。\n\n5.0sec-10.0sec\n直接硬切到同一房间的第一人称水平视角，高度约离地80厘米。使用者双脚着地向前并向侧面轻推地面，推动座椅在平坦的木地板上以多方向平稳滑行；镜头跟随着滑行方向微微晃动，露出下方的乳白色金属框架和四个正在360度流畅转动的白色静音万向轮；9.0秒时停止滑行，右脚尖轻踩地以确认停止，双脚落地保持静止，座椅稳稳停在原处不晃动。伴随万向轮在木地板上几乎无声滚动的轻微摩擦声。\n\n全局限制：两段均保持同一只低矮靠背轮椅，深灰色座垫与靠背，乳白色金属管架，四个白色万向轮；不得出现第二只轮椅、使用者脸部、站立在椅面上、身体躯干、镜中倒影、任何组装配件、文字、水印、背景音乐。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.038,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.038461538461538464,
+      "history_script_id": "rolling-backrest-chair-noiseless-wheel-stool-006",
+      "similarities": {
+        "hook": 0.4782608695652174,
+        "angle": 0.38461538461538464,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "rolling-backrest-chair-noiseless-wheel-stool-007-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，只在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的脚、前臂、产品和当前平整室内木地板工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[深灰色座垫和靠背、乳白色金属支架和静音万向轮、方形厚座垫及带双竖杆的弧形低靠背、11.81 in x 11.81 in底座尺寸]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、轻微海绵压缩声和万向轮滑动声。\n\n0.0sec-5.0sec\n第一人称低头俯视视角，高度约离地90厘米。使用者在平坦的浅色木地板上，慢慢向下方落座。臀部平稳、轻柔地坐在方形深灰色毛绒软座垫正中央，背部自然靠在双竖杆支撑的弧形低靠背上，完成1次坐下动作；4.0秒时，第一人称右手轻轻在身后的靠背边缘按压一次以确认其结构牢固稳当。伴随坐下时海绵压缩声与衣物摩擦声。\n\n5.0sec-10.0sec\n直接硬切到同一房间的第一人称水平视角，高度约离地80厘米。使用者双脚着地向前并向侧面轻推地面，推动座椅在平坦的木地板上以多方向平稳滑行；镜头跟随着滑行方向微微晃动，露出下方的乳白色金属框架和四个正在360度流畅转动的白色静音万向轮；9.0秒时停止滑行，右脚尖轻踩地以确认停止，双脚落地保持静止，座椅稳稳停在原处不晃动。伴随万向轮在木地板上几乎无声滚动的轻微摩擦声。\n\n全局限制：两段均保持同一只低矮靠背轮椅，深灰色座垫与靠背，乳白色金属管架，四个白色万向轮；不得出现第二只轮椅、使用者脸部、站立在椅面上、身体躯干、镜中倒影、任何组装配件、文字、水印、背景音乐。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-30T09:47:53.596Z"
+}
