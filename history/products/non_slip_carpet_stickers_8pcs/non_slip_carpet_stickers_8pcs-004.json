@@ -1,0 +1,67 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-004",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-004",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Preventing rug shifting and curling in high-traffic areas using flat L-shaped grippers",
+    "hook": "First-person POV of pressing down a rug corner with an L-shaped gripper underneath, showing instant flat adherence",
+    "structure_signature": "pov_installation_grip_check_and_step_slippage_test",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-004-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、双脚、部分前臂、地毯和当前地板区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色超薄L形地毯防滑贴，单套八片，直角L形结构且外端斜切，无文字图案且完全平贴地毯背面]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看光洁的浅色橡木地板。双手将一块米色编织地毯的角落轻轻抬起，露出一片完全贴合在地毯背面的哑光黑色超薄L形防滑贴。随后将地毯角放下平铺在木地板上，用双手手掌向下用力按压地毯角至 4.0 秒；4.0 秒至 5.0 秒，右手食指尝试勾住地毯边缘轻轻向上拉扯，地毯角保持紧贴地板，稳固不松动。保留轻微的织物摩擦声和手掌按压的沉闷声。\n\n5.0sec-10.0sec\n直接硬切到同一块米色编织地毯角的稍宽机位，第一人称俯视视角。一只穿着干净灰色棉袜的脚踩在防滑贴固定的地毯角上，用力向前蹬地滑动至 9.0 秒，地毯角在木地板上保持平整，毫无移位或卷边；9.0 秒至 10.0 秒，脚移开，一只手伸向镜头，用手掌在刚刚踩过的地毯角上平抚抚摸一次，确认边缘依旧平整贴地。保留袜子与织物摩擦声及踩地声。\n\n全局限制：两段均保持同一款黑色超薄L形地毯防滑贴、哑光表面、平贴于地毯背面角落；不得出现第二种规格的贴片、双面胶卷、包装盒、蓝色印字、气泡、地毯卷曲、使用者脸部、第三人称机位、多余手部和夸张特效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.047,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.047058823529411764,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-001",
+      "similarities": {
+        "hook": 0.14814814814814814,
+        "angle": 0.47058823529411764,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-004-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、双脚、部分前臂、地毯和当前地板区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色超薄L形地毯防滑贴，单套八片，直角L形结构且外端斜切，无文字图案且完全平贴地毯背面]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看光洁的浅色橡木地板。双手将一块米色编织地毯的角落轻轻抬起，露出一片完全贴合在地毯背面的哑光黑色超薄L形防滑贴。随后将地毯角放下平铺在木地板上，用双手手掌向下用力按压地毯角至 4.0 秒；4.0 秒至 5.0 秒，右手食指尝试勾住地毯边缘轻轻向上拉扯，地毯角保持紧贴地板，稳固不松动。保留轻微的织物摩擦声和手掌按压的沉闷声。\n\n5.0sec-10.0sec\n直接硬切到同一块米色编织地毯角的稍宽机位，第一人称俯视视角。一只穿着干净灰色棉袜的脚踩在防滑贴固定的地毯角上，用力向前蹬地滑动至 9.0 秒，地毯角在木地板上保持平整，毫无移位或卷边；9.0 秒至 10.0 秒，脚移开，一只手伸向镜头，用手掌在刚刚踩过的地毯角上平抚抚摸一次，确认边缘依旧平整贴地。保留袜子与织物摩擦声及踩地声。\n\n全局限制：两段均保持同一款黑色超薄L形地毯防滑贴、哑光表面、平贴于地毯背面角落；不得出现第二种规格的贴片、双面胶卷、包装盒、蓝色印字、气泡、地毯卷曲、使用者脸部、第三人称机位、多余手部和夸张特效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T10:05:52.718Z"
+}
