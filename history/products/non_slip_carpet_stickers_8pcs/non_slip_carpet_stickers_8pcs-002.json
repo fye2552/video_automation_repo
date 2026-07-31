@@ -1,0 +1,137 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-002",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-002",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Vacuuming a rug without it sliding away or corners lifting",
+    "hook": "Every time I vacuum, this area rug moves everywhere.",
+    "structure_signature": "daily_frustration_close_up_solution_hands_on_demonstration_clean_home_vibe",
+    "scene_order": [
+      "scene_01",
+      "scene_02",
+      "scene_03",
+      "scene_04"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "scene_01": {
+        "voiceover": "Every time I vacuum, this area rug slides all over the place. But I found a simple way to keep it completely flat."
+      },
+      "scene_02": {
+        "voiceover": "These thin L-shaped corner stickers stick directly to the underside. They lay fully flat, so they stay completely invisible."
+      },
+      "scene_03": {
+        "voiceover": "Now my rug stays secure and perfectly flat. It makes cleaning so much easier. You definitely need this set!"
+      },
+      "scene_04": {
+        "voiceover": ""
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-002-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的虚拟达人（30多岁女性，居家便服）在明亮的客厅里，使用参考图中的地毯防滑贴。防滑贴为一整套恰好8片独立黑色L形地毯防滑贴，正面为哑光黑色，无文字、无蓝色条纹。00:00-00:02.0，中景，达人拿着吸尘器在客厅地毯上吸尘，地毯被吸尘器拖动而发生明显滑动。00:02.0-00:05.0，特写，达人无奈地低头把起皱的地毯角重新拉平。00:05.0-00:10.0，特写，达人向镜头展示一片平整的直角L形黑色防滑贴（一条竖向臂、一条横向臂、短斜切外端、圆润内侧转角）。同步美式英语口播：“Every time I vacuum, this area rug slides all over the place. But I found a simple way to keep it completely flat.”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-002-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的地毯防滑贴，必须完全平铺贴在地毯背面四角，切勿贴在地毯正面，绝不弯折或竖起，不增加吸盘、磁铁或多余夹子。00:00-00:04.0，特写，展示地毯一角反面贴着的一片哑光黑色直角L型防滑贴片，结构平整、极薄、无蓝色印花。00:04.0-00:10.0，特写，手部动作轻轻将贴好防滑贴的地毯角放下，按压平整，使其紧密贴合在木地板上，从外面看不出任何厚度或痕迹。同步美式英语口播：“These thin L-shaped corner stickers stick directly to the underside. They lay fully flat, so they stay completely invisible.”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-002-scene-03",
+        "scene_id": "scene_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。虚拟达人在铺有地毯的客厅中。00:00-00:05.0，中景，达人在此轻松愉快地用吸尘器清理同一个地毯角，这次地毯平整地吸附在木质地板上，没有随吸尘器发生任何翘曲或移位。00:05.0-00:10.0，中景，达人直起身子，面带满意开心的笑容朝镜头推荐。同步美式英语口播：“Now my rug stays secure and perfectly flat. It makes cleaning so much easier. You definitely need this set!”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-002-scene-04",
+        "scene_id": "scene_04",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段8-10秒9:16竖屏产品功能展示B-roll，延续温馨客厅场景、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持纯哑光黑色、直角L型极薄片的外观。00:00-00:03.0，特写，地毯一角被掀开，露出背面贴着的超薄黑色L型防滑贴，没有气泡且完全服帖。00:03.0-00:06.0，特写，手部松开并将地毯重新平铺压实到木地板上。00:06.0-00:09.0，特写，脚部在平整的地毯边缘踩过，地毯边缘不起翘。不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "9",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.011,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.010526315789473684,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-001",
+      "similarities": {
+        "hook": 0.05,
+        "angle": 0.10526315789473684,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.05263157894736842,
+        "scene_order": 0
+      },
+      "structural_score": 0.026
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-002-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的虚拟达人（30多岁女性，居家便服）在明亮的客厅里，使用参考图中的地毯防滑贴。防滑贴为一整套恰好8片独立黑色L形地毯防滑贴，正面为哑光黑色，无文字、无蓝色条纹。00:00-00:02.0，中景，达人拿着吸尘器在客厅地毯上吸尘，地毯被吸尘器拖动而发生明显滑动。00:02.0-00:05.0，特写，达人无奈地低头把起皱的地毯角重新拉平。00:05.0-00:10.0，特写，达人向镜头展示一片平整的直角L形黑色防滑贴（一条竖向臂、一条横向臂、短斜切外端、圆润内侧转角）。同步美式英语口播：“Every time I vacuum, this area rug slides all over the place. But I found a simple way to keep it completely flat.”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-002-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的地毯防滑贴，必须完全平铺贴在地毯背面四角，切勿贴在地毯正面，绝不弯折或竖起，不增加吸盘、磁铁或多余夹子。00:00-00:04.0，特写，展示地毯一角反面贴着的一片哑光黑色直角L型防滑贴片，结构平整、极薄、无蓝色印花。00:04.0-00:10.0，特写，手部动作轻轻将贴好防滑贴的地毯角放下，按压平整，使其紧密贴合在木地板上，从外面看不出任何厚度或痕迹。同步美式英语口播：“These thin L-shaped corner stickers stick directly to the underside. They lay fully flat, so they stay completely invisible.”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-002-scene-03",
+      "scene_id": "scene_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。虚拟达人在铺有地毯的客厅中。00:00-00:05.0，中景，达人在此轻松愉快地用吸尘器清理同一个地毯角，这次地毯平整地吸附在木质地板上，没有随吸尘器发生任何翘曲或移位。00:05.0-00:10.0，中景，达人直起身子，面带满意开心的笑容朝镜头推荐。同步美式英语口播：“Now my rug stays secure and perfectly flat. It makes cleaning so much easier. You definitely need this set!”保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-002-scene-04",
+      "scene_id": "scene_04",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段8-10秒9:16竖屏产品功能展示B-roll，延续温馨客厅场景、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持纯哑光黑色、直角L型极薄片的外观。00:00-00:03.0，特写，地毯一角被掀开，露出背面贴着的超薄黑色L型防滑贴，没有气泡且完全服帖。00:03.0-00:06.0，特写，手部松开并将地毯重新平铺压实到木地板上。00:06.0-00:09.0，特写，脚部在平整的地毯边缘踩过，地毯边缘不起翘。不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "9",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T07:49:58.752Z"
+}
