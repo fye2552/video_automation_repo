@@ -1,0 +1,69 @@
+{
+  "script_id": "stainless_steel_chopping_board-005",
+  "product_id": "stainless_steel_chopping_board",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_chopping_board",
+  "product_folder": "products/stainless_steel_chopping_board",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "stainless_steel_chopping_board-005",
+    "product_id": "stainless_steel_chopping_board",
+    "angle": "Non-porous stainless steel surface prevents tomato juice absorption and staining, allowing for an instant clean wipe",
+    "hook": "Slicing juicy red tomatoes on a clean, non-porous metal surface with zero liquid absorption.",
+    "structure_signature": "first_person_pov_two_scene_functional_workflow",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_generation_prompt": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一块银色不锈钢矩形切菜板，严格保持圆角、扁平硬质板身、光滑拉丝金属表面、前侧一条约 1cm 向下折边紧贴台面边缘不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、刀具切配声、抹布摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看厨房大理石台面，同一块银色不锈钢切菜板通过 1cm 向下折边紧贴在台面边缘。双手握刀在板上连续稳定切开多只多汁的红番茄，番茄汁液停留在金属板表面而不被吸收；4.0秒后左手在不锈钢板表面轻压一次并松手，折边卡扣稳固，菜板在台面上无任何位移或晃动。整段保留切菜的真实笃笃声和环境背景音。\n\n5.0sec-10.0sec\n直接硬切到切菜板表面的近景，第一人称右手拿白色湿抹布在光滑的拉丝不锈钢表面上连续向右拂过，将残留的红色番茄汁液一笔抹净至 9.0 秒；最后 1 秒用抹布干净的另一角快速在原处横擦一下，板面光洁如新无任何水渍或红色残留。保留抹布与金属摩擦的沙沙声。\n\n全局限制：两段均保持同一块银色不锈钢切菜板、圆角、扁平板身、拉丝表面和前侧 1cm 向下折边；不得出现第二块板、提手孔、导流槽、文字标签、水印、血迹、重度脏污、夸张清洁特效、使用者脸部、第三人称机位和人工转场音效。"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_chopping_board-005-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一块银色不锈钢矩形切菜板，严格保持圆角、扁平硬质板身、光滑拉丝金属表面、前侧一条约 1cm 向下折边紧贴台面边缘不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、刀具切配声、抹布摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看厨房大理石台面，同一块银色不锈钢切菜板通过 1cm 向下折边紧贴在台面边缘。双手握刀在板上连续稳定切开多只多汁的红番茄，番茄汁液停留在金属板表面而不被吸收；4.0秒后左手在不锈钢板表面轻压一次并松手，折边卡扣稳固，菜板在台面上无任何位移或晃动。整段保留切菜的真实笃笃声和环境背景音。\n\n5.0sec-10.0sec\n直接硬切到切菜板表面的近景，第一人称右手拿白色湿抹布在光滑的拉丝不锈钢表面上连续向右拂过，将残留的红色番茄汁液一笔抹净至 9.0 秒；最后 1 秒用抹布干净的另一角快速在原处横擦一下，板面光洁如新无任何水渍或红色残留。保留抹布与金属摩擦的沙沙声。\n\n全局限制：两段均保持同一块银色不锈钢切菜板、圆角、扁平板身、拉丝表面和前侧 1cm 向下折边；不得出现第二块板、提手孔、导流槽、文字标签、水印、血迹、重度脏污、夸张清洁特效、使用者脸部、第三人称机位和人工转场音效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.021,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.02142857142857143,
+      "history_script_id": "stainless_steel_chopping_board-004",
+      "similarities": {
+        "hook": 0,
+        "angle": 0.21428571428571427,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_chopping_board-005-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一块银色不锈钢矩形切菜板，严格保持圆角、扁平硬质板身、光滑拉丝金属表面、前侧一条约 1cm 向下折边紧贴台面边缘不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、刀具切配声、抹布摩擦声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看厨房大理石台面，同一块银色不锈钢切菜板通过 1cm 向下折边紧贴在台面边缘。双手握刀在板上连续稳定切开多只多汁的红番茄，番茄汁液停留在金属板表面而不被吸收；4.0秒后左手在不锈钢板表面轻压一次并松手，折边卡扣稳固，菜板在台面上无任何位移或晃动。整段保留切菜的真实笃笃声和环境背景音。\n\n5.0sec-10.0sec\n直接硬切到切菜板表面的近景，第一人称右手拿白色湿抹布在光滑的拉丝不锈钢表面上连续向右拂过，将残留的红色番茄汁液一笔抹净至 9.0 秒；最后 1 秒用抹布干净的另一角快速在原处横擦一下，板面光洁如新无任何水渍或红色残留。保留抹布与金属摩擦的沙沙声。\n\n全局限制：两段均保持同一块银色不锈钢切菜板、圆角、扁平板身、拉丝表面和前侧 1cm 向下折边；不得出现第二块板、提手孔、导流槽、文字标签、水印、血迹、重度脏污、夸张清洁特效、使用者脸部、第三人称机位和人工转场音效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T10:06:38.420Z"
+}
