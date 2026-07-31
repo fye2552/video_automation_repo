@@ -1,0 +1,137 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-002",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-002",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Organizing miscellaneous long-handled tools and cleaning supplies vertically to reclaim floor space",
+    "hook": "Stop leaving your brooms resting against the wall just for them to slide down every single time.",
+    "structure_signature": "pain_intro_features_demonstration_results_cta",
+    "scene_order": [
+      "scene_01",
+      "scene_02",
+      "scene_03",
+      "scene_04"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "scene_01": {
+        "voiceover": "Stop leaving your brooms resting against the wall just for them to slide down every single time. There is a much better way to store them."
+      },
+      "scene_02": {
+        "voiceover": "It has five non-slip silicone rollers that automatically adjust to grip any handle size, plus five sturdy hooks underneath for your small cleaning cloths or brushes."
+      },
+      "scene_03": {
+        "voiceover": "Everything stays completely off the floor and perfectly organized. Honestly, it makes keeping your home tidy so much easier. You need this."
+      },
+      "scene_04": {
+        "voiceover": ""
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-002-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。画面中是一位30岁左右的欧美女性，扎着整洁的丸子头，身穿休闲灰色T恤，身处干净现代的洗衣房，使用参考图1中的浅灰色壁挂式收纳架。产品保持细长横向比例，浅灰色主体、白色滚轮夹位和浅灰色挂钩，严格保持5个夹位和5个向下J形挂钩，不参考任何尺寸线与文本，不改变产品结构。00:00-00:00.5，第一人称POV镜头，洗衣房角落里几把扫把乱七八糟地靠在墙边。00:00.5-00:01.0，特写镜头，一把扫把柄滑落倒在地上。00:01.0-00:01.5，中景镜头，达人露出无奈且头疼的表情。00:01.5-00:03.0，中景镜头，达人展示手中的浅灰色5夹5钩收纳架。00:03.0-00:06.0，手部特写，达人将收纳架紧贴在干净的浅灰色瓷砖墙面上。00:06.0-00:10.0，中景镜头，收纳架平整地固定在墙上。同步美式英语口播：“Stop leaving your brooms resting against the wall just for them to slide down every single time. There is a much better way to store them.”保留自然环境声和手持镜头感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-002-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续第一段中欧美女性达人与现代洗衣房的设定。参考图1的浅灰色壁挂收纳架已固定在洗衣房的浅灰色瓷砖墙上。产品保持5个白色滚轮夹位和5个向下J型挂钩。00:00-00:03.0，特写镜头，一只手将一把较粗的湿拖把柄用力推进收纳架的白色硅胶滚轮夹位中，滚轮自动夹紧拖把。00:03.0-00:06.0，特写镜头，另一只手把一把细扫把柄推进另一个夹位中，夹位紧紧扣住扫把。00:06.0-00:10.0，特写镜头，手部将小清洁刷和一块抹布挂在下方的浅灰色J形挂钩上。同步美式英语口播：“It has five non-slip silicone rollers that automatically adjust to grip any handle size, plus five sturdy hooks underneath for your small cleaning cloths or brushes.”保留真实产品摩擦碰撞声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-002-scene-03",
+        "scene_id": "scene_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前两段中欧美女性达人与现代洗衣房场景。00:00-00:03.0，中景镜头，达人站在整理好的墙面旁，微笑并满意地指向挂得整整齐齐的扫把和拖把。00:03.0-00:06.0，中景展示镜头，5把清洁工具垂直整齐地挂在墙上的收纳架上，底部完全悬空。00:06.0-00:10.0，特写镜头，扫把下方原本凌乱的地面现在空无一物、干净整洁。同步美式英语口播：“Everything stays completely off the floor and perfectly organized. Honestly, it makes keeping your home tidy so much easier. You need this.”保留自然环境声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-002-scene-04",
+        "scene_id": "scene_04",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示B-roll，画面中不得出现任何平台水印、TikTok水印、App界面、贴纸文字或边框UI。生成一段8-10秒9:16竖屏产品功能展示，延续前三段正片的现代洗衣房场景、光线、手部动作和手持UGC质感。产品只参考图1，保持浅灰色细长背板、5个白色滚轮夹位、5个向下J形挂钩不变，无多余英文或拼图。00:00-00:02.0，特写镜头，稳定平移拍摄安装在墙面上的空收纳架，展示其光滑塑料质感和圆角边缘。00:02.0-00:04.0，特写镜头，一只手快速将扫把柄推入中间的矩形夹位，白色滚轮立刻卡住扫把柄。00:04.0-00:06.0，特写镜头，手部在下方的J型挂钩上挂上一把小毛刷。00:06.0-00:08.0，中景镜头，整体展示挂满五件工具的收纳架，稳固没有任何晃动。00:08.0-00:10.0，细节微距镜头，滑过白色滚轮结构与灰色挂钩。不需要同步口播，不展示完整口型表演。保留自然产品操作声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.009,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.009090909090909092,
+      "history_script_id": "multifunctional_mop_holder_with_hook-001",
+      "similarities": {
+        "hook": 0.1,
+        "angle": 0.09090909090909091,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.15384615384615385,
+        "scene_order": 0
+      },
+      "structural_score": 0.077
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-002-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。画面中是一位30岁左右的欧美女性，扎着整洁的丸子头，身穿休闲灰色T恤，身处干净现代的洗衣房，使用参考图1中的浅灰色壁挂式收纳架。产品保持细长横向比例，浅灰色主体、白色滚轮夹位和浅灰色挂钩，严格保持5个夹位和5个向下J形挂钩，不参考任何尺寸线与文本，不改变产品结构。00:00-00:00.5，第一人称POV镜头，洗衣房角落里几把扫把乱七八糟地靠在墙边。00:00.5-00:01.0，特写镜头，一把扫把柄滑落倒在地上。00:01.0-00:01.5，中景镜头，达人露出无奈且头疼的表情。00:01.5-00:03.0，中景镜头，达人展示手中的浅灰色5夹5钩收纳架。00:03.0-00:06.0，手部特写，达人将收纳架紧贴在干净的浅灰色瓷砖墙面上。00:06.0-00:10.0，中景镜头，收纳架平整地固定在墙上。同步美式英语口播：“Stop leaving your brooms resting against the wall just for them to slide down every single time. There is a much better way to store them.”保留自然环境声和手持镜头感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-002-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续第一段中欧美女性达人与现代洗衣房的设定。参考图1的浅灰色壁挂收纳架已固定在洗衣房的浅灰色瓷砖墙上。产品保持5个白色滚轮夹位和5个向下J型挂钩。00:00-00:03.0，特写镜头，一只手将一把较粗的湿拖把柄用力推进收纳架的白色硅胶滚轮夹位中，滚轮自动夹紧拖把。00:03.0-00:06.0，特写镜头，另一只手把一把细扫把柄推进另一个夹位中，夹位紧紧扣住扫把。00:06.0-00:10.0，特写镜头，手部将小清洁刷和一块抹布挂在下方的浅灰色J形挂钩上。同步美式英语口播：“It has five non-slip silicone rollers that automatically adjust to grip any handle size, plus five sturdy hooks underneath for your small cleaning cloths or brushes.”保留真实产品摩擦碰撞声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-002-scene-03",
+      "scene_id": "scene_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。延续前两段中欧美女性达人与现代洗衣房场景。00:00-00:03.0，中景镜头，达人站在整理好的墙面旁，微笑并满意地指向挂得整整齐齐的扫把和拖把。00:03.0-00:06.0，中景展示镜头，5把清洁工具垂直整齐地挂在墙上的收纳架上，底部完全悬空。00:06.0-00:10.0，特写镜头，扫把下方原本凌乱的地面现在空无一物、干净整洁。同步美式英语口播：“Everything stays completely off the floor and perfectly organized. Honestly, it makes keeping your home tidy so much easier. You need this.”保留自然环境声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-002-scene-04",
+      "scene_id": "scene_04",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示B-roll，画面中不得出现任何平台水印、TikTok水印、App界面、贴纸文字或边框UI。生成一段8-10秒9:16竖屏产品功能展示，延续前三段正片的现代洗衣房场景、光线、手部动作和手持UGC质感。产品只参考图1，保持浅灰色细长背板、5个白色滚轮夹位、5个向下J形挂钩不变，无多余英文或拼图。00:00-00:02.0，特写镜头，稳定平移拍摄安装在墙面上的空收纳架，展示其光滑塑料质感和圆角边缘。00:02.0-00:04.0，特写镜头，一只手快速将扫把柄推入中间的矩形夹位，白色滚轮立刻卡住扫把柄。00:04.0-00:06.0，特写镜头，手部在下方的J型挂钩上挂上一把小毛刷。00:06.0-00:08.0，中景镜头，整体展示挂满五件工具的收纳架，稳固没有任何晃动。00:08.0-00:10.0，细节微距镜头，滑过白色滚轮结构与灰色挂钩。不需要同步口播，不展示完整口型表演。保留自然产品操作声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T07:49:05.761Z"
+}
