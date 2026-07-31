@@ -1,0 +1,72 @@
+{
+  "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-007",
+  "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "product_folder": "products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "selected_script": {
+    "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-007",
+    "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+    "angle": "POV snap interlocking upper rack installation and bottom drainage spout adjustment over the kitchen sink",
+    "hook": "No tools needed to snap-lock this double-tier carbon steel dish rack and route water straight into your sink",
+    "structure_signature": "first-person-product-usage-two-scene-video-prompt-generator",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        2,
+        4
+      ]
+    },
+    "script_record": {
+      "video_generation_prompt": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色碳钢双层金属丝碗碟架，具有上层竖直盘子卡槽、下层扁平碗架、侧面挂钩及塑料沥水盘和360度旋转伸缩排水管]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角下，双手拿着哑光黑色碳钢的双层碗碟架的上层框架，垂直对准下层底座的卡槽，向下用力按压，发出清脆的卡扣声，完成卡扣锁紧。在4.0秒时，双手轻压上层框架顶部一次，框架稳固不晃动。保留清脆的卡口卡合声和厨房环境音。\n\n5.0sec-10.0sec\n直接硬切到碗碟架底部近景，第一人称右手伸向架子底部的黑色伸缩排水管，旋转并向外拉出，使其延伸至厨房水槽边缘上方。在9.0秒时，右手食指轻触排水管末端，确认其稳定悬空指向水槽。保留水槽边细微的拉伸声和室内环境音。\n\n全局限制：[产品一致性：全程只出现同一只哑光黑色双层碳钢碗碟架，结构、颜色、材质、比例保持一致；手部一致性；禁止第二件产品；禁止露脸；禁止第三人称机位；禁止虚构部件；禁止夸张效果；无文字；无音乐]。"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-007-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/2-Tier_Carbon_Steel_Dish_Rack_202607301106.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色碳钢双层金属丝碗碟架，具有上层竖直盘子卡槽、下层扁平碗架、侧面挂钩及塑料沥水盘和360度旋转伸缩排水管]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角下，双手拿着哑光黑色碳钢的双层碗碟架的上层框架，垂直对准下层底座的卡槽，向下用力按压，发出清脆的卡扣声，完成卡扣锁紧。在4.0秒时，双手轻压上层框架顶部一次，框架稳固不晃动。保留清脆的卡口卡合声和厨房环境音。\n\n5.0sec-10.0sec\n直接硬切到碗碟架底部近景，第一人称右手伸向架子底部的黑色伸缩排水管，旋转并向外拉出，使其延伸至厨房水槽边缘上方。在9.0秒时，右手食指轻触排水管末端，确认其稳定悬空指向水槽。保留水槽边细微的拉伸声和室内环境音。\n\n全局限制：[产品一致性：全程只出现同一只哑光黑色双层碳钢碗碟架，结构、颜色、材质、比例保持一致；手部一致性；禁止第二件产品；禁止露脸；禁止第三人称机位；禁止虚构部件；禁止夸张效果；无文字；无音乐]。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.023,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.022727272727272728,
+      "history_script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-002",
+      "similarities": {
+        "hook": 0.15625,
+        "angle": 0.22727272727272727,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-007-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/2-Tier_Carbon_Steel_Dish_Rack_202607301106.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色碳钢双层金属丝碗碟架，具有上层竖直盘子卡槽、下层扁平碗架、侧面挂钩及塑料沥水盘和360度旋转伸缩排水管]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角下，双手拿着哑光黑色碳钢的双层碗碟架的上层框架，垂直对准下层底座的卡槽，向下用力按压，发出清脆的卡扣声，完成卡扣锁紧。在4.0秒时，双手轻压上层框架顶部一次，框架稳固不晃动。保留清脆的卡口卡合声和厨房环境音。\n\n5.0sec-10.0sec\n直接硬切到碗碟架底部近景，第一人称右手伸向架子底部的黑色伸缩排水管，旋转并向外拉出，使其延伸至厨房水槽边缘上方。在9.0秒时，右手食指轻触排水管末端，确认其稳定悬空指向水槽。保留水槽边细微的拉伸声和室内环境音。\n\n全局限制：[产品一致性：全程只出现同一只哑光黑色双层碳钢碗碟架，结构、颜色、材质、比例保持一致；手部一致性；禁止第二件产品；禁止露脸；禁止第三人称机位；禁止虚构部件；禁止夸张效果；无文字；无音乐]。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T00:43:33.568Z"
+}
