@@ -1,0 +1,99 @@
+{
+  "script_id": "woven-cotton-3-tier-over-the-door-basket-010",
+  "product_id": "woven-cotton-3-tier-over-the-door-basket",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/woven-cotton-3-tier-over-the-door-basket",
+  "product_folder": "products/woven-cotton-3-tier-over-the-door-basket",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "woven-cotton-3-tier-over-the-door-basket-010",
+    "product_id": "woven-cotton-3-tier-over-the-door-basket",
+    "angle": "Overcrowded bedroom closet accessory clutter causing daily frustration, solved instantly by hanging the 3-tier woven basket organizer over the closet door.",
+    "hook": "Handheld phone-shot POV of a hand digging through a messy, tangled pile of accessories and socks on a closet floor, accidentally knocking a basket of small items over.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Step 1: Hang the metal hook over the top of a door",
+        "Step 2: Suspend the woven basket assembly by slipping the top rope loop onto the hook",
+        "Step 3: Place items loosely inside the 3 woven basket tiers"
+      ]
+    },
+    "script_record": {
+      "0-3s": "Handheld phone-shot POV of a messy bedroom floor where a stack of accessories and scarves is cluttered, and a hand accidentally knocks them into a tangled pile.",
+      "3-6s": "A hand slides the silver metal hook over the top edge of a white wooden bedroom door, and slips the thick natural jute rope loop of the 3-tier woven basket assembly onto the hook, letting the tan braided rope baskets hang vertically.",
+      "6-10s": "Placing folded scarves and accessories loosely inside the first basket tier. Clean, organized layout.",
+      "10-14s": "Fast-cut to showing the second tier loaded with baby wipes and small daily items in a nursery door setup.",
+      "14-18s": "Fast-cut to the third tier showing folded towels neatly organized in a clean bathroom door setting, showcasing its natural woven rope texture.",
+      "18-20s": "Organize your home in seconds."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "woven-cotton-3-tier-over-the-door-basket-010-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. 9:16 realistic handheld phone-shot style. 0-3s: Show a messy bedroom floor where accessories are cluttered, and a hand accidentally knocks them into a tangled pile. 3-6s: Introduce the product solution: A hand slides the silver metal hook over the top edge of a white door, and hangs the natural jute rope loop of the 3-tier woven basket assembly onto the hook so it hangs vertically. 6-10s: Show the first clear result of placing accessories loosely inside the top basket tier. Keep the pacing fast and product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment. Preserve natural tan/light brown color and braided rope texture.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "woven-cotton-3-tier-over-the-door-basket-010-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. 9:16 realistic handheld phone-shot style. This segment is the continuation of part 1. 0-4s: Fast-cut scene showing the second tier loaded with baby wipes and toys in a nursery door setup. 4-8s: Fast-cut scene showing the third tier holding towels in a bathroom door setup, emphasizing its capacity without pulling down excessively. 8-10s: Short light CTA text overlay: 'Organize your home in seconds.' with the entire 3-tier vertical structure hanging neatly. Preserve identical natural tan color, shape, materials, and usage logic.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.039,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.03870967741935484,
+      "history_script_id": "woven-cotton-3-tier-over-the-door-basket-009",
+      "similarities": {
+        "hook": 0.125,
+        "angle": 0.3870967741935484,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "woven-cotton-3-tier-over-the-door-basket-010-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. 9:16 realistic handheld phone-shot style. 0-3s: Show a messy bedroom floor where accessories are cluttered, and a hand accidentally knocks them into a tangled pile. 3-6s: Introduce the product solution: A hand slides the silver metal hook over the top edge of a white door, and hangs the natural jute rope loop of the 3-tier woven basket assembly onto the hook so it hangs vertically. 6-10s: Show the first clear result of placing accessories loosely inside the top basket tier. Keep the pacing fast and product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment. Preserve natural tan/light brown color and braided rope texture.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "woven-cotton-3-tier-over-the-door-basket-010-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/woven-cotton-3-tier-over-the-door-basket/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. 9:16 realistic handheld phone-shot style. This segment is the continuation of part 1. 0-4s: Fast-cut scene showing the second tier loaded with baby wipes and toys in a nursery door setup. 4-8s: Fast-cut scene showing the third tier holding towels in a bathroom door setup, emphasizing its capacity without pulling down excessively. 8-10s: Short light CTA text overlay: 'Organize your home in seconds.' with the entire 3-tier vertical structure hanging neatly. Preserve identical natural tan color, shape, materials, and usage logic.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T03:03:09.504Z"
+}
