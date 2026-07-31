@@ -1,0 +1,94 @@
+sku_id: "men's_novelty_patriotic_swim_trunks"
+product_name: "Men's Novelty Patriotic Swim Trunks"
+category: "Apparel - Men's Swimwear"
+source_info:
+title: "Men's Novelty Patriotic Swim Trunks - American Flag Freedom & Chill Quick Dry Beach Shorts with Mesh Lining - Funny Ugly Summer Hawaiian Shirt Vacation Gifts for Him"
+description: |
+PATRIOTIC & FUNNY DESIGN – Bold "Freedom & Chill" American flag print brings humor and pride to any beach, pool, or BBQ.Perfect for 4th of July, Memorial Day, or summer getaways.
+QUICK DRY & LIGHTWEIGHT – 100% polyester fabric repels water and dries fast, keeping you cool and comfortable all day long.No heavy, wet shorts to slow you down.
+MODERN FIT FOR ALL SIZES – Above-knee cut with elastic waistband and adjustable drawstring offers a sleek, comfortable fit.Available from S to 5XL for every body type.
+MESH LINING & SIDE POCKETS – Soft breathable mesh liner for chafe-free support,Built for active days.
+SUMMER VACATION ESSENTIAL – Great for cruises, pool parties, beach sports, or lounging. Also a fun gift idea for dad, husband, or friends who love patriotic style.
+visual_identity:
+main_color: "Red, White, and Blue (American Flag pattern)"
+secondary_color: "Flesh tone (illusion part)"
+material: "100% Polyester"
+shape: "Above-knee swim shorts"
+texture: "Smooth, quick-dry fabric"
+logo_position: "None specified"
+size_ratio: "Standard men's swim trunk proportions"
+key_visual_features:
+
+"Bold American flag print (stars and stripes) arranged to look like a speedo or thong worn over bare skin."
+
+"The shorts have a realistic 3D print of hairy legs/buttocks creating a humorous optical illusion."
+
+"Elastic waistband with a white adjustable drawstring."
+
+"Side pockets (mentioned in text)."
+
+"Built-in mesh liner (mentioned in text)."
+selling_points:
+
+"Patriotic and funny 'Freedom & Chill' novelty design."
+
+"Quick-dry and lightweight 100% polyester fabric."
+
+"Modern fit, above-knee cut with elastic waistband and drawstring."
+
+"Soft, breathable mesh liner for support."
+
+"Great for 4th of July, summer vacations, and as a gag gift."
+usage_scenes:
+
+"Beach"
+
+"Pool parties"
+
+"BBQs"
+
+"Summer vacations"
+
+"Cruises"
+must_keep:
+
+"保持产品颜色不变 (Keep product color unchanged)"
+
+"保持产品形状不变 (Keep product shape unchanged)"
+
+"保持产品材质不变 (Keep product material unchanged)"
+
+"保持产品比例不变 (Keep product proportions unchanged)"
+
+"保持星条旗图案和肤色错觉图案的相对位置 (Keep the relative position of the flag pattern and skin illusion pattern)"
+
+"不要增加原始产品不存在的配件 (Do not add accessories not present in the original product)"
+must_avoid:
+
+"不要改变产品品类 (Do not change product category)"
+
+"不要虚构不存在的功能 (Do not invent non-existent features)"
+
+"不要增加多余按钮、灯光、接口或装饰 (Do not add extra buttons, lights, ports, or decorations)"
+
+"不要改变包装、结构、纹理和视觉比例 (Do not change packaging, structure, texture, and visual proportions)"
+reference_images:
+white_bg: "images/product_white_bg.png"
+detail_side: "images/product_detail_side.png"
+function: "images/product_function.png"
+source_image_audit:
+
+file: "82a3cb0474ef4569a3c6ec21a3bb0788~tplv-fhlh96nyum-resize-webp_800_800.webp"
+type: "product appearance source"
+use: "product_white_bg"
+direct_generation_risk: "low"
+
+file: "204537d9227e480fb91bd1bf9e95d0ed~tplv-fhlh96nyum-resize-webp_800_800.webp"
+type: "selling-point poster, detail source"
+use: "product_detail_side"
+direct_generation_risk: "high (contains text and callouts)"
+
+file: "ac3f7a2c89444480a5b15f2ac3b6eef2~tplv-fhlh96nyum-resize-webp_800_800.webp"
+type: "usage/function source, lifestyle scene"
+use: "product_function"
+direct_generation_risk: "medium (complex background and person)"
