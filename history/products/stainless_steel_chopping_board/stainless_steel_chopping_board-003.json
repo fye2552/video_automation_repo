@@ -1,0 +1,125 @@
+{
+  "script_id": "stainless_steel_chopping_board-003",
+  "product_id": "stainless_steel_chopping_board",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_chopping_board",
+  "product_folder": "products/stainless_steel_chopping_board",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "stainless_steel_chopping_board-003",
+    "product_id": "stainless_steel_chopping_board",
+    "angle": "Unstable sliding cutting boards causing kitchen accidents vs secure counter-grip lip design",
+    "hook": "Tired of your cutting board sliding around and making chopping dangerous?",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "pain_point": "Cutting boards slipping and sliding on smooth countertops during meal prep, creating safety hazards.",
+      "conflict_hook": "A wooden board slipping mid-slice, causing minor food mess and frustration.",
+      "product_solution": "Introducing the rigid stainless steel chopping board with a downward-folded lip that hooks securely onto the counter edge.",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "痛点冲突",
+          "scene": "Close-up of hands cutting a potato on a wooden board; the board suddenly slips forward on the slick countertop, causing prep frustration."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "The user slides the silver stainless steel chopping board into place, hooking its 1cm front folded lip over the counter edge to lock it completely stable."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Close-up of a knife quickly slicing cucumbers on the steady, reflective metallic surface with zero movement from the board."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Chef slicing red tomatoes on the hygienic, smooth brushed steel surface, highlighting the rounded corners and modern kitchen aesthetic."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Wiping the board clean with a damp kitchen cloth in a single swipe, leaving it dry and spotless without any deep scratched grooves."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "A clean shot of the board resting flat and secure against the counter edge. Text overlay: 'Upgrade to a stable prep space today.'"
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_chopping_board-003-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, or structure (a silver metallic rectangular stainless steel chopping board with rounded corners, a slim rigid profile, and one long front edge bent downward into a vertical folded lip of about 1 cm). Use the detail and side reference images to preserve material, side structure, and edge shape. Timeline: 0-3s: Pain conflict. Close-up of hands cutting vegetables on an unstable board that slips forward on a slick countertop. 3-6s: Product solution. User slides the silver metallic stainless steel board into place, hooking the 1cm front lip securely over the counter edge to lock it. 6-10s: Fast-cut scene 1. Slicing cucumbers smoothly on the stable, reflective metallic surface. Fast pacing, product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "stainless_steel_chopping_board-003-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. This segment should feel like the continuation of the previous 10-second segment, preserving identical product identity (silver metallic rectangular stainless steel chopping board with rounded corners and a 1cm downward-folded lip along one long edge), visual style, pacing, and usage logic. Timeline: 0-4s: Fast-cut scene 2. Chef slicing tomatoes on the clean brushed steel surface. 4-8s: Fast-cut scene 3. The board being wiped completely clean with a damp cloth, showing no deep grooves or stains. 8-10s: Light CTA. Text overlay: 'Upgrade to a stable prep space today.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.009,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.008695652173913044,
+      "history_script_id": "stainless_steel_chopping_board-002",
+      "similarities": {
+        "hook": 0.047619047619047616,
+        "angle": 0.08695652173913043,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.38461538461538464,
+        "scene_order": 1
+      },
+      "structural_score": 0.692
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_chopping_board-003-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, or structure (a silver metallic rectangular stainless steel chopping board with rounded corners, a slim rigid profile, and one long front edge bent downward into a vertical folded lip of about 1 cm). Use the detail and side reference images to preserve material, side structure, and edge shape. Timeline: 0-3s: Pain conflict. Close-up of hands cutting vegetables on an unstable board that slips forward on a slick countertop. 3-6s: Product solution. User slides the silver metallic stainless steel board into place, hooking the 1cm front lip securely over the counter edge to lock it. 6-10s: Fast-cut scene 1. Slicing cucumbers smoothly on the stable, reflective metallic surface. Fast pacing, product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "stainless_steel_chopping_board-003-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. This segment should feel like the continuation of the previous 10-second segment, preserving identical product identity (silver metallic rectangular stainless steel chopping board with rounded corners and a 1cm downward-folded lip along one long edge), visual style, pacing, and usage logic. Timeline: 0-4s: Fast-cut scene 2. Chef slicing tomatoes on the clean brushed steel surface. 4-8s: Fast-cut scene 3. The board being wiped completely clean with a damp cloth, showing no deep grooves or stains. 8-10s: Light CTA. Text overlay: 'Upgrade to a stable prep space today.'",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T03:31:24.174Z"
+}
