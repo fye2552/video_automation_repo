@@ -1,0 +1,99 @@
+{
+  "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010",
+  "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "product_folder": "products/2-tier-kitchen-dish-drying-rack-carbon-steel",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010",
+    "product_id": "2-tier-kitchen-dish-drying-rack-carbon-steel",
+    "angle": "A home cook deals with a dangerous stack of wet dishes slipping on a soggy counter, resolved instantly by assembling the double-tier matte black rack and routing water into the sink.",
+    "hook": "Stop stacking your wet dishes like a Jenga tower that's about to collapse!",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "step 2",
+        "step 3",
+        "step 4"
+      ]
+    },
+    "script_record": {
+      "0-3s": "Close-up of wet plates and bowls slipping on a small soggy towel on a cluttered countertop, causing water to pool.",
+      "3-6s": "Hands place the matte black base on the counter and snap the upper rack side bracket into the base slots with a quick push-down.",
+      "6-10s": "First-person view hanging the side utensil caddy and cutting board holder onto the outer wire frame.",
+      "10-14s": "Close-up under the tray as the 360-degree retractable drain spout is rotated and extended over the sink basin edge.",
+      "14-18s": "Drying rack fully loaded with 11 plates and bowls, with water draining smoothly out of the spout into the sink.",
+      "18-20s": "CTA: Keep your kitchen dry and organized. Get yours today."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic phone-shot style. Use the product reference image for the exact matte black carbon steel dish rack. Timeline: 0-3s: Close-up of wet plates and bowls dangerously sliding on a soggy countertop towel, water pooling everywhere. 3-6s: Introduce the matte black base, hands pushing down vertically to snap-lock the upper rack side brackets into the base slots. 6-10s: Close-up of hands hanging the side utensil caddy onto the outer wire frame. Fast pacing, natural kitchen lighting, no CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video continuing the previous scene. Preserve identical matte black product design and kitchen setting. Timeline: 0-4s: Close-up under the base tray as hands rotate and extend the retractable drainage spout over the edge of the kitchen sink basin. 4-8s: Wide shot showing the rack organized with plates on top and bowls on the bottom, water draining cleanly through the spout. 8-10s: Light text overlay CTA: 'Keep your kitchen dry and organized. Get yours today.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.033,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.0325,
+      "history_script_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-008",
+      "similarities": {
+        "hook": 0.041666666666666664,
+        "angle": 0.325,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic phone-shot style. Use the product reference image for the exact matte black carbon steel dish rack. Timeline: 0-3s: Close-up of wet plates and bowls dangerously sliding on a soggy countertop towel, water pooling everywhere. 3-6s: Introduce the matte black base, hands pushing down vertically to snap-lock the upper rack side brackets into the base slots. 6-10s: Close-up of hands hanging the side utensil caddy onto the outer wire frame. Fast pacing, natural kitchen lighting, no CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "2-tier-kitchen-dish-drying-rack-carbon-steel-010-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/2-tier-kitchen-dish-drying-rack-carbon-steel/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video continuing the previous scene. Preserve identical matte black product design and kitchen setting. Timeline: 0-4s: Close-up under the base tray as hands rotate and extend the retractable drainage spout over the edge of the kitchen sink basin. 4-8s: Wide shot showing the rack organized with plates on top and bowls on the bottom, water draining cleanly through the spout. 8-10s: Light text overlay CTA: 'Keep your kitchen dry and organized. Get yours today.'",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T03:00:31.971Z"
+}
