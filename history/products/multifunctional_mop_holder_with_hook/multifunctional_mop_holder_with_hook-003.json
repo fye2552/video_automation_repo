@@ -1,0 +1,141 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-003",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-003",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Upgrading cluttered utility closet doors with tool-free adhesive wall organization",
+    "hook": "I used to hate opening my utility closet because everything would just tumble out.",
+    "structure_signature": "pain_scene_solution_closeup_demonstration_closet_reveal_cta",
+    "scene_order": [
+      "scene_01",
+      "scene_02",
+      "scene_03",
+      "scene_04"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "scene_01": {
+        "voiceover": "I used to hate opening my utility closet because everything would just tumble out. But this wall-mounted organizer completely transformed this messy corner.",
+        "visual_description": "A creator opens a utility closet door, showing brooms and mops falling over. She then holds up the gray 5-clip 5-hook holder and easily sticks it to the inside of the door."
+      },
+      "scene_02": {
+        "voiceover": "It has five non-slip silicone rollers that automatically adjust to grip different handle sizes, plus five hooks for smaller items like cloths.",
+        "visual_description": "Close-up of pushing a mop handle into one of the white roller slots. Then hanging a spray bottle and microfiber towel on the lower J-hooks."
+      },
+      "scene_03": {
+        "voiceover": "Everything is finally off the floor and perfectly organized. You need this to reclaim your storage space today!",
+        "visual_description": "The creator steps back, revealing all 5 slots and 5 hooks holding cleaning tools neatly on the door. The floor is clean and empty."
+      },
+      "scene_04": {
+        "voiceover": "",
+        "visual_description": "Detailed B-roll showing the automatic grip mechanism and the self-adhesive backing sticking flat against the surface."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-003-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人在洗衣房和储物柜门旁，使用参考图2中的壁挂拖把架（浅灰色塑料主体，5个白色滚轮夹位，5个浅灰色向下J形挂钩，细长比例）。产品只参考Skill A标准参考图，保持关键外观特征一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实。\n\n00:00-00:00.5，[特写镜头]，[展示乱七八糟倒在墙角和门后的扫把和拖把，创作者表现出无奈的情绪]。\n00:00.5-00:01.0，[中景镜头]，[创作者打开柜门时扫把滑落，展示狭窄空间的收纳痛点]。\n00:01.0-00:01.5，[特写镜头]，[创作者手中拿出一个浅灰色的5夹位5挂钩壁挂架，向镜头展示]。\n00:01.5-00:03.0，[手持中景]，[创作者将收纳架贴在平整干净的储物柜门板上，用手轻轻按压固定]。\n00:03.0-00:06.0，[特写镜头]，[创作者拿出一把拖把，顺畅地推入白色滚轮夹位中，滚轮稳稳卡住手柄]。\n00:06.0-00:10.0，[中景镜头]，[展示拖把和扫把被垂直挂起，地面瞬间变得干净利落，创作者露出微笑]。\n\n同步美式英语口播：“I used to hate opening my utility closet because everything would just tumble out. But this wall-mounted organizer completely transformed this messy corner.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-003-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人，使用参考图2中的拖把收纳架。产品只参考Skill A标准参考图，保持5个白色滚轮夹和5个浅灰色挂钩结构一致，不生成说明文字。\n\n00:00-00:03.0，[微距特写]，[展示白色硅胶滚轮结构，手部把一个粗手柄的扫把和一个细手柄的物件分别推进不同的夹位，滚轮自适应夹紧]。\n00:03.0-00:06.0，[特写镜头]，[展示下方灰色的J形挂钩，创作者将一块抹布挂在挂钩上，然后挂上一个小清洁刷]。\n00:06.0-00:10.0，[中景镜头]，[创作者轻轻拉拽挂在上面的扫把，展示其夹位稳固不滑动的物理特性]。\n\n同步美式英语口播：“It has five non-slip silicone rollers that automatically adjust to grip different handle sizes, plus five hooks for smaller items like cloths.”\n保留自然环境声、轻微产品操作声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-003-scene-03",
+        "scene_id": "scene_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人在整洁的洗衣房，使用参考图2中的拖把架。产品只参考Skill A标准参考图，保持5个白色滚轮夹和5个浅灰色挂钩结构一致。\n\n00:00-00:04.0，[中景镜头]，[创作者退后一步，展示柜门上整齐挂着的清洁工具，柜底地面完全腾空，十分清爽整洁]。\n00:04.0-00:07.0，[近景镜头]，[创作者面带微笑，用手指着挂满工具的收纳架，向镜头竖起大拇指表示满意]。\n00:07.0-00:10.0，[特写镜头]，[展示拖把架挂满清洁工具的美观效果，凸显利用垂直空间收纳的效果]。\n\n同步美式英语口播：“Everything is finally off the floor and perfectly organized. You need this to reclaim your storage space today!”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-003-scene-04",
+        "scene_id": "scene_04",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的柜门场景、光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持5个白色硅胶滚轮、5个浅灰色挂钩和两端圆角设计，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，[特写镜头]，[拖把柄滑入白色硅胶滚轮夹位的慢动作，展示滚轮向两边推开并紧紧卡住手柄的过程]。\n00:02.0-00:04.0，[特写镜头]，[一只手将一个带挂绳的小喷雾瓶挂在浅灰色J形挂钩上]。\n00:04.0-00:07.0，[近景斜侧面]，[展示平滑的浅灰色背板贴在平整门板墙面上的视角，展示免钻孔贴合的物理贴合细节]。\n00:07.0-00:10.0，[静态特写]，[完整的清洁架挂载五件清洁工具的静态画面，构图工整，光线柔和]。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.01,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.010000000000000002,
+      "history_script_id": "multifunctional_mop_holder_with_hook-001",
+      "similarities": {
+        "hook": 0,
+        "angle": 0.1,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.21428571428571427,
+        "scene_order": 0
+      },
+      "structural_score": 0.107
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-003-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人在洗衣房和储物柜门旁，使用参考图2中的壁挂拖把架（浅灰色塑料主体，5个白色滚轮夹位，5个浅灰色向下J形挂钩，细长比例）。产品只参考Skill A标准参考图，保持关键外观特征一致，不参考原始海报、尺寸图、文字卖点图或对比图，不生成尺寸线，不生成说明文字，不改变产品结构。画面自然真实。\n\n00:00-00:00.5，[特写镜头]，[展示乱七八糟倒在墙角和门后的扫把和拖把，创作者表现出无奈的情绪]。\n00:00.5-00:01.0，[中景镜头]，[创作者打开柜门时扫把滑落，展示狭窄空间的收纳痛点]。\n00:01.0-00:01.5，[特写镜头]，[创作者手中拿出一个浅灰色的5夹位5挂钩壁挂架，向镜头展示]。\n00:01.5-00:03.0，[手持中景]，[创作者将收纳架贴在平整干净的储物柜门板上，用手轻轻按压固定]。\n00:03.0-00:06.0，[特写镜头]，[创作者拿出一把拖把，顺畅地推入白色滚轮夹位中，滚轮稳稳卡住手柄]。\n00:06.0-00:10.0，[中景镜头]，[展示拖把和扫把被垂直挂起，地面瞬间变得干净利落，创作者露出微笑]。\n\n同步美式英语口播：“I used to hate opening my utility closet because everything would just tumble out. But this wall-mounted organizer completely transformed this messy corner.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-003-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人，使用参考图2中的拖把收纳架。产品只参考Skill A标准参考图，保持5个白色滚轮夹和5个浅灰色挂钩结构一致，不生成说明文字。\n\n00:00-00:03.0，[微距特写]，[展示白色硅胶滚轮结构，手部把一个粗手柄的扫把和一个细手柄的物件分别推进不同的夹位，滚轮自适应夹紧]。\n00:03.0-00:06.0，[特写镜头]，[展示下方灰色的J形挂钩，创作者将一块抹布挂在挂钩上，然后挂上一个小清洁刷]。\n00:06.0-00:10.0，[中景镜头]，[创作者轻轻拉拽挂在上面的扫把，展示其夹位稳固不滑动的物理特性]。\n\n同步美式英语口播：“It has five non-slip silicone rollers that automatically adjust to grip different handle sizes, plus five hooks for smaller items like cloths.”\n保留自然环境声、轻微产品操作声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-003-scene-03",
+      "scene_id": "scene_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图1中的固定达人在整洁的洗衣房，使用参考图2中的拖把架。产品只参考Skill A标准参考图，保持5个白色滚轮夹和5个浅灰色挂钩结构一致。\n\n00:00-00:04.0，[中景镜头]，[创作者退后一步，展示柜门上整齐挂着的清洁工具，柜底地面完全腾空，十分清爽整洁]。\n00:04.0-00:07.0，[近景镜头]，[创作者面带微笑，用手指着挂满工具的收纳架，向镜头竖起大拇指表示满意]。\n00:07.0-00:10.0，[特写镜头]，[展示拖把架挂满清洁工具的美观效果，凸显利用垂直空间收纳的效果]。\n\n同步美式英语口播：“Everything is finally off the floor and perfectly organized. You need this to reclaim your storage space today!”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-003-scene-04",
+      "scene_id": "scene_04",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段8-10秒9:16竖屏产品功能展示B-roll，延续前三段正片的柜门场景、光线、手部风格和真实手机手持UGC质感。产品只参考Skill A标准参考图，保持5个白色硅胶滚轮、5个浅灰色挂钩和两端圆角设计，不新增未确认功能，不生成说明文字。\n\n00:00-00:02.0，[特写镜头]，[拖把柄滑入白色硅胶滚轮夹位的慢动作，展示滚轮向两边推开并紧紧卡住手柄的过程]。\n00:02.0-00:04.0，[特写镜头]，[一只手将一个带挂绳的小喷雾瓶挂在浅灰色J形挂钩上]。\n00:04.0-00:07.0，[近景斜侧面]，[展示平滑的浅灰色背板贴在平整门板墙面上的视角，展示免钻孔贴合的物理贴合细节]。\n00:07.0-00:10.0，[静态特写]，[完整的清洁架挂载五件清洁工具的静态画面，构图工整，光线柔和]。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微产品操作声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T08:55:27.521Z"
+}
