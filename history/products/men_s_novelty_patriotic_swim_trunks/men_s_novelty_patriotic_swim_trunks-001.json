@@ -1,0 +1,72 @@
+{
+  "script_id": "men_s_novelty_patriotic_swim_trunks-001",
+  "product_id": "men_s_novelty_patriotic_swim_trunks",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_target_apparel_try_on_laugh.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/men_s_novelty_patriotic_swim_trunks",
+  "product_folder": "products/men_s_novelty_patriotic_swim_trunks",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "men_s_novelty_patriotic_swim_trunks-001",
+    "product_id": "men_s_novelty_patriotic_swim_trunks",
+    "angle": "Hilarious patriotic swim trunks discovery and party reaction",
+    "hook": "An adult black woman spots funny patriotic swim trunks at Target, leading to a hilarious living room party reveal.",
+    "structure_signature": "omini-flash-10s-target-novelty-apparel-try-on",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "scene_01": {
+        "visual": "A vertical TikTok style UGC video. 0-2s: An adult black woman spots patriotic swim trunks in Target, camera pans right, dropping her iced coffee. 2s: Hard cut to the trunks on a rack. 2-4s: Trunks on rack, transitioned by a foreground sweep. 4-8.6s: She wears the trunks at a home party, walk in front of her friends. 8.6-10s: Group laughs together at the funny illusion print.",
+        "audio": "Ambient clothing store noises, hanger sound, followed by home party ambient chatter, and group laughter at the end."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "men_s_novelty_patriotic_swim_trunks-001-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/men_s_novelty_patriotic_swim_trunks/images/product_white_bg.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok视频。0.0-4.0秒位于明亮整洁的美国Target风格服装区，4.0-10.0秒位于家庭客厅派对现场。商店不出现Target字样或圆靶Logo。全片只有约2.0秒处一次清楚硬切；约4.0秒使用前景衣物完全遮满画面的无缝时间跳转，表示产品已经购买并进入群体展示场景，不增加第二次硬切。\n\n产品外观锁定：1件男士滑稽爱国主题沙滩裤，红色、白色与蓝色（星条旗图案），左侧是深蓝底白色五角星区域，右侧是红白相间横条纹，腰部带有白色可调节拉绳。正反面印有逼真的漫画式多毛大腿与臀部的肤色视觉错觉印花。该产品为完整外穿沙滩短裤，面料不透明并完整覆盖身体，裤脚下方不露出骑行裤或打底裤。禁止生成普通美国国旗泳裤、真实裸体或充气服装。\n\n0.0-2.0秒：画面左侧一名普通美国成年黑人女性手拿无字透明杯装冰咖啡，右手提红色无字购物篮。她突然盯住右侧货架的滑稽短裤，眼睛睁大。此时相机立即向右平滑横移，横移约0.2秒后，她左手中的冰咖啡脱手垂直掉落（不拍摄咖啡落地，不跟随咖啡）。镜头平滑移至滑稽短裤，主角与购物篮移出画面。\n\n约2.0秒：硬切至同一商店货架的正面视角，该滑稽短裤用普通衣架挂在整齐货架中心的醒目位置。\n\n2.0-4.0秒：稳定拍摄货架上的短裤。到3.7-4.0秒时，一件普通前景深色衣服从画面边缘自然掠过并完全遮挡住镜头，完成无缝时间跳转。\n\n4.0-8.6秒：镜头跳转到明亮整洁的家庭客厅派对，同一名黑人女性主角身穿该滑稽短裤（正常单穿，覆盖大腿）微笑走入人群。周围有四名身穿普通休闲服的成年朋友，他们先是愣了一下，然后盯住短裤上的滑稽肤色错觉印花，面露惊喜的笑容。主角与朋友们同框，没有身体敏感部位特写。\n\n8.6-10.0秒：保持客厅派对场景，主角与朋友们因为短裤的滑稽造型一起哈哈大笑，气氛友好，最后0.4秒保持至少三名成年人、完整短裤和笑脸同框。\n\n全局限制：无字幕、无屏幕文字、无品牌、无价格、无折扣、无倒计时、无平台UI、无水印、无旁白、无背景音乐、无CTA。产品图案始终是布料印花，不是真实人体；产品面料本身不透明并完整覆盖真实身体。完整外穿短裤直接正常穿着，裤脚下方不得露出骑行短裤、紧身裤和其他额外打底层。4秒后必须进入至少三名成年人参与的群体场景，不得让主角独自试穿和独自拍摄。群体笑声友好且包含穿戴者本人，不得表现霸凌和羞辱。不得返回商店，不得增加第三地点、第二次硬切、功能演示、产品介绍、销售话术、性暗示动作和身体局部特写。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "men_s_novelty_patriotic_swim_trunks-001-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/men_s_novelty_patriotic_swim_trunks/images/product_white_bg.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实手机原生UGC风格的美区TikTok视频。0.0-4.0秒位于明亮整洁的美国Target风格服装区，4.0-10.0秒位于家庭客厅派对现场。商店不出现Target字样或圆靶Logo。全片只有约2.0秒处一次清楚硬切；约4.0秒使用前景衣物完全遮满画面的无缝时间跳转，表示产品已经购买并进入群体展示场景，不增加第二次硬切。\n\n产品外观锁定：1件男士滑稽爱国主题沙滩裤，红色、白色与蓝色（星条旗图案），左侧是深蓝底白色五角星区域，右侧是红白相间横条纹，腰部带有白色可调节拉绳。正反面印有逼真的漫画式多毛大腿与臀部的肤色视觉错觉印花。该产品为完整外穿沙滩短裤，面料不透明并完整覆盖身体，裤脚下方不露出骑行裤或打底裤。禁止生成普通美国国旗泳裤、真实裸体或充气服装。\n\n0.0-2.0秒：画面左侧一名普通美国成年黑人女性手拿无字透明杯装冰咖啡，右手提红色无字购物篮。她突然盯住右侧货架的滑稽短裤，眼睛睁大。此时相机立即向右平滑横移，横移约0.2秒后，她左手中的冰咖啡脱手垂直掉落（不拍摄咖啡落地，不跟随咖啡）。镜头平滑移至滑稽短裤，主角与购物篮移出画面。\n\n约2.0秒：硬切至同一商店货架的正面视角，该滑稽短裤用普通衣架挂在整齐货架中心的醒目位置。\n\n2.0-4.0秒：稳定拍摄货架上的短裤。到3.7-4.0秒时，一件普通前景深色衣服从画面边缘自然掠过并完全遮挡住镜头，完成无缝时间跳转。\n\n4.0-8.6秒：镜头跳转到明亮整洁的家庭客厅派对，同一名黑人女性主角身穿该滑稽短裤（正常单穿，覆盖大腿）微笑走入人群。周围有四名身穿普通休闲服的成年朋友，他们先是愣了一下，然后盯住短裤上的滑稽肤色错觉印花，面露惊喜的笑容。主角与朋友们同框，没有身体敏感部位特写。\n\n8.6-10.0秒：保持客厅派对场景，主角与朋友们因为短裤的滑稽造型一起哈哈大笑，气氛友好，最后0.4秒保持至少三名成年人、完整短裤和笑脸同框。\n\n全局限制：无字幕、无屏幕文字、无品牌、无价格、无折扣、无倒计时、无平台UI、无水印、无旁白、无背景音乐、无CTA。产品图案始终是布料印花，不是真实人体；产品面料本身不透明并完整覆盖真实身体。完整外穿短裤直接正常穿着，裤脚下方不得露出骑行短裤、紧身裤和其他额外打底层。4秒后必须进入至少三名成年人参与的群体场景，不得让主角独自试穿和独自拍摄。群体笑声友好且包含穿戴者本人，不得表现霸凌和羞辱。不得返回商店，不得增加第三地点、第二次硬切、功能演示、产品介绍、销售话术、性暗示动作和身体局部特写。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T09:16:52.728Z"
+}
