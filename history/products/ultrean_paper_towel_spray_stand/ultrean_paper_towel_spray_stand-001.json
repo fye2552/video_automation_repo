@@ -1,0 +1,99 @@
+{
+  "script_id": "ultrean_paper_towel_spray_stand-001",
+  "product_id": "ultrean_paper_towel_spray_stand",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/ultrean_paper_towel_spray_stand",
+  "product_folder": "products/ultrean_paper_towel_spray_stand",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "ultrean_paper_towel_spray_stand-001",
+    "product_id": "ultrean_paper_towel_spray_stand",
+    "angle": "Eliminating kitchen cleaning chaos with a heavy-duty, one-handed tear paper towel holder featuring a hidden integrated spray bottle.",
+    "hook": "Tired of your paper towel holder tipping over and rolling away every time you have a spill?",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "title": "Ultrean Stand with Spray Bottle - Pain & Conflict Fast Cut",
+      "scenes": {
+        "video_001_part_01": {
+          "narrative": "A standard flimsy paper towel holder tips over when pulled one-handed, leaving a messy roll. Instantly, we switch to the Ultrean Matte Black Stand, standing firm with its weighted base. A hand pushes the top button, removing the hidden spray bottle.",
+          "duration": 10
+        },
+        "video_001_part_02": {
+          "narrative": "A hand sprays the counter with the integrated bottle, wipes it clean, and pops the bottle back into the solid black rod. A single sheet of paper towel is smoothly torn away using the tension arm. CTA appears: A simple upgrade for everyday kitchen use.",
+          "duration": 10
+        }
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-001-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot. 0-3s pain conflict: a standard paper towel holder tips over and spills when pulled one-handed. 3-6s quick solution: introduce the Ultrean paper towel holder, showing its heavy matte black base staying firmly in place as a hand tears a sheet. 6-10s fast-cut scene 1: close-up of a hand pressing the top lock button on the solid black rod and pulling out the hidden clear spray bottle. Match exact product colors: matte black exterior, solid rod, circular base.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-001-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot. 0-4s fast-cut scene 2: hand spraying cleaning solution onto a kitchen counter from the transparent 4oz bottle. 4-8s fast-cut scene 3: hand locks the spray bottle back into the solid black center rod, then effortlessly tears a paper towel using the angled tension arm. 8-10s CTA: light text overlay 'A simple upgrade for everyday kitchen use.' Maintain identical product identity, color, and pacing as part 1.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-001-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot. 0-3s pain conflict: a standard paper towel holder tips over and spills when pulled one-handed. 3-6s quick solution: introduce the Ultrean paper towel holder, showing its heavy matte black base staying firmly in place as a hand tears a sheet. 6-10s fast-cut scene 1: close-up of a hand pressing the top lock button on the solid black rod and pulling out the hidden clear spray bottle. Match exact product colors: matte black exterior, solid rod, circular base.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-001-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot. 0-4s fast-cut scene 2: hand spraying cleaning solution onto a kitchen counter from the transparent 4oz bottle. 4-8s fast-cut scene 3: hand locks the spray bottle back into the solid black center rod, then effortlessly tears a paper towel using the angled tension arm. 8-10s CTA: light text overlay 'A simple upgrade for everyday kitchen use.' Maintain identical product identity, color, and pacing as part 1.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T07:05:30.192Z"
+}
