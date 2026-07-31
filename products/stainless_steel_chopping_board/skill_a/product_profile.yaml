@@ -1,0 +1,104 @@
+sku_id: "stainless_steel_chopping_board"
+product_name: "Stainless Steel Chopping Board"
+category: "stainless_steel_kitchen_cutting_board"
+
+source_info:
+  title: "Stainless Steel Chopping Board"
+  description: |
+    Stainless steel chopping board for kitchen food preparation. The product is a silver stainless steel cutting board with a smooth hygienic surface, suitable for slicing vegetables, fruits, and meats. Source materials show multiple size options such as approximately 40 x 30 cm, 50 x 40 cm, and 60 x 40 cm. The board is durable, easy to clean, and intended for home kitchen and restaurant food preparation use. The corrected product structure is not a completely flat sheet: one long edge is bent downward into a visible vertical folded lip of about 1 cm.
+
+visual_identity:
+  main_color: "silver metallic stainless steel"
+  secondary_color: "soft reflective highlights on the steel surface"
+  material: "stainless steel"
+  shape: "flat rectangular stainless steel chopping board with rounded corners, a slim rigid profile, and one long front edge bent downward into a vertical folded lip of about 1 cm; the board is not a completely flat sheet"
+  texture: "smooth brushed or satin stainless steel surface with a clean reflective finish"
+  logo_position: "no visible logo confirmed on the board surface"
+  size_ratio: "source images show multiple size options including approximately 40 x 30 cm, 50 x 40 cm, and 60 x 40 cm, with thickness around 1 cm; treat exact dimensions as marketplace claims"
+
+key_visual_features:
+  - "silver stainless steel rectangular board"
+  - "rounded corners"
+  - "slim rigid profile"
+  - "smooth reflective metal surface"
+  - "one long edge bent downward into a visible vertical folded lip"
+  - "front folded lip approximately 1 cm in height"
+  - "clean minimalist design"
+  - "sold in multiple sizes according to source images"
+  - "no visible handle hole, deep groove, feet, or decorative pattern confirmed"
+
+selling_points:
+  - "Durable stainless steel construction according to source text"
+  - "Hygienic cutting surface according to source text"
+  - "Easy to clean with water or a damp cloth according to source text"
+  - "Resistant to mold and bacteria growth according to source text"
+  - "Suitable for slicing vegetables, carving meats, and preparing fruits according to source text"
+  - "Designed for home and restaurant kitchen use according to source text"
+  - "Smooth clean modern appearance according to source text"
+
+usage_scenes:
+  - "placed flat on a kitchen countertop as a food preparation board"
+  - "used for chopping vegetables on a clean kitchen worktop"
+  - "used as a durable hygienic cutting surface for meat, fruit, or vegetables"
+  - "displayed in a modern kitchen with a chef's knife and simple food-prep ingredients"
+
+must_keep:
+  - "Keep the product as a stainless steel chopping board"
+  - "Keep the silver metallic color and reflective steel appearance"
+  - "Keep the flat rectangular top surface with rounded corners"
+  - "Keep the slim rigid profile"
+  - "Keep the surface smooth, clean, and minimal with no decorative texture"
+  - "Keep the product looking like a rigid metal board, not flexible or fabric-like"
+  - "Keep the overall proportions similar to the source product"
+  - "Keep the product as a single board in the white-background and detail images"
+  - "Keep the distinctive downward-folded lip along one long edge"
+  - "The board is not a completely flat sheet; one long side must be bent downward approximately 1 cm"
+  - "Keep the bent lip clearly visible in product appearance and function images"
+
+must_avoid:
+  - "Do not change the product category into a wooden board, plastic cutting mat, tray, baking sheet, sink cover, or serving platter"
+  - "Do not add unconfirmed handles, grooves, feet, logos, clips, fold lines on other sides, silicone edges, or accessories"
+  - "Do not invent extra layers, anti-slip pads, measurement rulers, or textured patterns not clearly visible"
+  - "Do not change the silver stainless steel material into stone, glass, ceramic, or plastic"
+  - "Do not flatten the product into a simple sheet board with no bent lip"
+  - "Do not replace the downward-folded edge with a normal thick edge, bevel, or decorative rim"
+  - "Do not copy poster text, dimension lines, callout circles, splash graphics, labels, or guarantee badges into the final reference images"
+  - "Do not show an unrealistic dramatic splash effect or stylized black-background ad layout in the function image"
+  - "Do not overcrowd the function scene with too many props"
+  - "Do not show blood, heavy food mess, or unsafe cutting behavior"
+
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+
+source_image_audit:
+  - file: "correct_shape_main.jpg"
+    type: "product appearance source; corrected primary structure reference"
+    use: "Best primary reference for the true product shape. It clearly shows the flat rectangular stainless steel top surface, rounded corners, and the distinctive downward-folded front lip. Recommended main ref-image for both product_white_bg and product_detail_side."
+    direct_generation_risk: "Low because it is a clean product image with the correct structure and no heavy marketing layout."
+
+  - file: "3169e63b-8f47-59e7-855d-0ad0d220d26a.png"
+    type: "product appearance source; detail/texture source; size chart"
+    use: "Useful support reference for understanding surface finish, proportions, and rolled metal edge feeling, but should not override the corrected folded-lip structure from the new main image."
+    direct_generation_risk: "Medium because it contains dimension text and a detail callout circle."
+
+  - file: "33732efc-6f38-5079-b4bf-213a89dc3658.png"
+    type: "size chart; product appearance source"
+    use: "Useful for confirming that the board is sold in multiple rectangular sizes and for understanding proportion range."
+    direct_generation_risk: "High because it includes multiple boards, dimension lines, and measurement text."
+
+  - file: "c1826443-1341-51d1-a4ca-93a25e3e23a4.png"
+    type: "usage/function source"
+    use: "Best function reference for a realistic kitchen countertop scene with the board used for cutting vegetables. Use this as the main concept reference for product_function, while forcing the corrected folded-lip structure to remain visible."
+    direct_generation_risk: "Medium because it is a styled kitchen scene rather than a clean reference image."
+
+  - file: "f57072fd-f982-55b8-86c6-45707637f498.png"
+    type: "usage/function source; selling-point poster"
+    use: "Useful as a secondary function reference showing the board used as a prep surface with a knife and raw meat."
+    direct_generation_risk: "High because it contains a shipping guarantee badge and promotional text."
+
+  - file: "2ddbc05d-631a-58e9-8332-35033b892a5f.png"
+    type: "selling-point poster; unsuitable direct generation reference"
+    use: "Supports the waterproof and easy-clean claim only. Analysis source only."
+    direct_generation_risk: "Very high because it contains strong ad styling, splash graphics, limes, and large text."
