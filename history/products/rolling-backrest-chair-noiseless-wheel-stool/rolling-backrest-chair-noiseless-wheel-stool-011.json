@@ -1,0 +1,98 @@
+{
+  "script_id": "rolling-backrest-chair-noiseless-wheel-stool-011",
+  "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/rolling-backrest-chair-noiseless-wheel-stool",
+  "product_folder": "products/rolling-backrest-chair-noiseless-wheel-stool",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "rolling-backrest-chair-noiseless-wheel-stool-011",
+    "product_id": "rolling-backrest-chair-noiseless-wheel-stool",
+    "angle": "Low-cabinet organizing and floor-level chores posture improvement",
+    "hook": "Crouching down on your knees to clean or organize low cabinets is absolute torture for your joints.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Sit down softly on the seat cushion with back against the curved backrest.",
+        "Glide across smooth indoor flooring using feet to push, allowing wheels to roll."
+      ]
+    },
+    "script_record": {
+      "0-3s": "Show an adult home user awkwardly crouching on their knees on a hard kitchen floor, straining to reach items in a deep low cabinet.",
+      "3-6s": "The user sits down softly on the low-profile rolling backrest chair, instantly resolving their uncomfortable posture.",
+      "6-10s": "The user sits comfortably in an upright low seated position, organizing the shelf with ease.",
+      "10-14s": "The user uses their feet to push and glide smoothly across the kitchen floor to reach another cabinet.",
+      "14-18s": "Close-up shot of the noiseless caster wheels spinning 360 degrees as the stool rolls.",
+      "18-20s": "The stool sits next to a beautifully organized low cabinet, text overlay: 'Glide through your chores in comfort.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "rolling-backrest-chair-noiseless-wheel-stool-011-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 realistic handheld phone-shot style. 0-3s: Show an adult home user awkwardly crouching on their knees on a hard kitchen floor, straining to organize a deep low cabinet, capturing their discomfort. 3-6s: Introduce the low-profile rolling backrest chair from the reference image, featuring a dark grey plush seat and backrest, and an off-white tubular metal frame. The user sits down softly on the seat cushion. 6-10s: First fast-cut scene showing the user sitting comfortably in an upright low seated position. Keep the pacing fast, clear, and product-focused. Do not start with a perfect product shot. Do not include any text overlays or CTA. Preserve exact product color, shape, materials, and size ratio.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "rolling-backrest-chair-noiseless-wheel-stool-011-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 realistic handheld phone-shot style. 0-4s: Second usage scene showing the user pushing off with their feet to glide smoothly across the kitchen floor to reach another cabinet. 4-8s: Third scene showing a close-up of the noiseless caster wheels spinning 360 degrees as they roll, showcasing the sturdy off-white frame and dark grey cushion. 8-10s: Show the stationary stool next to a clean, organized cabinet with light CTA text overlay: 'Glide through your chores in comfort.' This segment must visually continue Part 1, preserving identical product identity, color, materials, lighting, and pacing. Do not allow standing on the stool.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.02,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.020000000000000004,
+      "history_script_id": "rolling-backrest-chair-noiseless-wheel-stool-006",
+      "similarities": {
+        "hook": 0.06896551724137931,
+        "angle": 0.2,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "rolling-backrest-chair-noiseless-wheel-stool-011-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 realistic handheld phone-shot style. 0-3s: Show an adult home user awkwardly crouching on their knees on a hard kitchen floor, straining to organize a deep low cabinet, capturing their discomfort. 3-6s: Introduce the low-profile rolling backrest chair from the reference image, featuring a dark grey plush seat and backrest, and an off-white tubular metal frame. The user sits down softly on the seat cushion. 6-10s: First fast-cut scene showing the user sitting comfortably in an upright low seated position. Keep the pacing fast, clear, and product-focused. Do not start with a perfect product shot. Do not include any text overlays or CTA. Preserve exact product color, shape, materials, and size ratio.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "rolling-backrest-chair-noiseless-wheel-stool-011-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/rolling-backrest-chair-noiseless-wheel-stool/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 realistic handheld phone-shot style. 0-4s: Second usage scene showing the user pushing off with their feet to glide smoothly across the kitchen floor to reach another cabinet. 4-8s: Third scene showing a close-up of the noiseless caster wheels spinning 360 degrees as they roll, showcasing the sturdy off-white frame and dark grey cushion. 8-10s: Show the stationary stool next to a clean, organized cabinet with light CTA text overlay: 'Glide through your chores in comfort.' This segment must visually continue Part 1, preserving identical product identity, color, materials, lighting, and pacing. Do not allow standing on the stool.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T03:01:27.943Z"
+}
