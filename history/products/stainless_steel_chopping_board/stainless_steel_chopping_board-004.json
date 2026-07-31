@@ -1,0 +1,132 @@
+{
+  "script_id": "stainless_steel_chopping_board-004",
+  "product_id": "stainless_steel_chopping_board",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_chopping_board",
+  "product_folder": "products/stainless_steel_chopping_board",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "stainless_steel_chopping_board-004",
+    "product_id": "stainless_steel_chopping_board",
+    "angle": "Eliminating cross-contamination and garlic odor transfer onto fresh fruits using a non-porous stainless steel surface",
+    "hook": "Tired of your fresh fruit smelling and tasting like yesterday's chopped garlic?",
+    "structure_signature": "pain_hook_absurd_rescuer_product_solution_fast_cuts_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "script_id": "temporary_script_id",
+      "duration": 20,
+      "style": "low_risk_rescuer_fast_cut",
+      "pain_point": "Cross-contamination of strong garlic odors transferring to sweet fruits on old porous cutting boards.",
+      "conflict_hook": "Tired of your fresh fruit smelling and tasting like yesterday's chopped garlic?",
+      "product_solution": "The non-porous silver stainless steel chopping board prevents odor absorption, offering a clean, hygienic cutting surface.",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "真实痛点钩子",
+          "scene": "Close-up of a person cutting fresh strawberries on a scratched, old wooden board, then taking a bite and making a grimace of disgust."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "荒诞成年亲属携产品入场",
+          "scene": "A husband in a tuxedo and swim goggles slides into the kitchen frame holding the silver stainless steel chopping board, places it on the counter, and says, 'Use steel instead!'"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "The silver stainless steel board is laid flat with its 1cm bent lip hugging the counter edge. Fresh strawberries are sliced cleanly on the non-porous surface."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Water easily rinsing juice off the metallic board, showing it becomes clean and odor-free instantly."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Close-up of slicing fresh green vegetables on the rectangular board under bright kitchen lighting."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "A hand easily lifts the board by its 1cm folded lip, displaying a dry and clean countertop underneath."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Text on screen reading 'Upgrade your kitchen prep today.' alongside the clean silver board."
+        }
+      ],
+      "cta": "Upgrade your kitchen prep today.",
+      "dedupe_key": "stainless_steel_chopping_board_garlic_odor_transfer"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_chopping_board-004-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a person cutting fresh strawberries on a scratched, old wooden board, then taking a bite and making a grimace of disgust. 1.5-3s: A husband in a tuxedo and swim goggles slides into the frame holding the silver stainless steel chopping board with a downward-folded lip, places it on the counter, and says 'Use steel instead!'. 3-6s: Show the silver stainless steel chopping board placed on the kitchen counter, its 1cm bent lip hugging the edge, with fresh strawberries being sliced cleanly on the non-porous surface. 6-10s: Water easily rinsing away juice off the metallic board, leaving it clean. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "stainless_steel_chopping_board-004-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing fresh cucumbers being sliced on the rectangular stainless steel chopping board in a modern kitchen. 4-8s: Fast-cut scene 3 showing the board being easily picked up from the counter by its folded edge, leaving a clean countertop underneath. 8-10s: Short CTA showing the product with text overlay 'Upgrade your kitchen prep today.'. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.004,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.0038461538461538464,
+      "history_script_id": "stainless_steel_chopping_board-001",
+      "similarities": {
+        "hook": 0.045454545454545456,
+        "angle": 0.038461538461538464,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.2857142857142857,
+        "scene_order": 1
+      },
+      "structural_score": 0.643
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_chopping_board-004-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a person cutting fresh strawberries on a scratched, old wooden board, then taking a bite and making a grimace of disgust. 1.5-3s: A husband in a tuxedo and swim goggles slides into the frame holding the silver stainless steel chopping board with a downward-folded lip, places it on the counter, and says 'Use steel instead!'. 3-6s: Show the silver stainless steel chopping board placed on the kitchen counter, its 1cm bent lip hugging the edge, with fresh strawberries being sliced cleanly on the non-porous surface. 6-10s: Water easily rinsing away juice off the metallic board, leaving it clean. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "stainless_steel_chopping_board-004-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing fresh cucumbers being sliced on the rectangular stainless steel chopping board in a modern kitchen. 4-8s: Fast-cut scene 3 showing the board being easily picked up from the counter by its folded edge, leaving a clean countertop underneath. 8-10s: Short CTA showing the product with text overlay 'Upgrade your kitchen prep today.'. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T03:46:34.710Z"
+}
