@@ -1,0 +1,141 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-003",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-003",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Preventing family and pets from tripping on sliding rugs during active play",
+    "hook": "I was so tired of constantly straightening this rug after my dog ran over it.",
+    "structure_signature": "pet_zoomies_frustration_unboxing_flat_alignment_running_test_clean_living",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "segment_01": {
+        "voiceover": "I was so tired of constantly straightening this rug after my dog ran over it.",
+        "visual": "A Golden Retriever runs across a living room rug, causing the corner to slide and curl up. The creator shows a set of 8 flat black L-shaped stickers."
+      },
+      "segment_02": {
+        "voiceover": "But these thin L-shaped corner grippers are a game changer. You just stick them under the corners.",
+        "visual": "The creator places the flat matte black L-shaped sticker onto the underside corner of the rug, then presses it flat onto the wood floor."
+      },
+      "segment_03": {
+        "voiceover": "Now the rug stays perfectly flat and never slides. It helps keep my home safe and neat.",
+        "visual": "A person walks briskly over the rug corner; it remains completely flat and does not move. The living room looks neat."
+      },
+      "broll_coverage": {
+        "voiceover": "",
+        "visual": "Close-up of the rug corner being lifted to show the thin black L-shaped sticker underneath, then laid flat against the clean floor."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-003-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴产品。产品只参考Skill A标准参考图，保持哑光黑色、平整直角L形结构一致，不可出现蓝色图案、不可出现文字或条形码，不参考原始海报，不生成尺寸线，不生成说明文字。画面自然真实。\n\n00:00-00:00.5，中景镜头，一只金毛寻回犬在地毯上跑过，地毯边缘随之翘起并滑动。\n00:00.5-00:01.0，近景特写，地毯角折皱，旁边的平铺地面显得凌乱。\n00:01.0-00:01.5，近景特写，女主人拿出一套恰好8片装的黑色L形地毯防滑贴成品。\n00:01.5-00:03.0，特写镜头，女主人展示单片纯哑光黑色的L形防滑贴，正面无任何字样和蓝色印花。\n00:03.0-00:06.0，手部特写，将一片超薄的黑色L形防滑贴对齐贴在地毯背面角落上。\n00:06.0-00:10.0，中景镜头，地毯角平整贴合在浅色橡木地板上，防滑贴完全隐蔽在下方。\n\n同步美式英语口播：“I was so tired of constantly straightening this rug after my dog ran over it.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-003-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的防滑贴细节，保持哑光黑色、直角L形结构、超薄贴合表面的特征一致，不生成任何文字、说明线或箭头，不改变产品结构。\n\n00:00-00:03.0，俯视特写镜头，展示地毯的两个角在背面都已贴上黑色L形防滑贴，完全平整，无凸起。\n00:03.0-00:06.0，手部操作镜头，展示平缓地将贴好防滑贴的地毯边缘按压固定在坚硬的地板上。\n00:06.0-00:10.0，特写镜头，从极低视角展示地毯与地板完全咬合贴平，没有任何鼓包或多余配件。\n\n同步美式英语口播：“But these thin L-shaped corner grippers are a game changer. You just stick them under the corners.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-003-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中地毯铺设场景，防滑贴只参考Skill A标准参考图的纯黑色L形结构，保持隐蔽在地毯底部的状态，不生成任何对比说明文字。\n\n00:00-00:03.0，中景镜头，一个人在地毯上快步走过，地毯角牢牢贴在地板上，毫无移位或卷曲。\n00:03.0-00:06.0，近景镜头，展示小狗在铺平的地毯上欢快跑动，地毯边角始终平整贴地。\n00:06.0-00:10.0，中景镜头，画面移向温馨整洁的客厅，地毯平整地铺在橡木地板上，营造出安全舒适的家居环境。\n\n同步美式英语口播：“Now the rug stays perfectly flat and never slides. It helps keep my home safe and neat.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-003-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9秒9:16竖屏产品功能展示B-roll，延续家居场景与真实手机手持UGC质感。产品只参考Skill A标准参考图，保持哑光黑色直角L形结构一致，不新增未确认的扣件或配件，不生成任何字母或说明文字。\n\n00:00-00:02.0，近景镜头，一只手轻轻掀起地毯的直角边缘，露出贴在地毯背面的超薄哑光黑色L形防滑贴。\n00:02.0-00:04.0，特写镜头，镜头推近展示黑色防滑贴贴合面，极薄无厚度，纸样贴合。\n00:04.0-00:06.0，特写镜头，手将地毯放下，地毯角顺畅地恢复平整，完全贴在木地板上。\n00:06.0-00:09.0，俯视镜头，展示铺设平整的地毯四角，整洁美观。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微操作声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "9",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.015,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.015,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-001",
+      "similarities": {
+        "hook": 0.125,
+        "angle": 0.15,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-003-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴产品。产品只参考Skill A标准参考图，保持哑光黑色、平整直角L形结构一致，不可出现蓝色图案、不可出现文字或条形码，不参考原始海报，不生成尺寸线，不生成说明文字。画面自然真实。\n\n00:00-00:00.5，中景镜头，一只金毛寻回犬在地毯上跑过，地毯边缘随之翘起并滑动。\n00:00.5-00:01.0，近景特写，地毯角折皱，旁边的平铺地面显得凌乱。\n00:01.0-00:01.5，近景特写，女主人拿出一套恰好8片装的黑色L形地毯防滑贴成品。\n00:01.5-00:03.0，特写镜头，女主人展示单片纯哑光黑色的L形防滑贴，正面无任何字样和蓝色印花。\n00:03.0-00:06.0，手部特写，将一片超薄的黑色L形防滑贴对齐贴在地毯背面角落上。\n00:06.0-00:10.0，中景镜头，地毯角平整贴合在浅色橡木地板上，防滑贴完全隐蔽在下方。\n\n同步美式英语口播：“I was so tired of constantly straightening this rug after my dog ran over it.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-003-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的防滑贴细节，保持哑光黑色、直角L形结构、超薄贴合表面的特征一致，不生成任何文字、说明线或箭头，不改变产品结构。\n\n00:00-00:03.0，俯视特写镜头，展示地毯的两个角在背面都已贴上黑色L形防滑贴，完全平整，无凸起。\n00:03.0-00:06.0，手部操作镜头，展示平缓地将贴好防滑贴的地毯边缘按压固定在坚硬的地板上。\n00:06.0-00:10.0，特写镜头，从极低视角展示地毯与地板完全咬合贴平，没有任何鼓包或多余配件。\n\n同步美式英语口播：“But these thin L-shaped corner grippers are a game changer. You just stick them under the corners.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-003-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中地毯铺设场景，防滑贴只参考Skill A标准参考图的纯黑色L形结构，保持隐蔽在地毯底部的状态，不生成任何对比说明文字。\n\n00:00-00:03.0，中景镜头，一个人在地毯上快步走过，地毯角牢牢贴在地板上，毫无移位或卷曲。\n00:03.0-00:06.0，近景镜头，展示小狗在铺平的地毯上欢快跑动，地毯边角始终平整贴地。\n00:06.0-00:10.0，中景镜头，画面移向温馨整洁的客厅，地毯平整地铺在橡木地板上，营造出安全舒适的家居环境。\n\n同步美式英语口播：“Now the rug stays perfectly flat and never slides. It helps keep my home safe and neat.”\n保留自然环境声、轻微产品声音和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-003-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的画面）\n\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9秒9:16竖屏产品功能展示B-roll，延续家居场景与真实手机手持UGC质感。产品只参考Skill A标准参考图，保持哑光黑色直角L形结构一致，不新增未确认的扣件或配件，不生成任何字母或说明文字。\n\n00:00-00:02.0，近景镜头，一只手轻轻掀起地毯的直角边缘，露出贴在地毯背面的超薄哑光黑色L形防滑贴。\n00:02.0-00:04.0，特写镜头，镜头推近展示黑色防滑贴贴合面，极薄无厚度，纸样贴合。\n00:04.0-00:06.0，特写镜头，手将地毯放下，地毯角顺畅地恢复平整，完全贴在木地板上。\n00:06.0-00:09.0，俯视镜头，展示铺设平整的地毯四角，整洁美观。\n\n不需要同步口播，不展示完整口型表演。保留自然环境声、轻微操作声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "9",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T08:56:19.609Z"
+}
