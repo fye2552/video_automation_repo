@@ -1,0 +1,96 @@
+{
+  "script_id": "stainless_steel_chopping_board-001",
+  "product_id": "stainless_steel_chopping_board",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_chopping_board",
+  "product_folder": "products/stainless_steel_chopping_board",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "stainless_steel_chopping_board-001",
+    "product_id": "stainless_steel_chopping_board",
+    "angle": "Durable and hygienic alternative to moldy, high-maintenance wooden boards",
+    "hook": "Stop using wooden cutting boards that trap mold and bacteria.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "visual": "0-3s: Close-up of a damp, stained wooden chopping board on a kitchen counter with visible surface cracks. 3-6s: A clean, silver stainless steel chopping board is placed flat on the counter, with its 1 cm downward-folded lip hooking securely over the front edge. 6-10s: Slicing fresh tomatoes quickly on the smooth, brushed metal surface. Handheld phone-shot style.",
+        "audio": "Tired of wooden boards trapping stains and mold? Upgrade to a clean, durable solution. This stainless steel board sits securely on your counter and keeps prep completely hygienic."
+      },
+      "video_001_part_02": {
+        "visual": "0-4s: Slicing raw beef on the clean metallic surface. 4-8s: Rinsing the board effortlessly under the tap in a sink, showing food washing clean immediately. 8-10s: The clean board set neatly on a modern kitchen counter with text overlay: 'Upgrade your kitchen prep today.'",
+        "audio": "It does not absorb odor, resists scratches, and washes clean in seconds. Make the smart kitchen upgrade today."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_chopping_board-001-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot (9:16). Timeline: 0-3s: Show a real-life pain conflict with a close-up of a damp, cracked, moldy wooden cutting board on a countertop. 3-6s: Introduce the product solution: a sleek silver stainless steel chopping board placed on the counter. It has rounded corners, a slim rigid profile, and one long edge bent downward into a 1 cm folded lip that hooks over the counter edge. 6-10s: Fast-cut scene 1 showing a chef's knife slicing fresh red tomatoes smoothly on the brushed metal surface. No handles, grooves, or feet. Do not show CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "stainless_steel_chopping_board-001-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot (9:16). Continuation of part 1. Keep identical product identity: silver metallic rectangular board with rounded corners and the 1 cm downward-folded lip. Timeline: 0-4s: Fast-cut scene 2 showing raw meat being sliced on the metallic surface without staining or absorbing odors. 4-8s: Fast-cut scene 3 showing a close-up of the board being rinsed under running water in a sink, cleaning instantly. 8-10s: Light CTA with text overlay: 'Upgrade your kitchen prep today.' next to the clean board.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {
+        "hook": 0,
+        "angle": 0,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_chopping_board-001-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot (9:16). Timeline: 0-3s: Show a real-life pain conflict with a close-up of a damp, cracked, moldy wooden cutting board on a countertop. 3-6s: Introduce the product solution: a sleek silver stainless steel chopping board placed on the counter. It has rounded corners, a slim rigid profile, and one long edge bent downward into a 1 cm folded lip that hooks over the counter edge. 6-10s: Fast-cut scene 1 showing a chef's knife slicing fresh red tomatoes smoothly on the brushed metal surface. No handles, grooves, or feet. Do not show CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "stainless_steel_chopping_board-001-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot (9:16). Continuation of part 1. Keep identical product identity: silver metallic rectangular board with rounded corners and the 1 cm downward-folded lip. Timeline: 0-4s: Fast-cut scene 2 showing raw meat being sliced on the metallic surface without staining or absorbing odors. 4-8s: Fast-cut scene 3 showing a close-up of the board being rinsed under running water in a sink, cleaning instantly. 8-10s: Light CTA with text overlay: 'Upgrade your kitchen prep today.' next to the clean board.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-07-31T02:12:51.262Z"
+}
