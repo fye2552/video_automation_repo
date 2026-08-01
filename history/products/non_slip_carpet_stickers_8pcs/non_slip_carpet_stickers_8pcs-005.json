@@ -1,0 +1,87 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-005",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-005",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Preventing door-blocking rug bunching and corner curling using thin flat L-shaped grippers",
+    "hook": "POV of opening a door that jams on a curled, sliding rug corner",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style TikTok ad video. Timeline: 0-3s Pain conflict: POV opening a wooden door that jams and bunches up a curled area rug corner on a light oak floor. 3-6s Solution: A hand applies a thin matte black flat L-shaped sticker (exactly 90-degree corner, clipped tips, flat polymer profile, no logos) to the underside corner of the rug and presses it down flat. 6-10s Fast-cut scene 1: The door swings wide open smoothly over the completely flat, unmoving rug. Product must stay flat, matte black, ultra-thin, no packaging patterns or temporary blue text.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style TikTok ad video continuing the previous segment. Timeline: 0-4s Fast-cut scene 2: A foot steps firmly on a dining room rug corner on hardwood floor, rug stays completely still. 4-8s Fast-cut scene 3: Close-up showing a rug corner lifted slightly to reveal the ultra-thin, flat matte black L-shaped sticker underneath, then laid back down perfectly flush. 8-10s CTA: Short text on screen reading 'Keep your rugs flat and secure.' Ensure identical product color, matte black material, L-shape, flat profile, and oak floor style. No visible logos or temporary blue prints.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.056,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.05625,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-001",
+      "similarities": {
+        "hook": 0.4117647058823529,
+        "angle": 0.5625,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style TikTok ad video. Timeline: 0-3s Pain conflict: POV opening a wooden door that jams and bunches up a curled area rug corner on a light oak floor. 3-6s Solution: A hand applies a thin matte black flat L-shaped sticker (exactly 90-degree corner, clipped tips, flat polymer profile, no logos) to the underside corner of the rug and presses it down flat. 6-10s Fast-cut scene 1: The door swings wide open smoothly over the completely flat, unmoving rug. Product must stay flat, matte black, ultra-thin, no packaging patterns or temporary blue text.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style TikTok ad video continuing the previous segment. Timeline: 0-4s Fast-cut scene 2: A foot steps firmly on a dining room rug corner on hardwood floor, rug stays completely still. 4-8s Fast-cut scene 3: Close-up showing a rug corner lifted slightly to reveal the ultra-thin, flat matte black L-shaped sticker underneath, then laid back down perfectly flush. 8-10s CTA: Short text on screen reading 'Keep your rugs flat and secure.' Ensure identical product color, matte black material, L-shape, flat profile, and oak floor style. No visible logos or temporary blue prints.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-01T02:41:38.295Z"
+}
