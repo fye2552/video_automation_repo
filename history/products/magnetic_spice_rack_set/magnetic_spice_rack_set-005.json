@@ -1,0 +1,96 @@
+{
+  "script_id": "magnetic_spice_rack_set-005",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-005",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Optimizing a cramped home coffee bar station by mounting accessories on the side of a metal espresso machine or mini-fridge",
+    "hook": "Stop knocking over your coffee syrups and mugs every morning on your crowded coffee cart.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time_range": "0-10s",
+        "description": "Show messy coffee cart clutter and knocking a cup over, then snap the rack on the metal machine side and organize bottles, demonstrating strong hold."
+      },
+      "video_001_part_02": {
+        "time_range": "10-20s",
+        "description": "Hang tools on the bottom hooks, show the clean dual-rack layout, and display a light CTA text overlay."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Close-up of a messy home coffee bar. A hand reaches for a coffee syrup bottle and knocks over a ceramic mug. 3-6s: Hand snaps a matte black rectangular carbon steel rack onto the side of a metal espresso machine. It sticks instantly. 6-10s: Close-up of the rack holding heavy bottles firmly, matching the exact shape, lower front wall, high back plate, and matte black finish of the reference image. No CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video continuing the previous segment. Realistic handheld phone-shot style. Timeline: 0-4s: Close-up of the bottom edge of the matte black metal rack. Hand hangs a coffee scoop on one of the detachable metal hooks. 4-8s: Camera pans out showing two identical racks stacked on the side of the metal machine, keeping the countertop completely clean. 8-10s: Clean text overlay appears: 'Upgrade your coffee corner today.' Keep visual style and product identity identical to part 1.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.022,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.021875000000000002,
+      "history_script_id": "magnetic_spice_rack_set-003",
+      "similarities": {
+        "hook": 0.08,
+        "angle": 0.21875,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Close-up of a messy home coffee bar. A hand reaches for a coffee syrup bottle and knocks over a ceramic mug. 3-6s: Hand snaps a matte black rectangular carbon steel rack onto the side of a metal espresso machine. It sticks instantly. 6-10s: Close-up of the rack holding heavy bottles firmly, matching the exact shape, lower front wall, high back plate, and matte black finish of the reference image. No CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video continuing the previous segment. Realistic handheld phone-shot style. Timeline: 0-4s: Close-up of the bottom edge of the matte black metal rack. Hand hangs a coffee scoop on one of the detachable metal hooks. 4-8s: Camera pans out showing two identical racks stacked on the side of the metal machine, keeping the countertop completely clean. 8-10s: Clean text overlay appears: 'Upgrade your coffee corner today.' Keep visual style and product identity identical to part 1.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-01T02:40:18.419Z"
+}
