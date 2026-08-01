@@ -1,0 +1,66 @@
+{
+  "script_id": "stainless_steel_chopping_board-007",
+  "product_id": "stainless_steel_chopping_board",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/stainless_steel_chopping_board",
+  "product_folder": "products/stainless_steel_chopping_board",
+  "selected_script": {
+    "script_id": "stainless_steel_chopping_board-007",
+    "product_id": "stainless_steel_chopping_board",
+    "angle": "Preparing acidic citrus fruits on a non-reactive, non-staining surface that rinses completely clean under running water.",
+    "hook": "Slicing lemons on a non-reactive metal surface that leaves zero fruit juice stains or residue.",
+    "structure_signature": "pov_two_scene_citrus_prep_rinse",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "stainless_steel_chopping_board-007-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持银色不锈钢矩形菜板不变，外形为扁平矩形且带圆角，其中一个长边有向下垂直折弯1厘米的挂边，表面平滑无把手、无凹槽、无防滑脚。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看厨房大理石台面，不锈钢菜板的下折挂边紧扣在台面边缘。一只手扶着柠檬，另一只手拿刀在平滑的银色金属板面上切柠檬片，切出两片，板面有少许柠檬汁残留。4.0秒时，切毕，手掌轻推菜板表面一次，菜板挂边卡紧台面无任何位移。伴随切柠檬的真实声音与厨房环境音。\n\n5.0sec-10.0sec\n硬切到水槽近景。第一人称双手拿起这块带折弯挂边的不锈钢菜板，在水龙头下用清水连续冲洗表面。水流拂过，残存的柠檬汁和碎屑瞬间被冲净，水面光洁无痕。9.0秒时冲洗完毕，单手拿一块干净的白色抹布从左到右划过菜板表面，抹布没有任何发黄变色残留。伴随水流冲刷声。\n\n全局限制：全程保持同一块不锈钢菜板，包括其独特的1厘米向下折边和圆角；不出现多余刀具、重度脏污、血迹、起泡特效、第二只菜板、把手、悬挂孔；无背景音乐、无文字提示。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.013,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.013333333333333334,
+      "history_script_id": "stainless_steel_chopping_board-004",
+      "similarities": {
+        "hook": 0.03571428571428571,
+        "angle": 0.13333333333333333,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "stainless_steel_chopping_board-007-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/stainless_steel_chopping_board/images/product_function.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作所需的双手、部分前臂、产品和当前工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持银色不锈钢矩形菜板不变，外形为扁平矩形且带圆角，其中一个长边有向下垂直折弯1厘米的挂边，表面平滑无把手、无凹槽、无防滑脚。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音和产品实际使用声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角俯看厨房大理石台面，不锈钢菜板的下折挂边紧扣在台面边缘。一只手扶着柠檬，另一只手拿刀在平滑的银色金属板面上切柠檬片，切出两片，板面有少许柠檬汁残留。4.0秒时，切毕，手掌轻推菜板表面一次，菜板挂边卡紧台面无任何位移。伴随切柠檬的真实声音与厨房环境音。\n\n5.0sec-10.0sec\n硬切到水槽近景。第一人称双手拿起这块带折弯挂边的不锈钢菜板，在水龙头下用清水连续冲洗表面。水流拂过，残存的柠檬汁和碎屑瞬间被冲净，水面光洁无痕。9.0秒时冲洗完毕，单手拿一块干净的白色抹布从左到右划过菜板表面，抹布没有任何发黄变色残留。伴随水流冲刷声。\n\n全局限制：全程保持同一块不锈钢菜板，包括其独特的1厘米向下折边和圆角；不出现多余刀具、重度脏污、血迹、起泡特效、第二只菜板、把手、悬挂孔；无背景音乐、无文字提示。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-01T04:03:51.535Z"
+}
