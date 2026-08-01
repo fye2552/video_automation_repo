@@ -1,0 +1,69 @@
+{
+  "script_id": "magnetic_spice_rack_set-006",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-006",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Maximizing refrigerator side-space to organize spice jars and cooking utensils for immediate prep-zone access",
+    "hook": "First-person perspective of organizing cooking spices and utensils directly on the refrigerator side wall",
+    "structure_signature": "g_pov_two_scene_workflow",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "description": "First-person POV two-scene product usage video showing magnetic attachment and hook functionality on a refrigerator side wall."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-006-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+        "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅灰色袖口的前臂、产品和冰箱侧面工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色碳钢材质、带有高后板和低前挡板的矩形金属托盘结构、底部悬挂可拆卸金属挂钩]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、磁吸撞击声、物品放置声和金属挂钩碰撞声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角看着冰箱侧面金属壁，双手拿着哑光黑色磁吸架贴向冰箱壁，架子瞬间牢固吸附并发出清脆的吸附声；随后迅速将两罐玻璃调料瓶放入托盘内；4.2秒时，右手食指轻拉托盘前沿边缘一次，磁吸架紧贴冰箱壁稳固不动。保留清脆的磁吸声与玻璃瓶碰撞声。\n\n5.0sec-10.0sec\n直接硬切到吸附在冰箱侧面的同一款磁吸架，第一人称右手拿出一只黑色隔热手套和一把金属打蛋器，分别挂在托盘底部的两个可拆卸金属挂钩上；9.0秒时，手指轻触悬挂的手套使其轻微晃动，挂钩与磁吸架依然保持稳固不移位。保留挂钩轻微金属碰撞声。\n\n全局限制：[两段均保持同一只哑光黑色矩形金属架，高后板、低前挡板、平底、敞口敞侧、底部带拆卸挂钩；不得出现第二只架子、不可拆卸固定孔、吸盘、发光特效、文字标签、水印、使用者脸部、第三人称机位、额外手部和人工转场音效]。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.013,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.012903225806451613,
+      "history_script_id": "magnetic_spice_rack_set-004",
+      "similarities": {
+        "hook": 0.125,
+        "angle": 0.12903225806451613,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.07692307692307693,
+        "scene_order": 0.5
+      },
+      "structural_score": 0.288
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-006-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+      "promptText": "video_generation_prompt:\n\n时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现一双自然肤色的手、浅灰色袖口的前臂、产品和冰箱侧面工作区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只产品，严格保持[哑光黑色碳钢材质、带有高后板和低前挡板的矩形金属托盘结构、底部悬挂可拆卸金属挂钩]不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、磁吸撞击声、物品放置声和金属挂钩碰撞声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称视角看着冰箱侧面金属壁，双手拿着哑光黑色磁吸架贴向冰箱壁，架子瞬间牢固吸附并发出清脆的吸附声；随后迅速将两罐玻璃调料瓶放入托盘内；4.2秒时，右手食指轻拉托盘前沿边缘一次，磁吸架紧贴冰箱壁稳固不动。保留清脆的磁吸声与玻璃瓶碰撞声。\n\n5.0sec-10.0sec\n直接硬切到吸附在冰箱侧面的同一款磁吸架，第一人称右手拿出一只黑色隔热手套和一把金属打蛋器，分别挂在托盘底部的两个可拆卸金属挂钩上；9.0秒时，手指轻触悬挂的手套使其轻微晃动，挂钩与磁吸架依然保持稳固不移位。保留挂钩轻微金属碰撞声。\n\n全局限制：[两段均保持同一只哑光黑色矩形金属架，高后板、低前挡板、平底、敞口敞侧、底部带拆卸挂钩；不得出现第二只架子、不可拆卸固定孔、吸盘、发光特效、文字标签、水印、使用者脸部、第三人称机位、额外手部和人工转场音效]。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-01T04:01:39.443Z"
+}
