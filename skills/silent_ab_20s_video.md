@@ -17,8 +17,33 @@ Read the supplied product YAML and inspect the supplied reference images before 
 
 - Treat `instructions_for_use`, `must_keep`, `must_avoid`, and visible product details as authoritative.
 - Use only confirmed physical actions. If a mechanism, direction, or state change is not confirmed, replace it with a neutral product display.
+- Treat the reference image's **apparent product size and aspect ratio** as authoritative. If the YAML lists multiple purchasable sizes, do not select or state a centimetre/inch measurement unless the user explicitly selects that variant.
 - Choose one public reference image URL per job. Prefer a natural lifestyle image for A and the clearest functional image for B. Never concatenate multiple URLs.
-- Preserve product colour, shape, proportions, material, distinctive parts, and confirmed state rules.
+- Preserve product colour, shape, proportions, material, distinctive parts, confirmed state rules, and physical scale.
+
+## Lock physical size and scale
+
+Before writing either prompt, create an internal `product_scale_lock` from the supplied reference image:
+
+```json
+{
+  "reference_size_mode": "apparent_size_and_aspect_ratio",
+  "absolute_dimension_claim": "not_used",
+  "approved_scale_anchors": ["adult_hand", "confirmed_use_object", "work_surface"],
+  "cross_job_rule": "same product width, depth, thickness, and key-part scale in A and B"
+}
+```
+
+Use only anchors that are natural to the verified scene. For example: adult hands, a confirmed knife, a confirmed food item, a shelf compartment, a drawer opening, a car cup holder, or a countertop. Do not invent an anchor just to specify scale.
+
+Every A and B prompt must contain one compact physical-scale lock sentence that:
+
+- keeps the reference image's apparent width-to-depth ratio and thickness;
+- keeps key visible parts at the same relative scale;
+- keeps the product's size consistent relative to approved anchors in all time blocks;
+- forbids shrinking, enlarging, stretching, flattening, or changing the product into another category.
+
+Do not use an unsupported exact dimension. Do not use vague size words such as `oversized`, `mini`, `large`, or `small` unless the chosen reference image and user request make that comparison unambiguous.
 
 ## Build the two jobs
 
@@ -30,6 +55,7 @@ Generate A as one video, never two five-second jobs.
 - `5.0-10.0s`: show the same creator using or living with the product naturally; reserve detailed product operation for B.
 - Lock continuity explicitly: same adult creator, face, hair, wardrobe, room, camera height, lens feeling, and lighting in both time blocks.
 - Use a wider handheld lifestyle frame. Allow mild natural movement only.
+- When the product appears in A, apply the same `product_scale_lock` used in B. Creator continuity never permits the product to change scale between A's two time blocks.
 
 ### Job B: product proof, 10 seconds
 
@@ -39,6 +65,7 @@ Keep B product-led. Show only hands if a confirmed action requires them; do not 
 - `3.5-7.0s`: one visible value proof supported by the product evidence.
 - `7.0-10.0s`: stable complete-product hero view; do not introduce another function.
 - Use a stable close product camera. Limit B to two real hand actions in total.
+- Use the approved scale anchors in the close product composition, so a camera-angle change cannot make the product look like a different size.
 
 ## Enforce visual-only deduplication
 
@@ -56,7 +83,8 @@ Create one `visual_fingerprint` for every plan:
   "b_value_proof_id": "tool_stays_off_floor",
   "b_hero_angle_id": "three_quarter_closeup",
   "prop_variant_id": "wood_handle_broom",
-  "hand_style_id": "right_hand_front_approach"
+  "hand_style_id": "right_hand_front_approach",
+  "product_scale_lock_id": "reference_ratio_hand_prop_counter"
 }
 ```
 
@@ -67,6 +95,7 @@ Compare this fingerprint with the supplied product history. Use the following ha
 3. Compared with each of the latest five accepted videos, change at least two B fields from `b_core_action_id`, `b_value_proof_id`, `b_hero_angle_id`, `prop_variant_id`, and `hand_style_id`.
 4. If a product has only one safe core operation, keep that operation but change at least three of environment, A camera, A ending, B proof, B hero angle, prop variant, and hand style.
 5. Never invent an action solely to make the fingerprint different.
+6. `product_scale_lock_id` is an identity constraint, not a de-duplication variable. Do not change product scale to create a visually different video.
 
 Vary only verified, visually meaningful elements:
 
@@ -86,6 +115,7 @@ Write compact English prompt text, normally 120-220 words per job.
 - Begin with `Create one 10-second vertical 9:16 realistic ... video.`
 - State exact time blocks before general style rules.
 - Describe observable movement and the final physical state.
+- Include one short `Physical scale lock:` sentence using the reference aspect ratio and only verified scene anchors.
 - State only required exclusions, including `no dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark`.
 - Request natural ambient sound and real product-use sounds only. Do not request a voice, spoken CTA, background music, readable labels, or audio synchronization.
 
@@ -101,6 +131,12 @@ Return valid JSON only with one `selected_script` object:
     "silent_video": true,
     "opening_visual": "<visible A opening only>",
     "visual_fingerprint": {},
+    "product_scale_lock": {
+      "reference_size_mode": "apparent_size_and_aspect_ratio",
+      "absolute_dimension_claim": "not_used",
+      "approved_scale_anchors": [],
+      "cross_job_rule": "same product width, depth, thickness, and key-part scale in A and B"
+    },
     "deduplication_check": {
       "history_checked": true,
       "exact_match": false,
@@ -146,6 +182,8 @@ Return valid JSON only with one `selected_script` object:
 - Confirm A contains both five-second blocks in one prompt.
 - Confirm B contains 3.5s, 3.5s, and 3s blocks.
 - Confirm all actions and product states are supported by evidence.
+- Confirm both prompts contain the same evidence-based physical-scale lock and do not state an unconfirmed exact product dimension.
+- Confirm product scale is not used as a de-duplication variable.
 - Confirm each job uses one image URL only.
 - Confirm each prompt requests natural ambience and product-use sound only, with no dialogue, narration, background music, or text.
 - Reject a plan that fails the visual fingerprint rules instead of silently reusing a prior composition.
