@@ -9,7 +9,7 @@ Create a silent vertical product ad with this fixed edit order:
 
 `A[0-5s] + B[0-10s] + A[5-10s] = 20s`
 
-Generate exactly two independent 10-second image-to-video jobs. Do not generate or request dialogue, narration, captions, lip-sync, text overlays, UI, or a spoken CTA.
+Generate exactly two independent 10-second image-to-video jobs. Do not generate or request dialogue, narration, captions, lip-sync, text overlays, UI, a spoken CTA, or background music. Keep natural room ambience and genuine product-use sounds in both videos.
 
 ## Read the product evidence
 
@@ -87,7 +87,7 @@ Write compact English prompt text, normally 120-220 words per job.
 - State exact time blocks before general style rules.
 - Describe observable movement and the final physical state.
 - State only required exclusions, including `no dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark`.
-- Do not request a voice, spoken CTA, readable labels, or audio synchronization.
+- Request natural ambient sound and real product-use sounds only. Do not request a voice, spoken CTA, background music, readable labels, or audio synchronization.
 
 ## Return shape
 
@@ -131,7 +131,8 @@ Return valid JSON only with one `selected_script` object:
       "input_order": ["video_A", "video_B", "video_A"],
       "source_ranges": ["0-5", "0-10", "5-10"],
       "output_duration_seconds": 20,
-      "video_only": true,
+      "video_only": false,
+      "preserve_source_audio": true,
       "ffmpeg_required_after_download": true,
       "output_file_name": "final_20s.mp4"
     }
@@ -146,9 +147,9 @@ Return valid JSON only with one `selected_script` object:
 - Confirm B contains 3.5s, 3.5s, and 3s blocks.
 - Confirm all actions and product states are supported by evidence.
 - Confirm each job uses one image URL only.
-- Confirm no audio or text request appears in either prompt.
+- Confirm each prompt requests natural ambience and product-use sound only, with no dialogue, narration, background music, or text.
 - Reject a plan that fails the visual fingerprint rules instead of silently reusing a prior composition.
 
 ## Assembly
 
-After both jobs are downloaded, the local Worker trims A into `0-5s` and `5-10s`, keeps all of B, then concatenates `A_head + B_full + A_tail` with FFmpeg. Normalize video settings before concatenation. Do not add audio in this skill.
+After both jobs are downloaded, the local Worker trims the original video **and audio** tracks into A `0-5s`, B `0-10s`, and A `5-10s`, then concatenates `A_head + B_full + A_tail` with FFmpeg. Preserve only each source clip's natural ambience and product-use sounds; do not add narration, background music, or a new audio track. If either source video has no audio stream, stop and report it instead of silently exporting a mute final video.
