@@ -1,0 +1,95 @@
+{
+  "script_id": "magnetic_spice_rack_set-011",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-011",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Organizing laundry detergent containers and hanging lint brushes on the metal side of a clothes dryer",
+    "hook": "Stop cluttering your laundry shelves when you have a massive unused metal surface on your dryer",
+    "structure_signature": "g_pov_two_scene_workflow",
+    "scene_order": [
+      "scene_01",
+      "scene_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "scene_01": {
+        "video": "0.0sec-5.0sec\n第一人称视角在洗衣房内，双手托住一个空置的哑光黑色金属置物架，水平贴合在白色金属干衣机的侧面，置物架因强磁力吸附瞬间牢固固定在金属侧板上。4.0秒后，右手轻拉置物架前挡板，架体牢固吸附，纹丝不动。保留金属吸附和轻拉的真实碰撞声。",
+        "audio": "金属吸附碰击声，轻拉金属声，洗衣房背景环境音"
+      },
+      "scene_02": {
+        "video": "5.0sec-10.0sec\n直接硬切到同一置物架近景，架内已放有洗衣液瓶，第一人称右手拿取一柄白色长柄衣物刷，将其手柄挂绳挂在置物架底部的哑光黑色挂钩上。9.0秒前挂好；最后1秒，右手食指轻触悬挂的衣物刷，刷子轻微摇晃但挂钩牢固稳定。保留挂绳与金属挂钩碰撞和干衣机运转的低沉环境声。",
+        "audio": "挂绳与金属钩碰撞声，干衣机运转声"
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-011-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+        "promptText": "时长：5秒，比例：9:16。第一人称主观视角，在洗衣房里，双手托住一个空置的哑光黑色矩形金属置物架（具有高后板和低前挡板），水平贴合在白色干衣机的金属侧面，瞬间吸附牢固。4.0秒后，一只手轻轻拉动前挡板测试稳固度，置物架保持不动。无任何露脸，无字幕，手机原生UGC画质。",
+        "duration": "5",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-011-scene-02",
+        "scene_id": "scene_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+        "promptText": "时长：5秒，比例：9:16。第一人称主观视角，近景特写吸附在白色干衣机侧面的哑光黑色金属置物架，里面放着整齐的洗衣液。一只手拿取一把长柄衣物刷，将其挂绳挂在置物架底部的可拆卸挂钩上。挂好后，食指轻轻碰一下刷子，刷子轻微摇晃，挂钩极其稳固。无任何露脸，无字幕，手机原生UGC画质。",
+        "duration": "5",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.032,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.032,
+      "history_script_id": "magnetic_spice_rack_set-010",
+      "similarities": {
+        "hook": 0.30434782608695654,
+        "angle": 0.32,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-011-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+      "promptText": "时长：5秒，比例：9:16。第一人称主观视角，在洗衣房里，双手托住一个空置的哑光黑色矩形金属置物架（具有高后板和低前挡板），水平贴合在白色干衣机的金属侧面，瞬间吸附牢固。4.0秒后，一只手轻轻拉动前挡板测试稳固度，置物架保持不动。无任何露脸，无字幕，手机原生UGC画质。",
+      "duration": "5",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-011-scene-02",
+      "scene_id": "scene_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+      "promptText": "时长：5秒，比例：9:16。第一人称主观视角，近景特写吸附在白色干衣机侧面的哑光黑色金属置物架，里面放着整齐的洗衣液。一只手拿取一把长柄衣物刷，将其挂绳挂在置物架底部的可拆卸挂钩上。挂好后，食指轻轻碰一下刷子，刷子轻微摇晃，挂钩极其稳固。无任何露脸，无字幕，手机原生UGC画质。",
+      "duration": "5",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T07:20:40.642Z"
+}
