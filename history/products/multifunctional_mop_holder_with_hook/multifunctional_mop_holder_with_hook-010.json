@@ -1,0 +1,94 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-010",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-010",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Instantly accessing cleaning tools during kitchen spills by replacing dark closet clutter with organized tile-mounted storage",
+    "hook": "When a spill happens, the last thing you need is a chaotic search through a messy closet pile.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "0-3s": "A messy liquid spill on the kitchen floor with a frantic search in a cluttered, dark utility closet full of tangled, falling mops.",
+      "3-6s": "A clean, bright laundry room wall where a mop handle is pushed easily into the white silicone roller clip of a light gray wall-mounted holder, instantly securing it.",
+      "6-10s": "Close-up of a hand inserting another broom handle into a neighboring clamp, showcasing the secure holding mechanism.",
+      "10-14s": "Detail shot of spray bottles and cleaning cloths hanging neatly from the light gray J-hooks beneath the holder.",
+      "14-18s": "A wider shot showing the complete 5-clip, 5-hook organization system mounted on tile, holding all tools cleanly off the floor.",
+      "18-20s": "Light overlay text showing: 'Upgrade your home organization today.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-010-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. 0-3s: A liquid spill happens on a kitchen floor. A person panics and searches in a dark closet where mops and brooms are piled on top of each other, sliding and falling down. 3-6s: Introduce the wall-mounted Multifunctional Mop Holder with Hook (light gray plastic bar, white roller clips, 5 slots, 5 J-hooks) mounted on a light gray tile wall. A hand easily pushes a wet mop handle into a central white silicone roller clip, gripping it securely. 6-10s: Close-up showing another broom handle being clicked into the next slot. Maintain high product detail consistency: light-gray body, white silicone rollers, gray J-hooks, smooth matte plastic texture.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-010-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, continuing from the previous segment. Realistic handheld phone-shot style. 0-4s: Close-up of small cleaning accessories (a spray bottle and a microfiber cloth) hanging from the gray J-hooks beneath the mop holder. 4-8s: Medium shot showing the entire light-gray wall-mounted bar with 5 slots and 5 hooks holding various cleaning tools organized vertically on the tiled wall, keeping the floor completely clear. 8-10s: A light CTA on screen: 'Upgrade your home organization today.' Keep identical product identity: light gray housing, white silicone rollers, gray J-hooks, no screws visible.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.018,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.01785714285714286,
+      "history_script_id": "multifunctional_mop_holder_with_hook-005",
+      "similarities": {
+        "hook": 0.058823529411764705,
+        "angle": 0.17857142857142858,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-010-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video. Realistic handheld phone-shot style. 0-3s: A liquid spill happens on a kitchen floor. A person panics and searches in a dark closet where mops and brooms are piled on top of each other, sliding and falling down. 3-6s: Introduce the wall-mounted Multifunctional Mop Holder with Hook (light gray plastic bar, white roller clips, 5 slots, 5 J-hooks) mounted on a light gray tile wall. A hand easily pushes a wet mop handle into a central white silicone roller clip, gripping it securely. 6-10s: Close-up showing another broom handle being clicked into the next slot. Maintain high product detail consistency: light-gray body, white silicone rollers, gray J-hooks, smooth matte plastic texture.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-010-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, continuing from the previous segment. Realistic handheld phone-shot style. 0-4s: Close-up of small cleaning accessories (a spray bottle and a microfiber cloth) hanging from the gray J-hooks beneath the mop holder. 4-8s: Medium shot showing the entire light-gray wall-mounted bar with 5 slots and 5 hooks holding various cleaning tools organized vertically on the tiled wall, keeping the floor completely clear. 8-10s: A light CTA on screen: 'Upgrade your home organization today.' Keep identical product identity: light gray housing, white silicone rollers, gray J-hooks, no screws visible.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T05:39:20.810Z"
+}
