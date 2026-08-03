@@ -1,0 +1,101 @@
+{
+  "script_id": "ultrean_paper_towel_spray_stand-010",
+  "product_id": "ultrean_paper_towel_spray_stand",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/ultrean_paper_towel_spray_stand",
+  "product_folder": "products/ultrean_paper_towel_spray_stand",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "ultrean_paper_towel_spray_stand-010",
+    "product_id": "ultrean_paper_towel_spray_stand",
+    "angle": "Targeting the frustration of contaminating the entire paper towel roll with greasy hands while struggling with a sliding, lightweight stand and separate spray bottles.",
+    "hook": "Stop using two dirty hands and a sliding stand just to tear one paper towel.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_[]": []
+    },
+    "script_record": {
+      "video_id": "video_001",
+      "total_duration": 20,
+      "aspect_ratio": "9:16",
+      "language": "English",
+      "style": "pain_conflict_fast_cut",
+      "timeline": {
+        "0-3s": "A hand covered in kitchen oil struggles to tear a sheet from a flimsy paper towel holder, making the stand slip and contaminating the whole roll.",
+        "3-6s": "The Ultrean matte black stand is introduced; a hand easily tears a sheet one-handed using the tension arm, while the heavy base stays anchored.",
+        "6-10s": "The hand presses the top One-Push Lock button on the matte black rod, pulling out the integrated spray bottle, briefly revealing its clear reservoir.",
+        "10-14s": "Close-up of the spray bottle nozzle spraying a fine cleaning mist onto a greasy countertop spill.",
+        "14-18s": "A clean paper towel wiping the counter spotless, leaving the sleek matte black stand standing perfectly in place.",
+        "18-20s": "Short visual CTA text: Upgrade your kitchen cleanup setup today."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-010-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. Timeline: 0-3s: Show a close-up of a kitchen counter where a hand covered in cooking grease struggles to tear a sheet from a cheap plastic holder, causing the holder to slide around and ruin the roll. 3-6s: The matte black Ultrean Paper Towel Stand is shown; a hand easily tears a single sheet one-handed using the angled tension arm, while the 2.65lb weighted base stays completely still. 6-10s: The user pushes the button on top of the black rod and pulls out the hidden spray bottle, showing the clear reservoir. Do not start with a perfect product shot. Do not end with a CTA. The assembled stand must look completely solid matte black with no transparent parts visible. Use the provided product reference images to maintain product color, shape, and structure.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-010-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_function.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style, continuing the exact style and product identity of the first segment. Timeline: 0-4s: Close-up of the removed spray bottle spraying a fine mist directly onto a greasy countertop spill. 4-8s: A hand wipes the counter completely clean with a paper towel, with the solid matte black stand sitting in the background. 8-10s: Display a clean, minimal text overlay: 'Upgrade your kitchen cleanup setup today.' Maintain identical product details, colors, matte metal textures, and kitchen environment. Use the provided reference images to ensure consistent product identity.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.019,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.018604651162790697,
+      "history_script_id": "ultrean_paper_towel_spray_stand-005",
+      "similarities": {
+        "hook": 0.07407407407407407,
+        "angle": 0.18604651162790697,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-010-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. Timeline: 0-3s: Show a close-up of a kitchen counter where a hand covered in cooking grease struggles to tear a sheet from a cheap plastic holder, causing the holder to slide around and ruin the roll. 3-6s: The matte black Ultrean Paper Towel Stand is shown; a hand easily tears a single sheet one-handed using the angled tension arm, while the 2.65lb weighted base stays completely still. 6-10s: The user pushes the button on top of the black rod and pulls out the hidden spray bottle, showing the clear reservoir. Do not start with a perfect product shot. Do not end with a CTA. The assembled stand must look completely solid matte black with no transparent parts visible. Use the provided product reference images to maintain product color, shape, and structure.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-010-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_function.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style, continuing the exact style and product identity of the first segment. Timeline: 0-4s: Close-up of the removed spray bottle spraying a fine mist directly onto a greasy countertop spill. 4-8s: A hand wipes the counter completely clean with a paper towel, with the solid matte black stand sitting in the background. 8-10s: Display a clean, minimal text overlay: 'Upgrade your kitchen cleanup setup today.' Maintain identical product details, colors, matte metal textures, and kitchen environment. Use the provided reference images to ensure consistent product identity.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T05:40:07.859Z"
+}
