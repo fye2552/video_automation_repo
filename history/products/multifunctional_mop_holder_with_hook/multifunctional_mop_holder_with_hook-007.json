@@ -1,0 +1,98 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-007",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-007",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Preventing the chaotic domino effect of stacked cleaning tools in tight laundry room corners",
+    "hook": "POV: You just wanted to grab the broom, but the entire pile collapsed on your feet.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time_range": "0-10s",
+        "visual": "0-3s: Handheld shot of a cluttered laundry room corner where a hand pulls a mop, causing a broom and dustpan to slide and crash down in a pile. 3-6s: The camera moves to a clean light-gray tiled wall showing the light gray wall-mounted organizer. A hand easily pushes a broom handle into the center white silicone roller clip. 6-10s: Close-up of a wet mop handle being snapped into the end rounded capsule section, instantly securing it.",
+        "audio": "No more chaotic mess. Get instant organization."
+      },
+      "video_001_part_02": {
+        "time_range": "10-20s",
+        "visual": "0-4s: Close-up of a small cleaning brush hanging from one of the five gray J-hooks beneath the organizer. 4-8s: The camera pans back to reveal the complete horizontal organizer holding three upright cleaning tools and small hanging accessories, leaving the floor below entirely clear. 8-10s: Gentle camera movement showcasing the clean tiled laundry wall with a text overlay.",
+        "audio": "Keep your tools in reach. Clear the clutter today."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-007-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-3s: Show a messy laundry corner where pulling one mop handle causes brooms and dustpans to slip and slide down in a chaotic pile. 3-6s: Transition to a light-gray tiled wall with the light-gray wall-mounted organizer (a horizontal bar with 5 white silicone roller clips and 5 gray J-hooks). A hand pushes a broom handle into the middle roller clip, locking it securely. 6-10s: Close-up of a wet mop handle snapping smoothly into the end rounded roller section. Do not start with a perfect product shot. Do not end with a CTA. Maintain precise product appearance: light gray matte plastic bar with rounded capsule ends, white roller clips, and 5 gray J-hooks.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-007-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-4s: Close-up of small cleaning accessories hanging from the gray J-hooks beneath the organizer. 4-8s: Handheld pan out showing the complete horizontal organizer holding three brooms and mops, with the laundry floor underneath completely empty and organized. 8-10s: Clean shot with text overlay: 'Clear the clutter. Keep it organized.' This segment must feel like the continuation of the previous 10-second segment, preserving identical product identity, light-gray and white color distribution, matte texture, and tiled wall environment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.011,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.011111111111111112,
+      "history_script_id": "multifunctional_mop_holder_with_hook-005",
+      "similarities": {
+        "hook": 0.12903225806451613,
+        "angle": 0.1111111111111111,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-007-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-3s: Show a messy laundry corner where pulling one mop handle causes brooms and dustpans to slip and slide down in a chaotic pile. 3-6s: Transition to a light-gray tiled wall with the light-gray wall-mounted organizer (a horizontal bar with 5 white silicone roller clips and 5 gray J-hooks). A hand pushes a broom handle into the middle roller clip, locking it securely. 6-10s: Close-up of a wet mop handle snapping smoothly into the end rounded roller section. Do not start with a perfect product shot. Do not end with a CTA. Maintain precise product appearance: light gray matte plastic bar with rounded capsule ends, white roller clips, and 5 gray J-hooks.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-007-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-4s: Close-up of small cleaning accessories hanging from the gray J-hooks beneath the organizer. 4-8s: Handheld pan out showing the complete horizontal organizer holding three brooms and mops, with the laundry floor underneath completely empty and organized. 8-10s: Clean shot with text overlay: 'Clear the clutter. Keep it organized.' This segment must feel like the continuation of the previous 10-second segment, preserving identical product identity, light-gray and white color distribution, matte texture, and tiled wall environment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T01:10:24.101Z"
+}
