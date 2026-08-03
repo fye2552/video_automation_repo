@@ -1,0 +1,103 @@
+{
+  "script_id": "magnetic-cable-management-clips-003",
+  "product_id": "magnetic-cable-management-clips",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic-cable-management-clips",
+  "product_folder": "products/magnetic-cable-management-clips",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic-cable-management-clips-003",
+    "product_id": "magnetic-cable-management-clips",
+    "angle": "Desk Edge Cable Drop Pain Relief",
+    "hook": "Tired of diving under your desk every time your charger slides off?",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2,
+        3
+      ]
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time_range": "0-10s",
+        "visual": "0-3s: Handheld shot of a phone charging cable sliding off a clean wooden desk edge, followed by a hand searching blindly under the desk. 3-6s: A Peach/Orange squarish magnetic cable clip is stuck on the clean desk edge. A hand flips the hinged clear cover tab upward along the rear hinge, lays the cable flat horizontally in the open channel, and releases it to let the magnet snap shut. 6-10s: The cable stays perfectly in place at the desk edge.",
+        "audio": "Tired of diving under your desk every time your charger slides off? Fix it instantly with this magnetic clip."
+      },
+      "video_001_part_02": {
+        "time_range": "10-20s",
+        "visual": "0-4s: A bedside nightstand showing a phone charger neatly secured in a matching Peach/Orange magnetic clip. 4-8s: A car dashboard center console where a media cable is held tidily. 8-10s: Screen text overlay reading 'Keep your space organized.' on a clean desk workspace setup.",
+        "audio": "Works on your desk, nightstand, or car. Keep your space organized."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic-cable-management-clips-003-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic-cable-management-clips/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. Timeline: 0-3s show a close-up of a messy desk edge where a black USB-C cable slides off and drops to the floor, leaving a frustrated hand reaching down. 3-6s: Transition to a clean wooden desk edge. A Peach/Orange squarish cable organizer clip with a clear cover is mounted. A hand lifts the clear magnetic cover tab upward along the rear hinge, lays the cable flat horizontally into the 7.55mm groove, and lets the magnetic cover snap shut. 6-10s: Show the first clean result with the cable held securely at the desk edge. No CTA. Keep product color Peach/Orange, clear top cover, and squarish cube shape constant.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic-cable-management-clips-003-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic-cable-management-clips/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style continuation video, realistic handheld phone-shot style. Timeline: 0-4s: Show a close-up fast-cut scene on a bedside nightstand surface with a Peach/Orange magnetic clip holding a charging cable securely. 4-8s: Fast-cut to a car dashboard center console, where another Peach/Orange clip keeps a media cord neat. 8-10s: Short CTA with text overlay 'Keep your space organized.' against a clean workspace setup. Preserve identical product identity, color, shape, and material from the first segment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.01,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.010000000000000002,
+      "history_script_id": "magnetic-cable-management-clips-001",
+      "similarities": {
+        "hook": 0.15,
+        "angle": 0.1,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic-cable-management-clips-003-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic-cable-management-clips/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. Timeline: 0-3s show a close-up of a messy desk edge where a black USB-C cable slides off and drops to the floor, leaving a frustrated hand reaching down. 3-6s: Transition to a clean wooden desk edge. A Peach/Orange squarish cable organizer clip with a clear cover is mounted. A hand lifts the clear magnetic cover tab upward along the rear hinge, lays the cable flat horizontally into the 7.55mm groove, and lets the magnetic cover snap shut. 6-10s: Show the first clean result with the cable held securely at the desk edge. No CTA. Keep product color Peach/Orange, clear top cover, and squarish cube shape constant.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic-cable-management-clips-003-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic-cable-management-clips/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style continuation video, realistic handheld phone-shot style. Timeline: 0-4s: Show a close-up fast-cut scene on a bedside nightstand surface with a Peach/Orange magnetic clip holding a charging cable securely. 4-8s: Fast-cut to a car dashboard center console, where another Peach/Orange clip keeps a media cord neat. 8-10s: Short CTA with text overlay 'Keep your space organized.' against a clean workspace setup. Preserve identical product identity, color, shape, and material from the first segment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T07:47:35.138Z"
+}
