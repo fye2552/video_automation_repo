@@ -1,0 +1,94 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-009",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-009",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Preventing accidental laundry room clutter collapses and reclaiming vertical wall space with secure roller clips",
+    "hook": "Getting hit on the shoulder by a sliding broom handle every single time you open the utility closet.",
+    "structure_signature": "pain_hook_absurd_rescuer_solution_fast_cuts_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "0-1.5s": "Close-up of a messy closet corner where a metal broom handle slips and falls onto the floor.",
+      "1.5-3s": "An adult son wearing a shiny silver astronaut helmet and formal tuxedo walks backward into the laundry room carrying the light-gray mop holder, saying 'Problem solved!'.",
+      "3-6s": "The light-gray mop holder with 5 white silicone roller clips and 5 J-hooks is mounted on a tiled wall, holding a broom handle securely.",
+      "6-10s": "Fast-cut scene 1: A close-up of a hand easily pushing a broom handle into a white silicone roller clip.",
+      "10-14s": "Fast-cut scene 2: Small cleaning brushes and towels hanging neatly from the 5 gray downward J-hooks.",
+      "14-18s": "Fast-cut scene 3: Wide shot of a neat, organized utility closet wall with five upright tools mounted off the floor.",
+      "18-20s": "CTA: 'A simple upgrade for everyday use.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-009-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a messy closet corner where a metal broom handle slips and falls onto the floor. No product and no rescuer. 1.5-3s: An adult son wearing a shiny silver astronaut helmet and formal tuxedo walks backward into the laundry room carrying the exact light-gray wall-mounted mop holder, and says 'Problem solved!'. 3-6s: Quickly show the light-gray wall-mounted mop holder with its 5 white silicone roller clips and 5 gray J-hooks mounted on a light-gray tiled wall, holding a broom handle securely. 6-10s: Fast-cut scene 1 showing a close-up of a hand pushing a broom handle into one of the white non-slip roller clips. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-009-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different laundry room environment, showing small cleaning brushes and rags hanging from the 5 gray downward J-hooks on the bar. 4-8s: Fast-cut scene 3 showing a wide shot of the neat, organized utility closet wall with five upright tools mounted off the floor. 8-10s: Short CTA: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.027,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.02727272727272727,
+      "history_script_id": "multifunctional_mop_holder_with_hook-008",
+      "similarities": {
+        "hook": 0,
+        "angle": 0.2727272727272727,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.06666666666666667,
+        "scene_order": 0
+      },
+      "structural_score": 0.033
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-009-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a messy closet corner where a metal broom handle slips and falls onto the floor. No product and no rescuer. 1.5-3s: An adult son wearing a shiny silver astronaut helmet and formal tuxedo walks backward into the laundry room carrying the exact light-gray wall-mounted mop holder, and says 'Problem solved!'. 3-6s: Quickly show the light-gray wall-mounted mop holder with its 5 white silicone roller clips and 5 gray J-hooks mounted on a light-gray tiled wall, holding a broom handle securely. 6-10s: Fast-cut scene 1 showing a close-up of a hand pushing a broom handle into one of the white non-slip roller clips. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-009-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different laundry room environment, showing small cleaning brushes and rags hanging from the 5 gray downward J-hooks on the bar. 4-8s: Fast-cut scene 3 showing a wide shot of the neat, organized utility closet wall with five upright tools mounted off the floor. 8-10s: Short CTA: 'A simple upgrade for everyday use.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T02:52:44.175Z"
+}
