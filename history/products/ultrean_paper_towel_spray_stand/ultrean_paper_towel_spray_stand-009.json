@@ -1,0 +1,101 @@
+{
+  "script_id": "ultrean_paper_towel_spray_stand-009",
+  "product_id": "ultrean_paper_towel_spray_stand",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/ultrean_paper_towel_spray_stand",
+  "product_folder": "products/ultrean_paper_towel_spray_stand",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "ultrean_paper_towel_spray_stand-009",
+    "product_id": "ultrean_paper_towel_spray_stand",
+    "angle": "An absurdly dressed husband in a tuxedo saves a messy kitchen spill with a solid matte black 2-in-1 paper towel stand featuring a hidden integrated spray bottle.",
+    "hook": "Spilled juice everywhere and the flimsy paper towel holder just rolled off the counter!",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "title": "Ultrean Paper Towel Stand - Low Risk Rescuer",
+      "duration": 20,
+      "scenes": [
+        {
+          "scene_id": "video_001_part_01",
+          "duration": 10,
+          "description": "0-1.5s: Spill happens and cheap holder fails. 1.5-3s: Tuxedo-clad husband enters with the Ultrean stand. 3-6s: One-handed tear and pulling out the hidden spray bottle. 6-10s: Close-up tear showing stability."
+        },
+        {
+          "scene_id": "video_001_part_02",
+          "duration": 10,
+          "description": "0-4s: Clicking the spray bottle back inside the solid black rod. 4-8s: Showing the organized, modern countertop setup. 8-10s: Clean CTA overlay."
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-009-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a sticky red juice spill spreading on a marble kitchen countertop, with a lightweight wooden paper towel holder tipping over. No product and no rescuer visible yet. 1.5-3s: An absurd adult husband wearing a formal black tuxedo and neon yellow kitchen gloves enters the kitchen holding the exact product (a solid matte black paper towel holder with a vertical main rod, circular base, and tension arm, fully assembled with no transparent parts showing), places it on the counter, and says 'I got this!'. 3-6s: The husband pulls a sheet off the paper towel roll with a single hand while the weighted base stays perfectly still. He then presses the top button, removes the hidden clear spray bottle from the black rod, and sprays the spill. 6-10s: Close-up of the paper towel roll spinning slightly against the tension arm as a clean sheet is torn off effortlessly. Keep the pacing fast, clear, low-risk, and product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment. Use the provided product reference images to maintain exact product design: solid matte black exterior, weighted circular base, and vertical rod. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "ultrean_paper_towel_spray_stand-009-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Close-up of a hand clicking the transparent spray bottle back into the solid matte black center rod of the stand (One-Push Lock) on a clean, modern kitchen countertop. 4-8s: Wide shot showing the fully assembled matte black stand holding a jumbo paper towel roll sitting next to a clean setup on a sleek countertop, looking neat and organized. 8-10s: Short text overlay saying 'Make your space cleaner and cozier.' with a light call to action. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images to maintain product color, shape, matte finish, and structure. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.032,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.031578947368421054,
+      "history_script_id": "ultrean_paper_towel_spray_stand-004",
+      "similarities": {
+        "hook": 0.06666666666666667,
+        "angle": 0.3157894736842105,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-009-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of a sticky red juice spill spreading on a marble kitchen countertop, with a lightweight wooden paper towel holder tipping over. No product and no rescuer visible yet. 1.5-3s: An absurd adult husband wearing a formal black tuxedo and neon yellow kitchen gloves enters the kitchen holding the exact product (a solid matte black paper towel holder with a vertical main rod, circular base, and tension arm, fully assembled with no transparent parts showing), places it on the counter, and says 'I got this!'. 3-6s: The husband pulls a sheet off the paper towel roll with a single hand while the weighted base stays perfectly still. He then presses the top button, removes the hidden clear spray bottle from the black rod, and sprays the spill. 6-10s: Close-up of the paper towel roll spinning slightly against the tension arm as a clean sheet is torn off effortlessly. Keep the pacing fast, clear, low-risk, and product-focused. Do not start with a perfect product shot. Do not end with a CTA in this segment. Use the provided product reference images to maintain exact product design: solid matte black exterior, weighted circular base, and vertical rod. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "ultrean_paper_towel_spray_stand-009-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/ultrean_paper_towel_spray_stand/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Close-up of a hand clicking the transparent spray bottle back into the solid matte black center rod of the stand (One-Push Lock) on a clean, modern kitchen countertop. 4-8s: Wide shot showing the fully assembled matte black stand holding a jumbo paper towel roll sitting next to a clean setup on a sleek countertop, looking neat and organized. 8-10s: Short text overlay saying 'Make your space cleaner and cozier.' with a light call to action. This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images to maintain product color, shape, matte finish, and structure. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T02:53:39.094Z"
+}
