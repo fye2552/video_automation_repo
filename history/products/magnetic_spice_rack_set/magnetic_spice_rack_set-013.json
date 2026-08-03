@@ -1,0 +1,92 @@
+{
+  "script_id": "magnetic_spice_rack_set-013",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-013",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Organizing tipping oil bottles and condiments on a small kitchen prep table by mounting them to the refrigerator side wall",
+    "hook": "Stop letting heavy oil bottles tip over and spill every time you prep dinner.",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_id": "video_001",
+      "total_duration": 20,
+      "aspect_ratio": "9:16",
+      "language": "English",
+      "style": "low_risk_rescuer_fast_cut"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-013-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show a close-up of a messy wooden prep table in a kitchen where a heavy olive oil glass bottle tips over and spills. No product or rescuer visible. 1.5-3s: An absurd grandfather in a full scuba diving wetsuit, snorkel, and goggles enters the frame holding the matte black rectangular metal spice rack. He attaches it firmly to the metal side of the refrigerator and says 'Save the spices!'. 3-6s: The matte black metal spice rack is shown stuck onto the refrigerator side, holding multiple glass spice jars securely. 6-10s: Fast-cut scene 1 showing the user putting a spice jar into the rack. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-013-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing a different environment: the matte black magnetic rack is mounted on the side of a white washing machine, holding a box of dryer sheets and a lint brush hanging from the detachable hooks. 4-8s: Fast-cut scene 3 showing a close-up of another rack mounted on the side of a black microwave holding seasoning jars. 8-10s: Short CTA on screen: 'Check it out today.' Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.032,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.03214285714285715,
+      "history_script_id": "magnetic_spice_rack_set-010",
+      "similarities": {
+        "hook": 0.07407407407407407,
+        "angle": 0.32142857142857145,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-013-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show a close-up of a messy wooden prep table in a kitchen where a heavy olive oil glass bottle tips over and spills. No product or rescuer visible. 1.5-3s: An absurd grandfather in a full scuba diving wetsuit, snorkel, and goggles enters the frame holding the matte black rectangular metal spice rack. He attaches it firmly to the metal side of the refrigerator and says 'Save the spices!'. 3-6s: The matte black metal spice rack is shown stuck onto the refrigerator side, holding multiple glass spice jars securely. 6-10s: Fast-cut scene 1 showing the user putting a spice jar into the rack. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-013-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 showing a different environment: the matte black magnetic rack is mounted on the side of a white washing machine, holding a box of dryer sheets and a lint brush hanging from the detachable hooks. 4-8s: Fast-cut scene 3 showing a close-up of another rack mounted on the side of a black microwave holding seasoning jars. 8-10s: Short CTA on screen: 'Check it out today.' Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T08:13:21.710Z"
+}
