@@ -1,0 +1,141 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-008",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "skill_b",
+  "skill_path": "skills/skill_b.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-008",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Preventing dining room rugs from curling or sliding when pulling out heavy dining chairs",
+    "hook": "Pulling out a dining chair shouldn't turn into a wrestling match with your rug.",
+    "structure_signature": "dining_chair_friction_frustration_flat_gripper_reveal_smooth_sliding_peace",
+    "scene_order": [
+      "segment_01",
+      "segment_02",
+      "segment_03",
+      "broll_coverage"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "segment_01": {
+        "time": "00:00-00:10",
+        "spoken_english": "Pulling out a dining chair shouldn't turn into a wrestling match with your rug. Look at this corner curling up every single time I move my chair."
+      },
+      "segment_02": {
+        "time": "00:00-00:10",
+        "spoken_english": "I added these ultra-thin, flat L-shaped stickers to the underside corners. Since they're completely flat, you don't even know they're there under the rug."
+      },
+      "segment_03": {
+        "time": "00:00-00:10",
+        "spoken_english": "Now my rug stays perfectly flat and won't shift at all, even when dragging heavy chairs. It's an instant upgrade for my dining room."
+      },
+      "broll_coverage": {
+        "time": "00:00-00:10",
+        "spoken_english": ""
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-008-scene-01",
+        "scene_id": "segment_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的达人（一位30多岁的美籍白人女性，扎着马尾，身穿灰色居家服）在明亮的餐厅里。使用防滑贴产品。贴片必须完全贴于地毯背面，为薄型直角L形结构、纯哑光黑色，无蓝色印花或白色衬底。\n\n00:00-00:00.5，中景镜头，达人坐在餐厅桌旁。\n00:00.5-00:01.0，近景镜头，达人向后拉动一把沉重的木质餐椅。\n00:01.0-00:01.5，特写镜头，餐椅的腿挂住地毯边缘，导致地毯边缘向上卷曲。\n00:01.5-00:03.0，特写镜头，达人无奈地低头看着卷曲地毯，露出困扰的表情。\n00:03.0-00:06.0，俯视特写镜头，达人掀开地毯一角，展示没有防滑贴时地毯在木地板上滑动移位。\n00:06.0-00:10.0，中景镜头，达人面对镜头口播。\n\n同步美式英语口播：“Pulling out a dining chair shouldn't turn into a wrestling match with your rug. Look at this corner curling up every single time I move my chair.”\n保留自然环境声、轻微木椅摩擦地毯声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-008-scene-02",
+        "scene_id": "segment_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴产品。保持每片贴片为超薄、平整的纯黑色L形直角结构，一条竖向臂一条横向臂，短斜切外端，无任何搭扣或金属件，无文字标识。\n\n00:00-00:03.0，俯视特写镜头，展示地毯一角的背面贴着一片超薄平整的哑光黑色L形防滑贴（完全贴合在织物地毯背面的直角边缘，没有蓝色纸或白色保护膜，纯黑色）。\n00:03.0-00:06.0，手部特写镜头，达人的手将这角地毯平整地按在浅色橡木地板上，贴片完全隐藏在下方。\n00:06.0-00:10.0，中景镜头，达人弯腰将地毯的其他角也抚平，微笑着看着平整的餐厅地毯。\n\n同步美式英语口播：“I added these ultra-thin, flat L-shaped stickers to the underside corners. Since they're completely flat, you don't even know they're there under the rug.”\n保留自然轻微地毯摩擦声和手部按压声，保持真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-008-scene-03",
+        "scene_id": "segment_03",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴。\n\n00:00-00:03.0，近景镜头，达人再次向后拉动餐椅，餐椅在地毯边缘上顺畅滑过，地毯角保持平贴在地板上，完全没有移位或翘起。\n00:03.0-00:06.0，特写镜头，一只穿着拖鞋的脚用力在地毯边缘摩擦、踩踏，地毯纹丝不动，紧密贴合地板。\n00:06.0-00:10.0，中景镜头，达人站在平整的地毯上，满意地对着镜头竖起大拇指，笑容灿烂。\n\n同步美式英语口播：“Now my rug stays perfectly flat and won't shift at all, even when dragging heavy chairs. It's an instant upgrade for my dining room.”\n保留轻微餐椅滑动声和真实环境声。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-008-scene-04",
+        "scene_id": "broll_coverage",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+        "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的餐厅场景、温馨柔和光线、达人手部细节和真实手机手持UGC质感。产品只参考标准参考图，保持纯哑光黑色L形薄贴片的外观，不露出任何临时蓝色包装纸或白色底纸，不改变超薄柔性结构。\n\n00:00-00:02.0，特写镜头，手持展示一片纯黑色L型贴片，质地超薄平整，双臂等长，外角为斜切。\n00:02.0-00:04.0，特写镜头，镜头慢慢向下，地毯的一角被轻轻拎起，地毯背面的直角处贴着一片薄薄的黑色L形防滑贴。\n00:04.0-00:06.0，特写镜头，地毯角被放回地面，与浅色木地板完全严丝合缝，没有一点凸起。\n00:06.0-00:08.0，特写镜头，一只手抚摸地毯表面，平滑无痕，完全看不出下面有防滑贴的痕迹。\n00:08.0-00:10.0，中景镜头，餐厅桌椅整齐，地毯平整舒展地铺在地上，显得干净整洁。\n\n不需要同步口播，不展示完整口型表演。保留自然轻微操作音。字幕后期添加，不由视频模型生成文字。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.019,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.01904761904761905,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-003",
+      "similarities": {
+        "hook": 0.03571428571428571,
+        "angle": 0.19047619047619047,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.1111111111111111,
+        "scene_order": 1
+      },
+      "structural_score": 0.556
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-008-scene-01",
+      "scene_id": "segment_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_function.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。参考图中的达人（一位30多岁的美籍白人女性，扎着马尾，身穿灰色居家服）在明亮的餐厅里。使用防滑贴产品。贴片必须完全贴于地毯背面，为薄型直角L形结构、纯哑光黑色，无蓝色印花或白色衬底。\n\n00:00-00:00.5，中景镜头，达人坐在餐厅桌旁。\n00:00.5-00:01.0，近景镜头，达人向后拉动一把沉重的木质餐椅。\n00:01.0-00:01.5，特写镜头，餐椅的腿挂住地毯边缘，导致地毯边缘向上卷曲。\n00:01.5-00:03.0，特写镜头，达人无奈地低头看着卷曲地毯，露出困扰的表情。\n00:03.0-00:06.0，俯视特写镜头，达人掀开地毯一角，展示没有防滑贴时地毯在木地板上滑动移位。\n00:06.0-00:10.0，中景镜头，达人面对镜头口播。\n\n同步美式英语口播：“Pulling out a dining chair shouldn't turn into a wrestling match with your rug. Look at this corner curling up every single time I move my chair.”\n保留自然环境声、轻微木椅摩擦地毯声和真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-008-scene-02",
+      "scene_id": "segment_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴产品。保持每片贴片为超薄、平整的纯黑色L形直角结构，一条竖向臂一条横向臂，短斜切外端，无任何搭扣或金属件，无文字标识。\n\n00:00-00:03.0，俯视特写镜头，展示地毯一角的背面贴着一片超薄平整的哑光黑色L形防滑贴（完全贴合在织物地毯背面的直角边缘，没有蓝色纸或白色保护膜，纯黑色）。\n00:03.0-00:06.0，手部特写镜头，达人的手将这角地毯平整地按在浅色橡木地板上，贴片完全隐藏在下方。\n00:06.0-00:10.0，中景镜头，达人弯腰将地毯的其他角也抚平，微笑着看着平整的餐厅地毯。\n\n同步美式英语口播：“I added these ultra-thin, flat L-shaped stickers to the underside corners. Since they're completely flat, you don't even know they're there under the rug.”\n保留自然轻微地毯摩擦声和手部按压声，保持真实手机手持感。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-008-scene-03",
+      "scene_id": "segment_03",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段9:16竖屏美国社交媒体短视频广告，真实手机手持UGC测评质感。使用参考图中的防滑贴。\n\n00:00-00:03.0，近景镜头，达人再次向后拉动餐椅，餐椅在地毯边缘上顺畅滑过，地毯角保持平贴在地板上，完全没有移位或翘起。\n00:03.0-00:06.0，特写镜头，一只穿着拖鞋的脚用力在地毯边缘摩擦、踩踏，地毯纹丝不动，紧密贴合地板。\n00:06.0-00:10.0，中景镜头，达人站在平整的地毯上，满意地对着镜头竖起大拇指，笑容灿烂。\n\n同步美式英语口播：“Now my rug stays perfectly flat and won't shift at all, even when dragging heavy chairs. It's an instant upgrade for my dining room.”\n保留轻微餐椅滑动声和真实环境声。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-008-scene-04",
+      "scene_id": "broll_coverage",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_detail_side.jpeg",
+      "promptText": "独立第4段：产品功能展示补位素材（不计入成片时长，仅用于后期覆盖前三段中的穿模、穿帮、产品变形、手部异常或嘴型异常画面）\n画面中不得出现任何平台水印、TikTok水印、App界面、账号栏、点赞评论分享按钮、平台Logo、自动字幕、贴纸文字或边框UI。\n生成一段10秒9:16竖屏产品功能展示B-roll，延续前三段正片的餐厅场景、温馨柔和光线、达人手部细节和真实手机手持UGC质感。产品只参考标准参考图，保持纯哑光黑色L形薄贴片的外观，不露出任何临时蓝色包装纸或白色底纸，不改变超薄柔性结构。\n\n00:00-00:02.0，特写镜头，手持展示一片纯黑色L型贴片，质地超薄平整，双臂等长，外角为斜切。\n00:02.0-00:04.0，特写镜头，镜头慢慢向下，地毯的一角被轻轻拎起，地毯背面的直角处贴着一片薄薄的黑色L形防滑贴。\n00:04.0-00:06.0，特写镜头，地毯角被放回地面，与浅色木地板完全严丝合缝，没有一点凸起。\n00:06.0-00:08.0，特写镜头，一只手抚摸地毯表面，平滑无痕，完全看不出下面有防滑贴的痕迹。\n00:08.0-00:10.0，中景镜头，餐厅桌椅整齐，地毯平整舒展地铺在地上，显得干净整洁。\n\n不需要同步口播，不展示完整口型表演。保留自然轻微操作音。字幕后期添加，不由视频模型生成文字。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T02:30:32.761Z"
+}
