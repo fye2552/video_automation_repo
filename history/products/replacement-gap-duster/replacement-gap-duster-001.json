@@ -1,0 +1,154 @@
+{
+  "history_schema_version": 2,
+  "script_id": "replacement-gap-duster-001",
+  "product_id": "replacement-gap-duster",
+  "active_skill": "custom",
+  "skill_family": "custom",
+  "angle": "Clearing unreachable dust bunnies under low-clearance bed frames with a bendable telescopic duster.",
+  "hook": "Frustrated creator fails to fit vacuum under bed, then successfully slides thin bent duster head underneath.",
+  "opening_visual": "An adult female creator in a bright modern bedroom looks frustrated as a vacuum nozzle fails to fit under a low wooden bed frame.",
+  "pain_point": "",
+  "creator_context": "",
+  "result_proof": "",
+  "structure_signature": "silent_ab20_a5_b10_a5",
+  "scene_order": [
+    "video_A",
+    "video_B"
+  ],
+  "creative_fingerprint": null,
+  "prompt_text": "Create one 10-second vertical 9:16 realistic lifestyle video. 0.0-5.0s: An adult female creator in a bright modern bedroom attempts to push a vacuum cleaner nozzle under a low-clearance wooden bed frame, looking frustrated as it gets blocked. 5.0-10.0s: The same creator in the same bedroom holds the Replacement Gap Duster, sliding the flat grey microfiber duster head smoothly parallel to the floor deep under the low wooden bed frame, smiling with relief. Physical scale lock: Maintain the flat rectangular paddle duster head's visual proportion relative to the wooden bed frame gap height, keeping it thin enough to slide under. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Natural ambient home sounds only.\nCreate one 10-second vertical 9:16 realistic product demonstration video. 0.0-3.5s: Close-up of adult hands twisting the light blue plastic lock connector on the metallic silver pole, extending the telescopic handle axially, and twisting it back to lock. 3.5-7.0s: Hands manually bend the flat grey microfiber duster head to a 90-degree angle. 7.0-10.0s: A stable hero shot of the fully extended duster with its bent grey head resting vertically against a light grey wall next to a bedroom nightstand. Physical scale lock: Keep the telescopic stainless steel pole diameter and light blue connector size proportional to the adult hands operating them. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Real product-use sounds and ambient room atmosphere only.",
+  "duplicate_score": 0,
+  "created_at": "2026-08-03T06:18:12.336Z",
+  "skill_path": "skills/silent_ab_20s_video.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/replacement-gap-duster",
+  "product_folder": "products/replacement-gap-duster",
+  "selected_script": {
+    "retry_attempt": 2,
+    "script_id": "replacement-gap-duster-001",
+    "product_id": "replacement-gap-duster",
+    "angle": "Clearing unreachable dust bunnies under low-clearance bed frames with a bendable telescopic duster.",
+    "hook": "Frustrated creator fails to fit vacuum under bed, then successfully slides thin bent duster head underneath.",
+    "structure_signature": "silent_ab20_a5_b10_a5",
+    "silent_video": true,
+    "opening_visual": "An adult female creator in a bright modern bedroom looks frustrated as a vacuum nozzle fails to fit under a low wooden bed frame.",
+    "visual_fingerprint": {
+      "environment_id": "bedroom_under_bed",
+      "a_opening_problem_id": "vacuum_stuck_under_low_bed",
+      "a_creator_camera_id": "medium_shot_side_angle",
+      "a_lifestyle_ending_id": "clean_under_bed_happy_creator",
+      "b_core_action_id": "twist_to_extend_and_manual_bend",
+      "b_value_proof_id": "microfiber_sleeve_slides_under_wooden_bed_frame",
+      "b_hero_angle_id": "vertical_hero_standing_near_nightstand",
+      "prop_variant_id": "grey_microfiber_duster",
+      "hand_style_id": "hands_demonstrating_twist_and_bend",
+      "product_scale_lock_id": "bed_frame_and_hand_scale_anchor"
+    },
+    "product_scale_lock": {
+      "reference_size_mode": "apparent_size_and_aspect_ratio",
+      "absolute_dimension_claim": "not_used",
+      "approved_scale_anchors": [
+        "adult_hand",
+        "bed_frame",
+        "floor"
+      ],
+      "cross_job_rule": "same product width, depth, thickness, and key-part scale in A and B"
+    },
+    "deduplication_check": {
+      "history_checked": true,
+      "exact_match": false,
+      "a_fields_changed": 3,
+      "b_fields_changed": 4,
+      "accepted": true
+    },
+    "scene_order": [
+      "video_A",
+      "video_B"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "step 1",
+        "step 2",
+        "step 3"
+      ]
+    },
+    "script_record": {},
+    "final_moyin_jobs": [
+      {
+        "job_id": "replacement-gap-duster-001-scene-01",
+        "scene_id": "video_A",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_function.jpeg",
+        "promptText": "Create one 10-second vertical 9:16 realistic lifestyle video. 0.0-5.0s: An adult female creator in a bright modern bedroom attempts to push a vacuum cleaner nozzle under a low-clearance wooden bed frame, looking frustrated as it gets blocked. 5.0-10.0s: The same creator in the same bedroom holds the Replacement Gap Duster, sliding the flat grey microfiber duster head smoothly parallel to the floor deep under the low wooden bed frame, smiling with relief. Physical scale lock: Maintain the flat rectangular paddle duster head's visual proportion relative to the wooden bed frame gap height, keeping it thin enough to slide under. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Natural ambient home sounds only.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "replacement-gap-duster-001-scene-02",
+        "scene_id": "video_B",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_detail_side.jpeg",
+        "promptText": "Create one 10-second vertical 9:16 realistic product demonstration video. 0.0-3.5s: Close-up of adult hands twisting the light blue plastic lock connector on the metallic silver pole, extending the telescopic handle axially, and twisting it back to lock. 3.5-7.0s: Hands manually bend the flat grey microfiber duster head to a 90-degree angle. 7.0-10.0s: A stable hero shot of the fully extended duster with its bent grey head resting vertically against a light grey wall next to a bedroom nightstand. Physical scale lock: Keep the telescopic stainless steel pole diameter and light blue connector size proportional to the adult hands operating them. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Real product-use sounds and ambient room atmosphere only.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "assembly_plan": {
+      "input_order": [
+        "video_A",
+        "video_B",
+        "video_A"
+      ],
+      "source_ranges": [
+        "0-5",
+        "0-10",
+        "5-10"
+      ],
+      "output_duration_seconds": 20,
+      "video_only": false,
+      "preserve_source_audio": true,
+      "ffmpeg_required_after_download": true,
+      "output_file_name": "final_20s.mp4"
+    },
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0,
+    "duplicate_score_max": 1,
+    "duplicate_comparison": {
+      "score": 0,
+      "history_script_id": null,
+      "similarities": {},
+      "hard_conflicts": []
+    },
+    "candidate_pool_size": 1,
+    "accepted_candidate_rank": 1
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "replacement-gap-duster-001-scene-01",
+      "scene_id": "video_A",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_function.jpeg",
+      "promptText": "Create one 10-second vertical 9:16 realistic lifestyle video. 0.0-5.0s: An adult female creator in a bright modern bedroom attempts to push a vacuum cleaner nozzle under a low-clearance wooden bed frame, looking frustrated as it gets blocked. 5.0-10.0s: The same creator in the same bedroom holds the Replacement Gap Duster, sliding the flat grey microfiber duster head smoothly parallel to the floor deep under the low wooden bed frame, smiling with relief. Physical scale lock: Maintain the flat rectangular paddle duster head's visual proportion relative to the wooden bed frame gap height, keeping it thin enough to slide under. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Natural ambient home sounds only.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "replacement-gap-duster-001-scene-02",
+      "scene_id": "video_B",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_detail_side.jpeg",
+      "promptText": "Create one 10-second vertical 9:16 realistic product demonstration video. 0.0-3.5s: Close-up of adult hands twisting the light blue plastic lock connector on the metallic silver pole, extending the telescopic handle axially, and twisting it back to lock. 3.5-7.0s: Hands manually bend the flat grey microfiber duster head to a 90-degree angle. 7.0-10.0s: A stable hero shot of the fully extended duster with its bent grey head resting vertically against a light grey wall next to a bedroom nightstand. Physical scale lock: Keep the telescopic stainless steel pole diameter and light blue connector size proportional to the adult hands operating them. No dialogue, no lip-sync, no subtitles, no text overlays, no UI, no watermark. Real product-use sounds and ambient room atmosphere only.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "duplicate_comparison": {
+    "score": 0,
+    "history_script_id": null,
+    "similarities": {},
+    "hard_conflicts": []
+  }
+}
