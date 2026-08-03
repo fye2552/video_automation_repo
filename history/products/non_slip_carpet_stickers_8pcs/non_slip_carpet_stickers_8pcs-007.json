@@ -1,0 +1,122 @@
+{
+  "script_id": "non_slip_carpet_stickers_8pcs-007",
+  "product_id": "non_slip_carpet_stickers_8pcs",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/non_slip_carpet_stickers_8pcs",
+  "product_folder": "products/non_slip_carpet_stickers_8pcs",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "non_slip_carpet_stickers_8pcs-007",
+    "product_id": "non_slip_carpet_stickers_8pcs",
+    "angle": "Protecting robotic vacuums from getting stuck or jammed by curled rug corners",
+    "hook": "A robotic vacuum runs over a curled rug corner, dragging it and stopping with a loud error beep.",
+    "structure_signature": "robot_vacuum_pain_flat_gripper_solution_cuts_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "pain_conflict",
+          "scene": "A robotic vacuum cleaner drives over a curled corner of an area rug, sucking it in, dragging the rug out of place, and displaying a flashing red warning light."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "product_solution",
+          "scene": "A hand lifts the corner of the rug, showing a flat, matte black L-shaped sticker with clipped tips attached to the underside, and presses the rug flat back onto the oak floor."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "fast_cut_scene_1",
+          "scene": "The robotic vacuum smoothly rolls directly over the flat rug corner without lifting it or getting stuck."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "fast_cut_scene_2",
+          "scene": "A dining room rug corner stays perfectly flat and flush with the floor as heavy chairs are pulled out."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "fast_cut_scene_3",
+          "scene": "A bathroom rug remains securely in place when a person steps onto it after a shower."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "cta",
+          "scene": "On-screen text: 'Keep your rugs flat and vacuum-friendly. Get yours today.'"
+        }
+      ]
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-007-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style video, realistic handheld phone-shot. 0-3s: Pain conflict showing a robotic vacuum cleaner getting stuck on a curled-up beige rug corner on a light oak floor, dragging it and stopping with a red light. 3-6s: A hand lifts the rug corner to show a paper-thin, flat matte black L-shaped sticker (12x12 cm with clipped outer tips and a rounded inner elbow, no logos/blue text) adhered to the underside, then presses the rug corner flat to the floor. 6-10s: The robotic vacuum rolls smoothly over the flat rug corner. Do not include a CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "non_slip_carpet_stickers_8pcs-007-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style video continuation, realistic handheld phone-shot. 0-4s: Fast-cut showing a dining room rug corner staying flat while wooden chairs are pushed back. 4-8s: Fast-cut of a bathroom rug corner staying perfectly flat when stepped on. 8-10s: Short text overlay CTA: 'Keep your rugs flat and vacuum-friendly. Get yours today.' Preserve the exact matte black L-shaped gripper identity, floor textures, and lighting style.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.016,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.015789473684210527,
+      "history_script_id": "non_slip_carpet_stickers_8pcs-002",
+      "similarities": {
+        "hook": 0.08695652173913043,
+        "angle": 0.15789473684210525,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.05555555555555555,
+        "scene_order": 0
+      },
+      "structural_score": 0.028
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-007-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style video, realistic handheld phone-shot. 0-3s: Pain conflict showing a robotic vacuum cleaner getting stuck on a curled-up beige rug corner on a light oak floor, dragging it and stopping with a red light. 3-6s: A hand lifts the rug corner to show a paper-thin, flat matte black L-shaped sticker (12x12 cm with clipped outer tips and a rounded inner elbow, no logos/blue text) adhered to the underside, then presses the rug corner flat to the floor. 6-10s: The robotic vacuum rolls smoothly over the flat rug corner. Do not include a CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "non_slip_carpet_stickers_8pcs-007-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/non_slip_carpet_stickers_8pcs/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style video continuation, realistic handheld phone-shot. 0-4s: Fast-cut showing a dining room rug corner staying flat while wooden chairs are pushed back. 4-8s: Fast-cut of a bathroom rug corner staying perfectly flat when stepped on. 8-10s: Short text overlay CTA: 'Keep your rugs flat and vacuum-friendly. Get yours today.' Preserve the exact matte black L-shaped gripper identity, floor textures, and lighting style.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T01:11:06.739Z"
+}
