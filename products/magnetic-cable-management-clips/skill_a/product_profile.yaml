@@ -1,0 +1,97 @@
+sku_id: "magnetic-cable-management-clips"
+product_name: "Magnetic USB Cable Management Clips"
+category: "Cable Organizer / Desk Accessories"
+source_info:
+  title: "[Dealsforyou] 6-Pack Magnetic USB Cable Management Clips, Self-Adhesive No-Residue Cord Organizer for Desk Wall, Upgraded Cable Storage Solution"
+  description: "Magnetic Cable Organizer Clips (6 Pack). Features strong hold no-residue adhesive, magnetic clip with hinged rotating design, fits most charging cables (up to 7.55mm width)."
+visual_identity:
+  main_color: "Peach/Orange"
+  secondary_color: "Transparent / Clear top cap"
+  material: "ABS plastic, clear acrylic cap, internal neodymium magnets, adhesive rubber pad"
+  shape: "Squarish cube with rounded corners and a central cylindrical cable channel"
+  texture: "Smooth matte plastic body with clear glossy cover"
+  logo_position: "None"
+  size_ratio: "2.4cm (L) x 1.4cm (W) x 1.4cm (H) with 7.55mm inner cable channel"
+key_visual_features:
+  - "Hinged flip-top lid with transparent window"
+  - "Internal magnetic closure mechanism for automatic snapping shut"
+  - "Bottom sticky rubber adhesive pad"
+  - "Side-to-side round cable pass-through hole fitting wires 2.5mm to 7.55mm"
+selling_points:
+  - "Strong adhesive hold with clean, no-residue removal"
+  - "One-handed magnetic flip open and automatic snap-close"
+  - "Keeps cables from falling off desks or tangling behind furniture"
+  - "Wide compatibility: Lightning, Type-C, AUX, HDMI, mouse cords"
+usage_scenes:
+  - "Desk edge holding active charging cables"
+  - "Nightstand surface holding bedside phone chargers"
+  - "Car dashboard or center console managing media cords"
+  - "Wall surface near power outlets"
+must_keep:
+  - "保持产品颜色不变"
+  - "保持产品形状不变"
+  - "保持产品材质不变"
+  - "保持产品比例不变"
+  - "保持Logo位置不变"
+  - "不要增加原始产品不存在的配件"
+must_avoid:
+  - "不要改变产品品类"
+  - "不要虚构不存在的功能"
+  - "不要增加多余按钮、灯光、接口或装饰"
+  - "不要改变包装、结构、纹理和视觉比例"
+reference_images:
+  white_bg: "images/product_white_bg.png"
+  detail_side: "images/product_detail_side.png"
+  function: "images/product_function.png"
+instructions_for_use:
+  source_confidence: "confirmed"
+  source: "Product listing description and instructional diagrams"
+  intended_user: "Adult office, home, or car user"
+  prerequisites:
+    - "Clean and dry smooth, flat surface before applying adhesive pad"
+  compatible_items:
+    - "Wires and cables with diameter between 2.5mm and 7.55mm (Lightning, Type-C, HDMI, AUX, mouse cables)"
+  steps:
+    - step: 1
+      action: "Flip open the hinged clear cover"
+      object_or_contact_point: "Clear magnetic cover tab"
+      orientation_or_position: "Rotate upward along rear hinge"
+      motion: "Lift upward"
+      repetitions: "1 time per cable placement"
+    - step: 2
+      action: "Place the cable into the open center groove"
+      object_or_contact_point: "7.55mm channel"
+      orientation_or_position: "Lay cable flat horizontally"
+      motion: "Insert downward into slot"
+      repetitions: "1 cable per clip"
+    - step: 3
+      action: "Release cover to let the magnet snap it shut automatically"
+      object_or_contact_point: "Front magnetic contact point"
+      orientation_or_position: "Downwards against base"
+      motion: "Magnetic closure"
+      repetitions: "1 time"
+  safety_constraints:
+    - "Do not pull cables with excessive force while secured inside clip; remove cable from clip if full pulling motion is required to prevent clip opening or detachment"
+  prohibited_actions:
+    - "Do not stick on rough, textured, or dirty surfaces"
+    - "Do not apply forceful pulling on locked cables"
+  video_constraints:
+    - "Use only the confirmed steps above. Do not infer any missing action, direction, order, angle, or repetition count."
+    - "If a required action is not confirmed, show a neutral product display or placement shot instead of performing the action."
+source_image_audit:
+  - file: "abd346a6a99f4c1faea003b9f9a3797c...jpeg"
+    type: "product appearance source"
+    use: "Reference for color selection, overall shape, and proportions"
+    direct_generation_risk: "Contains promotional text overlays and option cards"
+  - file: "b250723e4de24390852c64ac52971dec...webp"
+    type: "detail/texture source"
+    use: "Reference for internal magnetic hinge and bottom pad profile"
+    direct_generation_risk: "3D exploded structural diagram with text labels"
+  - file: "a4a5a515c8b44ceea9b834ae12318be7...webp"
+    type: "size chart"
+    use: "Extract physical dimensions (2.4cm x 1.4cm x 1.4cm) and compatibility specs"
+    direct_generation_risk: "Diagram with measurement vectors and icon graphics"
+  - file: "6320f943e2db4bf789a0494d32910c35...webp"
+    type: "usage/function source"
+    use: "Reference for 3-step operating method and magnetic closing mechanism"
+    direct_generation_risk: "Contains multi-panel layout and step numbers"
