@@ -1,0 +1,96 @@
+{
+  "script_id": "magnetic_spice_rack_set-007",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-007",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Clearing greasy spice jars from the top of the stove to prevent heat damage and splatters by mounting them on the side of the fridge",
+    "hook": "Stop lining your spices on top of the stove where they get greasy and overheated.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time": "0-10s",
+        "description": "0-3s: A close-up of a messy, greasy stovetop where a person reaches for a spice jar and accidentally knocks over another, spilling powder next to a hot pan. 3-6s: The camera cuts to a hand snapping a matte black rectangular metal magnetic rack onto the side of a clean white refrigerator near the stove. 6-10s: The hand neatly places three spice jars onto the rack, showing them sitting securely behind the front retaining wall."
+      },
+      "video_001_part_02": {
+        "time": "10-20s",
+        "description": "0-4s: A close-up showing the detachable metal hooks being hooked onto the bottom edge of the matte black rack, with a pair of silicone oven gloves being hung from them. 4-8s: A wider shot of the refrigerator side showing two racks mounted vertically, holding oils, spices, and hanging tools neatly. 8-10s: A clean visual with a text overlay: 'Upgrade your kitchen setup today.' no hard-sell voiceover."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-007-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style video. Timeline: 0-3s: Close-up of a messy stove top with grease splatters, a hand accidentally knocks over a plastic spice bottle. 3-6s: A matte black carbon steel magnetic rack with a high back plate is snapped onto a white refrigerator side. 6-10s: Hand places spice jars inside the rack. Use the provided product reference images as the exact product identity. Do not change the matte black color, rectangular tray shape, or carbon steel material. Do not end with a CTA in this segment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-007-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style video. Timeline: 0-4s: Close-up of attaching detachable metal hooks to the bottom edge of the matte black magnetic rack and hanging a kitchen glove. 4-8s: A clean side-view of two identical matte black racks on the fridge, holding oil bottles and spices. 8-10s: Short text overlay: 'Keep your spices clean. Get yours today.' This segment is a continuation of part 1. Keep the exact same product identity, matte black carbon steel material, and visual style.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.021,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.020588235294117647,
+      "history_script_id": "magnetic_spice_rack_set-005",
+      "similarities": {
+        "hook": 0.16666666666666666,
+        "angle": 0.20588235294117646,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-007-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_function.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style video. Timeline: 0-3s: Close-up of a messy stove top with grease splatters, a hand accidentally knocks over a plastic spice bottle. 3-6s: A matte black carbon steel magnetic rack with a high back plate is snapped onto a white refrigerator side. 6-10s: Hand places spice jars inside the rack. Use the provided product reference images as the exact product identity. Do not change the matte black color, rectangular tray shape, or carbon steel material. Do not end with a CTA in this segment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-007-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 realistic handheld phone-shot style video. Timeline: 0-4s: Close-up of attaching detachable metal hooks to the bottom edge of the matte black magnetic rack and hanging a kitchen glove. 4-8s: A clean side-view of two identical matte black racks on the fridge, holding oil bottles and spices. 8-10s: Short text overlay: 'Keep your spices clean. Get yours today.' This segment is a continuation of part 1. Keep the exact same product identity, matte black carbon steel material, and visual style.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-03T01:09:39.462Z"
+}
