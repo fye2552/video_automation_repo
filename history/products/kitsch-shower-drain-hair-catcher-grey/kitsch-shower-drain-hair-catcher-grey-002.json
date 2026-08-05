@@ -1,0 +1,102 @@
+{
+  "script_id": "kitsch-shower-drain-hair-catcher-grey-002",
+  "product_id": "kitsch-shower-drain-hair-catcher-grey",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/kitsch-shower-drain-hair-catcher-grey",
+  "product_folder": "products/kitsch-shower-drain-hair-catcher-grey",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "kitsch-shower-drain-hair-catcher-grey-002",
+    "product_id": "kitsch-shower-drain-hair-catcher-grey",
+    "angle": "Real-life shower clog pain followed by quick, damage-free silicone drain protection",
+    "hook": "Watching water pool up in a clogged shower drain is the absolute worst.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time_range": "0-10s",
+        "description": "0-3s: Show dirty water pooling up over a clogged bathroom shower drain. 3-6s: Wipe the area around the drain dry and place the grey dome-shaped silicone hair catcher directly over the drain opening. 6-10s: Press down firmly on the corner suction cups to anchor it to the smooth tile surface while water begins running smoothly."
+      },
+      "video_001_part_02": {
+        "time_range": "10-20s",
+        "description": "0-4s: Cut to the grey silicone hair catcher installed over a bathtub drain with running water flowing freely through the perforated holes. 4-8s: Hand easily lifts caught hair strands off the perforated silicone dome. 8-10s: Light English text overlay: 'Keep your drains clear the simple way.' with a neutral close-up of the clean installed product."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "kitsch-shower-drain-hair-catcher-grey-002-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_white_bg.jpeg",
+        "promptText": "A 9:16 realistic handheld phone-shot UGC video, vertical TikTok style. 0-3s: Close-up of a clogged bathroom shower drain with dirty pooled water and messy hair blockages. 3-6s: Hand wipes the smooth flat tile around the drain clean, then places the grey dome-shaped silicone Kitsch Shower Drain Hair Catcher centered directly over the drain. 6-10s: Hand presses down firmly on the corner suction cups of the grey silicone catcher to secure it. Water starts running smoothly. Keep the exact product identity, matte grey color, perforated dome grid, and embossed logo intact. Do not include a CTA. Fast-paced, realistic.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "kitsch-shower-drain-hair-catcher-grey-002-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_detail_side.jpeg",
+        "promptText": "A 9:16 realistic handheld phone-shot UGC video, vertical TikTok style. Continuation from Part 1. 0-4s: Fast-cut showing the grey silicone hair catcher installed on a smooth bathtub drain with water flowing. 4-8s: Hand easily lifts and removes trapped hair strands from the top perforated mesh dome of the catcher, showing clean tiles beneath. 8-10s: Overlay text: 'Keep your drains clear the simple way.' and display the product resting on the drain. Preserve the exact product identity, matte grey color, square shape, and perforated dome grid from the previous segment. Keep it natural.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.012,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.012,
+      "history_script_id": "kitsch-shower-drain-hair-catcher-grey-001",
+      "similarities": {
+        "hook": 0.13043478260869565,
+        "angle": 0.12,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "kitsch-shower-drain-hair-catcher-grey-002-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_white_bg.jpeg",
+      "promptText": "A 9:16 realistic handheld phone-shot UGC video, vertical TikTok style. 0-3s: Close-up of a clogged bathroom shower drain with dirty pooled water and messy hair blockages. 3-6s: Hand wipes the smooth flat tile around the drain clean, then places the grey dome-shaped silicone Kitsch Shower Drain Hair Catcher centered directly over the drain. 6-10s: Hand presses down firmly on the corner suction cups of the grey silicone catcher to secure it. Water starts running smoothly. Keep the exact product identity, matte grey color, perforated dome grid, and embossed logo intact. Do not include a CTA. Fast-paced, realistic.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "kitsch-shower-drain-hair-catcher-grey-002-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_detail_side.jpeg",
+      "promptText": "A 9:16 realistic handheld phone-shot UGC video, vertical TikTok style. Continuation from Part 1. 0-4s: Fast-cut showing the grey silicone hair catcher installed on a smooth bathtub drain with water flowing. 4-8s: Hand easily lifts and removes trapped hair strands from the top perforated mesh dome of the catcher, showing clean tiles beneath. 8-10s: Overlay text: 'Keep your drains clear the simple way.' and display the product resting on the drain. Preserve the exact product identity, matte grey color, square shape, and perforated dome grid from the previous segment. Keep it natural.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T03:50:31.617Z"
+}
