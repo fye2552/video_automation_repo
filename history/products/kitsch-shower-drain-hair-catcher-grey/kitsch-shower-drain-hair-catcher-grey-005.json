@@ -1,0 +1,132 @@
+{
+  "script_id": "kitsch-shower-drain-hair-catcher-grey-005",
+  "product_id": "kitsch-shower-drain-hair-catcher-grey",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/kitsch-shower-drain-hair-catcher-grey",
+  "product_folder": "products/kitsch-shower-drain-hair-catcher-grey",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "kitsch-shower-drain-hair-catcher-grey-005",
+    "product_id": "kitsch-shower-drain-hair-catcher-grey",
+    "angle": "Real-life bathroom drain clog frustration resolved by a quick-install silicone protective barrier",
+    "hook": "Tired of dealing with gross, clogged shower drains?",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Clean and wipe dry the area around the drain opening",
+        "Place the Hair Catcher directly over the drain opening",
+        "Press down firmly on the corner suction cups",
+        "Use shower as usual and lift/remove caught hair from the dome as needed"
+      ]
+    },
+    "script_record": {
+      "duration": 20,
+      "style": "pain_conflict_fast_cut",
+      "pain_point": "Dirty water pooling up and messy hair clogs in the shower drain",
+      "conflict_hook": "Tired of dealing with gross, clogged shower drains?",
+      "product_solution": "Direct placement of the Kitsch grey silicone hair catcher over the flat drain",
+      "timeline": [
+        {
+          "time": "0-3s",
+          "purpose": "痛点冲突",
+          "scene": "Close-up POV of water pooling in a shower with hair clogging the open metal drain grate."
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "A hand wipes dry the smooth surface around the drain, places the Kitsch grey silicone hair catcher directly over the opening, and presses down firmly on the four corner suction cups."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Water flows smoothly through the perforated grid of the catcher while hair gets trapped on the grey silicone dome."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "The catcher is shown anchored flat over a bathtub drain, catching soapy water and hair seamlessly."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Hand easily lifts and removes the accumulated hair from the top dome of the catcher, keeping the drain clean."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Text overlay: 'A simple upgrade for everyday use.' over a clean bathroom scene."
+        }
+      ],
+      "cta": "A simple upgrade for everyday use."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "kitsch-shower-drain-hair-catcher-grey-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Show a close-up POV of water pooling in a dirty shower drain with a hair clog causing frustration. 3-6s: Hand wipes the flat drain area dry and places the grey silicone Kitsch Hair Catcher directly over the drain, pressing down on the corner suction cups. 6-10s: Show water flowing through the perforated dome grid while hair traps on the outer matte surface. Do not start with a perfect product shot. Do not end with a CTA. Keep the same product identity: grey color, 100% silicone, 6x6 inch flat square base with a rounded top arch and perforated dome. Use product_detail_side.jpeg to preserve the texture.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "kitsch-shower-drain-hair-catcher-grey-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene showing the grey silicone hair catcher positioned over a bathtub drain. 4-8s: Hand easily lifts the gathered hair off the perforated top dome. 8-10s: Short light CTA text overlay: 'A simple upgrade for everyday use.' Keep the visual style, product identity, and pacing identical to the previous segment. Use product_function.jpeg to understand the drainage and suction cup structure on smooth, flat surfaces.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.035,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.034999999999999996,
+      "history_script_id": "kitsch-shower-drain-hair-catcher-grey-002",
+      "similarities": {
+        "hook": 0.10526315789473684,
+        "angle": 0.35,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "kitsch-shower-drain-hair-catcher-grey-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-3s: Show a close-up POV of water pooling in a dirty shower drain with a hair clog causing frustration. 3-6s: Hand wipes the flat drain area dry and places the grey silicone Kitsch Hair Catcher directly over the drain, pressing down on the corner suction cups. 6-10s: Show water flowing through the perforated dome grid while hair traps on the outer matte surface. Do not start with a perfect product shot. Do not end with a CTA. Keep the same product identity: grey color, 100% silicone, 6x6 inch flat square base with a rounded top arch and perforated dome. Use product_detail_side.jpeg to preserve the texture.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "kitsch-shower-drain-hair-catcher-grey-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/kitsch-shower-drain-hair-catcher-grey/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style ad video in realistic handheld phone-shot style. Timeline: 0-4s: Fast-cut scene showing the grey silicone hair catcher positioned over a bathtub drain. 4-8s: Hand easily lifts the gathered hair off the perforated top dome. 8-10s: Short light CTA text overlay: 'A simple upgrade for everyday use.' Keep the visual style, product identity, and pacing identical to the previous segment. Use product_function.jpeg to understand the drainage and suction cup structure on smooth, flat surfaces.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T08:04:36.384Z"
+}
