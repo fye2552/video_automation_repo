@@ -1,0 +1,77 @@
+{
+  "script_id": "theaoo-gold-paper-towel-holder-004",
+  "product_id": "theaoo-gold-paper-towel-holder",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_g_first_person_function.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/theaoo-gold-paper-towel-holder",
+  "product_folder": "products/theaoo-gold-paper-towel-holder",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "theaoo-gold-paper-towel-holder-004",
+    "product_id": "theaoo-gold-paper-towel-holder",
+    "angle": "First-Person POV Wall-Mount Slide-On Roll Setup and Pull Test",
+    "hook": "Instantly clear up kitchen counter space with a sleek, vertical-mounted gold paper towel holder.",
+    "structure_signature": "first-person-product-usage-two-scene-video-prompt-generator",
+    "scene_order": [
+      "scene_01"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2
+      ]
+    },
+    "script_record": {
+      "scene_01": {
+        "scene_title": "POV Installation and Roll Usage",
+        "narration": "",
+        "visual": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双手、部分前臂、产品和当前厨房台面墙壁区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只拉丝金色不锈钢L形纸巾架，严格保持矩形底座、垂直支撑柱、长圆柱挂杆及圆形末端挡帽的金色金属质感不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、黏贴按压声和纸张撕扯声。\n\n用户未指定地域时，人物手部、家居空间、日常物品和使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯视视角，双手拿着拉丝金色纸巾架的矩形安装底板，将其水平对齐并用力按压在干净整洁的厨房白色瓷砖墙面上，持续按压底座进行贴合固定；在4.0秒至5.0秒时，单手捏住底座一角轻微向外拉动一次，底板紧贴墙面稳固不摇晃。保留按压接触的真实环境音。\n\n5.0sec-10.0sec\n直接硬切到同一墙面安装机位，第一人称右手拿着一卷标准厨房纸巾，平行于挂杆方向将其平稳套入11.81英寸的金色不锈钢挂杆，越过圆形的端盖直至纸巾卷完全挂好；在9.0秒至10.0秒时，右手轻轻扯下一张纸巾，纸巾架整体稳固卡在瓷砖墙上没有位移。保留纸巾卷滑动和纸张撕扯的摩擦声。\n\n全局限制：两段均保持同一只拉丝金色不锈钢L形纸巾架，不得出现第二只纸巾架、拼贴箭头、浮动文字、血迹脏污、夸张特效、使用者脸部、第三人称机位、额外手指和人工合成背景音效。"
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "theaoo-gold-paper-towel-holder-004-scene-01",
+        "scene_id": "scene_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_white_bg.jpeg",
+        "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双手、部分前臂、产品和当前厨房台面墙壁区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只拉丝金色不锈钢L形纸巾架，严格保持矩形底座、垂直支撑柱、长圆柱挂杆及圆形末端挡帽的金色金属质感不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、黏贴按压声和纸张撕扯声。\n\n用户未指定地域时，人物手部、家居空间、日常物品 and 使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯视视角，双手拿着拉丝金色纸巾架的矩形安装底板，将其水平对齐并用力按压在干净整洁的厨房白色瓷砖墙面上，持续按压底座进行贴合固定；在4.0秒至5.0秒时，单手捏住底座一角轻微向外拉动一次，底板紧贴墙面稳固不摇晃。保留按压接触的真实环境音。\n\n5.0sec-10.0sec\n直接硬切到同一墙面安装机位，第一人称右手拿着一卷标准厨房纸巾，平行于挂杆方向将其平稳套入11.81英寸的金色不锈钢挂杆，越过圆形的端盖直至纸巾卷完全挂好；在9.0秒至10.0秒时，右手轻轻扯下一张纸巾，纸巾架整体稳固卡在瓷砖墙上没有位移。保留纸巾卷滑动和纸张撕扯的摩擦声。\n\n全局限制：两段均保持同一只拉丝金色不锈钢L形纸巾架，不得出现第二只纸巾架、拼贴箭头、浮动文字、血迹脏污、夸张特效、使用者脸部、第三人称机位、额外手指和人工合成背景音效。",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.029,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.029411764705882356,
+      "history_script_id": "theaoo-gold-paper-towel-holder-002",
+      "similarities": {
+        "hook": 0.18518518518518517,
+        "angle": 0.29411764705882354,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "theaoo-gold-paper-towel-holder-004-scene-01",
+      "scene_id": "scene_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_white_bg.jpeg",
+      "promptText": "时长：10秒，比例：9:16。生成一条真实自然的第一人称产品功能演示视频，手机原生UGC质感。全片严格分为两个连续 5 秒片段，在 5.0 秒处硬切一次。摄影机始终是当前使用者的眼睛，只出现完成动作的一双手、部分前臂、产品和当前厨房台面墙壁区域；不得出现使用者脸部、身体、镜中倒影、手机、相机和第三人称镜头。上传的产品参考图片为最高优先级，全程只出现同一只拉丝金色不锈钢L形纸巾架，严格保持矩形底座、垂直支撑柱、长圆柱挂杆及圆形末端挡帽的金色金属质感不变。全程无对白、无旁白、无背景音乐、无字幕，只保留第一人称环境音、黏贴按压声和纸张撕扯声。\n\n用户未指定地域时，人物手部、家居空间、日常物品 and 使用习惯均符合真实自然的美国或欧洲普通家庭；无可读文字、地域冲突包装和不相称生活陈设。\n\n0.0sec-5.0sec\n第一人称俯视视角，双手拿着拉丝金色纸巾架的矩形安装底板，将其水平对齐并用力按压在干净整洁的厨房白色瓷砖墙面上，持续按压底座进行贴合固定；在4.0秒至5.0秒时，单手捏住底座一角轻微向外拉动一次，底板紧贴墙面稳固不摇晃。保留按压接触的真实环境音。\n\n5.0sec-10.0sec\n直接硬切到同一墙面安装机位，第一人称右手拿着一卷标准厨房纸巾，平行于挂杆方向将其平稳套入11.81英寸的金色不锈钢挂杆，越过圆形的端盖直至纸巾卷完全挂好；在9.0秒至10.0秒时，右手轻轻扯下一张纸巾，纸巾架整体稳固卡在瓷砖墙上没有位移。保留纸巾卷滑动和纸张撕扯的摩擦声。\n\n全局限制：两段均保持同一只拉丝金色不锈钢L形纸巾架，不得出现第二只纸巾架、拼贴箭头、浮动文字、血迹脏污、夸张特效、使用者脸部、第三人称机位、额外手指和人工合成背景音效。",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T01:58:51.781Z"
+}
