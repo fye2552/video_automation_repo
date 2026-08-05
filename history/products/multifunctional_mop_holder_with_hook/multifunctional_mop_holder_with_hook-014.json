@@ -1,0 +1,89 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-014",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-014",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Preventing broom bristle damage and handle tangling in utility room corners through vertical off-floor organization",
+    "hook": "Shoving your brooms and mops into a tight corner is literally bending and ruining the bristles.",
+    "structure_signature": "pain_hook_absurd_rescuer_solution_fast_cuts_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": "Timeline: 0-1.5s: Close-up of bent, frayed broom bristles shoved into a dusty corner. 1.5-3s: Husband wearing a tall chef's hat and apron walks in carrying the light-gray mop holder, saying: 'Hang them up, babe!'. 3-6s: Light-gray mop holder is pressed onto smooth laundry wall; a broom is locked into a white silicone roller clip. 6-10s: First clear view of 3 brooms neatly hanging on the wall-mounted bar.",
+      "video_001_part_02": "Timeline: 0-4s: Fast-cut showing the holder mounted on laundry room tile holding a mop and squeegee. 4-8s: Close-up of small towels and brushes hanging neatly from the 5 J-hooks. 8-10s: Text overlay 'Make your space cleaner and cozier.' with gentle upbeat background music."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-014-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of bent, frayed broom bristles crammed into a dusty utility corner. No product and no rescuer. 1.5-3s: A husband wearing a tall white chef's hat and apron enters carrying a light-gray wall-mounted organizer bar with five white silicone roller clips and five gray J-hooks, takes it to the wall, and says 'Hang them up, babe!'. 3-6s: The light-gray organizer is mounted on the wall and a broom handle is pushed into the white silicone roller clip, locking it securely. 6-10s: Fast-cut showing three cleaning tools neatly hanging off the floor. Use the provided product reference images as the exact product identity. Do not change the product color (light-gray), shape (horizontal bar with capsule end caps), material (smooth plastic), five white silicone clips, or five gray J-hooks. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-014-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene showing the light-gray organizer bar mounted on smooth bathroom tile walls with mops hanging. 4-8s: Close-up of cleaning brushes and towels hanging from the five integrated J-hooks. 8-10s: Short CTA showing the clean space with text overlay 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity (light-gray horizontal bar, five white silicone clips, five gray J-hooks), visual style, pacing, and usage logic. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.017,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.017391304347826087,
+      "history_script_id": "multifunctional_mop_holder_with_hook-001",
+      "similarities": {
+        "hook": 0.24,
+        "angle": 0.17391304347826086,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.3076923076923077,
+        "scene_order": 1
+      },
+      "structural_score": 0.654
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-014-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Close-up of bent, frayed broom bristles crammed into a dusty utility corner. No product and no rescuer. 1.5-3s: A husband wearing a tall white chef's hat and apron enters carrying a light-gray wall-mounted organizer bar with five white silicone roller clips and five gray J-hooks, takes it to the wall, and says 'Hang them up, babe!'. 3-6s: The light-gray organizer is mounted on the wall and a broom handle is pushed into the white silicone roller clip, locking it securely. 6-10s: Fast-cut showing three cleaning tools neatly hanging off the floor. Use the provided product reference images as the exact product identity. Do not change the product color (light-gray), shape (horizontal bar with capsule end caps), material (smooth plastic), five white silicone clips, or five gray J-hooks. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-014-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene showing the light-gray organizer bar mounted on smooth bathroom tile walls with mops hanging. 4-8s: Close-up of cleaning brushes and towels hanging from the five integrated J-hooks. 8-10s: Short CTA showing the clean space with text overlay 'Make your space cleaner and cozier.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity (light-gray horizontal bar, five white silicone clips, five gray J-hooks), visual style, pacing, and usage logic. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T06:03:47.276Z"
+}
