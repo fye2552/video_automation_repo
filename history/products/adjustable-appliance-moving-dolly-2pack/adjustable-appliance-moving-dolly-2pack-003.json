@@ -1,0 +1,101 @@
+{
+  "script_id": "adjustable-appliance-moving-dolly-2pack-003",
+  "product_id": "adjustable-appliance-moving-dolly-2pack",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/adjustable-appliance-moving-dolly-2pack",
+  "product_folder": "products/adjustable-appliance-moving-dolly-2pack",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "adjustable-appliance-moving-dolly-2pack-003",
+    "product_id": "adjustable-appliance-moving-dolly-2pack",
+    "angle": "Back strain and floor scratching protection during heavy appliance cleaning",
+    "hook": "Stop hurting your back trying to move heavy appliances to clean behind them",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Loosen the fixing screw at the center of the stand",
+        "Pull the metal frame to adjust length to match appliance base",
+        "Tighten the fixing screw to lock length in place",
+        "Place the two stands parallel under each side of the appliance base",
+        "Press down the brake pads at the ends to fix stands in place"
+      ]
+    },
+    "script_record": {
+      "0-3s_pain_conflict": "An adult home user strains and struggles to pull a heavy washing machine away from the laundry room wall, visibly stressing their back and scratching the wood floor.",
+      "3-6s_product_solution": "The user introduces the silver-white metallic telescopic frame. They loosen the center joint fixing screw, slide the frame to adjust the length, tighten the screw, and place two stands parallel under the appliance base.",
+      "6-10s_fast-cut_scene_1": "Close-up of the front brake levers on both stands being pressed down firmly by a foot to secure the dolly stands under the washing machine.",
+      "10-14s_fast-cut_scene_2": "A different scene showing a large refrigerator supported by the parallel dollies. A hand pushes the refrigerator forward smoothly, highlighting floor clearance.",
+      "14-18s_fast-cut_scene_3": "The washing machine operating stably on top of the dollies with the black anti-slip top pads absorbing vibration, the brake pads pressed down securely.",
+      "18-20s_cta": "A simple upgrade for everyday home cleaning and moving. Check it out today."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "adjustable-appliance-moving-dolly-2pack-003-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 aspect ratio. Handheld phone-shot. 0-3s: An adult home user struggles to drag a washing machine, scratching the wooden floor. 3-6s: The user loosens the center joint fixing screw of the silver-white metallic telescopic frame, adjusts the length horizontally to match the appliance, tightens the screw, and slides the two dollies parallel under the appliance base. 6-10s: Close-up of the user pressing down the front black brake levers to lock it in place. No CTA. Keep product color, metallic steel frame, and black pads consistent.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "adjustable-appliance-moving-dolly-2pack-003-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 aspect ratio. Handheld phone-shot. Continuation of part 1. 0-4s: A large refrigerator on the parallel dollies is rolled forward smoothly on the low-profile twin rollers. 4-8s: The washing machine running stably on the dollies with black anti-slip pads absorbing vibration, showing the front brake levers pressed down firmly. 8-10s: Light English text overlay: 'A simple upgrade for everyday home cleaning. Check it out today.' Maintain matching metallic silver-white finish, black polyurethane rollers, and overall visual identity.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.025,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.025,
+      "history_script_id": "adjustable-appliance-moving-dolly-2pack-002",
+      "similarities": {
+        "hook": 0.14285714285714285,
+        "angle": 0.25,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "adjustable-appliance-moving-dolly-2pack-003-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 aspect ratio. Handheld phone-shot. 0-3s: An adult home user struggles to drag a washing machine, scratching the wooden floor. 3-6s: The user loosens the center joint fixing screw of the silver-white metallic telescopic frame, adjusts the length horizontally to match the appliance, tightens the screw, and slides the two dollies parallel under the appliance base. 6-10s: Close-up of the user pressing down the front black brake levers to lock it in place. No CTA. Keep product color, metallic steel frame, and black pads consistent.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "adjustable-appliance-moving-dolly-2pack-003-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video in 9:16 aspect ratio. Handheld phone-shot. Continuation of part 1. 0-4s: A large refrigerator on the parallel dollies is rolled forward smoothly on the low-profile twin rollers. 4-8s: The washing machine running stably on the dollies with black anti-slip pads absorbing vibration, showing the front brake levers pressed down firmly. 8-10s: Light English text overlay: 'A simple upgrade for everyday home cleaning. Check it out today.' Maintain matching metallic silver-white finish, black polyurethane rollers, and overall visual identity.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T03:47:16.032Z"
+}
