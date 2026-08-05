@@ -1,0 +1,98 @@
+{
+  "script_id": "theaoo-gold-paper-towel-holder-005",
+  "product_id": "theaoo-gold-paper-towel-holder",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/theaoo-gold-paper-towel-holder",
+  "product_folder": "products/theaoo-gold-paper-towel-holder",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "theaoo-gold-paper-towel-holder-005",
+    "product_id": "theaoo-gold-paper-towel-holder",
+    "angle": "Kitchen Counter Roll Clutter to Brushed Gold Under-Cabinet Organizer Upgrade",
+    "hook": "Stop letting messy, unravelling paper towel and plastic wrap rolls crowd your kitchen countertops.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        "Mount base plate onto cabinet underside using adhesive backing, pressing firmly 1 time",
+        "Slide a paper towel roll onto the open end of the long holding bar past the circular end cap in 1 sliding push motion"
+      ]
+    },
+    "script_record": {
+      "0-3s": "Show a messy, unravelling paper towel roll cluttering a busy kitchen countertop, getting knocked over.",
+      "3-6s": "Show the rectangular base plate of the brushed gold SUS304 stainless steel paper towel holder mounted horizontally under the cabinet using the adhesive backing, pressing firmly.",
+      "6-10s": "A hand slides a standard paper towel roll past the flat circular end cap onto the 11.81in holding rod with a smooth sliding push motion.",
+      "10-14s": "A close-up shot of a hand tearing a clean sheet off the paper towel roll mounted under the cabinet smoothly.",
+      "14-18s": "Show a plastic wrap roll stored vertically on the wall-mounted gold holder in a clean organized kitchen.",
+      "18-20s": "Light CTA text overlay: Make your space cleaner and cozier."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "theaoo-gold-paper-towel-holder-005-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style realistic handheld phone-shot video. Timeline: 0-3s Pain Conflict: Show a messy, unravelling paper towel roll cluttering a busy kitchen countertop, getting knocked over. 3-6s Product Solution: Fast change to mounting the rectangular base plate of the brushed gold SUS304 stainless steel paper towel holder horizontally under the kitchen cabinet using the self-adhesive pad, pressing firmly. 6-10s Fast-Cut Scene 1: A hand slides a standard paper towel roll past the flat circular end cap onto the 11.81in brushed gold holding rod with a smooth sliding push motion. Preserve product color, shape, L-shaped structure, and satin brushed gold finish. No CTA in this segment. Do not exceed weight capacity. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "theaoo-gold-paper-towel-holder-005-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical 9:16 TikTok-style realistic handheld phone-shot video, continuing from the first segment. Timeline: 0-4s Fast-Cut Scene 2: Hand tearing a sheet off the paper towel roll mounted under the cabinet smoothly. 4-8s Fast-Cut Scene 3: Change scene to show a plastic wrap roll stored vertically on the wall-mounted gold holder in a clean organized kitchen. 8-10s CTA: Overlay light text 'Make your space cleaner and cozier.' Maintain identical product identity, brushed gold/brass color, L-shaped stainless steel design, circular end cap, and natural lighting. Do not show forceful pulling or exceeding weight capacity. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.024,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.023529411764705882,
+      "history_script_id": "theaoo-gold-paper-towel-holder-003",
+      "similarities": {
+        "hook": 0.3888888888888889,
+        "angle": 0.23529411764705882,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "theaoo-gold-paper-towel-holder-005-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style realistic handheld phone-shot video. Timeline: 0-3s Pain Conflict: Show a messy, unravelling paper towel roll cluttering a busy kitchen countertop, getting knocked over. 3-6s Product Solution: Fast change to mounting the rectangular base plate of the brushed gold SUS304 stainless steel paper towel holder horizontally under the kitchen cabinet using the self-adhesive pad, pressing firmly. 6-10s Fast-Cut Scene 1: A hand slides a standard paper towel roll past the flat circular end cap onto the 11.81in brushed gold holding rod with a smooth sliding push motion. Preserve product color, shape, L-shaped structure, and satin brushed gold finish. No CTA in this segment. Do not exceed weight capacity. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "theaoo-gold-paper-towel-holder-005-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/theaoo-gold-paper-towel-holder/images/imagesproduct_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical 9:16 TikTok-style realistic handheld phone-shot video, continuing from the first segment. Timeline: 0-4s Fast-Cut Scene 2: Hand tearing a sheet off the paper towel roll mounted under the cabinet smoothly. 4-8s Fast-Cut Scene 3: Change scene to show a plastic wrap roll stored vertically on the wall-mounted gold holder in a clean organized kitchen. 8-10s CTA: Overlay light text 'Make your space cleaner and cozier.' Maintain identical product identity, brushed gold/brass color, L-shaped stainless steel design, circular end cap, and natural lighting. Do not show forceful pulling or exceeding weight capacity. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T03:56:25.020Z"
+}
