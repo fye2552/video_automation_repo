@@ -1,0 +1,90 @@
+{
+  "script_id": "multifunctional_mop_holder_with_hook-013",
+  "product_id": "multifunctional_mop_holder_with_hook",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/multifunctional_mop_holder_with_hook",
+  "product_folder": "products/multifunctional_mop_holder_with_hook",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "multifunctional_mop_holder_with_hook-013",
+    "product_id": "multifunctional_mop_holder_with_hook",
+    "angle": "Preventing brooms and mops from falling into narrow gaps behind laundry appliances by utilizing vertical wall organization",
+    "hook": "Nothing ruins laundry day like your broom sliding into that narrow, dusty gap behind the dryer.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": "0-3s: A close-up of a person struggling to fish out a broom that has slipped and wedged into the tight, dusty gap between a washing machine and the wall. 3-6s: Transition to the light-gray mop holder mounted on the tiled laundry wall. A hand easily pushes the broom handle into a white silicone roller clip where it locks in place. 6-10s: A close-up of a wet mop being pushed into the adjacent clip, holding firmly above the ground.",
+      "video_001_part_02": "10-14s: Shows the organizer holding three long-handled cleaning tools and various spray bottles hanging by their loops from the light-gray J-hooks. 14-18s: Wide shot of a clean, organized laundry room with the floor completely cleared of cleaning clutter. 18-20s: Light CTA text overlay reads 'A simple upgrade for everyday use.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-013-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-3s: Show a real-life frustration of a person struggling to retrieve a broom stuck in the narrow, dusty gap between a washing machine and a wall. 3-6s: Introduce the light-gray organizer with five white silicone rollers and five J-hooks mounted on a laundry wall. A hand pushes the broom handle into a roller clip, locking it securely. 6-10s: Show a wet mop handle being pushed into another clip. Do not include any CTA.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "multifunctional_mop_holder_with_hook-013-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical continuation segment, preserving identical product identity (light-gray plastic housing, white rollers, gray J-hooks) and realistic handheld style. 0-4s: Show a close-up of spray bottles and small brushes hanging from the gray J-hooks on a tiled laundry wall. 4-8s: Zoom out to show the complete horizontal holder organizing multiple brooms and mops, clearing the laundry room floor. 8-10s: Light CTA text overlay: 'A simple upgrade for everyday use.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.022,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.021739130434782608,
+      "history_script_id": "multifunctional_mop_holder_with_hook-001",
+      "similarities": {
+        "hook": 0.06666666666666667,
+        "angle": 0.21739130434782608,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-013-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, realistic handheld phone-shot style. 0-3s: Show a real-life frustration of a person struggling to retrieve a broom stuck in the narrow, dusty gap between a washing machine and a wall. 3-6s: Introduce the light-gray organizer with five white silicone rollers and five J-hooks mounted on a laundry wall. A hand pushes the broom handle into a roller clip, locking it securely. 6-10s: Show a wet mop handle being pushed into another clip. Do not include any CTA.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "multifunctional_mop_holder_with_hook-013-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/multifunctional_mop_holder_with_hook/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical continuation segment, preserving identical product identity (light-gray plastic housing, white rollers, gray J-hooks) and realistic handheld style. 0-4s: Show a close-up of spray bottles and small brushes hanging from the gray J-hooks on a tiled laundry wall. 4-8s: Zoom out to show the complete horizontal holder organizing multiple brooms and mops, clearing the laundry room floor. 8-10s: Light CTA text overlay: 'A simple upgrade for everyday use.'",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T03:51:59.467Z"
+}
