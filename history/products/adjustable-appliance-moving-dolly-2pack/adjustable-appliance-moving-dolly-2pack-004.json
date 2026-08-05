@@ -1,0 +1,137 @@
+{
+  "script_id": "adjustable-appliance-moving-dolly-2pack-004",
+  "product_id": "adjustable-appliance-moving-dolly-2pack",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/adjustable-appliance-moving-dolly-2pack",
+  "product_folder": "products/adjustable-appliance-moving-dolly-2pack",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "adjustable-appliance-moving-dolly-2pack-004",
+    "product_id": "adjustable-appliance-moving-dolly-2pack",
+    "angle": "Absurd family uncle rescuer saves floor scratches and heavy lifting using adjustable low-profile moving dollies",
+    "hook": "Dragging heavy appliances is a nightmare for your floors and your back.",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "script_record": {
+      "duration": 20,
+      "style": "low_risk_rescuer_fast_cut",
+      "pain_point": "Dirty floor corners under washing machines that are too heavy to move, scratching floors when dragged",
+      "conflict_hook": "Adult nephew straining to pull a dryer while it scrapes the floor, then an uncle in neon ski gear enters with the dollies",
+      "product_solution": "Adjustable low-profile dollies slide parallel under the appliance, lock with front brakes, and allow smooth rolling",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "真实痛点钩子",
+          "scene": "Close-up of a hand struggling to pull a washing machine, scraping the wooden floor, leaving a visible scratch."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "荒诞成年亲属携产品入场",
+          "scene": "An uncle in a bright neon ski suit and snow goggles slides sideways into the frame, holding two silver metallic telescopic dollies, and says 'I got this, kid!'"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "He loosens the center joint fixing screw, pulls the metal frame horizontally to adjust length, tightens the screw, places the dollies parallel under each side, and presses down the front brake levers."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Washing machine rolls smoothly and effortlessly away, exposing the floor underneath for easy cleaning."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "The dollies support a washing machine during its spin cycle, with anti-slip top pads reducing vibration and front brake levers firmly pressed down into locked position."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "A heavy refrigerator on the silver stands rolls easily across a kitchen tile floor."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Text overlay: 'Your cozy spot starts here. Keep it clean and mobile.' with a neutral display of the dollies."
+        }
+      ],
+      "cta": "Your cozy spot starts here. Keep it clean and mobile."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "adjustable-appliance-moving-dolly-2pack-004-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a washing machine scraping a wood floor. No product and no rescuer. 1.5-3s: An uncle wearing a neon ski suit and snow goggles enters sliding sideways, carrying the silver-white and black metallic appliance moving dollies, and says 'I got this, kid!'. 3-6s: Shows the dollies placed parallel under the appliance, the center fixing screws tightened, and the front brake levers pressed down firmly. 6-10s: Fast-cut showing the washing machine being rolled smoothly. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "adjustable-appliance-moving-dolly-2pack-004-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene showing the dollies under a washing machine during its spin cycle, with the front brake levers pressed down firmly into locked position. 4-8s: Fast-cut scene showing a heavy refrigerator on the silver dollies rolling smoothly over a tiled kitchen floor. 8-10s: Short CTA text overlay 'Your cozy spot starts here. Keep it clean and mobile.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.018,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.018181818181818184,
+      "history_script_id": "adjustable-appliance-moving-dolly-2pack-002",
+      "similarities": {
+        "hook": 0.15,
+        "angle": 0.18181818181818182,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.16666666666666666,
+        "scene_order": 1
+      },
+      "structural_score": 0.583
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "adjustable-appliance-moving-dolly-2pack-004-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail of a washing machine scraping a wood floor. No product and no rescuer. 1.5-3s: An uncle wearing a neon ski suit and snow goggles enters sliding sideways, carrying the silver-white and black metallic appliance moving dollies, and says 'I got this, kid!'. 3-6s: Shows the dollies placed parallel under the appliance, the center fixing screws tightened, and the front brake levers pressed down firmly. 6-10s: Fast-cut showing the washing machine being rolled smoothly. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "adjustable-appliance-moving-dolly-2pack-004-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/adjustable-appliance-moving-dolly-2pack/images/imagesproduct_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene showing the dollies under a washing machine during its spin cycle, with the front brake levers pressed down firmly into locked position. 4-8s: Fast-cut scene showing a heavy refrigerator on the silver dollies rolling smoothly over a tiled kitchen floor. 8-10s: Short CTA text overlay 'Your cozy spot starts here. Keep it clean and mobile.' This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color, shape, material, size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T07:17:08.181Z"
+}
