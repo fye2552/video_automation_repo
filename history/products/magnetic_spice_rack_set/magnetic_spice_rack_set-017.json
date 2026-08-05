@@ -1,0 +1,96 @@
+{
+  "script_id": "magnetic_spice_rack_set-017",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-017",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Utilizing the side of the refrigerator to stop spices and small tools from falling down the narrow gap between the counter and fridge",
+    "hook": "Stop losing your expensive spice jars and utensils down that dark gap next to your refrigerator.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "video_001_part_01": {
+        "time_range": "0-10s",
+        "description": "0-3s: A close-up of a kitchen counter next to a refrigerator where a hand reaches for a spice jar and knocks it down the narrow gap between the fridge and counter. 3-6s: A matte black rectangular metal magnetic spice rack is snapped onto the side of the refrigerator. 6-10s: Several spice jars are placed securely inside the rack, showing them safe and organized."
+      },
+      "video_001_part_02": {
+        "time_range": "10-20s",
+        "description": "0-4s: A second matte black rack is shown on the fridge, holding oil bottles, with two detachable metal hooks holding measuring spoons underneath. 4-8s: A hand easily pulls a jar from the rack, showing it stays perfectly in place on the fridge side. 8-10s: The camera pulls back to show the clean fridge side setup with the light CTA overlay."
+      }
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-017-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, shot on a realistic handheld phone. Use the provided product reference images showing the matte black carbon steel rectangular rack with a high back plate and a lower front retaining wall. Timeline: 0-3s (Pain Conflict): Close-up of a messy kitchen counter edge next to a refrigerator. A hand tries to grab a spice jar but accidentally knocks it and a spatula down the dark, narrow gap between the fridge and the counter. 3-6s (Product Solution): Instantly introduce the matte black metal magnetic rack. A hand snaps the flat back plate of the rack onto the metal side of the refrigerator above the counter. 6-10s (Fast-cut Scene 1): Show the spice jars placed neatly inside the secure, matte black metal rack on the fridge side. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-017-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style ad video, shot on a realistic handheld phone. This segment must be the continuation of the previous 10-second segment, maintaining the identical matte black carbon steel rack, kitchen background, lighting, and pacing. Timeline: 0-4s (Fast-cut Scene 2): Show a second matte black magnetic rack mounted on the side of the refrigerator. It holds oil bottles, and two detachable metal hooks hang from the bottom edge holding measuring spoons. 4-8s (Fast-cut Scene 3): Close-up of a hand easily lifting a spice jar from the rack without the rack slipping or sliding on the fridge surface. 8-10s (CTA): The camera pulls back slightly to show the clean side of the fridge with the racks. Voiceover or overlay text: 'Keep your kitchen spices secure and within reach. Check it out today.'",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "duplicate_score": 0.025,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.025,
+      "history_script_id": "magnetic_spice_rack_set-012",
+      "similarities": {
+        "hook": 0.19230769230769232,
+        "angle": 0.25,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 1,
+        "scene_order": 1
+      },
+      "structural_score": 1
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-017-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, shot on a realistic handheld phone. Use the provided product reference images showing the matte black carbon steel rectangular rack with a high back plate and a lower front retaining wall. Timeline: 0-3s (Pain Conflict): Close-up of a messy kitchen counter edge next to a refrigerator. A hand tries to grab a spice jar but accidentally knocks it and a spatula down the dark, narrow gap between the fridge and the counter. 3-6s (Product Solution): Instantly introduce the matte black metal magnetic rack. A hand snaps the flat back plate of the rack onto the metal side of the refrigerator above the counter. 6-10s (Fast-cut Scene 1): Show the spice jars placed neatly inside the secure, matte black metal rack on the fridge side. Do not start with a perfect product shot. Do not end with a CTA in this segment.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-017-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style ad video, shot on a realistic handheld phone. This segment must be the continuation of the previous 10-second segment, maintaining the identical matte black carbon steel rack, kitchen background, lighting, and pacing. Timeline: 0-4s (Fast-cut Scene 2): Show a second matte black magnetic rack mounted on the side of the refrigerator. It holds oil bottles, and two detachable metal hooks hang from the bottom edge holding measuring spoons. 4-8s (Fast-cut Scene 3): Close-up of a hand easily lifting a spice jar from the rack without the rack slipping or sliding on the fridge surface. 8-10s (CTA): The camera pulls back slightly to show the clean side of the fridge with the racks. Voiceover or overlay text: 'Keep your kitchen spices secure and within reach. Check it out today.'",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T03:51:18.185Z"
+}
