@@ -1,0 +1,99 @@
+{
+  "script_id": "replacement-gap-duster-006",
+  "product_id": "replacement-gap-duster",
+  "active_skill": "skill_c",
+  "skill_path": "skills/skill_c.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/replacement-gap-duster",
+  "product_folder": "products/replacement-gap-duster",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "replacement-gap-duster-006",
+    "product_id": "replacement-gap-duster",
+    "angle": "Cleaning high, dusty ceiling vents and narrow furniture gaps safely from the floor with an extendable, bendable microfiber duster.",
+    "hook": "A home user struggles on an unstable chair to reach a dusty ceiling vent before switching to an extendable duster.",
+    "structure_signature": "pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": true,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": [
+        1,
+        2,
+        3
+      ]
+    },
+    "script_record": {
+      "0-3s": "An adult home user stands unstably on a wooden chair, straining to reach a dusty high ceiling air conditioning vent with a small rag, wincing as dust falls.",
+      "3-6s": "Transition to the user standing safely on the floor. Hands twist the light blue lock connector on the metallic silver pole of the Replacement Gap Duster, extending the stainless steel pole axially, then twisting to lock.",
+      "6-10s": "The flat grey microfiber duster head is bent manually and easily wipes across the high dusty ceiling vent, electrostatically trapping dust.",
+      "10-14s": "The flat grey microfiber duster head slides parallel to the floor deep under a low-clearance couch, sweeping back and forth.",
+      "14-18s": "The flat duster head slides vertically into a narrow gap between a washing machine and a wall, pulling out accumulated dust.",
+      "18-20s": "A stable shot of the duster leaning against a clean bedroom wall. Text overlay: 'Make your space cleaner and cozier.'"
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "replacement-gap-duster-006-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style realistic ad video (9:16 aspect ratio). 0-3s: Handheld phone-shot. An adult home user stands unstably on a wooden chair, straining to reach a dusty high ceiling air conditioning vent with a rag, wincing as dust falls. 3-6s: Cut to user standing safely on the floor, holding the Replacement Gap Duster. Show hands twisting the light blue plastic lock connector on the metallic silver pole, extending the telescopic pole axially, then twisting to lock. 6-10s: Show the flat grey microfiber duster head being manually bent and easily wiping across the high ceiling vent, trapping dust. Maintain product identity: flat rectangular grey microfiber sleeve, light blue connectors, metallic silver extendable pole. No text overlays, no subtitles, no UI. Real product-use sounds only.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "replacement-gap-duster-006-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical TikTok-style realistic ad video (9:16 aspect ratio) continuing the previous clip. 0-4s: Handheld phone-shot showing the flat grey microfiber duster head sliding parallel to the floor deep under a low-clearance couch, sweeping back and forth. 4-8s: The flat duster head slides vertically into a narrow gap beside a white washing machine, collecting dust. 8-10s: A neutral shot of the clean duster standing against a wall. Short clean light CTA overlay text: 'Make your space cleaner and cozier.' Preserve identical product identity: flat grey microfiber sleeve, light blue connectors, metallic silver pole, matching visual style and pacing. No dialogue.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "skill_c_extra_scenes_skipped": false,
+    "instructions_for_use_enforced": true,
+    "duplicate_score": 0.043,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.04302325581395349,
+      "history_script_id": "replacement-gap-duster-001",
+      "similarities": {
+        "hook": 0.06451612903225806,
+        "angle": 0.1,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0.3302325581395349,
+        "structure_signature": 0,
+        "scene_order": 0
+      },
+      "structural_score": 0
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "replacement-gap-duster-006-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style realistic ad video (9:16 aspect ratio). 0-3s: Handheld phone-shot. An adult home user stands unstably on a wooden chair, straining to reach a dusty high ceiling air conditioning vent with a rag, wincing as dust falls. 3-6s: Cut to user standing safely on the floor, holding the Replacement Gap Duster. Show hands twisting the light blue plastic lock connector on the metallic silver pole, extending the telescopic pole axially, then twisting to lock. 6-10s: Show the flat grey microfiber duster head being manually bent and easily wiping across the high ceiling vent, trapping dust. Maintain product identity: flat rectangular grey microfiber sleeve, light blue connectors, metallic silver extendable pole. No text overlays, no subtitles, no UI. Real product-use sounds only.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "replacement-gap-duster-006-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/replacement-gap-duster/images/imagesproduct_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical TikTok-style realistic ad video (9:16 aspect ratio) continuing the previous clip. 0-4s: Handheld phone-shot showing the flat grey microfiber duster head sliding parallel to the floor deep under a low-clearance couch, sweeping back and forth. 4-8s: The flat duster head slides vertically into a narrow gap beside a white washing machine, collecting dust. 8-10s: A neutral shot of the clean duster standing against a wall. Short clean light CTA overlay text: 'Make your space cleaner and cozier.' Preserve identical product identity: flat grey microfiber sleeve, light blue connectors, metallic silver pole, matching visual style and pacing. No dialogue.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T02:41:05.100Z"
+}
