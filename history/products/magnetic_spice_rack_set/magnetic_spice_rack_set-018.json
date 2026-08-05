@@ -1,0 +1,131 @@
+{
+  "script_id": "magnetic_spice_rack_set-018",
+  "product_id": "magnetic_spice_rack_set",
+  "active_skill": "custom",
+  "skill_path": "skills/skill_h.md",
+  "github_url": "https://github.com/fye2552/video_automation_repo/tree/main/products/magnetic_spice_rack_set",
+  "product_folder": "products/magnetic_spice_rack_set",
+  "selected_script": {
+    "retry_attempt": 1,
+    "script_id": "magnetic_spice_rack_set-018",
+    "product_id": "magnetic_spice_rack_set",
+    "angle": "Relocating tea tins, coffee pods, and mugs from a cluttered home-office desk onto the side of a mini-fridge using matte black magnetic organizers",
+    "hook": "Stop cluttering your tiny desk with coffee pods and tea tins.",
+    "structure_signature": "low_risk_rescuer_fast_cut",
+    "scene_order": [
+      "video_001_part_01",
+      "video_001_part_02"
+    ],
+    "usage_compliance": {
+      "instructions_for_use_applied": false,
+      "confirmed_source_only": true,
+      "no_unconfirmed_operation": true,
+      "prohibited_actions_avoided": true,
+      "usage_steps_used": []
+    },
+    "script_record": {
+      "script_id": "magnetic_spice_rack_set-018",
+      "duration": 20,
+      "style": "low_risk_rescuer_fast_cut",
+      "pain_point": "Cluttered home-office desk with tea tins and coffee pods rolling around",
+      "conflict_hook": "A coffee pod rolling off a messy desk and falling",
+      "product_solution": "Attaching the matte black magnetic rack to the side of a mini-fridge to hold the items",
+      "timeline": [
+        {
+          "time": "0-1.5s",
+          "purpose": "真实痛点钩子",
+          "scene": "Close-up of tea tins and coffee pods scattered across a cluttered desk, with one coffee pod rolling off the edge."
+        },
+        {
+          "time": "1.5-3s",
+          "purpose": "荒诞成年亲属携产品入场",
+          "scene": "Grandfather wearing a shiny silver astronaut helmet and orange reflective gloves moonwalks backwards into the frame, snaps the matte black magnetic rack onto the side of a mini-fridge, and says 'No more clutter!'"
+        },
+        {
+          "time": "3-6s",
+          "purpose": "产品解决",
+          "scene": "The matte black magnetic rack is firmly attached to the side of the mini-fridge, instantly holding the tea tins and coffee pods."
+        },
+        {
+          "time": "6-10s",
+          "purpose": "快切场景 1",
+          "scene": "Close-up of the rack holding coffee mugs, with a towel hanging neatly from the detachable metal hooks on the bottom edge."
+        },
+        {
+          "time": "10-14s",
+          "purpose": "快切场景 2",
+          "scene": "Fast cut to the rack attached to the side of a washing machine, holding a detergent bottle and dryer sheets."
+        },
+        {
+          "time": "14-18s",
+          "purpose": "快切场景 3",
+          "scene": "Fast cut to the rack on the side of a microwave, holding spice jars and cooking oils."
+        },
+        {
+          "time": "18-20s",
+          "purpose": "CTA",
+          "scene": "Clean look at the organized space with text on screen: 'Make your space cleaner and cozier.'"
+        }
+      ],
+      "cta": "Make your space cleaner and cozier."
+    },
+    "final_moyin_jobs": [
+      {
+        "job_id": "magnetic_spice_rack_set-018-scene-01",
+        "scene_id": "video_001_part_01",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail: tea tins and coffee pods scattered all over a small cluttered home-office desk next to a mini-fridge, with a coffee pod rolling off and falling. No product and no rescuer. 1.5-3s: An absurd adult family rescuer (Grandfather wearing a shiny silver space astronaut helmet and orange reflective gloves) moonwalks slowly backwards into the frame carrying the exact matte black carbon steel magnetic rack with hooks. He snaps it onto the side of the mini-fridge and says, \"No more clutter!\" 3-6s: Quickly show the product as the direct solution: the matte black magnetic rack is firmly attached to the side of the mini-fridge, and the tea tins are neatly arranged inside it. 6-10s: Fast-cut scene 1 showing the first clear result: tea tins and coffee mugs organized neatly inside the rack, with a hand towel hanging from the detachable metal hooks on the bottom edge. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color (matte black), shape (rectangular tray with high back plate and lower front retaining wall), material (carbon steel metal), size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      },
+      {
+        "job_id": "magnetic_spice_rack_set-018-scene-02",
+        "scene_id": "video_001_part_02",
+        "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+        "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment: the matte black magnetic rack attached to the side of a laundry washing machine, holding a liquid detergent bottle and dryer sheets securely, with a small lint brush hanging from the detachable metal hook. 4-8s: Fast-cut scene 3 showing final result, comfort, cleanliness, or improved usage: the rack attached to the side of a microwave, holding spice jars and seasoning bottles, showcasing its heavy-duty magnetic strength. 8-10s: Short CTA: \"Make your space cleaner and cozier.\" This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color (matte black), shape (rectangular tray with high back plate and lower front retaining wall), material (carbon steel metal), size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+        "duration": "10",
+        "ratio": "9:16",
+        "watermark": false
+      }
+    ],
+    "duplicate_score": 0.028,
+    "duplicate_score_max": 0.6,
+    "duplicate_comparison": {
+      "score": 0.02777777777777778,
+      "history_script_id": "magnetic_spice_rack_set-009",
+      "similarities": {
+        "hook": 0.2631578947368421,
+        "angle": 0.2777777777777778,
+        "pain_point": 0,
+        "creator_context": 0,
+        "result_proof": 0,
+        "promptText": 0,
+        "structure_signature": 0.16666666666666666,
+        "scene_order": 1
+      },
+      "structural_score": 0.583
+    }
+  },
+  "final_moyin_jobs": [
+    {
+      "job_id": "magnetic_spice_rack_set-018-scene-01",
+      "scene_id": "video_001_part_01",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_white_bg.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-1.5s: Show one real daily pain point through a close-up detail: tea tins and coffee pods scattered all over a small cluttered home-office desk next to a mini-fridge, with a coffee pod rolling off and falling. No product and no rescuer. 1.5-3s: An absurd adult family rescuer (Grandfather wearing a shiny silver space astronaut helmet and orange reflective gloves) moonwalks slowly backwards into the frame carrying the exact matte black carbon steel magnetic rack with hooks. He snaps it onto the side of the mini-fridge and says, \"No more clutter!\" 3-6s: Quickly show the product as the direct solution: the matte black magnetic rack is firmly attached to the side of the mini-fridge, and the tea tins are neatly arranged inside it. 6-10s: Fast-cut scene 1 showing the first clear result: tea tins and coffee mugs organized neatly inside the rack, with a hand towel hanging from the detachable metal hooks on the bottom edge. Do not start with a perfect product shot. Do not end with a CTA in this segment. Keep the pacing fast, clear, low-risk, and product-focused. Use the provided product reference images as the exact product identity. Do not change the product color (matte black), shape (rectangular tray with high back plate and lower front retaining wall), material (carbon steel metal), size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    },
+    {
+      "job_id": "magnetic_spice_rack_set-018-scene-02",
+      "scene_id": "video_001_part_02",
+      "promptImage": "https://ghproxy.net/https://raw.githubusercontent.com/fye2552/video_automation_repo/main/products/magnetic_spice_rack_set/images/product_detail_side.jpeg",
+      "promptText": "Create a 10-second vertical UGC ad video. Timeline: 0-4s: Fast-cut scene 2 in a different real-life usage environment: the matte black magnetic rack attached to the side of a laundry washing machine, holding a liquid detergent bottle and dryer sheets securely, with a small lint brush hanging from the detachable metal hook. 4-8s: Fast-cut scene 3 showing final result, comfort, cleanliness, or improved usage: the rack attached to the side of a microwave, holding spice jars and seasoning bottles, showcasing its heavy-duty magnetic strength. 8-10s: Short CTA: \"Make your space cleaner and cozier.\" This segment should feel like the continuation of the previous 10-second segment. Keep the same product identity, visual style, pacing, and usage logic. Use the provided product reference images as the exact product identity. Do not change the product color (matte black), shape (rectangular tray with high back plate and lower front retaining wall), material (carbon steel metal), size ratio, logo position, texture, or visible structure. Do not invent extra accessories, buttons, lights, packaging, or exaggerated functions. Use the detail and side reference image to preserve product material, side structure, edge shape, texture, and visible details. Use the function reference image only to understand the real product usage. Do not invent new functions.",
+      "duration": "10",
+      "ratio": "9:16",
+      "watermark": false
+    }
+  ],
+  "created_at": "2026-08-05T06:02:56.234Z"
+}
