@@ -40,7 +40,10 @@ function Get-BlobSha([byte[]]$Bytes) {
 
 function Invoke-GraphQl([hashtable]$Headers, [string]$Query, [hashtable]$Variables) {
     $body = @{ query = $Query; variables = $Variables } | ConvertTo-Json -Depth 16 -Compress
-    $response = Invoke-RestMethod -Method Post -Headers $Headers -Uri 'https://api.github.com/graphql' -ContentType 'application/json' -Body $body
+    # Windows PowerShell otherwise sends non-ASCII file paths using the active
+    # code page, which corrupts Chinese filenames on GitHub.
+    $utf8Body = [Text.Encoding]::UTF8.GetBytes($body)
+    $response = Invoke-RestMethod -Method Post -Headers $Headers -Uri 'https://api.github.com/graphql' -ContentType 'application/json; charset=utf-8' -Body $utf8Body
     if ($response.errors) { throw ($response.errors | ConvertTo-Json -Compress) }
     $response.data
 }
@@ -82,11 +85,20 @@ if ($head.tree.sha -ne '4b825dc642cb6eb9a060e54bf8d69288fbee4904') {
 
 $changes = @()
 foreach ($path in $local.Keys) {
-    if ($remote[$path] -ne $local[$path].sha) { $changes += @{ kind = 'add'; path = $path; contents = $local[$path].contents } }
+    if ($remote[$path] -ne $local[$path].sha) { $changes += [pscustomobject]@{ kind = 'add'; path = $path; contents = $local[$path].contents } }
 }
 foreach ($path in $remote.Keys) {
-    if (-not $local.ContainsKey($path)) { $changes += @{ kind = 'delete'; path = $path } }
+    if (-not $local.ContainsKey($path)) { $changes += [pscustomobject]@{ kind = 'delete'; path = $path } }
 }
+$operationsByPath = @{}
+foreach ($change in $changes) {
+    # Additions represent the desired final state and therefore take priority
+    # over a deletion with an equivalent path.
+    if ($change.kind -eq 'add' -or -not $operationsByPath.ContainsKey($change.path)) {
+        $operationsByPath[$change.path] = $change
+    }
+}
+$changes = @($operationsByPath.Values | Sort-Object path)
 if ($changes.Count -eq 0) {
     [pscustomobject]@{ repository = "$owner/$repo"; branch = $branch; status = 'already_current'; source_files = $local.Count } | ConvertTo-Json -Compress
     exit 0
@@ -96,8 +108,12 @@ $mutation = 'mutation($input: CreateCommitOnBranchInput!) { createCommitOnBranch
 $commits = 0
 for ($offset = 0; $offset -lt $changes.Count; $offset += $BatchSize) {
     $batch = @($changes | Select-Object -Skip $offset -First $BatchSize)
-    $additions = @($batch | Where-Object kind -eq 'add' | ForEach-Object { @{ path = $_.path; contents = $_.contents } })
-    $deletions = @($batch | Where-Object kind -eq 'delete' | ForEach-Object { @{ path = $_.path } })
+    $additions = @($batch | Where-Object kind -eq 'add' | Group-Object path | ForEach-Object { @{ path = $_.Group[0].path; contents = $_.Group[0].contents } })
+    $additionPaths = @{}
+    $additions | ForEach-Object { $additionPaths[$_.path] = $true }
+    # A replacement is an addition in GitHub's API. Never send a deletion for
+    # the same path in the same atomic commit.
+    $deletions = @($batch | Where-Object { $_.kind -eq 'delete' -and -not $additionPaths.ContainsKey($_.path) } | Group-Object path | ForEach-Object { @{ path = $_.Group[0].path } })
     if ($PSCmdlet.ShouldProcess("$owner/${repo}:$branch", "sync $($batch.Count) source files")) {
         $synced = $false
         for ($attempt = 1; $attempt -le 4 -and -not $synced; $attempt++) {
