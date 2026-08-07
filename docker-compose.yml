@@ -1,0 +1,61 @@
+﻿services:
+  n8n:
+    build:
+      context: .
+      args:
+        N8N_VERSION: ${N8N_VERSION:-1.103.2}
+    container_name: n8n-video
+    restart: unless-stopped
+    ports:
+      - "${N8N_PORT:-5678}:5678"
+    env_file:
+      - .env
+    environment:
+      - N8N_PORT=5678
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+      - WEBHOOK_URL=${WEBHOOK_URL:-http://localhost:5678/}
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-Asia/Shanghai}
+      - TZ=${TZ:-Asia/Shanghai}
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+      - NODE_FUNCTION_ALLOW_BUILTIN=fs,path,crypto
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
+      - NODES_EXCLUDE=
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./workflows:/workflows
+      - ./local_products:/data/local_products
+      - ./video_jobs:/data/video_jobs
+      - ./video_output:/data/video_output
+
+  worker-watcher:
+    build:
+      context: .
+      args:
+        N8N_VERSION: ${N8N_VERSION:-1.103.2}
+    container_name: n8n-worker-watcher
+    restart: "no"
+    env_file:
+      - .env
+    command:
+      [
+        "python3",
+        "/opt/n8n-workers/worker_watcher.py",
+        "--jobs-dir",
+        "/data/video_jobs",
+        "--worker",
+        "/opt/n8n-workers/moyin_worker.py",
+        "--max-parallel",
+        "2",
+        "--scan-interval-seconds",
+        "5",
+        "--idle-timeout-seconds",
+        "1800"
+      ]
+    volumes:
+      - ./workers:/opt/n8n-workers
+      - ./video_jobs:/data/video_jobs
+      - ./video_output:/data/video_output
+
+volumes:
+  n8n_data:

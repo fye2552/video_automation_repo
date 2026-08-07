@@ -1,0 +1,1158 @@
+{
+    "name":  "main_generate_video",
+    "nodes":  [
+                  {
+                      "parameters":  {
+                                         "httpMethod":  "POST",
+                                         "path":  "local-product-upload-github",
+                                         "responseMode":  "lastNode",
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "bec04987-7611-4952-9eb7-311a28ef0bbe",
+                      "name":  "Webhook Local Product Upload",
+                      "type":  "n8n-nodes-base.webhook",
+                      "typeVersion":  2,
+                      "webhookId":  "b1b1b1b1-b1b1-b1b1-b1b1-b1b1b1b1b1b1",
+                      "position":  [
+                                       -784,
+                                       128
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const fs = require(\u0027fs\u0027);\nconst path = require(\u0027path\u0027);\n\nconst sleep = (ms) =\u003e new Promise(resolve =\u003e setTimeout(resolve, ms));\n\nfunction slug(value) {\n  const s = String(value || \u0027\u0027).toLowerCase().replace(/[^a-z0-9_-]+/g, \u0027_\u0027).replace(/^_+|_+$/g, \u0027\u0027).slice(0, 80);\n  if (!s) throw new Error(\u0027product_id is required\u0027);\n  return s;\n}\nfunction requiredEnv(name) {\n  const value = $env[name];\n  if (!value) throw new Error(`${name} environment variable is required`);\n  return value;\n}\nfunction toBool(value, defaultValue = false) {\n  if (value === true || value === false) return value;\n  if (typeof value === \u0027string\u0027) {\n    const normalized = value.trim().toLowerCase();\n    if (normalized === \u0027true\u0027) return true;\n    if (normalized === \u0027false\u0027) return false;\n  }\n  return defaultValue;\n}\nfunction normalizeLocalRoot(value) {\n  return String(value).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\n}\nfunction repoPathUrl(repoPath) {\n  return encodeURIComponent(repoPath).replace(/%2F/g, \u0027/\u0027);\n}\nfunction cdnUrl(owner, repo, branch, repoPath) {\n  const encodedPath = repoPath.split(\u0027/\u0027).map(part =\u003e encodeURIComponent(part)).join(\u0027/\u0027);\n  return `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/${encodedPath}`;\n}\nfunction readFileBase64(filePath) {\n  const stat = fs.statSync(filePath);\n  const maxBytes = 95 * 1024 * 1024;\n  if (stat.size \u003e maxBytes) {\n    throw new Error(`File is too large for GitHub Contents API (${stat.size} bytes): ${filePath}`);\n  }\n  return fs.readFileSync(filePath).toString(\u0027base64\u0027);\n}\nfunction summarizeError(error) {\n  return error?.message || String(error);\n}\nasync function githubRequest(method, url, token, body, label) {\n  const options = {\n    method,\n    url,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      Accept: \u0027application/vnd.github+json\u0027,\n      \u0027X-GitHub-Api-Version\u0027: \u00272022-11-28\u0027,\n      \u0027User-Agent\u0027: \u0027n8n-local-video-automation\u0027\n    },\n    json: true,\n    returnFullResponse: true,\n    ignoreHttpStatusErrors: true,\n    timeout: 120000\n  };\n  if (body !== undefined) {\n    options.headers[\u0027Content-Type\u0027] = \u0027application/json\u0027;\n    options.body = body;\n  }\n\n  let lastError;\n  for (let attempt = 1; attempt \u003c= 5; attempt++) {\n    try {\n      const response = await helpers.httpRequest(options);\n      const statusCode = Number(response?.statusCode || 0);\n      if (![408, 409, 429, 500, 502, 503, 504].includes(statusCode)) {\n        return response;\n      }\n      lastError = new Error(`GitHub ${method} retryable HTTP ${statusCode} for ${label}: ${JSON.stringify(response.body)}`);\n    } catch (error) {\n      lastError = error;\n    }\n\n    if (attempt \u003c 5) {\n      await sleep(1000 * attempt * attempt);\n    }\n  }\n  throw new Error(`GitHub ${method} failed after retries for ${label}: ${summarizeError(lastError)}`);\n}\n\nasync function githubGet(owner, repo, branch, repoPath, token) {\n  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${repoPathUrl(repoPath)}?ref=${encodeURIComponent(branch)}`;\n  const response = await githubRequest(\u0027GET\u0027, url, token, undefined, repoPath);\n  if (response.statusCode === 404) return null;\n  if (response.statusCode \u003c 200 || response.statusCode \u003e= 300) {\n    throw new Error(`GitHub GET failed ${response.statusCode} for ${repoPath}: ${JSON.stringify(response.body)}`);\n  }\n  return response.body;\n}\n\nasync function githubPut(owner, repo, branch, repoPath, contentBase64, message, token, skipIfUnchanged = false) {\n  const existing = await githubGet(owner, repo, branch, repoPath, token);\n  if (skipIfUnchanged \u0026\u0026 existing?.content) {\n    const currentContent = String(existing.content).replace(/\\s/g, \u0027\u0027);\n    const nextContent = String(contentBase64).replace(/\\s/g, \u0027\u0027);\n    if (currentContent === nextContent) {\n      return { unchanged: true, sha: existing.sha };\n    }\n  }\n  const body = { message, content: contentBase64, branch };\n  if (existing?.sha) body.sha = existing.sha;\n  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${repoPathUrl(repoPath)}`;\n  const response = await githubRequest(\u0027PUT\u0027, url, token, body, repoPath);\n  if (response.statusCode \u003c 200 || response.statusCode \u003e= 300) {\n    throw new Error(`GitHub PUT failed ${response.statusCode} for ${repoPath}: ${JSON.stringify(response.body)}`);\n  }\n  return response.body;\n}\n\nconst input = $json.body ?? $json;\nconst productId = slug(input.product_id);\nconst owner = input.owner || $env.GITHUB_OWNER || \u0027fye2552\u0027;\nconst repo = input.repo || $env.GITHUB_REPO || \u0027video_automation_repo\u0027;\nconst branch = input.branch || $env.GITHUB_BRANCH || \u0027main\u0027;\nconst token = requiredEnv(\u0027GITHUB_TOKEN\u0027);\nconst localProductsRoot = normalizeLocalRoot($env.N8N_LOCAL_PRODUCTS_DIR || \u0027E:/n8n-video-gemini/local_products\u0027);\nconst projectRoot = normalizeLocalRoot(path.dirname(localProductsRoot));\nconst localDir = `${localProductsRoot}/${productId}`;\nconst profilePath = path.join(localDir, \u0027product_profile.yaml\u0027);\nif (!fs.existsSync(profilePath)) throw new Error(`product_profile.yaml is required: ${profilePath}`);\nconst planPath = path.join(localDir, \u0027plan_batch_001.md\u0027);\nconst imageSourceDirs = [\n  path.join(localDir, \u0027images\u0027),\n  path.join(localDir, \u0027reference_images\u0027),\n  path.join(localDir, \u0027skill_a\u0027, \u0027images\u0027),\n  path.join(localDir, \u0027skill_a\u0027, \u0027reference_images\u0027),\n  // Compatibility fallback: some product packs keep source images directly in the product root.\n  localDir\n];\nconst warnings = [];\nconst uploads = [];\nlet imageUploadWarning = \u0027\u0027;\nconst activeSkill = input.active_skill || \u0027skill_c\u0027;\n\nif (activeSkill === \u0027skill_e\u0027) {\n  const skillEPath = normalizeLocalRoot($env.N8N_SKILL_E_PATH || path.join(projectRoot, \u0027SKILL-E.md\u0027));\n  if (!fs.existsSync(skillEPath) || !fs.statSync(skillEPath).isFile()) {\n    throw new Error(`Skill E source file is required: ${skillEPath}`);\n  }\n  uploads.push({\n    local: skillEPath,\n    repoPath: \u0027skills/skill_e.md\u0027,\n    skipIfUnchanged: true,\n    isSkill: true\n  });\n}\n\nuploads.push({ local: profilePath, repoPath: `products/${productId}/skill_a/product_profile.yaml` });\nif (fs.existsSync(planPath)) {\n  uploads.push({ local: planPath, repoPath: `products/${productId}/skill_a/plan_batch_001.md` });\n} else {\n  uploads.push({ contentBase64: Buffer.from(\u0027\u0027, \u0027utf8\u0027).toString(\u0027base64\u0027), repoPath: `products/${productId}/skill_a/plan_batch_001.md` });\n  warnings.push(`plan_batch_001.md not found for ${productId}; uploaded empty optional file`);\n}\nconst discoveredImages = [];\nconst seenImageNames = new Set();\nfor (const sourceDir of imageSourceDirs) {\n  if (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory()) continue;\n  const imageNames = fs.readdirSync(sourceDir)\n    .filter(name =\u003e /\\.(png|jpe?g|webp)$/i.test(name))\n    .sort((a, b) =\u003e a.localeCompare(b));\n  for (const name of imageNames) {\n    const key = name.toLowerCase();\n    if (seenImageNames.has(key)) continue;\n    seenImageNames.add(key);\n    discoveredImages.push({ local: path.join(sourceDir, name), name, sourceDir });\n  }\n}\nif (!discoveredImages.length) {\n  imageUploadWarning = \u0027No local images found under images/reference_images paths\u0027;\n  warnings.push(imageUploadWarning);\n} else {\n  for (const image of discoveredImages) {\n    uploads.push({\n      local: image.local,\n      repoPath: `products/${productId}/images/${image.name}`,\n      isImage: true\n    });\n  }\n  const standardNames = [\u0027product_white_bg.png\u0027, \u0027product_detail_side.png\u0027, \u0027product_function.png\u0027];\n  const missingStandardNames = standardNames.filter(name =\u003e !seenImageNames.has(name));\n  if (missingStandardNames.length) {\n    warnings.push(`Standard image filenames not found: ${missingStandardNames.join(\u0027, \u0027)}; original image filenames were uploaded without renaming`);\n  }\n}\nuploads.push({ contentBase64: Buffer.from(\u0027\u0027, \u0027utf8\u0027).toString(\u0027base64\u0027), repoPath: `history/products/${productId}/index.jsonl`, createOnly: true });\n\nconst uploaded = [];\nconst uploadedImages = [];\nfor (const upload of uploads) {\n  if (upload.createOnly) {\n    const existing = await githubGet(owner, repo, branch, upload.repoPath, token);\n    if (existing) {\n      uploaded.push({ path: upload.repoPath, skipped: true });\n      continue;\n    }\n  }\n  const contentBase64 = upload.contentBase64 !== undefined ? upload.contentBase64 : readFileBase64(upload.local);\n  const putResult = await githubPut(\n    owner,\n    repo,\n    branch,\n    upload.repoPath,\n    contentBase64,\n    `Upload ${upload.repoPath}`,\n    token,\n    upload.skipIfUnchanged === true\n  );\n  const bytes = upload.local ? fs.statSync(upload.local).size : 0;\n  uploaded.push({ path: upload.repoPath, bytes, unchanged: putResult?.unchanged === true });\n  if (upload.isImage) {\n    uploadedImages.push({\n      local_path: normalizeLocalRoot(upload.local),\n      github_path: upload.repoPath,\n      cdn_url: cdnUrl(owner, repo, branch, upload.repoPath)\n    });\n  }\n}\n\nconst githubUrl = `https://github.com/${owner}/${repo}/tree/${branch}/products/${productId}`;\nreturn [{ json: {\n  ok: true,\n  product_id: productId,\n  owner,\n  repo,\n  branch,\n  github_url: githubUrl,\n  active_skill: activeSkill,\n  custom_skill_path: input.custom_skill_path || \u0027\u0027,\n  generate_count: Math.max(1, Math.min(Number(input.generate_count || 1), 10)),\n  dry_run: toBool(input.dry_run, true),\n  auto_start_main: toBool(input.auto_start_main, false),\n  uploaded,\n  uploaded_images: uploadedImages,\n  image_upload_warning: imageUploadWarning || null,\n  warnings\n} }];"
+                                     },
+                      "id":  "03d9deb8-91a7-43c2-9ca5-0ee79473b87b",
+                      "name":  "Upload Local Product To GitHub",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -528,
+                                       128
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "auto-start-main-is-true",
+                                                                                   "leftValue":  "={{ $json.auto_start_main }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "c0f54453-3161-4678-ac99-66c797a0fa98",
+                      "name":  "IF Auto Start Main",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -256,
+                                       128
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "method":  "POST",
+                                         "url":  "={{$env.WEBHOOK_URL.replace(/\\/$/, \"\") + \"/webhook/main-generate-video\"}}",
+                                         "sendHeaders":  true,
+                                         "headerParameters":  {
+                                                                  "parameters":  [
+                                                                                     {
+                                                                                         "name":  "Content-Type",
+                                                                                         "value":  "application/json"
+                                                                                     }
+                                                                                 ]
+                                                              },
+                                         "sendBody":  true,
+                                         "specifyBody":  "json",
+                                         "jsonBody":  "={{ { github_url: $json.github_url, active_skill: $json.active_skill, custom_skill_path: $json.custom_skill_path, generate_count: $json.generate_count, dry_run: $json.dry_run } }}",
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "e83a244c-1b29-424f-a4e2-2c8927844fa7",
+                      "name":  "Call Main Generate Video",
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "typeVersion":  4.2,
+                      "position":  [
+                                       0,
+                                       0
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "return [{ json: $json }];"
+                                     },
+                      "id":  "93d7657a-567a-4018-8b69-c653514a247d",
+                      "name":  "Build Upload Only Response",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       0,
+                                       240
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "httpMethod":  "POST",
+                                         "path":  "manual-prompt-generate-video",
+                                         "responseMode":  "lastNode",
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "2ac9ce28-06b8-465f-879f-df766287753a",
+                      "name":  "Webhook Manual Prompt",
+                      "type":  "n8n-nodes-base.webhook",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -1984,
+                                       336
+                                   ],
+                      "webhookId":  "manual-prompt-generate-video"
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const output = [];\n\nfor (const item of items) {\n  const input = item.json.body \u0026\u0026 typeof item.json.body === \u0027object\u0027 ? item.json.body : item.json;\n  const productId = String(input.product_id || \u0027\u0027).trim();\n  if (!/^[a-z0-9][a-z0-9_-]*$/i.test(productId)) {\n    throw new Error(\u0027product_id is required and may contain only letters, numbers, underscores, and hyphens.\u0027);\n  }\n\n  const githubUrl = String(input.github_url || \u0027\u0027).trim();\n  if (!githubUrl) throw new Error(\u0027github_url is required. Upload the matching product first.\u0027);\n\n  const rawBlocks = Array.isArray(input.prompt_blocks)\n    ? input.prompt_blocks\n    : String(input.prompt_text || input.prompt_blocks || \u0027\u0027).split(/\\r?\\n\\s*={3,}\\s*\\r?\\n/);\n  const promptBlocks = rawBlocks.map(value =\u003e String(value || \u0027\u0027).trim()).filter(Boolean);\n  if (!promptBlocks.length) {\n    throw new Error(\u0027No prompt blocks were supplied. Put at least one non-empty prompt in the matching .txt file.\u0027);\n  }\n\n  const uploadedImages = Array.isArray(input.uploaded_images) ? input.uploaded_images : [];\n  const imageReferences = uploadedImages\n    .map(image =\u003e typeof image === \u0027string\u0027 ? image : (image.cdn_url || image.raw_url || image.github_url || image.url || \u0027\u0027))\n    .map(String)\n    .map(value =\u003e value.trim())\n    .filter(value =\u003e /^https?:\\/\\//i.test(value));\n\n  if (!imageReferences.length) {\n    throw new Error(\u0027No public uploaded_images URLs were returned by the product upload workflow. Do not submit a manual prompt until product images are uploaded.\u0027);\n  }\n\n  const runId = `manual_${productId}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;\n  promptBlocks.forEach((promptText, index) =\u003e {\n    output.push({\n      json: {\n        product_id: productId,\n        github_url: githubUrl,\n        branch: String(input.branch || \u0027main\u0027),\n        product_folder: String(input.product_folder || `products/${productId}`),\n        source_prompt_file: String(input.source_prompt_file || \u0027\u0027),\n        prompt_index: index + 1,\n        prompt_count: promptBlocks.length,\n        promptText,\n        promptImage: imageReferences[0],\n        image_references: imageReferences,\n        uploaded_images: uploadedImages,\n        duration: String(input.duration || \u002710\u0027),\n        ratio: String(input.ratio || \u00279:16\u0027),\n        dry_run: input.dry_run === true || String(input.dry_run).toLowerCase() === \u0027true\u0027,\n        manual_run_id: runId\n      }\n    });\n  });\n}\n\nreturn output;"
+                                     },
+                      "id":  "e338709c-5098-415b-a23d-e197cb884d12",
+                      "name":  "Normalize Manual Prompt Input",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -1744,
+                                       336
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  1
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "1d0c7da5-bdfa-4e59-92fa-30d9b584e28e",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "true",
+                                                                                                    "singleValue":  true
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "17c18c5c-c9aa-416a-aa23-4a538f443277",
+                      "name":  "IF Manual Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -1504,
+                                       336
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "return items.map(item =\u003e ({\n  json: {\n    ...item.json,\n    moyin_create_response: {\n      id: `dryrun_${item.json.manual_run_id}_${item.json.prompt_index}`,\n      status: \u0027queued\u0027,\n      object: \u0027video\u0027,\n      dry_run: true\n    },\n    moyin_full_url: \u0027dry-run://videos\u0027\n  }\n}));"
+                                     },
+                      "id":  "2b21a693-d077-4cb5-a14e-1f02613edf45",
+                      "name":  "Dry Run Manual Moyin Result",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -1264,
+                                       224
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const https = require(\u0027https\u0027);\nconst { URL } = require(\u0027url\u0027);\n\nfunction joinUrl(base, path) {\n  return `${String(base || \u0027\u0027).replace(/\\/+$/, \u0027\u0027)}/${String(path || \u0027\u0027).replace(/^\\/+/, \u0027\u0027)}`;\n}\n\nfunction requestJson(urlString, apiKey, body) {\n  return new Promise((resolve, reject) =\u003e {\n    const url = new URL(urlString);\n    const encoded = JSON.stringify(body);\n    const request = https.request({\n      hostname: url.hostname,\n      port: url.port || 443,\n      path: url.pathname + url.search,\n      method: \u0027POST\u0027,\n      headers: {\n        Authorization: `Bearer ${apiKey}`,\n        \u0027Content-Type\u0027: \u0027application/json\u0027,\n        \u0027Content-Length\u0027: Buffer.byteLength(encoded)\n      },\n      timeout: Number($env.MOYIN_CREATE_TIMEOUT_SECONDS || 180) * 1000\n    }, response =\u003e {\n      let raw = \u0027\u0027;\n      response.on(\u0027data\u0027, chunk =\u003e { raw += chunk.toString(); });\n      response.on(\u0027end\u0027, () =\u003e {\n        let parsed = raw;\n        try { parsed = JSON.parse(raw); } catch (error) {}\n        resolve({ statusCode: response.statusCode || 0, body: parsed, raw });\n      });\n    });\n    request.on(\u0027timeout\u0027, () =\u003e request.destroy(new Error(\u0027Moyin create request timed out\u0027)));\n    request.on(\u0027error\u0027, reject);\n    request.write(encoded);\n    request.end();\n  });\n}\n\nconst baseUrl = String($env.MOYIN_API_BASE_URL || \u0027\u0027).trim();\nconst apiKey = String($env.MOYIN_API_KEY || \u0027\u0027).trim();\nif (!baseUrl) throw new Error(\u0027MOYIN_API_BASE_URL is required for manual video submission.\u0027);\nif (!apiKey) throw new Error(\u0027MOYIN_API_KEY is required for manual video submission.\u0027);\n\nconst output = [];\nfor (const item of items) {\n  const j = item.json;\n  const fullUrl = joinUrl(baseUrl, \u0027/videos\u0027);\n  const requestBody = {\n    model: String($env.MOYIN_VIDEO_MODEL || \u0027omni-fast\u0027),\n    prompt: j.promptText,\n    images: Array.isArray(j.image_references) ? j.image_references : [j.promptImage].filter(Boolean),\n    aspect_ratio: j.ratio || \u00279:16\u0027,\n    aspectRatio: j.ratio || \u00279:16\u0027,\n    seconds: String(j.duration || \u002710\u0027),\n    resolution: String($env.MOYIN_VIDEO_RESOLUTION || \u0027720p\u0027)\n  };\n  const response = await requestJson(fullUrl, apiKey, requestBody);\n  if (response.statusCode \u003c 200 || response.statusCode \u003e= 300) {\n    throw new Error(`Moyin create failed HTTP ${response.statusCode}; full_url=${fullUrl}; response=${response.raw}`);\n  }\n  output.push({ json: { ...j, moyin_create_response: response.body, moyin_full_url: fullUrl, moyin_request_body: requestBody } });\n}\nreturn output;"
+                                     },
+                      "id":  "d0d6f9ec-322e-4c81-9370-ca0947b11a02",
+                      "name":  "Manual Moyin Create Video",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -1264,
+                                       464
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "function readPath(value, path) {\n  return path.split(\u0027.\u0027).reduce((current, key) =\u003e current == null ? undefined : current[key], value);\n}\n\nfunction extractTaskId(response) {\n  const paths = [\u0027id\u0027, \u0027taskId\u0027, \u0027task_id\u0027, \u0027data.id\u0027, \u0027data.task_id\u0027, \u0027data.taskId\u0027, \u0027result.id\u0027, \u0027result.task_id\u0027, \u0027result.taskId\u0027];\n  for (const candidate of paths) {\n    const value = readPath(response, candidate);\n    if (value !== undefined \u0026\u0026 value !== null \u0026\u0026 String(value).trim()) return String(value);\n  }\n  return \u0027\u0027;\n}\n\nconst jobsRoot = String($env.N8N_LOCAL_JOBS_DIR || \u0027E:/n8n-video-gemini/video_jobs\u0027).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\nconst outputRoot = String($env.N8N_LOCAL_OUTPUT_DIR || \u0027E:/n8n-video-gemini/video_output\u0027).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\nconst baseUrl = String($env.MOYIN_API_BASE_URL || \u0027\u0027).replace(/\\/+$/, \u0027\u0027);\nconst output = [];\n\nfor (const item of items) {\n  const j = item.json;\n  const taskId = extractTaskId(j.moyin_create_response || {});\n  if (!taskId) {\n    throw new Error(`Moyin response did not contain task id. full_url=${j.moyin_full_url || \u0027\u0027}; response=${JSON.stringify(j.moyin_create_response || {})}`);\n  }\n  const jobId = `job_${j.product_id}_${Date.now()}_${String(j.prompt_index).padStart(2, \u00270\u0027)}`;\n  const statusDir = `${jobsRoot}/${jobId}`;\n  const outputDir = `${outputRoot}/${j.product_id}/${jobId}`;\n  const scene = {\n    scene_id: \u0027video_001\u0027,\n    moyin_task_id: taskId,\n    promptImage: j.promptImage,\n    promptText: j.promptText,\n    duration: String(j.duration || \u002710\u0027),\n    ratio: String(j.ratio || \u00279:16\u0027),\n    output_file: `${outputDir}/video_001.mp4`\n  };\n  const jobPayload = {\n    job_id: jobId,\n    script_id: `manual_${j.product_id}_${String(j.prompt_index).padStart(2, \u00270\u0027)}`,\n    product_id: j.product_id,\n    active_skill: \u0027manual_prompt\u0027,\n    github_url: j.github_url,\n    product_folder: j.product_folder,\n    skill_path: \u0027\u0027,\n    source_prompt_file: j.source_prompt_file,\n    prompt_index: j.prompt_index,\n    prompt_count: j.prompt_count,\n    output_dir: outputDir,\n    status_dir: statusDir,\n    max_runtime_seconds: Number($env.MOYIN_TIMEOUT_SECONDS || 900),\n    poll_interval_seconds: Number($env.MOYIN_POLL_INTERVAL_SECONDS || 8),\n    moyin_api: {\n      base_url: baseUrl,\n      query_path_template: \u0027/videos/{task_id}\u0027,\n      status_paths: [\u0027status\u0027, \u0027state\u0027, \u0027taskStatus\u0027, \u0027data.status\u0027, \u0027data.state\u0027, \u0027result.status\u0027, \u0027result.state\u0027],\n      video_url_paths: [\u0027video_url\u0027, \u0027videoUrl\u0027, \u0027result.video_url\u0027, \u0027result.videoUrl\u0027, \u0027result.resultUrls.0\u0027, \u0027data.video_url\u0027, \u0027data.videoUrl\u0027, \u0027data.resultUrls.0\u0027, \u0027url\u0027, \u0027output_url\u0027, \u0027outputUrl\u0027],\n      success_statuses: [\u0027completed\u0027, \u0027succeeded\u0027, \u0027success\u0027, \u0027done\u0027, \u0027finished\u0027],\n      failed_statuses: [\u0027failed\u0027, \u0027error\u0027, \u0027cancelled\u0027, \u0027canceled\u0027]\n    },\n    scenes: [scene]\n  };\n  const jobJsonString = JSON.stringify(jobPayload, null, 2);\n  output.push({\n    json: {\n      ...j,\n      job_id: jobId,\n      script_id: jobPayload.script_id,\n      job_payload: jobPayload,\n      job_json_string: jobJsonString,\n      job_file_path: `${jobsRoot}/inbox/${jobId}.json`,\n      status_file: `${statusDir}/status.json`,\n      output_dir: outputDir,\n      worker_log: `${statusDir}/worker.log`\n    },\n    binary: {\n      data: { data: Buffer.from(jobJsonString, \u0027utf8\u0027).toString(\u0027base64\u0027), mimeType: \u0027application/json\u0027, fileName: `${jobId}.json` }\n    }\n  });\n}\nreturn output;"
+                                     },
+                      "id":  "5a56cacd-8da6-4aba-8acf-8efe3bba8b56",
+                      "name":  "Build Manual Worker Job",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -1008,
+                                       336
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  1
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "e541144a-1f8b-4434-b519-ee42c6b86c23",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "true",
+                                                                                                    "singleValue":  true
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "6493fb65-cebf-4376-b3e9-e6f7a1655067",
+                      "name":  "IF Manual Worker Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -768,
+                                       336
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const fs = require(\u0027fs\u0027);\nconst path = require(\u0027path\u0027);\n\nfor (const item of items) {\n  const j = item.json;\n  const target = String(j.job_file_path || \u0027\u0027).replace(/\\\\/g, \u0027/\u0027);\n  if (!target || !/\\/inbox\\/[^/]+\\.json$/i.test(target)) {\n    throw new Error(`Unsafe manual job_file_path: ${target}`);\n  }\n  fs.mkdirSync(path.dirname(target), { recursive: true });\n  fs.writeFileSync(target, String(j.job_json_string || \u0027\u0027), \u0027utf8\u0027);\n  j.job_file_written = true;\n}\nreturn items;"
+                                     },
+                      "id":  "9b5e4742-eda9-4014-95fc-87b5b1fbd297",
+                      "name":  "Write Manual Worker Inbox Job JSON",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -512,
+                                       464
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "return [{\n  json: {\n    ok: true,\n    status: \u0027submitted\u0027,\n    dry_run: Boolean(items[0] \u0026\u0026 items[0].json.dry_run),\n    product_id: items[0] ? items[0].json.product_id : \u0027\u0027,\n    source_prompt_file: items[0] ? items[0].json.source_prompt_file : \u0027\u0027,\n    submitted_jobs: items.map(item =\u003e ({\n      job_id: item.json.job_id,\n      script_id: item.json.script_id,\n      prompt_index: item.json.prompt_index,\n      prompt_count: item.json.prompt_count,\n      scene_id: \u0027video_001\u0027,\n      job_file: item.json.job_file_path,\n      status_file: item.json.status_file,\n      output_dir: item.json.output_dir,\n      worker_log: item.json.worker_log\n    })),\n    message: \u0027Manual prompt jobs submitted. Each prompt block creates exactly one video_001 task.\u0027\n  }\n}];"
+                                     },
+                      "id":  "1dc8f70e-413d-4245-a5ab-c6633b46d3a2",
+                      "name":  "Build Manual Submitted Response",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -272,
+                                       336
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "httpMethod":  "POST",
+                                         "path":  "main-generate-video",
+                                         "responseMode":  "lastNode",
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "c9e9ab3f-9ec5-4cf2-8457-a05caf265ab4",
+                      "name":  "Webhook Input",
+                      "type":  "n8n-nodes-base.webhook",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -6656,
+                                       368
+                                   ],
+                      "webhookId":  "7a5a4101-f884-4d5e-89aa-ecfd051367b8"
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const input = $json.body ?? $json;\nif (!$env.GITHUB_TOKEN) {\n  throw new Error(\u0027GITHUB_TOKEN environment variable is required for GitHub reads. Configure it in n8n environment or credentials.\u0027);\n}\n\nfunction cleanGithubUrl(value) {\n  let url = String(value || \u0027\u0027).trim();\n  const markdownMatch = url.match(/\\((https?:\\/\\/github\\.com\\/[^)]+)\\)/i);\n  if (markdownMatch) url = markdownMatch[1];\n  url = url.replace(/^\u003c|\u003e$/g, \u0027\u0027).trim();\n  if (url.startsWith(\u0027//github.com/\u0027)) url = \u0027https:\u0027 + url;\n  if (/^github\\.com\\//i.test(url)) url = \u0027https://\u0027 + url;\n  url = url.replace(/^https:\\/github\\.com\\//i, \u0027https://github.com/\u0027);\n  url = url.replace(/^http:\\/github\\.com\\//i, \u0027http://github.com/\u0027);\n  try { return decodeURI(url); } catch { return url; }\n}\n\nfunction parseGithubProductUrl(value) {\n  const cleaned = cleanGithubUrl(value);\n  if (!cleaned) return null;\n\n  let owner;\n  let repo;\n  let branch;\n  let productTail;\n\n  const treeMatch = cleaned.match(/(?:https?:)?\\/\\/github\\.com\\/([^\\/\\s]+)\\/([^\\/\\s]+)\\/tree\\/(.+)$/i)\n    || cleaned.match(/github\\.com\\/([^\\/\\s]+)\\/([^\\/\\s]+)\\/tree\\/(.+)$/i);\n  if (treeMatch) {\n    owner = treeMatch[1];\n    repo = treeMatch[2];\n    const rest = treeMatch[3].replace(/^\\/+|\\/+$/g, \u0027\u0027);\n    const marker = \u0027/products/\u0027;\n    const markerIndex = rest.indexOf(marker);\n    if (markerIndex \u003c 1) {\n      throw new Error(`github_url must include /tree/{branch}/products/{product_id}. Received: ${cleaned}`);\n    }\n    branch = rest.slice(0, markerIndex);\n    productTail = rest.slice(markerIndex + marker.length);\n  } else {\n    const titleMatch = cleaned.match(/([^\\/\\s]+)\\/products\\/([^\\s]+)(?:\\s+at\\s+([^\\s]+))?.*?[路\\-]\\s*([^\\/\\s]+)\\/([^\\/\\s]+)/i);\n    if (titleMatch) {\n      repo = titleMatch[1];\n      productTail = titleMatch[2];\n      branch = titleMatch[3] || \u0027main\u0027;\n      owner = titleMatch[4];\n      repo = titleMatch[5] || repo;\n    } else {\n      const shortMatch = cleaned.match(/([^\\/\\s]+)\\/([^\\/\\s]+)\\/products\\/([^\\s]+)/i);\n      if (shortMatch) {\n        owner = shortMatch[1];\n        repo = shortMatch[2];\n        branch = \u0027main\u0027;\n        productTail = shortMatch[3];\n      }\n    }\n  }\n\n  if (!owner || !repo || !branch || !productTail) {\n    throw new Error(`github_url must look like https://github.com/{owner}/{repo}/tree/{branch}/products/{product_id}. Received: ${cleaned}`);\n  }\n\n  productTail = productTail.replace(/^\\/+|\\/+$/g, \u0027\u0027);\n  if (!productTail) {\n    throw new Error(`github_url must include product_id. Received: ${cleaned}`);\n  }\n\n  return {\n    github_url: `https://github.com/${owner}/${repo}/tree/${branch}/products/${productTail}`,\n    owner,\n    repo,\n    branch,\n    product_folder: `products/${productTail}`\n  };\n}\nconst parsedFromUrl = input.github_url ? parseGithubProductUrl(input.github_url) : null;\nconst owner = parsedFromUrl?.owner || input.owner;\nconst repo = parsedFromUrl?.repo || input.repo;\nconst branch = parsedFromUrl?.branch || input.branch || \u0027main\u0027;\nconst productFolder = parsedFromUrl?.product_folder || input.product_folder;\nfor (const [key, value] of Object.entries({ owner, repo, product_folder: productFolder })) {\n  if (!value) throw new Error(`Missing required input: ${key}. Provide github_url or legacy owner/repo/product_folder.`);\n}\n\nconst activeSkill = input.active_skill || \u0027skill_c\u0027;\nconst skillPathByName = {\n  skill_b: \u0027skills/skill_b.md\u0027,\n  skill_c: \u0027skills/skill_c.md\u0027,\n  skill_e: \u0027skills/skill_e.md\u0027,\n  new_skill: \u0027skills/new_skill.md\u0027\n};\nif (![\u0027skill_b\u0027, \u0027skill_c\u0027, \u0027skill_e\u0027, \u0027new_skill\u0027, \u0027custom\u0027].includes(activeSkill)) {\n  throw new Error(`Unsupported active_skill: ${activeSkill}. Use skill_b, skill_c, skill_e, new_skill, or custom.`);\n}\nif (activeSkill === \u0027custom\u0027 \u0026\u0026 !input.custom_skill_path) {\n  throw new Error(\u0027custom_skill_path is required when active_skill is custom\u0027);\n}\nconst skillPath = activeSkill === \u0027custom\u0027 ? input.custom_skill_path : skillPathByName[activeSkill];\nconst normalizedProductFolder = String(productFolder).replace(/^\\/+|\\/+$/g, \u0027\u0027);\nconst githubUrl = parsedFromUrl?.github_url || `https://github.com/${owner}/${repo}/tree/${branch}/${normalizedProductFolder}`;\nconst localJobsDir = input.local_jobs_dir || $env.N8N_LOCAL_JOBS_DIR || \u0027E:/n8n-video-gemini/video_jobs\u0027;\nconst outputLocalDir = input.output_local_dir || $env.N8N_LOCAL_OUTPUT_DIR || \u0027E:/n8n-video-gemini/video_output\u0027;\nconst requestedGenerateCount = Math.max(1, Number(input.generate_count || 1));\nconst moyinApi = {\"name\":\"moyin\",\"base_url_env\":\"MOYIN_API_BASE_URL\",\"api_key_env\":\"MOYIN_API_KEY\",\"create\":{\"method\":\"POST\",\"path\":\"/videos\",\"task_id_paths\":[\"id\",\"taskId\",\"task_id\",\"data.id\",\"data.task_id\",\"data.taskId\",\"result.id\",\"result.task_id\",\"result.taskId\"]},\"query\":{\"method\":\"GET\",\"path_template\":\"/videos/{task_id}\",\"status_paths\":[\"status\",\"state\",\"taskStatus\",\"data.status\",\"data.state\",\"result.status\",\"result.state\"],\"video_url_paths\":[\"video_url\",\"videoUrl\",\"result.video_url\",\"result.videoUrl\",\"result.resultUrls.0\",\"data.video_url\",\"data.videoUrl\",\"data.resultUrls.0\",\"url\",\"output_url\",\"outputUrl\"],\"success_statuses\":[\"completed\",\"succeeded\",\"success\",\"done\",\"finished\"],\"failed_statuses\":[\"failed\",\"error\",\"cancelled\",\"canceled\"]}};\n\nconst createPath = input.moyin_create_path || $env.MOYIN_CREATE_PATH || $env.OMINI_CREATE_PATH || moyinApi.create.path;\nconst queryPath = input.moyin_query_path_template || $env.MOYIN_QUERY_PATH_TEMPLATE || $env.OMINI_POLL_PATH || moyinApi.query.path_template;\nconst apiBaseUrl = input.moyin_base_url || $env.MOYIN_API_BASE_URL || $env.OMINI_API_BASE_URL || \u0027https://\u003cMOYIN_API_BASE_URL\u003e\u0027;\nconst apiModel = input.moyin_model || $env.MOYIN_VIDEO_MODEL || $env.OMINI_VIDEO_MODEL || \u0027veo-omni-flash\u0027;\n\nconst normalized = {\n  github_url: githubUrl,\n  owner,\n  repo,\n  branch,\n  product_folder: normalizedProductFolder,\n  active_skill: activeSkill,\n  custom_skill_path: input.custom_skill_path || \u0027\u0027,\n  skill_path: skillPath,\n  output_local_dir: outputLocalDir,\n  local_jobs_dir: localJobsDir,\n  requested_generate_count: requestedGenerateCount,\n  generate_count: 1,\n  dry_run: input.dry_run !== false,\n  moyin_base_url: apiBaseUrl,\n  moyin_api: {\n    ...moyinApi,\n    create: { ...moyinApi.create, path: createPath },\n    query: { ...moyinApi.query, path_template: queryPath }\n  },\n  moyin_create_path: createPath,\n  moyin_query_path_template: queryPath,\n  moyin_model: apiModel\n};\nif (!normalized.dry_run \u0026\u0026 !$env.OPENAI_API_KEY) throw new Error(\u0027OPENAI_API_KEY is required when dry_run=false\u0027);\nif (!normalized.dry_run \u0026\u0026 !$env.MOYIN_API_KEY \u0026\u0026 !$env.OMINI_API_KEY) throw new Error(\u0027MOYIN_API_KEY or OMINI_API_KEY is required when dry_run=false\u0027);\nif (!normalized.dry_run \u0026\u0026 !$env.MOYIN_API_BASE_URL \u0026\u0026 !$env.OMINI_API_BASE_URL) throw new Error(\u0027MOYIN_API_BASE_URL or OMINI_API_BASE_URL is required when dry_run=false\u0027);\n\nreturn [{ json: normalized }];"
+                                     },
+                      "id":  "54fe54e0-a89e-44fa-bcf4-0b9aedac2468",
+                      "name":  "Normalize Input",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -6448,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const ctx = $json;\nconst base = ctx.product_folder;\nconst productId = String(base).split(\u0027/\u0027).filter(Boolean).pop();\nconst files = [\n  { key: \u0027product_profile\u0027, path: `${base}/skill_a/product_profile.yaml`, type: \u0027file\u0027 },\n  { key: \u0027plan_batch\u0027, path: `${base}/skill_a/plan_batch_001.md`, type: \u0027file\u0027, optional: true },\n  { key: \u0027scripts_history\u0027, path: `history/products/${productId}/index.jsonl`, type: \u0027file\u0027, optional: true },\n  { key: \u0027skill_content\u0027, path: ctx.skill_path, type: \u0027file\u0027 },\n  { key: \u0027image_references\u0027, path: `${base}/images`, type: \u0027directory\u0027, optional: true }\n];\nreturn files.map(file =\u003e ({ json: { ...ctx, product_id: productId, ...file } }));"
+                                     },
+                      "id":  "340ee37d-e64b-4e4f-b9d1-22f4540cdd49",
+                      "name":  "Build GitHub Read Requests",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -6224,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "url":  "=https://api.github.com/repos/{{$json.owner}}/{{$json.repo}}/contents/{{$json.path}}?ref={{$json.branch}}",
+                                         "sendHeaders":  true,
+                                         "headerParameters":  {
+                                                                  "parameters":  [
+                                                                                     {
+                                                                                         "name":  "Accept",
+                                                                                         "value":  "application/vnd.github+json"
+                                                                                     },
+                                                                                     {
+                                                                                         "name":  "Authorization",
+                                                                                         "value":  "={{\u0027Bearer \u0027 + $env.GITHUB_TOKEN}}"
+                                                                                     },
+                                                                                     {
+                                                                                         "name":  "X-GitHub-Api-Version",
+                                                                                         "value":  "2022-11-28"
+                                                                                     }
+                                                                                 ]
+                                                              },
+                                         "options":  {
+                                                         "response":  {
+                                                                          "response":  {
+
+                                                                                       }
+                                                                      }
+                                                     }
+                                     },
+                      "id":  "a6be8102-3c62-49f3-8acd-0c5a7303ff09",
+                      "name":  "GitHub Get Content",
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "typeVersion":  4.2,
+                      "position":  [
+                                       -6000,
+                                       368
+                                   ],
+                      "continueOnFail":  true
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "function decodeBase64(value) {\n  return Buffer.from((value || \u0027\u0027).replace(/\\n/g, \u0027\u0027), \u0027base64\u0027).toString(\u0027utf8\u0027);\n}\n\nlet originals = [];\ntry {\n  originals = $(\u0027Build GitHub Read Requests\u0027).all().map(item =\u003e item.json);\n} catch (error) {}\ntry {\n  if (!originals.length) originals = $items(\u0027Build GitHub Read Requests\u0027).map(item =\u003e item.json);\n} catch (error) {}\nif (!originals.length) {\n  throw new Error(\u0027Cannot read GitHub request metadata from Build GitHub Read Requests. Reimport the latest workflow JSON.\u0027);\n}\n\nconst responses = items.flatMap(item =\u003e Array.isArray(item.json) ? item.json : [item.json || {}]);\n\nfunction isErrorResponse(response) {\n  return !response || response.error || response.statusCode \u003e= 400 || response.message === \u0027Not Found\u0027;\n}\n\nfunction responseForFile(original, index) {\n  return responses.find(response =\u003e response.path === original.path \u0026\u0026 (response.content || response.sha))\n    || responses[index]\n    || null;\n}\n\nfunction responsesForDirectory(original) {\n  const prefix = `${original.path}/`;\n  return responses.filter(response =\u003e\n    response \u0026\u0026\n    response.type === \u0027file\u0027 \u0026\u0026\n    typeof response.path === \u0027string\u0027 \u0026\u0026\n    response.path.startsWith(prefix)\n  );\n}\n\nconst out = [];\nfor (let i = 0; i \u003c originals.length; i++) {\n  const original = originals[i];\n\n  if (original.type === \u0027directory\u0027) {\n    const files = responsesForDirectory(original);\n    const images = files\n      .filter(file =\u003e /\\.(png|jpe?g|webp|gif)$/i.test(file.path || file.name || \u0027\u0027))\n      .map(file =\u003e ({\n        path: file.path,\n        raw_url: `https://ghproxy.net/https://raw.githubusercontent.com/${original.owner}/${original.repo}/${original.branch}/${file.path}`,\n        name: file.name || file.path.split(\u0027/\u0027).pop()\n      }));\n    const warnings = images.length ? [] : [`No reference images found in ${original.path}`];\n    out.push({ json: { ...original, content: images, sha: null, warnings } });\n    continue;\n  }\n\n  const response = responseForFile(original, i);\n  if (isErrorResponse(response)) {\n    if (original.optional) {\n      const warning = `${original.path} is optional and was not found or could not be read`;\n      out.push({ json: { ...original, content: \u0027\u0027, sha: null, missing: true, warnings: [warning] } });\n      continue;\n    }\n    throw new Error(`GitHub read failed for ${original.path}: ${JSON.stringify(response)}`);\n  }\n\n  out.push({ json: { ...original, content: decodeBase64(response.content), sha: response.sha || null, warnings: [] } });\n}\nreturn out;"
+                                     },
+                      "id":  "d2a81a6b-848f-49a2-853c-726dc439d092",
+                      "name":  "Decode GitHub Content",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -5776,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const rows = items.map(item =\u003e item.json);\nconst byKey = Object.fromEntries(rows.map(row =\u003e [row.key, row]));\nconst ctx = rows[0];\nconst imageReferences = byKey.image_references?.content || [];\nconst warnings = rows.flatMap(row =\u003e row.warnings || []);\nconst activeSkill = ctx.active_skill;\nconst skillContent = String(byKey.skill_content?.content || \u0027\u0027);\nconst skillPath = String(ctx.skill_path || \u0027\u0027);\nconst isSkillE = activeSkill === \u0027skill_e\u0027;\nconst isSkillC = activeSkill === \u0027skill_c\u0027;\nconst isSkillG = activeSkill === \u0027custom\u0027 \u0026\u0026 (\n  /skill_g_first_person_function/i.test(skillPath) ||\n  /first-person-product-usage-two-scene-video-prompt-generator/i.test(skillContent)\n);\n\nfunction extractTopLevelYamlSection(yaml, sectionName) {\n  const lines = String(yaml || \u0027\u0027).replace(/\\r\\n/g, \u0027\\n\u0027).split(\u0027\\n\u0027);\n  const heading = new RegExp(\u0027^\u0027 + sectionName + \u0027:\\\\s*(?:#.*)?$\u0027);\n  const start = lines.findIndex(line =\u003e heading.test(line));\n  if (start \u003c 0) return \u0027\u0027;\n  const section = [lines[start]];\n  for (let index = start + 1; index \u003c lines.length; index++) {\n    const line = lines[index];\n    if (/^[A-Za-z_][A-Za-z0-9_]*:\\s*(?:#.*)?$/.test(line)) break;\n    section.push(line);\n  }\n  return section.join(\u0027\\n\u0027).trim();\n}\n\nfunction parseHistory(value) {\n  return String(value || \u0027\u0027)\n    .split(/\\r?\\n/)\n    .filter(Boolean)\n    .map(line =\u003e { try { return JSON.parse(line); } catch { return null; } })\n    .filter(Boolean);\n}\n\nconst productProfile = byKey.product_profile?.content || \u0027\u0027;\nconst instructionsForUse = extractTopLevelYamlSection(productProfile, \u0027instructions_for_use\u0027);\nconst scriptsHistory = byKey.scripts_history?.content || \u0027\u0027;\nconst recentHistory = parseHistory(scriptsHistory).slice(-30);\nconst recentCreativeFingerprints = recentHistory.map(entry =\u003e ({\n  script_id: entry.script_id || \u0027\u0027,\n  creative_fingerprint: entry.creative_fingerprint || null,\n  opening_visual: entry.opening_visual || entry.hook || \u0027\u0027,\n  angle: entry.angle || \u0027\u0027,\n  prompt_text: entry.prompt_text || \u0027\u0027\n}));\n\nconst aiInput = {\n  product_profile: productProfile,\n  plan_batch: byKey.plan_batch?.content || \u0027\u0027,\n  skill_content: skillContent,\n  scripts_history: scriptsHistory,\n  recent_creative_fingerprints: recentCreativeFingerprints,\n  image_references: imageReferences,\n  instructions_for_use: instructionsForUse || null,\n  active_skill: activeSkill,\n  skill_family: isSkillG ? \u0027skill_g\u0027 : activeSkill,\n  github_url: ctx.github_url,\n  product_folder: ctx.product_folder,\n  requested_generate_count: ctx.requested_generate_count || 1,\n  generate_count: 1\n};\n\nconst generationInstructions = isSkillG\n  ? [\n      \u0027Generate exactly THREE materially different candidate_scripts for the same Skill G product request.\u0027,\n      \u0027Return one JSON object with candidate_scripts as an array of exactly three objects. Do not return selected_script.\u0027,\n      \u0027Every candidate must contain a complete creative_fingerprint using stable lowercase English snake_case ids, opening_visual, angle, structure_signature, scene_order, usage_compliance, and exactly one final_moyin_jobs entry.\u0027,\n      \u0027The three candidates must differ in at least two of these structured dimensions: action ids, object ids, environment id, or camera ids.\u0027,\n      \u0027Use recent_creative_fingerprints to avoid previously used visual situations. Never create difference through installation, assembly, removal, invented functions, invented accessories, or unsupported claims.\u0027,\n      \u0027Keep the mandatory Skill G first-person two-stage 10-second structure. Mandatory structure and scene order are not creative differences.\u0027\n    ]\n  : [\n      \u0027Generate exactly ONE script only.\u0027,\n      \u0027Return exactly one selected_script object only.\u0027,\n      \u0027Do not generate multiple script alternatives.\u0027\n    ];\n\nconst commonInstructions = [\n  \u0027You generate US-market UGC video scripts and Moyin image-to-video jobs.\u0027,\n  \u0027You must use the supplied active_skill and skill_content as the replaceable creative method.\u0027,\n  ...generationInstructions,\n  \u0027Output valid JSON only.\u0027,\n  \u0027No markdown.\u0027,\n  \u0027No explanations.\u0027,\n  \u0027No json fences.\u0027,\n  \u0027Avoid duplicate creative fingerprints compared with scripts_history and recent_creative_fingerprints.\u0027,\n  \u0027Do not decide final script_id. Use temporary ids only; downstream n8n assigns canonical ids.\u0027,\n  instructionsForUse\n    ? \u0027instructions_for_use is AUTHORITATIVE and NON-NEGOTIABLE. Use only its explicitly confirmed actions, objects, direction, order, orientation, repetitions, compatibility, safety constraints, prohibited actions, and video constraints. Do not infer, invent, substitute, or embellish an operating method. The script and every Moyin prompt must never conflict with this field. Return usage_compliance showing the confirmed steps used and that prohibited actions were avoided.\u0027\n    : \u0027No instructions_for_use was supplied. Do not invent a product operating method. Keep any usage depiction neutral and non-procedural unless another supplied product field explicitly confirms it.\u0027\n];\n\nconst modeInstructions = isSkillE\n  ? [\n      \u0027Skill E must generate exactly one scene and exactly one final_moyin_jobs entry.\u0027,\n      \u0027The only allowed scene_id is video_001 and scene_order must be exactly [\"video_001\"].\u0027,\n      \u0027Do not output scene_02, scene_03, broll_coverage, video_001_part_01, or video_001_part_02.\u0027,\n      \u0027The single video_001 promptText must describe one complete approximately 10-second vertical 9:16 TikTok-style UGC ad.\u0027,\n      \u0027Keep the entire Skill E rhythm inside the same video: 0-3s familiar wrong-use hook; 3-5s visible pain amplification; 5-8.5s natural product entry and clear product action; 8.5-10s credible before-after result proof and a light CTA.\u0027,\n      \u0027Use realistic handheld phone-shot style and preserve product identity, color, label, shape, and material.\u0027,\n      \u0027No UI, subtitles, stickers, text overlays, or exaggerated chemical effects.\u0027\n    ]\n  : isSkillC\n    ? [\n        \u0027Skill C must generate exactly two final_moyin_jobs entries for one complete 20-second ad.\u0027,\n        \u0027scene_order must be exactly [\"video_001_part_01\", \"video_001_part_02\"].\u0027,\n        \u0027The first scene_id must be video_001_part_01 and must cover global 0-10s: 0-3s pain conflict, 3-6s product solution, and 6-10s fast-cut scene 1. Do not include the CTA in part 1.\u0027,\n        \u0027The second scene_id must be video_001_part_02 and must cover global 10-20s: local 0-4s fast-cut scene 2, 4-8s fast-cut scene 3, and 8-10s light CTA.\u0027,\n        \u0027Both segments must use 9:16 realistic handheld phone-shot style and preserve identical product identity, color, label, shape, material, pacing, and usage logic.\u0027,\n        \u0027Do not output a third scene or broll_coverage.\u0027\n      ]\n    : [\n        \u0027Follow the selected skill_content when deciding the required final_moyin_jobs entries.\u0027,\n        \u0027Keep all jobs under the same candidate script.\u0027\n      ];\n\nconst system = [...commonInstructions, ...modeInstructions].join(\u0027 \u0027);\nconst firstImage = imageReferences[0]?.raw_url || \u0027\u0027;\nconst usageCompliance = instructionsForUse\n  ? {\n      instructions_for_use_applied: true,\n      confirmed_source_only: true,\n      no_unconfirmed_operation: true,\n      prohibited_actions_avoided: true,\n      usage_steps_used: []\n    }\n  : {\n      instructions_for_use_applied: false,\n      confirmed_source_only: true,\n      no_unconfirmed_operation: true,\n      prohibited_actions_avoided: true,\n      usage_steps_used: []\n    };\n\nfunction fingerprintShape(index) {\n  return {\n    environment_id: `verified_environment_${index}`,\n    opening_state_id: `ready_to_use_state_${index}`,\n    scene_1_action_id: `verified_direct_action_${index}_a`,\n    scene_1_object_ids: [`verified_object_${index}_a`],\n    scene_1_direction_id: `verified_direction_${index}_a`,\n    scene_1_camera_id: `first_person_camera_${index}_a`,\n    scene_2_action_id: `verified_direct_action_${index}_b`,\n    scene_2_object_ids: [`verified_object_${index}_b`],\n    scene_2_direction_id: `verified_direction_${index}_b`,\n    scene_2_camera_id: `first_person_camera_${index}_b`,\n    ending_state_id: `verified_end_state_${index}`,\n    hand_style_id: `natural_adult_hand_style_${index}`,\n    visible_evidence_id: `visible_function_evidence_${index}`\n  };\n}\n\nfunction skillGCandidate(index) {\n  return {\n    retry_attempt: 1,\n    script_id: `temporary_candidate_${index}`,\n    product_id: ctx.product_id,\n    angle: `verified product function angle ${index}`,\n    opening_visual: `distinct verified first-frame situation ${index}`,\n    structure_signature: \u0027first_person_ready_use_two_5s_direct_function\u0027,\n    scene_order: [\u0027scene_01\u0027],\n    creative_fingerprint: fingerprintShape(index),\n    usage_compliance: usageCompliance,\n    script_record: {},\n    final_moyin_jobs: [{\n      job_id: `temporary_scene_01_${index}`,\n      scene_id: \u0027scene_01\u0027,\n      promptImage: firstImage,\n      promptText: `One complete Skill G 10-second prompt for candidate ${index}.`,\n      duration: \u002710\u0027,\n      ratio: \u00279:16\u0027,\n      watermark: false\n    }]\n  };\n}\n\nconst finalMoyinJobs = isSkillE\n  ? [{ job_id: \u0027temporary_video_001\u0027, scene_id: \u0027video_001\u0027, promptImage: firstImage, promptText: \u0027Create one complete 10-second vertical 9:16 TikTok-style UGC ad containing the wrong-use hook, pain amplification, natural product action, credible result proof, and light CTA in one video.\u0027, duration: \u002710\u0027, ratio: \u00279:16\u0027, watermark: false }]\n  : isSkillC\n    ? [\n        { job_id: \u0027temporary_video_001_part_01\u0027, scene_id: \u0027video_001_part_01\u0027, promptImage: firstImage, promptText: \u0027Create the first 10-second segment: 0-3s pain conflict, 3-6s quick product solution, 6-10s first clear fast-cut result. No CTA.\u0027, duration: \u002710\u0027, ratio: \u00279:16\u0027, watermark: false },\n        { job_id: \u0027temporary_video_001_part_02\u0027, scene_id: \u0027video_001_part_02\u0027, promptImage: firstImage, promptText: \u0027Create the continuation 10-second segment: 0-4s second usage scene, 4-8s third/final result scene, 8-10s light CTA. Preserve continuity with part 1.\u0027, duration: \u002710\u0027, ratio: \u00279:16\u0027, watermark: false }\n      ]\n    : [{ job_id: \u0027temporary_job_id\u0027, scene_id: \u0027scene_01\u0027, promptImage: firstImage, promptText: \u0027Moyin-ready prompt text following the selected skill.\u0027, duration: \u002710\u0027, ratio: \u00279:16\u0027, watermark: false }];\n\nconst selectedScriptShape = {\n  retry_attempt: 1,\n  script_id: \u0027temporary_only\u0027,\n  product_id: ctx.product_id,\n  angle: \u0027unique strategic angle\u0027,\n  hook: \u0027first spoken or visual hook\u0027,\n  structure_signature: isSkillE ? \u0027wrong_use_pain_product_action_result_cta\u0027 : isSkillC ? \u0027pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta\u0027 : \u0027skill_defined_structure\u0027,\n  scene_order: isSkillE ? [\u0027video_001\u0027] : isSkillC ? [\u0027video_001_part_01\u0027, \u0027video_001_part_02\u0027] : [\u0027scene_01\u0027],\n  usage_compliance: usageCompliance,\n  script_record: {},\n  final_moyin_jobs: finalMoyinJobs\n};\n\nconst schemaHint = isSkillG\n  ? { candidate_scripts: [skillGCandidate(1), skillGCandidate(2), skillGCandidate(3)] }\n  : { selected_script: selectedScriptShape };\n\nreturn [{\n  json: {\n    ...ctx,\n    is_skill_g: isSkillG,\n    generate_count: 1,\n    requested_generate_count: ctx.requested_generate_count || 1,\n    warnings,\n    github_reads: byKey,\n    ai_input: aiInput,\n    openai_messages: [\n      { role: \u0027system\u0027, content: system },\n      { role: \u0027user\u0027, content: JSON.stringify({ input: aiInput, required_output_shape: schemaHint }) }\n    ]\n  }\n}];"
+                                     },
+                      "id":  "074ccb1a-620a-4ed0-972a-e8c59f42e78f",
+                      "name":  "Prepare OpenAI Context",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -5568,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "if-dry-run-is-true",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "ec571538-b870-476e-b8d1-4c1e19639613",
+                      "name":  "IF Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -5344,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const now = new Date().toISOString().replace(/[:.]/g, \u0027-\u0027);\nconst productId = ($json.product_folder.split(\u0027/\u0027).pop() || \u0027product\u0027).replace(/[^a-zA-Z0-9_-]/g, \u0027_\u0027);\nconst firstImage = $json.ai_input.image_references[0]?.raw_url || `https://ghproxy.net/https://raw.githubusercontent.com/${$json.owner}/${$json.repo}/${$json.branch}/${$json.product_folder}/images/product_detail_side.png`;\nconst count = $json.is_skill_g ? 3 : 1;\nconst candidate_scripts = Array.from({ length: count }, (_, index) =\u003e {\n  const n = index + 1;\n  const skillGFingerprint = {\n    environment_id: `dry_environment_${n}`,\n    opening_state_id: `dry_ready_state_${n}`,\n    scene_1_action_id: `dry_action_${n}_a`,\n    scene_1_object_ids: [`dry_object_${n}_a`],\n    scene_1_direction_id: `dry_direction_${n}_a`,\n    scene_1_camera_id: `dry_camera_${n}_a`,\n    scene_2_action_id: `dry_action_${n}_b`,\n    scene_2_object_ids: [`dry_object_${n}_b`],\n    scene_2_direction_id: `dry_direction_${n}_b`,\n    scene_2_camera_id: `dry_camera_${n}_b`,\n    ending_state_id: `dry_end_state_${n}`,\n    hand_style_id: `dry_hand_style_${n}`,\n    visible_evidence_id: `dry_evidence_${n}`\n  };\n  return {\n    retry_attempt: 1,\n    script_id: `dry_${productId}_${now}_${n}`,\n    product_id: productId,\n    angle: `dry run angle ${n}`,\n    hook: `dry opening ${n}`,\n    opening_visual: `dry opening visual ${n}`,\n    structure_signature: $json.is_skill_g ? \u0027first_person_ready_use_two_5s_direct_function\u0027 : `dry_structure_${n}`,\n    scene_order: [\u0027scene_01\u0027],\n    creative_fingerprint: $json.is_skill_g ? skillGFingerprint : undefined,\n    script_record: { language: \u0027en-US\u0027, active_skill: $json.active_skill, note: \u0027Dry run placeholder.\u0027 },\n    final_moyin_jobs: [{\n      job_id: `dryjob_${productId}_${n}`,\n      scene_id: \u0027scene_01\u0027,\n      promptImage: firstImage,\n      promptText: `Dry run prompt candidate ${n}. Show a distinct verified direct-use workflow.`,\n      duration: \u002710\u0027,\n      ratio: \u00279:16\u0027,\n      watermark: false\n    }]\n  };\n});\nreturn [{ json: { ...$json, openai_json: { candidate_scripts } } }];"
+                                     },
+                      "id":  "b02ea3f3-0d1f-47bc-8aea-79bab32f950b",
+                      "name":  "Dry Run Script Generator",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -5104,
+                                       224
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const fs = require(\u0027fs\u0027);\nconst path = require(\u0027path\u0027);\nconst { spawn } = require(\u0027child_process\u0027);\n\nfunction normalizePath(value) {\n  return String(value || \u0027\u0027).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\n}\n\nasync function runPython(pythonExecutable, args, childEnv, timeoutMs) {\n  return await new Promise((resolve, reject) =\u003e {\n    const child = spawn(pythonExecutable, args, {\n      windowsHide: true,\n      shell: false,\n      env: childEnv\n    });\n\n    let stdout = \u0027\u0027;\n    let stderr = \u0027\u0027;\n\n    child.stdout.on(\u0027data\u0027, data =\u003e {\n      stdout += data.toString();\n      if (stdout.length \u003e 1024 * 1024) stdout = stdout.slice(-1024 * 1024);\n    });\n\n    child.stderr.on(\u0027data\u0027, data =\u003e {\n      stderr += data.toString();\n      if (stderr.length \u003e 1024 * 1024) stderr = stderr.slice(-1024 * 1024);\n    });\n\n    const timer = setTimeout(() =\u003e {\n      try { child.kill(\u0027SIGKILL\u0027); } catch (error) {}\n      reject(new Error(`OpenAI Python process timed out after ${timeoutMs}ms. stderr=${stderr.slice(-2000)}`));\n    }, timeoutMs);\n\n    child.on(\u0027error\u0027, error =\u003e {\n      clearTimeout(timer);\n      reject(error);\n    });\n\n    child.on(\u0027close\u0027, code =\u003e {\n      clearTimeout(timer);\n      resolve({\n        status: code,\n        stdout,\n        stderr\n      });\n    });\n  });\n}\n\nfunction safePart(value) {\n  return String(value || \u0027openai\u0027)\n    .toLowerCase()\n    .replace(/[^a-z0-9_-]+/g, \u0027_\u0027)\n    .replace(/^_+|_+$/g, \u0027\u0027)\n    .slice(0, 80) || \u0027openai\u0027;\n}\n\nfunction readJson(filePath) {\n  return JSON.parse(fs.readFileSync(filePath, \u0027utf8\u0027).replace(/^\\uFEFF/, \u0027\u0027));\n}\n\nconst jobsRoot = normalizePath($env.N8N_OPENAI_JOBS_DIR || \u0027E:/n8n-video-gemini/openai_jobs\u0027);\nconst generatorPath = normalizePath($env.OPENAI_SCRIPT_GENERATOR_PATH || \u0027E:/n8n-video-gemini/workers/openai_script_generator.py\u0027);\nconst pythonExecutable = String($env.PYTHON_EXECUTABLE || \u0027python\u0027).trim();\nconst openaiUrl = String($env.OPENAI_CHAT_COMPLETIONS_URL || \u0027https://api.aiyxgaw.com/v1/chat/completions\u0027).trim();\nconst model = String($env.OPENAI_MODEL || \u0027gpt-5.5\u0027).trim();\n\nif (!fs.existsSync(generatorPath)) {\n  throw new Error(`OpenAI Python generator not found: ${generatorPath}`);\n}\n\nfs.mkdirSync(jobsRoot, { recursive: true });\nconst output = [];\n\nfor (let index = 0; index \u003c items.length; index++) {\n  const itemJson = items[index].json;\n  if (!Array.isArray(itemJson.openai_messages) || !itemJson.openai_messages.length) {\n    throw new Error(\u0027openai_messages must be a non-empty array\u0027);\n  }\n\n  const identity = safePart(itemJson.product_id || itemJson.script_id || `item_${index + 1}`);\n  const uniqueId = `${identity}_${Date.now()}_${index + 1}_${Math.random().toString(36).slice(2, 10)}`;\n  const jobDir = path.join(jobsRoot, uniqueId);\n  const inputPath = path.join(jobDir, \u0027input.json\u0027);\n  const outputPath = path.join(jobDir, \u0027output.json\u0027);\n  const logPath = path.join(jobDir, \u0027openai.log\u0027);\n  fs.mkdirSync(jobDir, { recursive: true });\n\n  const inputPayload = {\n    openai_url: openaiUrl,\n    model,\n    api_key_env: \u0027OPENAI_API_KEY\u0027,\n    messages: itemJson.openai_messages,\n    request_body_extra: {\n      multi_agent: true,\n      service_tier: \u0027fast\u0027,\n      stream: true,\n      max_tokens: 4096\n    }\n  };\n  await fs.promises.writeFile(inputPath, JSON.stringify(inputPayload, null, 2), \u0027utf8\u0027);\n\n  const args = [\n    generatorPath,\n    \u0027--input\u0027, inputPath,\n    \u0027--output\u0027, outputPath,\n    \u0027--log\u0027, logPath,\n    \u0027--timeout-seconds\u0027, \u00271800\u0027,\n    \u0027--max-retries\u0027, \u00275\u0027\n  ];\n  const childEnv = {\n    Path: String($env.Path || $env.PATH || \u0027\u0027),\n    PATH: String($env.PATH || $env.Path || \u0027\u0027),\n    PATHEXT: String($env.PATHEXT || \u0027\u0027),\n    SystemRoot: String($env.SystemRoot || \u0027C:\\Windows\u0027),\n    ComSpec: String($env.ComSpec || \u0027C:\\Windows\\System32\\cmd.exe\u0027),\n    TEMP: String($env.TEMP || $env.TMP || \u0027C:\\Windows\\Temp\u0027),\n    TMP: String($env.TMP || $env.TEMP || \u0027C:\\Windows\\Temp\u0027),\n    OPENAI_API_KEY: String($env.OPENAI_API_KEY || \u0027\u0027),\n    OPENAI_CHAT_COMPLETIONS_URL: String($env.OPENAI_CHAT_COMPLETIONS_URL || openaiUrl || \u0027\u0027),\n    OPENAI_MODEL: String($env.OPENAI_MODEL || model || \u0027\u0027),\n    MOYIN_API_KEY: String($env.MOYIN_API_KEY || \u0027\u0027),\n    MOYIN_API_BASE_URL: String($env.MOYIN_API_BASE_URL || \u0027\u0027),\n    GITHUB_TOKEN: String($env.GITHUB_TOKEN || \u0027\u0027)\n  };\n\n  if (!childEnv.OPENAI_API_KEY) {\n    throw new Error(\u0027OPENAI_API_KEY is not visible in n8n $env. Check .env loading before n8n start.\u0027);\n  }\n\n  const result = await runPython(pythonExecutable, args, childEnv, 1860000);\n\n  let outputJson = null;\n  if (fs.existsSync(outputPath)) {\n    try {\n      outputJson = readJson(outputPath);\n    } catch (error) {\n      throw new Error(`OpenAI Python output is invalid JSON: ${outputPath}; log: ${logPath}; ${error.message}`);\n    }\n  }\n\n  if (!outputJson) {\n    const stderr = String(result.stderr || \u0027\u0027).slice(-2000);\n    throw new Error(`OpenAI Python output was not created; exit=${result.status}; log: ${logPath}; stderr=${stderr}`);\n  }\n  if (outputJson.ok === false || !Array.isArray(outputJson.choices) || !outputJson.choices.length) {\n    const message = outputJson.error || `Python exited with status ${result.status}`;\n    throw new Error(`OpenAI generation failed: ${message}; log: ${logPath}`);\n  }\n\n  outputJson.openai_job_dir = normalizePath(jobDir);\n  outputJson.openai_log_path = normalizePath(logPath);\n  // Preserve retry state when the uniqueness branch loops back to this node.\n  outputJson.__openai_generation_context = itemJson;\n  output.push({ json: outputJson });\n}\n\nreturn output;"
+                                     },
+                      "id":  "d680adad-56f7-4f2f-92af-43125c5227f2",
+                      "name":  "OpenAI Generate Scripts",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -5104,
+                                       512
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const content = $json.choices?.[0]?.message?.content;\nif (!content) throw new Error(\u0027OpenAI response missing choices[0].message.content\u0027);\n\nlet cleaned = content.trim();\nif (cleaned.startsWith(\u0027```\u0027)) {\n  cleaned = cleaned.replace(/^```[a-zA-Z0-9]*\\s*/, \u0027\u0027);\n  cleaned = cleaned.replace(/\\s*```$/, \u0027\u0027);\n}\n\nlet parsed;\ntry { parsed = JSON.parse(cleaned); }\ncatch (error) { throw new Error(`OpenAI did not return valid JSON: ${error.message}`); }\n\nconst retryContext = $json.__openai_generation_context;\nconst ctx = retryContext \u0026\u0026 typeof retryContext === \u0027object\u0027\n  ? retryContext\n  : $(\u0027Prepare OpenAI Context\u0027).first().json;\nconst activeSkill = ctx.active_skill;\nconst isSkillG = ctx.is_skill_g === true;\nconst instructionsForUse = String(ctx.ai_input?.instructions_for_use || \u0027\u0027).trim();\n\nfunction yamlList(section, key) {\n  const lines = String(section || \u0027\u0027).split(/\\r?\\n/);\n  const heading = new RegExp(\u0027^\\\\s{2}\u0027 + key + \u0027:\\\\s*$\u0027);\n  const start = lines.findIndex(line =\u003e heading.test(line));\n  if (start \u003c 0) return [];\n  const values = [];\n  for (let index = start + 1; index \u003c lines.length; index++) {\n    const line = lines[index];\n    if (/^\\s{2}[A-Za-z_][A-Za-z0-9_]*:\\s*/.test(line)) break;\n    const match = line.match(/^\\s{4}-\\s+(.+)$/);\n    if (match) values.push(match[1].replace(/^[\u0027\"]|[\u0027\"]$/g, \u0027\u0027).trim());\n  }\n  return values.filter(Boolean);\n}\n\nfunction normalizeUsageText(value) {\n  return String(value || \u0027\u0027).normalize(\u0027NFKC\u0027).toLowerCase().replace(/[鈥?]/g, \u0027\u0027).replace(/[^\\p{L}\\p{N}]+/gu, \u0027 \u0027).trim();\n}\n\nfunction hasPositiveForbiddenPhrase(text, rule) {\n  const normalizedText = normalizeUsageText(text);\n  const normalizedRule = normalizeUsageText(rule).replace(/^(do not|dont)\\s+/, \u0027\u0027);\n  if (!normalizedRule) return false;\n  return normalizedRule.split(/\\s+or\\s+/).some(part =\u003e {\n    const phrase = part.trim();\n    if (phrase.length \u003c 6 || !normalizedText.includes(phrase)) return false;\n    return !normalizedText.includes(`do not ${phrase}`) \u0026\u0026 !normalizedText.includes(`dont ${phrase}`) \u0026\u0026 !normalizedText.includes(`never ${phrase}`) \u0026\u0026 !normalizedText.includes(`avoid ${phrase}`);\n  });\n}\n\nfunction normalizeJob(source, sceneId, index) {\n  return {\n    ...source,\n    job_id: source.job_id || `temporary_${sceneId}_${index + 1}`,\n    scene_id: sceneId,\n    promptImage: source.promptImage || source.prompt_image || source.image || source.image_url || \u0027\u0027,\n    promptText: source.promptText || source.prompt_text || source.prompt || \u0027\u0027,\n    duration: String(source.duration || source.seconds || \u002710\u0027),\n    ratio: source.ratio || source.aspect_ratio || source.aspectRatio || \u00279:16\u0027,\n    watermark: false\n  };\n}\n\nfunction rawCandidatesOf(source) {\n  if (Array.isArray(source.candidate_scripts) \u0026\u0026 source.candidate_scripts.length) return source.candidate_scripts;\n  if (Array.isArray(source.scripts) \u0026\u0026 source.scripts.length) return source.scripts;\n  if (source.selected_script) return [source.selected_script];\n  return [];\n}\n\nfunction normalizeCandidate(candidate) {\n  let normalized = { ...candidate };\n  const originalJobs = Array.isArray(normalized.final_moyin_jobs) ? normalized.final_moyin_jobs : [];\n  const originalScenes = Array.isArray(normalized.scenes) ? normalized.scenes : [];\n  const sources = originalJobs.length ? originalJobs : originalScenes;\n\n  if (activeSkill === \u0027skill_e\u0027) {\n    const onlyJob = sources[0] ? normalizeJob(sources[0], \u0027video_001\u0027, 0) : null;\n    normalized = { ...normalized, scene_order: [\u0027video_001\u0027], final_moyin_jobs: onlyJob ? [onlyJob] : [], single_video_extra_scenes_skipped: sources.length \u003e 1 };\n  } else if (activeSkill === \u0027skill_c\u0027) {\n    if (sources.length \u003c 2) throw new Error(\u0027Skill C requires exactly two video segments: video_001_part_01 and video_001_part_02\u0027);\n    const sceneIds = [\u0027video_001_part_01\u0027, \u0027video_001_part_02\u0027];\n    const jobs = sources.slice(0, 2).map((source, index) =\u003e normalizeJob(source, sceneIds[index], index));\n    normalized = { ...normalized, scene_order: sceneIds, final_moyin_jobs: jobs, skill_c_extra_scenes_skipped: sources.length \u003e 2 };\n  } else if (isSkillG) {\n    if (sources.length !== 1) throw new Error(\u0027Skill G candidate requires exactly one 10-second final_moyin_jobs entry\u0027);\n    normalized = { ...normalized, scene_order: [\u0027scene_01\u0027], final_moyin_jobs: [normalizeJob(sources[0], \u0027scene_01\u0027, 0)] };\n  } else {\n    normalized.final_moyin_jobs = sources.map((source, index) =\u003e normalizeJob(source, source.scene_id || `scene_${String(index + 1).padStart(2, \u00270\u0027)}`, index));\n  }\n\n  if (instructionsForUse) {\n    const compliance = normalized.usage_compliance || normalized.script_record?.usage_compliance;\n    if (!compliance || compliance.instructions_for_use_applied !== true || compliance.confirmed_source_only !== true || compliance.no_unconfirmed_operation !== true || compliance.prohibited_actions_avoided !== true) {\n      throw new Error(\u0027Script rejected: instructions_for_use exists, but usage_compliance is missing or incomplete.\u0027);\n    }\n    const prohibitedRules = [...yamlList(instructionsForUse, \u0027prohibited_actions\u0027), ...yamlList(instructionsForUse, \u0027safety_constraints\u0027)];\n    const promptText = normalized.final_moyin_jobs.map(job =\u003e job.promptText || \u0027\u0027).join(\u0027\\n\u0027);\n    const conflicts = prohibitedRules.filter(rule =\u003e hasPositiveForbiddenPhrase(promptText, rule));\n    if (conflicts.length) throw new Error(`Script rejected: video prompt conflicts with instructions_for_use: ${conflicts.join(\u0027 | \u0027)}`);\n    normalized.instructions_for_use_enforced = true;\n  }\n  return normalized;\n}\n\nconst rawCandidates = rawCandidatesOf(parsed);\nif (!rawCandidates.length) throw new Error(\u0027OpenAI output did not contain selected_script or candidate_scripts.\u0027);\nif (isSkillG \u0026\u0026 rawCandidates.length !== 3) throw new Error(`Skill G requires exactly three candidate_scripts; received ${rawCandidates.length}.`);\nconst normalizedCandidates = rawCandidates.slice(0, isSkillG ? 3 : 1).map(normalizeCandidate);\n\nconst openaiJson = isSkillG\n  ? { ...parsed, candidate_scripts: normalizedCandidates, selected_script: undefined, scripts: undefined }\n  : { ...parsed, selected_script: normalizedCandidates[0], scripts: undefined, candidate_scripts: undefined };\n\nreturn [{ json: { ...ctx, generate_count: 1, openai_json: openaiJson } }];"
+                                     },
+                      "id":  "f83a6b54-abb1-4671-9cc8-b4de906f315c",
+                      "name":  "Parse OpenAI JSON",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -4880,
+                                       512
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "function normalizeText(value) {\n  return String(value || \u0027\u0027).normalize(\u0027NFKC\u0027).toLowerCase().replace(/[^\\p{L}\\p{N}]+/gu, \u0027 \u0027).trim();\n}\nfunction stableId(value) { return normalizeText(value).replace(/\\s+/g, \u0027_\u0027); }\nfunction textTokens(value) {\n  const text = String(value || \u0027\u0027).normalize(\u0027NFKC\u0027).toLowerCase();\n  const segments = text.match(/[\\p{Script=Han}]+|[a-z0-9]+/gu) || [];\n  const out = [];\n  for (const segment of segments) {\n    if (/^[\\p{Script=Han}]+$/u.test(segment)) {\n      if (segment.length === 1) out.push(segment);\n      else for (let i = 0; i \u003c segment.length - 1; i++) out.push(segment.slice(i, i + 2));\n    } else out.push(segment);\n  }\n  return out;\n}\nfunction jaccard(a, b) {\n  const aa = new Set(a || []); const bb = new Set(b || []); const union = new Set([...aa, ...bb]);\n  if (!union.size) return 0;\n  let inter = 0; for (const value of aa) if (bb.has(value)) inter++;\n  return inter / union.size;\n}\nfunction textSimilarity(a, b) { return jaccard(textTokens(a), textTokens(b)); }\nfunction equalId(a, b) { const aa = stableId(a); const bb = stableId(b); return aa \u0026\u0026 bb \u0026\u0026 aa === bb ? 1 : 0; }\nfunction idList(value) { return (Array.isArray(value) ? value : []).map(stableId).filter(Boolean); }\nfunction avg(a, b) { return (a + b) / 2; }\nfunction firstText(source, keys) { for (const key of keys) { const value = source \u0026\u0026 source[key]; if (typeof value === \u0027string\u0027 \u0026\u0026 value.trim()) return value; } return \u0027\u0027; }\nfunction promptTextOf(script) {\n  const direct = firstText(script, [\u0027promptText\u0027, \u0027prompt_text\u0027, \u0027moyin_prompt\u0027, \u0027video_prompt\u0027]);\n  if (direct) return direct;\n  const jobs = Array.isArray(script?.final_moyin_jobs) ? script.final_moyin_jobs : [];\n  return jobs.map(job =\u003e firstText(job, [\u0027promptText\u0027, \u0027prompt_text\u0027, \u0027prompt\u0027])).filter(Boolean).join(\u0027\\n\u0027);\n}\nfunction nextStart(history, productId) {\n  let max = 0; const prefix = productId + \u0027-\u0027;\n  for (const entry of history) {\n    const id = String(entry.script_id || \u0027\u0027);\n    if (!id.startsWith(prefix)) continue;\n    const suffix = id.slice(prefix.length);\n    if (/^\\d{3,}$/.test(suffix)) max = Math.max(max, Number(suffix));\n  }\n  return max + 1;\n}\nfunction candidatesOf(openaiJson) {\n  if (Array.isArray(openaiJson?.candidate_scripts) \u0026\u0026 openaiJson.candidate_scripts.length) return openaiJson.candidate_scripts;\n  if (openaiJson?.selected_script) return [openaiJson.selected_script];\n  if (Array.isArray(openaiJson?.scripts) \u0026\u0026 openaiJson.scripts.length) return openaiJson.scripts;\n  return [];\n}\n\nconst SKILL_G_THRESHOLD = 0.68;\nconst MAX_GENERATION_ATTEMPTS = 3;\nconst REQUIRED_FINGERPRINT_KEYS = [\n  \u0027environment_id\u0027, \u0027opening_state_id\u0027, \u0027scene_1_action_id\u0027, \u0027scene_1_object_ids\u0027,\n  \u0027scene_1_direction_id\u0027, \u0027scene_1_camera_id\u0027, \u0027scene_2_action_id\u0027, \u0027scene_2_object_ids\u0027,\n  \u0027scene_2_direction_id\u0027, \u0027scene_2_camera_id\u0027, \u0027ending_state_id\u0027, \u0027hand_style_id\u0027, \u0027visible_evidence_id\u0027\n];\nconst SKILL_G_WEIGHTS = {\n  action_sequence: 0.30,\n  object_sets: 0.15,\n  environment: 0.10,\n  opening_state: 0.10,\n  camera_pair: 0.10,\n  direction_pair: 0.05,\n  ending_state: 0.05,\n  visible_evidence: 0.05,\n  hand_style: 0.05,\n  prompt_text: 0.05\n};\n\nfunction fingerprintMissing(fp) {\n  if (!fp || typeof fp !== \u0027object\u0027 || Array.isArray(fp)) return REQUIRED_FINGERPRINT_KEYS.slice();\n  return REQUIRED_FINGERPRINT_KEYS.filter(key =\u003e {\n    const value = fp[key];\n    return Array.isArray(value) ? value.length === 0 : !stableId(value);\n  });\n}\nfunction fingerprintCanonical(fp) {\n  const normalized = {};\n  for (const key of REQUIRED_FINGERPRINT_KEYS) normalized[key] = Array.isArray(fp?.[key]) ? idList(fp[key]).sort() : stableId(fp?.[key]);\n  return JSON.stringify(normalized);\n}\nfunction fingerprintSimilarities(current, historical, currentPrompt, historicalPrompt) {\n  return {\n    action_sequence: avg(equalId(current.scene_1_action_id, historical.scene_1_action_id), equalId(current.scene_2_action_id, historical.scene_2_action_id)),\n    object_sets: avg(jaccard(idList(current.scene_1_object_ids), idList(historical.scene_1_object_ids)), jaccard(idList(current.scene_2_object_ids), idList(historical.scene_2_object_ids))),\n    environment: equalId(current.environment_id, historical.environment_id),\n    opening_state: equalId(current.opening_state_id, historical.opening_state_id),\n    camera_pair: avg(equalId(current.scene_1_camera_id, historical.scene_1_camera_id), equalId(current.scene_2_camera_id, historical.scene_2_camera_id)),\n    direction_pair: avg(equalId(current.scene_1_direction_id, historical.scene_1_direction_id), equalId(current.scene_2_direction_id, historical.scene_2_direction_id)),\n    ending_state: equalId(current.ending_state_id, historical.ending_state_id),\n    visible_evidence: equalId(current.visible_evidence_id, historical.visible_evidence_id),\n    hand_style: equalId(current.hand_style_id, historical.hand_style_id),\n    prompt_text: textSimilarity(currentPrompt, historicalPrompt)\n  };\n}\nfunction allowedVisualDifferenceCount(similarities) {\n  return [\u0027environment\u0027, \u0027opening_state\u0027, \u0027object_sets\u0027, \u0027direction_pair\u0027, \u0027camera_pair\u0027, \u0027hand_style\u0027, \u0027ending_state\u0027]\n    .filter(key =\u003e (similarities[key] || 0) \u003c 1).length;\n}\nfunction candidatePoolDifferenceCount(current, previous) {\n  const similarities = fingerprintSimilarities(current, previous, \u0027\u0027, \u0027\u0027);\n  return [\u0027action_sequence\u0027, \u0027object_sets\u0027, \u0027environment\u0027, \u0027camera_pair\u0027]\n    .filter(key =\u003e (similarities[key] || 0) \u003c 1).length;\n}\nfunction weightedScore(similarities) {\n  return Object.entries(SKILL_G_WEIGHTS).reduce((sum, [key, weight]) =\u003e sum + (similarities[key] || 0) * weight, 0);\n}\nfunction legacyDuplicate(candidate, historical) {\n  const angle = textSimilarity(candidate.angle, historical.angle);\n  const opening = textSimilarity(candidate.opening_visual || candidate.hook, historical.opening_visual || historical.hook);\n  const prompt = textSimilarity(promptTextOf(candidate), historical.prompt_text || promptTextOf(historical));\n  return { score: angle * 0.35 + opening * 0.35 + prompt * 0.30, angle, opening, prompt };\n}\n\nconst ctx = $json;\nconst isSkillG = ctx.is_skill_g === true;\nconst productId = ctx.product_id || String(ctx.product_folder || \u0027\u0027).split(\u0027/\u0027).filter(Boolean).pop();\nconst history = String(ctx.ai_input?.scripts_history || \u0027\u0027).split(/\\r?\\n/).filter(Boolean).map(line =\u003e { try { return JSON.parse(line); } catch { return { raw: line }; } });\nconst candidates = candidatesOf(ctx.openai_json);\nconst currentAttempt = Math.max(1, Number(ctx.uniqueness_retry_attempt || 1));\nconst evaluated = [];\nconst seenCandidateFingerprints = new Set();\nconst priorCandidateFingerprints = [];\n\nfor (const candidate of candidates) {\n  const reasons = [];\n  if (!Array.isArray(candidate.final_moyin_jobs) || candidate.final_moyin_jobs.length === 0) reasons.push(\u0027missing final_moyin_jobs\u0027);\n  let mostSimilar = { score: 0, history_script_id: null, similarities: {}, hard_conflicts: [] };\n\n  if (isSkillG) {\n    const fp = candidate.creative_fingerprint;\n    const missing = fingerprintMissing(fp);\n    if (missing.length) reasons.push(`missing creative_fingerprint fields: ${missing.join(\u0027, \u0027)}`);\n    const canonical = missing.length ? \u0027\u0027 : fingerprintCanonical(fp);\n    if (canonical \u0026\u0026 seenCandidateFingerprints.has(canonical)) reasons.push(\u0027duplicate fingerprint inside candidate pool\u0027);\n    if (canonical) seenCandidateFingerprints.add(canonical);\n    if (!missing.length) {\n      for (const previousFp of priorCandidateFingerprints) {\n        const differenceCount = candidatePoolDifferenceCount(fp, previousFp);\n        if (differenceCount \u003c 2) reasons.push(`candidate pool differs in only ${differenceCount} core dimension(s); at least 2 required`);\n      }\n      priorCandidateFingerprints.push(fp);\n    }\n    if (!firstText(candidate, [\u0027opening_visual\u0027])) reasons.push(\u0027missing opening_visual\u0027);\n\n    if (!missing.length) {\n      for (let index = 0; index \u003c history.length; index++) {\n        const historical = history[index];\n        const distance = history.length - index;\n        const historicalFp = historical.creative_fingerprint;\n        let comparison;\n        let hardConflicts = [];\n        if (historicalFp \u0026\u0026 fingerprintMissing(historicalFp).length === 0) {\n          const similarities = fingerprintSimilarities(fp, historicalFp, promptTextOf(candidate), historical.prompt_text || promptTextOf(historical));\n          similarities.allowed_visual_difference_count = allowedVisualDifferenceCount(similarities);\n          const score = weightedScore(similarities);\n          const sameActionObjects = similarities.action_sequence === 1 \u0026\u0026 similarities.object_sets === 1;\n          const sameCoreVisual = sameActionObjects \u0026\u0026 similarities.environment === 1;\n          const exactFingerprint = canonical === fingerprintCanonical(historicalFp);\n          if (distance \u003c= 8 \u0026\u0026 sameActionObjects) hardConflicts.push(\u0027same action and object sequence within last 8 scripts\u0027);\n          if (distance \u003c= 5 \u0026\u0026 sameCoreVisual \u0026\u0026 similarities.opening_state === 1 \u0026\u0026 similarities.camera_pair === 1) hardConflicts.push(\u0027same environment, opening, actions, objects, and cameras within last 5 scripts\u0027);\n          if (distance === 1 \u0026\u0026 similarities.allowed_visual_difference_count \u003c 3) hardConflicts.push(`only ${similarities.allowed_visual_difference_count} allowed visual dimension(s) differ from the most recent script; at least 3 required`);\n          if (exactFingerprint) hardConflicts.push(\u0027exact creative fingerprint match\u0027);\n          if (normalizeText(promptTextOf(candidate)) \u0026\u0026 normalizeText(promptTextOf(candidate)) === normalizeText(historical.prompt_text || promptTextOf(historical))) hardConflicts.push(\u0027exact normalized prompt match\u0027);\n          comparison = { score, similarities, hardConflicts };\n        } else {\n          const legacy = legacyDuplicate(candidate, historical);\n          if (distance \u003c= 8 \u0026\u0026 legacy.angle === 1 \u0026\u0026 legacy.opening === 1) hardConflicts.push(\u0027same legacy angle and opening within last 8 scripts\u0027);\n          comparison = { score: legacy.score, similarities: legacy, hardConflicts };\n        }\n        if (comparison.score \u003e mostSimilar.score || comparison.hardConflicts.length) {\n          mostSimilar = { score: comparison.score, history_script_id: historical.script_id || null, similarities: comparison.similarities, hard_conflicts: comparison.hardConflicts };\n        }\n        if (comparison.hardConflicts.length) reasons.push(...comparison.hardConflicts.map(value =\u003e `${value}: ${historical.script_id || \u0027history\u0027}`));\n      }\n      if (mostSimilar.score \u003e= SKILL_G_THRESHOLD) reasons.push(`duplicate score ${mostSimilar.score.toFixed(3)} meets or exceeds ${SKILL_G_THRESHOLD.toFixed(2)}`);\n    }\n  } else {\n    if (!firstText(candidate, [\u0027angle\u0027])) reasons.push(\u0027missing angle\u0027);\n    if (!firstText(candidate, [\u0027hook\u0027])) reasons.push(\u0027missing hook\u0027);\n    if (!stableId(candidate.structure_signature)) reasons.push(\u0027missing structure_signature\u0027);\n    for (const historical of history) {\n      const similarities = {\n        angle: textSimilarity(candidate.angle, historical.angle),\n        hook: textSimilarity(candidate.hook, historical.hook),\n        prompt_text: textSimilarity(promptTextOf(candidate), historical.prompt_text || promptTextOf(historical))\n      };\n      const score = similarities.angle * 0.35 + similarities.hook * 0.25 + similarities.prompt_text * 0.40;\n      if (score \u003e mostSimilar.score) mostSimilar = { score, history_script_id: historical.script_id || null, similarities, hard_conflicts: [] };\n    }\n    if (mostSimilar.score \u003e= 0.75) reasons.push(`duplicate score ${mostSimilar.score.toFixed(3)} meets or exceeds 0.75`);\n  }\n\n  evaluated.push({ candidate, reasons: [...new Set(reasons)], comparison: mostSimilar });\n}\n\nconst acceptable = evaluated.filter(entry =\u003e entry.reasons.length === 0).sort((a, b) =\u003e a.comparison.score - b.comparison.score);\nif (!acceptable.length) {\n  const rejected = evaluated.map(entry =\u003e ({\n    retry_attempt: currentAttempt,\n    reasons: entry.reasons,\n    duplicate_score: Number(entry.comparison.score.toFixed(3)),\n    compared_history_script_id: entry.comparison.history_script_id,\n    similarity_breakdown: entry.comparison.similarities,\n    rejected_fingerprint: entry.candidate.creative_fingerprint || null,\n    rejected_prompt_text: promptTextOf(entry.candidate)\n  }));\n  const priorRejected = Array.isArray(ctx.rejected_candidates) ? ctx.rejected_candidates : [];\n  const allRejected = [...priorRejected, ...rejected];\n  if (!ctx.dry_run \u0026\u0026 currentAttempt \u003c MAX_GENERATION_ATTEMPTS) {\n    const retryPrompt = {\n      instruction: isSkillG ? \u0027All three Skill G candidates were rejected. Generate three new candidates with materially different creative fingerprints.\u0027 : \u0027The previous script was rejected. Generate one materially different script.\u0027,\n      retry_attempt: currentAttempt + 1,\n      duplicate_threshold: isSkillG ? SKILL_G_THRESHOLD : 0.75,\n      rejected_candidates: rejected,\n      required_changes: isSkillG\n        ? [\u0027Change the conflicting action/object sequence first.\u0027, \u0027Then change at least two of environment, opening state, camera pair, direction pair, hand style, and ending state.\u0027, \u0027Keep verified product functions and the no-installation boundary unchanged.\u0027, \u0027Return valid JSON only.\u0027]\n        : [\u0027Change angle, opening, and prompt text materially.\u0027, \u0027Return valid JSON only.\u0027]\n    };\n    return [{ json: { ...ctx, uniqueness_retry_attempt: currentAttempt + 1, needs_script_regeneration: true, rejected_candidates: allRejected, openai_messages: [...(Array.isArray(ctx.openai_messages) ? ctx.openai_messages : []), { role: \u0027user\u0027, content: JSON.stringify(retryPrompt) }] } }];\n  }\n  throw new Error(`Unable to select a unique script after ${currentAttempt} generation attempt(s). Rejected: ${JSON.stringify(allRejected)}`);\n}\n\nconst selected = acceptable[0];\nconst seq = nextStart(history, productId);\nconst scriptId = `${productId}-${String(seq).padStart(3, \u00270\u0027)}`;\nconst script = {\n  ...selected.candidate,\n  script_id: scriptId,\n  product_id: productId,\n  duplicate_score: Number(selected.comparison.score.toFixed(3)),\n  duplicate_score_max: 1,\n  duplicate_comparison: selected.comparison,\n  candidate_pool_size: candidates.length,\n  accepted_candidate_rank: 1\n};\nscript.final_moyin_jobs = script.final_moyin_jobs.map((job, index) =\u003e ({ ...job, job_id: `${scriptId}-scene-${String(index + 1).padStart(2, \u00270\u0027)}`, scene_id: job.scene_id || `scene_${String(index + 1).padStart(2, \u00270\u0027)}` }));\n\nconst rejectedCandidates = evaluated.filter(entry =\u003e entry !== selected).map(entry =\u003e ({\n  reasons: entry.reasons.length ? entry.reasons : [\u0027higher similarity than selected candidate\u0027],\n  duplicate_score: Number(entry.comparison.score.toFixed(3)),\n  compared_history_script_id: entry.comparison.history_script_id,\n  creative_fingerprint: entry.candidate.creative_fingerprint || null\n}));\n\nreturn [{ json: { ...ctx, generate_count: 1, selected_script: script, created_at: new Date().toISOString(), rejected_candidates: rejectedCandidates, needs_script_regeneration: false } }];"
+                                     },
+                      "id":  "5aa187cd-d390-4f21-b790-0610886892c2",
+                      "name":  "Check Uniqueness Select Scripts",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -4640,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "let sourceItems = items.map(item =\u003e item.json).filter(item =\u003e item.selected_script);\nif (!sourceItems.length) sourceItems = $(\u0027Check Uniqueness Select Scripts\u0027).all().map(item =\u003e item.json);\n\nconst ctx = sourceItems.find(item =\u003e item.selected_script);\nif (!ctx?.selected_script) throw new Error(\u0027No selected script was found for Moyin job creation\u0027);\n\nconst script = ctx.selected_script;\nconst activeSkill = ctx.active_skill;\nconst jobs = Array.isArray(script.final_moyin_jobs) ? script.final_moyin_jobs : [];\nif (!jobs.length) throw new Error(\u0027No Moyin jobs were found in the selected script\u0027);\n\nconst isSkillE = activeSkill === \u0027skill_e\u0027;\nconst isSkillC = activeSkill === \u0027skill_c\u0027;\nif (isSkillC \u0026\u0026 jobs.length \u003c 2) {\n  throw new Error(\u0027Skill C requires two Moyin jobs\u0027);\n}\n\nconst limit = isSkillE ? 1 : isSkillC ? 2 : jobs.length;\nconst sceneIds = isSkillE\n  ? [\u0027video_001\u0027]\n  : isSkillC\n    ? [\u0027video_001_part_01\u0027, \u0027video_001_part_02\u0027]\n    : jobs.map((job, index) =\u003e String(job.scene_id || `scene_${String(index + 1).padStart(2, \u00270\u0027)}`));\nconst warnings = [...(ctx.warnings || [])];\n\nfunction normalizePublicImageUrl(value) {\n  let url = String(value || \u0027\u0027).trim();\n  const markdownLink = url.match(/^\\s*\\[[^\\]]*\\]\\((https?:\\/\\/[^\\s)]+)\\)\\s*$/i);\n  if (markdownLink) url = markdownLink[1];\n  url = url.replace(/^[\u0027\"]|[\u0027\"]$/g, \u0027\u0027).trim();\n  return /^https?:\\/\\/\\S+$/i.test(url) ? url : \u0027\u0027;\n}\n\nif (isSkillE \u0026\u0026 (jobs.length \u003e 1 || script.single_video_extra_scenes_skipped === true)) {\n  warnings.push(\u0027Extra scenes skipped because this workflow is configured to generate one video only.\u0027);\n}\nif (isSkillC \u0026\u0026 (jobs.length \u003e 2 || script.skill_c_extra_scenes_skipped === true)) {\n  warnings.push(\u0027Extra scenes skipped because Skill C is configured to generate exactly two video segments.\u0027);\n}\n\nconst skillERequirements = [\n  \u0027Create one complete 10-second vertical TikTok-style UGC ad in 9:16.\u0027,\n  \u0027Use a realistic handheld phone-shot style.\u0027,\n  \u0027Inside this same video, show 0-3s familiar wrong-use hook, 3-5s visible pain amplification, 5-8.5s natural product entry and clear action, and 8.5-10s credible before-after result with a light CTA.\u0027,\n  \u0027Preserve product identity, color, label, shape, and material from the reference images.\u0027,\n  \u0027No UI, subtitles, stickers, text overlays, or exaggerated chemical effects.\u0027\n].join(\u0027 \u0027);\nconst skillCRequirements = [\n  [\n    \u0027Create a 10-second vertical 9:16 TikTok-style UGC ad segment using realistic handheld phone-shot style.\u0027,\n    \u0027This is video_001_part_01 of a continuous 20-second Skill C ad.\u0027,\n    \u0027Timeline: 0-3s real pain conflict or inefficient behavior; 3-6s introduce the product as the quick solution; 6-10s show fast-cut scene 1 with the first clear result.\u0027,\n    \u0027Do not include a CTA in this segment.\u0027\n  ].join(\u0027 \u0027),\n  [\n    \u0027Create a 10-second vertical 9:16 TikTok-style UGC ad segment using realistic handheld phone-shot style.\u0027,\n    \u0027This is video_001_part_02 and must continue the same product identity, visual style, pacing, and usage logic from part 1.\u0027,\n    \u0027Timeline: 0-4s fast-cut scene 2 in a different real-life angle or environment; 4-8s fast-cut scene 3 showing the final credible result; 8-10s short light CTA.\u0027\n  ].join(\u0027 \u0027)\n];\nconst identityRules = \u0027 Preserve product identity from the reference images, including color, label, shape, material, proportions, and visible structure. No UI, subtitles, stickers, text overlays, or invented functions.\u0027;\n\nconst normalizedJobs = jobs.slice(0, limit).map((job, index) =\u003e {\n  const creativeDirection = String(job.promptText || job.prompt_text || job.prompt || \u0027\u0027).trim();\n  const requirements = isSkillE\n    ? skillERequirements\n    : isSkillC\n      ? skillCRequirements[index] + identityRules\n      : \u0027\u0027;\n  const promptText = requirements\n    ? `${requirements}${creativeDirection ? ` Product-specific creative direction: ${creativeDirection}` : \u0027\u0027}`\n    : creativeDirection;\n  const rawPromptImage = job.promptImage || job.prompt_image || job.image || job.image_url || \u0027\u0027;\n  const promptImage = normalizePublicImageUrl(rawPromptImage);\n  if (!promptImage) {\n    throw new Error(`No valid public reference image URL for ${sceneIds[index]}. Received: ${String(rawPromptImage).slice(0, 300)}`);\n  }\n  if (String(rawPromptImage).trim() !== promptImage) {\n    warnings.push(`Normalized Markdown reference image URL for ${sceneIds[index]}.`);\n  }\n  return {\n    ...job,\n    job_id: `${script.script_id || ctx.script_id || \u0027script\u0027}-${sceneIds[index]}`,\n    scene_id: sceneIds[index],\n    promptImage,\n    promptText,\n    duration: String(job.duration || \u002710\u0027),\n    ratio: job.ratio || \u00279:16\u0027,\n    watermark: false\n  };\n});\n\nconst normalizedScript = {\n  ...script,\n  scene_order: sceneIds.slice(0, limit),\n  final_moyin_jobs: normalizedJobs\n};\n\nreturn normalizedJobs.map(job =\u003e ({\n  json: {\n    github_url: ctx.github_url,\n    owner: ctx.owner,\n    repo: ctx.repo,\n    branch: ctx.branch,\n    product_folder: ctx.product_folder,\n    active_skill: activeSkill,\n    skill_path: ctx.skill_path,\n    output_local_dir: ctx.output_local_dir,\n    local_jobs_dir: ctx.local_jobs_dir,\n    dry_run: ctx.dry_run,\n    warnings,\n    moyin_base_url: ctx.moyin_base_url,\n    moyin_api: ctx.moyin_api,\n    moyin_create_path: ctx.moyin_create_path,\n    moyin_query_path_template: ctx.moyin_query_path_template,\n    moyin_model: ctx.moyin_model,\n    script_id: normalizedScript.script_id,\n    product_id: normalizedScript.product_id,\n    job_id: job.job_id,\n    scene_id: job.scene_id,\n    promptImage: job.promptImage,\n    promptText: job.promptText,\n    duration: job.duration,\n    ratio: job.ratio,\n    watermark: false,\n    selected_script: normalizedScript,\n    image_references: ctx.image_references || []\n  }\n}));\n// duplicate scene_id output_file logic added for deduplication\n"
+                                     },
+                      "id":  "561cdf9d-0637-4f64-b6b1-cf10692911a3",
+                      "name":  "Build Moyin Jobs",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -4400,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "if-moyin-dry-run-is-true",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "f1220cf9-3111-4f27-9838-893430abd980",
+                      "name":  "IF Moyin Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -4160,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "return items.map(item =\u003e {\n  const j = item.json;\n  const localPath = `${j.output_local_dir}/${j.product_id}/${j.job_id}/${j.scene_id}.mp4`;\n  return { json: { ...j, moyin_create_response: { id: j.job_id, status: \u0027completed\u0027, dry_run: true }, moyin_poll_response: { id: j.job_id, status: \u0027completed\u0027, video_url: \u0027dry-run://no-video-generated\u0027 }, local_file_path: localPath, download_skipped: true } };\n});"
+                                     },
+                      "id":  "0b684311-b51a-487e-826e-9330f02338b5",
+                      "name":  "Dry Run Moyin Result",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3920,
+                                       208
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "function slug(value, fallback = \u0027item\u0027) {\n  const text = String(value || fallback).toLowerCase().replace(/[^a-z0-9_-]+/g, \u0027-\u0027).replace(/^-+|-+$/g, \u0027\u0027).slice(0, 80);\n  return text || fallback;\n}\nfunction getByPath(obj, path) {\n  return String(path).split(\u0027.\u0027).reduce((acc, key) =\u003e acc == null ? undefined : acc[key], obj);\n}\nfunction firstTaskId(response, paths, fallback) {\n  for (const path of paths || []) {\n    const value = getByPath(response, path);\n    if (value !== undefined \u0026\u0026 value !== null \u0026\u0026 String(value).trim()) return value;\n  }\n  return fallback;\n}\n\nconst timestamp = new Date().toISOString().replace(/[^0-9]/g, \u0027\u0027).slice(0, 14);\nconst sourceJobs = $(\u0027Build Moyin Jobs\u0027).all().map(item =\u003e item.json);\nif (!sourceJobs.length || !items.length) return [];\n\nconst activeSkill = sourceJobs[0].active_skill;\nconst isSkillE = activeSkill === \u0027skill_e\u0027;\nconst isSkillC = activeSkill === \u0027skill_c\u0027;\nconst expectedCount = isSkillE ? 1 : isSkillC ? 2 : sourceJobs.length;\nconst expectedSceneIds = isSkillE\n  ? [\u0027video_001\u0027]\n  : isSkillC\n    ? [\u0027video_001_part_01\u0027, \u0027video_001_part_02\u0027]\n    : sourceJobs.slice(0, expectedCount).map((source, index) =\u003e slug(source.scene_id, `scene_${index + 1}`));\n\nif (sourceJobs.length \u003c expectedCount) {\n  throw new Error(`Build Local Worker Job expected ${expectedCount} source jobs but got ${sourceJobs.length}`);\n}\nif (items.length !== expectedCount) {\n  throw new Error(`Moyin create response count mismatch for ${activeSkill}: expected ${expectedCount}, got ${items.length}. Refusing to reuse one task id across multiple scenes.`);\n}\nif (isSkillC \u0026\u0026 expectedCount !== 2) {\n  throw new Error(\u0027Skill C requires exactly two Moyin create responses\u0027);\n}\n\nconst firstSource = sourceJobs[0];\nconst scriptId = slug(firstSource.script_id, \u0027script\u0027);\nconst productId = slug(firstSource.product_id || firstSource.product_folder?.split(\u0027/\u0027).pop(), \u0027product\u0027);\nconst warnings = [...(firstSource.warnings || [])];\nif (isSkillE \u0026\u0026 (items.length \u003e 1 || sourceJobs.length \u003e 1)) {\n  warnings.push(\u0027Extra scenes skipped because this workflow is configured to generate one video only.\u0027);\n}\nif (isSkillC \u0026\u0026 (items.length \u003e 2 || sourceJobs.length \u003e 2)) {\n  warnings.push(\u0027Extra scenes skipped because Skill C is configured to generate exactly two video segments.\u0027);\n}\n\nconst responseBySceneId = new Map();\nfor (const item of items) {\n  const sceneId = slug(item.json.moyin_create_scene_id || item.json.scene_id, \u0027scene\u0027);\n  if (responseBySceneId.has(sceneId)) {\n    throw new Error(`Duplicate Moyin create response for scene_id=${sceneId}`);\n  }\n  responseBySceneId.set(sceneId, item.json);\n}\n\nconst outputRoot = String(firstSource.output_local_dir || \u0027E:/n8n-video-gemini/video_output\u0027).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\nconst jobsRoot = String(firstSource.local_jobs_dir || \u0027E:/n8n-video-gemini/video_jobs\u0027).replace(/\\\\/g, \u0027/\u0027).replace(/\\/+$/, \u0027\u0027);\nconst jobId = `job_${productId}_${timestamp}_01`;\nconst outputDir = `${outputRoot}/${productId}/${jobId}`;\nconst statusDir = `${jobsRoot}/${jobId}`;\nconst scenes = [];\nconst taskIds = new Map();\nconst outputFiles = new Set();\n\nfor (let index = 0; index \u003c expectedCount; index++) {\n  const source = sourceJobs[index];\n  const sceneId = expectedSceneIds[index];\n  const current = responseBySceneId.get(sceneId);\n  if (!current) {\n    throw new Error(`Missing Moyin create response for scene_id=${sceneId}`);\n  }\n\n  const createResponse = current.moyin_create_response || current;\n  const taskIdPaths = source.moyin_api?.create?.task_id_paths || [\u0027id\u0027, \u0027taskId\u0027, \u0027task_id\u0027, \u0027data.id\u0027, \u0027data.task_id\u0027, \u0027data.taskId\u0027, \u0027result.id\u0027, \u0027result.task_id\u0027, \u0027result.taskId\u0027];\n  const moyinTaskId = firstTaskId(createResponse, taskIdPaths, source.dry_run ? `dry_${scriptId}_${sceneId}` : \u0027\u0027);\n  if (!moyinTaskId) {\n    throw new Error(`Moyin create response missing task id for script ${scriptId}, scene ${sceneId}`);\n  }\n  const taskKey = String(moyinTaskId);\n  if (!source.dry_run \u0026\u0026 taskIds.has(taskKey)) {\n    throw new Error(`Duplicate Moyin task id ${taskKey} for scenes ${taskIds.get(taskKey)} and ${sceneId}. Refusing to save identical videos as multiple scenes.`);\n  }\n  taskIds.set(taskKey, sceneId);\n\n  const outputFile = `${outputDir}/${sceneId}.mp4`;\n  if (outputFiles.has(outputFile)) {\n    throw new Error(`Duplicate output_file detected: ${outputFile}`);\n  }\n  outputFiles.add(outputFile);\n\n  scenes.push({\n    scene_id: sceneId,\n    moyin_task_id: taskKey,\n    promptImage: source.promptImage,\n    promptText: source.promptText,\n    duration: String(source.duration || \u002710\u0027),\n    ratio: source.ratio || \u00279:16\u0027,\n    output_file: outputFile\n  });\n}\n\nconst job = {\n  job_id: jobId,\n  script_id: scriptId,\n  product_id: productId,\n  active_skill: activeSkill,\n  github_url: firstSource.github_url,\n  product_folder: firstSource.product_folder,\n  skill_path: firstSource.skill_path,\n  warnings,\n  moyin_api: {\n    base_url: firstSource.moyin_base_url,\n    query_path_template: firstSource.moyin_api?.query?.path_template || firstSource.moyin_query_path_template,\n    status_paths: firstSource.moyin_api?.query?.status_paths || [],\n    video_url_paths: firstSource.moyin_api?.query?.video_url_paths || [],\n    success_statuses: firstSource.moyin_api?.query?.success_statuses || [],\n    failed_statuses: firstSource.moyin_api?.query?.failed_statuses || []\n  },\n  output_dir: outputDir,\n  status_dir: statusDir,\n  max_runtime_seconds: Number($env.MOYIN_TIMEOUT_SECONDS || 900),\n  poll_interval_seconds: Number($env.MOYIN_POLL_INTERVAL_SECONDS || 8),\r\n  assembly_plan: firstSource.selected_script?.assembly_plan || null,\r\n  scenes\r\n};\nconst jobJson = JSON.stringify(job, null, 2) + \u0027\\n\u0027;\nconst jobFile = `${jobsRoot}/inbox/${jobId}.json`;\n\nreturn [{\n  json: {\n    ...firstSource,\n    warnings,\n    job_payload: job,\n    job_json_string: jobJson,\n    job_file_path: jobFile,\n    status_file: `${statusDir}/status.json`,\n    worker_log: `${statusDir}/worker.log`,\n    output_dir: outputDir,\n    would_create_job_json: job\n  },\n  binary: {\n    data: {\n      data: Buffer.from(jobJson, \u0027utf8\u0027).toString(\u0027base64\u0027),\n      mimeType: \u0027application/json\u0027,\n      fileName: \u0027job.json\u0027\n    }\n  }\n}];"
+                                     },
+                      "id":  "380522ad-9673-4964-a2be-998c7238053c",
+                      "name":  "Build Local Worker Job",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3696,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "if-worker-dry-run-is-true",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "035fd4f7-9bf5-4215-820f-f1461d02ca7b",
+                      "name":  "IF Worker Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -3488,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const fs = require(\u0027fs\u0027);\nconst path = require(\u0027path\u0027);\n\nfunction normalizePath(value) {\n  return String(value || \u0027\u0027).replace(/\\\\/g, \u0027/\u0027);\n}\n\nconst source = $json.job_payload ? $json : $(\u0027Build Local Worker Job\u0027).item.json;\nconst jobFilePath = normalizePath(source.job_file_path);\nconst jobJsonString = source.job_json_string;\n\nif (!jobFilePath) throw new Error(\u0027job_file_path is required\u0027);\nif (!jobJsonString) throw new Error(\u0027job_json_string is required\u0027);\nif (!/\\/inbox\\/[^\\/]+\\.json$/.test(jobFilePath)) {\n  throw new Error(`Refusing to write job outside local inbox: ${jobFilePath}`);\n}\n\nconst dir = path.dirname(jobFilePath);\nfs.mkdirSync(dir, { recursive: true });\nfs.writeFileSync(jobFilePath, jobJsonString, \u0027utf8\u0027);\n\nif (!fs.existsSync(jobFilePath)) {\n  throw new Error(`Job file was not written: ${jobFilePath}`);\n}\n\nreturn [{\n  json: {\n    ...source,\n    job_file_written: true,\n    job_file_size: fs.statSync(jobFilePath).size,\n  }\n}];"
+                                     },
+                      "id":  "2f9d7bdd-2015-44d1-ab40-808f0d9fa1a0",
+                      "name":  "Write Worker Inbox Job JSON",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3040,
+                                       496
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const fromJobNode = $(\u0027Build Local Worker Job\u0027).item?.json;\nconst job = $json.job_payload ? $json : fromJobNode;\nif (!job?.job_payload) {\n  throw new Error(\u0027Build Submitted Response cannot find job_payload\u0027);\n}\n\nconst jobFileWritten = Boolean(job.job_file_written);\nconst jobFileSize = job.job_file_size || 0;\n\nreturn [{ json: {\n  ok: true,\n  status: \u0027submitted\u0027,\n  job_id: job.job_payload.job_id,\n  script_id: job.job_payload.script_id,\n  active_skill: job.job_payload.active_skill,\n  job_file: job.job_file_path,\n  job_file_written: jobFileWritten,\n  job_file_size: jobFileSize,\n  status_file: job.status_file,\n  output_dir: job.output_dir,\n  worker_mode: \u0027external_watcher\u0027,\n  message: job.dry_run\n    ? \u0027Dry run preview generated. No job file written.\u0027\n    : \u0027Job JSON written to inbox. External worker_watcher will pick it up.\u0027,\n  dry_run: job.dry_run,\n  would_create_job_json: job.dry_run ? job.would_create_job_json : undefined\n} }];"
+                                     },
+                      "id":  "c6db1c83-5ee8-4495-ada1-cf06c052ad44",
+                      "name":  "Build Submitted Response",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -2576,
+                                       368
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const https = require(\u0027https\u0027);\nconst { URL } = require(\u0027url\u0027);\n\nconst apiKey = String($env.MOYIN_API_KEY || \u0027\u0027).trim();\nif (!apiKey) throw new Error(\u0027MOYIN_API_KEY environment variable is required for Moyin Create Video.\u0027);\n\nfunction normalizeBaseUrl(value) {\n  return String(value || \u0027\u0027).trim().replace(/\\/+$/, \u0027\u0027);\n}\n\nfunction normalizePath(value) {\n  const path = String(value || \u0027\u0027).trim();\n  if (!path) return \u0027\u0027;\n  return \u0027/\u0027 + path.replace(/^\\/+/, \u0027\u0027);\n}\n\nfunction buildMoyinCreateUrl(baseUrl, createPath) {\n  const base = normalizeBaseUrl(baseUrl);\n  let path = normalizePath(createPath);\n\n  if (!base) throw new Error(\u0027MOYIN_API_BASE_URL / moyin_base_url is required.\u0027);\n  if (!path) throw new Error(\u0027Moyin create.path / moyin_create_path is required.\u0027);\n\n  // Avoid duplicate /v1 while preserving a base path such as /api/v1.\n  if (/\\/v1$/i.test(base) \u0026\u0026 /^\\/v1\\//i.test(path)) {\n    path = path.replace(/^\\/v1/i, \u0027\u0027);\n  }\n\n  return base + path;\n}\n\nfunction stringify(value) {\n  if (typeof value === \u0027string\u0027) return value;\n  try { return JSON.stringify(value); } catch (error) { return String(value); }\n}\n\nfunction postJsonNative(urlString, apiKey, bodyObject, timeoutMs = 180000) {\n  return new Promise((resolve, reject) =\u003e {\n    const url = new URL(urlString);\n    const body = JSON.stringify(bodyObject);\n    const req = https.request({\n      hostname: url.hostname,\n      port: url.port || 443,\n      path: url.pathname + url.search,\n      method: \u0027POST\u0027,\n      headers: {\n        Authorization: `Bearer ${apiKey}`,\n        \u0027Content-Type\u0027: \u0027application/json\u0027,\n        \u0027Content-Length\u0027: Buffer.byteLength(body)\n      },\n      timeout: timeoutMs\n    }, (res) =\u003e {\n      let raw = \u0027\u0027;\n      res.on(\u0027data\u0027, chunk =\u003e { raw += chunk.toString(); });\n      res.on(\u0027end\u0027, () =\u003e {\n        let parsed = raw;\n        try { parsed = JSON.parse(raw); } catch (error) {}\n        resolve({\n          statusCode: Number(res.statusCode || 0),\n          headers: res.headers,\n          body: parsed,\n          raw\n        });\n      });\n    });\n\n    req.on(\u0027timeout\u0027, () =\u003e {\n      req.destroy(new Error(\u0027Moyin Create Video request timeout\u0027));\n    });\n    req.on(\u0027error\u0027, reject);\n    req.write(body);\n    req.end();\n  });\n}\n\nconst output = [];\n\nfor (const item of items) {\n  const j = item.json;\n  if (!j.scene_id) throw new Error(\u0027Moyin Create Video requires scene_id for per-scene task mapping.\u0027);\n\n  const createPath = j.moyin_api?.create?.path || j.moyin_create_path || \u0027/videos\u0027;\n  const fullUrl = buildMoyinCreateUrl(j.moyin_base_url || $env.MOYIN_API_BASE_URL, createPath);\n  const sceneImages = [j.promptImage].filter(Boolean);\n  const fallbackImages = (j.image_references || []).map(img =\u003e img.raw_url).filter(Boolean);\n  const requestBody = {\n    model: j.moyin_model || $env.MOYIN_VIDEO_MODEL || \u0027veo-omni-flash\u0027,\n    prompt: j.promptText,\n    images: sceneImages.length ? sceneImages : fallbackImages,\n    aspect_ratio: j.ratio || \u00279:16\u0027,\n    aspectRatio: j.ratio || \u00279:16\u0027,\n    seconds: String(j.duration || \u002710\u0027)\n  };\n\n  let response;\n  try {\n    response = await postJsonNative(fullUrl, apiKey, requestBody, 180000);\n  } catch (error) {\n    throw new Error(`Moyin Create Video network error. scene_id=${j.scene_id}; full_url=${fullUrl}; message=${error?.message || String(error)}`);\n  }\n\n  const statusCode = Number(response.statusCode || 0);\n  const responseBody = response.body;\n  const moyinCode = Number(responseBody?.code ?? 0);\n\n  if (statusCode \u003c 200 || statusCode \u003e= 300 || moyinCode \u003e= 400) {\n    throw new Error(`Moyin Create Video failed. scene_id=${j.scene_id}; full_url=${fullUrl}; http_status=${statusCode}; request_body=${stringify(requestBody)}; moyin_response=${stringify(responseBody)}`);\n  }\n\n  output.push({\n    json: {\n      ...j,\n      moyin_create_scene_id: j.scene_id,\n      moyin_create_full_url: fullUrl,\n      moyin_create_request_body: requestBody,\n      moyin_create_response: responseBody,\n      moyin_create_http_status: statusCode\n    }\n  });\n}\n\nreturn output;"
+                                     },
+                      "id":  "f260557d-eb46-4b93-86bc-8c30ed2214ec",
+                      "name":  "Moyin Create Video",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3920,
+                                       528
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "if-history-dry-run-is-true",
+                                                                                   "leftValue":  "={{ $json.dry_run }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "cbb26750-c6b8-4d44-8834-b8b114112b83",
+                      "name":  "IF History Dry Run",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -4080,
+                                       624
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const selected = items.map(item =\u003e item.json).filter(item =\u003e item.selected_script);\nif (!selected.length) return [];\nconst first = selected[0];\nconst productId = first.product_id;\nconst existingLines = String(first.ai_input?.scripts_history || \u0027\u0027).trim().split(/\\r?\\n/).filter(Boolean);\nconst lines = existingLines.slice(-99);\nconst records = [];\nconst createdAt = first.created_at || new Date().toISOString();\n\nfunction firstText(source, keys) { for (const key of keys) { const value = source \u0026\u0026 source[key]; if (typeof value === \u0027string\u0027 \u0026\u0026 value.trim()) return value; } return \u0027\u0027; }\nfunction promptTextOf(script) {\n  const direct = firstText(script, [\u0027promptText\u0027, \u0027prompt_text\u0027, \u0027moyin_prompt\u0027, \u0027video_prompt\u0027]);\n  if (direct) return direct;\n  const jobs = Array.isArray(script?.final_moyin_jobs) ? script.final_moyin_jobs : [];\n  return jobs.map(job =\u003e firstText(job, [\u0027promptText\u0027, \u0027prompt_text\u0027, \u0027prompt\u0027])).filter(Boolean).join(\u0027\\n\u0027);\n}\n\nfor (const ctx of selected) {\n  const script = ctx.selected_script;\n  const summary = {\n    history_schema_version: 2,\n    script_id: script.script_id,\n    product_id: productId,\n    active_skill: ctx.active_skill,\n    skill_family: ctx.is_skill_g ? \u0027skill_g\u0027 : ctx.active_skill,\n    angle: script.angle || \u0027\u0027,\n    hook: script.hook || \u0027\u0027,\n    opening_visual: script.opening_visual || script.hook || \u0027\u0027,\n    pain_point: script.pain_point || script.painPoint || \u0027\u0027,\n    creator_context: script.creator_context || script.creatorContext || \u0027\u0027,\n    result_proof: script.result_proof || script.resultProof || \u0027\u0027,\n    structure_signature: script.structure_signature || \u0027\u0027,\n    scene_order: script.scene_order || [],\n    creative_fingerprint: script.creative_fingerprint || null,\n    prompt_text: promptTextOf(script),\n    duplicate_score: script.duplicate_score ?? null,\n    created_at: createdAt\n  };\n  lines.push(JSON.stringify(summary));\n  const full = {\n    ...summary,\n    skill_path: ctx.skill_path,\n    github_url: ctx.github_url,\n    product_folder: ctx.product_folder,\n    selected_script: script,\n    final_moyin_jobs: script.final_moyin_jobs,\n    duplicate_comparison: script.duplicate_comparison || null\n  };\n  records.push({ path: `history/products/${productId}/${script.script_id}.json`, content: JSON.stringify(full, null, 2) + \u0027\\n\u0027, message: `Add script history ${script.script_id}`, sha: null });\n}\n\nrecords.unshift({ path: `history/products/${productId}/index.jsonl`, content: lines.slice(-100).join(\u0027\\n\u0027) + \u0027\\n\u0027, message: `Update script history index ${productId} schema v2`, sha: first.github_reads?.scripts_history?.sha || null });\nreturn records.map(record =\u003e ({ json: { ...first, history_path: record.path, history_content_base64: Buffer.from(record.content, \u0027utf8\u0027).toString(\u0027base64\u0027), history_message: record.message, history_sha: record.sha } }));"
+                                     },
+                      "id":  "eac68966-0b9d-45bf-90b4-41646f70c084",
+                      "name":  "Build GitHub History Records",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3856,
+                                       704
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "jsCode":  "const token = String($env.GITHUB_TOKEN || \u0027\u0027).trim();\nif (!token) throw new Error(\u0027GITHUB_TOKEN environment variable is required for GitHub history writes.\u0027);\n\nconst maxRetries = 3;\n\nfunction encodePath(path) {\n  return String(path || \u0027\u0027).split(\u0027/\u0027).map(part =\u003e encodeURIComponent(part)).join(\u0027/\u0027);\n}\n\nfunction decodeBase64(value) {\n  return Buffer.from(String(value || \u0027\u0027), \u0027base64\u0027).toString(\u0027utf8\u0027);\n}\n\nfunction encodeBase64(value) {\n  return Buffer.from(String(value || \u0027\u0027), \u0027utf8\u0027).toString(\u0027base64\u0027);\n}\n\nfunction extractAppendLine(recordContent) {\n  const lines = String(recordContent || \u0027\u0027).split(/\\r?\\n/).filter(Boolean);\n  return lines.length ? lines[lines.length - 1] : \u0027\u0027;\n}\n\nfunction extractScriptIdFromJsonLine(line) {\n  try {\n    return JSON.parse(line).script_id || \u0027\u0027;\n  } catch (error) {\n    return \u0027\u0027;\n  }\n}\n\nfunction isShaConflict(statusCode, body) {\n  const text = typeof body === \u0027string\u0027 ? body : JSON.stringify(body || {});\n  return statusCode === 409 || statusCode === 422 || /sha|expected|is at|conflict/i.test(text);\n}\n\nasync function githubRequest(method, url, body, ignoreHttpStatusErrors = true) {\n  return await this.helpers.httpRequest({\n    method,\n    url,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      Accept: \u0027application/vnd.github+json\u0027,\n      \u0027X-GitHub-Api-Version\u0027: \u00272022-11-28\u0027,\n      \u0027User-Agent\u0027: \u0027n8n-video-history-writer\u0027\n    },\n    body,\n    json: true,\n    returnFullResponse: true,\n    ignoreHttpStatusErrors,\n    timeout: 120000\n  });\n}\n\nasync function getCurrentFile(ctx, historyPath) {\n  const url = `https://api.github.com/repos/${ctx.owner}/${ctx.repo}/contents/${encodePath(historyPath)}?ref=${encodeURIComponent(ctx.branch)}`;\n  const response = await githubRequest.call(this, \u0027GET\u0027, url, undefined, true);\n  const statusCode = Number(response.statusCode || 0);\n\n  if (statusCode === 404) {\n    return { exists: false, sha: null, content: \u0027\u0027 };\n  }\n\n  if (statusCode \u003c 200 || statusCode \u003e= 300) {\n    const bodyText = typeof response.body === \u0027string\u0027 ? response.body : JSON.stringify(response.body || {});\n    throw new Error(`GitHub GET history file failed HTTP ${statusCode}: ${bodyText}`);\n  }\n\n  const body = response.body || {};\n  const content = body.content ? decodeBase64(String(body.content).replace(/\\s/g, \u0027\u0027)) : \u0027\u0027;\n  return { exists: true, sha: body.sha || null, content };\n}\n\nasync function putFile(ctx, historyPath, content, message, sha) {\n  const url = `https://api.github.com/repos/${ctx.owner}/${ctx.repo}/contents/${encodePath(historyPath)}`;\n  const body = {\n    message,\n    content: encodeBase64(content),\n    branch: ctx.branch\n  };\n  if (sha) body.sha = sha;\n\n  return await githubRequest.call(this, \u0027PUT\u0027, url, body, true);\n}\n\nfunction mergeIndexContent(currentContent, appendLine) {\n  const currentLines = String(currentContent || \u0027\u0027).split(/\\r?\\n/).filter(Boolean);\n  const appendScriptId = extractScriptIdFromJsonLine(appendLine);\n\n  if (appendScriptId) {\n    const alreadyExists = currentLines.some(line =\u003e extractScriptIdFromJsonLine(line) === appendScriptId);\n    if (alreadyExists) return currentLines.join(\u0027\\n\u0027) + (currentLines.length ? \u0027\\n\u0027 : \u0027\u0027);\n  }\n\n  if (appendLine) currentLines.push(appendLine);\n  return currentLines.join(\u0027\\n\u0027) + (currentLines.length ? \u0027\\n\u0027 : \u0027\u0027);\n}\n\nconst outputs = [];\n\nfor (const item of items) {\n  const ctx = item.json;\n  const historyPath = ctx.history_path;\n  if (!historyPath) throw new Error(\u0027history_path is required\u0027);\n\n  const originalContent = decodeBase64(ctx.history_content_base64);\n  const isIndex = /\\/index\\.jsonl$/.test(historyPath);\n  const appendLine = isIndex ? extractAppendLine(originalContent) : \u0027\u0027;\n\n  let lastResponse = null;\n\n  for (let attempt = 1; attempt \u003c= maxRetries; attempt++) {\n    const current = await getCurrentFile.call(this, ctx, historyPath);\n    const contentToWrite = isIndex\n      ? mergeIndexContent(current.content, appendLine)\n      : originalContent;\n\n    const response = await putFile.call(this, ctx, historyPath, contentToWrite, ctx.history_message, current.sha);\n    lastResponse = response;\n    const statusCode = Number(response.statusCode || 0);\n\n    if (statusCode \u003e= 200 \u0026\u0026 statusCode \u003c 300) {\n      outputs.push({\n        json: {\n          ...ctx,\n          github_history_path: historyPath,\n          github_history_status: statusCode,\n          github_history_sha: response.body?.content?.sha || null,\n          github_history_attempts: attempt\n        }\n      });\n      lastResponse = null;\n      break;\n    }\n\n    if (!isShaConflict(statusCode, response.body) || attempt \u003e= maxRetries) {\n      const bodyText = typeof response.body === \u0027string\u0027 ? response.body : JSON.stringify(response.body || {});\n      throw new Error(`GitHub PUT history file failed HTTP ${statusCode}: ${bodyText}`);\n    }\n  }\n\n  if (lastResponse) {\n    const bodyText = typeof lastResponse.body === \u0027string\u0027 ? lastResponse.body : JSON.stringify(lastResponse.body || {});\n    throw new Error(`GitHub PUT history file failed after retries: ${bodyText}`);\n  }\n}\n\nreturn outputs;"
+                                     },
+                      "id":  "f79be037-ee81-40d8-9ad4-b059a0214c2e",
+                      "name":  "GitHub Put History Record",
+                      "type":  "n8n-nodes-base.code",
+                      "typeVersion":  2,
+                      "position":  [
+                                       -3648,
+                                       704
+                                   ]
+                  },
+                  {
+                      "parameters":  {
+                                         "conditions":  {
+                                                            "options":  {
+                                                                            "caseSensitive":  true,
+                                                                            "leftValue":  "",
+                                                                            "typeValidation":  "strict",
+                                                                            "version":  2
+                                                                        },
+                                                            "conditions":  [
+                                                                               {
+                                                                                   "id":  "if-script-regeneration-required",
+                                                                                   "leftValue":  "={{ $json.needs_script_regeneration || false }}",
+                                                                                   "rightValue":  true,
+                                                                                   "operator":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "operation":  "equals"
+                                                                                                }
+                                                                               }
+                                                                           ],
+                                                            "combinator":  "and"
+                                                        },
+                                         "options":  {
+
+                                                     }
+                                     },
+                      "id":  "67509ff5-39b7-4f3b-8ac4-2adb590d8879",
+                      "name":  "IF Script Regeneration Required",
+                      "type":  "n8n-nodes-base.if",
+                      "typeVersion":  2.2,
+                      "position":  [
+                                       -4368,
+                                       368
+                                   ]
+                  }
+              ],
+    "pinData":  {
+
+                },
+    "connections":  {
+                        "Webhook Local Product Upload":  {
+                                                             "main":  [
+                                                                          [
+                                                                              {
+                                                                                  "node":  "Upload Local Product To GitHub",
+                                                                                  "type":  "main",
+                                                                                  "index":  0
+                                                                              }
+                                                                          ]
+                                                                      ]
+                                                         },
+                        "Upload Local Product To GitHub":  {
+                                                               "main":  [
+                                                                            [
+                                                                                {
+                                                                                    "node":  "IF Auto Start Main",
+                                                                                    "type":  "main",
+                                                                                    "index":  0
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                           },
+                        "IF Auto Start Main":  {
+                                                   "main":  [
+                                                                [
+                                                                    {
+                                                                        "node":  "Call Main Generate Video",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ],
+                                                                [
+                                                                    {
+                                                                        "node":  "Build Upload Only Response",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ]
+                                                            ]
+                                               },
+                        "Webhook Manual Prompt":  {
+                                                      "main":  [
+                                                                   [
+                                                                       {
+                                                                           "node":  "Normalize Manual Prompt Input",
+                                                                           "type":  "main",
+                                                                           "index":  0
+                                                                       }
+                                                                   ]
+                                                               ]
+                                                  },
+                        "Normalize Manual Prompt Input":  {
+                                                              "main":  [
+                                                                           [
+                                                                               {
+                                                                                   "node":  "IF Manual Dry Run",
+                                                                                   "type":  "main",
+                                                                                   "index":  0
+                                                                               }
+                                                                           ]
+                                                                       ]
+                                                          },
+                        "IF Manual Dry Run":  {
+                                                  "main":  [
+                                                               [
+                                                                   {
+                                                                       "node":  "Dry Run Manual Moyin Result",
+                                                                       "type":  "main",
+                                                                       "index":  0
+                                                                   }
+                                                               ],
+                                                               [
+                                                                   {
+                                                                       "node":  "Manual Moyin Create Video",
+                                                                       "type":  "main",
+                                                                       "index":  0
+                                                                   }
+                                                               ]
+                                                           ]
+                                              },
+                        "Dry Run Manual Moyin Result":  {
+                                                            "main":  [
+                                                                         [
+                                                                             {
+                                                                                 "node":  "Build Manual Worker Job",
+                                                                                 "type":  "main",
+                                                                                 "index":  0
+                                                                             }
+                                                                         ]
+                                                                     ]
+                                                        },
+                        "Manual Moyin Create Video":  {
+                                                          "main":  [
+                                                                       [
+                                                                           {
+                                                                               "node":  "Build Manual Worker Job",
+                                                                               "type":  "main",
+                                                                               "index":  0
+                                                                           }
+                                                                       ]
+                                                                   ]
+                                                      },
+                        "Build Manual Worker Job":  {
+                                                        "main":  [
+                                                                     [
+                                                                         {
+                                                                             "node":  "IF Manual Worker Dry Run",
+                                                                             "type":  "main",
+                                                                             "index":  0
+                                                                         }
+                                                                     ]
+                                                                 ]
+                                                    },
+                        "IF Manual Worker Dry Run":  {
+                                                         "main":  [
+                                                                      [
+                                                                          {
+                                                                              "node":  "Build Manual Submitted Response",
+                                                                              "type":  "main",
+                                                                              "index":  0
+                                                                          }
+                                                                      ],
+                                                                      [
+                                                                          {
+                                                                              "node":  "Write Manual Worker Inbox Job JSON",
+                                                                              "type":  "main",
+                                                                              "index":  0
+                                                                          }
+                                                                      ]
+                                                                  ]
+                                                     },
+                        "Write Manual Worker Inbox Job JSON":  {
+                                                                   "main":  [
+                                                                                [
+                                                                                    {
+                                                                                        "node":  "Build Manual Submitted Response",
+                                                                                        "type":  "main",
+                                                                                        "index":  0
+                                                                                    }
+                                                                                ]
+                                                                            ]
+                                                               },
+                        "Webhook Input":  {
+                                              "main":  [
+                                                           [
+                                                               {
+                                                                   "node":  "Normalize Input",
+                                                                   "type":  "main",
+                                                                   "index":  0
+                                                               }
+                                                           ]
+                                                       ]
+                                          },
+                        "Normalize Input":  {
+                                                "main":  [
+                                                             [
+                                                                 {
+                                                                     "node":  "Build GitHub Read Requests",
+                                                                     "type":  "main",
+                                                                     "index":  0
+                                                                 }
+                                                             ]
+                                                         ]
+                                            },
+                        "Build GitHub Read Requests":  {
+                                                           "main":  [
+                                                                        [
+                                                                            {
+                                                                                "node":  "GitHub Get Content",
+                                                                                "type":  "main",
+                                                                                "index":  0
+                                                                            }
+                                                                        ]
+                                                                    ]
+                                                       },
+                        "GitHub Get Content":  {
+                                                   "main":  [
+                                                                [
+                                                                    {
+                                                                        "node":  "Decode GitHub Content",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ]
+                                                            ]
+                                               },
+                        "Decode GitHub Content":  {
+                                                      "main":  [
+                                                                   [
+                                                                       {
+                                                                           "node":  "Prepare OpenAI Context",
+                                                                           "type":  "main",
+                                                                           "index":  0
+                                                                       }
+                                                                   ]
+                                                               ]
+                                                  },
+                        "Prepare OpenAI Context":  {
+                                                       "main":  [
+                                                                    [
+                                                                        {
+                                                                            "node":  "IF Dry Run",
+                                                                            "type":  "main",
+                                                                            "index":  0
+                                                                        }
+                                                                    ]
+                                                                ]
+                                                   },
+                        "IF Dry Run":  {
+                                           "main":  [
+                                                        [
+                                                            {
+                                                                "node":  "Dry Run Script Generator",
+                                                                "type":  "main",
+                                                                "index":  0
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "node":  "OpenAI Generate Scripts",
+                                                                "type":  "main",
+                                                                "index":  0
+                                                            }
+                                                        ]
+                                                    ]
+                                       },
+                        "Dry Run Script Generator":  {
+                                                         "main":  [
+                                                                      [
+                                                                          {
+                                                                              "node":  "Check Uniqueness Select Scripts",
+                                                                              "type":  "main",
+                                                                              "index":  0
+                                                                          }
+                                                                      ]
+                                                                  ]
+                                                     },
+                        "OpenAI Generate Scripts":  {
+                                                        "main":  [
+                                                                     [
+                                                                         {
+                                                                             "node":  "Parse OpenAI JSON",
+                                                                             "type":  "main",
+                                                                             "index":  0
+                                                                         }
+                                                                     ]
+                                                                 ]
+                                                    },
+                        "Parse OpenAI JSON":  {
+                                                  "main":  [
+                                                               [
+                                                                   {
+                                                                       "node":  "Check Uniqueness Select Scripts",
+                                                                       "type":  "main",
+                                                                       "index":  0
+                                                                   }
+                                                               ]
+                                                           ]
+                                              },
+                        "Build Moyin Jobs":  {
+                                                 "main":  [
+                                                              [
+                                                                  {
+                                                                      "node":  "IF Moyin Dry Run",
+                                                                      "type":  "main",
+                                                                      "index":  0
+                                                                  }
+                                                              ]
+                                                          ]
+                                             },
+                        "IF Moyin Dry Run":  {
+                                                 "main":  [
+                                                              [
+                                                                  {
+                                                                      "node":  "Dry Run Moyin Result",
+                                                                      "type":  "main",
+                                                                      "index":  0
+                                                                  }
+                                                              ],
+                                                              [
+                                                                  {
+                                                                      "node":  "Moyin Create Video",
+                                                                      "type":  "main",
+                                                                      "index":  0
+                                                                  }
+                                                              ]
+                                                          ]
+                                             },
+                        "Dry Run Moyin Result":  {
+                                                     "main":  [
+                                                                  [
+                                                                      {
+                                                                          "node":  "Build Local Worker Job",
+                                                                          "type":  "main",
+                                                                          "index":  0
+                                                                      }
+                                                                  ]
+                                                              ]
+                                                 },
+                        "Moyin Create Video":  {
+                                                   "main":  [
+                                                                [
+                                                                    {
+                                                                        "node":  "Build Local Worker Job",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ]
+                                                            ]
+                                               },
+                        "Build Local Worker Job":  {
+                                                       "main":  [
+                                                                    [
+                                                                        {
+                                                                            "node":  "IF Worker Dry Run",
+                                                                            "type":  "main",
+                                                                            "index":  0
+                                                                        }
+                                                                    ]
+                                                                ]
+                                                   },
+                        "Check Uniqueness Select Scripts":  {
+                                                                "main":  [
+                                                                             [
+                                                                                 {
+                                                                                     "node":  "IF Script Regeneration Required",
+                                                                                     "type":  "main",
+                                                                                     "index":  0
+                                                                                 }
+                                                                             ]
+                                                                         ]
+                                                            },
+                        "IF History Dry Run":  {
+                                                   "main":  [
+                                                                [
+                                                                    {
+                                                                        "node":  "Build Moyin Jobs",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ],
+                                                                [
+                                                                    {
+                                                                        "node":  "Build GitHub History Records",
+                                                                        "type":  "main",
+                                                                        "index":  0
+                                                                    }
+                                                                ]
+                                                            ]
+                                               },
+                        "Build GitHub History Records":  {
+                                                             "main":  [
+                                                                          [
+                                                                              {
+                                                                                  "node":  "GitHub Put History Record",
+                                                                                  "type":  "main",
+                                                                                  "index":  0
+                                                                              }
+                                                                          ]
+                                                                      ]
+                                                         },
+                        "GitHub Put History Record":  {
+                                                          "main":  [
+                                                                       [
+                                                                           {
+                                                                               "node":  "Build Moyin Jobs",
+                                                                               "type":  "main",
+                                                                               "index":  0
+                                                                           }
+                                                                       ]
+                                                                   ]
+                                                      },
+                        "IF Worker Dry Run":  {
+                                                  "main":  [
+                                                               [
+                                                                   {
+                                                                       "node":  "Build Submitted Response",
+                                                                       "type":  "main",
+                                                                       "index":  0
+                                                                   }
+                                                               ],
+                                                               [
+                                                                   {
+                                                                       "node":  "Write Worker Inbox Job JSON",
+                                                                       "type":  "main",
+                                                                       "index":  0
+                                                                   }
+                                                               ]
+                                                           ]
+                                              },
+                        "Write Worker Inbox Job JSON":  {
+                                                            "main":  [
+                                                                         [
+                                                                             {
+                                                                                 "node":  "Build Submitted Response",
+                                                                                 "type":  "main",
+                                                                                 "index":  0
+                                                                             }
+                                                                         ]
+                                                                     ]
+                                                        },
+                        "IF Script Regeneration Required":  {
+                                                                "main":  [
+                                                                             [
+                                                                                 {
+                                                                                     "node":  "OpenAI Generate Scripts",
+                                                                                     "type":  "main",
+                                                                                     "index":  0
+                                                                                 }
+                                                                             ],
+                                                                             [
+                                                                                 {
+                                                                                     "node":  "IF History Dry Run",
+                                                                                     "type":  "main",
+                                                                                     "index":  0
+                                                                                 }
+                                                                             ]
+                                                                         ]
+                                                            }
+                    },
+    "active":  true,
+    "settings":  {
+                     "executionOrder":  "v1"
+                 },
+    "versionId":  "34a5a646-5487-4632-9b24-729a7f127fdc",
+    "meta":  {
+                 "templateCredsSetupCompleted":  false
+             },
+    "tags":  [
+
+             ]
+}

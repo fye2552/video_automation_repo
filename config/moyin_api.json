@@ -1,0 +1,58 @@
+﻿{
+  "name": "moyin",
+  "base_url_env": "MOYIN_API_BASE_URL",
+  "api_key_env": "MOYIN_API_KEY",
+  "create": {
+    "method": "POST",
+    "path": "/runwayml/v1/image_to_video",
+    "body": {
+      "promptImage": "{{promptImage}}",
+      "promptText": "{{promptText}}",
+      "model": "{{model}}",
+      "duration": "{{duration}}",
+      "ratio": "{{ratio}}",
+      "watermark": false
+    },
+    "task_id_paths": [
+      "id",
+      "taskId",
+      "task_id",
+      "data.id",
+      "data.task_id",
+      "result.id",
+      "result.task_id"
+    ]
+  },
+  "query": {
+    "method": "GET",
+    "path_template": "/v1/video/query?id={task_id}",
+    "status_paths": [
+      "status",
+      "state",
+      "data.status",
+      "data.state",
+      "result.status",
+      "result.state"
+    ],
+    "video_url_paths": [
+      "video_url",
+      "url",
+      "data.video_url",
+      "data.url",
+      "result.video_url",
+      "result.url"
+    ],
+    "success_statuses": [
+      "completed",
+      "succeeded",
+      "success",
+      "done"
+    ],
+    "failed_statuses": [
+      "failed",
+      "error",
+      "cancelled",
+      "canceled"
+    ]
+  }
+}
