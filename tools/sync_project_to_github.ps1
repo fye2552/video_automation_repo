@@ -98,11 +98,20 @@ for ($offset = 0; $offset -lt $changes.Count; $offset += $BatchSize) {
     $batch = @($changes | Select-Object -Skip $offset -First $BatchSize)
     $additions = @($batch | Where-Object kind -eq 'add' | ForEach-Object { @{ path = $_.path; contents = $_.contents } })
     $deletions = @($batch | Where-Object kind -eq 'delete' | ForEach-Object { @{ path = $_.path } })
-    $latest = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$owner/$repo/git/ref/heads/$branch"
-    $input = @{ branch = @{ repositoryNameWithOwner = "$owner/$repo"; branchName = $branch }; message = @{ headline = 'chore: sync current project source' }; expectedHeadOid = $latest.object.sha; fileChanges = @{ additions = $additions; deletions = $deletions } }
     if ($PSCmdlet.ShouldProcess("$owner/${repo}:$branch", "sync $($batch.Count) source files")) {
-        Invoke-GraphQl $headers $mutation @{ input = $input } | Out-Null
-        $commits++
+        $synced = $false
+        for ($attempt = 1; $attempt -le 4 -and -not $synced; $attempt++) {
+            $latest = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$owner/$repo/git/ref/heads/$branch"
+            $input = @{ branch = @{ repositoryNameWithOwner = "$owner/$repo"; branchName = $branch }; message = @{ headline = 'chore: sync current project source' }; expectedHeadOid = $latest.object.sha; fileChanges = @{ additions = $additions; deletions = $deletions } }
+            try {
+                Invoke-GraphQl $headers $mutation @{ input = $input } | Out-Null
+                $synced = $true
+                $commits++
+            } catch {
+                if ($_.Exception.Message -notmatch 'STALE_DATA' -or $attempt -eq 4) { throw }
+                Start-Sleep -Seconds (2 * $attempt)
+            }
+        }
     }
 }
 

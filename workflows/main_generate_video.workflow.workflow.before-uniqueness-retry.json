@@ -1,0 +1,676 @@
+{
+  "name": "main_generate_video",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "main-generate-video",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "0f44935d-24cf-4e81-8f54-f2392c3e7801",
+      "name": "Webhook Input",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -1600,
+        0
+      ],
+      "webhookId": "7a5a4101-f884-4d5e-89aa-ecfd051367b8"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $json.body ?? $json;\nif (!$env.GITHUB_TOKEN) {\n  throw new Error('GITHUB_TOKEN environment variable is required for GitHub reads. Configure it in n8n environment or credentials.');\n}\n\nfunction cleanGithubUrl(value) {\n  let url = String(value || '').trim();\n  const markdownMatch = url.match(/\\((https?:\\/\\/github\\.com\\/[^)]+)\\)/i);\n  if (markdownMatch) url = markdownMatch[1];\n  url = url.replace(/^<|>$/g, '').trim();\n  if (url.startsWith('//github.com/')) url = 'https:' + url;\n  if (/^github\\.com\\//i.test(url)) url = 'https://' + url;\n  url = url.replace(/^https:\\/github\\.com\\//i, 'https://github.com/');\n  url = url.replace(/^http:\\/github\\.com\\//i, 'http://github.com/');\n  try { return decodeURI(url); } catch { return url; }\n}\n\nfunction parseGithubProductUrl(value) {\n  const cleaned = cleanGithubUrl(value);\n  if (!cleaned) return null;\n\n  let owner;\n  let repo;\n  let branch;\n  let productTail;\n\n  const treeMatch = cleaned.match(/(?:https?:)?\\/\\/github\\.com\\/([^\\/\\s]+)\\/([^\\/\\s]+)\\/tree\\/(.+)$/i)\n    || cleaned.match(/github\\.com\\/([^\\/\\s]+)\\/([^\\/\\s]+)\\/tree\\/(.+)$/i);\n  if (treeMatch) {\n    owner = treeMatch[1];\n    repo = treeMatch[2];\n    const rest = treeMatch[3].replace(/^\\/+|\\/+$/g, '');\n    const marker = '/products/';\n    const markerIndex = rest.indexOf(marker);\n    if (markerIndex < 1) {\n      throw new Error(`github_url must include /tree/{branch}/products/{product_id}. Received: ${cleaned}`);\n    }\n    branch = rest.slice(0, markerIndex);\n    productTail = rest.slice(markerIndex + marker.length);\n  } else {\n    const titleMatch = cleaned.match(/([^\\/\\s]+)\\/products\\/([^\\s]+)(?:\\s+at\\s+([^\\s]+))?.*?[·\\-]\\s*([^\\/\\s]+)\\/([^\\/\\s]+)/i);\n    if (titleMatch) {\n      repo = titleMatch[1];\n      productTail = titleMatch[2];\n      branch = titleMatch[3] || 'main';\n      owner = titleMatch[4];\n      repo = titleMatch[5] || repo;\n    } else {\n      const shortMatch = cleaned.match(/([^\\/\\s]+)\\/([^\\/\\s]+)\\/products\\/([^\\s]+)/i);\n      if (shortMatch) {\n        owner = shortMatch[1];\n        repo = shortMatch[2];\n        branch = 'main';\n        productTail = shortMatch[3];\n      }\n    }\n  }\n\n  if (!owner || !repo || !branch || !productTail) {\n    throw new Error(`github_url must look like https://github.com/{owner}/{repo}/tree/{branch}/products/{product_id}. Received: ${cleaned}`);\n  }\n\n  productTail = productTail.replace(/^\\/+|\\/+$/g, '');\n  if (!productTail) {\n    throw new Error(`github_url must include product_id. Received: ${cleaned}`);\n  }\n\n  return {\n    github_url: `https://github.com/${owner}/${repo}/tree/${branch}/products/${productTail}`,\n    owner,\n    repo,\n    branch,\n    product_folder: `products/${productTail}`\n  };\n}\nconst parsedFromUrl = input.github_url ? parseGithubProductUrl(input.github_url) : null;\nconst owner = parsedFromUrl?.owner || input.owner;\nconst repo = parsedFromUrl?.repo || input.repo;\nconst branch = parsedFromUrl?.branch || input.branch || 'main';\nconst productFolder = parsedFromUrl?.product_folder || input.product_folder;\nfor (const [key, value] of Object.entries({ owner, repo, product_folder: productFolder })) {\n  if (!value) throw new Error(`Missing required input: ${key}. Provide github_url or legacy owner/repo/product_folder.`);\n}\n\nconst activeSkill = input.active_skill || 'skill_c';\nconst skillPathByName = {\n  skill_b: 'skills/skill_b.md',\n  skill_c: 'skills/skill_c.md',\n  skill_e: 'skills/skill_e.md',\n  new_skill: 'skills/new_skill.md'\n};\nif (!['skill_b', 'skill_c', 'skill_e', 'new_skill', 'custom'].includes(activeSkill)) {\n  throw new Error(`Unsupported active_skill: ${activeSkill}. Use skill_b, skill_c, skill_e, new_skill, or custom.`);\n}\nif (activeSkill === 'custom' && !input.custom_skill_path) {\n  throw new Error('custom_skill_path is required when active_skill is custom');\n}\nconst skillPath = activeSkill === 'custom' ? input.custom_skill_path : skillPathByName[activeSkill];\nconst normalizedProductFolder = String(productFolder).replace(/^\\/+|\\/+$/g, '');\nconst githubUrl = parsedFromUrl?.github_url || `https://github.com/${owner}/${repo}/tree/${branch}/${normalizedProductFolder}`;\nconst localJobsDir = input.local_jobs_dir || $env.N8N_LOCAL_JOBS_DIR || 'E:/n8n-video-gemini/video_jobs';\nconst outputLocalDir = input.output_local_dir || $env.N8N_LOCAL_OUTPUT_DIR || 'E:/n8n-video-gemini/video_output';\nconst requestedGenerateCount = Math.max(1, Number(input.generate_count || 1));\nconst moyinApi = {\"name\":\"moyin\",\"base_url_env\":\"MOYIN_API_BASE_URL\",\"api_key_env\":\"MOYIN_API_KEY\",\"create\":{\"method\":\"POST\",\"path\":\"/videos\",\"task_id_paths\":[\"id\",\"taskId\",\"task_id\",\"data.id\",\"data.task_id\",\"data.taskId\",\"result.id\",\"result.task_id\",\"result.taskId\"]},\"query\":{\"method\":\"GET\",\"path_template\":\"/videos/{task_id}\",\"status_paths\":[\"status\",\"state\",\"taskStatus\",\"data.status\",\"data.state\",\"result.status\",\"result.state\"],\"video_url_paths\":[\"video_url\",\"videoUrl\",\"result.video_url\",\"result.videoUrl\",\"result.resultUrls.0\",\"data.video_url\",\"data.videoUrl\",\"data.resultUrls.0\",\"url\",\"output_url\",\"outputUrl\"],\"success_statuses\":[\"completed\",\"succeeded\",\"success\",\"done\",\"finished\"],\"failed_statuses\":[\"failed\",\"error\",\"cancelled\",\"canceled\"]}};\n\nconst createPath = input.moyin_create_path || $env.MOYIN_CREATE_PATH || $env.OMINI_CREATE_PATH || moyinApi.create.path;\nconst queryPath = input.moyin_query_path_template || $env.MOYIN_QUERY_PATH_TEMPLATE || $env.OMINI_POLL_PATH || moyinApi.query.path_template;\nconst apiBaseUrl = input.moyin_base_url || $env.MOYIN_API_BASE_URL || $env.OMINI_API_BASE_URL || 'https://<MOYIN_API_BASE_URL>';\nconst apiModel = input.moyin_model || $env.MOYIN_VIDEO_MODEL || $env.OMINI_VIDEO_MODEL || 'veo-omni-flash';\n\nconst normalized = {\n  github_url: githubUrl,\n  owner,\n  repo,\n  branch,\n  product_folder: normalizedProductFolder,\n  active_skill: activeSkill,\n  custom_skill_path: input.custom_skill_path || '',\n  skill_path: skillPath,\n  output_local_dir: outputLocalDir,\n  local_jobs_dir: localJobsDir,\n  requested_generate_count: requestedGenerateCount,\n  generate_count: 1,\n  dry_run: input.dry_run !== false,\n  moyin_base_url: apiBaseUrl,\n  moyin_api: {\n    ...moyinApi,\n    create: { ...moyinApi.create, path: createPath },\n    query: { ...moyinApi.query, path_template: queryPath }\n  },\n  moyin_create_path: createPath,\n  moyin_query_path_template: queryPath,\n  moyin_model: apiModel\n};\nif (!normalized.dry_run && !$env.OPENAI_API_KEY) throw new Error('OPENAI_API_KEY is required when dry_run=false');\nif (!normalized.dry_run && !$env.MOYIN_API_KEY && !$env.OMINI_API_KEY) throw new Error('MOYIN_API_KEY or OMINI_API_KEY is required when dry_run=false');\nif (!normalized.dry_run && !$env.MOYIN_API_BASE_URL && !$env.OMINI_API_BASE_URL) throw new Error('MOYIN_API_BASE_URL or OMINI_API_BASE_URL is required when dry_run=false');\n\nreturn [{ json: normalized }];"
+      },
+      "id": "d0d4a1b5-9d09-438a-b1f0-557209ca0b42",
+      "name": "Normalize Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1380,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const ctx = $json;\nconst base = ctx.product_folder;\nconst productId = String(base).split('/').filter(Boolean).pop();\nconst files = [\n  { key: 'product_profile', path: `${base}/skill_a/product_profile.yaml`, type: 'file' },\n  { key: 'plan_batch', path: `${base}/skill_a/plan_batch_001.md`, type: 'file', optional: true },\n  { key: 'scripts_history', path: `history/products/${productId}/index.jsonl`, type: 'file', optional: true },\n  { key: 'skill_content', path: ctx.skill_path, type: 'file' },\n  { key: 'image_references', path: `${base}/images`, type: 'directory', optional: true }\n];\nreturn files.map(file => ({ json: { ...ctx, product_id: productId, ...file } }));"
+      },
+      "id": "16c1f962-f924-49fb-96bf-94c4d8717498",
+      "name": "Build GitHub Read Requests",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/{{$json.owner}}/{{$json.repo}}/contents/{{$json.path}}?ref={{$json.branch}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "Authorization",
+              "value": "={{'Bearer ' + $env.GITHUB_TOKEN}}"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "outputPropertyName": "github_response"
+            }
+          }
+        }
+      },
+      "id": "86c27e73-923d-4653-a19d-c91b0e3608ee",
+      "name": "GitHub Get Content",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -940,
+        0
+      ],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "function decodeBase64(value) {\n  return Buffer.from((value || '').replace(/\\n/g, ''), 'base64').toString('utf8');\n}\n\nlet originals = [];\ntry {\n  originals = $('Build GitHub Read Requests').all().map(item => item.json);\n} catch (error) {}\ntry {\n  if (!originals.length) originals = $items('Build GitHub Read Requests').map(item => item.json);\n} catch (error) {}\nif (!originals.length) {\n  throw new Error('Cannot read GitHub request metadata from Build GitHub Read Requests. Reimport the latest workflow JSON.');\n}\n\nconst responses = items.flatMap(item => Array.isArray(item.json) ? item.json : [item.json || {}]);\n\nfunction isErrorResponse(response) {\n  return !response || response.error || response.statusCode >= 400 || response.message === 'Not Found';\n}\n\nfunction responseForFile(original, index) {\n  return responses.find(response => response.path === original.path && (response.content || response.sha))\n    || responses[index]\n    || null;\n}\n\nfunction responsesForDirectory(original) {\n  const prefix = `${original.path}/`;\n  return responses.filter(response =>\n    response &&\n    response.type === 'file' &&\n    typeof response.path === 'string' &&\n    response.path.startsWith(prefix)\n  );\n}\n\nconst out = [];\nfor (let i = 0; i < originals.length; i++) {\n  const original = originals[i];\n\n  if (original.type === 'directory') {\n    const files = responsesForDirectory(original);\n    const images = files\n      .filter(file => /\\.(png|jpe?g|webp|gif)$/i.test(file.path || file.name || ''))\n      .map(file => ({\n        path: file.path,\n        raw_url: `https://ghproxy.net/https://raw.githubusercontent.com/${original.owner}/${original.repo}/${original.branch}/${file.path}`,\n        name: file.name || file.path.split('/').pop()\n      }));\n    const warnings = images.length ? [] : [`No reference images found in ${original.path}`];\n    out.push({ json: { ...original, content: images, sha: null, warnings } });\n    continue;\n  }\n\n  const response = responseForFile(original, i);\n  if (isErrorResponse(response)) {\n    if (original.optional) {\n      const warning = `${original.path} is optional and was not found or could not be read`;\n      out.push({ json: { ...original, content: '', sha: null, missing: true, warnings: [warning] } });\n      continue;\n    }\n    throw new Error(`GitHub read failed for ${original.path}: ${JSON.stringify(response)}`);\n  }\n\n  out.push({ json: { ...original, content: decodeBase64(response.content), sha: response.sha || null, warnings: [] } });\n}\nreturn out;"
+      },
+      "id": "1a1916cf-557d-4717-a7e1-607835263383",
+      "name": "Decode GitHub Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = items.map(item => item.json);\nconst byKey = Object.fromEntries(rows.map(row => [row.key, row]));\nconst ctx = rows[0];\nconst imageReferences = byKey.image_references?.content || [];\nconst warnings = rows.flatMap(row => row.warnings || []);\nconst activeSkill = ctx.active_skill;\nconst isSkillE = activeSkill === 'skill_e';\nconst isSkillC = activeSkill === 'skill_c';\nconst aiInput = {\n  product_profile: byKey.product_profile?.content || '',\n  plan_batch: byKey.plan_batch?.content || '',\n  skill_content: byKey.skill_content?.content || '',\n  scripts_history: byKey.scripts_history?.content || '',\n  image_references: imageReferences,\n  active_skill: activeSkill,\n  github_url: ctx.github_url,\n  product_folder: ctx.product_folder,\n  requested_generate_count: ctx.requested_generate_count || 1,\n  generate_count: 1\n};\n\nconst commonInstructions = [\n  'You generate US-market UGC video scripts and Moyin image-to-video jobs.',\n  'You must use the supplied active_skill and skill_content as the replaceable creative method.',\n  'Generate exactly ONE script only.',\n  'Return exactly one selected_script object only.',\n  'Do not generate multiple script alternatives.',\n  'Output valid JSON only.',\n  'No markdown.',\n  'No explanations.',\n  'No json fences.',\n  'Avoid duplicate angle, hook, and structure_signature compared with scripts_history.',\n  'Do not decide final script_id. Use temporary ids only; downstream n8n assigns canonical ids.'\n];\n\nconst modeInstructions = isSkillE\n  ? [\n      'Skill E must generate exactly one scene and exactly one final_moyin_jobs entry.',\n      'The only allowed scene_id is video_001 and scene_order must be exactly [\"video_001\"].',\n      'Do not output scene_02, scene_03, broll_coverage, video_001_part_01, or video_001_part_02.',\n      'The single video_001 promptText must describe one complete approximately 10-second vertical 9:16 TikTok-style UGC ad.',\n      'Keep the entire Skill E rhythm inside the same video: 0-3s familiar wrong-use hook; 3-5s visible pain amplification; 5-8.5s natural product entry and clear product action; 8.5-10s credible before-after result proof and a light CTA.',\n      'Use realistic handheld phone-shot style and preserve product identity, color, label, shape, and material.',\n      'No UI, subtitles, stickers, text overlays, or exaggerated chemical effects.'\n    ]\n  : isSkillC\n    ? [\n        'Skill C must generate exactly two final_moyin_jobs entries for one complete 20-second ad.',\n        'scene_order must be exactly [\"video_001_part_01\", \"video_001_part_02\"].',\n        'The first scene_id must be video_001_part_01 and must cover global 0-10s: 0-3s pain conflict, 3-6s product solution, and 6-10s fast-cut scene 1. Do not include the CTA in part 1.',\n        'The second scene_id must be video_001_part_02 and must cover global 10-20s: local 0-4s fast-cut scene 2, 4-8s fast-cut scene 3, and 8-10s light CTA.',\n        'Both segments must use 9:16 realistic handheld phone-shot style and preserve identical product identity, color, label, shape, material, pacing, and usage logic.',\n        'Do not output a third scene or broll_coverage.'\n      ]\n    : [\n        'Follow the selected skill_content when deciding the required final_moyin_jobs entries.',\n        'Keep all jobs under the single selected_script.'\n      ];\n\nconst system = [...commonInstructions, ...modeInstructions].join(' ');\nconst firstImage = imageReferences[0]?.raw_url || '';\nconst finalMoyinJobs = isSkillE\n  ? [\n      {\n        job_id: 'temporary_video_001',\n        scene_id: 'video_001',\n        promptImage: firstImage,\n        promptText: 'Create one complete 10-second vertical 9:16 TikTok-style UGC ad containing the wrong-use hook, pain amplification, natural product action, credible result proof, and light CTA in one video.',\n        duration: '10',\n        ratio: '9:16',\n        watermark: false\n      }\n    ]\n  : isSkillC\n    ? [\n        {\n          job_id: 'temporary_video_001_part_01',\n          scene_id: 'video_001_part_01',\n          promptImage: firstImage,\n          promptText: 'Create the first 10-second segment: 0-3s pain conflict, 3-6s quick product solution, 6-10s first clear fast-cut result. No CTA.',\n          duration: '10',\n          ratio: '9:16',\n          watermark: false\n        },\n        {\n          job_id: 'temporary_video_001_part_02',\n          scene_id: 'video_001_part_02',\n          promptImage: firstImage,\n          promptText: 'Create the continuation 10-second segment: 0-4s second usage scene, 4-8s third/final result scene, 8-10s light CTA. Preserve continuity with part 1.',\n          duration: '10',\n          ratio: '9:16',\n          watermark: false\n        }\n      ]\n    : [\n        {\n          job_id: 'temporary_job_id',\n          scene_id: 'scene_01',\n          promptImage: firstImage,\n          promptText: 'Moyin-ready prompt text following the selected skill.',\n          duration: '10',\n          ratio: '9:16',\n          watermark: false\n        }\n      ];\n\nconst schemaHint = {\n  selected_script: {\n    retry_attempt: 1,\n    script_id: 'temporary_only',\n    product_id: ctx.product_id,\n    angle: 'unique strategic angle',\n    hook: 'first spoken or visual hook',\n    structure_signature: isSkillE\n      ? 'wrong_use_pain_product_action_result_cta'\n      : isSkillC\n        ? 'pain_conflict_solution_fast_cut_1_fast_cut_2_fast_cut_3_cta'\n        : 'skill_defined_structure',\n    scene_order: isSkillE\n      ? ['video_001']\n      : isSkillC\n        ? ['video_001_part_01', 'video_001_part_02']\n        : ['scene_01'],\n    script_record: {},\n    final_moyin_jobs: finalMoyinJobs\n  }\n};\n\nreturn [{\n  json: {\n    ...ctx,\n    generate_count: 1,\n    requested_generate_count: ctx.requested_generate_count || 1,\n    warnings,\n    github_reads: byKey,\n    ai_input: aiInput,\n    openai_messages: [\n      { role: 'system', content: system },\n      { role: 'user', content: JSON.stringify({ input: aiInput, required_output_shape: schemaHint }) }\n    ]\n  }\n}];"
+      },
+      "id": "09f6ddbf-9505-461c-a80f-0e2d74400879",
+      "name": "Prepare OpenAI Context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -500,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "if-dry-run-is-true",
+              "leftValue": "={{ $json.dry_run }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "3b677d77-9535-4c41-a9fd-ce3cf38ed33c",
+      "name": "IF Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date().toISOString().replace(/[:.]/g, '-');\nconst productId = ($json.product_folder.split('/').pop() || 'product').replace(/[^a-zA-Z0-9_-]/g, '_');\nconst firstImage = $json.ai_input.image_references[0]?.raw_url || `https://ghproxy.net/https://raw.githubusercontent.com/${$json.owner}/${$json.repo}/${$json.branch}/${$json.product_folder}/images/product_detail_side.png`;\nconst candidate_scripts = Array.from({ length: $json.generate_count }, (_, idx) => ({\n  retry_attempt: 1,\n  script_id: `dry_${productId}_${now}_${idx + 1}`,\n  product_id: productId,\n  angle: `dry run angle ${idx + 1}`,\n  hook: `I tested these lights on the darkest part of my walkway ${idx + 1}`,\n  structure_signature: `hook_dark_walkway_demo_install_result_cta_${idx + 1}`,\n  scene_order: [\n    `scene_01_hook_${idx + 1}`,\n    `scene_02_install_${idx + 1}`,\n    `scene_03_night_result_${idx + 1}`,\n    `broll_coverage_${idx + 1}`\n  ],\n  script_record: {\n    language: 'en-US',\n    active_skill: $json.active_skill,\n    note: 'Dry run placeholder. Replace by OpenAI response when dry_run is false.'\n  },\n  final_moyin_jobs: ['scene_01', 'scene_02', 'scene_03', 'broll_coverage'].map(sceneId => ({\n    job_id: `dryjob_${productId}_${idx + 1}`,\n    scene_id: sceneId,\n    promptImage: firstImage,\n    promptText: `Dry run Moyin prompt for ${sceneId}. Show the product clearly and do not invent labels.`,\n    duration: '10',\n    ratio: '9:16',\n    watermark: false\n  }))\n}));\nreturn [{ json: { ...$json, openai_json: { candidate_scripts } } }];"
+      },
+      "id": "69fe8f49-60a9-408c-96fd-428331f0577e",
+      "name": "Dry Run Script Generator",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        -140
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\nconst { spawn } = require('child_process');\n\nfunction normalizePath(value) {\n  return String(value || '').replace(/\\\\/g, '/').replace(/\\/+$/, '');\n}\n\nasync function runPython(pythonExecutable, args, childEnv, timeoutMs) {\n  return await new Promise((resolve, reject) => {\n    const child = spawn(pythonExecutable, args, {\n      windowsHide: true,\n      shell: false,\n      env: childEnv\n    });\n\n    let stdout = '';\n    let stderr = '';\n\n    child.stdout.on('data', data => {\n      stdout += data.toString();\n      if (stdout.length > 1024 * 1024) stdout = stdout.slice(-1024 * 1024);\n    });\n\n    child.stderr.on('data', data => {\n      stderr += data.toString();\n      if (stderr.length > 1024 * 1024) stderr = stderr.slice(-1024 * 1024);\n    });\n\n    const timer = setTimeout(() => {\n      try { child.kill('SIGKILL'); } catch (error) {}\n      reject(new Error(`OpenAI Python process timed out after ${timeoutMs}ms. stderr=${stderr.slice(-2000)}`));\n    }, timeoutMs);\n\n    child.on('error', error => {\n      clearTimeout(timer);\n      reject(error);\n    });\n\n    child.on('close', code => {\n      clearTimeout(timer);\n      resolve({\n        status: code,\n        stdout,\n        stderr\n      });\n    });\n  });\n}\n\nfunction safePart(value) {\n  return String(value || 'openai')\n    .toLowerCase()\n    .replace(/[^a-z0-9_-]+/g, '_')\n    .replace(/^_+|_+$/g, '')\n    .slice(0, 80) || 'openai';\n}\n\nfunction readJson(filePath) {\n  return JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\\uFEFF/, ''));\n}\n\nconst jobsRoot = normalizePath($env.N8N_OPENAI_JOBS_DIR || 'E:/n8n-video-gemini/openai_jobs');\nconst generatorPath = normalizePath($env.OPENAI_SCRIPT_GENERATOR_PATH || 'E:/n8n-video-gemini/workers/openai_script_generator.py');\nconst pythonExecutable = String($env.PYTHON_EXECUTABLE || 'python').trim();\nconst openaiUrl = String($env.OPENAI_CHAT_COMPLETIONS_URL || 'https://api.aiyxgaw.com/v1/chat/completions').trim();\nconst model = String($env.OPENAI_MODEL || 'gpt-5.5').trim();\n\nif (!fs.existsSync(generatorPath)) {\n  throw new Error(`OpenAI Python generator not found: ${generatorPath}`);\n}\n\nfs.mkdirSync(jobsRoot, { recursive: true });\nconst output = [];\n\nfor (let index = 0; index < items.length; index++) {\n  const itemJson = items[index].json;\n  if (!Array.isArray(itemJson.openai_messages) || !itemJson.openai_messages.length) {\n    throw new Error('openai_messages must be a non-empty array');\n  }\n\n  const identity = safePart(itemJson.product_id || itemJson.script_id || `item_${index + 1}`);\n  const uniqueId = `${identity}_${Date.now()}_${index + 1}_${Math.random().toString(36).slice(2, 10)}`;\n  const jobDir = path.join(jobsRoot, uniqueId);\n  const inputPath = path.join(jobDir, 'input.json');\n  const outputPath = path.join(jobDir, 'output.json');\n  const logPath = path.join(jobDir, 'openai.log');\n  fs.mkdirSync(jobDir, { recursive: true });\n\n  const inputPayload = {\n    openai_url: openaiUrl,\n    model,\n    api_key_env: 'OPENAI_API_KEY',\n    messages: itemJson.openai_messages,\n    request_body_extra: {\n      multi_agent: true,\n      service_tier: 'fast',\n      stream: true,\n      max_tokens: 4096\n    }\n  };\n  await fs.promises.writeFile(inputPath, JSON.stringify(inputPayload, null, 2), 'utf8');\n\n  const args = [\n    generatorPath,\n    '--input', inputPath,\n    '--output', outputPath,\n    '--log', logPath,\n    '--timeout-seconds', '1800',\n    '--max-retries', '5'\n  ];\n  const childEnv = {\n    Path: String($env.Path || $env.PATH || ''),\n    PATH: String($env.PATH || $env.Path || ''),\n    PATHEXT: String($env.PATHEXT || ''),\n    SystemRoot: String($env.SystemRoot || 'C:\\Windows'),\n    ComSpec: String($env.ComSpec || 'C:\\Windows\\System32\\cmd.exe'),\n    TEMP: String($env.TEMP || $env.TMP || 'C:\\Windows\\Temp'),\n    TMP: String($env.TMP || $env.TEMP || 'C:\\Windows\\Temp'),\n    OPENAI_API_KEY: String($env.OPENAI_API_KEY || ''),\n    OPENAI_CHAT_COMPLETIONS_URL: String($env.OPENAI_CHAT_COMPLETIONS_URL || openaiUrl || ''),\n    OPENAI_MODEL: String($env.OPENAI_MODEL || model || ''),\n    MOYIN_API_KEY: String($env.MOYIN_API_KEY || ''),\n    MOYIN_API_BASE_URL: String($env.MOYIN_API_BASE_URL || ''),\n    GITHUB_TOKEN: String($env.GITHUB_TOKEN || '')\n  };\n\n  if (!childEnv.OPENAI_API_KEY) {\n    throw new Error('OPENAI_API_KEY is not visible in n8n $env. Check .env loading before n8n start.');\n  }\n\n  const result = await runPython(pythonExecutable, args, childEnv, 1860000);\n\n  let outputJson = null;\n  if (fs.existsSync(outputPath)) {\n    try {\n      outputJson = readJson(outputPath);\n    } catch (error) {\n      throw new Error(`OpenAI Python output is invalid JSON: ${outputPath}; log: ${logPath}; ${error.message}`);\n    }\n  }\n\n  if (!outputJson) {\n    const stderr = String(result.stderr || '').slice(-2000);\n    throw new Error(`OpenAI Python output was not created; exit=${result.status}; log: ${logPath}; stderr=${stderr}`);\n  }\n  if (outputJson.ok === false || !Array.isArray(outputJson.choices) || !outputJson.choices.length) {\n    const message = outputJson.error || `Python exited with status ${result.status}`;\n    throw new Error(`OpenAI generation failed: ${message}; log: ${logPath}`);\n  }\n\n  outputJson.openai_job_dir = normalizePath(jobDir);\n  outputJson.openai_log_path = normalizePath(logPath);\n  output.push({ json: outputJson });\n}\n\nreturn output;"
+      },
+      "id": "69936d8a-f72d-4b64-84f1-60b36b3275da",
+      "name": "OpenAI Generate Scripts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        140
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const content = $json.choices?.[0]?.message?.content;\nif (!content) throw new Error('OpenAI response missing choices[0].message.content');\n\nlet cleaned = content.trim();\nif (cleaned.startsWith('```')) {\n  cleaned = cleaned.replace(/^```[a-zA-Z0-9]*\\s*/, '');\n  cleaned = cleaned.replace(/\\s*```$/, '');\n}\n\nlet parsed;\ntry {\n  parsed = JSON.parse(cleaned);\n} catch (error) {\n  throw new Error(`OpenAI did not return valid JSON: ${error.message}`);\n}\n\nlet selectedScript = parsed.selected_script;\nif (!selectedScript && Array.isArray(parsed.scripts) && parsed.scripts.length) selectedScript = parsed.scripts[0];\nif (!selectedScript && Array.isArray(parsed.candidate_scripts) && parsed.candidate_scripts.length) selectedScript = parsed.candidate_scripts[0];\n\nconst ctx = $('Prepare OpenAI Context').first().json;\nconst activeSkill = ctx.active_skill;\n\nfunction normalizeJob(source, sceneId, index) {\n  return {\n    ...source,\n    job_id: source.job_id || `temporary_${sceneId}_${index + 1}`,\n    scene_id: sceneId,\n    promptImage: source.promptImage || source.prompt_image || source.image || source.image_url || '',\n    promptText: source.promptText || source.prompt_text || source.prompt || '',\n    duration: String(source.duration || source.seconds || '10'),\n    ratio: source.ratio || source.aspect_ratio || source.aspectRatio || '9:16',\n    watermark: false\n  };\n}\n\nif (selectedScript) {\n  const originalJobs = Array.isArray(selectedScript.final_moyin_jobs) ? selectedScript.final_moyin_jobs : [];\n  const originalScenes = Array.isArray(selectedScript.scenes) ? selectedScript.scenes : [];\n  const sources = originalJobs.length ? originalJobs : originalScenes;\n\n  if (activeSkill === 'skill_e') {\n    const onlyJob = sources[0] ? normalizeJob(sources[0], 'video_001', 0) : null;\n    selectedScript = {\n      ...selectedScript,\n      scene_order: ['video_001'],\n      final_moyin_jobs: onlyJob ? [onlyJob] : [],\n      single_video_extra_scenes_skipped: sources.length > 1\n    };\n    if (Object.prototype.hasOwnProperty.call(selectedScript, 'scenes')) {\n      selectedScript.scenes = onlyJob ? [{ ...onlyJob }] : [];\n    }\n  } else if (activeSkill === 'skill_c') {\n    if (sources.length < 2) {\n      throw new Error('Skill C requires exactly two video segments: video_001_part_01 and video_001_part_02');\n    }\n    const sceneIds = ['video_001_part_01', 'video_001_part_02'];\n    const jobs = sources.slice(0, 2).map((source, index) => normalizeJob(source, sceneIds[index], index));\n    selectedScript = {\n      ...selectedScript,\n      scene_order: sceneIds,\n      final_moyin_jobs: jobs,\n      skill_c_extra_scenes_skipped: sources.length > 2\n    };\n    if (Object.prototype.hasOwnProperty.call(selectedScript, 'scenes')) {\n      selectedScript.scenes = jobs.map(job => ({ ...job }));\n    }\n  }\n\n  parsed = { ...parsed, selected_script: selectedScript };\n  if (Array.isArray(parsed.scripts)) parsed.scripts = [selectedScript];\n  if (Array.isArray(parsed.candidate_scripts)) parsed.candidate_scripts = [selectedScript];\n}\n\nreturn [{ json: { ...ctx, generate_count: 1, openai_json: parsed } }];"
+      },
+      "id": "b3d91c45-dc73-4c2d-9f71-a7e8f6b4f6fb",
+      "name": "Parse OpenAI JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        180,
+        140
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "function norm(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(); }\nfunction tokens(value) { return norm(value).split(/\\s+/).filter(Boolean); }\nfunction jaccard(a, b) { const aa = new Set(a || []); const bb = new Set(b || []); const union = new Set([...aa, ...bb]); if (!union.size) return 0; let inter = 0; for (const x of aa) if (bb.has(x)) inter++; return inter / union.size; }\nfunction textSimilarity(a, b) { return jaccard(tokens(a), tokens(b)); }\nfunction nextStart(history, productId) { let max = 0; const prefix = productId + '-'; for (const h of history) { const id = String(h.script_id || ''); if (!id.startsWith(prefix)) continue; const suffix = id.slice(prefix.length); if (/^\\d{3,}$/.test(suffix)) max = Math.max(max, Number(suffix)); } return max + 1; }\nconst DUPLICATE_THRESHOLD = 0.45;\nconst DUPLICATE_WEIGHTS = { hook: 0.35, angle: 0.30, structure_signature: 0.20, scene_order: 0.15 };\nconst ctx = $json;\nconst productId = ctx.product_id || String(ctx.product_folder || '').split('/').filter(Boolean).pop();\nconst historyLines = String(ctx.ai_input.scripts_history || '').split(/\\r?\\n/).filter(Boolean);\nconst history = historyLines.map(line => { try { return JSON.parse(line); } catch { return { raw: line }; } });\nconst candidates = ctx.openai_json.selected_script\n  ? [ctx.openai_json.selected_script]\n  : Array.isArray(ctx.openai_json.scripts) && ctx.openai_json.scripts.length\n    ? [ctx.openai_json.scripts[0]]\n    : Array.isArray(ctx.openai_json.candidate_scripts) && ctx.openai_json.candidate_scripts.length\n      ? [ctx.openai_json.candidate_scripts[0]]\n      : [];\nconst accepted = [];\nconst rejected = [];\nlet seq = nextStart(history, productId);\nfor (const candidate of candidates) {\n  const angle = norm(candidate.angle);\n  const hook = norm(candidate.hook);\n  const sig = norm(candidate.structure_signature);\n  const sceneOrder = Array.isArray(candidate.scene_order) ? candidate.scene_order.map(norm).filter(Boolean) : [];\n  const reasons = [];\n  if (!angle) reasons.push('missing angle');\n  if (!hook) reasons.push('missing hook');\n  if (!sig) reasons.push('missing structure_signature');\n  if (!Array.isArray(candidate.final_moyin_jobs) || candidate.final_moyin_jobs.length === 0) reasons.push('missing final_moyin_jobs');\n  let mostSimilar = { score: 0, history_script_id: null, similarities: { hook: 0, angle: 0, structure_signature: 0, scene_order: 0 } };\n  for (const historical of history) {\n    const similarities = {\n      hook: textSimilarity(candidate.hook, historical.hook),\n      angle: textSimilarity(candidate.angle, historical.angle),\n      structure_signature: textSimilarity(candidate.structure_signature, historical.structure_signature),\n      scene_order: jaccard(sceneOrder, Array.isArray(historical.scene_order) ? historical.scene_order.map(norm).filter(Boolean) : [])\n    };\n    const score =\n      similarities.hook * DUPLICATE_WEIGHTS.hook +\n      similarities.angle * DUPLICATE_WEIGHTS.angle +\n      similarities.structure_signature * DUPLICATE_WEIGHTS.structure_signature +\n      similarities.scene_order * DUPLICATE_WEIGHTS.scene_order;\n    if (score > mostSimilar.score) mostSimilar = { score, history_script_id: historical.script_id || null, similarities };\n  }\n  if (mostSimilar.score > DUPLICATE_THRESHOLD) reasons.push('duplicate score ' + mostSimilar.score.toFixed(3) + ' exceeds ' + DUPLICATE_THRESHOLD.toFixed(2));\n  if (reasons.length) {\n    rejected.push({ script_id: candidate.script_id, retry_attempt: candidate.retry_attempt || 1, reasons, duplicate_score: Number(mostSimilar.score.toFixed(3)), compared_history_script_id: mostSimilar.history_script_id, similarity_breakdown: mostSimilar.similarities });\n    continue;\n  }\n  const scriptId = productId + '-' + String(seq).padStart(3, '0');\n  const script = { ...candidate, script_id: scriptId, product_id: productId, duplicate_score: Number(mostSimilar.score.toFixed(3)), duplicate_comparison: mostSimilar };\n  script.final_moyin_jobs = candidate.final_moyin_jobs.map((job, index) => ({ ...job, job_id: scriptId + '-scene-' + String(index + 1).padStart(2, '0'), scene_id: job.scene_id || 'scene_' + String(index + 1).padStart(2, '0') }));\n  accepted.push(script);\n  break;\n}\nif (!accepted.length) throw new Error('Unable to select 1 unique script from OpenAI output. Rejected: ' + JSON.stringify(rejected));\nconst createdAt = new Date().toISOString();\nreturn [{ json: { ...ctx, generate_count: 1, selected_script: accepted[0], created_at: createdAt, rejected_candidates: rejected } }];"
+      },
+      "id": "6299d527-4c09-48a4-b358-900bb438be31",
+      "name": "Check Uniqueness Select Scripts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        420,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "let sourceItems = items.map(item => item.json).filter(item => item.selected_script);\nif (!sourceItems.length) sourceItems = $('Check Uniqueness Select Scripts').all().map(item => item.json);\n\nconst ctx = sourceItems.find(item => item.selected_script);\nif (!ctx?.selected_script) throw new Error('No selected script was found for Moyin job creation');\n\nconst script = ctx.selected_script;\nconst activeSkill = ctx.active_skill;\nconst jobs = Array.isArray(script.final_moyin_jobs) ? script.final_moyin_jobs : [];\nif (!jobs.length) throw new Error('No Moyin jobs were found in the selected script');\n\nconst isSkillE = activeSkill === 'skill_e';\nconst isSkillC = activeSkill === 'skill_c';\nif (isSkillC && jobs.length < 2) {\n  throw new Error('Skill C requires two Moyin jobs');\n}\n\nconst limit = isSkillE ? 1 : isSkillC ? 2 : jobs.length;\nconst sceneIds = isSkillE\n  ? ['video_001']\n  : isSkillC\n    ? ['video_001_part_01', 'video_001_part_02']\n    : jobs.map((job, index) => String(job.scene_id || `scene_${String(index + 1).padStart(2, '0')}`));\nconst warnings = [...(ctx.warnings || [])];\n\nfunction normalizePublicImageUrl(value) {\n  let url = String(value || '').trim();\n  const markdownLink = url.match(/^\\s*\\[[^\\]]*\\]\\((https?:\\/\\/[^\\s)]+)\\)\\s*$/i);\n  if (markdownLink) url = markdownLink[1];\n  url = url.replace(/^['\"]|['\"]$/g, '').trim();\n  return /^https?:\\/\\/\\S+$/i.test(url) ? url : '';\n}\n\nif (isSkillE && (jobs.length > 1 || script.single_video_extra_scenes_skipped === true)) {\n  warnings.push('Extra scenes skipped because this workflow is configured to generate one video only.');\n}\nif (isSkillC && (jobs.length > 2 || script.skill_c_extra_scenes_skipped === true)) {\n  warnings.push('Extra scenes skipped because Skill C is configured to generate exactly two video segments.');\n}\n\nconst skillERequirements = [\n  'Create one complete 10-second vertical TikTok-style UGC ad in 9:16.',\n  'Use a realistic handheld phone-shot style.',\n  'Inside this same video, show 0-3s familiar wrong-use hook, 3-5s visible pain amplification, 5-8.5s natural product entry and clear action, and 8.5-10s credible before-after result with a light CTA.',\n  'Preserve product identity, color, label, shape, and material from the reference images.',\n  'No UI, subtitles, stickers, text overlays, or exaggerated chemical effects.'\n].join(' ');\nconst skillCRequirements = [\n  [\n    'Create a 10-second vertical 9:16 TikTok-style UGC ad segment using realistic handheld phone-shot style.',\n    'This is video_001_part_01 of a continuous 20-second Skill C ad.',\n    'Timeline: 0-3s real pain conflict or inefficient behavior; 3-6s introduce the product as the quick solution; 6-10s show fast-cut scene 1 with the first clear result.',\n    'Do not include a CTA in this segment.'\n  ].join(' '),\n  [\n    'Create a 10-second vertical 9:16 TikTok-style UGC ad segment using realistic handheld phone-shot style.',\n    'This is video_001_part_02 and must continue the same product identity, visual style, pacing, and usage logic from part 1.',\n    'Timeline: 0-4s fast-cut scene 2 in a different real-life angle or environment; 4-8s fast-cut scene 3 showing the final credible result; 8-10s short light CTA.'\n  ].join(' ')\n];\nconst identityRules = ' Preserve product identity from the reference images, including color, label, shape, material, proportions, and visible structure. No UI, subtitles, stickers, text overlays, or invented functions.';\n\nconst normalizedJobs = jobs.slice(0, limit).map((job, index) => {\n  const creativeDirection = String(job.promptText || job.prompt_text || job.prompt || '').trim();\n  const requirements = isSkillE\n    ? skillERequirements\n    : isSkillC\n      ? skillCRequirements[index] + identityRules\n      : '';\n  const promptText = requirements\n    ? `${requirements}${creativeDirection ? ` Product-specific creative direction: ${creativeDirection}` : ''}`\n    : creativeDirection;\n  const rawPromptImage = job.promptImage || job.prompt_image || job.image || job.image_url || '';\n  const promptImage = normalizePublicImageUrl(rawPromptImage);\n  if (!promptImage) {\n    throw new Error(`No valid public reference image URL for ${sceneIds[index]}. Received: ${String(rawPromptImage).slice(0, 300)}`);\n  }\n  if (String(rawPromptImage).trim() !== promptImage) {\n    warnings.push(`Normalized Markdown reference image URL for ${sceneIds[index]}.`);\n  }\n  return {\n    ...job,\n    job_id: `${script.script_id || ctx.script_id || 'script'}-${sceneIds[index]}`,\n    scene_id: sceneIds[index],\n    promptImage,\n    promptText,\n    duration: String(job.duration || '10'),\n    ratio: job.ratio || '9:16',\n    watermark: false\n  };\n});\n\nconst normalizedScript = {\n  ...script,\n  scene_order: sceneIds.slice(0, limit),\n  final_moyin_jobs: normalizedJobs\n};\n\nreturn normalizedJobs.map(job => ({\n  json: {\n    github_url: ctx.github_url,\n    owner: ctx.owner,\n    repo: ctx.repo,\n    branch: ctx.branch,\n    product_folder: ctx.product_folder,\n    active_skill: activeSkill,\n    skill_path: ctx.skill_path,\n    output_local_dir: ctx.output_local_dir,\n    local_jobs_dir: ctx.local_jobs_dir,\n    dry_run: ctx.dry_run,\n    warnings,\n    moyin_base_url: ctx.moyin_base_url,\n    moyin_api: ctx.moyin_api,\n    moyin_create_path: ctx.moyin_create_path,\n    moyin_query_path_template: ctx.moyin_query_path_template,\n    moyin_model: ctx.moyin_model,\n    script_id: normalizedScript.script_id,\n    product_id: normalizedScript.product_id,\n    job_id: job.job_id,\n    scene_id: job.scene_id,\n    promptImage: job.promptImage,\n    promptText: job.promptText,\n    duration: job.duration,\n    ratio: job.ratio,\n    watermark: false,\n    selected_script: normalizedScript,\n    image_references: ctx.image_references || []\n  }\n}));\n// duplicate scene_id output_file logic added for deduplication\n"
+      },
+      "id": "688e530b-b233-4105-9a44-47452997eef5",
+      "name": "Build Moyin Jobs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "if-moyin-dry-run-is-true",
+              "leftValue": "={{ $json.dry_run }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "ff0904d8-e93b-455e-8569-2c9f25d771fb",
+      "name": "IF Moyin Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        900,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const j = item.json;\n  const localPath = `${j.output_local_dir}/${j.product_id}/${j.job_id}/${j.scene_id}.mp4`;\n  return { json: { ...j, moyin_create_response: { id: j.job_id, status: 'completed', dry_run: true }, moyin_poll_response: { id: j.job_id, status: 'completed', video_url: 'dry-run://no-video-generated' }, local_file_path: localPath, download_skipped: true } };\n});"
+      },
+      "id": "086034f6-dfed-4142-b6ac-74ed1a1831df",
+      "name": "Dry Run Moyin Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1140,
+        -160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "function slug(value, fallback = 'item') {\n  const text = String(value || fallback).toLowerCase().replace(/[^a-z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);\n  return text || fallback;\n}\nfunction getByPath(obj, path) {\n  return String(path).split('.').reduce((acc, key) => acc == null ? undefined : acc[key], obj);\n}\nfunction firstTaskId(response, paths, fallback) {\n  for (const path of paths || []) {\n    const value = getByPath(response, path);\n    if (value !== undefined && value !== null && String(value).trim()) return value;\n  }\n  return fallback;\n}\n\nconst timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, 14);\nconst sourceJobs = $('Build Moyin Jobs').all().map(item => item.json);\nif (!sourceJobs.length || !items.length) return [];\n\nconst activeSkill = sourceJobs[0].active_skill;\nconst isSkillE = activeSkill === 'skill_e';\nconst isSkillC = activeSkill === 'skill_c';\nconst expectedCount = isSkillE ? 1 : isSkillC ? 2 : sourceJobs.length;\nconst expectedSceneIds = isSkillE\n  ? ['video_001']\n  : isSkillC\n    ? ['video_001_part_01', 'video_001_part_02']\n    : sourceJobs.slice(0, expectedCount).map((source, index) => slug(source.scene_id, `scene_${index + 1}`));\n\nif (sourceJobs.length < expectedCount) {\n  throw new Error(`Build Local Worker Job expected ${expectedCount} source jobs but got ${sourceJobs.length}`);\n}\nif (items.length !== expectedCount) {\n  throw new Error(`Moyin create response count mismatch for ${activeSkill}: expected ${expectedCount}, got ${items.length}. Refusing to reuse one task id across multiple scenes.`);\n}\nif (isSkillC && expectedCount !== 2) {\n  throw new Error('Skill C requires exactly two Moyin create responses');\n}\n\nconst firstSource = sourceJobs[0];\nconst scriptId = slug(firstSource.script_id, 'script');\nconst productId = slug(firstSource.product_id || firstSource.product_folder?.split('/').pop(), 'product');\nconst warnings = [...(firstSource.warnings || [])];\nif (isSkillE && (items.length > 1 || sourceJobs.length > 1)) {\n  warnings.push('Extra scenes skipped because this workflow is configured to generate one video only.');\n}\nif (isSkillC && (items.length > 2 || sourceJobs.length > 2)) {\n  warnings.push('Extra scenes skipped because Skill C is configured to generate exactly two video segments.');\n}\n\nconst responseBySceneId = new Map();\nfor (const item of items) {\n  const sceneId = slug(item.json.moyin_create_scene_id || item.json.scene_id, 'scene');\n  if (responseBySceneId.has(sceneId)) {\n    throw new Error(`Duplicate Moyin create response for scene_id=${sceneId}`);\n  }\n  responseBySceneId.set(sceneId, item.json);\n}\n\nconst outputRoot = String(firstSource.output_local_dir || 'E:/n8n-video-gemini/video_output').replace(/\\\\/g, '/').replace(/\\/+$/, '');\nconst jobsRoot = String(firstSource.local_jobs_dir || 'E:/n8n-video-gemini/video_jobs').replace(/\\\\/g, '/').replace(/\\/+$/, '');\nconst jobId = `job_${productId}_${timestamp}_01`;\nconst outputDir = `${outputRoot}/${productId}/${jobId}`;\nconst statusDir = `${jobsRoot}/${jobId}`;\nconst scenes = [];\nconst taskIds = new Map();\nconst outputFiles = new Set();\n\nfor (let index = 0; index < expectedCount; index++) {\n  const source = sourceJobs[index];\n  const sceneId = expectedSceneIds[index];\n  const current = responseBySceneId.get(sceneId);\n  if (!current) {\n    throw new Error(`Missing Moyin create response for scene_id=${sceneId}`);\n  }\n\n  const createResponse = current.moyin_create_response || current;\n  const taskIdPaths = source.moyin_api?.create?.task_id_paths || ['id', 'taskId', 'task_id', 'data.id', 'data.task_id', 'data.taskId', 'result.id', 'result.task_id', 'result.taskId'];\n  const moyinTaskId = firstTaskId(createResponse, taskIdPaths, source.dry_run ? `dry_${scriptId}_${sceneId}` : '');\n  if (!moyinTaskId) {\n    throw new Error(`Moyin create response missing task id for script ${scriptId}, scene ${sceneId}`);\n  }\n  const taskKey = String(moyinTaskId);\n  if (!source.dry_run && taskIds.has(taskKey)) {\n    throw new Error(`Duplicate Moyin task id ${taskKey} for scenes ${taskIds.get(taskKey)} and ${sceneId}. Refusing to save identical videos as multiple scenes.`);\n  }\n  taskIds.set(taskKey, sceneId);\n\n  const outputFile = `${outputDir}/${sceneId}.mp4`;\n  if (outputFiles.has(outputFile)) {\n    throw new Error(`Duplicate output_file detected: ${outputFile}`);\n  }\n  outputFiles.add(outputFile);\n\n  scenes.push({\n    scene_id: sceneId,\n    moyin_task_id: taskKey,\n    promptImage: source.promptImage,\n    promptText: source.promptText,\n    duration: String(source.duration || '10'),\n    ratio: source.ratio || '9:16',\n    output_file: outputFile\n  });\n}\n\nconst job = {\n  job_id: jobId,\n  script_id: scriptId,\n  product_id: productId,\n  active_skill: activeSkill,\n  github_url: firstSource.github_url,\n  product_folder: firstSource.product_folder,\n  skill_path: firstSource.skill_path,\n  warnings,\n  moyin_api: {\n    base_url: firstSource.moyin_base_url,\n    query_path_template: firstSource.moyin_api?.query?.path_template || firstSource.moyin_query_path_template,\n    status_paths: firstSource.moyin_api?.query?.status_paths || [],\n    video_url_paths: firstSource.moyin_api?.query?.video_url_paths || [],\n    success_statuses: firstSource.moyin_api?.query?.success_statuses || [],\n    failed_statuses: firstSource.moyin_api?.query?.failed_statuses || []\n  },\n  output_dir: outputDir,\n  status_dir: statusDir,\n  max_runtime_seconds: Number($env.MOYIN_TIMEOUT_SECONDS || 900),\n  poll_interval_seconds: Number($env.MOYIN_POLL_INTERVAL_SECONDS || 8),\n  scenes\n};\nconst jobJson = JSON.stringify(job, null, 2) + '\\n';\nconst jobFile = `${jobsRoot}/inbox/${jobId}.json`;\n\nreturn [{\n  json: {\n    ...firstSource,\n    warnings,\n    job_payload: job,\n    job_json_string: jobJson,\n    job_file_path: jobFile,\n    status_file: `${statusDir}/status.json`,\n    worker_log: `${statusDir}/worker.log`,\n    output_dir: outputDir,\n    would_create_job_json: job\n  },\n  binary: {\n    data: {\n      data: Buffer.from(jobJson, 'utf8').toString('base64'),\n      mimeType: 'application/json',\n      fileName: 'job.json'\n    }\n  }\n}];"
+      },
+      "id": "20beb7f0-dbd7-41c8-92f2-916fc62ecbbb",
+      "name": "Build Local Worker Job",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1360,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "if-worker-dry-run-is-true",
+              "leftValue": "={{ $json.dry_run }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "613d62c2-1f35-4582-afd5-b72af5f47de1",
+      "name": "IF Worker Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1580,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\n\nfunction normalizePath(value) {\n  return String(value || '').replace(/\\\\/g, '/');\n}\n\nconst source = $json.job_payload ? $json : $('Build Local Worker Job').item.json;\nconst jobFilePath = normalizePath(source.job_file_path);\nconst jobJsonString = source.job_json_string;\n\nif (!jobFilePath) throw new Error('job_file_path is required');\nif (!jobJsonString) throw new Error('job_json_string is required');\nif (!/\\/inbox\\/[^\\/]+\\.json$/.test(jobFilePath)) {\n  throw new Error(`Refusing to write job outside local inbox: ${jobFilePath}`);\n}\n\nconst dir = path.dirname(jobFilePath);\nfs.mkdirSync(dir, { recursive: true });\nfs.writeFileSync(jobFilePath, jobJsonString, 'utf8');\n\nif (!fs.existsSync(jobFilePath)) {\n  throw new Error(`Job file was not written: ${jobFilePath}`);\n}\n\nreturn [{\n  json: {\n    ...source,\n    job_file_written: true,\n    job_file_size: fs.statSync(jobFilePath).size,\n  }\n}];"
+      },
+      "id": "25172880-345c-4199-b8dc-c0b778d53f96",
+      "name": "Write Worker Inbox Job JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2020,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fromJobNode = $('Build Local Worker Job').item?.json;\nconst job = $json.job_payload ? $json : fromJobNode;\nif (!job?.job_payload) {\n  throw new Error('Build Submitted Response cannot find job_payload');\n}\n\nconst jobFileWritten = Boolean(job.job_file_written);\nconst jobFileSize = job.job_file_size || 0;\n\nreturn [{ json: {\n  ok: true,\n  status: 'submitted',\n  job_id: job.job_payload.job_id,\n  script_id: job.job_payload.script_id,\n  active_skill: job.job_payload.active_skill,\n  job_file: job.job_file_path,\n  job_file_written: jobFileWritten,\n  job_file_size: jobFileSize,\n  status_file: job.status_file,\n  output_dir: job.output_dir,\n  worker_mode: 'external_watcher',\n  message: job.dry_run\n    ? 'Dry run preview generated. No job file written.'\n    : 'Job JSON written to inbox. External worker_watcher will pick it up.',\n  dry_run: job.dry_run,\n  would_create_job_json: job.dry_run ? job.would_create_job_json : undefined\n} }];"
+      },
+      "id": "acd6982b-e543-43f3-9d27-5984ebdb1bc5",
+      "name": "Build Submitted Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const https = require('https');\nconst { URL } = require('url');\n\nconst apiKey = String($env.MOYIN_API_KEY || '').trim();\nif (!apiKey) throw new Error('MOYIN_API_KEY environment variable is required for Moyin Create Video.');\n\nfunction normalizeBaseUrl(value) {\n  return String(value || '').trim().replace(/\\/+$/, '');\n}\n\nfunction normalizePath(value) {\n  const path = String(value || '').trim();\n  if (!path) return '';\n  return '/' + path.replace(/^\\/+/, '');\n}\n\nfunction buildMoyinCreateUrl(baseUrl, createPath) {\n  const base = normalizeBaseUrl(baseUrl);\n  let path = normalizePath(createPath);\n\n  if (!base) throw new Error('MOYIN_API_BASE_URL / moyin_base_url is required.');\n  if (!path) throw new Error('Moyin create.path / moyin_create_path is required.');\n\n  // Avoid duplicate /v1 while preserving a base path such as /api/v1.\n  if (/\\/v1$/i.test(base) && /^\\/v1\\//i.test(path)) {\n    path = path.replace(/^\\/v1/i, '');\n  }\n\n  return base + path;\n}\n\nfunction stringify(value) {\n  if (typeof value === 'string') return value;\n  try { return JSON.stringify(value); } catch (error) { return String(value); }\n}\n\nfunction postJsonNative(urlString, apiKey, bodyObject, timeoutMs = 180000) {\n  return new Promise((resolve, reject) => {\n    const url = new URL(urlString);\n    const body = JSON.stringify(bodyObject);\n    const req = https.request({\n      hostname: url.hostname,\n      port: url.port || 443,\n      path: url.pathname + url.search,\n      method: 'POST',\n      headers: {\n        Authorization: `Bearer ${apiKey}`,\n        'Content-Type': 'application/json',\n        'Content-Length': Buffer.byteLength(body)\n      },\n      timeout: timeoutMs\n    }, (res) => {\n      let raw = '';\n      res.on('data', chunk => { raw += chunk.toString(); });\n      res.on('end', () => {\n        let parsed = raw;\n        try { parsed = JSON.parse(raw); } catch (error) {}\n        resolve({\n          statusCode: Number(res.statusCode || 0),\n          headers: res.headers,\n          body: parsed,\n          raw\n        });\n      });\n    });\n\n    req.on('timeout', () => {\n      req.destroy(new Error('Moyin Create Video request timeout'));\n    });\n    req.on('error', reject);\n    req.write(body);\n    req.end();\n  });\n}\n\nconst output = [];\n\nfor (const item of items) {\n  const j = item.json;\n  if (!j.scene_id) throw new Error('Moyin Create Video requires scene_id for per-scene task mapping.');\n\n  const createPath = j.moyin_api?.create?.path || j.moyin_create_path || '/videos';\n  const fullUrl = buildMoyinCreateUrl(j.moyin_base_url || $env.MOYIN_API_BASE_URL, createPath);\n  const sceneImages = [j.promptImage].filter(Boolean);\n  const fallbackImages = (j.image_references || []).map(img => img.raw_url).filter(Boolean);\n  const requestBody = {\n    model: j.moyin_model || $env.MOYIN_VIDEO_MODEL || 'veo-omni-flash',\n    prompt: j.promptText,\n    images: sceneImages.length ? sceneImages : fallbackImages,\n    aspect_ratio: j.ratio || '9:16',\n    aspectRatio: j.ratio || '9:16',\n    seconds: String(j.duration || '10')\n  };\n\n  let response;\n  try {\n    response = await postJsonNative(fullUrl, apiKey, requestBody, 180000);\n  } catch (error) {\n    throw new Error(`Moyin Create Video network error. scene_id=${j.scene_id}; full_url=${fullUrl}; message=${error?.message || String(error)}`);\n  }\n\n  const statusCode = Number(response.statusCode || 0);\n  const responseBody = response.body;\n  const moyinCode = Number(responseBody?.code ?? 0);\n\n  if (statusCode < 200 || statusCode >= 300 || moyinCode >= 400) {\n    throw new Error(`Moyin Create Video failed. scene_id=${j.scene_id}; full_url=${fullUrl}; http_status=${statusCode}; request_body=${stringify(requestBody)}; moyin_response=${stringify(responseBody)}`);\n  }\n\n  output.push({\n    json: {\n      ...j,\n      moyin_create_scene_id: j.scene_id,\n      moyin_create_full_url: fullUrl,\n      moyin_create_request_body: requestBody,\n      moyin_create_response: responseBody,\n      moyin_create_http_status: statusCode\n    }\n  });\n}\n\nreturn output;"
+      },
+      "id": "df911168-b455-4124-8404-1b5f8f2d26519",
+      "name": "Moyin Create Video",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1140,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "if-history-dry-run-is-true",
+              "leftValue": "={{ $json.dry_run }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5cfb851e-f5fa-40ad-8022-153b5577d5d5",
+      "name": "IF History Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        980,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const selected = items.map(item => item.json);\nif (!selected.length) return [];\nconst first = selected[0];\nconst productId = first.product_id;\nconst existing = String(first.ai_input?.scripts_history || '').trim();\nconst lines = existing ? existing.split(/\\r?\\n/).filter(Boolean) : [];\nconst records = [];\nconst createdAt = first.created_at || new Date().toISOString();\nfor (const ctx of selected) {\n  const script = ctx.selected_script;\n  const summary = { script_id: script.script_id, product_id: productId, active_skill: ctx.active_skill, angle: script.angle, hook: script.hook, structure_signature: script.structure_signature, scene_order: script.scene_order || [], created_at: createdAt };\n  lines.push(JSON.stringify(summary));\n  const full = { script_id: script.script_id, product_id: productId, active_skill: ctx.active_skill, skill_path: ctx.skill_path, github_url: ctx.github_url, product_folder: ctx.product_folder, selected_script: script, final_moyin_jobs: script.final_moyin_jobs, created_at: createdAt };\n  records.push({ path: `history/products/${productId}/${script.script_id}.json`, content: JSON.stringify(full, null, 2) + '\\n', message: `Add script history ${script.script_id}`, sha: null });\n}\nrecords.unshift({ path: `history/products/${productId}/index.jsonl`, content: lines.join('\\n') + '\\n', message: `Update script history index for ${productId}`, sha: first.github_reads?.scripts_history?.sha || null });\nreturn records.map(record => ({ json: { ...first, history_path: record.path, history_content_base64: Buffer.from(record.content, 'utf8').toString('base64'), history_message: record.message, history_sha: record.sha } }));"
+      },
+      "id": "ec659433-1011-490a-847e-0ec4bb06df52",
+      "name": "Build GitHub History Records",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1200,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const token = String($env.GITHUB_TOKEN || '').trim();\nif (!token) throw new Error('GITHUB_TOKEN environment variable is required for GitHub history writes.');\n\nconst maxRetries = 3;\n\nfunction encodePath(path) {\n  return String(path || '').split('/').map(part => encodeURIComponent(part)).join('/');\n}\n\nfunction decodeBase64(value) {\n  return Buffer.from(String(value || ''), 'base64').toString('utf8');\n}\n\nfunction encodeBase64(value) {\n  return Buffer.from(String(value || ''), 'utf8').toString('base64');\n}\n\nfunction extractAppendLine(recordContent) {\n  const lines = String(recordContent || '').split(/\\r?\\n/).filter(Boolean);\n  return lines.length ? lines[lines.length - 1] : '';\n}\n\nfunction extractScriptIdFromJsonLine(line) {\n  try {\n    return JSON.parse(line).script_id || '';\n  } catch (error) {\n    return '';\n  }\n}\n\nfunction isShaConflict(statusCode, body) {\n  const text = typeof body === 'string' ? body : JSON.stringify(body || {});\n  return statusCode === 409 || statusCode === 422 || /sha|expected|is at|conflict/i.test(text);\n}\n\nasync function githubRequest(method, url, body, ignoreHttpStatusErrors = true) {\n  return await this.helpers.httpRequest({\n    method,\n    url,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      Accept: 'application/vnd.github+json',\n      'X-GitHub-Api-Version': '2022-11-28',\n      'User-Agent': 'n8n-video-history-writer'\n    },\n    body,\n    json: true,\n    returnFullResponse: true,\n    ignoreHttpStatusErrors,\n    timeout: 120000\n  });\n}\n\nasync function getCurrentFile(ctx, historyPath) {\n  const url = `https://api.github.com/repos/${ctx.owner}/${ctx.repo}/contents/${encodePath(historyPath)}?ref=${encodeURIComponent(ctx.branch)}`;\n  const response = await githubRequest.call(this, 'GET', url, undefined, true);\n  const statusCode = Number(response.statusCode || 0);\n\n  if (statusCode === 404) {\n    return { exists: false, sha: null, content: '' };\n  }\n\n  if (statusCode < 200 || statusCode >= 300) {\n    const bodyText = typeof response.body === 'string' ? response.body : JSON.stringify(response.body || {});\n    throw new Error(`GitHub GET history file failed HTTP ${statusCode}: ${bodyText}`);\n  }\n\n  const body = response.body || {};\n  const content = body.content ? decodeBase64(String(body.content).replace(/\\s/g, '')) : '';\n  return { exists: true, sha: body.sha || null, content };\n}\n\nasync function putFile(ctx, historyPath, content, message, sha) {\n  const url = `https://api.github.com/repos/${ctx.owner}/${ctx.repo}/contents/${encodePath(historyPath)}`;\n  const body = {\n    message,\n    content: encodeBase64(content),\n    branch: ctx.branch\n  };\n  if (sha) body.sha = sha;\n\n  return await githubRequest.call(this, 'PUT', url, body, true);\n}\n\nfunction mergeIndexContent(currentContent, appendLine) {\n  const currentLines = String(currentContent || '').split(/\\r?\\n/).filter(Boolean);\n  const appendScriptId = extractScriptIdFromJsonLine(appendLine);\n\n  if (appendScriptId) {\n    const alreadyExists = currentLines.some(line => extractScriptIdFromJsonLine(line) === appendScriptId);\n    if (alreadyExists) return currentLines.join('\\n') + (currentLines.length ? '\\n' : '');\n  }\n\n  if (appendLine) currentLines.push(appendLine);\n  return currentLines.join('\\n') + (currentLines.length ? '\\n' : '');\n}\n\nconst outputs = [];\n\nfor (const item of items) {\n  const ctx = item.json;\n  const historyPath = ctx.history_path;\n  if (!historyPath) throw new Error('history_path is required');\n\n  const originalContent = decodeBase64(ctx.history_content_base64);\n  const isIndex = /\\/index\\.jsonl$/.test(historyPath);\n  const appendLine = isIndex ? extractAppendLine(originalContent) : '';\n\n  let lastResponse = null;\n\n  for (let attempt = 1; attempt <= maxRetries; attempt++) {\n    const current = await getCurrentFile.call(this, ctx, historyPath);\n    const contentToWrite = isIndex\n      ? mergeIndexContent(current.content, appendLine)\n      : originalContent;\n\n    const response = await putFile.call(this, ctx, historyPath, contentToWrite, ctx.history_message, current.sha);\n    lastResponse = response;\n    const statusCode = Number(response.statusCode || 0);\n\n    if (statusCode >= 200 && statusCode < 300) {\n      outputs.push({\n        json: {\n          ...ctx,\n          github_history_path: historyPath,\n          github_history_status: statusCode,\n          github_history_sha: response.body?.content?.sha || null,\n          github_history_attempts: attempt\n        }\n      });\n      lastResponse = null;\n      break;\n    }\n\n    if (!isShaConflict(statusCode, response.body) || attempt >= maxRetries) {\n      const bodyText = typeof response.body === 'string' ? response.body : JSON.stringify(response.body || {});\n      throw new Error(`GitHub PUT history file failed HTTP ${statusCode}: ${bodyText}`);\n    }\n  }\n\n  if (lastResponse) {\n    const bodyText = typeof lastResponse.body === 'string' ? lastResponse.body : JSON.stringify(lastResponse.body || {});\n    throw new Error(`GitHub PUT history file failed after retries: ${bodyText}`);\n  }\n}\n\nreturn outputs;"
+      },
+      "id": "6591574e-bd45-4d97-a2eb-23834b821bb5",
+      "name": "GitHub Put History Record",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1420,
+        340
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook Input": {
+      "main": [
+        [
+          {
+            "node": "Normalize Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Input": {
+      "main": [
+        [
+          {
+            "node": "Build GitHub Read Requests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build GitHub Read Requests": {
+      "main": [
+        [
+          {
+            "node": "GitHub Get Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub Get Content": {
+      "main": [
+        [
+          {
+            "node": "Decode GitHub Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Decode GitHub Content": {
+      "main": [
+        [
+          {
+            "node": "Prepare OpenAI Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare OpenAI Context": {
+      "main": [
+        [
+          {
+            "node": "IF Dry Run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Dry Run": {
+      "main": [
+        [
+          {
+            "node": "Dry Run Script Generator",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "OpenAI Generate Scripts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry Run Script Generator": {
+      "main": [
+        [
+          {
+            "node": "Check Uniqueness Select Scripts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Generate Scripts": {
+      "main": [
+        [
+          {
+            "node": "Parse OpenAI JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse OpenAI JSON": {
+      "main": [
+        [
+          {
+            "node": "Check Uniqueness Select Scripts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Moyin Jobs": {
+      "main": [
+        [
+          {
+            "node": "IF Moyin Dry Run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Moyin Dry Run": {
+      "main": [
+        [
+          {
+            "node": "Dry Run Moyin Result",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Moyin Create Video",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dry Run Moyin Result": {
+      "main": [
+        [
+          {
+            "node": "Build Local Worker Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Moyin Create Video": {
+      "main": [
+        [
+          {
+            "node": "Build Local Worker Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Local Worker Job": {
+      "main": [
+        [
+          {
+            "node": "IF Worker Dry Run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Uniqueness Select Scripts": {
+      "main": [
+        [
+          {
+            "node": "IF History Dry Run",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF History Dry Run": {
+      "main": [
+        [
+          {
+            "node": "Build Moyin Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Build GitHub History Records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build GitHub History Records": {
+      "main": [
+        [
+          {
+            "node": "GitHub Put History Record",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub Put History Record": {
+      "main": [
+        [
+          {
+            "node": "Build Moyin Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Worker Dry Run": {
+      "main": [
+        [
+          {
+            "node": "Build Submitted Response",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Write Worker Inbox Job JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write Worker Inbox Job JSON": {
+      "main": [
+        [
+          {
+            "node": "Build Submitted Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "34a5a646-5487-4632-9b24-729a7f127fdc",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

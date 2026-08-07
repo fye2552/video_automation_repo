@@ -1,0 +1,139 @@
+{
+  "name": "manual_prompt_generate_video",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "manual-prompt-generate-video",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "3ad758b9-b619-4ab8-9dd3-040ab4fbacfe",
+      "name": "Webhook Manual Prompt",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [300, 300],
+      "webhookId": "manual-prompt-generate-video"
+    },
+    {
+      "parameters": {
+        "jsCode": "const output = [];\n\nfor (const item of items) {\n  const input = item.json.body && typeof item.json.body === 'object' ? item.json.body : item.json;\n  const productId = String(input.product_id || '').trim();\n  if (!/^[a-z0-9][a-z0-9_-]*$/i.test(productId)) {\n    throw new Error('product_id is required and may contain only letters, numbers, underscores, and hyphens.');\n  }\n\n  const githubUrl = String(input.github_url || '').trim();\n  if (!githubUrl) throw new Error('github_url is required. Upload the matching product first.');\n\n  const rawBlocks = Array.isArray(input.prompt_blocks)\n    ? input.prompt_blocks\n    : String(input.prompt_text || input.prompt_blocks || '').split(/\\r?\\n\\s*={3,}\\s*\\r?\\n/);\n  const promptBlocks = rawBlocks.map(value => String(value || '').trim()).filter(Boolean);\n  if (!promptBlocks.length) {\n    throw new Error('No prompt blocks were supplied. Put at least one non-empty prompt in the matching .txt file.');\n  }\n\n  const uploadedImages = Array.isArray(input.uploaded_images) ? input.uploaded_images : [];\n  const imageReferences = uploadedImages\n    .map(image => typeof image === 'string' ? image : (image.cdn_url || image.raw_url || image.github_url || image.url || ''))\n    .map(String)\n    .map(value => value.trim())\n    .filter(value => /^https?:\\/\\//i.test(value));\n\n  if (!imageReferences.length) {\n    throw new Error('No public uploaded_images URLs were returned by the product upload workflow. Do not submit a manual prompt until product images are uploaded.');\n  }\n\n  const runId = `manual_${productId}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;\n  promptBlocks.forEach((promptText, index) => {\n    output.push({\n      json: {\n        product_id: productId,\n        github_url: githubUrl,\n        branch: String(input.branch || 'main'),\n        product_folder: String(input.product_folder || `products/${productId}`),\n        source_prompt_file: String(input.source_prompt_file || ''),\n        prompt_index: index + 1,\n        prompt_count: promptBlocks.length,\n        promptText,\n        promptImage: imageReferences[0],\n        image_references: imageReferences,\n        uploaded_images: uploadedImages,\n        duration: String(input.duration || '10'),\n        ratio: String(input.ratio || '9:16'),\n        dry_run: input.dry_run === true || String(input.dry_run).toLowerCase() === 'true',\n        manual_run_id: runId\n      }\n    });\n  });\n}\n\nreturn output;"
+      },
+      "id": "b7d778f1-6d70-44c7-900d-ab8429cff5fd",
+      "name": "Normalize Manual Prompt Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [540, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            { "id": "1d0c7da5-bdfa-4e59-92fa-30d9b584e28e", "leftValue": "={{ $json.dry_run }}", "rightValue": true, "operator": { "type": "boolean", "operation": "true", "singleValue": true } }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "b5f3a5fe-4513-4a80-bd55-58daa178fbfc",
+      "name": "IF Manual Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [780, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => ({\n  json: {\n    ...item.json,\n    moyin_create_response: {\n      id: `dryrun_${item.json.manual_run_id}_${item.json.prompt_index}`,\n      status: 'queued',\n      object: 'video',\n      dry_run: true\n    },\n    moyin_full_url: 'dry-run://videos'\n  }\n}));"
+      },
+      "id": "3a26ed3c-7c6e-4444-8bed-7f9db9803ce0",
+      "name": "Dry Run Manual Moyin Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1020, 180]
+    },
+    {
+      "parameters": {
+        "jsCode": "const https = require('https');\nconst { URL } = require('url');\n\nfunction joinUrl(base, path) {\n  return `${String(base || '').replace(/\\/+$/, '')}/${String(path || '').replace(/^\\/+/, '')}`;\n}\n\nfunction requestJson(urlString, apiKey, body) {\n  return new Promise((resolve, reject) => {\n    const url = new URL(urlString);\n    const encoded = JSON.stringify(body);\n    const request = https.request({\n      hostname: url.hostname,\n      port: url.port || 443,\n      path: url.pathname + url.search,\n      method: 'POST',\n      headers: {\n        Authorization: `Bearer ${apiKey}`,\n        'Content-Type': 'application/json',\n        'Content-Length': Buffer.byteLength(encoded)\n      },\n      timeout: Number($env.MOYIN_CREATE_TIMEOUT_SECONDS || 180) * 1000\n    }, response => {\n      let raw = '';\n      response.on('data', chunk => { raw += chunk.toString(); });\n      response.on('end', () => {\n        let parsed = raw;\n        try { parsed = JSON.parse(raw); } catch (error) {}\n        resolve({ statusCode: response.statusCode || 0, body: parsed, raw });\n      });\n    });\n    request.on('timeout', () => request.destroy(new Error('Moyin create request timed out')));\n    request.on('error', reject);\n    request.write(encoded);\n    request.end();\n  });\n}\n\nconst baseUrl = String($env.MOYIN_API_BASE_URL || '').trim();\nconst apiKey = String($env.MOYIN_API_KEY || '').trim();\nif (!baseUrl) throw new Error('MOYIN_API_BASE_URL is required for manual video submission.');\nif (!apiKey) throw new Error('MOYIN_API_KEY is required for manual video submission.');\n\nconst output = [];\nfor (const item of items) {\n  const j = item.json;\n  const fullUrl = joinUrl(baseUrl, '/videos');\n  const requestBody = {\n    model: String($env.MOYIN_VIDEO_MODEL || 'omni-fast'),\n    prompt: j.promptText,\n    images: Array.isArray(j.image_references) ? j.image_references : [j.promptImage].filter(Boolean),\n    aspect_ratio: j.ratio || '9:16',\n    aspectRatio: j.ratio || '9:16',\n    seconds: String(j.duration || '10'),\n    resolution: String($env.MOYIN_VIDEO_RESOLUTION || '720p')\n  };\n  const response = await requestJson(fullUrl, apiKey, requestBody);\n  if (response.statusCode < 200 || response.statusCode >= 300) {\n    throw new Error(`Moyin create failed HTTP ${response.statusCode}; full_url=${fullUrl}; response=${response.raw}`);\n  }\n  output.push({ json: { ...j, moyin_create_response: response.body, moyin_full_url: fullUrl, moyin_request_body: requestBody } });\n}\nreturn output;"
+      },
+      "id": "c12eaf61-33f5-4b01-9c6e-c2cae2e5743d",
+      "name": "Manual Moyin Create Video",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1020, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "function readPath(value, path) {\n  return path.split('.').reduce((current, key) => current == null ? undefined : current[key], value);\n}\n\nfunction extractTaskId(response) {\n  const paths = ['id', 'taskId', 'task_id', 'data.id', 'data.task_id', 'data.taskId', 'result.id', 'result.task_id', 'result.taskId'];\n  for (const candidate of paths) {\n    const value = readPath(response, candidate);\n    if (value !== undefined && value !== null && String(value).trim()) return String(value);\n  }\n  return '';\n}\n\nconst jobsRoot = String($env.N8N_LOCAL_JOBS_DIR || 'E:/n8n-video-gemini/video_jobs').replace(/\\\\/g, '/').replace(/\\/+$/, '');\nconst outputRoot = String($env.N8N_LOCAL_OUTPUT_DIR || 'E:/n8n-video-gemini/video_output').replace(/\\\\/g, '/').replace(/\\/+$/, '');\nconst baseUrl = String($env.MOYIN_API_BASE_URL || '').replace(/\\/+$/, '');\nconst output = [];\n\nfor (const item of items) {\n  const j = item.json;\n  const taskId = extractTaskId(j.moyin_create_response || {});\n  if (!taskId) {\n    throw new Error(`Moyin response did not contain task id. full_url=${j.moyin_full_url || ''}; response=${JSON.stringify(j.moyin_create_response || {})}`);\n  }\n  const jobId = `job_${j.product_id}_${Date.now()}_${String(j.prompt_index).padStart(2, '0')}`;\n  const statusDir = `${jobsRoot}/${jobId}`;\n  const outputDir = `${outputRoot}/${j.product_id}/${jobId}`;\n  const scene = {\n    scene_id: 'video_001',\n    moyin_task_id: taskId,\n    promptImage: j.promptImage,\n    promptText: j.promptText,\n    duration: String(j.duration || '10'),\n    ratio: String(j.ratio || '9:16'),\n    output_file: `${outputDir}/video_001.mp4`\n  };\n  const jobPayload = {\n    job_id: jobId,\n    script_id: `manual_${j.product_id}_${String(j.prompt_index).padStart(2, '0')}`,\n    product_id: j.product_id,\n    active_skill: 'manual_prompt',\n    github_url: j.github_url,\n    product_folder: j.product_folder,\n    skill_path: '',\n    source_prompt_file: j.source_prompt_file,\n    prompt_index: j.prompt_index,\n    prompt_count: j.prompt_count,\n    output_dir: outputDir,\n    status_dir: statusDir,\n    max_runtime_seconds: Number($env.MOYIN_TIMEOUT_SECONDS || 900),\n    poll_interval_seconds: Number($env.MOYIN_POLL_INTERVAL_SECONDS || 8),\n    moyin_api: {\n      base_url: baseUrl,\n      query_path_template: '/videos/{task_id}',\n      status_paths: ['status', 'state', 'taskStatus', 'data.status', 'data.state', 'result.status', 'result.state'],\n      video_url_paths: ['video_url', 'videoUrl', 'result.video_url', 'result.videoUrl', 'result.resultUrls.0', 'data.video_url', 'data.videoUrl', 'data.resultUrls.0', 'url', 'output_url', 'outputUrl'],\n      success_statuses: ['completed', 'succeeded', 'success', 'done', 'finished'],\n      failed_statuses: ['failed', 'error', 'cancelled', 'canceled']\n    },\n    scenes: [scene]\n  };\n  const jobJsonString = JSON.stringify(jobPayload, null, 2);\n  output.push({\n    json: {\n      ...j,\n      job_id: jobId,\n      script_id: jobPayload.script_id,\n      job_payload: jobPayload,\n      job_json_string: jobJsonString,\n      job_file_path: `${jobsRoot}/inbox/${jobId}.json`,\n      status_file: `${statusDir}/status.json`,\n      output_dir: outputDir,\n      worker_log: `${statusDir}/worker.log`\n    },\n    binary: {\n      data: { data: Buffer.from(jobJsonString, 'utf8').toString('base64'), mimeType: 'application/json', fileName: `${jobId}.json` }\n    }\n  });\n}\nreturn output;"
+      },
+      "id": "33ba4f37-8f0c-4368-b40b-5e4f2c3d768f",
+      "name": "Build Manual Worker Job",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1270, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            { "id": "e541144a-1f8b-4434-b519-ee42c6b86c23", "leftValue": "={{ $json.dry_run }}", "rightValue": true, "operator": { "type": "boolean", "operation": "true", "singleValue": true } }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "38ccac6d-ac2b-4d7d-9fc4-fb2e751dc5c7",
+      "name": "IF Manual Worker Dry Run",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [1510, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\n\nfor (const item of items) {\n  const j = item.json;\n  const target = String(j.job_file_path || '').replace(/\\\\/g, '/');\n  if (!target || !/\\/inbox\\/[^/]+\\.json$/i.test(target)) {\n    throw new Error(`Unsafe manual job_file_path: ${target}`);\n  }\n  fs.mkdirSync(path.dirname(target), { recursive: true });\n  fs.writeFileSync(target, String(j.job_json_string || ''), 'utf8');\n  j.job_file_written = true;\n}\nreturn items;"
+      },
+      "id": "1d7119c1-4e0c-4d4b-aebe-bbf772431a9b",
+      "name": "Write Manual Worker Inbox Job JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{\n  json: {\n    ok: true,\n    status: 'submitted',\n    dry_run: Boolean(items[0] && items[0].json.dry_run),\n    product_id: items[0] ? items[0].json.product_id : '',\n    source_prompt_file: items[0] ? items[0].json.source_prompt_file : '',\n    submitted_jobs: items.map(item => ({\n      job_id: item.json.job_id,\n      script_id: item.json.script_id,\n      prompt_index: item.json.prompt_index,\n      prompt_count: item.json.prompt_count,\n      scene_id: 'video_001',\n      job_file: item.json.job_file_path,\n      status_file: item.json.status_file,\n      output_dir: item.json.output_dir,\n      worker_log: item.json.worker_log\n    })),\n    message: 'Manual prompt jobs submitted. Each prompt block creates exactly one video_001 task.'\n  }\n}];"
+      },
+      "id": "bf1c39e9-75ee-4d62-a77c-5d738d939c2d",
+      "name": "Build Manual Submitted Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2010, 300]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook Manual Prompt": { "main": [[{ "node": "Normalize Manual Prompt Input", "type": "main", "index": 0 }]] },
+    "Normalize Manual Prompt Input": { "main": [[{ "node": "IF Manual Dry Run", "type": "main", "index": 0 }]] },
+    "IF Manual Dry Run": {
+      "main": [
+        [{ "node": "Dry Run Manual Moyin Result", "type": "main", "index": 0 }],
+        [{ "node": "Manual Moyin Create Video", "type": "main", "index": 0 }]
+      ]
+    },
+    "Dry Run Manual Moyin Result": { "main": [[{ "node": "Build Manual Worker Job", "type": "main", "index": 0 }]] },
+    "Manual Moyin Create Video": { "main": [[{ "node": "Build Manual Worker Job", "type": "main", "index": 0 }]] },
+    "Build Manual Worker Job": { "main": [[{ "node": "IF Manual Worker Dry Run", "type": "main", "index": 0 }]] },
+    "IF Manual Worker Dry Run": {
+      "main": [
+        [{ "node": "Build Manual Submitted Response", "type": "main", "index": 0 }],
+        [{ "node": "Write Manual Worker Inbox Job JSON", "type": "main", "index": 0 }]
+      ]
+    },
+    "Write Manual Worker Inbox Job JSON": { "main": [[{ "node": "Build Manual Submitted Response", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "versionId": "39e25be4-5e69-4f3a-9413-e57c9792f6ae",
+  "meta": { "templateCredsSetupCompleted": true },
+  "tags": []
+}
