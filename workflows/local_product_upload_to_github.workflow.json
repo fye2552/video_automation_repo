@@ -1,0 +1,159 @@
+{
+  "name": "local_product_upload_to_github",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "local-product-upload-github",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "9089e7be-9810-4cbc-96fa-404f39680de8",
+      "name": "Webhook Local Product Upload",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "webhookId": "b1b1b1b1-b1b1-b1b1-b1b1-b1b1b1b1b1b1",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\n\nconst sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));\n\nfunction slug(value) {\n  const s = String(value || '').toLowerCase().replace(/[^a-z0-9_-]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 80);\n  if (!s) throw new Error('product_id is required');\n  return s;\n}\nfunction requiredEnv(name) {\n  const value = $env[name];\n  if (!value) throw new Error(`${name} environment variable is required`);\n  return value;\n}\nfunction toBool(value, defaultValue = false) {\n  if (value === true || value === false) return value;\n  if (typeof value === 'string') {\n    const normalized = value.trim().toLowerCase();\n    if (normalized === 'true') return true;\n    if (normalized === 'false') return false;\n  }\n  return defaultValue;\n}\nfunction normalizeLocalRoot(value) {\n  return String(value).replace(/\\\\/g, '/').replace(/\\/+$/, '');\n}\nfunction repoPathUrl(repoPath) {\n  return encodeURIComponent(repoPath).replace(/%2F/g, '/');\n}\nfunction cdnUrl(owner, repo, branch, repoPath) {\n  const encodedPath = repoPath.split('/').map(part => encodeURIComponent(part)).join('/');\n  return `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/${encodedPath}`;\n}\nfunction readFileBase64(filePath) {\n  const stat = fs.statSync(filePath);\n  const maxBytes = 95 * 1024 * 1024;\n  if (stat.size > maxBytes) {\n    throw new Error(`File is too large for GitHub Contents API (${stat.size} bytes): ${filePath}`);\n  }\n  return fs.readFileSync(filePath).toString('base64');\n}\nfunction summarizeError(error) {\n  return error?.message || String(error);\n}\nasync function githubRequest(method, url, token, body, label) {\n  const options = {\n    method,\n    url,\n    headers: {\n      Authorization: `Bearer ${token}`,\n      Accept: 'application/vnd.github+json',\n      'X-GitHub-Api-Version': '2022-11-28',\n      'User-Agent': 'n8n-local-video-automation'\n    },\n    json: true,\n    returnFullResponse: true,\n    ignoreHttpStatusErrors: true,\n    timeout: 120000\n  };\n  if (body !== undefined) {\n    options.headers['Content-Type'] = 'application/json';\n    options.body = body;\n  }\n\n  let lastError;\n  for (let attempt = 1; attempt <= 5; attempt++) {\n    try {\n      const response = await helpers.httpRequest(options);\n      const statusCode = Number(response?.statusCode || 0);\n      if (![408, 409, 429, 500, 502, 503, 504].includes(statusCode)) {\n        return response;\n      }\n      lastError = new Error(`GitHub ${method} retryable HTTP ${statusCode} for ${label}: ${JSON.stringify(response.body)}`);\n    } catch (error) {\n      lastError = error;\n    }\n\n    if (attempt < 5) {\n      await sleep(1000 * attempt * attempt);\n    }\n  }\n  throw new Error(`GitHub ${method} failed after retries for ${label}: ${summarizeError(lastError)}`);\n}\n\nasync function githubGet(owner, repo, branch, repoPath, token) {\n  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${repoPathUrl(repoPath)}?ref=${encodeURIComponent(branch)}`;\n  const response = await githubRequest('GET', url, token, undefined, repoPath);\n  if (response.statusCode === 404) return null;\n  if (response.statusCode < 200 || response.statusCode >= 300) {\n    throw new Error(`GitHub GET failed ${response.statusCode} for ${repoPath}: ${JSON.stringify(response.body)}`);\n  }\n  return response.body;\n}\n\nasync function githubPut(owner, repo, branch, repoPath, contentBase64, message, token, skipIfUnchanged = false) {\n  const existing = await githubGet(owner, repo, branch, repoPath, token);\n  if (skipIfUnchanged && existing?.content) {\n    const currentContent = String(existing.content).replace(/\\s/g, '');\n    const nextContent = String(contentBase64).replace(/\\s/g, '');\n    if (currentContent === nextContent) {\n      return { unchanged: true, sha: existing.sha };\n    }\n  }\n  const body = { message, content: contentBase64, branch };\n  if (existing?.sha) body.sha = existing.sha;\n  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${repoPathUrl(repoPath)}`;\n  const response = await githubRequest('PUT', url, token, body, repoPath);\n  if (response.statusCode < 200 || response.statusCode >= 300) {\n    throw new Error(`GitHub PUT failed ${response.statusCode} for ${repoPath}: ${JSON.stringify(response.body)}`);\n  }\n  return response.body;\n}\n\nconst input = $json.body ?? $json;\nconst productId = slug(input.product_id);\nconst owner = input.owner || $env.GITHUB_OWNER || 'fye2552';\nconst repo = input.repo || $env.GITHUB_REPO || 'video_automation_repo';\nconst branch = input.branch || $env.GITHUB_BRANCH || 'main';\nconst token = requiredEnv('GITHUB_TOKEN');\nconst localProductsRoot = normalizeLocalRoot($env.N8N_LOCAL_PRODUCTS_DIR || 'E:/n8n-video-gemini/local_products');\nconst projectRoot = normalizeLocalRoot(path.dirname(localProductsRoot));\nconst localDir = `${localProductsRoot}/${productId}`;\nconst profilePath = path.join(localDir, 'product_profile.yaml');\nif (!fs.existsSync(profilePath)) throw new Error(`product_profile.yaml is required: ${profilePath}`);\nconst planPath = path.join(localDir, 'plan_batch_001.md');\nconst imageSourceDirs = [\n  path.join(localDir, 'images'),\n  path.join(localDir, 'reference_images'),\n  path.join(localDir, 'skill_a', 'images'),\n  path.join(localDir, 'skill_a', 'reference_images'),\n  // Compatibility fallback: some product packs keep source images directly in the product root.\n  localDir\n];\nconst warnings = [];\nconst uploads = [];\nlet imageUploadWarning = '';\nconst activeSkill = input.active_skill || 'skill_c';\n\nif (activeSkill === 'skill_e') {\n  const skillEPath = normalizeLocalRoot($env.N8N_SKILL_E_PATH || path.join(projectRoot, 'SKILL-E.md'));\n  if (!fs.existsSync(skillEPath) || !fs.statSync(skillEPath).isFile()) {\n    throw new Error(`Skill E source file is required: ${skillEPath}`);\n  }\n  uploads.push({\n    local: skillEPath,\n    repoPath: 'skills/skill_e.md',\n    skipIfUnchanged: true,\n    isSkill: true\n  });\n}\n\nuploads.push({ local: profilePath, repoPath: `products/${productId}/skill_a/product_profile.yaml` });\nif (fs.existsSync(planPath)) {\n  uploads.push({ local: planPath, repoPath: `products/${productId}/skill_a/plan_batch_001.md` });\n} else {\n  uploads.push({ contentBase64: Buffer.from('', 'utf8').toString('base64'), repoPath: `products/${productId}/skill_a/plan_batch_001.md` });\n  warnings.push(`plan_batch_001.md not found for ${productId}; uploaded empty optional file`);\n}\nconst discoveredImages = [];\nconst seenImageNames = new Set();\nfor (const sourceDir of imageSourceDirs) {\n  if (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory()) continue;\n  const imageNames = fs.readdirSync(sourceDir)\n    .filter(name => /\\.(png|jpe?g|webp)$/i.test(name))\n    .sort((a, b) => a.localeCompare(b));\n  for (const name of imageNames) {\n    const key = name.toLowerCase();\n    if (seenImageNames.has(key)) continue;\n    seenImageNames.add(key);\n    discoveredImages.push({ local: path.join(sourceDir, name), name, sourceDir });\n  }\n}\nif (!discoveredImages.length) {\n  imageUploadWarning = 'No local images found under images/reference_images paths';\n  warnings.push(imageUploadWarning);\n} else {\n  for (const image of discoveredImages) {\n    uploads.push({\n      local: image.local,\n      repoPath: `products/${productId}/images/${image.name}`,\n      isImage: true\n    });\n  }\n  const standardNames = ['product_white_bg.png', 'product_detail_side.png', 'product_function.png'];\n  const missingStandardNames = standardNames.filter(name => !seenImageNames.has(name));\n  if (missingStandardNames.length) {\n    warnings.push(`Standard image filenames not found: ${missingStandardNames.join(', ')}; original image filenames were uploaded without renaming`);\n  }\n}\nuploads.push({ contentBase64: Buffer.from('', 'utf8').toString('base64'), repoPath: `history/products/${productId}/index.jsonl`, createOnly: true });\n\nconst uploaded = [];\nconst uploadedImages = [];\nfor (const upload of uploads) {\n  if (upload.createOnly) {\n    const existing = await githubGet(owner, repo, branch, upload.repoPath, token);\n    if (existing) {\n      uploaded.push({ path: upload.repoPath, skipped: true });\n      continue;\n    }\n  }\n  const contentBase64 = upload.contentBase64 !== undefined ? upload.contentBase64 : readFileBase64(upload.local);\n  const putResult = await githubPut(\n    owner,\n    repo,\n    branch,\n    upload.repoPath,\n    contentBase64,\n    `Upload ${upload.repoPath}`,\n    token,\n    upload.skipIfUnchanged === true\n  );\n  const bytes = upload.local ? fs.statSync(upload.local).size : 0;\n  uploaded.push({ path: upload.repoPath, bytes, unchanged: putResult?.unchanged === true });\n  if (upload.isImage) {\n    uploadedImages.push({\n      local_path: normalizeLocalRoot(upload.local),\n      github_path: upload.repoPath,\n      cdn_url: cdnUrl(owner, repo, branch, upload.repoPath)\n    });\n  }\n}\n\nconst githubUrl = `https://github.com/${owner}/${repo}/tree/${branch}/products/${productId}`;\nreturn [{ json: {\n  ok: true,\n  product_id: productId,\n  owner,\n  repo,\n  branch,\n  github_url: githubUrl,\n  active_skill: activeSkill,\n  custom_skill_path: input.custom_skill_path || '',\n  generate_count: Math.max(1, Math.min(Number(input.generate_count || 1), 10)),\n  dry_run: toBool(input.dry_run, true),\n  auto_start_main: toBool(input.auto_start_main, false),\n  uploaded,\n  uploaded_images: uploadedImages,\n  image_upload_warning: imageUploadWarning || null,\n  warnings\n} }];"
+      },
+      "id": "c832fd1e-a91a-4e2d-b880-a3c9c8378ce3",
+      "name": "Upload Local Product To GitHub",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "auto-start-main-is-true",
+              "leftValue": "={{ $json.auto_start_main }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "ef8ced6b-0862-426f-b20f-dea45cc50ea5",
+      "name": "IF Auto Start Main",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.WEBHOOK_URL.replace(/\\/$/, \"\") + \"/webhook/main-generate-video\"}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { github_url: $json.github_url, active_skill: $json.active_skill, custom_skill_path: $json.custom_skill_path, generate_count: $json.generate_count, dry_run: $json.dry_run } }}",
+        "options": {}
+      },
+      "id": "e3fc0751-a3bf-4037-b4d6-b83267656e9a",
+      "name": "Call Main Generate Video",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: $json }];"
+      },
+      "id": "dc6756f0-760f-4fbb-bf20-02868d4ca31f",
+      "name": "Build Upload Only Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        120
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Local Product Upload": {
+      "main": [
+        [
+          {
+            "node": "Upload Local Product To GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Local Product To GitHub": {
+      "main": [
+        [
+          {
+            "node": "IF Auto Start Main",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Auto Start Main": {
+      "main": [
+        [
+          {
+            "node": "Call Main Generate Video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Build Upload Only Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "pinData": {},
+  "versionId": "6cf368eb",
+  "triggerCount": 0,
+  "tags": [],
+  "active": true
+}
