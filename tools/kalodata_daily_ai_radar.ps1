@@ -16,6 +16,27 @@ if ($t0Files.Count -gt 0) {
     $review = $reviewRaw | ConvertFrom-Json
 }
 
+# Surface the actual T+1 decision records to the scheduled task. A count alone
+# cannot tell the mobile operator which video needs a replication decision.
+$reviewDecisions = @()
+if ($null -ne $review -and $review.result_file -and (Test-Path -LiteralPath $review.result_file)) {
+    $reviewData = Get-Content -LiteralPath $review.result_file -Raw | ConvertFrom-Json
+    $reviewDecisions = @($reviewData.records | ForEach-Object {
+        [pscustomobject]@{
+            video_id = $_.video_id
+            decision = $_.decision
+            reason = $_.reason
+            reason_codes = $_.reason_codes
+            traffic_source = $_.traffic_source
+            t1_views = $_.t1.views
+            t1_sales = $_.t1.sales_volumn
+            t1_revenue = $_.t1.revenue
+            view_retention = $_.velocity.views
+            sales_retention = $_.velocity.sales
+        }
+    })
+}
+
 # Stage 2 creates today's new baseline after the prior baseline has been reviewed.
 $discoveryRaw = & (Join-Path $PSScriptRoot 'kalodata_ai_recent_t0_pool.ps1') -MaxPages $MaxPages -CandidateTarget $CandidateTarget
 $discovery = $discoveryRaw | ConvertFrom-Json
@@ -28,6 +49,7 @@ $reconciliation = $reconciliationRaw | ConvertFrom-Json
     observed_at_utc = [DateTimeOffset]::UtcNow.ToString('o')
     sequence = @('review_previous_t0', 'discover_current_t0', 'reconcile_new_t0_with_fastmoss')
     review = $review
+    review_decisions = $reviewDecisions
     discovery = $discovery
     reconciliation = $reconciliation
 } | ConvertTo-Json -Depth 10
